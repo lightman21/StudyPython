@@ -27,9 +27,32 @@ first = sys.argv[1]
 #1413
 second = sys.argv[2]
 
+也可以判断sys.argv的长度.通过
+if len(sys.argv) != 3 :
+    raise System.Exit('Something you wanna say)
 
+注意这里的System.Exit()是退出程序的和Java的System.exit()差不多
 
+在执行python程序的时候有一个很有用的选项 -i
+   如: python3 -i nextbus.py 22 14787
+   这会使你进入python的交互环境.你可以在里面打印出每一个变量的值
+   直接输入变量名回车即可.
 
+在编写python代码的时候,可以通过如下方式打断点
+在代码中插入snipet
+import pdb; pdb.set_trace() #launch debugger就可以相当于打断点
+
+在使用-i选项进入交互环境的时候,可以通过如下方式launch debugger
+import pdb
+这样以后就能launch debugger
+and then you input
+pdb.pm()
+and you also can do do poking around like print sth
+print(some)
+
+or you can get the program list just type  list
+
+or you can single-step through the code just type  s
 
 
 

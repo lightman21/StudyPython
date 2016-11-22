@@ -17,6 +17,8 @@ s = 'http://ctabustracker.com/bustime/map/getStopPredictions.jsp?route={}&stop={
 u = urllib.request.urlopen(s)
 data = u.read()
 
+import pdb; pdb.set_trace()     #just launch debugger
+
 from xml.etree.ElementTree import XML
 doc = XML(data)
 
