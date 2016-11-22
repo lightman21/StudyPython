@@ -1,5 +1,6 @@
+#! /usr/bin/env python3
 #nextbus.py
-//first python program so exciting^_^
+#first python program so exciting^_^
 import sys
 
 if len(sys.argv) != 3 :
@@ -7,6 +8,8 @@ if len(sys.argv) != 3 :
 
 route = sys.argv[1]
 stopid= sys.argv[2]
+
+# route=22, stopid=14787 has data
 
 import urllib.request
 
