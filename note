@@ -57,22 +57,57 @@ or you can get the program list just type  list
 or you can single-step through the code just type  s
 
 
+2016-11-23 07:35
+https://www.safaribooksonline.com/library/view/python-programming-language/9780134217314/PYMC_02_00.html
 
+in Python we denote a statement body through the intent like
+    while principle > 0
+        month += 1
+        #do sth
+    
+    while age > 28
+        print('old man')
 
+    different intention means different statement
 
+    and the if eles control flow works like this
 
+    while principle > 0
+        month += 1
+        if month >= extra_payment_start_month and month <= extra_payment_end_month :
+            total_payment = payment + extra_payment
+        else :
+            total_payment = payment
+        interest = principle * (rate / 12)
 
+that intersting.
+note that everything above belong a while loop
+because they are  all belong one intention
+and note the control flow, it must ends with a : marker
+like while xxx :   if xxx :   else :
+and in python there is a 'and' like Java's &&
 
+if you type python to enter the interactive enviroment
+and just type 1 + 2
+the output will be 3
+and next you want use the result last calculate 
+there is a _ ,which means the last calculate result
+then you can type like
+_ + 5
+and the result will be 8
 
-
-
-
-
-
-
-
-
-
+may be the output like this
+------------------------------------------------------------
+~/.vim/bundle(branch:th*) » python                                                                                                   
+Python 2.7.12 (default, Oct 11 2016, 05:16:02)
+[GCC 4.2.1 Compatible Apple LLVM 7.0.2 (clang-700.1.81)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 1 + 2
+3
+>>> _ + 5
+8
+>>> quit()
+------------------------------------------------------------
 
 
 
