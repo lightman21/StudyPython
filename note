@@ -57,11 +57,14 @@ or you can get the program list just type  list
 or you can single-step through the code just type  s
 
 
+
 2016-11-23 07:35
-https://www.safaribooksonline.com/library/view/python-programming-language/9780134217314/PYMC_02_00.html
+    2.1 Project: Mortgage Calculator
+    https://www.safaribooksonline.com/library/view/python-programming-language/9780134217314/PYMC_02_01.html
 
 in Python we denote a statement body through the intent like
-    while principle > 0
+
+    while principle > 0 :
         month += 1
         #do sth
     
@@ -87,7 +90,7 @@ and note the control flow, it must ends with a : marker
 like while xxx :   if xxx :   else :
 and in python there is a 'and' like Java's &&
 
-if you type python to enter the interactive enviroment
+if you type python to enter the interactive interpreter
 and just type 1 + 2
 the output will be 3
 and next you want use the result last calculate 
@@ -109,11 +112,39 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> quit()
 ------------------------------------------------------------
 
+2016-11-24 07:33
+    2.2 Project formatted Output and File I/0
+https://www.safaribooksonline.com/library/view/python-programming-language/9780134217314/PYMC_02_02.html
+    about print()function output formatted,you can do like this
+    name = 'IBM'
+    shares = 100
+    price = 23.2
+    print('%10s %10d %10.2f' % (name,shares,price))
+    or maybe you can do like
+    print('{:>10s} {:>10d} {:>10.2f}'.format(name,shares,price))
+    or maybe left align
+    print('{:<10s} {:<10d} {:<10.2f}'.format(name,shares,price))
 
+>>> name = 'IBM'
+>>> shares = 100
+>>> price = 23.2
+>>> print('%10s %10d %10.2f' % (name,shares,price))
+       IBM        100      23.20
+>>> print('{:>10s} {:>10d} {:>10.2f}'.format(name,shares,price))
+       IBM        100      23.20
+>>> print('{:<10s} {:<10d} {:<10.2f}'.format(name,shares,price))
+       IBM        100        23.20
 
+# how to write the output to a file
+name = 'IBM'
+shares = 100
+price = 23.2
 
-
-
+#open a file named schedules for writing
+out = open('schedules','w')
+print('{:<10s} {:<10d} {:<10.2f}'.format(name,shares,price),file=out)
+#after your writing you should close it
+out.close()
 
 
 
