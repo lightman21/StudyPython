@@ -146,10 +146,139 @@ print('{:<10s} {:<10d} {:<10.2f}'.format(name,shares,price),file=out)
 #after your writing you should close it
 out.close()
 
+2016-11-25 07:50
+    3.1 File and String Basic
+https://www.safaribooksonline.com/library/view/python-programming-language/9780134217314/PYMC_03_01.html
 
 
+n 3.5.2 (default, Oct 11 2016, 05:00:16) 
+[GCC 4.2.1 Compatible Apple LLVM 7.0.2 (clang-700.1.81)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> f = open('mytest.csv','r')
+>>> f
+<_io.TextIOWrapper name='mytest.csv' mode='r' encoding='UTF-8'>
+>>> data = f.read()
+>>> data
+'"AA"\t"6/11/07"\t100\t    32.20\n"IBM"\t"5/13/07"\t50      91.10\n"CAT"\t"9/23/06"\t150\t    83.44\n"MSFT"\t"5/17/07"\t200\t    51.23\n"GE"\t"2/1/06"\t95\t    40.37\n"MSFT"\t"10/31/06"\t50\t    65.10\n"IBM"\t"7/9/06"\t100 \t70.44\n'
+>>> print(data)
+"AA"    "6/11/07"   100     32.20
+"IBM"   "5/13/07"   50      91.10
+"CAT"   "9/23/06"   150     83.44
+"MSFT"  "5/17/07"   200     51.23
+"GE"    "2/1/06"    95      40.37
+"MSFT"  "10/31/06"  50      65.10
+"IBM"   "7/9/06"    100     70.44
 
+>>> f.close()
+>>> f  = open('mytest.csv','r')
+>>> for line in f:
+...     print(line)
+... 
+"AA"    "6/11/07"   100     32.20
 
+"IBM"   "5/13/07"   50      91.10
+
+"CAT"   "9/23/06"   150     83.44
+
+"MSFT"  "5/17/07"   200     51.23
+
+"GE"    "2/1/06"    95      40.37
+
+"MSFT"  "10/31/06"  50      65.10
+
+"IBM"   "7/9/06"    100     70.44
+
+>>> line
+'"IBM"\t"7/9/06"\t100 \t70.44\n'
+>>> f.close()
+>>> with open('mytest.csv','r') as f:
+...     data = f.read()
+... data
+  File "<stdin>", line 3
+      data
+             ^
+SyntaxError: invalid syntax
+>>>     data
+ File "<stdin>", line 1
+      data
+          ^
+IndentationError: unexpected indent
+>>> print(data)
+"AA"    "6/11/07"   100     32.20
+"IBM"   "5/13/07"   50      91.10
+"CAT"   "9/23/06"   150     83.44
+"MSFT"  "5/17/07"   200     51.23
+"GE"    "2/1/06"    95      40.37
+"MSFT"  "10/31/06"  50      65.10
+"IBM"   "7/9/06"    100     70.44
+
+>>> 
+>>> line
+'"IBM"\t"7/9/06"\t100 \t70.44\n'
+>>> line=line.strip()
+>>> 
+>>> a = 'hello world'
+>>> a
+'hello world'
+>>> b = "hello world"
+>>> b
+'hello world'
+>>> a[0]
+'h'
+>>> a[-1]
+'d'
+>>> a[-3]
+'r'
+>>> a[0:5]
+'hello'
+>>> a[:5]
+'hello'
+>>> a[-5:]
+'world'
+>>> line
+'"IBM"\t"7/9/06"\t100 \t70.44'
+>>> line[1:4]
+'IBM'
+>>> len(line)
+25
+>>> len(a)
+11
+>>> c = 'hello' + 'world'
+>>> c+b
+'helloworldhello world'
+>>> line
+'"IBM"\t"7/9/06"\t100 \t70.44'
+>>> 
+
+>>> line.strip()
+'"IBM"\t"7/9/06"\t100 \t70.44'
+>>> line = line.strip()
+>>> line
+'"IBM"\t"7/9/06"\t100 \t70.44'
+>>> line.replace('"','-')
+'-IBM-\t-7/9/06-\t100 \t70.44'
+>>> parts=line.split('\t')
+>>> parts
+['"IBM"', '"7/9/06"', '100 ', '70.44']
+>>> parts[0]
+'"IBM"'
+>>> parts[1]
+'"7/9/06"'
+>>> parts[0] = parts[0].strip('"')
+>>> parts[0]
+'IBM'
+>>> parts[2] * parts[3]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  TypeError: can't multiply sequence by non-int of type 'str'
+  >>> parts[2]=int(parts[2])
+  >>> parts[3]=float(parts[3])
+  >>> parts
+  ['IBM', '"7/9/06"', 100, 70.44]
+  >>> mul=parts[2] * parts[3]
+  >>> mul
+  7044.0
+  >>> 
 
 
 
