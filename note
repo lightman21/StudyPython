@@ -280,6 +280,41 @@ Traceback (most recent call last):
   7044.0
   >>> 
 
+2016-11-26 09:30
+http://www.safaribooksonline.com/library/view/python-programming-language/9780134217314/PYMC_03_02.html
+    3.2 Reading form a file and Performing a Calculation
+
+    write a little program port.py
+
+    when you open a file you must close it
+    f = open('/a/b/c.txt','r')
+    f.read()
+    f.close()
+
+    but with 'with' python can auto close for you
+    with open('/a/b/c.txt','r') as f :
+    do sth
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
