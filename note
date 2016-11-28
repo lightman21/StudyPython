@@ -295,8 +295,33 @@ http://www.safaribooksonline.com/library/view/python-programming-language/978013
     with open('/a/b/c.txt','r') as f :
     do sth
 
+2016-11-27  09:39
+https://www.safaribooksonline.com/library/view/python-programming-language/9780134217314/PYMC_03_03.html
+    3.3 Using the cvs Module to Read Data
+    caution:
+        there is no i++ in Python
+        your can only do this by type i += 1
 
+        in Python we do cast like this
+        int t = int(var)
+        but in Java thing is
+        int j = (int)var
 
+2016-11-28  13:25
+    http://www.safaribooksonline.com/library/view/python-programming-language/9780134217314/PYMC_04_01.html
+    4.1 Defining and using a simple function
+    
+    def add(a,b):
+        return a+b
+
+    the interesting is when you using this function,you can
+    use it like add(a = 10,b = 3) or add(10,8),add(10,b=30)
+    but you can't use like add(a=10,8)
+    when you us function's argument,the argument must be the last 
+
+    there is a help(functionname) function in Python .
+    when you don't know how to use a function.like add()
+    you just type help(add) for get sth
 
 
 
