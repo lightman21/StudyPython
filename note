@@ -342,6 +342,11 @@ portfolio.csv
 portfolio2.csv
 >>>
 
+
+2016-11-29 08:20 
+    4.3 Handling bad Data and Exception Handling
+    https://www.safaribooksonline.com/library/view/python-programming-language/9780134217314/PYMC_04_03.html
+
 Python handle exception
 ValueError is like Java's Exception
 
@@ -364,36 +369,6 @@ with open(filename,'r') as f:
         
         
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
