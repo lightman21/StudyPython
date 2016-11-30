@@ -25,10 +25,13 @@ def portfolio_cost(filename):
 
 
 
-def realway(filename):
+def realway(filename,*,errors='warn'):
     '''
     computes total shares*price for a CSV file with name,data,shares,price data
     '''
+    if errors  not in {'warn','silent','raise'}:
+        raise ValueError("errors must one of 'warn','silent','raise'")
+
     total = 0.0
     with open (filename,'r') as f:
         rows = csv.reader(f)
@@ -39,14 +42,21 @@ def realway(filename):
                 row[2] = int(row[2])
                 row[3] = float(row[3])
             except ValueError as error:
-                print('Row: ', rowno,'Bad row: ',row)
-                print('Row: ',  rowno,'Reson: ',error)
+                if errors == 'warn':
+                    print('Row: ', rowno,'Bad row: ',row)
+                    print('Row: ',  rowno,'Reson: ',error)
+                elif errors == 'raise':
+                    raise   #Reraises the last exception
+                else:
+                    pass    #Ignore it
                 continue    #skip to the next row
+
             total += row[2] * row[3]
     return total
 
 
-total = realway('data/missing.csv')
+#total = realway('data/missing.csv')
+total = realway('data/missing.csv',errors='silent')
 print('Total cost: ',total)
 
 

@@ -365,10 +365,42 @@ with open(filename,'r') as f:
     for rowno,row in enumerate(rows,start=1):
    # now you can use rowno
    # Python will autoinitialize and autoincrement it for you
-          
+
+2016-11-30 08:00
+https://www.safaribooksonline.com/library/view/python-programming-language/9780134217314/PYMC_04_04.html
         
-        
-        
+what does the * mean when it appear in function define? like
+    def greeting(name,*,where):
+        sth...
+
+generally,you may be want check the parameter passed to function like
+
+    def portfolio_cost(name,error):
+       if error not in {'silent','warn','raise'} :
+            raise ValueError("error must be one of 'warn','silent','raise'")
+
+and you can force the client who invoke your function to pass solid params like
+    def portfoli_cost(name,*,errors='warn'):
+        #do sth
+    this means if the client pass just one parameter,you give it a default parameter
+    and if the client pass two, it must use this way 
+        portfolio(name,errors='silent'):
+        #do sth
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
