@@ -387,7 +387,200 @@ and you can force the client who invoke your function to pass solid params like
         portfolio(name,errors='silent'):
         #do sth
 
-            
+    when you handle an error,like open a file but with a bad name
+    why you don't cover this?
+    never cath error unless you can actually deal with the error
+    because there is not actually recovery options for a bad file .
+    it doesn't make sense with a bod name recovery.
+    so in terms of writing this code,you just ignore it.
+    if your code is crashing with that exception that
+    beyond your control,it's often better to let the program crash.
+
+
+when you want format float  you can do like this
+    # 2 digital decimal plate
+    a = 1.0
+    a = '%.2f' % a
+
+2016-12-01 12:30
+    5.1 Basic Material: Tuples,List,Set,and Dictionary
+
+    define a tuple
+    t = ('AA','2011-06-07',100,32.2)
+    a tuple is like a immutable array
+
+    maybe tuple used to packing and unpacking data
+    things like this is packing data
+    t = ('AA','2011-06-07',100,32.2)
+    
+    and the unpacking is
+
+    name,data,shares,price = t
+
+    then you get these variable initialized
+    name = 'AA'
+    data = '2011-06-07'
+    and so on
+
+    List
+    define a list
+    names = ['IBM','YAHOO','CAT']
+    the different between tuple and list
+    1.tuple defined by () but list defined by []
+    2.tuple is immutable but list is mutable 
+   
+    Set
+    define a set
+    mset = {1,2,2,1}
+
+    sometimes, you can check if a sth in the mset like
+
+    a in mset
+
+    dictionary(like Java's map)
+    define a dictionary
+    the defination of a dictionary is like a Java's JSONObject's toString()
+
+    mdic = {'a':100,'b':200}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
