@@ -462,6 +462,12 @@ when you want format float  you can do like this
     and when you wanna read the json data to Python Data Structure
     listInPython = json.loads(jsondata)
 
+    when you in a python file
+    when there are more than one function
+    which one is the main or how you can specific invoke which function?
+    
+    if __main__ == "__main__":
+        # now choose which one you need perform first
 
 
 
