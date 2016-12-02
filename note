@@ -445,7 +445,22 @@ when you want format float  you can do like this
 
 
 
+2016-12-02 08:00
+    5.2 Build a Data Structure from a file
 
+    reread portfolio.csv as a list
+    maybe as a list of tuple
+    and when in the for loop you need unpacking the tuple
+    but what if where's 25 variables in a tuple
+    so you need to reread the data as a list of dictionary
+
+    when you need communication to another language maybe the data structure
+    will be json. and Python built-in a module called json
+    import json
+    jsondata = json.dumps(listInPython)
+    now you get the json data
+    and when you wanna read the json data to Python Data Structure
+    listInPython = json.loads(jsondata)
 
 
 
