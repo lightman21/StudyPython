@@ -466,8 +466,19 @@ when you want format float  you can do like this
     when there are more than one function
     which one is the main or how you can specific invoke which function?
     
-    if __main__ == "__main__":
+    # like Java's main() method ?
+    if __name__ == "__main__":
         # now choose which one you need perform first
+
+2016-12-03 09:00
+    5.3 Data Manipulation
+
+    introduce the usage of there base on the protfolio.csv data
+    comprehension for loop
+    zip()
+    sum()
+    set()
+
 
 
 
