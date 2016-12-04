@@ -1,11 +1,5 @@
 
 
-
-
-
-
-
-
 this is first txt I input through emacs.exciting.
 2016-11-22 07:40
 https://www.safaribooksonline.com/library/view/python-programming-language/9780134217314/PYMC_01_03.html
@@ -558,5 +552,139 @@ b'95.14\n160.02\n31.34\n29.04\n59.25\n'
 >>>
 
 bytes to list call bytes's split() function
+
+
+  2016-12-04 11:20
+   5.4 Example:Sorting and Grouping
+    how to sort the list of dictionary
+    introduce Python lambda
+    built-in function min() max()
+
+Material: you have a list of dictionary like
+
+   tlist = 
+[
+   {'date': '2007-06-11', 'price': '32.20', 'name': 'AA', 'shares': '100'},
+   {'date': '2007-05-23', 'price': '91.10', 'name': 'IBM', 'shares': '50'},
+   {'date': '2006-09-23', 'price': '83.44', 'name': 'CAT', 'shares': '150'},
+   {'date': '2007-05-17', 'price': '51.23', 'name': 'MSFT', 'shares': '200'},
+   {'date': '2006-02-01', 'price': '40.37', 'name': 'GE', 'shares': '95'},
+   {'date': '2006-10-31', 'price': '65.10', 'name': 'MSFT', 'shares': '50'},
+   {'date': '2006-07-09', 'price': '70.44', 'name': 'IBM', 'shares': '100'}
+]
+
+TODO:
+   how to write a list of dictionry to a file
+
+# you wanna to sort that data by any key of the dictionary
+sort by name
+sort by price
+
+def holding_name(holding):
+   return holding['name']
+
+and also introduce Python's lambda to simpilify the simple function
+a = lambda x : 10 * x
+a(10)
+b = lambda x,y : x + y
+b(2,3)
+
+portfolio.sort(key = lambda holding : holding['shares'])
+
+min(portfolio,key = lambda holding : holding['price'])
+
+max(portfolio,key = lambda holding : holding['name'])
+
+group data
+
+import itertools
+
+for name,items in itertools.groupby(portfolio, key = lambda holding : holding['name']):
+   print('NAME',name)
+       for it in items:
+           print('     ',it)
+
+by_name = { name: list(items)
+           for name, items in itertools.groupby(portfolio, key = lambda holding : holding['name'])}
+
+#give me the enties of IBM
+by_name('IBM')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
