@@ -612,13 +612,74 @@ by_name('IBM')
 
 
 
+  2016-12-05 22:48 
+    6.1 Module Basic
 
+    when you want use some function in others.you need to import it.
+    like import cvs.
+    the way you load it and run it is import.
+    by doing so in Python Interceptor env
+    import csv
+    csv
+    #now you will see the detail of csv module
+    mdule 'csv' from '/usr/local/Cellar/python/2.7.12_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/csv.pyc'>
+    
+   when Python execute where Python will find the code?
+   import sys
+   sys.path
 
+   when you import a module,Python will cache it,which means
+    
+    #imagine there is a module called simple
 
+   '''
+   this is a simple file called simple.py used to illustrate module import sth
+   # simple.py start
 
+    x = 42
 
+    def spam():
+        print('x is ',x)
 
+    def run():
+        print('Calling spam')
+        spam()
 
+    print('Running')
+    run()
+
+    #Pretty like Java's main() method
+
+    if __name__ == 'main__':
+        run()
+
+   # simple.py end
+   '''
+
+    from simple import run
+    
+    when you does like: import module
+    Python will cache the module 
+    which means when you rerun import module
+    something not happend like you just first import it
+    but you also can delete your import by:
+    del sys.modules['what_your_module_name']
+    and then when you reimport by
+    import xxx 
+    things gonna happen again
+
+    when you use library which means you use import a module
+    like Java's main() method  Python has an entry point
+    you can use it to specify what you wanna go first
+    through:
+    if __name__ == '__main__':
+        # call your function here
+
+    and when your .py file doesn't specify the __name__ 
+    default your __name__ is your file name.
+    for example when you are in terminal and you just type
+    Python myfile.py
+    when Python execute your myfile.py,the __name__ is  myfile
 
 
 
