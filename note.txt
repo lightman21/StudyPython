@@ -712,3 +712,6 @@ python http://www.safarabooksonline.com
 {u'javascript-frameworks': [u'Prototype', u'RequireJS', u'jQuery'], u'web-frameworks': [u'Django'], u'programming-languages': [u'Python'], u'web-servers': [u'Nginx']}
 
 
+to find who owns a websit we can use the WHOIS protocal to see who is the registered owner
+of the domain name. there is a Python module wrapper to this,which can be installed via pip
+#   pip install python-whois
