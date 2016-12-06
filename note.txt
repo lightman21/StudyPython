@@ -32,8 +32,8 @@ second = sys.argv[2]
 
 也可以判断sys.argv的长度.通过
 if len(sys.argv) != 3 :
-raise System.Exit('Something you wanna say)
-
+    raise SystemExit('Usage: nextbus.py rote stopid')
+    
 注意这里的System.Exit()是退出程序的和Java的System.exit()差不多
 
 在执行python程序的时候有一个很有用的选项 -i
@@ -681,71 +681,34 @@ by_name('IBM')
     Python myfile.py
     when Python execute your myfile.py,the __name__ is  myfile
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+2016-12-06 21:24
+may be I should change my study method
+do first and then search when encounter question
+
+there is a module called buildwith. can tell you 
+identify technology the site you wanna scrapting used.
+you can install it through pip
+# pip install buildwith
+
+import builtwith
+import sys
+
+#! /usr/bin/env python3
+
+def analysic(url):
+   data = builtwith.parse(url)
+   print(data)
+
+if __name__ == '__main__':
+    if len(sys.argv) == 2 and sys.argv[1].startswith('http'):
+        url = sys.argv[1]
+        print url,'used technicals:'
+        analysic(url)
+    else:
+        raise SystemExit('you need pass url or url must startswith http')
+
+python http://www.safarabooksonline.com
+
+{u'javascript-frameworks': [u'Prototype', u'RequireJS', u'jQuery'], u'web-frameworks': [u'Django'], u'programming-languages': [u'Python'], u'web-servers': [u'Nginx']}
 
 
