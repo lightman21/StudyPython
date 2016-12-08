@@ -717,11 +717,13 @@ of the domain name. there is a Python module wrapper to this,which can be instal
 #   pip install python-whois
 
 
-
 2016-12-07 17:24
     some times you scrapt a website it will denied you
     cause maybe your 'User-agent' is 'Python-urllib/2.7'
     so you should change the User-agent when you scrap a website
+
+    use itertools iterate the ID until encounter a error
+    
     
 
 
