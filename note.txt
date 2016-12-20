@@ -723,42 +723,23 @@ of the domain name. there is a Python module wrapper to this,which can be instal
     so you should change the User-agent when you scrap a website
 
     use itertools iterate the ID until encounter a error
-    
-    
 
+2016-12-21 00:01
+    sorry Python I'll give up never
+    when you import sth_module
+    you can find where your module actually exist through
+    import sys
+    sys.modules[what_your_module_name]
 
+>>> sys.modules['sys']
+<module 'sys' (built-in)>
+>>> import math
+>>> sys.modules['math']
+<module 'math' from '/usr/local/Cellar/python/2.7.12_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-dynload/math.so'>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    import xx_module will import whole things in xx_module
+    but what if you only want import some function in xx_module?
+    there's 'from' comss'. you can achieve like:
+        from xx_module import greeting
+    now you only import greeting function
 
