@@ -743,3 +743,40 @@ of the domain name. there is a Python module wrapper to this,which can be instal
         from xx_module import greeting
     now you only import greeting function
 
+2016-12-22 21:40
+    6.2 Project: Write a General Purpose CSV Parsing Module
+
+    you can also pass some data type to your function through
+    if there is a function like read_csv
+
+    data = csv_reader.read_csv('data/portfolio.csv',[str,str,int,float],'warn')
+
+    def read_csv(filename,types,errors='warn'):
+        if errors not in {'warn','slient','raise'}:
+            raise ValueError("errors must be one of 'warn','slient','raise'")
+    
+        records = []    # List of records
+        with open(filename,'r') as f:
+            rows = csv.reader(f)
+            headers = next(rows)    #skip the header row
+            for rowno, row in enumerate(rows, start=1):
+                try:
+                    row = [ func(val) for func, val in zip(types, row) ]
+                except ValueError as err:
+                    if errors == 'warn':
+                       print('Row:',rowno,'Bad row:',row)
+                    elif errors == 'raise':
+                        raise   #Raises the last exception
+                    else:
+                        pass    #Ignore
+                    continue
+                record = dict(zip(headers,row))
+                records.append(record)
+    
+            return records
+    
+
+
+
+
+
