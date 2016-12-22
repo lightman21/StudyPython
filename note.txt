@@ -1,5 +1,4 @@
 
-
 this is first txt I input through emacs.exciting.
 2016-11-22 07:40
 https://www.safaribooksonline.com/library/view/python-programming-language/9780134217314/PYMC_01_03.html
@@ -54,10 +53,7 @@ pdb.pm()
 print(some)
 
     or you can get the program list just type  list
-
     or you can single-step through the code just type  s
-
-
 
     2016-11-23 07:35
     2.1 Project: Mortgage Calculator
@@ -775,7 +771,8 @@ of the domain name. there is a Python module wrapper to this,which can be instal
     
             return records
     
-
+2016-12-22 22:50
+    6.3 introduce __init__.py for common init things
 
 
 
