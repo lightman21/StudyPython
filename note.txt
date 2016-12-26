@@ -1,4 +1,27 @@
 
+2016-12-26 22:01
+    8.1 Inheritance Concepts
+    Python support multiple inheritance
+    in Python if you wanna extends sth like Java does.you do like
+    Java:   class Child extends Parent
+    Python: class Child(Parent)
+    evenmore Python support multiple inheritance which Java don't
+    class Child (Parent0,Parent1)
+
+    and in Java the if the child method wanna call super
+    the super must goes first like
+    public void perform()
+    {
+        super.perform()
+        //child do sth
+    }
+    but in Python you should'n
+    def perform():
+        //child do th
+        super().perform()
+
+
+
 this is first txt I input through emacs.exciting.
 2016-11-22 07:40
 https://www.safaribooksonline.com/library/view/python-programming-language/9780134217314/PYMC_01_03.html
@@ -773,6 +796,142 @@ of the domain name. there is a Python module wrapper to this,which can be instal
     
 2016-12-22 22:50
     6.3 introduce __init__.py for common init things
+    code in __init__,py will load once just like Java's static block
+
+    # Lifting symbols from submodules up a level
+    from .port import read_portfolio
+    from .reader import read_csv
+
+    when you put some py file together and you wanna use a module
+    then you will import it like this
+    import portie.reader
+    but how about some others module name as same as yours?
+    how python known which one to import?
+    that Package-relative import comes
+    you can import like this
+    from . import reader
+    now you don't need to hardcode the module name and python knows which one to import
+
+
+2016-12-23 22:28
+    Lesson 7 Classes and Objects
+    7.1 Introduction: from Simple Data Structures to Classes
+    use Class to orgnized some functions
+    a little like Java's Constructor
+    and Java's this --> Python-->self
+    Java's Constroctor --> Python --> __init__
+
+    every Python function's first argument must be self  ?
+
+    Class Holding(object):
+        def __init__(self,name,date,shares,price):
+            self.name = name
+            self.date = date
+            self.shares = shares
+            self.price = price
+
+    Python doesn't have the new operator like Java
+    when you wanna a Object just create it like this
+
+    m_instance = Holding('tang','1988-02-01',100,28.9)
+
+    Note that the Holding Object's __init__function has 5 arguments.
+    but when you really create a Holding instance 
+    you must ignore the first argument self
+
+
+2016-12-24 20:18
+    7.2 Understanding Arribute Access
+    how to print something but has not newline
+    print('hello world')
+    don't new a line
+    print('hello world',end='')
+
+    three build-in function getattr and setattr and del
+
+class Port(object):
+    def __init__(self,name,date,shares,price):
+        self.name = name
+        self.date = date
+        self.shares = shares
+        self.price = price
+
+then you create a instance like 
+    p0 = Port('tang','1988-02-01',100,25.5)
+you can get the attr through getattr like
+    p0.date
+    or
+    getattr(p0,'date')
+note that the getattr's second argument must be a string 
+and the value is the attribute what you want
+
+you can reset attribute use setattr like
+    setattr(p0,'name','hao')
+
+and you can even del the attribute you want like
+    del(p0.name)
+    notice the syntax is  del(instance.attribute)
+    not not not the string value of the attribute's name like
+    del('tanghao')
+    del() function works to removal an object's attribute
+
+    by using the getattr and setattr function you can write more general function like
+    maybe a little like Java's reflection
+    
+# table 2016-12-24 study attribute
+
+#! /usr/bin/env python3
+
+def print_table(objects,colnames):
+    for colname in colnames:
+        print('{:>10s}'.format(colname), end='')
+    print()
+    for obj in objects:
+        for colname in colnames:
+            print('{:>10s}'.format(str(getattr(obj,colname))),end='')
+        print()
+
+2016-12-25 22:08
+    7.3 Advanced: Class Methods and Alternate Constructors
+    introduce built-in module time
+    getCurrentTime like
+    import time
+    t = time.localtime()
+    int year = t.tm_year
+    int month = t.tm_mon
+    int day = t.tm_mday
+
+    now Imagine you have a Date class like :
+    class Date(object):
+        def __init__(self,year,month,day):
+            self.year = year
+            self.month = month
+            self.day = day
+
+        @classmethod
+        def from_string(cls,s): #cls is "Date"
+            p = s.split('-')
+            return cls(int(p[0],p[1],p[2])
+
+        @classmethod
+        def today(cls):
+            import time
+            t = time.localtime()
+            return cls(t.tm_year,t.tm_mon,t.tm_mday)
+
+        @staticmethod;
+
+    when you wanna create a Date Object you can
+    # note that this is a little like Java's static method
+    # but you don't need pass ClassName and just a string
+    mdate = Date.from_string('2016-12-25')
+
+
+
+
+
+
+
 
 
 
