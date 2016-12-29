@@ -26,10 +26,13 @@ class Child(Parent):
 
     pass
 
-class Child2(object):
+class Child2(Parent,object):
     def __init__(self,value,extra):
-        # super(self).__init__(value)
         self.extra = extra
+
+    def grok(self):
+        print ('just print super ',super)
+        print ('Multiple Inheritance  child.grok')
 
 
 

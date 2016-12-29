@@ -20,6 +20,21 @@
         //child do th
         super().perform()
 
+    what does this shit error mean?
+
+2016-12-27 22:10
+    8.2 Inheritance In Practice: Building a extensible Library
+
+    also use the portfolio.csv data
+    the question is format the output
+    what about html format or csv format?
+
+    move all the hardcoded things into a class
+    and extract two method one handle headers and another handle remaining.
+    different subclass rewrite the two method in Parent.
+    maybe HTMLFormatter maybe CSVFormater
+
+
 
 
 this is first txt I input through emacs.exciting.
@@ -927,7 +942,56 @@ def print_table(objects,colnames):
     mdate = Date.from_string('2016-12-25')
 
 
+2016-12-29 21:44
+    8.6 Advanced: How Inheritance Actually Works
+    how to use abstract method in Python
 
+    like Java's abstract method used in practice.
+    in Python when you wanna force subclass to to sth you also can use abstract method
+
+    first you need import ABC from the build-in module abc
+    
+    '''
+    from abc import ABC , abstractmethod
+
+    class TableFormatter(ABC):
+        def __init__(self,outfile=None):
+            if  outfile == None:
+                outfile = sys.stdout
+            self.outfile = outfile
+
+        @abstractmethod 
+        def headings(self,headers):
+            pass
+
+        @abstractmethod
+        def row(self,rowdata):
+            pass
+
+    '''
+
+    Now you know Python support multiple inheritance
+    and when you wanna know what is the Class B 's parent
+    '''
+    class Parent(object):
+        pass
+
+    class A(Parent):
+        pass
+
+    class B(Parent,A):
+        pass
+    '''
+
+    if you wanna know B's inheritance hierarchy you just
+    B.__mro__
+    the output:
+(<class '__main__.B'>, <class '__main__.A'>, <class '__main__.Parent'>, <class 'object'>)       
+    
+Note that B must the Class name of class B. and the __mro__ is just the attribute not method.
+it's  ClassName.__mro__
+the output's order is just the Class inheritance order.
+in practice,you call super() in class B ,the super() goes as the order the .__mro__ showed
 
 
 
