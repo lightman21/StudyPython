@@ -693,7 +693,7 @@ by_name('IBM')
     when you does like: import module
     Python will cache the module 
     which means when you rerun import module
-    something not happend like you just first import it
+    sth not happend like you just first import it
     but you also can delete your import by:
     del sys.modules['what_your_module_name']
     and then when you reimport by
@@ -855,7 +855,7 @@ of the domain name. there is a Python module wrapper to this,which can be instal
 
 2016-12-24 20:18
     7.2 Understanding Arribute Access
-    how to print something but has not newline
+    how to print sth but has not newline
     print('hello world')
     don't new a line
     print('hello world',end='')
@@ -1029,35 +1029,78 @@ in practice,you call super() in class B ,the super() goes as the order the .__mr
 
     now I haven't know what is the different between the str() and repr() method.
     but I just remember the output and
-    when you call print(something)
-    print will call something's str() method under the hood
-    and when you call the repr(something) in something
-    the output is in something'class your __repr__ method return
+    when you call print(sth)
+    print will call sth's str() method under the hood
+    and when you call the repr(sth) in sth
+    the output is in sth'class your __repr__ method return
 
 
+2016-12-31 22:22
+    9.3 
+    introduce some way that people usually do Python programming like
+    @see ch9 Port.py
+    __getitem__     __iter__   
+    
+2017-01-01 21:30
+    9.4 Making a Custom Context Manager
+    things about Resource management
+    usually,you open sth you close sth
+    you acquire sth you release sth
+    use with you can save your life a little
+    '''
+        f = open (filename,'r')
+        data = f.read()
+        f.close()
 
+        import threading
+        lock = threading.Lock()
+        lock.acquire()
+        //do sth
+        locl.release()
+
+        this is the kind of a situation in which with shines
+
+        with open (filename,'r') as f:
+            //do sth and don't worry about close with will help you close it
+
+        lock = threading.Lock()
+        with lock:
+            //do sth and don't need to mannual release lock with will do it for you
+
+    '''
+
+
+    '''
+    class Manager(object):
+        def __enter__(self):
+            print('Entering')
+            return 'some value'
+
+        def __exit__(self,ty,val,tb):
+            print('Exiting')
+            print(ty,val,tb)
+
+
+    //and this is how you can use it, in Python interactive env
+    m = Manager()
+    >>> with m :
+    >>>     print('Hello World')
+    >>>
+    >>> Entering
+    >>> Hello World
+    >>> Exiting
+    >>> None None None
+    
+	>>> with m as val:
+	>>>     print('val =',val)
+	>>>
+	>>> Entering
+	>>> val = some value
+	>>> Exiting
+	>>> None None None
+	>>>        
+
+    '''
 
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
