@@ -1102,5 +1102,42 @@ in practice,you call super() in class B ,the super() goes as the order the .__mr
 
     '''
 
+2017-01-02 22:48
+    10.1 Instance Representation, Attribute Access and Naming Convertions
+    now Image you have a class like this
+
     
+    ```
+   class Holding(object):
+       def __init__(self,name,date,shares,price):
+           self.name = name
+           self.date = date
+           self.shares = shares
+           self.price = price
+
+       def __repr__(self):
+           return 'Holding ({!r},{!r},{!r},{!r})'.format(self.name,self.date,self.shares,self.price)
+
+       def __str__(self):
+           return '{} shares of {} at ${:0.2f}'.format(self.shares,self.name,self.price)
+
+       pass
+
+    ```
+    Now you init a instance like
+    h = Holding('tanghao','1988-02-01',100,32.2)
+    print(h.__dict__)
+    the output is : 
+{'name': 'tanghao', 'shares': 100, 'date': '1988-02-01', 'price': 32.2}
+
+    but where is the methods?
+    the methods are in the class's __dict__
+    which means you should type  Holding.__dict__ to see them
+    print(Holding.__dict__)
+    the output is: 
+{'__weakref__': <attribute '__weakref__' of 'Holding' objects>, '__module__': '__main__', '__doc__': None, '__init__': <function Holding.__init__ at 0x107e3d0d0>, '__dict__': <attribute '__dict__' of 'Holding' objects>, '__str__': <function Holding.__str__ at 0x107e3d1e0>, '__repr__': <function Holding.__repr__ at 0x107e3d158>}
+
+    now you can see all of your typed methods
+
+
 
