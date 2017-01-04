@@ -1139,6 +1139,12 @@ in practice,you call super() in class B ,the super() goes as the order the .__mr
 
     now you can see all of your typed methods
 
+    h = Holding('tanghao','1988-02-01',100,32.2)
+    print(h.__dict__)
+    {'name': 'tanghao', 'shares': 100, 'date': '1988-02-01', 'price': 32.2}
+    when you access an attribute like h.name
+    you essentially access this
+    __dict__['name']
 
 
     2017-01-03 18:05
@@ -1183,7 +1189,45 @@ class Holding(object):
 
 '''
 
+2017-01-04 21:22
+    10.3 Managed Attributes with Descriptors2017-01-04 21:22
+    when you access an attribute like
+    h = Holding('tang','1988-02-01',100,29.5)
+    h.shares
+    what happened is Python will first find the class
+    h.__class__
+    <class '__main__.Holding'>
+    h.__class__.__dict__['shares']
+    <property object at 0x10bb82908>
+    p
+    pthon then will ask have you have the
+    hasattr(p,'__get__')
+    True
+    p.__get__(h)
+    100
 
+    which means all of your access attribute through the dot
+    is essentially use __get__ or  __set__ method inner.
+    and you can do some checking or other in it
 
+'''
+class Typed(object):
+    expected_type = object
+    def __init__(self,name):
+        self.name = name
 
+    def __get__(self,instance,cls):
+        self.name = name
 
+    def __set__(self,instance,value):
+        if not isinstance(value,self.expected_type):
+            raise TypeError('Excepted {}'.format(self.expected_type))
+        instance.__dict__[self.name] = value
+
+class RInteger(Typed):
+    expected_type = int
+
+class RFloat(Typed):
+    expected_type = float
+
+'''
