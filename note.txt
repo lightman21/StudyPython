@@ -1231,3 +1231,47 @@ class RFloat(Typed):
     expected_type = float
 
 '''
+
+
+2017-01-05 23:22
+    10.4 Object Wrappers and Proxies
+    when you access an attribute from an object through the dot syntax.
+    like h = Holding('tang','1988-02-01',100,23,5)
+    h.name
+    what this actually do inner is 
+    h.__getattribute__('name')
+
+    and there is an useful method which is only called when you
+    access an attribute that didn't exist .
+    def __getattr__(self,name):
+        #Failsafe. Only called for missing attributes
+
+    and there is a counterpart of the __getattr__ method __setattr__
+    which means when you call h.name = 100
+    it as same as  h.__setattr__('name',100)
+
+    and now use the inner __getattr__ and __setattr__ and __getattribute__methods
+    you can do a lot of interesting things.
+    1.limitation the write right of an object
+    2.also limitation the read right of an object
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
