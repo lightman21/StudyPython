@@ -1256,22 +1256,46 @@ class RFloat(Typed):
     2.also limitation the read right of an object
 
 
-    
 
+2017-01-06 22:06
+    11.1 Functions as Object
+    in Python,the function is an Object. which means you can pass it around like
+    a normal variable, you can store it in variables also.
+    you can also pass function as a parameter in another function like
+    ```
+    def hello():
+        print('hello world')
 
+    import time
 
+    def after(seconds, func):
+        time.sleep(seconds)
+        func()
 
+    ```
+    after(5,hello)
+    and then after 5 seconds the hello function fired.
 
+    names = ['dave', 'Thomas', 'Lewis', 'paula']
+    names.sort(key=lambda name : name.upper())
 
+    a = lambda x : 10 * x
+    a(10)
 
+    def add(x,y):
+        def do_add():
+            print('Adding {} + {} -> {}'.format(x,y,x+y)
+            return x+y
 
+        return do_add
 
+    if you define an inner function.you get something known as a closure.
+    An essential feature of a closure is that it will capture the variables that
+    are needed.
 
-
-
-
-
-
+    this idea of defining functions,carrying along information.
+    package up some work,to run at some point in the future.
+    and it's actually really important that you capture the environment.
 
 
 
