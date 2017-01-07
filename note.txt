@@ -1298,4 +1298,33 @@ class RFloat(Typed):
     and it's actually really important that you capture the environment.
 
 
+2017-01-07 22:00
+    10.2 Generating Code with Closures
+    ``` 
+    def typed_property(name,expected_type):
+        private_name = '_' + name
+
+        @property
+        def prop(self):
+            return getattr(self,private_name)
+
+        @prop.setter
+        def prop(self,value):
+            if not isinstance(value,excepted_type):
+                raise TypeError('Excepted {}'.format(
+                excepted_type))
+            setattr(self,private_name,value)
+
+        return prop
+
+Integer = lambda name: typed_property(name,int)
+Float = lambda name: typed_property(name,float)
+Strint = lambda name: typed_property(name,str)
+
+    class Holding(object):
+        shares = typed_property('shares',int)
+        price = typed_property('price',int)
+        name = String('name')
+        price = Float('price')
+    ``` 
 
