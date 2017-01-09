@@ -1328,3 +1328,23 @@ Strint = lambda name: typed_property(name,str)
         price = Float('price')
     ``` 
 
+
+2017-01-08 21:30
+    12 Metaprogramming and Decorator
+    however another technic is to encapsulate common code-oriented tasks
+    into a decorator.
+    12.1 Background: Function Argument Passing and Calling Conventions
+    the star * in function defination means take of extra positional arguments.
+    ```
+    def func(x,**kwargs):
+        print(x)
+        print(kwargs)
+
+    # func(1, xmin=10, xmax=20, color='red')
+    # the output is
+    # 1
+    #{'xmax':20, 'xmin':10, 'color': 'red'}
+    ```
+
+    one of the places where this comes into play is in writing what is
+    known as a wrapper function,sometimes.
