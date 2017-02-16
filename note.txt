@@ -1,4 +1,7 @@
 
+True_result if condition else False_result
+
+
 2016-12-26 22:01
     8.1 Inheritance Concepts
     Python support multiple inheritance
