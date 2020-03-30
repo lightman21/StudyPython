@@ -18,9 +18,13 @@ path_of_merge = '/tmp/thtest/OnMobile-Android/app/build/intermediates/incrementa
 
 
 def remove_namespace(xml_line_list):
+    """
+    去除文件中的namespace相关 否则CDATA异常
+    :param xml_line_list:
+    :return:
+    """
     lines = []
     ns = ''
-
     for line in xml_line_list:
         if line.__contains__('xmlns'):
             ns = line.split('=')[0].split(":")[1] + ':'
@@ -65,7 +69,6 @@ def extra_merged_xml(merged_path, out_path="./th_tanhao.xml"):
                         txt = html.unescape(html_str)
                         value = txt
                     else:
-                        print("shit key ", key)
                         value = ''
 
                 if kce_value == 'cn':

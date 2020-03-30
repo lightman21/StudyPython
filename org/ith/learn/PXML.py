@@ -6,7 +6,6 @@ import xml.dom.minidom
 
 import sys
 
-import lxml
 from lxml import etree
 import html
 from org.ith.learn.TUtils import KCEBean, XmlStdin
@@ -27,7 +26,6 @@ def parse_string_as_kce(path_of_string, kce_value='cn'):
     有命名空间的不行  CDATA不是None
     <resources xmlns:ns1="http://schemas.android.com/tools">
     """
-
     with open(path_of_string, 'r') as fobj:
         bxml = fobj.read()
         bxml = bytes(bxml, encoding='utf-8')
@@ -41,28 +39,29 @@ def parse_string_as_kce(path_of_string, kce_value='cn'):
         for item in root:
             key = item.get("name")
             value = item.text
-
             # 特殊处理CDATA的情况
             if value is None:
                 ss = etree.tostring(item)
                 ss = str(ss, encoding='utf-8')
-                start = ss.index('>') + 1
-                end = ss.index('</string>')
-                html_str = ss[start:end]
-                txt = html.unescape(html_str)
-                value = txt
+                if ss.__contains__('>') and ss.__contains__('</string>'):
+                    start = ss.index('>') + 1
+                    end = ss.index('</string>')
+                    html_str = ss[start:end]
+                    txt = html.unescape(html_str)
+                    value = txt
+                else:
+                    value = ''
 
             if kce_value == 'cn':
                 kce = KCEBean(key, cn=value, en='')
             else:
                 kce = KCEBean(key, cn='', en=value)
 
-            print("{:<50s}".format(key), '\t', value)
-
+            # print("{:<50s}".format(key), '\t', value)
             list_kce.append(kce)
 
     except ValueError as e:
-        print(key, e)
+        # print(key, e)
         raise
 
     return list_kce
@@ -72,13 +71,11 @@ def write_kce_to_path(list_of_kce, path, sort=True):
     impl = xml.dom.minidom.getDOMImplementation()
     dom = impl.createDocument(None, 'resources', None)
     resources_root = dom.documentElement
-
     try:
         for kce in list_of_kce:
             string_node = dom.createElement('string')
             string_node.setAttribute("name", str(kce.key))
             value = dom.createTextNode(str(kce.cn))
-
             string_node.appendChild(value)
             resources_root.appendChild(string_node)
 
@@ -98,23 +95,17 @@ def write_kce_to_path(list_of_kce, path, sort=True):
             return
 
         lines = list()
-
         with open(path, 'r') as f:
             for line in f:
                 lines.append(line)
-
         lines = sorted(lines)
-
         last = lines[len(lines) - 2:]
         lines.insert(0, last[0])
         lines.insert(1, last[1])
-
         lines = lines[:- 2]
-
         outer = ''
         for line in lines:
             outer += line
-
         with open(path, 'w') as f:
             f.write(outer)
 
