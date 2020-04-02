@@ -1,20 +1,21 @@
 # !/usr/bin/python
 # -*- coding: UTF-8 -*-
-import os
-from xml.dom.minidom import parse
-import xml.dom.minidom
 
-import sys
-from lxml import etree
 import html
+import sys
+
+from lxml import etree
 
 from org.ith.learn.PXML import write_kce_to_path
-from org.ith.learn.TUtils import KCEBean, XmlStdin
+from org.ith.learn.TUtils import KCEBean
 
 # path_of_merge = '../../../docs/merge/merge_bk.xml'
+"""
+/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/app/build/intermediates/incremental/mergeOfficialEnvGrdResources/merged.dir
+"""
 
-path_of_merge = '/tmp/thtest/OnMobile-Android/app/build/intermediates/incremental/mergeOfficialEnvCiTestResources' \
-                '/merged.dir/values/values.xml'
+path_of_merge = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/app/build/intermediates/incremental' \
+                '/mergeOfficialEnvGrdResources/merged.dir/values/values.xml'
 
 
 def remove_namespace(xml_line_list):
@@ -38,8 +39,8 @@ def remove_namespace(xml_line_list):
     return ''.join(lines).replace(ns, '')
 
 
-def extra_merged_xml(merged_path, out_path="./th_tanhao.xml"):
-    with open(path_of_merge, 'r') as fobj:
+def extra_merged_xml(merged_path, out_path="./th_tanghao.xml"):
+    with open(merged_path, 'r') as fobj:
         xml_str = remove_namespace(fobj.readlines())
         bxml = bytes(xml_str, encoding='utf-8')
         parser = etree.XMLParser(strip_cdata=False)

@@ -1,8 +1,7 @@
 import os
 
-import colored as colored
-
 from org.ith.learn.PXML import parse_string_as_kce, write_kce_to_path
+from org.ith.learn.TUtils import exec_cmd, is_chinese
 
 
 def write_demo():
@@ -61,11 +60,9 @@ def find_not_match(path_of_module):
     :param path_of_module:     module_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/Dinner'
     :return:
     """
-
     for dir_path_name, dirs, files in os.walk(path_of_module):
         res_dir = '/src/main/res'
         ll = get_module_path(dir_path_name)
-        # print("dir_path_name", dir_path_name, "ll " + str(ll))
         if ll is not None:
             for l in ll:
                 name = (l + res_dir)
@@ -73,36 +70,62 @@ def find_not_match(path_of_module):
                 list_res_values(name)
 
 
-def highlight(str_line):
-    CRED = '\033[93m'
-    CEND = '\033[0m'
-    return '{} {} {}'.format(CRED, str_line, CEND)
-
-
-def list_res_values(path):
-    for dir_path_name, dirs, files in os.walk(path):
+def list_res_values(m_path):
+    list_of_res = []
+    for dir_path_name, dirs, files in os.walk(m_path):
         if dir_path_name.__contains__('values'):
-            base = dir_path_name.split("/")[-1]
             for file in files:
                 if file.__contains__('strings'):
                     full_name = dir_path_name + '/' + file
-                    p_list = parse_string_as_kce(full_name)
+                    list_of_res.append(full_name)
+                    # print(full_name, highlight("\tkce size "), len(p_list))
+    return list_of_res
 
-                    print(full_name, highlight("\tkce size "), len(p_list))
-    print()
+
+def get_module_properties(m_path):
+    """
+    获取module的gradle.properties
+    gradle.properties', 'gradlew.bat', 'settings.gradle
+    """
+    for dir_path_name, dirs, files in os.walk(m_path):
+        if 'settings.gradle' in files and 'gradle.properties' in files:
+            return dir_path_name + 'gradle.properties'
+
+
+def get_cur_branch():
+    ret = exec_cmd("git branch | grep \\* | awk '{print$2}'")
+    return ret.strip()
 
 
 def get_module_path(path):
-    root_dir = ''
     settings = 'settings.gradle'
     module_dirs = []
-    for dir_path_name, dirs, files in os.walk(path):
+
+    remote = 'remotes/origin/develop'
+    dest_local = 'develop'
+    result = exec_cmd("git branch -a")
+    cmd_switch = "git branch -b develop " + remote
+    cmd_pull = 'git pull -r'
+
+    for dir_path, dirs, files in os.walk(path):
+
         if settings in files:
-            root_dir = dir_path_name
+            root_dir = dir_path
+            os.chdir(root_dir)
+
+            # 如果远端有develop 本地没有
+            if result.__contains__(remote):
+                #   判断当前是否为develop
+                cur = get_cur_branch()
+                if cur.strip() != dest_local:
+                    exec_cmd(cmd_switch)
+
+                exec_cmd(cmd_pull)
+
             # 读取settings.gradle文件获取需要的module
             with open(root_dir + os.sep + settings, 'r') as sg:
+                # print("get_module_path", "path is ", root_dir + os.sep)
                 modules = sg.readlines()
-                print(''.join(modules))
                 for m in modules:
                     if m.__contains__('include') and not m.__contains__('//'):
                         file = m.split(':')[1].split('\'')[0]
@@ -110,41 +133,97 @@ def get_module_path(path):
                 return module_dirs
 
 
-import requests
-import json
+def clean_module(path_of_module):
+    os.chdir(path_of_module)
+
+    if get_cur_branch() != 'develop':
+        exec_cmd("git checkout develop")
+
+    exec_cmd("git pull -r")
+    exec_cmd("git branch -D i18n")
+    exec_cmd("git checkout -b i18n")
+
+    main_res = 'res/values/strings.xml'
+    list_of_values = list_res_values(path_of_module)
+    biggest = []
+    keys = []
+    all_kv_dict = []
+
+    main_res_path = ''
+
+    for item in list_of_values:
+
+        if main_res in item:
+            main_res_path = item
+
+        p_list = parse_string_as_kce(item)
+
+        for p in p_list:
+
+            all_kv_dict.append(p)
+
+            # 生成包含所有key的biggest
+            if p.key not in keys:
+                biggest.append(p)
+                keys.append(p.key)
+
+    # 确保biggest里的kv v是中文
+    for b in biggest:
+        if not is_chinese(b.cn):
+            for al in all_kv_dict:
+                if al.key == b.key and is_chinese(al.cn):
+                    b.cn = al.cn
+
+    # 把biggest.xml的内容写入main_res.
+    sorted(biggest)
+    write_kce_to_path(biggest, main_res_path)
+
+    # 修改properties版本号
+    modify_properties(path_of_module)
+
+    # 执行upload 即编译
+    build_module(path_of_module)
+
+    # 删除其他values
+    for other in list_of_values:
+        if not other.__contains__(main_res):
+            os.remove(other)
+
+    # commit
+    exec_cmd('git add .; git commit -m "remove values except default" ')
+
+    return main_res_path
 
 
-def gitlab():
-    body = {}
-    url = 'http://gitlab.shishike.com/groups/c_iphone/-/children.json?page=4'
-    headers = {
-        'Accept': "application/json, text/plain, */*",
-        'Accept-Encoding': "gzip, deflate",
-        'Accept-Language': "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
-        'Cache-Control': "no-cache",
-        'Connection': "keep-alive",
-        'Cookie': "sidebar_collapsed=false; __utmz=88038286.1580971726.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=("
-                  "none); __utma=88038286.1460782901.1580971726.1584367992.1585327915.11; "
-                  "remember_user_token"
-                  "=W1s4NjFdLCIkMmEkMTAkMHdtaEM0ckpDUDZjSk5rbFo5ZTFyTyIsIjE1ODU1Nzg1OTAuMjg3MDA3Il0%3D"
-                  "--973f22857312ff21d733523deafc897321268556; _gitlab_session=6c43f845a0e5db7606c204183e77f25d",
-        'Host': "gitlab.shishike.com",
-        'Pragma': "no-cache",
-        'Referer': "http://gitlab.shishike.com/c_iphone",
-        'User-Agent': "Mozilla/5.0 (Linux; Android 8.0; Pixel 2 Build/OPD3.170816.012) AppleWebKit/537.36 (KHTML, "
-                      "like Gecko) Chrome/80.0.3987.149 Mobile Safari/537.36",
-        'X-CSRF-Token': "7gQxJ/3DA2dPC4zwxasA/Tjfg2qPYrNudksvtQeTaoubc9aVvGpFKzMrEId9RpS3kMFV5NBK+vnL+H+sFxQdCA==",
-        'X-Requested-With': "XMLHttpRequest"
-    }
+def build_module(m_path):
+    os.chdir(m_path)
+    exec_cmd("./gradlew uploadArchives")
 
-    response = requests.get(url, data=json.dumps(body), headers=headers)
-    resp = (response.json())
-    print(len(resp))
-    res = os.system('ls -l')
-    print(type(res))
+
+def modify_properties(m_path='/tmp/tmp/Dinner/', v_code=12345, v_name="1.23.45"):
+    """
+    VERSION_NAME=2.25.50
+    VERSION_CODE=2025050
+    """
+    prop_path = get_module_properties(m_path)
+    print(prop_path)
+    with open(prop_path, 'r') as file:
+        origin_lines = file.readlines()
+        new_lines = []
+        for line in origin_lines:
+            tmp = line
+            if tmp.startswith('VERSION_NAME'):
+                tmp = "VERSION_NAME=" + str(v_name) + os.linesep
+            if tmp.startswith('VERSION_CODE'):
+                tmp = "VERSION_CODE=" + str(v_code) + os.linesep
+            new_lines.append(tmp)
+        with open(prop_path, 'w') as wf:
+            wf.writelines(new_lines)
+
+
+def main():
+    clean_module('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Dinner/')
 
 
 if __name__ == '__main__':
-    # module_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/'
-    # find_not_match(module_path)
-    gitlab()
+    main()

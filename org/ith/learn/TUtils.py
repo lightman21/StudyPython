@@ -1,4 +1,5 @@
 import html
+import os
 
 import xlrd
 import xlwt
@@ -34,23 +35,28 @@ def write_to_excel(to_write_list, path_of_excel):
     将list_of_kec 写到指定指定路径
     """
     workbook = xlwt.Workbook()
-    worksheet = workbook.add_sheet('sheet_of_kce')
+    worksheet = workbook.add_sheet('Android_i18n')
     worksheet.write(0, 0, "key")
-    worksheet.write(0, 1, "cn")
-    worksheet.write(0, 2, "en")
+    worksheet.write(0, 1, "中文")
+    worksheet.write(0, 2, "英文")
 
     for row, item in enumerate(to_write_list):
+
+        row += 1
+
         for column in range(3):
             key = item.key
             cn = item.cn
             en = item.en
-            row += 1
+
             if column == 0:
                 worksheet.write(row, column, key)
             elif column == 1:
                 worksheet.write(row, column, cn)
             else:
                 worksheet.write(row, column, en)
+
+            # row += 1
 
     workbook.save(path_of_excel)
 
@@ -103,3 +109,24 @@ def open_excel_as_list(file_path):
             list_kces.append(KCEBean(list_keys[i].value, list_china[i].value, list_english[i].value))
 
     return list_kces
+
+
+def highlight(str_line):
+    CRED = '\033[93m'
+    CEND = '\033[0m'
+    return '{} {} {}'.format(CRED, str_line, CEND)
+
+
+def exec_cmd(cmd):
+    r = os.popen(cmd)
+    text = r.read()
+    print("execute command:", highlight(cmd), "\nresult:\n", text)
+    r.close()
+    return text
+
+
+def is_chinese(word):
+    for ch in word:
+        if '\u4e00' <= ch <= '\u9fff':
+            return True
+    return False
