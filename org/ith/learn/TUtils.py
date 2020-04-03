@@ -117,10 +117,11 @@ def highlight(str_line):
     return '{} {} {}'.format(CRED, str_line, CEND)
 
 
-def exec_cmd(cmd):
-    r = os.popen(cmd)
+def exec_cmd(cmd_str, cmd_log=True):
+    r = os.popen(cmd_str)
     text = r.read()
-    print("execute command:", highlight(cmd), "\nresult:\n", text)
+    if cmd_log:
+        print("execute command:", highlight(cmd_str), "\nresult:\n", text)
     r.close()
     return text
 
