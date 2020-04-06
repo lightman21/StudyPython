@@ -39,7 +39,7 @@ def remove_namespace(xml_line_list):
     return ''.join(lines).replace(ns, '')
 
 
-def extra_merged_xml(merged_path, out_path="./th_tanghao.xml"):
+def extra_merged_xml(merged_path, out_path="./new_merged.xml"):
     with open(merged_path, 'r') as fobj:
         xml_str = remove_namespace(fobj.readlines())
         bxml = bytes(xml_str, encoding='utf-8')

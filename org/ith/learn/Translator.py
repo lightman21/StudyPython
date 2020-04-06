@@ -109,15 +109,12 @@ def curl_trans(str_input):
 
 
 if __name__ == '__main__':
+    with open('cn_xml.xml', 'r') as file:
+        trans = file.read()
+        trans = to_traditionalized(trans)
 
-    input_str = """
-    <string name="text_buy_redcloudpos_hint_2">If there is no equipment available,<Data><![CDATA[<a href="%1$s">go to buy]]></Data></string>
-        <string name="yanjuifei"><CDATA!!>作废成功,我在餐厅！！！内存条 方便面 什么软件  飞翔</string>')
-    """ * 99
-    print("---------------",len(input_str))
-    trans = to_traditionalized(input_str)
-    print(trans)
-    trans = to_simplized(trans)
-    print(trans)
-    trans = curl_trans(trans)
-    print(trans)
+        with open('./th_tw.xml', 'w') as th:
+            th.write(trans)
+
+        # trans = curl_trans(trans)
+        print(trans)

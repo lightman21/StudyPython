@@ -11,6 +11,8 @@ from org.ith.learn.TUtils import exec_cmd
 
 cmd_list = []
 
+dest_all_path = '/Users/lightman_mac/company/keruyun/all_gitlab_code'
+
 
 def main():
     proc = Process(target=loopUrl)
@@ -66,10 +68,9 @@ def gitlab(base_url='http://gitlab.shishike.com/groups/c_iphone/-/children.json?
 
 
 def execute_command(command):
-    os.chdir("/tmp/tmp/")
-    time.sleep(random.randint(0, 10))
+    os.chdir(dest_all_path)
+    time.sleep(random.randint(0, 20))
     ret = exec_cmd(command)
-    print(command, "ret:", ret)
 
 
 def loopUrl():

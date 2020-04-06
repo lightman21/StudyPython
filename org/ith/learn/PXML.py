@@ -67,7 +67,7 @@ def parse_string_as_kce(path_of_string, kce_value='cn'):
     return list_kce
 
 
-def write_kce_to_path(list_of_kce, path, sort=True):
+def write_kce_to_path(list_of_kce, path, sort=True, key='cn'):
     impl = xml.dom.minidom.getDOMImplementation()
     dom = impl.createDocument(None, 'resources', None)
     resources_root = dom.documentElement
@@ -75,7 +75,10 @@ def write_kce_to_path(list_of_kce, path, sort=True):
         for kce in list_of_kce:
             string_node = dom.createElement('string')
             string_node.setAttribute("name", str(kce.key))
-            value = dom.createTextNode(str(kce.cn))
+            str_key_value = str(kce.cn)
+            if key != 'cn':
+                str_key_value = str(kce.en)
+            value = dom.createTextNode(str_key_value)
             string_node.appendChild(value)
             resources_root.appendChild(string_node)
 

@@ -1,5 +1,9 @@
 # https://stackoverflow.com/questions/287871/how-to-print-colored-text-in-terminal-in-python
 
+import os
+import re
+import random
+
 CEND = '\33[0m'
 CBOLD = '\33[1m'
 CITALIC = '\33[3m'
@@ -43,3 +47,17 @@ CBLUEBG2 = '\33[104m'
 CVIOLETBG2 = '\33[105m'
 CBEIGEBG2 = '\33[106m'
 CWHITEBG2 = '\33[107m'
+
+COLS = [CURL, CBEIGE2, CRED2, CBLUE, CGREEN, CYELLOW]
+
+if __name__ == '__main__':
+    CEND = '\033[0m'
+    str_line = "hello world"
+
+    import datetime
+    time_stamp = '{0:%Y-%m-%d-%H-%M}'.format(datetime.datetime.now())
+    print(time_stamp)
+
+    for t in range(len(COLS)):
+        show = '{} {} {}'.format(random.choice(COLS), str_line, CEND)
+        print(show)

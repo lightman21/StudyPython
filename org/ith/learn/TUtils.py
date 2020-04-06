@@ -1,8 +1,12 @@
 import html
 import os
+import time
 
 import xlrd
 import xlwt
+
+from org.ith.learn.Colored import COLS
+import random
 
 
 class KCEBean:
@@ -111,9 +115,14 @@ def open_excel_as_list(file_path):
     return list_kces
 
 
-def highlight(str_line):
+def highlight(str_line, index=-1):
     CRED = '\033[93m'
     CEND = '\033[0m'
+    if 0 <= index < len(COLS):
+        CRED = COLS[index]
+    else:
+        CRED = random.choice(COLS)
+
     return '{} {} {}'.format(CRED, str_line, CEND)
 
 
@@ -124,6 +133,18 @@ def exec_cmd(cmd_str, cmd_log=True):
         print("execute command:", highlight(cmd_str), "\nresult:\n", text)
     r.close()
     return text
+
+
+def modify_time(path_file):
+    return time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(os.stat(path_file).st_mtime))
+
+
+def modify_timestamp(path_file):
+    return os.stat(path_file).st_mtime
+
+
+if __name__ == '__main__':
+    print(modify_timestamp('./'))
 
 
 def is_chinese(word):
