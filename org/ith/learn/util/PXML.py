@@ -8,9 +8,9 @@ import sys
 
 from lxml import etree
 import html
-from org.ith.learn.TUtils import KCEBean, XmlStdin
+from org.ith.learn.util.TUtils import KCEBean, XmlStdin
 
-path_of_android = "../../../docs/merge/merge.xml"
+path_of_android = "../../../../docs/merge/merge.xml"
 
 
 def main():

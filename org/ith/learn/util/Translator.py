@@ -1,11 +1,9 @@
-import json
-
 import requests
 import json
 import urllib.parse
 import chardet
 
-from org.ith.learn.TUtils import exec_cmd
+from org.ith.learn.util.TUtils import exec_cmd
 
 
 def str_of_simple():

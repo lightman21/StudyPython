@@ -1,8 +1,8 @@
 import os
 import re
 
-from org.ith.learn.PXML import parse_string_as_kce, write_kce_to_path
-from org.ith.learn.TUtils import exec_cmd, is_chinese, KCEBean, write_to_excel, highlight
+from org.ith.learn.util.PXML import parse_string_as_kce, write_kce_to_path
+from org.ith.learn.util.TUtils import exec_cmd, is_chinese, KCEBean
 
 
 def write_demo():

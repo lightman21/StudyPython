@@ -5,7 +5,7 @@ import time
 import xlrd
 import xlwt
 
-from org.ith.learn.Colored import COLS
+from org.ith.learn.util.Colored import COLS
 import random
 
 
@@ -144,7 +144,7 @@ def modify_timestamp(path_file):
 
 
 if __name__ == '__main__':
-    print(modify_timestamp('./'))
+    print(modify_timestamp('../'))
 
 
 def is_chinese(word):

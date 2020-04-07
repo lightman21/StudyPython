@@ -6,8 +6,8 @@ import sys
 
 from lxml import etree
 
-from org.ith.learn.PXML import write_kce_to_path
-from org.ith.learn.TUtils import KCEBean
+from org.ith.learn.util.PXML import write_kce_to_path
+from org.ith.learn.util.TUtils import KCEBean
 
 # path_of_merge = '../../../docs/merge/merge_bk.xml'
 """

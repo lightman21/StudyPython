@@ -7,7 +7,7 @@ import os
 
 from multiprocessing import Process
 
-from org.ith.learn.TUtils import exec_cmd
+from org.ith.learn.util.TUtils import exec_cmd
 
 cmd_list = []
 

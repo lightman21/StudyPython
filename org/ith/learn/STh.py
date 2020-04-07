@@ -1,7 +1,7 @@
 import time
 
-from org.ith.learn.PXML import write_kce_to_path, parse_string_as_kce
-from org.ith.learn.TUtils import open_excel_as_list, KCEBean, highlight, is_chinese, write_to_excel
+from org.ith.learn.util.PXML import write_kce_to_path
+from org.ith.learn.util.TUtils import KCEBean, highlight, is_chinese, write_to_excel
 import re
 # from bs4 import BeautifulSoup, CData
 import os
