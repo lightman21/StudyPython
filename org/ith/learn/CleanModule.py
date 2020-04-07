@@ -2,7 +2,7 @@ import os
 import re
 
 from org.ith.learn.util.PXML import parse_string_as_kce, write_kce_to_path
-from org.ith.learn.util.TUtils import exec_cmd, is_chinese, KCEBean
+from org.ith.learn.util.TUtils import exec_cmd, is_chinese, KCEBean, read_xml_as_kce_list
 
 
 def write_demo():
@@ -220,40 +220,6 @@ def modify_properties(m_path='/tmp/tmp/Dinner/', v_code=12345, v_name="1.23.45")
             new_lines.append(tmp)
         with open(prop_path, 'w') as wf:
             wf.writelines(new_lines)
-
-
-def read_xml_as_kce_list(xml_path, lang='cn'):
-    with open(xml_path, 'r') as file:
-        all_str = file.read()
-        fuzzy_matching = r'<string name="(\w*)">(.*)</string>'
-        list_kce = []
-        rets = re.findall(fuzzy_matching, all_str)
-        for ret in rets:
-            if lang == 'cn':
-                kce = KCEBean(key=ret[0], cn=ret[1], en='')
-            else:
-                kce = KCEBean(key=ret[0], en=ret[1], cn='')
-
-            list_kce.append(kce)
-
-        return list_kce
-
-
-def read_xml_as_kce_list(xml_path, lang='cn'):
-    with open(xml_path, 'r') as file:
-        all_str = file.read()
-        fuzzy_matching = r'<string name="(\w*)">(.*)</string>'
-        list_kce = []
-        rets = re.findall(fuzzy_matching, all_str)
-        for ret in rets:
-            if lang == 'cn':
-                kce = KCEBean(key=ret[0], cn=ret[1], en='')
-            else:
-                kce = KCEBean(key=ret[0], en=ret[1], cn='')
-
-            list_kce.append(kce)
-
-        return list_kce
 
 
 def main():

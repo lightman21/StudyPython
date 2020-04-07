@@ -1,5 +1,6 @@
 import html
 import os
+import re
 import time
 
 import xlrd
@@ -20,6 +21,13 @@ class KCEBean:
 
     def __lt__(self, other):
         return self.key.lower() < other.key.lower()
+
+    def __eq__(self, other):
+        if isinstance(other, self.__class__):
+            return self.key == other.key and self.cn == other.cn and self.en == other.en
+
+    def __hash__(self):
+        return hash(self.key)
 
 
 class XmlStdin:
@@ -141,6 +149,23 @@ def modify_time(path_file):
 
 def modify_timestamp(path_file):
     return os.stat(path_file).st_mtime
+
+
+def read_xml_as_kce_list(xml_path, lang='cn'):
+    with open(xml_path, 'r') as file:
+        all_str = file.read()
+        fuzzy_matching = r'<string name="(\w*)">(.*)</string>'
+        list_kce = []
+        rets = re.findall(fuzzy_matching, all_str)
+        for ret in rets:
+            if lang == 'cn':
+                kce = KCEBean(key=ret[0], cn=ret[1], en='')
+            else:
+                kce = KCEBean(key=ret[0], en=ret[1], cn='')
+
+            list_kce.append(kce)
+
+        return list_kce
 
 
 if __name__ == '__main__':

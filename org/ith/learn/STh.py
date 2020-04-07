@@ -1,7 +1,7 @@
 import time
 
 from org.ith.learn.util.PXML import write_kce_to_path
-from org.ith.learn.util.TUtils import KCEBean, highlight, is_chinese, write_to_excel
+from org.ith.learn.util.TUtils import KCEBean, highlight, is_chinese, write_to_excel, read_xml_as_kce_list
 import re
 # from bs4 import BeautifulSoup, CData
 import os
@@ -389,23 +389,6 @@ def read_ios_as_kce_list(ios_path):
         for t in rets:
             h = KCEBean(key=t[0], cn=t[1], en='')
             list_kce.append(h)
-
-        return list_kce
-
-
-def read_xml_as_kce_list(xml_path, lang='cn'):
-    with open(xml_path, 'r') as file:
-        all_str = file.read()
-        fuzzy_matching = r'<string name="(\w*)">(.*)</string>'
-        list_kce = []
-        rets = re.findall(fuzzy_matching, all_str)
-        for ret in rets:
-            if lang == 'cn':
-                kce = KCEBean(key=ret[0], cn=ret[1], en='')
-            else:
-                kce = KCEBean(key=ret[0], en=ret[1], cn='')
-
-            list_kce.append(kce)
 
         return list_kce
 
