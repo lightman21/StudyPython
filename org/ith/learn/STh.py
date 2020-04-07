@@ -3,7 +3,7 @@ import time
 from org.ith.learn.PXML import write_kce_to_path, parse_string_as_kce
 from org.ith.learn.TUtils import open_excel_as_list, KCEBean, highlight, is_chinese, write_to_excel
 import re
-from bs4 import BeautifulSoup, CData
+# from bs4 import BeautifulSoup, CData
 import os
 
 list_of_android_path = "/Users/toutouhiroshidaiou/Desktop/keruyun/tmp/android.xlsx"
@@ -17,6 +17,8 @@ android_cn_xml_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/a
 2.读取最新的i18n文件  i18n.xml
 3.对比两个list 把i18n中的key对应的值 写到 new_master.xml中
 4.
+
+        yonghuan  <string name="(.*)">(.*)</string>
 
 // 拉取主工程英文strings.xml文件
 git archive --remote=ssh://git@gitlab.shishike.com:38401/c_iphone/OnMobile-Android.git HEAD:app/src/main/res/values-en/ strings.xml | tar -x
@@ -155,20 +157,19 @@ def main():
     # diff()
     # and_merge_en()
 
-    xml_cn = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/src/main/res/values/strings.xml'
+    xml_cn = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/app/src/main/res/values/strings.xml'
 
-    xml_en = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/src/main/res/values-en/strings' \
-             '.xml'
+    xml_en = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/app/src/main/res/values-en/strings.xml'
 
-    en_list = read_xml_as_kce_list(xml_en, lang='en')
-    default_cn_list = read_xml_as_kce_list(xml_cn, lang='cn')
+    en_list = read_xml_as_kce_list(xml_en.strip(), lang='en')
+    default_cn_list = read_xml_as_kce_list(xml_cn.strip(), lang='cn')
 
     for cn in default_cn_list:
         for en in en_list:
             if cn.key == en.key:
                 cn.en = en.en
 
-    write_to_excel(default_cn_list, './0406_merge_kce.xlsx')
+    write_to_excel(default_cn_list, '../../../docs/android_i18n_0407.xlsx')
 
 
 def total_excel(xml_cn, xml_en, out_path='./out_excel.xlsx'):
@@ -368,15 +369,15 @@ def readlineXML():
         print(all_str.split('<string'))
 
 
-def beautiful():
-    all_str_path = '../../../docs/all_values.xml'
-    with open(all_str_path, 'r') as file:
-        txt = file.read()
-        soup = BeautifulSoup(txt, 'html.parser')
-        for cd in soup.findAll(text=True):
-            if isinstance(cd, CData):
-                print('CData contents: %r' % cd)
-    # print(soup)
+# def beautiful():
+#     all_str_path = '../../../docs/all_values.xml'
+#     with open(all_str_path, 'r') as file:
+#         txt = file.read()
+#         soup = BeautifulSoup(txt, 'html.parser')
+#         for cd in soup.findAll(text=True):
+#             if isinstance(cd, CData):
+#                 print('CData contents: %r' % cd)
+#     # print(soup)
 
 
 def read_ios_as_kce_list(ios_path):
@@ -409,34 +410,24 @@ def read_xml_as_kce_list(xml_path, lang='cn'):
         return list_kce
 
 
-def huan():
+def extra_strings():
     all_str_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/build/intermediates/res' \
                    '/merged/official/envGrd/values/values.xml'
     with open(all_str_path, 'r') as all_value:
         all_str = all_value.read()
-    """
-        yonghuan  <string name="(.*)">(.*)</string>
-    """
 
-    all_xml = """
+    mock_all_xml = """
     <string name="account_progress_crash_prompt">很抱歉，程序出现异常，即将退出。</string>
-    <string name="account_protocol">我已阅读并同意<Data><![CDATA[<a href="%1$s">《客如云用户授权协议》</a><a href="%2$s">《客如云用户服务协议》</a>及<a href="%3$s">《客如云用户隐私政策》</a>]]></Data></string>
+    <string name="account_protocol">我已阅读并同意<Data><![CDATA[<a href="%1$s">
+    《客如云用户授权协议》</a><a href="%2$s">《客如云用户服务协议》</a>及<a href="%3$s">《客如云用户隐私政策》</a>]]></Data></string>
     <string name="account_pwd">密码</string>
     """
 
-    k_pattern = r'<string name="(\w*)">([.\n]*)</string>'
-    v_pattern = r'<string name="(\w+)*">(\S*)</string>'
-    real_pattern = r'<string name="(*)">([^<strin]*)</string>'
-
-    # Fuzzy
     # matching
-    fuzzy_matching = r'<string name="(\w*)">(.*)</string>'
-    rets = re.findall(fuzzy_matching, all_xml)
-    print("\n\n", len(rets))
+    matching = r'<string name="(\w*)">(.*)</string>'
+    rets = re.findall(matching, mock_all_xml)
     for rt in rets:
         print("rt--->", 'key=', rt[0], 'value=', rt[1])
-
-    # write_kce_to_path(android_en_list, "./tanghao.xml", key='en', sort=False)
 
 
 if __name__ == '__main__':
