@@ -2,7 +2,8 @@ import os
 import re
 
 from org.ith.learn.util.PXML import parse_string_as_kce, write_kce_to_path
-from org.ith.learn.util.TUtils import exec_cmd, is_chinese, KCEBean, read_xml_as_kce_list
+from org.ith.learn.util.TUtils import exec_cmd, is_chinese, KCEBean, read_xml_as_kce_list, highlight
+from org.ith.learn.util.Translator import to_simplized
 
 
 def write_demo():
@@ -63,11 +64,10 @@ def find_not_match(path_of_module):
     """
     for dir_path_name, dirs, files in os.walk(path_of_module):
         res_dir = '/src/main/res'
-        ll = get_module_path(dir_path_name)
-        if ll is not None:
-            for l in ll:
-                name = (l + res_dir)
-                print("start parse ", l)
+        modules = get_module_path(dir_path_name)
+        if modules is not None:
+            for mod in modules:
+                name = (mod + res_dir)
                 list_res_values(name)
 
 
@@ -79,7 +79,7 @@ def list_res_values(m_path):
                 if file.__contains__('strings'):
                     full_name = dir_path_name + '/' + file
                     list_of_res.append(full_name)
-                    # print(full_name, highlight("\tkce size "), len(p_list))
+                    print(highlight(full_name))
     return list_of_res
 
 
@@ -134,15 +134,19 @@ def get_module_path(path):
                 return module_dirs
 
 
-def clean_module(path_of_module):
-    os.chdir(path_of_module)
-
+def check_branch():
     if get_cur_branch() != 'develop':
         exec_cmd("git checkout develop")
-
     exec_cmd("git pull -r")
     exec_cmd("git branch -D i18n")
     exec_cmd("git checkout -b i18n")
+
+
+def clean_module(path_of_module):
+
+    os.chdir(path_of_module)
+
+    check_branch()
 
     main_res = 'res/values/strings.xml'
     list_of_values = list_res_values(path_of_module)
@@ -177,21 +181,24 @@ def clean_module(path_of_module):
 
     # 把biggest.xml的内容写入main_res.
     sorted(biggest)
-    write_kce_to_path(biggest, main_res_path)
+    str_of_big = ''
+    # str_of_big = to_simplized(str_of_big)
+    # write_kce_to_path(biggest, main_res_path)
 
-    # 修改properties版本号
-    modify_properties(path_of_module)
+
+    # # 修改properties版本号
+    # modify_properties(path_of_module)
 
     # 执行upload 即编译
-    build_module(path_of_module)
+    # build_module(path_of_module)
 
     # 删除其他values
-    for other in list_of_values:
-        if not other.__contains__(main_res):
-            os.remove(other)
+    # for other in list_of_values:
+    #     if not other.__contains__(main_res):
+    #         os.remove(other)
 
     # commit
-    exec_cmd('git add .; git commit -m "remove values except default" ')
+    # exec_cmd('git add .; git commit -m "remove values except default" ')
 
     return main_res_path
 
@@ -223,8 +230,10 @@ def modify_properties(m_path='/tmp/tmp/Dinner/', v_code=12345, v_name="1.23.45")
 
 
 def main():
-    # clean_module('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Dinner/')
-    # do_diff()
+    clean_module('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Dinner/')
+
+
+def old():
     en_path = '/Userxs/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/src/main/res/values-en/strings' \
               '.xml'
     en_list = read_xml_as_kce_list(en_path, lang='en')
