@@ -66,16 +66,14 @@ default_values = 'src/main/res/values/strings.xml'
 
 def main():
     # pull_remote_values()
-    do_find('/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/')
+    hardcode_killer('/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/')
     # str2pinyin()
     # print(is_contains_chinese('114.躺'))
-
     # ss = 'android:text=\"{}\"'.format('haotang')
     # print(ss)
 
 
-def do_find(path_of_module):
-    # total_kce_all_list = pull_remote_values()
+def hardcode_killer(path_of_module):
 
     os.chdir(path_of_module)
 
@@ -170,7 +168,13 @@ def hardcode_to_kce_list(dh_path_dict, path_of_module, module_kces):
 
     return to_write_kce
 
-
+"""
+       android:text="有可用优惠券、积分"
+       android:text="@string/kmobiletradeui_autogen_ykyyhq、jf"
+       
+       android:text="合計：¥"
+       android:text="@string/kmobiletradeui_autogen_hj：¥"
+"""
 def gener_key_by_hardcode(module_path, hardcode):
     """
     通过hardcode 生成key
