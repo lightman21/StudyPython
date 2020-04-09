@@ -1,3 +1,4 @@
+import hashlib
 import html
 import os
 import re
@@ -168,8 +169,8 @@ def read_xml_as_kce_list(xml_path, lang='cn'):
         return list_kce
 
 
-if __name__ == '__main__':
-    print(modify_timestamp('../'))
+def md5(str_data):
+    return hashlib.md5(str_data.encode(encoding='UTF-8')).hexdigest()
 
 
 def is_contains_chinese(word):
@@ -177,3 +178,15 @@ def is_contains_chinese(word):
         if '\u4e00' <= ch <= '\u9fff':
             return True
     return False
+
+
+def extra_chinese(word):
+    outer = ''
+    for ch in word:
+        if '\u4e00' <= ch <= '\u9fff':
+            outer += ch
+    return outer
+
+
+if __name__ == '__main__':
+    print(extra_chinese('tanghao唐浩 fasdfj !_ '))

@@ -5,7 +5,7 @@ import pypinyin
 from pypinyin import pinyin, lazy_pinyin
 
 from org.ith.learn.util.PXML import write_kce_to_path
-from org.ith.learn.util.TUtils import is_contains_chinese, highlight, exec_cmd, read_xml_as_kce_list, KCEBean
+from org.ith.learn.util.TUtils import is_contains_chinese, highlight, exec_cmd, read_xml_as_kce_list, KCEBean, md5
 
 """
 autogen
@@ -66,7 +66,7 @@ default_values = 'src/main/res/values/strings.xml'
 
 def main():
     # pull_remote_values()
-    hardcode_killer('/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/')
+    hardcode_killer('/tmp/tradeserver/')
     # str2pinyin()
     # print(is_contains_chinese('114.躺'))
     # ss = 'android:text=\"{}\"'.format('haotang')
@@ -74,7 +74,6 @@ def main():
 
 
 def hardcode_killer(path_of_module):
-
     os.chdir(path_of_module)
 
     modules_path_list = get_module_path(path_of_module)
@@ -168,6 +167,7 @@ def hardcode_to_kce_list(dh_path_dict, path_of_module, module_kces):
 
     return to_write_kce
 
+
 """
        android:text="有可用优惠券、积分"
        android:text="@string/kmobiletradeui_autogen_ykyyhq、jf"
@@ -175,19 +175,25 @@ def hardcode_to_kce_list(dh_path_dict, path_of_module, module_kces):
        android:text="合計：¥"
        android:text="@string/kmobiletradeui_autogen_hj：¥"
 """
+
+
 def gener_key_by_hardcode(module_path, hardcode):
     """
     通过hardcode 生成key
     shorthardcode = hardcode.replace
     key = 模块名_autogen_shorthardcode
     """
-    ss = module_path.split('/')
-    module_name = ss[len(ss) - 1].lower()
-    hardcode = hardcode.replace('(', '').replace(')', '') \
-        .replace(' ', '_').replace('.', '_').replace(':', '_')
+    mps = module_path.split('/')
+    module_name = mps[len(mps) - 1].lower()
 
+    hardcode = extra_chinese(hardcode)
+    md5_str = md5(hardcode)
     hardcode = str2pinyin(hardcode)
-    key = module_name + '_autogen_' + hardcode
+    hardcode = hardcode[:4]
+    # hardcode = hardcode.replace('(', '').replace(')', '') \
+    #     .replace(' ', '_').replace('.', '_').replace(':', '_')
+    # hardcode = str2pinyin(hardcode)
+    key = module_name + '_autogen_' + hardcode + '_' + md5_str[:6]
     return key
 
 
@@ -208,7 +214,6 @@ def parse_xml_as_dict(path_of_xml, parser):
         rets = re.findall(matcher, all_str)
         for ret in rets:
             if is_contains_chinese(str(ret)):
-                # print(matcher, str(ret), path_of_xml)
                 hardcode_path[str(ret)] = path_of_xml
     return hardcode_path
 
@@ -314,5 +319,15 @@ def str2pinyin(input_str):
     return c
 
 
+def extra_chinese(word):
+    outer = ''
+    for ch in word:
+        if '\u4e00' <= ch <= '\u9fff':
+            outer += ch
+    return outer
+
+
 if __name__ == '__main__':
+    # ss = str2pinyin("唐浩 ？ 什么民族 ！！是不是 c")
+    # print(ss)
     main()
