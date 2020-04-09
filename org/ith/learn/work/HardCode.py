@@ -57,10 +57,16 @@ res替换 把hardcode替换为@string/hardcode_key
 
 """
 
+flag_and_texter = 'android_text'
+flag_and_hinter = 'android_hint'
+
+layout_path = '/src/main/res/layout'
+default_values = 'src/main/res/values/strings.xml'
+
 
 def main():
     # pull_remote_values()
-    do_find('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Dinner/')
+    do_find('/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/')
     # str2pinyin()
     # print(is_contains_chinese('114.躺'))
 
@@ -75,13 +81,7 @@ def do_find(path_of_module):
 
     modules_path_list = get_module_path(path_of_module)
 
-    layout_path = '/src/main/res/layout'
-    default_values = 'src/main/res/values/strings.xml'
-
-    flag_and_texter = 'android_text'
-    flag_and_hinter = 'android_hint'
-
-    replacer_list_dict = dict()
+    list_of_kces_path_flag = list()
 
     for module_path in modules_path_list:
         for dir_path, dirs, files in os.walk(module_path):
@@ -98,6 +98,7 @@ def do_find(path_of_module):
 
                     if full_name.endswith('.xml'):
                         # 找到每个文件下的hardcode并和文件路径 关联成一个dict
+                        # key hardcode value path_of_xml
                         hardcode_to_path_dict = parse_xml_as_dict(full_name, parser=flag_and_texter)
                         if len(hardcode_to_path_dict) > 0:
                             list_kce_by_text = hardcode_to_kce_list(dh_path_dict=hardcode_to_path_dict,
@@ -105,8 +106,7 @@ def do_find(path_of_module):
                                                                     path_of_module=module_path)
                             if len(list_kce_by_text) > 0:
                                 module_kce_list.extend(list_kce_by_text)
-                                print('list_kce_by_text --->', len(list_kce_by_text))
-                                replacer_list_dict[tuple(list_kce_by_text)] = flag_and_texter
+                                list_of_kces_path_flag.append((list_kce_by_text, full_name, flag_and_texter))
 
                         hint_hardcode_dict = parse_xml_as_dict(full_name, parser=flag_and_hinter)
                         if len(hint_hardcode_dict) > 0:
@@ -115,18 +115,40 @@ def do_find(path_of_module):
                                                                     path_of_module=module_path)
                             if len(list_kce_by_hint) > 0:
                                 module_kce_list.extend(list_kce_by_hint)
-                                print('list_kce_by_hint --->', len(list_kce_by_hint))
-                                replacer_list_dict[tuple(list_kce_by_hint)] = flag_and_hinter
+                                list_of_kces_path_flag.append((list_kce_by_hint, full_name, flag_and_hinter))
 
                 # for 循环完了  写入默认strings.xml
                 write_kce_to_path(module_kce_list, def_value_path)
 
-    if len(replacer_list_dict) > 0:
-        # 说明找到了hardcode并且写入了strings.xml 需要替换
-        # replacer_list_dict[flag_and_texter] = list_kce_by_text
-        for k_tuple, flag in replacer_list_dict.items():
-            for hh in k_tuple:
-                print(hh)
+    if len(list_of_kces_path_flag) > 0:
+
+        for hkp in list_of_kces_path_flag:
+            kces = hkp[0]
+            file = hkp[1]
+            flag = hkp[2]
+            old_to_new_dict = gener_replacer(kces, flag)
+
+            with open(file, 'r') as all_str:
+                to_file_str = all_str.read()
+                for old, new in old_to_new_dict.items():
+                    to_file_str = to_file_str.replace(old, new)
+                with open(file, 'w') as out:
+                    out.write(to_file_str)
+
+
+def gener_replacer(list_of_kce, flag):
+    old_new_dict = dict()
+    for kce in list_of_kce:
+        if flag == flag_and_texter:
+            old = 'android:text=\"{}\"'.format(kce.cn)
+            new = 'android:text=\"@string/{}\"'.format(kce.key)
+        elif flag == flag_and_hinter:
+            old = 'android:hint=\"{}\"'.format(kce.cn)
+            new = 'android:hint=\"@string/{}\"'.format(kce.key)
+
+        old_new_dict[old] = new
+
+    return old_new_dict
 
 
 def hardcode_to_kce_list(dh_path_dict, path_of_module, module_kces):
@@ -156,8 +178,10 @@ def gener_key_by_hardcode(module_path, hardcode):
     key = 模块名_autogen_shorthardcode
     """
     ss = module_path.split('/')
-    module_name = ss[len(ss) - 1]
-    hardcode = hardcode.replace('(', '').replace(')', '').replace(' ', '_')
+    module_name = ss[len(ss) - 1].lower()
+    hardcode = hardcode.replace('(', '').replace(')', '') \
+        .replace(' ', '_').replace('.', '_').replace(':', '_')
+
     hardcode = str2pinyin(hardcode)
     key = module_name + '_autogen_' + hardcode
     return key
