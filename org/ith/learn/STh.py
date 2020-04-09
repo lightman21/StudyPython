@@ -1,7 +1,7 @@
 import time
 
 from org.ith.learn.util.PXML import write_kce_to_path
-from org.ith.learn.util.TUtils import KCEBean, highlight, is_chinese, write_to_excel, read_xml_as_kce_list
+from org.ith.learn.util.TUtils import KCEBean, highlight, is_contains_chinese, write_to_excel, read_xml_as_kce_list
 import re
 # from bs4 import BeautifulSoup, CData
 import os
@@ -199,13 +199,13 @@ def total_excel(xml_cn, xml_en, out_path='./out_excel.xlsx'):
     count = 0
     no_china_list = []
     for def_cn in default_cn_list:
-        if not is_chinese(def_cn.cn):
+        if not is_contains_chinese(def_cn.cn):
             no_china_list.append(def_cn)
 
     for trans in china_list:
         for no_ch in no_china_list:
             if no_ch.key == trans.key:
-                if is_chinese(trans.cn):
+                if is_contains_chinese(trans.cn):
                     no_ch.cn = trans.cn
                     # count += 1
                     # print(trans.key, trans.cn, '\t', highlight(no_ch.cn))
@@ -213,7 +213,7 @@ def total_excel(xml_cn, xml_en, out_path='./out_excel.xlsx'):
     for def_cn in default_cn_list:
         for trans in no_china_list:
             if def_cn.key == trans.key:
-                if not is_chinese(def_cn.cn) and is_chinese(trans.cn):
+                if not is_contains_chinese(def_cn.cn) and is_contains_chinese(trans.cn):
                     def_cn.cn = trans.cn
 
     # 移除 abc_font_family_menu_material home_menu_  jg_channel_name_p_
@@ -227,7 +227,7 @@ def total_excel(xml_cn, xml_en, out_path='./out_excel.xlsx'):
     print("default chinese size ", len(default_cn_list), ',tmp size ', len(tmp))
     count = 0
     for t in tmp:
-        if not is_chinese(t.cn):
+        if not is_contains_chinese(t.cn):
             count += 1
             print(t)
 

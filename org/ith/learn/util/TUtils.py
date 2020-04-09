@@ -172,7 +172,7 @@ if __name__ == '__main__':
     print(modify_timestamp('../'))
 
 
-def is_chinese(word):
+def is_contains_chinese(word):
     for ch in word:
         if '\u4e00' <= ch <= '\u9fff':
             return True

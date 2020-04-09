@@ -2,7 +2,7 @@ import os
 import re
 
 from org.ith.learn.util.PXML import parse_string_as_kce, write_kce_to_path
-from org.ith.learn.util.TUtils import exec_cmd, is_chinese, KCEBean, read_xml_as_kce_list, highlight
+from org.ith.learn.util.TUtils import exec_cmd, is_contains_chinese, KCEBean, read_xml_as_kce_list, highlight
 from org.ith.learn.util.Translator import to_simplized
 
 
@@ -174,9 +174,9 @@ def clean_module(path_of_module):
 
     # 确保biggest里的kv v是中文
     for b in biggest:
-        if not is_chinese(b.cn):
+        if not is_contains_chinese(b.cn):
             for al in all_kv_dict:
-                if al.key == b.key and is_chinese(al.cn):
+                if al.key == b.key and is_contains_chinese(al.cn):
                     b.cn = al.cn
 
     # 把biggest.xml的内容写入main_res.
