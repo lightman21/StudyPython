@@ -2,7 +2,6 @@ import os
 import re
 
 import pypinyin
-from pypinyin import pinyin, lazy_pinyin
 
 from org.ith.learn.util.PXML import write_kce_to_path
 from org.ith.learn.util.TUtils import is_contains_chinese, highlight, exec_cmd, read_xml_as_kce_list, KCEBean, md5
@@ -65,15 +64,12 @@ default_values = 'src/main/res/values/strings.xml'
 
 
 def main():
-    # pull_remote_values()
-    hardcode_killer('/tmp/tradeserver/')
-    # str2pinyin()
-    # print(is_contains_chinese('114.躺'))
-    # ss = 'android:text=\"{}\"'.format('haotang')
-    # print(ss)
+    pull_remote_values()
+    hardcode_killer('/tmp/Dinner/')
 
 
 def hardcode_killer(path_of_module):
+
     os.chdir(path_of_module)
 
     modules_path_list = get_module_path(path_of_module)
@@ -114,7 +110,7 @@ def hardcode_killer(path_of_module):
                                 module_kce_list.extend(list_kce_by_hint)
                                 list_of_kces_path_flag.append((list_kce_by_hint, full_name, flag_and_hinter))
 
-                # for 循环完了  写入默认strings.xml
+                # todo 这里不用每次写 后续改成有变化再写
                 write_kce_to_path(module_kce_list, def_value_path)
 
     if len(list_of_kces_path_flag) > 0:
@@ -129,8 +125,64 @@ def hardcode_killer(path_of_module):
                 to_file_str = all_str.read()
                 for old, new in old_to_new_dict.items():
                     to_file_str = to_file_str.replace(old, new)
+                    write_auto_log(module_path, old_hardcode=old, new_tweaked=new, path_of_xml=file)
                 with open(file, 'w') as out:
                     out.write(to_file_str)
+
+    log_path = module_path + os.sep + 'autogen.log'
+    if not os.path.exists(log_path):
+        return
+
+    with open(log_path, 'r') as logger:
+        lines = logger.readlines()
+        for line in lines:
+            ele_arr = line.split('<=>')
+            old = ele_arr[0].strip()
+            new = ele_arr[1].strip()
+            xpath = ele_arr[2].strip()
+
+            if old != new:
+                modifyxml(old, new, module_path)
+                with open(xpath, 'r') as mxml:
+                    all_str = mxml.read().replace(old, new)
+                    with open(xpath, 'w') as out:
+                        out.write(all_str)
+
+
+def modifyxml(old, new, module_path):
+    def_stringx = module_path + os.sep + default_values
+    old_str = old.split('@string/')[1][:-1]
+    if new.__contains__('@string/'):
+        new_str = new.split('@string/')[1][:-1]
+    else:
+        new_str = ''
+
+    list_kce = read_xml_as_kce_list(def_stringx)
+
+    tmp_kce = []
+    for kce in list_kce:
+        if len(new_str) == 0:
+            if kce.key != old_str.strip():
+                tmp_kce.append(kce)
+        else:  # 这是替换
+            if kce.key == old_str:
+                kce.key = new_str
+
+            tmp_kce.append(kce)
+
+    write_kce_to_path(tmp_kce, def_stringx)
+
+
+def write_auto_log(module_path, old_hardcode, new_tweaked, path_of_xml):
+    log_path = module_path + os.sep + 'autogen.log'
+    print('log_path:', highlight(log_path, 2))
+
+    # 格式   path_of_xml<=>hardcode<=>replaced
+    separator = '<=>'
+    log = new_tweaked + separator + new_tweaked + separator + path_of_xml + '\r\n'
+
+    with open(log_path, 'a') as outer:
+        outer.write(log)
 
 
 def gener_replacer(list_of_kce, flag):
@@ -139,11 +191,11 @@ def gener_replacer(list_of_kce, flag):
         if flag == flag_and_texter:
             old = 'android:text=\"{}\"'.format(kce.cn)
             new = 'android:text=\"@string/{}\"'.format(kce.key)
+            old_new_dict[old] = new
         elif flag == flag_and_hinter:
             old = 'android:hint=\"{}\"'.format(kce.cn)
             new = 'android:hint=\"@string/{}\"'.format(kce.key)
-
-        old_new_dict[old] = new
+            old_new_dict[old] = new
 
     return old_new_dict
 
@@ -154,11 +206,6 @@ def hardcode_to_kce_list(dh_path_dict, path_of_module, module_kces):
     for hardcode, path in dh_path_dict.items():
         # 先在本模块列表查 如果不行再在all_kce里面找 不行就生成key
         find_kce = search_value_in_list(module_kces, hardcode)
-        # if not find_kce:
-        #     find_kce = search_value_in_list(list_all_kce, hardcode)
-        # if not find_kce:
-        #     genkey = gener_key_by_hardcode(module_path, hardcode)
-        #     find_kce = KCEBean(key=genkey, cn=hardcode, en='')
 
         if not find_kce:
             genkey = gener_key_by_hardcode(path_of_module, hardcode)
@@ -166,15 +213,6 @@ def hardcode_to_kce_list(dh_path_dict, path_of_module, module_kces):
             to_write_kce.append(find_kce)
 
     return to_write_kce
-
-
-"""
-       android:text="有可用优惠券、积分"
-       android:text="@string/kmobiletradeui_autogen_ykyyhq、jf"
-       
-       android:text="合計：¥"
-       android:text="@string/kmobiletradeui_autogen_hj：¥"
-"""
 
 
 def gener_key_by_hardcode(module_path, hardcode):
@@ -185,15 +223,14 @@ def gener_key_by_hardcode(module_path, hardcode):
     """
     mps = module_path.split('/')
     module_name = mps[len(mps) - 1].lower()
-
+    total_len = 10
     hardcode = extra_chinese(hardcode)
+    tmp = str(hardcode)
     md5_str = md5(hardcode)
     hardcode = str2pinyin(hardcode)
-    hardcode = hardcode[:4]
-    # hardcode = hardcode.replace('(', '').replace(')', '') \
-    #     .replace(' ', '_').replace('.', '_').replace(':', '_')
-    # hardcode = str2pinyin(hardcode)
-    key = module_name + '_autogen_' + hardcode + '_' + md5_str[:6]
+    hardcode = hardcode[:(len(hardcode))]
+    hlen = len(hardcode)
+    key = module_name + '_autogen_' + hardcode + '_' + md5_str[:total_len - hlen]
     return key
 
 
@@ -300,7 +337,6 @@ def pull_remote_values():
     exec_cmd(command)
 
     list_remote = read_xml_as_kce_list(remote_path)
-    print('remote kce size', len(list_remote))
     return list_remote
 
 
@@ -311,7 +347,7 @@ pip install pypinyin
 
 
 def str2pinyin(input_str):
-    a = pypinyin.pinyin(input_str, style=pypinyin.FIRST_LETTER)
+    a = pypinyin.pinyin(input_str, style=pypinyin.NORMAL)
     b = []
     for i in range(len(a)):
         b.append(str(a[i][0]).lower())
@@ -328,6 +364,4 @@ def extra_chinese(word):
 
 
 if __name__ == '__main__':
-    # ss = str2pinyin("唐浩 ？ 什么民族 ！！是不是 c")
-    # print(ss)
     main()
