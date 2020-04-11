@@ -68,7 +68,8 @@ def parse_string_as_kce(path_of_string, kce_value='cn'):
 
 
 def write_kce_to_path(list_of_kce, path, sort=True, key='cn'):
-    print('write_kce_to_path: ', highlight(path))
+
+    print('write_kce_to_path: ', highlight(path,1))
 
     impl = xml.dom.minidom.getDOMImplementation()
     dom = impl.createDocument(None, 'resources', None)

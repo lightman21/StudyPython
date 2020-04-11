@@ -17,8 +17,15 @@ class KCEBean:
         self.cn = cn
         self.en = en
 
+    def hl(self):
+        hkey = highlight('key:', 2)
+        hcn = highlight('cn:', 3)
+        hen = highlight('en:', 4)
+        result = '{} {:<30} {} {:<20} {} {:<20}'.format(hkey, str(self.key), hcn, str(self.cn), hen, str(self.en))
+        return result
+
     def __str__(self):
-        return "key: " + str(self.key) + "\tcn: " + str(self.cn) + "\ten: " + str(self.en)
+        return 'key:{:<30} cn:{:<20} en:{:<20}'.format(str(self.key), str(self.cn), str(self.en))
 
     def __lt__(self, other):
         return self.key.lower() < other.key.lower()
@@ -73,7 +80,7 @@ def write_to_excel(to_write_list, path_of_excel):
 
     workbook.save(path_of_excel)
 
-    print(path_of_excel + " write done.")
+    print(highlight(path_of_excel + " write done."))
 
 
 def open_excel_as_list(file_path):

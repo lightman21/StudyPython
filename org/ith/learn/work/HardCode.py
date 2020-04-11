@@ -62,14 +62,15 @@ flag_and_hinter = 'android_hint'
 layout_path = '/src/main/res/layout'
 default_values = 'src/main/res/values/strings.xml'
 
+list_all_remote = []
+
 
 def main():
-    pull_remote_values()
-    hardcode_killer('/tmp/Dinner/')
+    list_all_remote.extend(pull_remote_values())
+    hardcode_killer('/Users/lightman_mac/company/keruyun/all_gitlab_code/kmobile-accountsystem/')
 
 
 def hardcode_killer(path_of_module):
-
     os.chdir(path_of_module)
 
     modules_path_list = get_module_path(path_of_module)
@@ -178,7 +179,7 @@ def write_auto_log(module_path, old_hardcode, new_tweaked, path_of_xml):
     print('log_path:', highlight(log_path, 2))
 
     # 格式   path_of_xml<=>hardcode<=>replaced
-    separator = '<=>'
+    separator = '\t\t<=>\t\t'
     log = new_tweaked + separator + new_tweaked + separator + path_of_xml + '\r\n'
 
     with open(log_path, 'a') as outer:
@@ -230,7 +231,8 @@ def gener_key_by_hardcode(module_path, hardcode):
     hardcode = str2pinyin(hardcode)
     hardcode = hardcode[:(len(hardcode))]
     hlen = len(hardcode)
-    key = module_name + '_autogen_' + hardcode + '_' + md5_str[:total_len - hlen]
+    # key = module_name + '_autogen_' + hardcode + '_' + md5_str[:total_len - hlen]
+    key = 'account_' + module_name + '_autogen_' + hardcode + "_" + md5_str[:5]
     return key
 
 
@@ -308,6 +310,10 @@ def get_module_path(path):
 
 
 def search_value_in_list(list_of_kce, input_value, compare='cn'):
+    for rem in list_all_remote:
+        if rem.cn == input_value:
+            print(highlight('find in remote', 2), ',,,,' + highlight(rem, 2))
+
     for it in list_of_kce:
         if compare == 'cn':
             if it.cn == input_value:

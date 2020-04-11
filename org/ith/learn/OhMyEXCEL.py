@@ -15,12 +15,9 @@ def main(argv=None):
     if argv is None:
         argv = sys.argv
 
-    # path_excel = '../../../docs/android_i18n_0407.xlsx'
-    # excel_to_xml(path_excel, '/tmp/')
-    cn_p = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/app/src/main/res/values/strings.xml'
-    en_p = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/app/src/main/res/values-en/strings.xml'
-    excel_path = './tanghao_total.xlsx'
-    xml_to_excel(path_of_cn=cn_p, path_of_en=en_p, excel_path=excel_path)
+    # cn_en_tuple = excel_to_xml('/Users/lightman_mac/Desktop/0411work/panshuangwei_0410_origin.xlsx', '/tmp/i18n/')
+    ce_dict = gener_cn_en_dict('/Users/lightman_mac/Desktop/0411work/panshuangwei_0410_origin.xlsx')
+    print(len(ce_dict))
 
 
 def xml_to_excel(path_of_cn, path_of_en, excel_path):
@@ -55,14 +52,36 @@ def excel_to_xml(path_of_excel, xml_path='../../../docs/'):
     cn_list = []
     en_list = []
 
+    print('path_of_excel:', path_of_excel)
+
+    excel_name = path_of_excel.split('/')[-1].replace('.', '')
+
     for kce in list_kce:
         if len(kce.cn) > 0:
             cn_list.append(KCEBean(key=kce.key, cn=kce.cn, en=''))
         if len(kce.en) > 0:
             en_list.append(KCEBean(key=kce.key, cn='', en=kce.en))
 
-    write_kce_to_path(list_of_kce=en_list, path=xml_path + 'kce_of_eng.xml', key='en')
-    write_kce_to_path(list_of_kce=cn_list, path=xml_path + 'kce_of_ch.xml', key='cn')
+    en_out_path = xml_path + excel_name + '_english.xml'
+    cn_out_path = xml_path + excel_name + '_china.xml'
+
+    log = 'excel_to_xml cn size ' + str(len(cn_list)) + ', en size ' + str(len(en_list))
+    print(highlight(log, 2))
+
+    write_kce_to_path(list_of_kce=en_list, path=en_out_path, key='en')
+    write_kce_to_path(list_of_kce=cn_list, path=cn_out_path, key='cn')
+
+    return cn_out_path, en_out_path
+
+
+def gener_cn_en_dict(path_of_excel):
+    list_kce = open_excel_as_list(path_of_excel)
+    cn_en_dict = dict()
+    for kce in list_kce:
+        if len(kce.cn) > 0 and len(kce.en) > 0:
+            cn_en_dict[kce.cn] = kce.en
+
+    return cn_en_dict
 
 
 if __name__ == "__main__":
