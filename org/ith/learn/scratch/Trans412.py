@@ -1,5 +1,6 @@
 import re
 
+from org.ith.learn.OhMyEXCEL import xml_to_excel
 from org.ith.learn.util.PXML import write_kce_to_path
 from org.ith.learn.util.TUtils import read_xml_as_kce_list, KCEBean, highlight, modify_time
 
@@ -12,7 +13,106 @@ cn_xml_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Andr
 
 
 def main():
-    trans_autogen()
+    # cn_path = '/Users/lightman_mac/company/keruyun/oh_my_python/StudyPython/docs/dicts/autogen/20200412_not_trans.xml'
+    # en_path = './en_path.xml'
+    # xml_to_excel(path_of_cn=cn_path, path_of_en=en_path, excel_path='./not_trans.xlsx')
+
+    ios_list = get_ios_kces()
+    not_trans_path = '/tmp/not_trans.xml'
+    not_list = read_xml_as_kce_list(not_trans_path)
+
+    print('total  not trans ', len(not_list))
+
+    trans_from_ios = []
+    count = 0
+    for kce in not_list:
+        for ios in ios_list:
+            if ios.cn == kce.cn:
+                count += 1
+                kce.en = ios.en
+                if kce not in trans_from_ios:
+                    trans_from_ios.append(kce)
+
+    print('from ios trans ', len(trans_from_ios))
+
+    # write_kce_to_path(trans_from_ios, ',/from_ios_cn.xml')
+    # write_kce_to_path(trans_from_ios, ',/from_ios_en.xml', key='en')
+
+    realy_not_trans = set()
+    for not_tr in not_list:
+        for ios in trans_from_ios:
+            if not_tr not in trans_from_ios:
+                realy_not_trans.add(not_tr)
+
+    print('really not trans ', len(realy_not_trans))
+
+    realy_not_trans = list(realy_not_trans)
+
+    for rea in realy_not_trans:
+        print(rea)
+
+    # write_kce_to_path(biggest, out_path + "biggest.xml")
+
+    write_kce_to_path(realy_not_trans, '/tmp/really_cn.xml')
+    write_kce_to_path(realy_not_trans, '/tmp/really_en.xml', key='en')
+    xml_to_excel(path_of_cn='/tmp/really_cn.xml', path_of_en='/tmp/really_en.xml', excel_path='./really.xlsx')
+
+    """
+    b/businesssetting/src/main/res/layout/loading_empty.xml
+@@ -16,7 +16,7 @@
+         android:layout_marginTop="15dp"
+         android:textSize="15sp"
+         android:layout_centerHorizontal="true"
+-        android:text="咦...没有任何内容，先去逛逛别的吧"
++        android:text="@string/biz_setting_ah_no_data"
+
+
+b/businesssetting/src/main/res/layout/loading_error.xml
+@@ -37,7 +37,7 @@
+             android:paddingRight="46dp"
+             android:paddingTop="11dp"
+             android:paddingBottom="11dp"
+-            android:text="重新加载"
++            android:text="@string/biz_setting_reload"
+
+
+    <string name="biz_setting_ah_no_data">咦...没有任何内容，先去逛逛别的吧</string>
+    <string name="biz_setting_reload">重新加载</string>
+    
+    
+    """
+
+
+def get_ios_kces():
+    ios_p = '/tmp/ios_en.strings.java'
+    en_kce = read_ios_as_kce_list(ios_p)
+    ios_p = '/tmp/ios_cn.strings.java'
+    cn_kce = read_ios_as_kce_list(ios_p)
+    print(len(en_kce), len(cn_kce))
+    ios_kces = list()
+    for en in en_kce:
+        for cn in cn_kce:
+            if en.key == cn.key:
+                tmp = en.cn
+                ios_kces.append(KCEBean(key=en.key, cn=cn.cn, en=tmp))
+
+    for ios in ios_kces:
+        ios.en = ios.en.strip().replace('\'', '\\\'')
+
+    return ios_kces
+
+
+def read_ios_as_kce_list(ios_path):
+    with open(ios_path, 'r') as file:
+        all_str = file.read()
+        ios_match = r'"(.*)"\s=\s"(.*)"'
+        list_kce = []
+        rets = re.findall(ios_match, all_str)
+        for t in rets:
+            h = KCEBean(key=t[0], cn=t[1], en='')
+            list_kce.append(h)
+
+        return list_kce
 
 
 def trans_autogen():

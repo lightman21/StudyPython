@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="businesssetting_autogen_choose_one_zhishao">至少选择其中一项</string>
+	<string name="businesssetting_autogen_confirm">确认</string>
+	<string name="businesssetting_autogen_xuanzeshijianduan">选择时间段</string>
+	<string name="businesssetting_autogen_zhi">至</string>
+	<string name="kreport_autogen_dakuanjine">打款金额</string>
+	<string name="kreport_autogen_dakuanriqi">打款日期</string>
+	<string name="kreport_autogen_dakuanzhuangtai">打款状态</string>
+	<string name="kreport_autogen_dangqianpaiming">当前排名</string>
+	<string name="kreport_autogen_input_storeno_storename_search">请输入门店编号/门店名称搜索</string>
+	<string name="kreport_autogen_jiaoyidanhao">交易单号:</string>
+	<string name="kreport_autogen_jinnianxiaoshouqushi">今年销售趋势</string>
+	<string name="kreport_autogen_leijigukefenxi">累计顾客分析</string>
+	<string name="kreport_autogen_shijian">时间</string>
+	<string name="kreport_autogen_xuanzemendian">选择门店</string>
+	<string name="kreport_autogen_zhankai">展开</string>
+	<string name="kreport_autogen_zongshoukuan">总收款</string>
+	<string name="report_autogen_pm_view_prop">点击查看占比</string>
+</resources>

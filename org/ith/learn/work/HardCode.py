@@ -67,7 +67,7 @@ list_all_remote = []
 
 def main():
     list_all_remote.extend(pull_remote_values())
-    hardcode_killer('/Users/lightman_mac/company/keruyun/proj_sourcecode/KReport/')
+    hardcode_killer('/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-business-setting/')
 
 
 def hardcode_killer(path_of_module):
