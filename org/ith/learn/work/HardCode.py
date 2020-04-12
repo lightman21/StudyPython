@@ -67,7 +67,7 @@ list_all_remote = []
 
 def main():
     list_all_remote.extend(pull_remote_values())
-    hardcode_killer('/Users/lightman_mac/company/keruyun/all_gitlab_code/kmobile-accountsystem/')
+    hardcode_killer('/Users/lightman_mac/company/keruyun/proj_sourcecode/KReport/')
 
 
 def hardcode_killer(path_of_module):
@@ -112,6 +112,12 @@ def hardcode_killer(path_of_module):
                                 list_of_kces_path_flag.append((list_kce_by_hint, full_name, flag_and_hinter))
 
                 # todo 这里不用每次写 后续改成有变化再写
+                # 这里需要手动处理重复
+                # tmp = []
+                # for tm in module_kce_list:
+                #     if tm not in tmp:
+                #         tmp.append(tm)
+
                 write_kce_to_path(module_kce_list, def_value_path)
 
     if len(list_of_kces_path_flag) > 0:
@@ -206,7 +212,8 @@ def hardcode_to_kce_list(dh_path_dict, path_of_module, module_kces):
 
     for hardcode, path in dh_path_dict.items():
         # 先在本模块列表查 如果不行再在all_kce里面找 不行就生成key
-        find_kce = search_value_in_list(module_kces, hardcode)
+        find_kce = search_value_in_list(list_of_kce=module_kces,
+                                        input_value=hardcode, hc_path=path)
 
         if not find_kce:
             genkey = gener_key_by_hardcode(path_of_module, hardcode)
@@ -222,17 +229,22 @@ def gener_key_by_hardcode(module_path, hardcode):
     shorthardcode = hardcode.replace
     key = 模块名_autogen_shorthardcode
     """
+
+    num = re.findall("\\d+", hardcode)
+    if len(num) > 0:
+        num = num[0]
+
     mps = module_path.split('/')
     module_name = mps[len(mps) - 1].lower()
     total_len = 10
     hardcode = extra_chinese(hardcode)
     tmp = str(hardcode)
-    md5_str = md5(hardcode)
+    md5_str = md5(hardcode + str(num))
     hardcode = str2pinyin(hardcode)
     hardcode = hardcode[:(len(hardcode))]
     hlen = len(hardcode)
     # key = module_name + '_autogen_' + hardcode + '_' + md5_str[:total_len - hlen]
-    key = 'account_' + module_name + '_autogen_' + hardcode + "_" + md5_str[:5]
+    key = module_name + '_autogen_' + hardcode + "_" + md5_str[:5]
     return key
 
 
@@ -309,14 +321,19 @@ def get_module_path(path):
                 return module_dirs
 
 
-def search_value_in_list(list_of_kce, input_value, compare='cn'):
+def search_value_in_list(list_of_kce, input_value, hc_path, compare='cn', ):
+    is_remote_find = False
     for rem in list_all_remote:
-        if rem.cn == input_value:
-            print(highlight('find in remote', 2), ',,,,' + highlight(rem, 2))
+        if not is_remote_find:
+            if rem.cn == input_value:
+                print(highlight('find in remote', 2),
+                      ',,,,' + highlight((rem.key + "=" + rem.cn), 2) + ',hc_path' + highlight(hc_path))
+                is_remote_find = True
 
     for it in list_of_kce:
         if compare == 'cn':
             if it.cn == input_value:
+                print(highlight('find in local' + input_value, 3))
                 return it
         elif compare == 'en':
             if it.en == input_value:
