@@ -7,7 +7,7 @@ from org.ith.learn.util.TUtils import read_xml_as_kce_list, KCEBean, highlight, 
 i18n_xml_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/src/main/res/values-en' \
                 '/strings.xml'
 
-diff_path = '/Users/lightman_mac/Desktop/0411work/tsd/diff.xml'
+diff_path = '/Users/lightman_mac/Desktop/0411work/tsd/shuangwei413.xml'
 
 cn_xml_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/src/main/res/values/strings.xml'
 

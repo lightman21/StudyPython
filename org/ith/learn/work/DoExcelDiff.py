@@ -78,7 +78,7 @@ def diff():
 
     print('diff count ', len(diff_list))
 
-    write_kce_to_path(list_of_kce=diff_list, path=out_path + 'diff.xml')
+    write_kce_to_path(list_of_kce=diff_list, path=out_path + 'shuangwei413.xml')
 
 
 # 跳过key名开头的 跳过
