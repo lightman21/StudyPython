@@ -180,6 +180,11 @@ def md5(str_data):
     return hashlib.md5(str_data.encode(encoding='UTF-8')).hexdigest()
 
 
+def get_cur_branch():
+    ret = exec_cmd("git branch | grep \\* | awk '{print$2}'")
+    return ret.strip()
+
+
 def is_contains_chinese(word):
     for ch in word:
         if '\u4e00' <= ch <= '\u9fff':

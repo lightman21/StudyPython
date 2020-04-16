@@ -7,11 +7,16 @@ import os
 
 from multiprocessing import Process
 
-from org.ith.learn.util.TUtils import exec_cmd
+from org.ith.learn.util.TUtils import exec_cmd, highlight
 
 cmd_list = []
 
-dest_all_path = '/Users/lightman_mac/company/keruyun/all_gitlab_code'
+# dest_all_path = '/Users/lightman_mac/company/keruyun/all_gitlab_code'
+dest_all_path = '/tmp/tanghaohao/'
+
+"""
+_ga=GA1.2.890225156.1571303130; __utmz=88038286.1571707491.12.5.utmcsr=cdjk.shishike.com|utmccn=(referral)|utmcmd=referral|utmcct=/jenkins/me/my-views/view/all/job/Keruyun-Mobile/job/kmobile-android-module/job/OnMobile_Android_Lib_KReport/580/changes; sidebar_collapsed=false; gr_user_id=5ad0cae1-3e25-466a-87c9-307732bf6d9d; grwng_uid=93a3c8a9-431f-4d4a-bbaa-ff337ae759bd; _gitlab_session=8f5e9ba0ced4f566bd4336801f6a7993; __utmc=88038286; __utma=88038286.1765784403.1568081186.1586832252.1587017207.101; _gid=GA1.2.2086868300.1587086109
+"""
 
 
 def main():
@@ -29,11 +34,7 @@ def gitlab(base_url='http://gitlab.shishike.com/groups/c_iphone/-/children.json?
         'Accept-Language': "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
         'Cache-Control': "no-cache",
         'Connection': "keep-alive",
-        'Cookie': "sidebar_collapsed=false; __utmz=88038286.1580971726.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=("
-                  "none); __utma=88038286.1460782901.1580971726.1584367992.1585327915.11; "
-                  "remember_user_token"
-                  "=W1s4NjFdLCIkMmEkMTAkMHdtaEM0ckpDUDZjSk5rbFo5ZTFyTyIsIjE1ODU1Nzg1OTAuMjg3MDA3Il0%3D"
-                  "--973f22857312ff21d733523deafc897321268556; _gitlab_session=6c43f845a0e5db7606c204183e77f25d",
+        'Cookie': "_ga=GA1.2.890225156.1571303130; __utmz=88038286.1571707491.12.5.utmcsr=cdjk.shishike.com|utmccn=(referral)|utmcmd=referral|utmcct=/jenkins/me/my-views/view/all/job/Keruyun-Mobile/job/kmobile-android-module/job/OnMobile_Android_Lib_KReport/580/changes; sidebar_collapsed=false; gr_user_id=5ad0cae1-3e25-466a-87c9-307732bf6d9d; grwng_uid=93a3c8a9-431f-4d4a-bbaa-ff337ae759bd; _gitlab_session=8f5e9ba0ced4f566bd4336801f6a7993; __utmc=88038286; __utma=88038286.1765784403.1568081186.1586832252.1587017207.101; _gid=GA1.2.2086868300.1587086109",
         'Host': "gitlab.shishike.com",
         'Pragma': "no-cache",
         'Referer': "http://gitlab.shishike.com/c_iphone",
@@ -49,6 +50,7 @@ def gitlab(base_url='http://gitlab.shishike.com/groups/c_iphone/-/children.json?
     global cmd_list
 
     for re in resp:
+
         addr = "git clone -b develop ssh://git@gitlab.shishike.com:38401/c_iphone/" + re['name'] + ".git"
 
         if addr in cmd_list:
@@ -69,8 +71,8 @@ def gitlab(base_url='http://gitlab.shishike.com/groups/c_iphone/-/children.json?
 
 def execute_command(command):
     os.chdir(dest_all_path)
-    time.sleep(random.randint(0, 20))
-    ret = exec_cmd(command)
+    time.sleep(random.randint(0, 10))
+    # ret = exec_cmd(command)
 
 
 def loopUrl():
@@ -79,6 +81,16 @@ def loopUrl():
 
     while 1:
         pass
+
+
+def write_repo(dest='/tmp/gitlab_repo_all.txt'):
+    print('--------------global list ', len(cmd_list), str(cmd_list))
+    tmp = []
+    for t in cmd_list:
+        tmp.append(t)
+        tmp.append('\n')
+    with open(dest, 'w') as out:
+        out.writelines(tmp)
 
 
 if __name__ == "__main__":

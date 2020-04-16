@@ -2,7 +2,8 @@ import os
 import re
 
 from org.ith.learn.util.PXML import parse_string_as_kce, write_kce_to_path
-from org.ith.learn.util.TUtils import exec_cmd, is_contains_chinese, KCEBean, read_xml_as_kce_list, highlight
+from org.ith.learn.util.TUtils import exec_cmd, is_contains_chinese, KCEBean, read_xml_as_kce_list, highlight, \
+    get_cur_branch
 from org.ith.learn.util.Translator import to_simplized
 
 
@@ -93,11 +94,6 @@ def get_module_properties(m_path):
             return dir_path_name + 'gradle.properties'
 
 
-def get_cur_branch():
-    ret = exec_cmd("git branch | grep \\* | awk '{print$2}'")
-    return ret.strip()
-
-
 def get_module_path(path):
     settings = 'settings.gradle'
     module_dirs = []
@@ -138,8 +134,8 @@ def check_branch():
     if get_cur_branch() != 'develop':
         exec_cmd("git checkout develop")
     exec_cmd("git pull -r")
-    exec_cmd("git branch -D i18n")
-    exec_cmd("git checkout -b i18n")
+    exec_cmd("git branch -D merge_test")
+    exec_cmd("git checkout -b merge_test")
 
 
 def clean_module(path_of_module):
@@ -184,7 +180,6 @@ def clean_module(path_of_module):
     str_of_big = ''
     # str_of_big = to_simplized(str_of_big)
     # write_kce_to_path(biggest, main_res_path)
-
 
     # # 修改properties版本号
     # modify_properties(path_of_module)
