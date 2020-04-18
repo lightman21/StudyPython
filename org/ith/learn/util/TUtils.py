@@ -200,5 +200,23 @@ def extra_chinese(word):
     return outer
 
 
+def auto_escape(inputing):
+    """
+    检查传入的字符串 是不是需要转义加\
+    如果包含' 但是不包含\'
+    则需要把' 替换伟\'
+    """
+    origin = ['\'', ]
+    escape = ['\\\'', ]
+
+    if len(inputing) > 0:
+        for index in range(len(escape)):
+            str_input = str(inputing)
+            if str_input.__contains__(origin[index]):
+                if not str_input.__contains__(escape[index]):
+                    inputing = str_input.replace(origin[index], escape[index])
+    return inputing
+
+
 if __name__ == '__main__':
     print(extra_chinese('tanghao唐浩 fasdfj !_ '))

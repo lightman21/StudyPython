@@ -47,7 +47,7 @@ def main():
             print(new)
             count += 1
 
-    write_kce_to_path(diff_list, './diff_remote.xml')
+    write_kce_to_path(diff_list, 'tmp/diff_remote.xml')
 
     modify_list = []
 
@@ -58,7 +58,7 @@ def main():
                     print(kce.key, ', new.cn ' + new.cn + ', remote.cn ' + kce.cn)
                     modify_list.append(new)
 
-    write_kce_to_path(modify_list, './modify_list.xml')
+    write_kce_to_path(modify_list, 'tmp/modify_list.xml')
 
     print('diff size ', count)
 

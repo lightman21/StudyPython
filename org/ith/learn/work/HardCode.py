@@ -67,7 +67,7 @@ list_all_remote = []
 
 def main():
     list_all_remote.extend(pull_remote_values())
-    hardcode_killer('/Users/lightman_mac/company/keruyun/proj_sourcecode/mobile-ui/')
+    hardcode_killer('/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-member-manage/')
 
 
 def hardcode_killer(path_of_module):

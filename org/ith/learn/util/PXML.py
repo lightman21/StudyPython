@@ -8,7 +8,7 @@ import sys
 
 from lxml import etree
 import html
-from org.ith.learn.util.TUtils import KCEBean, XmlStdin, highlight
+from org.ith.learn.util.TUtils import KCEBean, XmlStdin, highlight, auto_escape
 
 path_of_android = "../../../../docs/merge/merge.xml"
 
@@ -70,6 +70,10 @@ def parse_string_as_kce(path_of_string, kce_value='cn'):
 def write_kce_to_path(list_of_kce, path, sort=True, key='cn'):
 
     print('write_kce_to_path: ', highlight(path, 1))
+
+    for kce in list_of_kce:
+        kce.cn = auto_escape(kce.cn)
+        kce.en = auto_escape(kce.en)
 
     impl = xml.dom.minidom.getDOMImplementation()
     dom = impl.createDocument(None, 'resources', None)

@@ -101,7 +101,7 @@ def get_module_path(path):
     remote = 'remotes/origin/develop'
     dest_local = 'develop'
     result = exec_cmd("git branch -a")
-    cmd_switch = "git branch -b develop " + remote
+    cmd_switch = "git checkout -b develop " + remote
     cmd_pull = 'git pull -r'
 
     for dir_path, dirs, files in os.walk(path):
