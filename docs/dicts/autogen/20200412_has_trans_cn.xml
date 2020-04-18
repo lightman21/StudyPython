@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="account_ui_autogen_confirm_pass">确认密码</string>
+	<string name="account_ui_autogen_cur_store">当前门店名称</string>
+	<string name="account_ui_autogen_input_pass">请输入密码</string>
+	<string name="account_ui_autogen_new_pass">新密码</string>
+	<string name="account_ui_autogen_none">无</string>
+	<string name="account_ui_autogen_type">类型</string>
+	<string name="account_ui_autogen_verify_origin_phone">请验证原来的手机号</string>
+	<string name="account_ui_autogen_zilei">子类</string>
+	<string name="kreport_autogen_30_day">30天</string>
+	<string name="kreport_autogen_beizhu">备注：</string>
+	<string name="kreport_autogen_caozuoren">操作人:</string>
+	<string name="kreport_autogen_comfirm">确认</string>
+	<string name="kreport_autogen_input_goods_name">请输入商品名称</string>
+	<string name="kreport_autogen_jieshushijian">结束时间</string>
+	<string name="kreport_autogen_kaishishijian">开始时间</string>
+	<string name="kreport_autogen_more">更多</string>
+	<string name="kreport_autogen_quanbu">全部</string>
+	<string name="kreport_autogen_qushenqing">去申请</string>
+	<string name="kreport_autogen_seven_day">7天</string>
+	<string name="kreport_autogen_xiaoyouhuashuo">小ON有话说：</string>
+	<string name="kreport_autogen_xiaozhangshishou">销账实收:</string>
+	<string name="kreport_autogen_xiaozhangyouhui">销账优惠:</string>
+	<string name="kreport_autogen_zidingyi">自定义</string>
+</resources>

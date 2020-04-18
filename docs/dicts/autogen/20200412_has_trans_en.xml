@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="account_ui_autogen_confirm_pass">Confirm password</string>
+	<string name="account_ui_autogen_cur_store">Current store name</string>
+	<string name="account_ui_autogen_input_pass">Pls enter password</string>
+	<string name="account_ui_autogen_new_pass">new password</string>
+	<string name="account_ui_autogen_none">No</string>
+	<string name="account_ui_autogen_type">Types</string>
+	<string name="account_ui_autogen_verify_origin_phone">Pls verify original phone No.</string>
+	<string name="account_ui_autogen_zilei">Subclass</string>
+	<string name="kreport_autogen_30_day">30 days</string>
+	<string name="kreport_autogen_beizhu">Notes:</string>
+	<string name="kreport_autogen_caozuoren">Operator:</string>
+	<string name="kreport_autogen_comfirm">Confirm</string>
+	<string name="kreport_autogen_input_goods_name">Pls enter a product name</string>
+	<string name="kreport_autogen_jieshushijian">End time</string>
+	<string name="kreport_autogen_kaishishijian">Start time</string>
+	<string name="kreport_autogen_more">More</string>
+	<string name="kreport_autogen_quanbu">All</string>
+	<string name="kreport_autogen_qushenqing">Go to apply</string>
+	<string name="kreport_autogen_seven_day">7 days</string>
+	<string name="kreport_autogen_xiaoyouhuashuo">Little ON has something to say:</string>
+	<string name="kreport_autogen_xiaozhangshishou">Revenue from write-off:</string>
+	<string name="kreport_autogen_xiaozhangyouhui">Offer for write-off:</string>
+	<string name="kreport_autogen_zidingyi">Custom</string>
+</resources>
