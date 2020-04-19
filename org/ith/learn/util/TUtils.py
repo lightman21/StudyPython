@@ -159,7 +159,12 @@ def modify_timestamp(path_file):
     return os.stat(path_file).st_mtime
 
 
+def remove_punctuation(s):
+    return re.sub(r'[^\w\s]', '', s)
+
+
 def read_xml_as_kce_list(xml_path, lang='cn'):
+    xml_path = xml_path.strip()
     with open(xml_path, 'r') as file:
         all_str = file.read()
         fuzzy_matching = r'<string name="(\w*)">(.*)</string>'

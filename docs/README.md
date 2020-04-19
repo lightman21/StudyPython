@@ -10,4 +10,8 @@ git archive i18n_5.34.10 --remote=ssh://git@gitlab.shishike.com:38401/c_iphone/O
 
 
 拉取远端 主工程master分支/values-en/ strings.xml  文件
-git archive --remote=ssh://git@gitlab.shishike.com:38401/c_iphone/OnMobile-Android.git HEAD:app/src/main/res/values-en/ strings.xml | tar -x 
+git archive --remote=ssh://git@gitlab.shishike.com:38401/c_iphone/OnMobile-Android.git HEAD:app/src/main/res/values-en/ strings.xml | tar -x
+
+
+ 
+ 

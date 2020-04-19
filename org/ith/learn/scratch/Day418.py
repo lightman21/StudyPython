@@ -12,10 +12,11 @@ def main():
     path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/Dinner'
     path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/mobile-trade-server'
     path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-member-manage'
+    path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-member-manage'
+    path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-business-setting/'
     p = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-member-manage/kmember/src/main/res/values/strings.xml'
-    # merge_en_string(path)
-
-    find_trans(p)
+    merge_en_string(path)
+    # find_trans(p)
 
     # ready()
     pass
