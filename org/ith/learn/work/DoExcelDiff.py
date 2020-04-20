@@ -34,7 +34,7 @@ python工程 需要一个api支持传入excel路径 转成xml存储
 """
 from org.ith.learn.OhMyEXCEL import excel_to_xml
 from org.ith.learn.util.PXML import write_kce_to_path
-from org.ith.learn.util.TUtils import read_xml_as_kce_list, highlight
+from org.ith.learn.util.TUtils import read_xml_as_kce_list, highlight, auto_escape
 
 out_path = '/Users/lightman_mac/Desktop/0411work/tsd/'
 
@@ -115,24 +115,6 @@ def write_to_kce(list_of_kce, path_of_dest):
 
     with open(out_path + 'merge_kce.xml', 'w') as out:
         out.writelines(str_lines)
-
-
-def auto_escape(inputing):
-    """
-    检查传入的字符串 是不是需要转义加\
-    如果包含' 但是不包含\'
-    则需要把' 替换伟\'
-    """
-    origin = ['\'', ]
-    escape = ['\\\'', ]
-
-    if len(inputing) > 0:
-        for index in range(len(escape)):
-            str_input = str(inputing)
-            if str_input.__contains__(origin[index]):
-                if not str_input.__contains__(escape[index]):
-                    inputing = str_input.replace(origin[index], escape[index])
-    return inputing
 
 
 if __name__ == '__main__':

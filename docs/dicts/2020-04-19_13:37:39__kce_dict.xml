@@ -857,7 +857,7 @@
 <kce key="commercial_name"__keyend cn="Business Name"__cnend en="Merchant name"__enend />
 <kce key="commercial_name_input"__keyend cn="Please enter a business name"__cnend en="Pls enter merchant name"__enend />
 <kce key="commercial_phone_no"__keyend cn="Business phone number"__cnend en="Merchant phone No."__enend />
-<kce key="commercial_phone_no_input"__keyend cn=""Please enter the user's mobile phone number""__cnend en="Pls enter merchant phone No."__enend />
+<kce key="commercial_phone_no_input"__keyend cn="Please enter the user's mobile phone number"__cnend en="Pls enter merchant phone No."__enend />
 <kce key="commercial_simple_name"__keyend cn="Business abbreviation"__cnend en="Merchant\'s short name"__enend />
 <kce key="commercial_simple_name_input"__keyend cn="Please enter the business name"__cnend en="Pls enter merchant\'s short name"__enend />
 <kce key="commercial_status_invalid"__keyend cn="您的服务已到期，请联系400-8866-815进行续约"__cnend en="Your service has expiredpls contact 400-8866-815 for renewal"__enend />

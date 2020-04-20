@@ -6,7 +6,6 @@ from org.ith.learn.util.TUtils import open_excel_as_list, read_xml_as_kce_list, 
     auto_escape, extra_chinese, remove_punctuation, is_contains_chinese, exec_cmd
 
 import re
-
 import difflib
 import zipfile
 
