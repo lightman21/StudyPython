@@ -24,15 +24,15 @@ def search_kce(search, compare_by='cn', dict_path='../../../../docs/dicts/2020_0
             rets = rets[0]
             kce = KCEBean(key=rets[0], cn=rets[1], en=rets[2])
             if compare_by == 'key':
-                if down_thread < approximately_equal_to(kce.key, search) <= up_threshold:
+                if down_thread <= approximately_equal_to(kce.key, search) <= up_threshold:
                     # if kce.key == search:
                     return kce
             elif compare_by == 'en':
-                if down_thread < approximately_equal_to(kce.en, search) <= up_threshold:
+                if down_thread <= approximately_equal_to(kce.en, search) <= up_threshold:
                     # if kce.en == search:
                     return kce
             else:  # 比cn默认
-                if down_thread < approximately_equal_to(kce.cn, search) <= up_threshold:
+                if down_thread <= approximately_equal_to(kce.cn, search) <= up_threshold:
                     # if kce.cn == search:
                     return kce
 
@@ -72,12 +72,53 @@ def work():
     pass
 
 
+def gener_diff(new_path, old_path, diff_path='./diff_old_new_2.xml'):
+    kce_list_new = read_xml_as_kce_list(new_path)
+    kce_list_old = read_xml_as_kce_list(old_path)
+    key_olds = []
+    for kce in kce_list_old:
+        key_olds.append(kce.key)
+
+    diff_kce = set()
+    count = 0
+
+    for new in kce_list_new:
+        if new.key not in key_olds:
+            # if not str(new.key).__contains__('autogen'):
+            #     if not str(new.key).__contains__('takeout_'):
+            if not str(new.key).__contains__('leak_canary_'):
+                diff_kce.add(new)
+
+        for old in kce_list_old:
+            if old.key == new.key and old.cn != new.cn:
+                diff_kce.add(new)
+
+    print('old len ', len(kce_list_old), ',new len ', len(kce_list_new))
+    print(', diff count ', count)
+    write_kce_to_path(diff_kce, diff_path)
+
+
 def main(argv=None):
     if argv is None:
         argv = sys.argv
+    # new_path = '/Users/toutouhiroshidaiou/tmp/new_535_/res/values/strings.xml'
+    # old_path = '/Users/toutouhiroshidaiou/tmp/old_534.apk/res/values/strings.xml'
+    # gener_diff(new_path, old_path)
 
-    print(search_kce("唐浩"))
-    pass
+    # diff_list = read_xml_as_kce_list('diff_old_new_2.xml')
+    # count = 0
+    # for diff in diff_list:
+    #     ret = search_kce(diff.cn, down_thread=1.0)
+    #     if ret is not None:
+    #         count += 1
+    #         print('search ', highlight(diff.cn, 3), ',return ' + ret.hl())
+    # print('total diff ', len(diff_list), ',find ', count)
+
+    gener_dict_by_excel('/Users/toutouhiroshidaiou/Desktop/i18n/0421_i18n.xlsx')
+
+
+def gener_dict_by_excel(path_of_excel):
+    excel_to_xml(path_of_excel)
 
 
 if __name__ == '__main__':

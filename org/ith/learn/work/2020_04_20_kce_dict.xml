@@ -618,7 +618,7 @@
 <kce key="cannot_zhuantai_with_diff_type          " cn="Different types of orders cannot be turned" en="Different types of orders cannot be turned"/>
 <kce key="card_no_label                           " cn="卡号: %1$s" en="Card no.: %1$s"/>
 <kce key="card_num                                " cn="卡号" en="Card no."/>
-<kce key="carte_merge_status_invalid              " cn=""sorry, buffet orders can\'t be combined"" en="Sorry, buffet orders can\'t be combined"/>
+<kce key="carte_merge_status_invalid              " cn="sorry, buffet orders can\'t be combined" en="Sorry, buffet orders can\'t be combined"/>
 <kce key="carte_open_mode                         " cn="自助餐开台模式" en="Opening table mode for buffet"/>
 <kce key="carte_trade_status_invalid              " cn="Buffet order pls process with casher pos" en="For buffet orders. pls complete the relevant operations on pos"/>
 <kce key="cash                                    " cn="现金" en="Cash"/>
@@ -2631,7 +2631,7 @@
 <kce key="lefu_ying_ye_zhi_zhao                   " cn="Silver license" en="Business license"/>
 <kce key="legal_person                            " cn="Legal person" en="Legal representative"/>
 <kce key="legal_person_address                    " cn="Legal entity address" en="Legal representative\'s name and address"/>
-<kce key="legal_person_address_input              " cn=""pls enter legal person\'s address"" en="Pls enter legal representative\'s name and address"/>
+<kce key="legal_person_address_input              " cn="pls enter legal person\'s address" en="Pls enter legal representative\'s name and address"/>
 <kce key="legal_person_exist_check                " cn="Whether to authorize the algorithm" en="Authorized settlement legal representative？"/>
 <kce key="legal_person_id_input                   " cn="Pls enter identification number" en="Pls enter legal representative\'s id card no."/>
 <kce key="legal_person_name                       " cn="Legal name" en="Legal representative\'s name "/>
@@ -3610,7 +3610,7 @@
 <kce key="print_refund_time                       " cn="退货时间" en="Return time"/>
 <kce key="print_refund_total                      " cn="退货合计" en="Total of returned goods"/>
 <kce key="print_refund_valued_count               " cn="储值退货:" en="Prepaid refunding:"/>
-<kce key="print_ren_min_bi                        " cn=""rmb "" en=""rmb ""/>
+<kce key="print_ren_min_bi                        " cn="rmb"  en="rmb" />
 <kce key="print_repeat                            " cn="(反结)" en="(reverse knot)"/>
 <kce key="print_reprint                           " cn="--resupply" en="--resupply"/>
 <kce key="print_returnguest_benefit_privilege     " cn="[熟客优惠]" en="[acquaintance discount]"/>
@@ -3803,7 +3803,7 @@
 <kce key="qianbao_refund_success_already          " cn="退款已完成，不能重复操作！" en="The refund has been completed and cannot be repeated!"/>
 <kce key="qianbao_refund_when_refund_failed       " cn="请到原单上操作退款！" en="Pls go to the original order to operate the refund!"/>
 <kce key="qianbao_status_failed                   " cn="查询状态失败！" en="The query status failed!"/>
-<kce key="qiantian                                " cn=""前天 "" en="The day before yesterday"/>
+<kce key="qiantian                                " cn="前天 " en="The day before yesterday"/>
 <kce key="qiaobao_print_success                   " cn="打印成功！" en="Print success !"/>
 <kce key="qingquerencaoicuo2                      " cn="Pls confirm the operation?" en="Pls confirm the operation?"/>
 <kce key="qingquerencaozuo                        " cn="请确认操作？" en="Pls confirm the operation?"/>

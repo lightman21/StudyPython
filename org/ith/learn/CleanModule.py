@@ -139,7 +139,6 @@ def check_branch():
 
 
 def clean_module(path_of_module):
-
     os.chdir(path_of_module)
 
     check_branch()
@@ -194,6 +193,8 @@ def clean_module(path_of_module):
 
     # commit
     # exec_cmd('git add .; git commit -m "remove values except default" ')
+
+    print('main_res_path', main_res_path)
 
     return main_res_path
 

@@ -32,7 +32,8 @@ class KCEBean:
 
     def __eq__(self, other):
         if isinstance(other, self.__class__):
-            return self.key == other.key and self.cn == other.cn and self.en == other.en
+            # return self.key == other.key and self.cn == other.cn and self.en == other.en
+            return self.key == other.key and self.cn == other.cn
 
     def __hash__(self):
         return hash(self.key)
