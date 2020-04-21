@@ -1,9 +1,10 @@
 import os
 import sys
+import time
 
 from org.ith.learn.util.PXML import write_kce_to_path
 from org.ith.learn.util.TUtils import open_excel_as_list, KCEBean, exec_cmd, highlight, read_xml_as_kce_list, \
-    write_to_excel
+    write_to_excel, is_contains_chinese, md5
 
 """git archive --remote=ssh://git@gitlab.shishike.com:38401/c_iphone/OnMobile-Android.git 
 HEAD:app/src/main/res/values-en/ strings.xml | tar -x && cp strings.xml ~/th_strings.xml && rm strings.xml 
@@ -62,11 +63,20 @@ def excel_to_xml(path_of_excel, xml_path='../../../docs/'):
         if len(kce.en) > 0:
             en_list.append(KCEBean(key=kce.key, cn='', en=kce.en))
 
-    en_out_path = xml_path + excel_name + '_english.xml'
-    cn_out_path = xml_path + excel_name + '_china.xml'
+    now_date = time.strftime("%Y_%m_%d_%H_%M_%S", time.localtime())
+    en_out_path = xml_path + excel_name + '_' + now_date + '_english.xml'
+    cn_out_path = xml_path + excel_name + '_' + now_date + '_china.xml'
 
     log = 'excel_to_xml cn size ' + str(len(cn_list)) + ', en size ' + str(len(en_list))
     print(highlight(log, 2))
+
+    for cn in cn_list:
+        if is_contains_chinese(cn.key):
+            cn.key = md5(cn.key)
+
+    for en in en_list:
+        if is_contains_chinese(en.key):
+            en.key = md5(en.key)
 
     write_kce_to_path(list_of_kce=en_list, path=en_out_path, key='en')
     write_kce_to_path(list_of_kce=cn_list, path=cn_out_path, key='cn')

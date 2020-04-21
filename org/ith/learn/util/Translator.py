@@ -107,12 +107,7 @@ def curl_trans(str_input):
 
 
 if __name__ == '__main__':
-    with open('cn_xml.xml', 'r') as file:
+    with open('/Users/lightman_mac/company/keruyun/oh_my_python/StudyPython/docs/pure/dinner_string.xml', 'r') as file:
         trans = file.read()
-        trans = to_traditionalized(trans)
-
-        with open('./th_tw.xml', 'w') as th:
-            th.write(trans)
-
-        # trans = curl_trans(trans)
+        trans = curl_trans(trans)
         print(trans)

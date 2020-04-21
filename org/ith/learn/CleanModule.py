@@ -7,6 +7,68 @@ from org.ith.learn.util.TUtils import exec_cmd, is_contains_chinese, KCEBean, re
 from org.ith.learn.util.Translator import to_simplized
 
 
+def clean_module(path_of_module):
+    os.chdir(path_of_module)
+
+    check_branch()
+
+    main_res = 'res/values/strings.xml'
+    list_of_values = list_res_values(path_of_module)
+    biggest = []
+    keys = []
+    all_kv_dict = []
+
+    main_res_path = ''
+
+    for item in list_of_values:
+
+        if main_res in item:
+            main_res_path = item
+
+        # p_list = parse_string_as_kce(item)
+        p_list = read_xml_as_kce_list(item)
+
+        for p in p_list:
+
+            all_kv_dict.append(p)
+
+            # 生成包含所有key的biggest
+            if p.key not in keys:
+                biggest.append(p)
+                keys.append(p.key)
+
+    # 确保biggest里的kv v是中文
+    for b in biggest:
+        if not is_contains_chinese(b.cn):
+            for al in all_kv_dict:
+                if al.key == b.key and is_contains_chinese(al.cn):
+                    b.cn = to_simplized(al.cn)
+        b.cn = to_simplized(b.cn)
+
+        # 把biggest.xml的内容写入main_res.
+    # sorted(biggest)
+
+    write_kce_to_path(biggest, main_res_path)
+
+    # # 修改properties版本号
+    # modify_properties(path_of_module)
+
+    # 执行upload 即编译
+    # build_module(path_of_module)
+
+    # 删除其他values
+    # for other in list_of_values:
+    #     if not other.__contains__(main_res):
+    #         os.remove(other)
+
+    # commit
+    # exec_cmd('git add .; git commit -m "remove values except default" ')
+
+    print('main_res_path', main_res_path)
+
+    return main_res_path
+
+
 def write_demo():
     # 遍历目录
     path = "/Users/lightman_mac/company/keruyun/proj_sourcecode/Dinner/dinnerui/src/main/res"
@@ -80,7 +142,7 @@ def list_res_values(m_path):
                 if file.__contains__('strings'):
                     full_name = dir_path_name + '/' + file
                     list_of_res.append(full_name)
-                    print(highlight(full_name))
+                    print(highlight(full_name), 3)
     return list_of_res
 
 
@@ -138,67 +200,6 @@ def check_branch():
     exec_cmd("git checkout -b merge_test")
 
 
-def clean_module(path_of_module):
-    os.chdir(path_of_module)
-
-    check_branch()
-
-    main_res = 'res/values/strings.xml'
-    list_of_values = list_res_values(path_of_module)
-    biggest = []
-    keys = []
-    all_kv_dict = []
-
-    main_res_path = ''
-
-    for item in list_of_values:
-
-        if main_res in item:
-            main_res_path = item
-
-        p_list = parse_string_as_kce(item)
-
-        for p in p_list:
-
-            all_kv_dict.append(p)
-
-            # 生成包含所有key的biggest
-            if p.key not in keys:
-                biggest.append(p)
-                keys.append(p.key)
-
-    # 确保biggest里的kv v是中文
-    for b in biggest:
-        if not is_contains_chinese(b.cn):
-            for al in all_kv_dict:
-                if al.key == b.key and is_contains_chinese(al.cn):
-                    b.cn = al.cn
-
-    # 把biggest.xml的内容写入main_res.
-    sorted(biggest)
-    str_of_big = ''
-    # str_of_big = to_simplized(str_of_big)
-    # write_kce_to_path(biggest, main_res_path)
-
-    # # 修改properties版本号
-    # modify_properties(path_of_module)
-
-    # 执行upload 即编译
-    # build_module(path_of_module)
-
-    # 删除其他values
-    # for other in list_of_values:
-    #     if not other.__contains__(main_res):
-    #         os.remove(other)
-
-    # commit
-    # exec_cmd('git add .; git commit -m "remove values except default" ')
-
-    print('main_res_path', main_res_path)
-
-    return main_res_path
-
-
 def build_module(m_path):
     os.chdir(m_path)
     exec_cmd("./gradlew uploadArchives")
@@ -226,7 +227,7 @@ def modify_properties(m_path='/tmp/tmp/Dinner/', v_code=12345, v_name="1.23.45")
 
 
 def main():
-    clean_module('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Dinner/')
+    clean_module('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-commodity/')
 
 
 def old():

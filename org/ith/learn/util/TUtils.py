@@ -25,7 +25,8 @@ class KCEBean:
         return result
 
     def __str__(self):
-        return 'key:{:<30} cn:{:<20} en:{:<20}'.format(str(self.key), str(self.cn), str(self.en))
+        # return 'key:{:<30} cn:{:<20} en:{:<20}'.format(str(self.key), str(self.cn), str(self.en))
+        return 'key:{}___cn:{}___en:{}'.format(str(self.key), str(self.cn), str(self.en))
 
     def __lt__(self, other):
         return self.key.lower() < other.key.lower()

@@ -1,0 +1,134 @@
+<kce key="account_password_modify_error " cn="密码修改失败" en="Password modification failed"/>
+<kce key="account_modify_pwd_success    " cn="密码修改成功！" en="Successful password modification"/>
+<kce key="account_modify_pwd_newpwd_confirm" cn="确认密码：" en="Confirm password"/>
+<kce key="shop_name_hint                " cn="当前门店名称" en="Current store name"/>
+<kce key="account_ui_autogen_input_new_phone" cn="请输入新的手机号" en="Pls enter new phone no."/>
+<kce key="input_band_pay_password       " cn="请输入密码" en="Pls enter the password"/>
+<kce key="account_modify_pwd_newpwd     " cn="新密码：" en="New password:"/>
+<kce key="dinner_has_not                " cn="无" en="No"/>
+<kce key="casher_type_name              " cn="类型" en="Types"/>
+<kce key="account_ui_autogen_verify_phone" cn="请验证手机号" en="Pls verify phone no."/>
+<kce key="add_subclass_text             " cn="子类" en="Subclass"/>
+<kce key="app_item_quick_guide_open     " cn="去开通" en="To open"/>
+<kce key="message_type_msglist          " cn="消息通知" en="Notice"/>
+<kce key="24513dc8c02bb021a1c944009c19215b" cn="开启失败" en="Fail to start"/>
+<kce key="commodity_operation           " cn="操作" en="Operation"/>
+<kce key="klight_month                  " cn="月" en="Month "/>
+<kce key="klight_week                   " cn="周" en="Week "/>
+<kce key="businesssetting_autogen_ah_no_data" cn="咦...没有任何内容，先去逛逛别的吧" en="No content."/>
+<kce key="account_confirm2              " cn="确认" en="Confirm"/>
+<kce key="businesssetting_autogen_reload" cn="重新加载" en="Reloading"/>
+<kce key="select_duration_title         " cn="选择时间段" en="Select time period"/>
+<kce key="combo_ren_shu_to              " cn="至" en="To"/>
+<kce key="cash_record                   " cn="收款记录" en="Payment record"/>
+<kce key="17cdabc36e143caa031d277a56257819" cn="批量配置税种" en="Configure taxes in batches"/>
+<kce key="6d82c4e69588692b66f1291bb406a88b" cn="配置税种" en="Configure tax type"/>
+<kce key="dinner_format_service         " cn="(%1$s%%)" en="(%1$s%%)"/>
+<kce key="drsk_voidorder_successed      " cn="作废成功" en="Void success"/>
+<kce key="revoke_invoice                " cn="作废发票" en="Void invoice"/>
+<kce key="96bbdce61a4cb9dcf4eea41c48f5193d" cn="采购申请单" en="Purchase application requisition"/>
+<kce key="1d17bc336d820674acc36cf61e0bd8e9" cn="添加分组说明" en="Description for group addition"/>
+<kce key="9318a11d804deec8dd27c59e674279d9" cn="不超过10个字" en="No more than 10 words"/>
+<kce key="set_meal_group_name           " cn="分组名称" en="Group name"/>
+<kce key="default_unit_ge               " cn="个" en="Pcs"/>
+<kce key="app_item_quick_guide_install  " cn="去设置" en="Set"/>
+<kce key="inventory_choice_30           " cn="30天" en="30 days"/>
+<kce key="kreport_autogen_anbishupaixu  " cn="按笔数排序" en="Sort by no. of orders"/>
+<kce key="kreport_autogen_anrixuanze    " cn="按日选择" en="By day"/>
+<kce key="kreport_autogen_anyuexuanze   " cn="按月选择" en="By month"/>
+<kce key="kreport_autogen_anzhouxuanze  " cn="按周选择" en="By week"/>
+<kce key="beizhu                        " cn="备注：" en="Notes:"/>
+<kce key="kreport_autogen_caozuolaiyuan " cn="操作来源:" en="Operation source"/>
+<kce key="kreport_autogen_caozuoleixing " cn="操作类型" en="Operation type"/>
+<kce key="dinner_opeater                " cn="操作人:" en="Operator:"/>
+<kce key="kreport_autogen_changqi       " cn="长期" en="Long-term"/>
+<kce key="account_confirm2              " cn="确认" en="Confirm"/>
+<kce key="kreport_autogen_dafudu        " cn="大幅度" en="In a large scale"/>
+<kce key="kreport_autogen_dangqianwancheng" cn="当前完成 10%" en="10% completed"/>
+<kce key="please_input_shop_ming_chen   " cn="请输入商品名称" en="Pls enter a product name"/>
+<kce key="member_credit_order_no        " cn="交易单号：" en="Order number of transaction:"/>
+<kce key="inventory_stop_time           " cn="结束时间" en="End time"/>
+<kce key="kreport_autogen_jinpai        " cn="金牌" en="Gold medal"/>
+<kce key="inventory_start_time          " cn="开始时间" en="Start time"/>
+<kce key="kreport_autogen_mendianshaixuan" cn="门店筛选" en="Sort stores"/>
+<kce key="dinner_more                   " cn="更多" en="More"/>
+<kce key="all                           " cn="全部" en="All"/>
+<kce key="dinner_goto_apply             " cn="去申请" en="Go to apply"/>
+<kce key="kreport_autogen_redu          " cn="热度 - %" en="Popularity-%"/>
+<kce key="inventory_choice_7            " cn="7天" en="7 days"/>
+<kce key="member_credit_order_show_time " cn="时间：" en="Date:"/>
+<kce key="kreport_autogen_start_end_diff_limit" cn="*结束时间和开始时间的相差不超过31天" en="*the difference between ending time and starting time can\'t be over 31 days"/>
+<kce key="kreport_autogen_tongpai       " cn="铜牌" en="Bronze medal"/>
+<kce key="kreport_autogen_view_more_store" cn="查看更多门店>>" en="View more stores>>"/>
+<kce key="kreport_autogen_wanfen        " cn="万份" en="Ten thousand"/>
+<kce key="kreport_autogen_wanyuan       " cn="万元" en="Ten thousand yuan"/>
+<kce key="kreport_autogen_xiaoshoue     " cn="销售额" en="Sales"/>
+<kce key="kreport_autogen_xiaozhangliyou" cn="销账理由:" en="Write-off reason："/>
+<kce key="member_credit_hint_shishou    " cn="销账实收:" en="Revenue from write-off:"/>
+<kce key="member_credit_hint_youhui     " cn="销账优惠:" en="Offer for write-off:"/>
+<kce key="kreport_autogen_yiguazhang    " cn="已挂账" en="Pended"/>
+<kce key="kreport_autogen_yinpai        " cn="银牌" en="Silver medal"/>
+<kce key="kreport_autogen_yuanren_zero  " cn="0元/人" en="0￥/pax"/>
+<kce key="kreport_autogen_yuanzhuo_zero " cn="0元/桌" en="0￥/table"/>
+<kce key="kreport_autogen_zanwurenxiaoshuju" cn="暂无人效数据哦~" en="No staff data for now"/>
+<kce key="kreport_autogen_zero_yuan     " cn="+0元" en=" +0￥"/>
+<kce key="cash_customize                " cn="自定义" en="Custom"/>
+<kce key="kreport_autogen_zongdanshu    " cn="总单数：" en="Total no. of orders"/>
+<kce key="business_please_enter         " cn="请输入" en="Pls enter"/>
+<kce key="81767e829a47b5808e0a02afe9c94ce8" cn="创建储值分组" en="Create top-up group"/>
+<kce key="a7553cf8367ad11f45a8910eef8457ca" cn="一或多个门店分组" en="One or several store groups"/>
+<kce key="businesssetting_autogen_ah_no_data" cn="咦...没有任何内容，先去逛逛别的吧" en="No content."/>
+<kce key="businesssetting_autogen_reload" cn="重新加载" en="Reloading"/>
+<kce key="account_store                 " cn="门店" en="Store"/>
+<kce key="modify_commodity              " cn="商品编辑" en="Edit item"/>
+<kce key="report_bo_income_biz_bo       " cn="营业收入" en="Business revenue"/>
+<kce key="82b6fd454dedb104719145e21d0b38dc" cn="含卡费收款" en="Include card fee"/>
+<kce key="615311525ec6cbcd83b787843e7b723f" cn="商品销售统计表" en="Items\' sales table"/>
+<kce key="drsk_refund_order             " cn="退货" en="Returns"/>
+<kce key="0909447795248f293c8a27c70e6ca4b4" cn="销货" en="Sell goods"/>
+<kce key="48f2fba459bf6a78b164d8e425febf1e" cn="储值与卡费收款" en="Revenue from top-up and card fee"/>
+<kce key="report_include_member_income  " cn="(含储值消费)" en="(including stored value consumption)"/>
+<kce key="report_zqkdj                  " cn="折前客单价" en="Average payment before discount"/>
+<kce key="2caa1aaf7f6012b83b829ed672870123" cn="未支付订单" en="Unpaid orders"/>
+<kce key="4e2295cc1b7a42fb8bfc26957719bd22" cn="快手开店" en="Kuaishou opens store"/>
+<kce key="13c314c1f58a84ba7da42b9aa9756485" cn="优惠权限" en="Offer permission"/>
+<kce key="fd1237020af4f83895b15da031d61764" cn="员工角色" en="Staff role"/>
+<kce key="12cb29c1b94ae4d2eb21fbcb359475c1" cn="呼叫客户" en="Call customer"/>
+<kce key="08ea4e2b1ee6f84bc29138cb88207644" cn="商品清单" en="Goods list"/>
+<kce key="5f49af3102f30def35b6bd8b9ad036d1" cn="确定送达" en="Confirm delivery"/>
+<kce key="f87f48f2794b20ff1bdf47814a5d42a6" cn="已送达" en="Arrived"/>
+<kce key="96c2974ca1be85f3495c1fbc33af6353" cn="送达并收款" en="Arrived and collect money"/>
+<kce key="delivery_summary_code         " cn="配送单号：" en="Delivery no."/>
+<kce key="91297c57dc5d65775a698e9b8f534d01" cn="下班签出" en="Clock out after work"/>
+<kce key="82a0e90da5dc132b61c30bf6d25ad3e0" cn="上班签到" en="Clock in at work"/>
+<kce key="fc00d9569cd703c57631745d9e3f1582" cn="期望送达" en="Expect to derliver"/>
+<kce key="home_my_invoice_head          " cn="发票抬头" en="Invoice title"/>
+<kce key="78edf62d063557beb0784aea90674bce" cn="导航中" en="Navigating"/>
+<kce key="a2a456b8d142d0718087f9f394c3565a" cn="导航地址" en="Navigation address"/>
+<kce key="user_operate_log_no_checked_hint" cn="未有选中的选项" en="No items selected"/>
+<kce key="order_info                    " cn="订单信息" en="Order info"/>
+<kce key="report_order_number           " cn="订单编号：" en="Order number："/>
+<kce key="e376c1f720f79bd50288cc8a65031c05" cn="下单平台" en="Order platform"/>
+<kce key="4d1125c83c8051bf5a700ab1ccd4c12d" cn="点单时间" en="Order time"/>
+<kce key="business_hour                 " cn="小时" en="Hour"/>
+<kce key="business_minute               " cn="分钟" en="Minute"/>
+<kce key="2d2ccdcbbee739573cc743456be6d373" cn="货到付款" en="Cash on delivery"/>
+<kce key="f8a403948e3c5191d2077076e26ed72c" cn="已取货" en="Picked up"/>
+<kce key="228a7eb0f37fbf2397bd51e57eb4a4a6" cn="领取并继续扫描" en="Receive and continue to scan"/>
+<kce key="979f0bb8886e6143efc77ed84d478f32" cn="领取失败" en="Fail to receive"/>
+<kce key="fd2dacde49f6699c22dbd49e8b7c2eff" cn="领取成功" en="Successful reception"/>
+<kce key="b1f50ad319ee3905a7d837c623ae98ec" cn="领取配送任务" en="Receive delivery task"/>
+<kce key="6dad58c5cc1ff4335d6ab0bcc421104e" cn="继续导航" en="Continue navigate"/>
+<kce key="baidu_map                     " cn="百度地图" en="Baidu map"/>
+<kce key="call_center                   " cn="呼叫中心" en="Call center"/>
+<kce key="print_source_dianping         " cn="大众点评" en="Dianping"/>
+<kce key="baidu_order                   " cn="饿了么星选" en="Star ele.me"/>
+<kce key="drsk_source_elem              " cn="饿了么" en="Ele.me"/>
+<kce key="meituan_takeout               " cn="美团外卖" en="Meituan waimai"/>
+<kce key="baidu_nomi                    " cn="百度糯米" en="Baidu nuomi"/>
+<kce key="drsk_source_open_platform     " cn="开放平台" en="Open platform"/>
+<kce key="dinner_checkout_wechat_pay    " cn="微信" en="Wechat"/>
+<kce key="abf092adbcd783364988a540daf564fe" cn="请选择待配单" en=" "/>
+<kce key="order_center_total_refund     " cn="总计" en="Total"/>
+<kce key="1ef6f1db1a02b1385af1723db35b4e7b" cn="待接单" en="Wait for accept"/>
+<kce key="6c6e957324721ef3d66817b337fde671" cn="请先上班签到" en="Pls clock in first"/>

@@ -1,0 +1,670 @@
+<kce key="accept_and_printf             " cn="接受后将打印后厨单据，请确认" en="Pls confirm after receiving the print houchu documents "/>
+<kce key="accepted_str                  " cn="接受" en="Accept"/>
+<kce key="7d457742d1dec82ad5737a76798261fb" cn="接单" en="Accept orders"/>
+<kce key="add_dish_carte                " cn="餐标加菜" en="Dishes addition for a standard dinner"/>
+<kce key="add_dish_carte_status_invalid " cn="已经结账的自助餐订单请到pos完成操作" en="Paid buffet order pls process with casher pos"/>
+<kce key="add_dish_carte_status_invalid2" cn="请到pos选择当前订单的自助餐餐标" en="Pls select the buffet\'s standard price for the current order on pos"/>
+<kce key="add_dish_normal               " cn="普通加菜" en="Ordinary food addition"/>
+<kce key="add_dish_success              " cn="加菜成功" en="Add dishes successfully"/>
+<kce key="advance_payment_been_deducted " cn="预付金已扣除，下单成功" en="The advance payment has been deducted and the order placed success"/>
+<kce key="after_discount_amount         " cn="折后 %1$s%2$s" en="Price after discount %1$s%2$s"/>
+<kce key="after_pay_balance             " cn="消费后余额" en="Balance after paid"/>
+<kce key="zfb_cash                      " cn="支付宝收款" en="Alipay collection"/>
+<kce key="priviege_discount             " cn="整单折扣" en="Bill discount"/>
+<kce key="zheng_dan_bei_zhu             " cn="整单备注：" en="Notes of the whole order:"/>
+<kce key="kmobile_all_rebate            " cn="整单让价" en="Bill deduction"/>
+<kce key="all_tables                    " cn="全部桌台" en="All tables"/>
+<kce key="dinner_already_processed      " cn="已处理" en="Processed"/>
+<kce key="assign_cash_bill_list         " cn="Billlist" en="Billlist"/>
+<kce key="assign_cash_canceled_list     " cn="Canceledlist" en="Canceledlist"/>
+<kce key="assign_cash_guest_list        " cn="Guestlist" en="Guestlist"/>
+<kce key="assign_cash_point_no_config_ticket" cn="该收银点没有配置需要的票据" en="The cashier counter doesn\'t have the configuration required receipts"/>
+<kce key="assign_cash_point_notice      " cn="若不指定收银点，默认跟随主收银设备的设置" en="If cashier counter isn\'t designated,  follow main cash register setup by default"/>
+<kce key="assign_cash_point_title       " cn="打印指定收银点（可多选）" en="Set cashier"/>
+<kce key="assign_cash_pre_statement     " cn="Pre-statement" en="Pre-statement"/>
+<kce key="assign_cash_return_list       " cn="Returnlist" en="Returnlist"/>
+<kce key="at_current_table              " cn="您已经在该桌台了，无需要转台！" en="The same table!"/>
+<kce key="member_credit_baiduqianbao_pay2" cn="百度钱包收款" en="Receive money by baidu wallet"/>
+<kce key="bar_closing_order_mes         " cn="请确认顾客已离店，订单中未使用完的预付金不会退款，是否继续完结订单？" en="Pls confirm that the customer has left the store. the unused prepayment in the order won\'t be refunded. continue to settle the order?"/>
+<kce key="bar_total_money_advance_charge" cn="已结（不含预付）%1$s" en="Closed (excluding advance payment)%1$s"/>
+<kce key="bar_total_money_str           " cn="本次应付：%1$s" en="Payment：%1$s"/>
+<kce key="batch_discount                " cn="批量折扣" en="Batch discount"/>
+<kce key="order_preview_free            " cn="赠送" en="Give away"/>
+<kce key="batch_rebate                  " cn="批量让价" en="Batch deduction"/>
+<kce key="before_pay_balance            " cn="消费前余额" en="Pre-consumer balance"/>
+<kce key="ts_beizhu                     " cn="备注：" en="Notes:"/>
+<kce key="tradeui_beyond_max_count      " cn="已超过可选最大份数" en="Has exceeded the maximum number of options"/>
+<kce key="tradeui_edit                  " cn="编辑" en="Edit"/>
+<kce key="bucanyuyouhui                 " cn="不参与优惠的金额" en="The amount do not participate in the discount"/>
+<kce key="call_service_str              " cn="呼叫服务" en="Call service"/>
+<kce key="can_not_merge                 " cn="无法合并订单！" en="Unable to merge orders"/>
+<kce key="tradeui_dialog_common_cancel  " cn="取消" en="Cancel"/>
+<kce key="cancel_batch_free             " cn="取消赠送" en="Cancel gifts"/>
+<kce key="home_my_invoice_cancel_choice " cn="取消全选" en="Cancel all"/>
+<kce key="member_credit_cancel_trade_reason" cn="订单作废理由" en="Reason for invalidating orders"/>
+<kce key="cancel_trade_title            " cn="订单作废" en="Invalidate order"/>
+<kce key="ts_canhefei                   " cn="餐盒费" en="Lunch box fee"/>
+<kce key="cannot_merge_paid             " cn="(不能合至已支付订单)" en="(can\'t be merged into paid order)"/>
+<kce key="cannot_merge_self             " cn="(不能合至当前订单)" en="(can\'t be merged into current order)"/>
+<kce key="cannot_merge_unhandle         " cn="(不能合至未处理订单)" en="(can\'t be merged into unhandled order)"/>
+<kce key="cannot_merge_with_diff_type   " cn="不同类型的订单不能进行合单" en="Different types of orders cannot be combined"/>
+<kce key="cannot_open_table_with_carte  " cn="桌台上存在自助餐订单，不允许开台" en="There are buffet orders on the table. the table isn\'t allowed to open"/>
+<kce key="cannot_open_table_with_fs     " cn="桌台上存在正餐订单，不允许开台" en="There is a dinner order on the table. the table isn\'t allowed to open"/>
+<kce key="cannot_zhuantai_with_diff_type" cn="不同类型的订单不能进行转台" en="Different types of orders cannot be turned"/>
+<kce key="carte_merge_status_invalid    " cn="抱歉，自助餐订单不能合单" en="Sorry, buffet orders can\'t be combined"/>
+<kce key="carte_trade_status_invalid    " cn="自助餐订单请到pos完成相关操作" en="For buffet orders. pls complete the relevant operations on pos"/>
+<kce key="cash_cash_amnount             " cn="现金金额" en="Cash amount"/>
+<kce key="print_odd_change              " cn="找零" en="Change"/>
+<kce key="cash_pay_mark_info            " cn="注：收到现金后请及时到pos清账并入钱箱，谢谢！" en="Note: pls promptly clear the account at  pos and put cash into cash drawer after receiving the cash. thank you!"/>
+<kce key="casher_abandon_receivables    " cn="放弃收款" en="Give up collection"/>
+<kce key="casher_again_receiveables     " cn="重新收款" en="Collect again"/>
+<kce key="member_credit_casher_customer_paycode" cn="扫码付" en="Pay by scanning code"/>
+<kce key="member_credit_casher_paycode  " cn="付款码" en="Payment code"/>
+<kce key="casher_paysuccess_ok          " cn="好 的" en="Ok"/>
+<kce key="change_note                   " cn="修改备注：" en="Modify note:"/>
+<kce key="change_people_count           " cn="修改人数：" en="Change pax:"/>
+<kce key="8d02a56220302a9e6362efc5e17f93cd" cn="已支付" en="Paid"/>
+<kce key="checkout_str                  " cn="结 账" en="Checkout"/>
+<kce key="choose_free_reason_hint       " cn="请选择赠送理由" en="Pls select the reson of giving gift?"/>
+<kce key="choose_ivr_voice_content      " cn="请选择ivr语音内容" en="Pls select ivr voice content"/>
+<kce key="tradeui_optional              " cn="可选" en="Optional"/>
+<kce key="klight_clear_data_succussed   " cn="数据清理成功！" en="Data cleanup success"/>
+<kce key="clear_discount                " cn="移除优惠" en="Remove discounts"/>
+<kce key="table_clear_table_msg_confirm " cn="桌台已清理完毕？" en="To clear the table?"/>
+<kce key="clear_table_msg_failed        " cn="\提交失败，是否重试？" en="Submit failure, whether to try again?"/>
+<kce key="tradeui_order_give_up_prompt  " cn="是否放弃本次点餐！" en="Do you want to give up this order"/>
+<kce key="comma                         " cn=", " en=", "/>
+<kce key="table_common_cancel           " cn="取 消" en="Cancel"/>
+<kce key="common_continue               " cn="继 续" en="Continue"/>
+<kce key="table_common_ok               " cn="确 定" en="Confirm"/>
+<kce key="tradeui_confirm               " cn="确  定" en="Confirm"/>
+<kce key="tradeui_dialog_common_confirm " cn="确定" en="Confirm"/>
+<kce key="connect_network_error         " cn="网络连接失败，请检查" en="Failed to connect to the network, pls check"/>
+<kce key="continue_checkout             " cn="继续结账" en="Continue to checkout"/>
+<kce key="print_coupons                 " cn="优惠券" en="Coupon"/>
+<kce key="remind_dish                   " cn="催菜" en="Reminder"/>
+<kce key="da_ying                       " cn="打印 " en="Print "/>
+<kce key="member_face_type              " cn="代金券" en="Cash voucher"/>
+<kce key="str_groupcoupon_data_error    " cn="数据异常" en="Data anomaly"/>
+<kce key="delete                        " cn="删除" en="Delete"/>
+<kce key="delete_all                    " cn="清空购物车" en="Clear "/>
+<kce key="delete_dish                   " cn="删菜" en="Delete"/>
+<kce key="trade_deposit_buffet          " cn="押金" en="Deposit"/>
+<kce key="tradeui_order_dish_max_count  " cn="点菜最多只能添加999份" en="Dishes can only be added up to 999 copies"/>
+<kce key="dianping2                     " cn=" 点评" en=" dianping"/>
+<kce key="print_add_order               " cn="加单" en="Order more"/>
+<kce key="dinner_add_order_memo         " cn="添加整单备注" en="Add notes"/>
+<kce key="dinner_already_processed      " cn="已处理" en="Processed"/>
+<kce key="dinner_amount_holder_str      " cn="%1$s%2$s" en="%1$s%2$s"/>
+<kce key="kmobile_anonymity_customer    " cn="匿名顾客" en="Anonymous customer"/>
+<kce key="dinner_anonymity_meber        " cn="匿名会员" en="Anonymous membership"/>
+<kce key="dinner_apply_for_refund       " cn="申请退款" en="Refund application"/>
+<kce key="dinner_bank_refund_retry_hint " cn="刷卡支付已退款成功，如要继续退款，请在pos端对单据进行整单退货" en="The credit card payment has been refunded successfully. if you want to continue the refund, pls return the entire return on the pos."/>
+<kce key="dinner_batch_goup             " cn="批量上架" en="Addition in bulk"/>
+<kce key="tradeui_goup_title            " cn="上架" en="Addition"/>
+<kce key="tradeui_item_label_change_price" cn="可变价" en="Variable price"/>
+<kce key="home_my_invoice_cancel_choice " cn="取消全选" en="Cancel all"/>
+<kce key="dinner_card_pay_hint          " cn="该卡仅用于支付，暂不支持使用优惠" en="This card can only make payments, no discount authorized."/>
+<kce key="dinner_cart_invalid_go_pos    " cn="抱歉,自助餐作废请到pos操作" en="Sorry, the buffet is invalid. pls operate on pos"/>
+<kce key="dinner_cash_input_info        " cn="请输入现金金额" en="Pls enter cash amount"/>
+<kce key="dinner_cashier_point_one      " cn="收银点1" en="Cashier counter 1"/>
+<kce key="dinner_check_mobile_version   " cn="检查到当前mobile版本(v" en="Check current mobile version (v"/>
+<kce key="member_ship_credit_input_phone_number_error" cn="请检查手机号" en="Pls check the phone number"/>
+<kce key="zhi_fu_bao                    " cn="支付宝" en="Alipay"/>
+<kce key="print_payway_baidupay         " cn="百度钱包" en="Baidu wallet"/>
+<kce key="paycenter_paymode_band        " cn="手环" en="Band"/>
+<kce key="yin_hang_qia                  " cn="银行卡" en="Bank card"/>
+<kce key="takeout_paymethod_casher_type " cn="现金支付" en="Cash payment"/>
+<kce key="xian_jin                      " cn="现金" en="Cash"/>
+<kce key="self_define                   " cn="自定义" en="Custom"/>
+<kce key="member_credit_dinner_checkout_koubei_pay" cn="口碑券" en="Koubei coupon"/>
+<kce key="member_credit_dinner_checkout_meituan_pay" cn="美团券" en="Meituan coupon"/>
+<kce key="utils_baidunuomi              " cn="百度糯米" en="Baidu nuomi"/>
+<kce key="paycenter_paymode_shanhui     " cn="闪惠" en="Shanhui"/>
+<kce key="table_manage_table            " cn="桌台" en="Table"/>
+<kce key="klight_checkout               " cn="结账" en="Checkout"/>
+<kce key="weixin                        " cn="微信" en="Wechat"/>
+<kce key="dinner_checkout_with_discount " cn="当前订单存在优惠信息，请到pos进行结账操作" en="There is preference information in the current order, pls go to pos to do the settlement"/>
+<kce key="tradeui_item_label_choose_child_dish" cn="选子菜" en="Select sub-dish"/>
+<kce key="tradeui_shopping_cart_title   " cn="已选商品" en="Items"/>
+<kce key="dinner_clear_member_price_hint" cn="使用其他支付方式会清空会员价，请确认..." en="Use other payment methods will clear this vip price, pls confirm..."/>
+<kce key="dinner_cofirm_btn_goup        " cn="确定上架" en="Confirm addition"/>
+<kce key="tradeui_item_label_combo      " cn="套餐" en="Combo"/>
+<kce key="tradeui_warning               " cn="提示" en="Tips"/>
+<kce key="printer_dinner_common_unit_and_per" cn="/份" en="/ copies"/>
+<kce key="dinner_confirm_abandom_checkout" cn="确认放弃此次结账？" en="Confirm to give up the checkout?"/>
+<kce key="dinner_confirm_print_pre_checkout_hint" cn="确认结账信息无误并打印预结单？" en="Confirm bill information and print out budget receipt?"/>
+<kce key="dinner_connect_server_fail    " cn="连接服务器失败,请稍后再试!" en="Failed to connect to the server. pls try again later!"/>
+<kce key="text_commodity_tax            " cn="消费税" en="Exise duty"/>
+<kce key="tradeui_continue_saleout      " cn="继续估清" en="Continue to estimate"/>
+<kce key="kmobile_coupon_vaild_count    " cn="%1$d张可用" en="%1$d available"/>
+<kce key="dinner_course_entry           " cn="点此查看添加流程" en="Click here to see the process"/>
+<kce key="kmobile_credit_not_enough     " cn="当前积分不满足使用条件" en="Current points don\'t meet the conditions of use"/>
+<kce key="dinner_data_login_error_msg   " cn="数据异常,请重新登录后,再操作!" en="Data is abnormal. pls log in again before operating!"/>
+<kce key="tradeui_deduct_packaging_weight" cn="去皮(%1$s)" en="Packaging weight(%1$s)"/>
+<kce key="trade_deposit_buffet          " cn="押金" en="Deposit"/>
+<kce key="dinner_deposit_left           " cn="剩余：%1$s" en="Remaining: %1$s"/>
+<kce key="print_ticket_deposit          " cn="押金单" en="Deposit ticket"/>
+<kce key="dinner_deposit_payed          " cn="（已支付）" en="(paid)"/>
+<kce key="dinner_deposit_refund_over    " cn="退款金额大于支付押金" en="The refund amount is greater than the payment deposit"/>
+<kce key="dinner_deposit_tip            " cn="注:押金在用餐完毕后原路退回" en="Note: the deposit will be returned after the meal is completed."/>
+<kce key="dinner_deposit_unpay          " cn="（未支付）" en="(unpaid)"/>
+<kce key="dinner_dish_catogory_name     " cn="类名" en="Class name"/>
+<kce key="dinner_dish_change_price      " cn="改价(元)" en="Change price "/>
+<kce key="dinner_dish_change_price_hint " cn="该菜品价格可修改" en="The price of this dish can be modified"/>
+<kce key="fad5222ca0acfaee54f06458188d916a" cn="已完成" en="Completed"/>
+<kce key="dinner_dish_make_status_cooking" cn="制作中" en="Making"/>
+<kce key="dinner_dish_make_status_preparing" cn="配菜中" en="Preparing"/>
+<kce key="dinner_dish_make_status_waiting" cn="等待中" en="Waiting"/>
+<kce key="text_commodity_pro_manage_dish_name" cn="菜品名称" en="Dishes name"/>
+<kce key="dish_name                     " cn="菜名" en="Dish"/>
+<kce key="dinner_dishdetail_remain      " cn="当日限售%1$s份，余%2$s份" en="At most %1$s, remaining %2$s"/>
+<kce key="tradeui_dishdetail_remain_only" cn="余%1$s份" en="Remain %1$s"/>
+<kce key="dinner_eat_dinner_people_count" cn="%1$s人就餐" en="Table for 1$s"/>
+<kce key="klight_trade_memo             " cn="整单备注" en="The note of the whole order"/>
+<kce key="payboard_error_wipe_zero_tip1 " cn="抹零金额必须小余支付金额" en="Wipe the amount of money must be less than the amount of payment"/>
+<kce key="payboard_error_wipe_zero_tip2 " cn="自定义抹零金额必须大于零" en="Custom wipe amount must be greater than zero"/>
+<kce key="dinner_estimate_commodity     " cn="估清商品" en="Estimated commodity"/>
+<kce key="dinner_find_repeat_pay        " cn="发现订单已重复支付,请立即处理!" en="Found that the order has been paid repeatedly. pls process it immediately!"/>
+<kce key="dinner_finish                 " cn="用餐完毕" en="Finished meal"/>
+<kce key="dinner_has_deposit_refund     " cn="用餐完毕,退押金" en="After the meal is finished the deposit is refunded."/>
+<kce key="dinner_flavor_add_spices      " cn="口味加料" en="Add spice according to tastes"/>
+<kce key="dinner_format_service         " cn="(%1$s%%)" en="(%1$s%%)"/>
+<kce key="dinner_format_taxrate         " cn="(%1$s%%)(%2$s)" en="(%1$s%%) (%2$s)"/>
+<kce key="dinner_format_tip             " cn="%1$s:%2$s" en="%1$s:%2$s"/>
+<kce key="dinner_full                   " cn="该桌台订单已满，无法执行转台！" en="The table is full of orders and it can not be turned"/>
+<kce key="dinner_generate_pay_qr_fail   " cn="生成支付二维码失败!" en="Failed to generate payment qr code!"/>
+<kce key="dinner_get_employee_fail      " cn="获取员工数据失败" en="Failed to access employee data"/>
+<kce key="payboard_failure              " cn="获取失败" en="Failed to get"/>
+<kce key="dinner_gift_dish              " cn="赠菜" en="Give away dishes"/>
+<kce key="dinner_go_processed           " cn="去处理" en="To deal with"/>
+<kce key="go_apply                      " cn="去申请" en="Go to apply"/>
+<kce key="dinner_goup_coupon_pay_delete_hint" cn="使用团购支付将清除折扣及其他优惠信息，请确认..." en="Use group purchase payment will clear the discount and other preferential information, pls confirm..."/>
+<kce key="dinner_goup_successed         " cn="上架成功" en="Item updated"/>
+<kce key="tradeui_goup_title            " cn="上架" en="Addition"/>
+<kce key="payboard_group_buy            " cn="团购券" en="Buy tickets"/>
+<kce key="dinner_hall                   " cn="大厅" en="Lobby"/>
+<kce key="dinner_hall_order_print       " cn="[%1$s－堂口单]" en="[%1$s－hall oder]"/>
+<kce key="dinner_handle_now             " cn="立即处理" en="Immediate processing"/>
+<kce key="dinner_has_deposit_refund     " cn="用餐完毕,退押金" en="After the meal is finished the deposit is refunded."/>
+<kce key="paycenter_has_noauth          " cn="没有权限操作" en="No permission operation"/>
+<kce key="record_stock_noting           " cn="无" en="No"/>
+<kce key="dinner_has_specifications     " cn="有规格" en="Specified"/>
+<kce key="dinner_head_costs             " cn="人头费" en="Cost on each client"/>
+<kce key="kmobile_inapplicable_for_coupons" cn="不满足优惠劵使用条件!" en="Not satisfied with the discounted terms of use!"/>
+<kce key="paycenter_include_FS          " cn="(含消费税)" en="(including consumption tax)"/>
+<kce key="tradeui_rebate_exceed_max_limit" cn="当前输入的折让大于了您允许输入的最大折让" en="The current input discount is greater than the maximum discount you allow to enter"/>
+<kce key="tradeui_input_dish_quantity   " cn="请输入菜品数量" en="Pls enter the no. of dishes"/>
+<kce key="dinner_input_refund_amount    " cn="输入应退金额" en="Enter the refund amount"/>
+<kce key="dinner_invoice_no             " cn="税单号:" en="Invno."/>
+<kce key="str_snack_default_shopname    " cn="客如云" en="Kry"/>
+<kce key="kmobile_junior_member         " cn="初级会员" en="Primary member"/>
+<kce key="dinner_kmobile_step_pay_cannot_cashier" cn="团购订单暂不支持现金支付，请选择其他支付方式" en="Group purchase order does not support cash payment temporarily, pls choose other payment methods"/>
+<kce key="talecode_diandan              " cn="点单" en="Order"/>
+<kce key="reprint                       " cn="补打" en="Reprint"/>
+<kce key="report_vip                    " cn="会员:" en="Member:"/>
+<kce key="kmobile_member_credits        " cn="%1$d分" en="%1$d points"/>
+<kce key="tradeserver_member_discount   " cn="会员折扣" en="Member discount"/>
+<kce key="dinner_member_login           " cn="会员登陆" en="Vip sign in"/>
+<kce key="dinner_merge_and_zhuan_tai_cannot_print_dishes" cn="无法打印的菜品" en="Unprintable dishes"/>
+<kce key="dinner_merger                 " cn="合单" en="Merge orders"/>
+<kce key="dinner_mobile_version_equal_pos" cn="和onos(%1$s" en="And onos (%1$s"/>
+<kce key="dinner_mobile_version_equal_printer" cn="和printer(%1$s" en="And printer (%1$s"/>
+<kce key="more                          " cn="更多" en="More"/>
+<kce key="tradeui_item_label_has_standard" cn="多规格" en="Multiple spec."/>
+<kce key="tradeui_net_weight            " cn="净重(%1$s)" en="Net weight(%1$s)"/>
+<kce key="dinner_network_search_hint    " cn="输入手机号" en="Pls enter phone number"/>
+<kce key="tradeui_no_authority          " cn="无操作权限" en="No auth to operate"/>
+<kce key="kmobile_no_auth_member_order  " cn="您没有权限继续操作，请到后台勾选“会员点菜”！" en="You don\'t have permission to continue operation. pls check \"member ordering\"in admin!"/>
+<kce key="dinner_no_estimated_food      " cn="暂无估清菜品" en="No sold-out dishes"/>
+<kce key="dinner_no_order_print_checkout" cn="还未下单，不能打印预结单!" en="No order has been placed yet. pre-orders cannot be printed!"/>
+<kce key="dinner_not_handle_extra_msg   " cn="还未下单,不能操作附加费!" en="You have not placed an order yet, and you cannot operate additional fees!"/>
+<kce key="dinner_noknow_paymode         " cn="未知支付方式" en="Unknown payment method"/>
+<kce key="dinner_nonsupport_paymode     " cn="不支持该支付方式" en="This payment method is not supported"/>
+<kce key="dinner_not_allow_handle_extra_msg" cn="此订单不能操作附加费" en="This orders cannot operate surcharge"/>
+<kce key="dinner_not_deposit            " cn="该订单没有押金" en="There is no deposit for this order."/>
+<kce key="dinner_not_deposit_support_refund_type" cn="该设备不支持此方式退款，请至pos处理" en="The device does not support this way refund pls go to pos processing"/>
+<kce key="dinner_not_handle_extra_msg   " cn="还未下单,不能操作附加费!" en="You have not placed an order yet, and you cannot operate additional fees!"/>
+<kce key="dinner_not_include_tax        " cn="总额" en="Total amount"/>
+<kce key="dinner_not_pay_over_hint      " cn="订单未支付完成，确定要离开？" en="The order has not been paid. are you sure to quit?"/>
+<kce key="dinner_not_pay_over_hint_kmobile" cn="退出后本订单只能到pos继续支付" en="After exiting this order can only continue to pay to the pos"/>
+<kce key="dinner_not_pay_over_hint_kmobile_title" cn="确定取消支付？" en="Sure to cancel your payment?"/>
+<kce key="dinner_not_satisfy_lowest_consuptions" cn="订单不满足桌台最底消费时自动添加" en="The order is not automatically added when the table bottom is consumed"/>
+<kce key="kmobile_offsetting_cash       " cn="可使用%1$d分抵%2$s元" en="Can use %1$d credit %2$s"/>
+<kce key="report_refund_title_operator  " cn="操作人:" en="Operator:"/>
+<kce key="dinner_opentable_text         " cn="开台" en="Open a table"/>
+<kce key="dinner_operate                " cn="操作" en="Operation"/>
+<kce key="dinner_order_deposit_not_pay  " cn="该订单还未支付押金" en="The order has not been paid"/>
+<kce key="8054f719f7e99b8c203e2b075f255124" cn="订单详情" en="Order detail"/>
+<kce key="dinner_order_has_been_mergered" cn="该订单已被合单，无法进行该操作" en="Order has been mergered"/>
+<kce key="order_dish_fail               " cn="点菜初始化失败,确定一键清理？" en="Initialization failed, continue to clear data?"/>
+<kce key="dinner_order_load_fail        " cn="点菜初始化加载失败，请重试" en="A la carte initialization failed to load pls try again"/>
+<kce key="dinner_people_modify_text     " cn="人效修改" en="Modify staff"/>
+<kce key="dinner_order_not_pay_over_hint" cn="该订单尚未支付完成，请到订单中心完成支付" en="The order has not yet been paid, pls go to the order center to complete the payment"/>
+<kce key="print_ticket_wake_up          " cn="等叫" en="Wait for calling"/>
+<kce key="pay_repeat                    " cn="重复支付" en="Repeat payment"/>
+<kce key="dinner_pay_status_change      " cn="订单支付状态发生变化，不能进行结账" en="Order payment status has changed and can\'t be settled"/>
+<kce key="dinner_pay_status_change_osmobile" cn="订单支付状态发生变化，请到订单中心继续结账" en="Payment status has been changed, pls continue your payment process in order center"/>
+<kce key="dinner_pay_status_paying      " cn="分步支付订单到pos付款" en="Partially payment, pls hand to checkout desk"/>
+<kce key="record_paytime                " cn="支付时间" en="Payment time"/>
+<kce key="pay_method                    " cn="支付方式" en="Payment method"/>
+<kce key="dinner_people_modify_text     " cn="人效修改" en="Modify staff"/>
+<kce key="text_commodity_please_input_dish_ming_chen" cn="请输入菜品名称" en="Pls enter the name of the dish"/>
+<kce key="dinner_precheckout_consumelook_ticket" cn="客看单、预结单……" en="Receipts"/>
+<kce key="wechat_add_dish               " cn="加菜" en="Add"/>
+<kce key="dinner_print_batch_no         " cn="出单序号：" en="Order number:"/>
+<kce key="str_groupcoupon_quantity      " cn="数量" en="Qty"/>
+<kce key="dinner_print_date             " cn="打印时间:" en="Print time:"/>
+<kce key="payboard_print_electronic_invoice" cn="打印发票二维码" en="Print electronic invoice"/>
+<kce key="smart_dish_text               " cn="商品" en="Commodity"/>
+<kce key="dinner_print_open_order       " cn="开单：" en="New order:"/>
+<kce key="str_traderecord_operator      " cn="操作员:" en="Operator:"/>
+<kce key="dinner_print_people_count     " cn="人数：" en="Pax:"/>
+<kce key="print_pre_statement           " cn="打印预结单" en="Print budget receipt"/>
+<kce key="dinner_print_print_time       " cn="打印：" en="Print:"/>
+<kce key="dinner_print_serial_num       " cn="流水号：" en="S/n:"/>
+<kce key="table_no                      " cn="桌台号：" en="Table no.:"/>
+<kce key="dinner_prompt_network_status_error" cn="当前网络不可用，请检查你的网络设置" en="The current network is not available. pls check your network settings."/>
+<kce key="record_cash_successed         " cn="收款成功" en="Pay success"/>
+<kce key="dinner_recover_print_setting_prompt" cn="确定恢复出单？" en="Are you sure to recover?"/>
+<kce key="print_refund_deposit          " cn="退押金" en="Deposit"/>
+<kce key="dinner_refund_deposit_success " cn="退押金成功" en="Successful deposit refund"/>
+<kce key="dinner_refund_deposit_title   " cn="应退押金" en="Deposit refundable"/>
+<kce key="dinner_refund_dish_pre_count  " cn="退菜数量" en="No. of returned dishes"/>
+<kce key="refund_time                   " cn="退款时间" en="Refund time"/>
+<kce key="dinner_refund_way_title       " cn="退回方式" en="Return method"/>
+<kce key="dinner_retry_pay_lefu_hint    " cn="重复支付只能先退乐富支付，如想继续操作其他支付方式退款，请pos上进行退款操作！" en="Repeat payment can only be refunded by lefou payment first. if you want to continue to use other payment methods for refund, pls perform a refund operation on pos!"/>
+<kce key="takeout_real_stock_hint       " cn="退回库存" en="Return stock"/>
+<kce key="dinner_saleout_list_str       " cn="估清列表" en="Out-of -stock list"/>
+<kce key="tradeui_saleout_title         " cn="估清" en="Sell out"/>
+<kce key="dinner_scan_dish_hint         " cn="将商品条码放入框中进行扫描" en="Put product barcode into the box for scanning"/>
+<kce key="scrap                         " cn="报废" en="Scrap"/>
+<kce key="str_groupcoupon_selectedall   " cn="全选" en="Select all"/>
+<kce key="dinner_select_currency        " cn="修改币种" en="Modify currency"/>
+<kce key="dinner_select_dishprompt      " cn="请先选择菜品" en="Pls select dishes"/>
+<kce key="dinner_select_flavor_cooking  " cn="请选择口味做法!" en="Pls choose taste practice!"/>
+<kce key="dinner_select_salesman        " cn="请选择销售员" en="Pls select the seller"/>
+<kce key="tradeui_item_label_choose_standard" cn="选规格" en="Choose spec."/>
+<kce key="dinner_select_waiter          " cn="请选择服务员" en="Pls select waiters"/>
+<kce key="dinnnver_service_bell_title   " cn="服务铃" en="Service bell"/>
+<kce key="youhui21                      " cn="服务费" en="Service charge"/>
+<kce key="dinner_setmeal_main_dinner    " cn="主食" en="Main food"/>
+<kce key="tradeui_setting               " cn="设置" en="Settings"/>
+<kce key="dinner_shengyu                " cn="剩余" en="Remaining"/>
+<kce key="str_groupcoupon_quantity      " cn="数量" en="Qty"/>
+<kce key="dinner_should_deposit         " cn="应收押金" en="Deposit "/>
+<kce key="dinner_software_center        " cn="软件园" en="Software park"/>
+<kce key="kmobile_store_avaliable_balance" cn="门店可用余额" en="Availability balance in store"/>
+<kce key="table_order_bill              " cn="桌台点单" en="Table order"/>
+<kce key="dinner_table_select_order_title" cn="选择要操作的订单" en="Select order to deal with"/>
+<kce key="dinner_tax_mode_exc           " cn="Exc" en="Exc"/>
+<kce key="dinner_tax_mode_inc           " cn="Inc" en="Inc"/>
+<kce key="dinner_tax_title              " cn="税" en="Tax"/>
+<kce key="dinner_tax_tp_sum             " cn="概要" en="Overview"/>
+<kce key="dinner_taxrate_value          " cn="( %1$s%% )" en="( %1$s%% )"/>
+<kce key="dinner_temp_dish_title        " cn="临时菜" en="Temporarily sold dishes"/>
+<kce key="print_odd_change              " cn="找零" en="Change"/>
+<kce key="record_print_overflow         " cn="溢收" en="Extra collection"/>
+<kce key="dinner_transaction_success    " cn="交易成功" en="Successful transaction"/>
+<kce key="dinner_tutorial               " cn="新手教程" en="Guild"/>
+<kce key="tradeui_un_config             " cn="未配置" en="Not configured"/>
+<kce key="kmobile_unavailable_for_offset" cn="不能使用积分抵现" en="Invalid credit cannot be used"/>
+<kce key="dinner_uninclude_yajin        " cn="(不含押金)" en="(excluding deposit)"/>
+<kce key="dinner_update_people_count    " cn="修改人数" en="Change pax"/>
+<kce key="dinner_update_table_failed    " cn="数据有更新，但更新失败" en="The data is updated, but the update failed."/>
+<kce key="dinner_update_table_success   " cn="数据更新成功" en="Data is up to date"/>
+<kce key="dinner_update_waiter          " cn="修改服务员" en="Modify waiter"/>
+<kce key="dinner_urgency_sure           " cn="确定进行催菜，请确认" en="Make sure to call the dishes, pls confirm"/>
+<kce key="pos_printer_version_check_4   " cn="不匹配，建议您及时处理！" en="Do not match, it is recommended that you handle it in time!"/>
+<kce key="report_bo_consumer_member     " cn="会员" en="Members"/>
+<kce key="dinner_wait_pos_dealing       " cn="等待pos处理中" en="Waiting for pos processing"/>
+<kce key="tradeui_warning               " cn="提示" en="Tips"/>
+<kce key="dinner_wechat_accept          " cn="接 受" en="Accept"/>
+<kce key="dinner_wechat_not_support_call" cn="暂不支持拨打电话" en="Dial is not available"/>
+<kce key="dinner_wechat_rejust          " cn="拒 绝" en="Reject"/>
+<kce key="tradeui_item_label_weight     " cn="称重" en="Weighing"/>
+<kce key="print_exempt                  " cn="抹零" en="Give up changes:"/>
+<kce key="payboard_wipe_amount_after    " cn="抹零后" en="After zeroing"/>
+<kce key="payboard_wipe_amount          " cn="抹零金额" en="Zero amount"/>
+<kce key="payboard_wipe_amount_before   " cn="抹零前" en="Before wiping"/>
+<kce key="self_define                   " cn="自定义" en="Custom"/>
+<kce key="payboard_wipe_zero_fen        " cn="抹分" en="Wipe cents"/>
+<kce key="payboard_wipe_zero_jiao       " cn="抹角" en="Wiping"/>
+<kce key="payboard_wipe_zero_yuan       " cn="抹元" en="Cut down"/>
+<kce key="zhuan_tai                     " cn="转台" en="Chang table"/>
+<kce key="dinnnver_service_bell_title   " cn="服务铃" en="Service bell"/>
+<kce key="youhui3                       " cn="折让" en="Discount"/>
+<kce key="discount_info                 " cn="优惠信息" en="Discount info"/>
+<kce key="zhe                           " cn="折" en="Off"/>
+<kce key="record_print_goods_originalprice_total" cn="商品原价合计" en="Dish original price total"/>
+<kce key="dish_clear_or_invalid         " cn="被沽清或无效的菜品：" en="Be sold out or invalid dishes"/>
+<kce key="smart_details                 " cn="详情" en="Details"/>
+<kce key="tradeui_dish_increase_unit_hint" cn="此菜品的起卖数为%1$d" en="Xthis dish has a number of sales of %1$d"/>
+<kce key="dish_return_to_inventory_check" cn="退菜并且退回库存" en="Return food into inventory"/>
+<kce key="dish_return_to_inventory_prompt" cn="请选择退回库存的菜品" en="Pls select items needed to be returned to storage"/>
+<kce key="tradeui_dish_sale_out         " cn="%1$s已售罄" en="%1$s sold out"/>
+<kce key="dishname                      " cn="Dish name" en="Dish name"/>
+<kce key="tradeui_dish_name_too_long    " cn="菜品名字过长" en="The name of the dish is too long"/>
+<kce key="printer_drsk_checkout_bill    " cn="结账单" en="Bill"/>
+<kce key="printer_drsk_consumerlook_bill" cn="客看单" en="Customer fyi receipt"/>
+<kce key="xiao_fei_qing_dan             " cn="消费清单" en="Consumption list"/>
+<kce key="printer_drsk_kichen_bill      " cn="后厨单" en="Kitchen receipt"/>
+<kce key="yu_jie_dan                    " cn="预结单" en="Budget receipt"/>
+<kce key="record_print_returnslist_title" cn="退货单" en="Return receipt"/>
+<kce key="printer_drsk_tag_bill         " cn="标签" en="Label"/>
+<kce key="zuo_fei_dan                   " cn="作废单" en="Void receipt"/>
+<kce key="duifangweitianshoujihao       " cn="对方未填手机号" en="The other did not fill the phone number"/>
+<kce key="each_one2                     " cn="(每人" en="(per "/>
+<kce key="eated                         " cn="吃完了" en="Done"/>
+<kce key="et_digits                     " cn="0123456789abcdefghijklmnopqrstuvwxyz_abcdefghijklmnopqrstuvwxyz-" en="0123456789abcdefghijklmnopqrstuvwxyz_abcdefghijklmnopqrstuvwxyz-"/>
+<kce key="table_exit                    " cn="退出" en="Exit"/>
+<kce key="youhui13                      " cn="附加费" en="Surcharge"/>
+<kce key="extra_charge_total_amount     " cn="附加费合计" en="Extra charge total "/>
+<kce key="tradeui_unit_fen              " cn="份" en="Servings"/>
+<kce key="tradeui_unit_fen              " cn="份" en="Servings"/>
+<kce key="printer_feng_zong             " cn="份，总" en="Serve，total"/>
+<kce key="fenshu_and_zhongliang         " cn="份数/重量" en="Weight"/>
+<kce key="finish_str                    " cn="完 结" en="End"/>
+<kce key="fuwuling_call_custom_come_prefix" cn="请服务员提供" en="Ask the waiter to provide"/>
+<kce key="main_market                   " cn="服务" en="Service"/>
+<kce key="remind_dish                   " cn="催菜" en="Reminder"/>
+<kce key="fuwuling_daoca                " cn="倒茶" en="Pouring tea"/>
+<kce key="klight_checkout               " cn="结账" en="Checkout"/>
+<kce key="takeout_other                 " cn="其他" en="Other"/>
+<kce key="get_member_detail_fail        " cn="获取会员详情失败" en="Failed to access membership info"/>
+<kce key="smart_dish_text               " cn="商品" en="Commodity"/>
+<kce key="gudingjine2                   " cn="(固定金额" en="(fixed amount "/>
+<kce key="have_paid                     " cn="已付款  " en="Already paid  "/>
+<kce key="huodongbeizhu                 " cn="*注：[活动]后的数字，为参与活动的商品编号" en="*note: the number of the[activity] is the goods number that participate in the activities"/>
+<kce key="input_discount_interval_warning" cn="打折范围允许0~10之间的数值（不包括0和10）" en=" discount range allows the value between 0~100 (0 and 100 are not included)"/>
+<kce key="input_phone_number            " cn="输入11位手机号码" en="Enter 11 digit mobile number"/>
+<kce key="input_rebate_warning          " cn="优惠累计金额已超过原价，请核实！" en="The cumulative amount of discount is more than the original price, pls check!"/>
+<kce key="input_self_define_discount    " cn="输入自定义折扣" en="Pls enter custom discount"/>
+<kce key="input_self_define_rebate      " cn="输入自定义折让" en="Pls enter custom deduction"/>
+<kce key="print_points                  " cn="积分" en="Points"/>
+<kce key="invoice_supply                " cn="电子发票申请单" en="E-invoice application form"/>
+<kce key="tradeui_discount_string       " cn="%1$s折" en="%1$sdiscount"/>
+<kce key="item_rebate_policy            " cn="让%1$s%2$s" en="Let%1$s%2$s"/>
+<kce key="ts_jialiao                    " cn="加料：" en="Extras:"/>
+<kce key="tradeui_decrease              " cn="减少" en="Cut back"/>
+<kce key="printer_drsk_checkout_bill    " cn="结账单" en="Bill"/>
+<kce key="just                          " cn="刚刚" en="Just now"/>
+<kce key="kai_dan                       " cn="开单 " en="New order"/>
+<kce key="open_trade_fail_info          " cn="开单失败，订单已满" en="Order fail. it\'s full"/>
+<kce key="kds_pass_count                " cn="已上%s份菜" en="Served%s"/>
+<kce key="printer_drsk_consumerlook_bill" cn="客看单" en="Customer fyi receipt"/>
+<kce key="ke_kan_dan_jia                " cn="客看单[加]" en="Guest bill[add]"/>
+<kce key="ke_kan_dan_tui                " cn="客看单[退]" en="Guest bill[return]"/>
+<kce key="kexuan_1_2                    " cn="(可选1-2)" en="(avaliable choose 1-2)"/>
+<kce key="kry_dinner_add                " cn="+添加" en=" + add"/>
+<kce key="kry_dinner_add_prepayment_money" cn="添加预付金" en="Add down payment"/>
+<kce key="kry_dinner_aim_qr_code        " cn="对准「预付单」中的二维码" en="Pls aim at the qr code on 「advance payment receipt」"/>
+<kce key="kry_dinner_confirm_open_table " cn="确认开台" en="Confirm opening tables"/>
+<kce key="report_title_jcrs             " cn="就餐人数" en="No. of diners"/>
+<kce key="kry_dinner_input__verify_codes" cn="手动输入7位验证码" en="Enter 7-digit verification code manually"/>
+<kce key="tmp_prepayment                " cn="预付金" en="Down payment"/>
+<kce key="kry_dinner_table_open_table   " cn="%1$s-开台" en="%1$s-open tables"/>
+<kce key="kry_dinner_verifing_open_table" cn="验证开台中..." en="Verifying table opening"/>
+<kce key="lipingquan                    " cn="礼品券" en="Gift voucher"/>
+<kce key="dinner_print_serial_num       " cn="流水号：" en="S/n:"/>
+<kce key="rnbase_loading                " cn="加载中..." en="Loading..."/>
+<kce key="member_credit_member_credit_login" cn="登录" en="Log in"/>
+<kce key="login_failure                 " cn="登录失败" en="Login failure"/>
+<kce key="login_success                 " cn="登录成功" en="Log in success"/>
+<kce key="look                          " cn="查看" en="View"/>
+<kce key="member_offer_type             " cn="满减券" en="Buy and deduction coupon"/>
+<kce key="you_takeout_have_sended       " cn="提醒：您的外卖已送达，请到" en="Reminder: your takeaway has been delivered pls"/>
+<kce key="thanks_received               " cn="领取，谢谢！" en="Receive thank you!"/>
+<kce key="member_info                   " cn="会员信息" en="Member info"/>
+<kce key="member_login                  " cn="会员登录" en="Member login"/>
+<kce key="member_not_enough_amount      " cn="储值余额不足，请充值后再支付！" en="Top-up balance is insufficient. pls top up and try to pay again"/>
+<kce key="member_prepaid_exchange_account" cn="切换账户" en="Switch account"/>
+<kce key="member_should_pay             " cn="应付" en="Payables"/>
+<kce key="tradeui_member_price          " cn="会员价" en="Vip price"/>
+<kce key="print_memberbalance           " cn="会员储值" en="Member  topup"/>
+<kce key="member_store_value_pay        " cn="会员储值支付" en="Member pay with top-up"/>
+<kce key="ts_beizhu                     " cn="备注：" en="Notes:"/>
+<kce key="tradeui_memo_too_long         " cn="备注不能超过100个字" en="The memo lenght should less than 100"/>
+<kce key="merge_success                 " cn="合单成功" en="Merge orders success"/>
+<kce key="merge_to                      " cn="合并至-" en="Merge to-"/>
+<kce key="message_center                " cn="消息中心" en="News center"/>
+<kce key="minutes_seconds_format        " cn="Mm分ss秒" en="Mm:ss"/>
+<kce key="tradeui_must_sale_out         " cn="套餐中的必选菜已被估清，需要将其重新上架后才能选择" en="The required food packages has been estimated, it needs to be back on the shelves to choose"/>
+<kce key="n_days_ago                    " cn="%1$d天前" en="%1$d days ago"/>
+<kce key="n_hours_ago                   " cn="%1$d小时前" en="%1$d hours ago"/>
+<kce key="need_user_input_pwd           " cn="需要用户输入支付密码" en="Required to input payment password"/>
+<kce key="network_error                 " cn="网络出现问题，请重新连接后再尝试！" en="Network have problems, pls reconnect and try again!"/>
+<kce key="network_order_bound_with_full_orders" cn="该桌台订单已满，无法入座" en="The table full of orders, not seated"/>
+<kce key="network_order_bound_with_table" cn="客人已就坐该桌台？" en="The guests have been seated on the table"/>
+<kce key="network_order_handle_success  " cn="网络订单处理成功！" en="Network order processing success!"/>
+<kce key="tradeui_no_authority          " cn="无操作权限" en="No auth to operate"/>
+<kce key="no_available_discount_dish    " cn="没有可以折扣的菜品" en="No dishes can be discounted."/>
+<kce key="weibangdingzuotai             " cn="未绑定桌台" en="Unbound table"/>
+<kce key="unpaid                        " cn="未支付" en="Unpaid"/>
+<kce key="report_bo_kpi_chart_no_data   " cn="暂无数据" en="No data for now"/>
+<kce key="no_dishs2                     " cn="暂无菜品数据" en="No data of dishes"/>
+<kce key="not_print                     " cn="无需打印" en=" no need to print"/>
+<kce key="no_support_member             " cn="暂不支持这种会员" en="Membership type is not acceptable now"/>
+<kce key="table_no_table_all            " cn="当前没有桌台" en="No tables now"/>
+<kce key="no_table_occupied             " cn="当前没有占用桌台" en="No table currently occupied"/>
+<kce key="no_table_vacancy              " cn="当前没有空闲桌台" en="There are currently no free tables"/>
+<kce key="no_tables_info                " cn="数据异常，请一键清理后重试！" en="Data error, try again after clear previous data."/>
+<kce key="no_tmp_dishshop               " cn="没有临时菜" en="No temporary dishes"/>
+<kce key="not_apialy_pay_code           " cn="不是支付宝付款码" en="Not alipay qr code"/>
+<kce key="not_click_fast_click          " cn="请勿过点击过快" en="Pls do not click too fast"/>
+<kce key="not_print                     " cn="无需打印" en=" no need to print"/>
+<kce key="not_search_need_dish          " cn="抱歉 暂无你搜索的菜品" en="Sorry, there is no dishes your search for"/>
+<kce key="not_wechat_pay_code           " cn="不是微信付款码" en="Not wechat qr code"/>
+<kce key="notification_title            " cn="通知内容" en="Notification content"/>
+<kce key="now_no_dishs_info             " cn="暂无菜品信息" en="No dishes information"/>
+<kce key="now_no_have_network_order     " cn="暂无网络订单信息" en="No network orders information"/>
+<kce key="number_marker                 " cn="No." en="No."/>
+<kce key="nuomi2                        " cn=" 糯米" en=" nuomi"/>
+<kce key="occupied_tables               " cn="占用桌台" en="Uncleared table"/>
+<kce key="open_table_carte_norms_shot   " cn="%1$s (%2$s%3$s/位)" en="%1$s (%2$s%3$s/bit)"/>
+<kce key="open_table_no_carte           " cn="当前未检测到餐标，请登录后台配置" en="No meal standard is currently detected. pls log in to configure at back office"/>
+<kce key="open_table_no_people          " cn="请输入就餐人数" en="Pls enter the no. of pax"/>
+<kce key="open_trade                    " cn="开单" en="New order"/>
+<kce key="open_trade_fail_info          " cn="开单失败，订单已满" en="Order fail. it\'s full"/>
+<kce key="tradeui_operate_successed     " cn="操作成功" en="Operate success"/>
+<kce key="order_preview_action_failed   " cn="操作失败" en="Operation fail"/>
+<kce key="option_maxcount_text          " cn="请输入人数，最大99" en="Pls enter client number, max 99"/>
+<kce key="order_all_pay_detail          " cn="<data><![cdata[预付金%1$s+其他%2$s，剩<font color="#ff5800">%3$s</font>可用]]></data>" en="<data><![cdata[prepayment%1$s+other%2$s,<font color="#ff5800">%3$s</font> is available]]></data>"/>
+<kce key="order_amount_zero_use_cash_checkout" cn="当前订单金额为0元，请用现金结账" en="Order subtotal is 0, pls pay by cash"/>
+<kce key="order_button_str              " cn="下 单" en="Order"/>
+<kce key="report_order_time             " cn="下单时间：" en="Order time:"/>
+<kce key="tradeui_order_dish_ok         " cn="选好了" en="Done"/>
+<kce key="order_fail2                   " cn="下单失败" en="Place order failed"/>
+<kce key="order_free_without_dish_warning" cn="啊哦，您还没有可选菜品" en="Sorry, you don\'t have available dishes to choose."/>
+<kce key="order_no                      " cn="订单号：" en="Order no."/>
+<kce key="order_number_title            " cn="订单号：%1$s" en="Order no.: %1$s"/>
+<kce key="order_prepayment_detail       " cn="<data><![cdata[预付金%1$s，剩<font color="#ff5800">%2$s</font>可用]]></data>" en="<data><![cdata[prepayment %1$s ,<font color="#ff5800">%2$s</font> is available]]></data>"/>
+<kce key="order_preview_action_failed   " cn="操作失败" en="Operation fail"/>
+<kce key="tradeui_operate_successed     " cn="操作成功" en="Operate success"/>
+<kce key="print_type_cashier_point      " cn="收银点" en="Cashier counter"/>
+<kce key="takeout_order_invalid_content " cn="作废" en="Void"/>
+<kce key="print_ticket_rise_dish        " cn="起菜" en="Start serving"/>
+<kce key="order_preview_free            " cn="赠送" en="Give away"/>
+<kce key="reprint                       " cn="补打" en="Reprint"/>
+<kce key="order_preview_without_prepare_or_cook" cn="暂时无可操作的菜品" en="No dishes can be operated"/>
+<kce key="order_receivable              " cn="已收款：" en="Receivable："/>
+<kce key="order_success2                " cn="下单成功" en="Order success"/>
+<kce key="ts_order_time                 " cn="下单时间" en="Order time"/>
+<kce key="order_without_dish_warning    " cn="啊哦，您还未选择任何菜品" en="You have not chosen any dishes"/>
+<kce key="ordered                       " cn="已下单" en="Ordered"/>
+<kce key="ordering_preview_no_config_cash_point_to_set" cn="未检测到收银点，请前往pos配置，否则无法出票" en="Ticket outlet has not detected, pls go to pos to setting. otherwise cannot be to draw"/>
+<kce key="orderremark_et_hint           " cn="请输入您的备注" en="Pls enter your notes"/>
+<kce key="orderremark_title             " cn="填写备注" en="Fill in the note"/>
+<kce key="other_way_already_pay         " cn="其他方式已支付%1$s" en="Other means of payment %1$s"/>
+<kce key="password                      " cn="密码" en="Password"/>
+<kce key="pay_item_no                   " cn="暂未配置" en="Not configured yet"/>
+<kce key="pay_progress_wait             " cn="收款中..." en="Cash in..."/>
+<kce key="third_pay_out_page            " cn="离开本页" en="Leave this page"/>
+<kce key="third_pay_continue_wait       " cn="继续等待" en="Continue waiting"/>
+<kce key="pay_progress_wait_continue_content" cn="正在努力进行收款..." en="Trying to collect money"/>
+<kce key="pay_repetition_opertion       " cn="收银时请勿在2秒内同时操作菜品" en="Pls don\'t edit dishes within 2sec repeatedly in payment"/>
+<kce key="eb5dc93d75d21bdc316d30ba18e63ee1" cn="支付成功" en="Pay success"/>
+<kce key="dinner_print_people_count     " cn="人数：" en="Pax:"/>
+<kce key="record_print_goods_price      " cn="单价" en="Unit price"/>
+<kce key="pichihao                      " cn="批次号" en="Batch no."/>
+<kce key="please_choose_accept_dishs    " cn="请先选择需要接受的菜哦！" en="Pls choose the dishes to accept first"/>
+<kce key="please_choose_discount        " cn="请选择折扣！" en="Select cable"/>
+<kce key="please_choose_reject_dishs    " cn="请先选择需要拒绝的菜哦！" en="Pls choose the dishes to reject first"/>
+<kce key="please_input_jiucan_people_number" cn="请输入就餐的人数" en="Pls enter"/>
+<kce key="please_input_member_password  " cn="请输入支付密码" en="Pls enter payment password"/>
+<kce key="please_input_people_number    " cn="请输入人数" en="Tips"/>
+<kce key="please_input_reason           " cn="请输入自定义原因" en="Pls enter custom reason"/>
+<kce key="please_select_discount_dish   " cn="请先选择打折的菜品！" en="Pls choose dish with a discount first!"/>
+<kce key="pluginpay_vipdata_error       " cn="会员数据错误" en="Member data error"/>
+<kce key="prepayment_already_pay        " cn="预付金已抵扣%1$s" en="The advance payment has been deducted %1$s"/>
+<kce key="prepayment_deduction          " cn="预付金已抵扣" en="Prepayment deduction"/>
+<kce key="tradeui_price_and_dishname_must" cn="菜品名称和单价必须输入" en="Pls input dish name and price"/>
+<kce key="tradeui_price                 " cn="价格" en="Price"/>
+<kce key="print_check_out_info          " cn="打印结账单" en="Print bill"/>
+<kce key="print_free                    " cn="[赠]" en="[free]"/>
+<kce key="print_member_levelname        " cn="会员等级: %1$s" en="Member\'s level: %1$s"/>
+<kce key="print_member_namemobile       " cn="会员：%1$s(%2$s)" en="Membership: %1$s (%2$s)"/>
+<kce key="print_pre_statement           " cn="打印预结单" en="Print budget receipt"/>
+<kce key="str_groupcoupon_quantity      " cn="数量" en="Qty"/>
+<kce key="printer_print_reprint         " cn="--补" en="--resupply"/>
+<kce key="printing_di                   " cn="正在打印第" en="Printing number"/>
+<kce key="xlistview_header_hint_normal  " cn="下拉刷新" en="Pull down to refresh"/>
+<kce key="xlistview_header_hint_loading " cn="正在刷新" en="Refreshing"/>
+<kce key="xlistview_header_hint_ready   " cn="松开刷新数据" en="Release the refresh data"/>
+<kce key="qingquerencaozuo              " cn="请确认操作？" en="Pls confirm the operation?"/>
+<kce key="qrcode_promp_message          " cn="扫一扫，向我付钱哦！" en="Scan to pay!"/>
+<kce key="tradeui_quantity_str          " cn="数量(%1$s)" en="Quantity(%1$s)"/>
+<kce key="real_cash_pay                 " cn="确定收到现金并结账？" en="Are you sure cash has been received and finish checkout?"/>
+<kce key="tradeui_real_clear_all        " cn="确定要清空全部吗？" en="Are you sure to empty all?"/>
+<kce key="real_delete_this_dish2        " cn="是否删除此菜品？" en="Are you sure to delete the dish?"/>
+<kce key="reason_self_defined_empty     " cn="自定义理由为空" en="User-defined reason is empty"/>
+<kce key="rebate_amount                 " cn="让价 %1$s%2$s" en="Deduct %1$s%2$s"/>
+<kce key="receive_money_str             " cn="收到付款 " en="Receive payment"/>
+<kce key="recommend_hint                " cn="您可能想找..." en="You may want"/>
+<kce key="record_print_config_tip       " cn="打印未配置，请至【客如云设置】中配置" en="Print setting cannot found , pls check keruyun setting"/>
+<kce key="refund_dish                   " cn="退菜" en="Return"/>
+<kce key="refund_dish_invalid_count     " cn="报废%1$s%2$s" en="Scrap%1$s%2$s"/>
+<kce key="refund_dish_quantity_invalid  " cn="退菜数量不能大于可退数量" en="Refund dish quantity invalid"/>
+<kce key="refund_dish_reason            " cn="请选择或输入退菜理由" en="Pls select or enter void reason"/>
+<kce key="refund_dish_remaining         " cn="剩余%1$s%2$s" en="Left: %1$s%2$s"/>
+<kce key="refund_zero                   " cn="退菜份数为0" en="No. of returned meals is 0"/>
+<kce key="ts_refunded_dish_quantity_from_to_float" cn="(%1$.2f退%2$.2f)" en="(%1$.2f refund %2$.2f)"/>
+<kce key="refunded_dish_quantity_from_to_int" cn="(%1$s退%2$s)" en="(%1$s refund %2$s)"/>
+<kce key="refused_str                   " cn="拒绝" en="Refuse"/>
+<kce key="reject_trade_reason           " cn="订单拒绝理由" en="Reason for order rejection"/>
+<kce key="tradeui_remark                " cn="备注" en="Note"/>
+<kce key="tradeui_remark                " cn="备注" en="Note"/>
+<kce key="tradeui_remark_hint           " cn="请输入备注" en="Pls enter notes"/>
+<kce key="remind_dish                   " cn="催菜" en="Reminder"/>
+<kce key="report_title_jcrs             " cn="就餐人数" en="No. of diners"/>
+<kce key="table_retry                   " cn="重试" en="Retry"/>
+<kce key="riqizhi                       " cn="至" en="To"/>
+<kce key="tradeui_sale_out              " cn="(估清)" en="Out of stock"/>
+<kce key="salesman_text                 " cn="销售员" en="Seller"/>
+<kce key="scan_apply_invoice            " cn="扫码申请电子发票(微信扫一扫)" en="Apply for electronic invoice by scanning code (scan by wechat)"/>
+<kce key="scan_dish_clear_hint          " cn="该菜品已售罄" en="This item has been sold out"/>
+<kce key="search                        " cn="输入首字母/汉字/编码" en="Enter capital / chinese character / code"/>
+<kce key="search_history_title          " cn="热搜菜品" en="Hot search dishes"/>
+<kce key="str_groupcoupon_selectedall   " cn="全选" en="Select all"/>
+<kce key="tradeui_select_dish_dialog_add" cn="选择合适的商品进行添加" en="Choose the right product to add"/>
+<kce key="tradeui_select_dish_dialog_delete" cn="选择合适的商品进行减少" en="Choose the right product to reduce"/>
+<kce key="tradeui_select_dish_dialog_edit" cn="选择合适的商品进行编辑" en="Choose the right product for editing"/>
+<kce key="select_free_text              " cn="选择菜品赠送份数" en="Choose the no. of servings to give away"/>
+<kce key="tradeui_select_dish_dialog_add" cn="选择合适的商品进行添加" en="Choose the right product to add"/>
+<kce key="selected_free_text            " cn="已选%1$s" en="%1$s selected"/>
+<kce key="selected_free_text2           " cn="已选赠送份数：%1$s" en="Number of settled free serve：%1$s"/>
+<kce key="self_define                   " cn="自定义" en="Custom"/>
+<kce key="self_define_discount          " cn="自定义折扣" en="Custom discount"/>
+<kce key="self_define_rebate            " cn="自定义折让" en="Custom deduction"/>
+<kce key="send_success                  " cn="发送成功" en="Sent successfully"/>
+<kce key="shangcai2                     " cn="上菜" en="Serve"/>
+<kce key="setmeal_content_name          " cn="套餐内容" en="Combo content"/>
+<kce key="shangcai2                     " cn="上菜" en="Serve"/>
+<kce key="shanhui_pay2                  " cn="闪惠收款" en="Dianping"/>
+<kce key="shop_trade_amount             " cn="商品总价" en="Commodity\'s total price"/>
+<kce key="paycenter_board_receivable_amount_label" cn="应收" en="Receivables"/>
+<kce key="should_get_money              " cn="还需收款" en="Receivables"/>
+<kce key="should_pay_total_amount       " cn="应付金额" en="Payables"/>
+<kce key="should_pay_total_amount       " cn="应付金额" en="Payables"/>
+<kce key="show_create_time              " cn="%1$s: %2$s" en="%1$s: %2$s"/>
+<kce key="tradeui_search_dish_hint      " cn="请输入商品条形码" en="Pls enter product barcode"/>
+<kce key="snack_unfound_dish            " cn="没有找到指定的商品" en="Did not find the specified product"/>
+<kce key="start_sync                    " cn="开始同步！" en="Start sync"/>
+<kce key="sync_completed                " cn="同步完成！" en="Synchronization is complete!"/>
+<kce key="sync_data_finished            " cn="数据同步完成！" en="Data synchronization complete!"/>
+<kce key="sync_data_progress            " cn="数据同步" en="Synchronous data"/>
+<kce key="synchronizing_data            " cn="正在同步数据.." en="Synchronizing data.."/>
+<kce key="table_choose_title            " cn="请选择桌台" en="Pls select a table"/>
+<kce key="table_choose_title_merge      " cn="请选择与【%1$s】合并的桌台" en="Select the table that will merge with [%1$s]"/>
+<kce key="table_choose_title_zhuan_tai  " cn="请选择将【%1$s】转到的桌台" en="Pls select the table that [%1$s]will be transferred into"/>
+<kce key="table_has_groupon             " cn="团餐订单请到pos操作" en="Operate group meal on pos"/>
+<kce key="table_no                      " cn="桌台号：" en="Table no.:"/>
+<kce key="table_status_dining           " cn="就餐中" en="Dining"/>
+<kce key="table_status_done             " cn="待清台" en="To be cleared"/>
+<kce key="takeout_network_notavail      " cn="当前网络不可用" en="The current network is not available."/>
+<kce key="ts_thedaybeforeyestoryday     " cn="前天 " en="The day before yesterday"/>
+<kce key="title_content                 " cn="标题内容" en="Title"/>
+<kce key="title_right_tv_content        " cn="Xxxxx" en="Xxxxx"/>
+<kce key="to_table                      " cn="转到-" en="Chang to-"/>
+<kce key="ts_today                      " cn="今天 " en="Today"/>
+<kce key="total                         " cn="合计" en="Total"/>
+<kce key="total2                        " cn="合计：" en="Total"/>
+<kce key="youhui_total_amount           " cn="优惠合计" en="Total offers"/>
+<kce key="total_money_str               " cn="合计：%1$s" en="Total:%1$s"/>
+<kce key="trade_amount                  " cn="金额" en="Amount"/>
+<kce key="tuicai_time                   " cn="退菜时间" en="Return time"/>
+<kce key="unordered                     " cn="未下单" en="Not ordered"/>
+<kce key="unserving_dish                " cn="取消上菜" en="Serving cancelled"/>
+<kce key="use_condition_ticket          " cn="使用条件：满 " en="Condition: equal or more than"/>
+<kce key="vacancy_tables                " cn="空闲桌台" en="Idle table"/>
+<kce key="waiter_table_area             " cn="我的点单" en="My order"/>
+<kce key="waiter_text                   " cn="服务员" en="Waiter"/>
+<kce key="wechat_add_dish               " cn="加菜" en="Add"/>
+<kce key="weixin_cash                   " cn="微信收款" en="Wechat collection"/>
+<kce key="wei_chudan                    " cn="未出单" en="No order printed out"/>
+<kce key="weixin                        " cn="微信" en="Wechat"/>
+<kce key="weibangdingzuotai             " cn="未绑定桌台" en="Unbound table"/>
+<kce key="weighting_dish_increase_unit_less_hint_int" cn="净重不能小于起卖数%1$d" en="Xthis dish has a number of sales of %1$d"/>
+<kce key="weishou                       " cn="未收" en="Uncollected"/>
+<kce key="weixiadan22                   " cn=" 未下单" en=" not place "/>
+<kce key="weixin2                       " cn=" 微信" en=" wechat"/>
+<kce key="weixn_scan_logon              " cn="微信扫描二维码，进行登录" en="Scan qr code to log in by wechat"/>
+<kce key="whether_print_checkout_bill_prompt" cn="，是否打印结账单？" en="Reject printing bill"/>
+<kce key="wu_fu_yuan                    " cn="服务员：" en="Waiter"/>
+<kce key="xiao_fei_qing_dan             " cn="消费清单" en="Consumption list"/>
+<kce key="xiaofeizonggede               " cn="(消费总额的" en="(total amount"/>
+<kce key="xinzeng2                      " cn="新增" en="New"/>
+<kce key="xlistview_header_hint_normal  " cn="下拉刷新" en="Pull down to refresh"/>
+<kce key="xlistview_header_last_time    " cn="最后刷新：" en="The last refresh"/>
+<kce key="yesterday                     " cn="昨天 " en="Yesterday"/>
+<kce key="yichudan                      " cn="已出单" en="Printed"/>
+<kce key="yoiuhui4                      " cn="免单" en="Foc"/>
+<kce key="youhui10                      " cn="物流优惠" en="Logistics discount"/>
+<kce key="youhui11                      " cn="代理商优惠" en="Agent discount"/>
+<kce key="youhui12                      " cn="会员特价" en="Member special price"/>
+<kce key="youhui13                      " cn="附加费" en="Surcharge"/>
+<kce key="youhui14                      " cn="商品营销" en="Products marketing"/>
+<kce key="youhui15                      " cn="熟客折扣" en="Regular customer discount"/>
+<kce key="youhui16                      " cn="微信卡券" en="Wechat card coupon"/>
+<kce key="youhui5                       " cn="优惠活动或者优惠券" en="Promotions or coupons"/>
+<kce key="youhui2                       " cn="手动折扣" en="Imput discount"/>
+<kce key="youhui21                      " cn="服务费" en="Service charge"/>
+<kce key="youhui3                       " cn="折让" en="Discount"/>
+<kce key="youhui5                       " cn="优惠活动或者优惠券" en="Promotions or coupons"/>
+<kce key="youhui6                       " cn="积分抵现" en="Points offset cash"/>
+<kce key="youhui7                       " cn="自动折扣" en="Automatic discount"/>
+<kce key="youhui8                       " cn="平台优惠" en="Platform discount"/>
+<kce key="3a94f8d91e773d6df4bd9e8d8bcdf3f7" cn="商户优惠" en=" merchant offer"/>
+<kce key="youhui_1                      " cn="优惠" en="Offer"/>
+<kce key="youhui_total_amount           " cn="优惠合计" en="Total offers"/>
+<kce key="youhuijingebunengdayu         " cn="优惠金额不能大于订单总额！" en="Discount can not be more than the total order amount!"/>
+<kce key="youxiaoqi                     " cn="有效期" en="Validity period:"/>
+<kce key="yu_jie_dan                    " cn="预结单" en="Budget receipt"/>
+<kce key="zhekouquan                    " cn="折扣券" en="Discount coupon"/>
+<kce key="zhi_fu_bao                    " cn="支付宝" en="Alipay"/>
+<kce key="zhuan_tai                     " cn="转台" en="Chang table"/>
+<kce key="zhuan_tai_success             " cn="转台成功" en="Change table success"/>
+<kce key="zuijia2                       " cn="追加" en="Add more"/>
+<kce key="zuo_fei_dan                   " cn="作废单" en="Void receipt"/>
+<kce key="zuofa_str                     " cn="做法：" en="Cooking method"/>
+<kce key="zuofei_success                " cn="作废成功！请在主收银设备上查看作废票据" en="Void success! pls check void receipts at cash register"/>
