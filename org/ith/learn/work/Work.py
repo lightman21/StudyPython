@@ -121,7 +121,8 @@ def main(argv=None):
     # module_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/KReport/'
     # clean_module(module_path)
 
-    trans_module('../../../../docs/pure/dinner_string.xml')
+    # trans_module('../../../../docs/pure/dinner_string.xml')
+    trans_module('../../../../docs/pure/kreport.xml')
 
     # tmp_path = '../../../../docs/pure/dinner_string.xml'
     # master_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/src/main/res/values' \
@@ -144,7 +145,8 @@ def main(argv=None):
     #         to_master.append(m)
     # write_kce_to_path(tmp_list, './dinner_origin.xml')
 
-    # gener_dict_by_excel('/Users/toutouhiroshidaiou/Desktop/km2008.xlsx')
+    # gener_dict_by_excel('/Users/lightman_mac/Desktop/0418work/418_i18n.xlsx')
+    # gener_dict_by_excel('/Users/lightman_mac/Desktop/km2008.xlsx')
 
 
 def trans_module(str_path):
@@ -153,7 +155,7 @@ def trans_module(str_path):
     not_find_list = []
     count = 0
 
-    dict_path = '../../../../docs/dicts/2020_04_21_kce_dict.xml'
+    dict_path = '../../../../docs/dicts/2020_04_22_kce_dict.xml'
     dict_kce = dict()
     with open(dict_path, 'r') as rin:
         lines = rin.readlines()
@@ -162,11 +164,11 @@ def trans_module(str_path):
             rets = re.findall(pattern, line)
             rets = rets[0]
             kce = KCEBean(key=rets[0], cn=rets[1], en=rets[2])
-            dict_kce[kce.cn] = kce
+            dict_kce[kce.key.strip()] = kce
 
     for diff in diff_list:
         to_search = diff.key
-        ret = dict_kce.get(diff.cn)
+        ret = dict_kce.get(diff.key.strip())
 
         if ret is not None:
             count += 1
@@ -180,10 +182,10 @@ def trans_module(str_path):
     for kce in not_find_list:
         print(kce.hl())
 
-    with open('/Users/lightman_mac/Desktop/m_diff_find.xml', 'w') as rout:
+    with open('/Users/lightman_mac/Desktop/tmp/n_diff_find.xml', 'w') as rout:
         find_list = to_dict_item(find_list)
         rout.writelines(find_list)
-    write_kce_to_path(not_find_list, '/Users/lightman_mac/Desktop/m_diff_not_find.xml')
+    write_kce_to_path(not_find_list, '/Users/lightman_mac/Desktop/tmp/n_diff_not_find.xml')
 
 
 def translate():
@@ -223,6 +225,11 @@ def gener_dict_by_excel(path_of_excel):
     merge_list = []
     key_cn_dict = dict()
 
+    """
+    <kce key="table_has_buffet              " cn="自助餐订单请到pos操作" en="Buffet order pls go to pos operation"/>
+    <kce key="table_has_groupon             " cn="团餐订单请到pos操作" en="Operate group meal on pos"/>
+    """
+
     for cn in cn_list:
         if is_contains_chinese(cn.key):
             cn.key = md5(cn.key)
@@ -248,11 +255,16 @@ def gener_dict_by_excel(path_of_excel):
 
 
 def to_dict_item(kce_list):
+    """
+    自助餐订单请到POS操作
+    .capitalize()
+    自助餐订单请到pos操作
+    """
     to_write_lines = []
     for kce in kce_list:
         if len(kce.key) > 0 and len(kce.cn) > 0 and len(kce.en) > 0:
-            v_cn = auto_escape(kce.cn).replace('please', 'pls').replace('Please', 'Pls').capitalize()
-            v_en = auto_escape(kce.en).capitalize()
+            v_cn = auto_escape(kce.cn).replace('please', 'pls').replace('Please', 'Pls')
+            v_en = auto_escape(kce.en)
             v_key = md5(kce.key) if is_contains_chinese(kce.key) else kce.key
             # res = 'zuo' if x > y else 'you'.
             line = '<kce key="{:<30}" cn="{}" en="{}"/>\n'.format(v_key, v_cn, v_en)
