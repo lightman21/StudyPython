@@ -226,4 +226,4 @@ def auto_escape(inputing):
 
 
 if __name__ == '__main__':
-    print(extra_chinese('tanghao唐浩 fasdfj !_ '))
+    print(remove_punctuation('条形码只能包含英文字母、数字和一个“-”，长度5-20位，不能以“-”开头或结尾！'))

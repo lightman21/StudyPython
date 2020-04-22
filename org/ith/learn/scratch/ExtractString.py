@@ -23,21 +23,48 @@ klight           : 'com.keruyun.mobile:klight:1.10.20',
 """
 
 libs_need_care = [
-    'com.keruyun.mobile:dinner',
-    'com.keruyun.mobile:klight',
+    '正餐',
+    'com.keruyun.mobile.dinner',
+    'com.keruyun.mobile.klight',
+    ','
+    '快餐',
+    'com.keruyun.mobile.mobile.tradeserver',
+    'com.keruyun.mobile.tradeui.library',
+    'com.keruyun.mobile.tradeui.klight',
+    'com.keruyun.mobile.tradeui.klightlib',
+    'com.keruyun.mobile.tradeui.kmobile',
+    ','
+    '报表',
+    'com.keruyun.kmobile.kreport',
+    ','
+    '商品管理',
+    'com.keruyun.kmobile.kmobile.commodity',
     '',
-    'com.keruyun.mobile:mobile-tradeserver',
-    'com.keruyun.mobile:tradeui-library',
-    'com.keruyun.mobile:tradeui-klight',
-    'com.keruyun.mobile:tradeui-klightlib',
-    'com.keruyun.mobile:tradeui-kmobile',
+    'com.keruyun.android.android.mobilecommondata',
     '',
-    'com.keruyun.kmobile:kreport',
+    '库存',
+    'com.keruyun.kmobile.kmobile.inventory.management.ui',
     '',
-    'com.keruyun.kmobile:kmobile-commodity',
+    '会员管理',
+    'com.keruyun.kmobile.kmobile.member.management',
+    '',
+    '订单中心',
+    'com.keruyun.kmobile.kmobile.order.center',
+    '',
+    '外卖',
+    'com.keruyun.kmobile.kmobile.takeout.ui',
     '',
     '',
 ]
+
+
+def should_handle(aar_name):
+    tmper = aar_name.replace('_', '.')
+    for need in libs_need_care:
+        if len(need) > 0 and str(tmper).strip().__contains__(need):
+            print(tmper, ', should True', highlight(need, 2))
+            return True
+    return False
 
 
 def extract_res():
@@ -45,21 +72,7 @@ def extract_res():
 
 
 def main():
-    lib_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/.idea/libraries'
-
-    home_path = os.path.expanduser('~')
-
-    # ss = '<root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/tradeui-kmobile-1.11.30-SNAPSHOT.aar/6287918f966595e8c2b0fe549739a62e/res" />'
-    # pattern = '<root url="(.*)" />'
-    # ret = re.findall(pattern, ss)
-    # if ret is not None:
-    #     ret = ret[0]
-    #     spt = ret.split(r'$USER_HOME$')
-    #     if len(spt) > 1:
-    #         res_path = home_path + spt[1]
-    #         print('res_path', res_path)
-    #         get_values_path(res_path)
-
+    lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
     count = 0
 
     for dir_path_name, dirs, files in os.walk(lib_path):
@@ -68,13 +81,12 @@ def main():
             if full_path.endswith('aar.xml'):
                 if file.__contains__('keruyun'):
                     aar_name = full_path.split('__')[1]
-                    print('aar_name')
-                    extract_values(aar_name, full_path)
+                    if should_handle(aar_name):
+                        if count < 100:
+                            extract_values(aar_name, full_path)
+                            count += 1
 
-    print('total count ', count)
-
-
-pass
+        print('total count ', count)
 
 
 def extract_values(aar_name, aar_path):
@@ -89,10 +101,11 @@ def extract_values(aar_name, aar_path):
                     spt = ret.split(r'$USER_HOME$')
                     if len(spt) > 1:
                         res_path = home_path + spt[1]
-                        print(highlight('aar_name'), aar_name)
-                        print(highlight('res_path'), res_path)
-                        rt = get_values_path(res_path)
-                        # print(rt)
+                        value_paths = get_values_path(res_path)
+                        for path in value_paths:
+                            list_kce = read_xml_as_kce_list(path)
+                            out_path = './tmp/auto_extract/' + aar_name + '___' + path.split('/')[-1]
+                            write_kce_to_path(list_kce, out_path)
 
 
 def get_values_path(m_path):

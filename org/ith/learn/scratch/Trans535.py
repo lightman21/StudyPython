@@ -72,7 +72,7 @@ def i18n_trans():
 
     gener_diff(old_path=path_534, new_path=path_535)
     big_kce_list = big_dict()
-    diff_kce_list = read_xml_as_kce_list('diff_534_535.xml')
+    diff_kce_list = read_xml_as_kce_list('tmp/diff_534_535.xml')
     find_kce = []
     count = 0
     for diff in diff_kce_list:
@@ -108,14 +108,14 @@ def i18n_trans():
 
     print('big size ', len(big_kce_list), ',diff size ', len(diff_kce_list), ',find count ', count)
 
-    write_kce_to_path(find_kce, path='./diff_534_535_find.xml', key='en')
+    write_kce_to_path(find_kce, path='tmp/diff_534_535_find.xml', key='en')
 
     find_kce.clear()
     for kce in diff_kce_list:
         if len(kce.en) < 1:
             find_kce.append(kce)
 
-    write_kce_to_path(find_kce, path='./diff_534_535_not_find.xml', key='cn')
+    write_kce_to_path(find_kce, path='tmp/diff_534_535_not_find.xml', key='cn')
 
     print('约等于 ', len(yuedeng))
     for s in yuedeng:
