@@ -114,6 +114,19 @@ def main(argv=None):
     if argv is None:
         argv = sys.argv
 
+    # delete_res()
+    just_sort('/Users/toutouhiroshidaiou/tmp/dinner_default.xml')
+    just_sort('/Users/toutouhiroshidaiou/tmp/dinner_en.xml')
+    just_sort('/Users/toutouhiroshidaiou/tmp/dinner_zh.xml')
+    just_sort('/Users/toutouhiroshidaiou/tmp/kreport_default.xml')
+
+
+def just_sort(path_of_xml):
+    kce_list = read_xml_as_kce_list(path_of_xml)
+    write_kce_to_path(kce_list,path_of_xml)
+
+
+def delete_res():
     # clean_module()
     # module_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Dinner/'
     # module_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/mobile-trade-server/'
@@ -122,31 +135,28 @@ def main(argv=None):
     # clean_module(module_path)
 
     # trans_module('../../../../docs/pure/dinner_string.xml')
-    trans_module('../../../../docs/pure/kreport.xml')
+    # trans_module('../../../../docs/pure/kreport.xml')
 
-    # tmp_path = '../../../../docs/pure/dinner_string.xml'
-    # master_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/src/main/res/values' \
-    #               '/strings.xml'
-    # tmp_list = read_xml_as_kce_list(tmp_path)
-    # master_list = read_xml_as_kce_list(master_path)
-    # count = 0
-    # to_delete = []
-    # for m in master_list:
-    #     for tmp in tmp_list:
-    #         if m.key == tmp.key:
-    #             count += 1
-    #             to_delete.append(m.key)
-    #
-    # print('to_delete count', count, ',origin dinner count ', len(tmp_list))
-    #
-    # to_master = list()
-    # for m in master_list:
-    #     if m.key in to_delete:
-    #         to_master.append(m)
-    # write_kce_to_path(tmp_list, './dinner_origin.xml')
+    tmp_path = '../../../../docs/pure/dinner_string.xml'
+    master_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/app/src/main/res/values' \
+                  '/strings.xml'
+    tmp_list = read_xml_as_kce_list(tmp_path)
+    master_list = read_xml_as_kce_list(master_path)
+    count = 0
+    to_delete = []
+    for m in master_list:
+        for tmp in tmp_list:
+            if m.key == tmp.key:
+                count += 1
+                to_delete.append(m.key)
 
-    # gener_dict_by_excel('/Users/lightman_mac/Desktop/0418work/418_i18n.xlsx')
-    # gener_dict_by_excel('/Users/lightman_mac/Desktop/km2008.xlsx')
+    print('to_delete count', count, ',origin dinner count ', len(tmp_list))
+
+    to_master = list()
+    for m in master_list:
+        if m.key in to_delete:
+            to_master.append(m)
+    write_kce_to_path(tmp_list, '/tmp/dinner_origin.xml')
 
 
 def trans_module(str_path):

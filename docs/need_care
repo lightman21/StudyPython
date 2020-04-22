@@ -1,0 +1,526 @@
+
+P0 首页、个人中心、
+桌台点单、
+快速点单、
+报表、
+商品管理
+
+
+
+P1 会员设置、经营设置、会员管理、员工管理、库存
+
+
+
+
+      implementation mobile_depends.values()
+        implementation osm_depends.member
+        //base component
+        implementation app_component_depends
+
+android_mobilecommondata            : 'com.keruyun.android:android-mobilecommondata:2.9.69',
+android_mobileui: 'com.keruyun.android:android-mobileui:2.8.52-SNAPSHOT',
+keruyun_printer                     : 'com.keruyun.print:print:1.0.0',
+tradeserver      : 'com.keruyun.mobile:mobile-tradeserver:1.11.30@aar',
+tradeui_library  : 'com.keruyun.mobile:tradeui-library:1.11.30@aar',
+tradeui_klight   : 'com.keruyun.mobile:tradeui-klight:1.11.30@aar',
+tradeui_klightlib: 'com.keruyun.mobile:tradeui-klightlib:1.11.30@aar',
+tradeui_kmobile  : 'com.keruyun.mobile:tradeui-kmobile:1.11.30@aar',
+dinner           : 'com.keruyun.mobile:dinner:2.25.60',
+klight           : 'com.keruyun.mobile:klight:1.10.20',
+paycenter                           : 'com.keruyun.mobile:paycenter:2.9.20',
+paycenter_board                     : 'com.keruyun.mobile:paycenter-board:2.9.20',
+account_system_entrance             : 'com.keruyun.mobile:account-system-entrance:1.9.59',
+cashpay                             : 'com.keruyun.osmobile:cashpay:2.8.92',
+trade_business_core                 : 'com.keruyun.osmobile:trade-business-core:2.9.60',
+tradebusiness                       : 'com.keruyun.osmobile:tradebusiness:2.9.60',
+custompay                           : 'com.keruyun.mobile:custompay:2.4.4',
+kreport                          : 'com.keruyun.kmobile:kreport:5.31.50',
+kmobile_commodity                : 'com.keruyun.kmobile:kmobile-commodity:1.12.00',
+member    : 'com.keruyun.osmobile:member:2.10.21',
+
+
+
+
+
+
+mobile_depends = [
+                tradeserver      : 'com.keruyun.mobile:mobile-tradeserver:1.11.30@aar',
+                tradeui_library  : 'com.keruyun.mobile:tradeui-library:1.11.30@aar',
+                tradeui_klight   : 'com.keruyun.mobile:tradeui-klight:1.11.30@aar',
+                tradeui_klightlib: 'com.keruyun.mobile:tradeui-klightlib:1.11.30@aar',
+                tradeui_kmobile  : 'com.keruyun.mobile:tradeui-kmobile:1.11.30@aar',
+                dinner           : 'com.keruyun.mobile:dinner:2.25.60',
+                klight           : 'com.keruyun.mobile:klight:1.10.20',
+        ]
+
+[component_depends.keruyun_qrcode,
+                                 component_depends.android_mobilecommondata,
+                                 component_depends.android_pushlib,
+                                 component_depends.kmobile_react_native_camera,
+                                 component_depends.kmobile_react_native_image_picker,
+                                 component_depends.kmobile_react_native_linear_gradient,
+                                 component_depends.kmobile_react_native_picker,
+                                 component_depends.kmobile_react_native_spinkit,
+                                 component_depends.kmobile_react_native_contacts,
+                                 component_depends.kmobile_react_native_webview_android,
+                                 component_depends.android_mobileui,
+                                 component_depends.kmobile_third_iflytek,
+                                 component_depends.kmobile_third_facesdk,
+                                 component_depends.advertisement_center,
+                                 component_depends.common_kmobile,
+                                 component_depends.android_utils,
+                                 component_depends.keruyun_printer,
+                                 component_depends.android_networker,
+                                 component_depends.paycenter,
+                                 component_depends.paycenter_board,
+                                 component_depends.cashpay,
+                                 component_depends.groupcoupon,
+                                 component_depends.thirdpay,
+                                 component_depends.account_system_entrance,
+                                 component_depends.bluetooth_printer,
+                                 component_depends.kmobile_loan,
+                                 component_depends.trade_business_core,
+                                 component_depends.tradebusiness]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+subprojects {
+    apply plugin: 'maven'
+    apply plugin: 'idea'
+
+    ext {
+        public_repo = [
+                aliyun    : 'http://maven.aliyun.com/nexus/content/groups/public/',
+                jitpack_io: 'https://jitpack.io',
+        ]
+        nexus_shishike = [
+                jcenter         : 'http://nexus.shishike.com/nexus/content/repositories/jcenter/',
+                releases        : 'http://nexus.shishike.com/nexus/content/repositories/releases/',
+                android_release : 'http://nexus.shishike.com/nexus/content/repositories/AndroidRelease/',
+                android_snapshot: 'http://nexus.shishike.com/nexus/content/repositories/AndroidSnapshot/',
+        ]
+
+        test_depends = [
+                junit                         : 'junit:junit:4.12',
+                mockito_core                  : 'org.mockito:mockito-core:2.7.22',
+                robolectric                   : 'org.robolectric:robolectric:3.3.2',
+                robolectric_shadows_support_v4: 'org.robolectric:shadows-support-v4:3.3.2',
+                robolectric_shadows_multidex  : 'org.robolectric:shadows-multidex:3.3.2',
+                easymock                      : 'org.easymock:easymock:3.4',
+                powermock_core                : 'org.powermock:powermock-core:1.6.5',
+                powermock_module_junit4       : 'org.powermock:powermock-module-junit4:1.6.5',
+                powermock_api_easymock        : 'org.powermock:powermock-api-easymock:1.6.5',
+        ]
+        android_test_depends = [
+                robotium_solo   : 'com.jayway.android.robotium:robotium-solo:5.5.4',
+                espresso_intents: 'com.android.support.test.espresso:espresso-intents:2.2.2',
+                espresso_core   : 'com.android.support.test.espresso:espresso-core:2.2.2',
+        ]
+
+        kry_test_depends = [
+                api_detection    : 'com.keruyun.android:api-dectection:1.0.1@aar',
+                api_detection_jar: 'com.keruyun.android:api-dectection:1.0.1@jar',
+        ]
+
+        apt_compiler = [
+                butterknife_compiler: 'com.jakewharton:butterknife-compiler:8.1.0',
+                arouter_compiler    : 'com.alibaba:arouter-compiler:1.1.3',
+        ]
+
+        leakcanary = [
+                leakcanary_154   : 'com.squareup.leakcanary:leakcanary-android:1.5.4',
+                leakcanary_154_no: 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4',
+        ]
+
+        depends = [
+                //common
+                com_android_support_support_annotations: 'com.android.support:support-annotations:25.0.1',
+                com_android_support_support_v4         : 'com.android.support:support-v4:25.0.1',
+                com_android_support_support_core_ui    : 'com.android.support:support-core-ui:25.0.1',
+                com_android_support_appcompat_7        : 'com.android.support:appcompat-v7:25.0.1',
+                com_android_support_recyclerview_v7    : 'com.android.support:recyclerview-v7:25.0.1',
+                com_android_support_cardview_v7        : 'com.android.support:cardview-v7:25.0.1',
+                com_android_support_design             : 'com.android.support:design:25.0.1',
+                com_android_support_multidex           : 'com.android.support:multidex:1.0.1',
+                com_android_constraint_layout          : 'com.android.support.constraint:constraint-layout:1.0.2',
+                butterknife_7                          : 'com.jakewharton:butterknife:7.0.1',
+                butterknife                            : 'com.jakewharton:butterknife:8.1.0',
+                okhttp3_ogging_interceptor             : 'com.squareup.okhttp3:logging-interceptor:3.8.0',
+                retrofit2                              : 'com.squareup.retrofit2:retrofit:2.2.0',
+                gson                                   : 'com.google.code.gson:gson:2.8.0',
+                retrofit2_converter_gson               : 'com.squareup.retrofit2:converter-gson:2.2.0',
+                glide                                  : 'com.github.bumptech.glide:glide:3.7.0',
+                eventbus                               : 'de.greenrobot:eventbus:2.4.1',
+                zxing_core                             : 'com.google.zxing:core:3.3.0',
+                ormlite_core                           : 'com.j256.ormlite:ormlite-core:5.0',
+                ormlite_android                        : 'com.j256.ormlite:ormlite-android:5.0',
+                blankj_utilcode                        : 'com.blankj:utilcode:1.3.6',
+                pinyin4j                               : 'com.belerweb:pinyin4j:2.5.1',
+                jpinyin                                : 'com.github.stuxuhai:jpinyin:1.1.8',
+                circleimageview                        : 'de.hdodenhof:circleimageview:2.1.0',
+                eventbus_3                             : 'org.greenrobot:eventbus:3.0.0',
+                arouter_api                            : 'com.alibaba:arouter-api:1.2.2',
+                arouter_compiler                       : 'com.alibaba:arouter-compiler:1.1.3',
+                betterpickers_library                  : 'com.code-troopers.betterpickers:library:3.1.0',
+                material_spinner                       : 'com.jaredrummler:material-spinner:1.1.0',
+                swipemenulistview                      : 'com.baoyz.swipemenulistview:library:1.3.0',
+                android_pickerview                     : 'com.contrarywind:Android-PickerView:3.2.5',
+                flyco_tab_layout_lib                   : 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar',
+                react_native                           : 'com.facebook.react:react-native:+',
+                picasso                                : 'com.squareup.picasso:picasso:2.5.2',
+                alibaba_fastjson                       : 'com.alibaba:fastjson:1.2.9',
+                happy_dns                              : 'com.qiniu:happy-dns:0.2.10',
+                qiniu_android_sdk                      : 'com.qiniu:qiniu-android-sdk:7.2.3',
+                aliyun_oss_android_sdk                 : 'com.aliyun.dpa:oss-android-sdk:2.9.2',
+                android_location_tracker               : 'com.github.quentin7b:android-location-tracker:3.2',
+                jsbridge_jssdk                         : 'com.github.lzyzsd:jsbridge:1.0.4',
+                mp_android_chart                       : 'com.github.PhilJay:MPAndroidChart:v3.0.3',
+                android_safe_webview                   : "com.keruyun.android:android-safe-webview:2.4.6",
+                letters_navigation                     : "me.yokeyword:indexablerecyclerview:1.3.0",
+                smart_refresh                          : 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0',
+                smart_refresh_header                   : 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0',
+                smart_table                            : 'com.github.huangyanbin:SmartTable:2.2.0',
+        ]
+
+        analytics = [
+                umeng: 'com.umeng.analytics:analytics:6.1.2',
+        ]
+        provided_depends = [
+                bw_odm_sdk: 'com.keruyun.osmobile:android-bw-odm:1.0.0',
+        ]
+
+        lite_depends = [
+                lite_retrofit_http: 'com.keruyun.android:lite-retrofit-http:1.0.10',
+        ]
+
+        res_provided = [
+
+        ]
+        res_depends = [
+
+        ]
+
+        component_depends_dev = [
+                android_mobileui: 'com.keruyun.android:android-mobileui:2.8.52-SNAPSHOT',
+                common_kmobile  : 'com.keruyun.kmobile:commonkmobile:1.5.50-SNAPSHOT',
+                //group: com.keruyun.mobile
+                paycenter       : 'com.keruyun.mobile:paycenter:2.9.20-SNAPSHOT',
+                paycenter_board : 'com.keruyun.mobile:paycenter-board:2.9.20-SNAPSHOT',
+                groupcoupon     : 'com.keruyun.osmobile:groupcoupon:2.4.95-SNAPSHOT',
+        ]
+
+        component_depends = [
+                //group: com.keruyun.android
+                keruyun_printer                     : 'com.keruyun.print:print:1.0.0',
+                mlog                                : 'com.keruyun.android:mlog:2.4.0',
+                android_pushlib                     : 'com.keruyun.calm:push-netty:3.1.0',
+                android_updater                     : 'com.keruyun.android:android-updater:2.0.1',
+                recyclerview_helper                 : 'com.keruyun.android:recyclerview-helper:2.5.7',
+                data_state_container                : 'com.keruyun.android:data-state-container:2.0.2',
+                osmobile_dialog                     : 'com.keruyun.android:osmobile-dialog:2.5.7',
+                osmobile_title_manager              : 'com.keruyun.android:osmobile-title-manager:2.5.7',
+                widget_digitinputview               : 'com.keruyun.android:widget-digitinputview:2.5.3',
+                keruyun_qrcode                      : 'com.keruyun.android:qrcode:2.5.8',
+                android_utils                       : 'com.keruyun.android:android-utils:2.8.222',
+                android_networker                   : 'com.keruyun.android:android-networker:2.8.33',
+                android_mobilecommondata            : 'com.keruyun.android:android-mobilecommondata:2.9.69',
+                android_mobileui                    : 'com.keruyun.android:android-mobileui:2.8.52',
+                osmobile_settings                   : 'com.keruyun.android:osmobile-settings:2.5.21',
+                printcenter                         : 'com.keruyun.android:printcenter:2.6.40',
+                advertisement_center                : 'com.keruyun.android:advertisement-center:1.2.0',
+                advertisement_gdt                   : 'com.keruyun.android:advertisement-gdt:1.1.0',
+                advertisement_xiaomi                : 'com.keruyun.android:advertisement-xiaomi:1.0.0',
+                advertisement_meizu                 : 'com.keruyun.android:advertisement-meizu:1.0.0',
+                advertisement_baidu                 : 'com.keruyun.android:advertisement-baidu:1.0.0',
+                android_crop_images                 : 'com.keruyun.android:android-crop-images:1.2.20',
+                android_camera_plus                 : 'com.keruyun.android:android-camera-plus:1.1.20',
+
+                //group: com.keruyun.mobile
+                paycenter                           : 'com.keruyun.mobile:paycenter:2.9.20',
+                paycenter_board                     : 'com.keruyun.mobile:paycenter-board:2.9.20',
+                account_system_entrance             : 'com.keruyun.mobile:account-system-entrance:1.9.59',
+
+                //group: com.keruyun.osmobile
+                cashpay                             : 'com.keruyun.osmobile:cashpay:2.8.92',
+                thirdpay                            : 'com.keruyun.osmobile:thirdpay:2.7.10',
+
+                trade_business_core                 : 'com.keruyun.osmobile:trade-business-core:2.9.60',
+                tradebusiness                       : 'com.keruyun.osmobile:tradebusiness:2.9.60',
+
+                plugin_pay                          : 'com.keruyun.osmobile:plugin-pay:2.7.0',
+
+                custompay                           : 'com.keruyun.mobile:custompay:2.4.4',
+                android_kitchen_print               : 'com.keruyun.android:android-kitchen-print:2.2.40',
+                icbcposbridge                       : 'com.keruyun.osmobile:icbc-pos-bridge:2.1.0',
+                icard_pay_ui                        : 'com.keruyun.osmobile:icard-pay-ui:2.4.0',
+                bankpay                             : 'com.keruyun.osmobile:bankpay:2.8.0',
+                groupcoupon                         : 'com.keruyun.osmobile:groupcoupon:2.4.95',
+
+                //group: com.keruyun.kmobile
+                kmobile_third_iflytek               : 'com.keruyun.kmobile.third:kmobile-third-iflytek:1.2.2',
+                kmobile_third_facesdk               : 'com.keruyun.kmobile.third:kmobile-third-facesdk:1.0.2',
+                kmobile_third_exocr                 : 'com.keruyun.kmobile:kmobile-third-loan-exocr:1.0.11',
+                kmobile_third_exocr_appstore        : 'com.keruyun.kmobile:kmobile-third-loan-exocr-appstore:1.0.11',
+
+                kmobile_react_native_camera         : 'com.keruyun.kmobile:kmobile-react-native-camera:1.0.0',
+                kmobile_react_native_image_picker   : 'com.keruyun.kmobile:kmobile-react-native-image-picker:1.0.0',
+                kmobile_react_native_linear_gradient: 'com.keruyun.kmobile:kmobile-react-native-linear-gradient:1.0.0',
+                kmobile_react_native_picker         : 'com.keruyun.kmobile:kmobile-react-native-picker:1.0.0',
+                kmobile_react_native_spinkit        : 'com.keruyun.kmobile:kmobile-react-native-spinkit:1.1.11',
+                kmobile_react_native_contacts       : 'com.keruyun.kmobile:kmobile-react-native-contacts:1.0.0',
+                kmobile_react_native_webview_android: 'com.keruyun.kmobile:kmobile-react-native-webview-android:1.1.0',
+                common_kmobile                      : 'com.keruyun.kmobile:commonkmobile:1.5.50',
+                kmobile_loan                        : 'com.keruyun.kmobile:kmobile-loan-ui:1.0.11',
+
+                bluetooth_printer                   : 'com.keruyun.android:bluetooth-printer:1.3.50',
+                cloud_printer                       : 'com.keruyun.osmobile:cloudprinter:1.2.20',
+                cloud_printer_ui                    : 'com.keruyun.osmobile:android-cloudprinter-ui:1.2.20',
+
+                pos_local_printer                   : 'com.keruyun.android:pos-local-printer:2.7.1',
+                bw_pos_sdk                          : 'com.keruyun.osmobile:bw-pos-sdk:2.0.4',
+        ]
+
+
+        mobile_depends = [
+                tradeserver      : 'com.keruyun.mobile:mobile-tradeserver:1.11.30@aar',
+                tradeui_library  : 'com.keruyun.mobile:tradeui-library:1.11.30@aar',
+                tradeui_klight   : 'com.keruyun.mobile:tradeui-klight:1.11.30@aar',
+                tradeui_klightlib: 'com.keruyun.mobile:tradeui-klightlib:1.11.30@aar',
+                tradeui_kmobile  : 'com.keruyun.mobile:tradeui-kmobile:1.11.30@aar',
+                dinner           : 'com.keruyun.mobile:dinner:2.25.60',
+                klight           : 'com.keruyun.mobile:klight:1.10.20',
+        ]
+
+        mobile_depends_dev = [
+                tradeserver        : 'com.keruyun.mobile:mobile-tradeserver:1.11.30-SNAPSHOT@aar',
+                tradeui_library    : 'com.keruyun.mobile:tradeui-library:1.11.30-SNAPSHOT@aar',
+                tradeui_klight     : 'com.keruyun.mobile:tradeui-klight:1.11.30-SNAPSHOT@aar',
+                tradeui_klightlib  : 'com.keruyun.mobile:tradeui-klightlib:1.11.30-SNAPSHOT@aar',
+                tradeui_kmobile    : 'com.keruyun.mobile:tradeui-kmobile:1.11.30-SNAPSHOT@aar',
+                dinner             : 'com.keruyun.mobile:dinner:2.25.60-SNAPSHOT',
+                klight             : 'com.keruyun.mobile:klight:1.10.20-SNAPSHOT',
+
+                trade_business_core: 'com.keruyun.osmobile:trade-business-core:2.9.60-SNAPSHOT',
+                tradebusiness      : 'com.keruyun.osmobile:tradebusiness:2.9.60-SNAPSHOT',
+        ]
+
+
+        depends_ai = [
+                // com.keruyun.android.ai
+                baidu_ai_android: 'com.keruyun.android.ai:baidu-ai-android:1.0.0',
+        ]
+
+        depends_ai_dev = [
+                // com.keruyun.android.ai
+                baidu_ai_android: 'com.keruyun.android.ai:baidu-ai-android:1.1.0-SNAPSHOT',
+        ]
+
+        km_depends_ai = [
+                // com.keruyun.kmobile.ai
+                kmobile_android_ocr_dish_contain: 'com.keruyun.kmobile.ai:kmobile-android-ocr-dish-contain:2.10.0',
+        ]
+
+        km_depends_ai_dev = [
+                // com.keruyun.kmobile.ai
+                kmobile_android_ocr_dish_contain: 'com.keruyun.kmobile.ai:kmobile-android-ocr-dish-contain:2.10.0-SNAPSHOT',
+        ]
+
+        ot_java = [
+                ot_sdk: 'com.keruyun.calm:ot-sdk:SPRINT-2001-SNAPSHOT',
+                lombok: 'org.projectlombok:lombok:1.16.6'
+        ]
+
+        ot_java_dev = [
+                ot_sdk: 'com.keruyun.calm:ot-sdk:SPRINT-2001-SNAPSHOT',
+                lombok: 'org.projectlombok:lombok:1.16.6'
+        ]
+
+        //kmobile依赖 - release
+        km_depends = [
+                kreport                          : 'com.keruyun.kmobile:kreport:5.31.50',
+                kmobile_order_center             : 'com.keruyun.kmobile:kmobile-order-center:2.0.20',
+                kmobile_third_loan_ocr_live_body : 'com.keruyun.kmobile.third:loan-ocr-live-body:1.0.0',
+                kmobile_third_loan_ocr_face_verif: 'com.keruyun.kmobile.third:loan-ocr-face-verif:1.0.0',
+                kmobile_third_loan_ocr_xs        : 'com.keruyun.kmobile.third:loan-ocr-xs:1.0.0',
+                kmobile_accountsystem_core       : 'com.keruyun.kmobile:kmobile-accountsystem-core:1.17.80',
+                kmobile_accountsystem_ui         : 'com.keruyun.kmobile:kmobile-accountsystem-ui:1.17.80',
+                kmobile_rnbase                   : 'com.keruyun.kmobile:kmobile-rnbase:1.8.60',
+                kmobile_member_manage            : 'com.keruyun.kmobile:kmobile-member-manage:1.11.40',
+                kmobile_commodity                : 'com.keruyun.kmobile:kmobile-commodity:1.12.00',
+                kmobile_message                  : 'com.keruyun.kmobile:kmobile-message:1.8.40',
+                kmobile_router_tables            : 'com.keruyun.kmobile:kmobile-router-tables:1.4.52',
+                kmobile_share                    : 'com.keruyun.kmobile:kmobile-share:1.3.40',
+                kmobile_table_code               : 'com.keruyun.mobile:manage-table-code:1.1.30',
+                kinventory                       : 'com.keruyun.kmobile:kmobile-inventory-management-ui:1.2.90',
+                ktakeout                         : 'com.keruyun.kmobile:kmobile-takeout-ui:1.1.60',
+                kstaff                           : 'com.keruyun.kmobile:kmobile-staff:1.0.40',
+                kcashier                         : 'com.keruyun.kmobile:kmobile-cashier:1.0.50',
+                kmobile_oss                      : 'com.keruyun.kmobile:kmobile-oss:1.0.30',
+                kbusiness_setting                : 'com.keruyun.kmobile:kmobile-business-setting:1.01.0',
+                kmobile_coupon                   : 'com.keruyun.kmobile:kmobile-coupon:1.0.0',
+                kmobile_adt                      : 'com.keruyun.kmobile:kmobile-adt:1.0.0',
+                domain_sniffing                  : 'com.keruyun.calm:dns-discovery:1.0.2',
+                smart_manage                     : 'com.keruyun.kmobile:kmobile-smart-management:1.0.90',
+                table_manage                     : 'com.keruyun.kmobile:kmobile-table-manage:1.0.40',
+                kmobile_qrcode_biz               : 'com.keruyun.kmobile:kmobile-qrcode-biz:1.0.20',
+                kmobile_assistant                : 'com.keruyun.kmobile:kmobile-assistant-ui:1.0.10',
+                kmobile_home                     : 'com.keruyun.kmobile:kmobile-home:1.0.40',
+        ]
+
+        //kmobile依赖 - snapshot
+        km_depends_dev = [
+                kreport                          : 'com.keruyun.kmobile:kreport:5.31.50-SNAPSHOT',
+                kmobile_order_center             : 'com.keruyun.kmobile:kmobile-order-center:2.0.20-SNAPSHOT',
+                kmobile_third_loan_ocr_live_body : 'com.keruyun.kmobile.third:loan-ocr-live-body:1.0.0-SNAPSHOT',
+                kmobile_third_loan_ocr_face_verif: 'com.keruyun.kmobile.third:loan-ocr-face-verif:1.0.0-SNAPSHOT',
+                kmobile_third_loan_ocr_xs        : 'com.keruyun.kmobile.third:loan-ocr-xs:1.0.0-SNAPSHOT',
+                kmobile_accountsystem_core       : 'com.keruyun.kmobile:kmobile-accountsystem-core:1.17.80-SNAPSHOT',
+                kmobile_accountsystem_ui         : 'com.keruyun.kmobile:kmobile-accountsystem-ui:1.17.80-SNAPSHOT',
+                kmobile_rnbase                   : 'com.keruyun.kmobile:kmobile-rnbase:1.8.60-SNAPSHOT',
+                kmobile_member_manage            : 'com.keruyun.kmobile:kmobile-member-manage:1.11.40-SNAPSHOT',
+                kmobile_commodity                : 'com.keruyun.kmobile:kmobile-commodity:1.12.00-SNAPSHOT',
+                kmobile_message                  : 'com.keruyun.kmobile:kmobile-message:1.8.40-SNAPSHOT',
+                kmobile_router_tables            : 'com.keruyun.kmobile:kmobile-router-tables:1.4.52-SNAPSHOT',
+                kmobile_share                    : 'com.keruyun.kmobile:kmobile-share:1.3.40-SNAPSHOT',
+                kmobile_table_code               : 'com.keruyun.mobile:manage-table-code:1.1.30-SNAPSHOT',
+                kinventory                       : 'com.keruyun.kmobile:kmobile-inventory-management-ui:1.2.90-SNAPSHOT',
+                ktakeout                         : 'com.keruyun.kmobile:kmobile-takeout-ui:1.1.60-SNAPSHOT',
+                kstaff                           : 'com.keruyun.kmobile:kmobile-staff:1.0.40-SNAPSHOT',
+                kcashier                         : 'com.keruyun.kmobile:kmobile-cashier:1.0.50-SNAPSHOT',
+                kmobile_oss                      : 'com.keruyun.kmobile:kmobile-oss:1.0.30-SNAPSHOT',
+                kbusiness_setting                : 'com.keruyun.kmobile:kmobile-business-setting:1.01.0-SNAPSHOT',
+                kmobile_coupon                   : 'com.keruyun.kmobile:kmobile-coupon:1.0.0-SNAPSHOT',
+                kmobile_adt                      : 'com.keruyun.kmobile:kmobile-adt:1.0.0-SNAPSHOT',
+                domain_sniffing                  : 'com.keruyun.calm:dns-discovery:1.0.2-SNAPSHOT',
+                smart_manage                     : 'com.keruyun.kmobile:kmobile-smart-management:1.0.90-SNAPSHOT',
+                table_manage                     : 'com.keruyun.kmobile:kmobile-table-manage:1.0.40-SNAPSHOT',
+                kmobile_qrcode_biz               : 'com.keruyun.kmobile:kmobile-qrcode-biz:1.0.20-SNAPSHOT',
+                kmobile_assistant                : 'com.keruyun.kmobile:kmobile-assistant-ui:1.0.10-SNAPSHOT',
+                kmobile_home                     : 'com.keruyun.kmobile:kmobile-home:1.0.40-SNAPSHOT',
+        ]
+
+        //kmobile皮肤依赖
+        km_skin_depends = [
+                skin_support                  : 'com.keruyun.kmobile:kmobile-skin-support:1.0.30@aar',
+                skin_support_appcompat        : 'com.keruyun.kmobile:kmobile-skin-support-appcompat:1.0.30@aar',
+                skin_support_cardview         : 'com.keruyun.kmobile:kmobile-skin-support-cardview:1.0.30@aar',
+                skin_support_constraint_layout: 'com.keruyun.kmobile:kmobile-skin-support-constraint-layout:1.0.30@aar',
+                skin_support_kry              : 'com.keruyun.kmobile:kmobile-skin-support-kry:1.0.30@aar',
+        ]
+
+        //kmobile皮肤依赖 - snapshot
+        km_skin_depends_dev = [
+                skin_support                  : 'com.keruyun.kmobile:kmobile-skin-support:1.0.30-SNAPSHOT@aar',
+                skin_support_appcompat        : 'com.keruyun.kmobile:kmobile-skin-support-appcompat:1.0.30-SNAPSHOT@aar',
+                skin_support_cardview         : 'com.keruyun.kmobile:kmobile-skin-support-cardview:1.0.30-SNAPSHOT@aar',
+                skin_support_constraint_layout: 'com.keruyun.kmobile:kmobile-skin-support-constraint-layout:1.0.30-SNAPSHOT@aar',
+                skin_support_kry              : 'com.keruyun.kmobile:kmobile-skin-support-kry:1.0.30-SNAPSHOT@aar',
+        ]
+
+        osm_depends = [
+                member    : 'com.keruyun.osmobile:member:2.10.21',
+                plugin_pay: 'com.keruyun.osmobile:plugin-pay:2.8.0',
+        ]
+        osm_depends_dev = [
+                member    : 'com.keruyun.osmobile:member:2.10.21-SNAPSHOT',
+                plugin_pay: 'com.keruyun.osmobile:plugin-pay:2.8.0-SNAPSHOT',
+        ]
+
+        //create red cloud depends and copy from km_depends
+        redcloud_depends = [:]
+        redcloud_depends << km_depends
+        redcloud_depends['kmobile_accountsystem_ui'] = 'com.keruyun.kmobile:kmobile-redcloud-accountsystem-ui:1.16.20'
+
+        redcloud_depends_dev = [:]
+        redcloud_depends_dev << km_depends_dev
+        redcloud_depends_dev['kmobile_accountsystem_ui'] = 'com.keruyun.kmobile:kmobile-redcloud-accountsystem-ui:1.16.20-SNAPSHOT'
+
+        hilaosong_depends = [:]
+        hilaosong_depends << km_depends
+        hilaosong_depends['kmobile_accountsystem_ui'] = 'com.keruyun.kmobile:kmobile-hilaosong-accountsystem-ui:1.17.80'
+
+        hilaosong_depends_dev = [:]
+        hilaosong_depends_dev << km_depends_dev
+        hilaosong_depends_dev['kmobile_accountsystem_ui'] = 'com.keruyun.kmobile:kmobile-hilaosong-accountsystem-ui:1.17.80-SNAPSHOT'
+
+
+        app_component_depends = [component_depends.keruyun_qrcode,
+                                 component_depends.android_mobilecommondata,
+                                 component_depends.android_pushlib,
+                                 component_depends.kmobile_react_native_camera,
+                                 component_depends.kmobile_react_native_image_picker,
+                                 component_depends.kmobile_react_native_linear_gradient,
+                                 component_depends.kmobile_react_native_picker,
+                                 component_depends.kmobile_react_native_spinkit,
+                                 component_depends.kmobile_react_native_contacts,
+                                 component_depends.kmobile_react_native_webview_android,
+                                 component_depends.android_mobileui,
+                                 component_depends.kmobile_third_iflytek,
+                                 component_depends.kmobile_third_facesdk,
+                                 component_depends.advertisement_center,
+                                 component_depends.common_kmobile,
+                                 component_depends.android_utils,
+                                 component_depends.keruyun_printer,
+                                 component_depends.android_networker,
+                                 component_depends.paycenter,
+                                 component_depends.paycenter_board,
+                                 component_depends.cashpay,
+                                 component_depends.groupcoupon,
+                                 component_depends.thirdpay,
+                                 component_depends.account_system_entrance,
+                                 component_depends.bluetooth_printer,
+                                 component_depends.kmobile_loan,
+                                 component_depends.trade_business_core,
+                                 component_depends.tradebusiness]
+
+        app_component_depends_dev = [component_depends.keruyun_qrcode,
+                                     component_depends.android_mobilecommondata,
+                                     component_depends.android_pushlib,
+                                     component_depends.kmobile_react_native_camera,
+                                     component_depends.kmobile_react_native_image_picker,
+                                     component_depends.kmobile_react_native_linear_gradient,
+                                     component_depends.kmobile_react_native_picker,
+                                     component_depends.kmobile_react_native_spinkit,
+                                     component_depends.kmobile_react_native_contacts,
+                                     component_depends.kmobile_react_native_webview_android,
+                                     component_depends_dev.android_mobileui,
+                                     component_depends.kmobile_third_iflytek,
+                                     component_depends.kmobile_third_facesdk,
+                                     component_depends.advertisement_center,
+                                     component_depends_dev.common_kmobile,
+                                     component_depends.android_utils,
+                                     component_depends.keruyun_printer,
+                                     component_depends.android_networker,
+                                     component_depends_dev.paycenter,
+                                     component_depends_dev.paycenter_board,
+                                     component_depends.cashpay,
+                                     component_depends_dev.groupcoupon,
+                                     component_depends.thirdpay,
+                                     component_depends.account_system_entrance,
+                                     component_depends.bluetooth_printer,
+                                     component_depends.kmobile_loan,
+                                     mobile_depends_dev.trade_business_core,
+                                     mobile_depends_dev.tradebusiness]
+
+        app_base_business_depends = [km_depends_dev.kmobile_router_tables,
+                                     km_depends.kmobile_share,
+                                     km_depends_ai.kmobile_android_ocr_dish_contain]
+    }
+}
