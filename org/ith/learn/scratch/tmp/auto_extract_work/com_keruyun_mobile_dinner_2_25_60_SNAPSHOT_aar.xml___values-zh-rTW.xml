@@ -527,12 +527,12 @@
 	<string name="scan_dish_clear_hint">該菜品已售罄</string>
 	<string name="search">輸入首字母/漢字/編碼</string>
 	<string name="search_history_title">熱搜菜品</string>
-	<string name="selectAll">全選</string>
 	<string name="select_dish_dilaog_title_add">選擇合適的商品進行添加</string>
 	<string name="select_dish_dilaog_title_delete">選擇合適的商品進行減少</string>
 	<string name="select_dish_dilaog_title_edit">選擇合適的商品進行編輯</string>
 	<string name="select_free_text">選擇菜品贈送份數</string>
 	<string name="select_heshi_shangping_add">選擇合適的商品進行添加</string>
+	<string name="selectAll">全選</string>
 	<string name="selected_free_text">已選%1$s</string>
 	<string name="selected_free_text2">已選贈送份數：%1$s</string>
 	<string name="self_define">自定義</string>

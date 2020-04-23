@@ -253,10 +253,10 @@
 	<string name="network_error">网络出现问题，请重新连接后再尝试！</string>
 	<string name="new_text">新增</string>
 	<string name="next_step">下一步</string>
-	<string name="noSelectAll">反选</string>
 	<string name="no_data1">暂无数据</string>
 	<string name="no_standard">暂无规格数据！</string>
 	<string name="normal_shop_hint">以下门店不可独立管理商品，可为其开启权限</string>
+	<string name="noSelectAll">反选</string>
 	<string name="not_save">不保存</string>
 	<string name="one_print_text">一体打印机</string>
 	<string name="one_shop_one_dish">1个商品 1个餐盒</string>
@@ -362,9 +362,9 @@
 	<string name="reset">重  置</string>
 	<string name="sale_module_manage">销售范本管理</string>
 	<string name="saletotal_not_empty">每日售卖量不能为空</string>
-	<string name="selectAll">全选</string>
 	<string name="select_content_text">选择%1$s</string>
 	<string name="select_template_count_tips">请选择销售范本一个或多个！</string>
+	<string name="selectAll">全选</string>
 	<string name="set_meal">套餐</string>
 	<string name="set_meal_child_dish_add_price">加价(%1$s)</string>
 	<string name="set_meal_default_group">默认分组</string>

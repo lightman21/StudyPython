@@ -76,9 +76,9 @@
 	<string name="change_note">修改备注：</string>
 	<string name="change_super_change_product">切换供应商，将清空或替换掉原有物品，确认执行？</string>
 	<string name="character_counter_pattern">%1$d / %2$d</string>
-	<string name="checkSubmit">确认提交</string>
 	<string name="check_deficit">盘亏</string>
 	<string name="check_gain">盘盈</string>
+	<string name="checkSubmit">确认提交</string>
 	<string name="choose_distribution_template">请选择配送模板</string>
 	<string name="choose_quote_bill_no_again">切换供应商，请重新选择引用单据</string>
 	<string name="choose_receipt_date">请选择单据日期</string>
@@ -435,7 +435,6 @@
 	<string name="new_scrap">新增报废</string>
 	<string name="new_scrap_return">新增退回单</string>
 	<string name="new_take_stock_order">新建盘点单</string>
-	<string name="no_OpenSCM">未开通供应链功能</string>
 	<string name="no_add_shop">没有添加物品！</string>
 	<string name="no_authority">无操作权限</string>
 	<string name="no_barcode">条形码不存在</string>
@@ -446,6 +445,7 @@
 	<string name="no_find_match_shops">没有找到对应的物品</string>
 	<string name="no_modification">禁止修改</string>
 	<string name="no_more_than_48_chars">不能超过48个字符</string>
+	<string name="no_OpenSCM">未开通供应链功能</string>
 	<string name="no_scrap_reason">有物品没有报废原因</string>
 	<string name="no_scrap_return_reason">有物品没有退回原因</string>
 	<string name="no_shops">没有预警物品，当前操作不会清空采购车！</string>

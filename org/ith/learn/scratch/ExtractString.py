@@ -67,16 +67,9 @@ def should_handle(aar_name):
     return False
 
 
-def extract_res():
-    pass
-
-
-def main():
-    lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
-    lib_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/.idea/libraries'
+def extract_res(path_of_search):
     count = 0
-
-    for dir_path_name, dirs, files in os.walk(lib_path):
+    for dir_path_name, dirs, files in os.walk(path_of_search):
         for file in files:
             full_path = dir_path_name + os.sep + file
             if full_path.endswith('aar.xml'):
@@ -88,6 +81,12 @@ def main():
                             count += 1
 
         print('total count ', count)
+
+
+def main():
+    lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
+    # lib_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/.idea/libraries'
+    extract_res(lib_path)
 
 
 def extract_values(aar_name, aar_path):

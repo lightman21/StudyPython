@@ -39,9 +39,9 @@
 	<string name="cc_task">盘点</string>
 	<string name="change_note">修改备注：</string>
 	<string name="change_super_change_product">切换供应商，将清空或替换掉原有物品，确认执行？</string>
-	<string name="checkSubmit">确认提交</string>
 	<string name="check_deficit">盘亏</string>
 	<string name="check_gain">盘盈</string>
+	<string name="checkSubmit">确认提交</string>
 	<string name="choose_distribution_template">请选择配送模板</string>
 	<string name="choose_quote_bill_no_again">切换供应商，请重新选择引用单据</string>
 	<string name="choose_receipt_date">请选择单据日期</string>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="discount_unit">折</string>
+	<string name="trade_server_integral">积分抵现</string>
+	<string name="tradeserver_member_discount">会员折扣</string>
+	<string name="tradeserver_member_rabate">会员特价</string>
+	<string name="ts_beizhu">备注：</string>
+	<string name="ts_canhefei">餐盒费</string>
+	<string name="ts_jialiao">加料：</string>
+	<string name="ts_order_time">下单时间</string>
+	<string name="ts_refunded_dish_quantity_from_to_float">(%1$.2f退%2$.2f)</string>
+	<string name="ts_refunded_dish_quantity_from_to_int">(%1$d退%2$d)</string>
+	<string name="ts_thedaybeforeyestoryday">前天 </string>
+	<string name="ts_today">今天 </string>
+	<string name="ts_tuicai_time">退菜时间</string>
+	<string name="ts_wei_chudan">未出单</string>
+	<string name="ts_yesterday">昨天 </string>
+	<string name="ts_yichudan">已出单</string>
+	<string name="ts_zuofa">做法：</string>
+	<string name="waiter_table_area">我的点单</string>
+</resources>

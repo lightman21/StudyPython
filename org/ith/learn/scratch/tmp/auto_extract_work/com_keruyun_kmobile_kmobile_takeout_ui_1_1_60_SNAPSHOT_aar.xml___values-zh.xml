@@ -112,15 +112,15 @@
 	<string name="casher_paysuccess_ok">好 的</string>
 	<string name="change_note">修改备注：</string>
 	<string name="change_people_count">修改人数：</string>
-	<string name="checkFinishOrder">确定该订单已完成？</string>
-	<string name="checkSubmit">确认提交</string>
 	<string name="check_recharge_tips_2">充值金额(元)</string>
 	<string name="checked_2">已支付</string>
+	<string name="checkFinishOrder">确定该订单已完成？</string>
 	<string name="checking">检测中</string>
 	<string name="checking_member_card_fail_and_retry">未检测到会员卡，请重试</string>
 	<string name="checkout">结账</string>
 	<string name="checkout_bill_print_number">结账单打印份数</string>
 	<string name="checkout_str">结 账</string>
+	<string name="checkSubmit">确认提交</string>
 	<string name="choose_free_reason_hint">请选择赠送理由</string>
 	<string name="choose_ivr_voice_content">请选择IVR语音内容</string>
 	<string name="choose_map_title">请选择地图</string>
@@ -433,7 +433,6 @@
 	<string name="discount_and_rebate">折让</string>
 	<string name="discount_info">优惠信息</string>
 	<string name="discount_unit">折</string>
-	<string name="dishMessLable">商品信息</string>
 	<string name="dish_amount_total_amount">商品原价合计</string>
 	<string name="dish_clear_or_invalid">被沽清或无效的菜品：</string>
 	<string name="dish_detail">详情</string>
@@ -441,6 +440,7 @@
 	<string name="dish_return_to_inventory_check">退菜并且退回库存</string>
 	<string name="dish_return_to_inventory_prompt">请选择退回库存的菜品</string>
 	<string name="dish_sale_out">%1$s已售罄</string>
+	<string name="dishMessLable">商品信息</string>
 	<string name="dishname">dish name</string>
 	<string name="dishname_too_long">菜品名字过长</string>
 	<string name="distribution_finished_order_title">已完成</string>
@@ -508,12 +508,12 @@
 	<string name="instant_delivery">及时送达</string>
 	<string name="integral">积分</string>
 	<string name="invoice">发票：</string>
-	<string name="invoiceTitleLable">发票抬头</string>
 	<string name="invoice_amount">开票金额：</string>
 	<string name="invoice_code">编码</string>
 	<string name="invoice_project">开票项目</string>
 	<string name="invoice_supply">电子发票申请单</string>
 	<string name="invoice_tax_rate">税率</string>
+	<string name="invoiceTitleLable">发票抬头</string>
 	<string name="is_member">会员</string>
 	<string name="item_discount_policy">%1$s折</string>
 	<string name="item_rebate_policy">让%1$s%2$s</string>
@@ -715,7 +715,6 @@
 	<string name="operation_failed">操作失败</string>
 	<string name="option_maxcount_text">请输入人数，最大99</string>
 	<string name="order">订单</string>
-	<string name="orderDetail">订单详情</string>
 	<string name="order_amount">订单金额：%1$s%2$.2f</string>
 	<string name="order_amount_zero_use_cash_checkout">当前订单金额为0元，请用现金结账</string>
 	<string name="order_button_str">下 单</string>
@@ -737,6 +736,7 @@
 	<string name="order_success2">下单成功</string>
 	<string name="order_time">下单时间</string>
 	<string name="order_without_dish_warning">啊哦，您还未选择任何物品</string>
+	<string name="orderDetail">订单详情</string>
 	<string name="ordered">已下单</string>
 	<string name="ordering_preview_no_config_cash_point_to_set">未检测到收银点，请前往POS配置，否则无法出票</string>
 	<string name="orderremark_et_hint">请输入您的备注</string>
@@ -762,7 +762,6 @@
 	<string name="paid">已付款</string>
 	<string name="params_exception">参数异常，请重试</string>
 	<string name="password">密码</string>
-	<string name="payMethod">支付状态</string>
 	<string name="pay_good">我知道了</string>
 	<string name="pay_item_no">暂未配置</string>
 	<string name="pay_member">会员支付</string>
@@ -812,6 +811,7 @@
 	<string name="paycenter_paymode_vip">会员储值</string>
 	<string name="paycenter_paymode_weixin">微信</string>
 	<string name="payment_mode_custom">自定义支付</string>
+	<string name="payMethod">支付状态</string>
 	<string name="paypayboard_center_install">点击安装</string>
 	<string name="peiliao">配料:</string>
 	<string name="people_number">人数：</string>
@@ -939,12 +939,12 @@
 	<string name="scan_text">将条码放入框内即可自动扫描</string>
 	<string name="search">输入首字母/汉字/编码</string>
 	<string name="search_history_title">热搜物品</string>
-	<string name="selectAll">全选</string>
 	<string name="select_dish_dilaog_title_add">选择合适的商品进行添加</string>
 	<string name="select_dish_dilaog_title_delete">选择合适的商品进行减少</string>
 	<string name="select_dish_dilaog_title_edit">选择合适的商品进行编辑</string>
 	<string name="select_free_text">选择菜品赠送份数</string>
 	<string name="select_heshi_shangping_add">选择合适的商品进行添加</string>
+	<string name="selectAll">全选</string>
 	<string name="selected_free_text">已选%1$s</string>
 	<string name="selected_free_text2">已选赠送份数：%1$s</string>
 	<string name="self_define">自定义</string>
@@ -1144,8 +1144,8 @@
 	<string name="voice_notice_success">语音通知发送成功！</string>
 	<string name="voice_null">语音内容不能为空！</string>
 	<string name="voice_setting">语音短信设置</string>
-	<string name="waitDistribution">待配送</string>
 	<string name="wait_to_pay_amount">待支付金额（元）</string>
+	<string name="waitDistribution">待配送</string>
 	<string name="waiter_table_area">我的点单</string>
 	<string name="waiter_text">服务员</string>
 	<string name="wechat_add_dish">加菜</string>

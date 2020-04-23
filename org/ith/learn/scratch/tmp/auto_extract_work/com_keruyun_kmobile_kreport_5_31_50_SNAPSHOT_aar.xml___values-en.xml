@@ -40,6 +40,7 @@
 	<string name="report_no_group_permission">The current account does not have group report permission</string>
 	<string name="report_order_business_day">Order business day：</string>
 	<string name="report_order_number">Order number：</string>
+	<string name="report_order_quick_pay_statistic">Statement of revenue from orders without receipts</string>
 	<string name="report_order_report">Order report</string>
 	<string name="report_order_source_percent">Proportion of order source</string>
 	<string name="report_order_time">Order time：</string>
@@ -98,7 +99,6 @@
 	<string name="report_store_group">Store grouping</string>
 	<string name="report_store_list">List of stores</string>
 	<string name="report_stored_fee">Stored value and card fee collection</string>
-	<string name="report_table">(table)</string>
 	<string name="report_table_detail_msg">Statement details</string>
 	<string name="report_tableofaverage">Average price per table</string>
 	<string name="report_title_jcrs">employees shall have meal</string>

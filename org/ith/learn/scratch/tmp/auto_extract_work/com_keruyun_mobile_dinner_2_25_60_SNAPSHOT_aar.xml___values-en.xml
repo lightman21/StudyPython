@@ -534,12 +534,12 @@
 	<string name="scan_dish_clear_hint">This item is sold out</string>
 	<string name="search">Enter the initial letters/full name/code</string>
 	<string name="search_history_title">Hot search dishes</string>
-	<string name="selectAll">Select All</string>
 	<string name="select_dish_dilaog_title_add">Choose one to to add</string>
 	<string name="select_dish_dilaog_title_delete">Choose one to to delete</string>
 	<string name="select_dish_dilaog_title_edit">Choose one to edit</string>
 	<string name="select_free_text">Set number of serves for free</string>
 	<string name="select_heshi_shangping_add">Choose the suitable product to add</string>
+	<string name="selectAll">Select All</string>
 	<string name="selected_free_text">%1$s selected</string>
 	<string name="selected_free_text2">Number of settled free serve：%1$s</string>
 	<string name="self_define">User defined</string>

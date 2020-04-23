@@ -148,15 +148,15 @@
 	<string name="change_note">修改备注：</string>
 	<string name="change_people_count">Guest:</string>
 	<string name="character_counter_pattern">%1$d / %2$d</string>
-	<string name="checkFinishOrder">确定该订单已完成？</string>
-	<string name="checkSubmit">确认提交</string>
 	<string name="check_recharge_tips_2">充值金额(元)</string>
 	<string name="checked_2">Paid</string>
+	<string name="checkFinishOrder">确定该订单已完成？</string>
 	<string name="checking">检测中</string>
 	<string name="checking_member_card_fail_and_retry">未检测到会员卡，请重试</string>
 	<string name="checkout">结账</string>
 	<string name="checkout_bill_print_number">结账单打印份数</string>
 	<string name="checkout_str">Checkout</string>
+	<string name="checkSubmit">确认提交</string>
 	<string name="choose_free_reason_hint">please select the reson of giving gift?</string>
 	<string name="choose_ivr_voice_content">请选择IVR语音内容</string>
 	<string name="choose_map_title">请选择地图</string>
@@ -467,7 +467,6 @@
 	<string name="discount_and_rebate">Discount</string>
 	<string name="discount_info">优惠信息</string>
 	<string name="discount_unit">折</string>
-	<string name="dishMessLable">商品信息</string>
 	<string name="dish_amount_total_amount">dish original price total</string>
 	<string name="dish_clear_or_invalid">Be sold out or invalid dishes</string>
 	<string name="dish_detail">Detail</string>
@@ -475,6 +474,7 @@
 	<string name="dish_return_to_inventory_check">return dish, and return back to storage</string>
 	<string name="dish_return_to_inventory_prompt">Please select items needed to be returned to storage</string>
 	<string name="dish_sale_out">%1$s sold out</string>
+	<string name="dishMessLable">商品信息</string>
 	<string name="dishname">dish name</string>
 	<string name="dishname_too_long">dish name too long</string>
 	<string name="distribution_finished_order_title">已完成</string>
@@ -542,12 +542,12 @@
 	<string name="instant_delivery">及时送达</string>
 	<string name="integral">integral</string>
 	<string name="invoice">发票：</string>
-	<string name="invoiceTitleLable">发票抬头</string>
 	<string name="invoice_amount">开票金额：</string>
 	<string name="invoice_code">编码</string>
 	<string name="invoice_project">开票项目</string>
 	<string name="invoice_supply">E-invoice application form</string>
 	<string name="invoice_tax_rate">税率</string>
+	<string name="invoiceTitleLable">发票抬头</string>
 	<string name="is_member">会员</string>
 	<string name="item_discount_policy">%1$sdiscount</string>
 	<string name="item_rebate_policy">let%1$s%2$s</string>
@@ -751,7 +751,6 @@
 	<string name="operation_failed">操作失败</string>
 	<string name="option_maxcount_text">Please enter client number, max 99</string>
 	<string name="order">订单</string>
-	<string name="orderDetail">订单详情</string>
 	<string name="order_amount">订单金额：%1$s%2$.2f</string>
 	<string name="order_amount_zero_use_cash_checkout">Order subtotal is 0, please pay by cash</string>
 	<string name="order_button_str">Order</string>
@@ -773,6 +772,7 @@
 	<string name="order_success2">Place order successfully</string>
 	<string name="order_time">下单时间</string>
 	<string name="order_without_dish_warning">啊哦，您还未选择任何物品</string>
+	<string name="orderDetail">订单详情</string>
 	<string name="ordered">Already ordered</string>
 	<string name="ordering_preview_no_config_cash_point_to_set">Ticket outlet has not detected, please go to POS to setting. Otherwise cannot be to draw</string>
 	<string name="orderremark_et_hint">请输入您的备注</string>
@@ -798,7 +798,6 @@
 	<string name="paid">已付款</string>
 	<string name="params_exception">参数异常，请重试</string>
 	<string name="password">Password</string>
-	<string name="payMethod">支付状态</string>
 	<string name="pay_good">好的</string>
 	<string name="pay_item_no">Not configured yet</string>
 	<string name="pay_member">会员支付</string>
@@ -848,6 +847,7 @@
 	<string name="paycenter_paymode_vip">会员储值</string>
 	<string name="paycenter_paymode_weixin">微信</string>
 	<string name="payment_mode_custom">自定义支付</string>
+	<string name="payMethod">支付状态</string>
 	<string name="paypayboard_center_install">点击安装</string>
 	<string name="peiliao">add:</string>
 	<string name="people_number">人数</string>
@@ -978,12 +978,12 @@
 	<string name="search">输入首字母/汉字/编码</string>
 	<string name="search_history_title">热搜物品</string>
 	<string name="search_menu_title">Search</string>
-	<string name="selectAll">全选</string>
 	<string name="select_dish_dilaog_title_add">Choose one to to add</string>
 	<string name="select_dish_dilaog_title_delete">Choose one to to delete</string>
 	<string name="select_dish_dilaog_title_edit">Choose one to edit</string>
 	<string name="select_free_text">Set number of serves for free</string>
 	<string name="select_heshi_shangping_add">Choose the suitable product to add</string>
+	<string name="selectAll">全选</string>
 	<string name="selected_free_text">%1$s selected</string>
 	<string name="selected_free_text2">Number of settled free serve：%1$s</string>
 	<string name="self_define">User defined</string>
@@ -1269,8 +1269,8 @@
 	<string name="voice_notice_success">语音通知发送成功！</string>
 	<string name="voice_null">语音内容不能为空！</string>
 	<string name="voice_setting">语音短信设置</string>
-	<string name="waitDistribution">待取货</string>
 	<string name="wait_to_pay_amount">待支付金额（元）</string>
+	<string name="waitDistribution">待取货</string>
 	<string name="waiter_table_area">My order</string>
 	<string name="waiter_text">Server</string>
 	<string name="wechat_add_dish">Add Dishes</string>
