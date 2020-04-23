@@ -244,7 +244,7 @@
 	<string name="report_bo_ping_effect">坪效</string>
 	<string name="report_bo_sale_amount">销售金额</string>
 	<string name="report_bo_sale_amount_total">总金额</string>
-	<string name="report_bo_sale_count">销售笔数</string>
+	<string name="report_bo_sale_count">订单笔数</string>
 	<string name="report_bo_sale_count_total">总笔数</string>
 	<string name="report_bo_sale_situation">销售概况</string>
 	<string name="report_bo_sale_total">销售金额(总)</string>
@@ -401,7 +401,6 @@
 	<string name="report_order_num">今日订单总数</string>
 	<string name="report_order_num1">订单量</string>
 	<string name="report_order_number">订单编号：</string>
-	<string name="report_order_quick_pay_statistic">静态码收款统计</string>
 	<string name="report_order_report">订单报表</string>
 	<string name="report_order_source_percent">订单来源占比</string>
 	<string name="report_order_source_tips">订单来源：通过来源统计的已完成订单 ( 含退货退款 )\n\n销售金额：通过订单来源统计的订单数量，计算完成的金额，如果订单操作退款，需要减去销售金额 ( 计算规则和销售概况一致 )</string>
@@ -521,14 +520,14 @@
 	<string name="report_sale_down">%1$s%2$s%3$d个菜品今日销量较昨日下降超过%4$s，请重点关注。</string>
 	<string name="report_sale_good_name">商品名称</string>
 	<string name="report_sale_money">销售金额</string>
-	<string name="report_sale_order_count">销售笔数(总)</string>
+	<string name="report_sale_order_count">订单笔数(总)</string>
 	<string name="report_sale_quantity_badest_dish_ranklist">销量最差菜品</string>
 	<string name="report_sale_quantity_best_dish">销售最好菜品：</string>
 	<string name="report_sale_quantity_best_dish_ranklist">销量最好菜品</string>
 	<string name="report_sale_rank">商品今日销量TOP10</string>
 	<string name="report_sale_rank_msg">详见商品销售报表</string>
 	<string name="report_sale_sum_info">商品销售概况</string>
-	<string name="report_sale_tips">订单笔数：已完成和退款订单数量，包括已完成后反结账生成的退货订单，比如1笔订单完成后反结账，生成1笔退货和1笔完成的新单，销售金额是新单金额，订单数量是3 ( 原单和退货单金额抵消 )\n\n 销售金额：通过订单笔数计算对应的销售金额，交易成功为正数，退款是负数，计算之后得出销售金额</string>
+	<string name="report_sale_tips">订单笔数: 统计已完成的订单笔数之和，包括已完成已支付、已退货已支付、已退货已退款、已反结账已支付、已挂账\n\n 销售金额: 统计已完成订单对应的销售金额，销售金额包括无单收银、商品销售金额、附加费、收押金、附加消费税</string>
 	<string name="report_sale_total_count">销量总量：</string>
 	<string name="report_sale_total_money">销售总额：</string>
 	<string name="report_sale_total_money_unit">销售金额(元)</string>
@@ -552,6 +551,8 @@
 	<string name="report_sort_by_sell_money">销售金额排序</string>
 	<string name="report_sort_choose">排序条件</string>
 	<string name="report_start_compared_string">开始对比</string>
+	<string name="report_static_code_detail_items">明细</string>
+	<string name="report_static_code_receipt_statistic">静态码收款统计表</string>
 	<string name="report_statistics_by_combo_product">按套餐商品统计</string>
 	<string name="report_statistics_by_product">按商品统计</string>
 	<string name="report_statistics_by_product_sell">按销售量统计</string>
@@ -571,6 +572,7 @@
 	<string name="report_support_left_slide">页面支持向右滑动</string>
 	<string name="report_symbol_add">+</string>
 	<string name="report_symbol_sub">-</string>
+	<string name="report_table">(桌)</string>
 	<string name="report_table_detail_msg">对账表明细</string>
 	<string name="report_tableofaverage">桌均价</string>
 	<string name="report_target_complete">目标完成度</string>
@@ -636,7 +638,7 @@
 	<string name="report_ziqu">自取</string>
 	<string name="report_zqkdj">折前客单价</string>
 	<string name="reports_bo_other_revenue">其它收支</string>
-	<string name="reprot_biz_member_income">储值收入</string>
+	<string name="reprot_biz_member_income">储值收款</string>
 	<string name="reprot_charge_off_income">销账收入</string>
 	<string name="reprot_date_tab_custom">自定义</string>
 	<string name="reprot_date_tab_this_month">本月</string>

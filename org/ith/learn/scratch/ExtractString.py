@@ -46,7 +46,7 @@ libs_need_care = [
     'com.keruyun.kmobile.kmobile.inventory.management.ui',
     '',
     '会员管理',
-    'com.keruyun.kmobile.kmobile.member.management',
+    'com.keruyun.kmobile.kmobile.member.manage',
     '',
     '订单中心',
     'com.keruyun.kmobile.kmobile.order.center',
@@ -86,7 +86,33 @@ def extract_res(path_of_search):
 def main():
     lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
     # lib_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/.idea/libraries'
-    extract_res(lib_path)
+    # extract_res(lib_path)
+    test()
+
+
+def test():
+    ss = """
+    	<string name="kmember_tip_auto_pause">需要暂停所有会员等级后,才可以进行编辑,
+    	是否暂停并编辑等级?</string>
+	<string name="kmember_tip_cancel">取消</string>
+	<string name="kmember_tip_confirm">确定</string>
+	    	<string name="kmember_tip_auto_pause">woshihexiaowe,才可以进行编辑,
+    	是否暂停并编辑等级?</string>
+    """
+
+    fuzzy_matching = r'<string name="(\w*)">(.*)</string>'
+    # r = re.compile(matching, re.DOTALL)
+    # rets = r.findall(mock_all_xml)
+    # r'/\*(.*?)\*/'
+    pattern = r'<string name="(\w*)">(.*)</string>'
+    pattern = r'<string name="(\w*)">(.*?)</string>'
+    # r = re.compile(pattern, re.DOTALL)
+    # rets = r.findall(ss)
+    rets = re.findall(pattern, ss, re.DOTALL)
+
+    print('len ', len(rets))
+    for ret in rets:
+        print(ret)
 
 
 def extract_values(aar_name, aar_path):

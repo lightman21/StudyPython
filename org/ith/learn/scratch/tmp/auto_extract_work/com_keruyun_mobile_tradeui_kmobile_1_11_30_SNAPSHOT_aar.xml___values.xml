@@ -593,12 +593,12 @@
 	<string name="search">输入首字母/汉字/编码</string>
 	<string name="search_charge_record_hint">输入订单号/交易号</string>
 	<string name="search_history_title">热搜菜品</string>
-	<string name="selectAll">全选</string>
 	<string name="select_dish_dilaog_title_add">选择合适的商品进行添加</string>
 	<string name="select_dish_dilaog_title_delete">选择合适的商品进行减少</string>
 	<string name="select_dish_dilaog_title_edit">选择合适的商品进行编辑</string>
 	<string name="select_free_text">选择菜品赠送份数</string>
 	<string name="select_heshi_shangping_add">选择合适的商品进行添加</string>
+	<string name="selectAll">全选</string>
 	<string name="selected_free_text">已选%1$s</string>
 	<string name="selected_free_text2">已选赠送份数：%1$s</string>
 	<string name="selected_free_text3">已选取消份数：%1$s</string>

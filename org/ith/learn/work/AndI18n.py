@@ -12,21 +12,27 @@ from org.ith.learn.work.Work import gener_dict_by_excel
 0. 生成大字典
 读取 潘霜微Excel /Users/toutouhiroshidaiou/Desktop/i18n/0421_i18n.xlsx
 
+                /Users/lightman_mac/Desktop/0418work/418_i18n.xlsx
+
 读取主工程最新大kce    
 
 """
 
 
 def demo():
-    mpath = '/Users/toutouhiroshidaiou/Desktop/th_values.xml'
-
-    # fanyi_excel = '/Users/toutouhiroshidaiou/Desktop/i18n/0421_i18n.xlsx'
-    # list_excel_kce = gener_dict_by_excel(fanyi_excel, just_return=True)
+    fanyi_excel = '/Users/toutouhiroshidaiou/Desktop/i18n/0421_i18n.xlsx'
+    fanyi_excel = '/Users/lightman_mac/Desktop/0418work/418_i18n.xlsx'
+    list_excel_kce = gener_dict_by_excel(fanyi_excel, just_return=True)
     master_path = '/tmp/OnMobile-official-5.35.0-SNAPSHOT-armeabi-v7a-envGrd-2020-04-23-11-03-14/res/values/strings.xml'
+    master_path = '/tmp/tanghao/official-5.35.0-envGrd-2020-04-17-19-15-13/res/values/strings.xml'
     ch_path = '/tmp/OnMobile-official-5.35.0-SNAPSHOT-armeabi-v7a-envGrd-2020-04-23-11-03-14/res/values-zh/strings.xml'
+    ch_path = '/tmp/tanghao/official-5.35.0-envGrd-2020-04-17-19-15-13/res/values-zh/strings.xml'
 
     merge_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/app/build/intermediates/res/merged/appStore' \
                  '/bugRelease/values/values.xml '
+
+    merge_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/build/intermediates/res' \
+                 '/merged/official/envCiTest/values/values.xml '
 
     merge_list = read_xml_as_kce_list(merge_path)
 
@@ -39,7 +45,8 @@ def demo():
                 if not is_contains_chinese(master.cn) and is_contains_chinese(ch.cn):
                     count += 1
                     master.cn = ch.cn
-    print('master size ', len(master_list), ', ch size ', len(ch_list), 'rewrite count ' + str(count))
+    print('master size ', len(master_list), ', ch size ', len(ch_list), 'rewrite count ' + str(count), ', merge size ',
+          len(merge_list))
 
     write_kce_to_path(master_list, './rewrite_master.xml', sort=False)
     write_kce_to_path(merge_list, './rewrite_merge.xml')
@@ -47,13 +54,22 @@ def demo():
     rmaster_list = read_xml_as_kce_list('./rewrite_master.xml')
     write_kce_to_path(rmaster_list, './rewrite_sort_master.xml')
 
-    # count = 0
-    # for fanyin in list_excel_kce:
-    #     for master in master_list:
-    #         if fanyin.key == master.key:
-    #             if fanyin.cn != master.cn:
-    #                 count += 1
-    #                 print(fanyin.cn, '----> ', highlight(master.cn, 3), '----> ', highlight(master.key, 4))
+    master_keys = []
+    for m in master_list:
+        master_keys.append(m.key)
+
+    for m in merge_list:
+        if m.key not in master_keys:
+            print('not in master key ', highlight(m.key, 3), ', value ', highlight(m.cn, 4))
+
+    count = 0
+    for fanyin in list_excel_kce:
+        for master in master_list:
+            if fanyin.key == master.key:
+                if fanyin.cn != master.cn:
+                    count += 1
+                    print(highlight(master.key, 4), ', fanyi.cn ', fanyin.cn, '----> master.cn ',
+                          highlight('r' + master.cn, 3))
 
     print('not match count ', str(count))
 
@@ -62,20 +78,24 @@ def demo():
     pass
 
 
+def just_test():
+    # report_order_source_tips
+    # kmember_tip_auto_pause
+    keys = ['kmember_tip_auto_pause']
+    master_kce = read_xml_as_kce_list('./rewrite_master.xml')
+    for kce in master_kce:
+        if kce.key in keys:
+            print(kce.hl())
+            kcn = str(kce.cn)
+            next_line_ascii = 10
+            for char in kcn:
+                if ord(char) == next_line_ascii:
+                    print('find ', char, ', index ', kcn.find(char), 'chr ', len(char))
+
+
 def main():
-    demo()
-
-    # r=re.compile(matching,re.DOTALL)
-    # master_list = read_xml_as_kce_list('./rewrite_master.xml')
-    # merge_list = read_xml_as_kce_list('./rewrite_merge.xml')
-    # print('merge len ', len(merge_list), ', master len ', len(master_list))
-    # master_keys = []
-    # merge_keys = []
+    just_test()
     # demo()
-
-
-
-
     pass
 
 

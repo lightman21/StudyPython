@@ -170,11 +170,12 @@ def read_xml_as_kce_list(xml_path, lang='cn'):
     with open(xml_path, 'r') as file:
         all_str = file.read()
         fuzzy_matching = r'<string name="(\w*)">(.*)</string>'
+        fuzzy_matching = r'<string name="(\w*)">(.*?)</string>'
         # r = re.compile(matching, re.DOTALL)
         # rets = r.findall(mock_all_xml)
-        r = re.compile(fuzzy_matching, re.DOTALL)
+        # r = re.compile(fuzzy_matching, re.DOTALL)
         list_kce = []
-        rets = re.findall(fuzzy_matching, all_str)
+        rets = re.findall(fuzzy_matching, all_str, re.DOTALL)
         # rets = r.findall(all_str)
         for ret in rets:
             if lang == 'cn':
