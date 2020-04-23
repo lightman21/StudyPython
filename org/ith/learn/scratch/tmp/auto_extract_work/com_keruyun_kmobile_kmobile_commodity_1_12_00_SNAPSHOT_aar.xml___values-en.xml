@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="commodity_batch_input_add">Please enter a markup</string>
+	<string name="commodity_batch_input_change">Please enter a uniform price</string>
+	<string name="commodity_batch_input_discount">Please enter a discount, for example, 20% off, enter 8</string>
+	<string name="commodity_batch_input_reduce">Please enter a reduction</string>
+	<string name="commodity_can_not_create">Counld not create product?</string>
+	<string name="commodity_commit_create_spec">Specification</string>
+	<string name="commodity_commit_create_spec_hint">+ Create specifications</string>
+	<string name="commodity_commit_next_step">Commit，next</string>
+	<string name="commodity_dish_combo_msg">Multiple food combinations such as: burger + cola + fries</string>
+	<string name="commodity_dish_combo_title">Combo dish</string>
+	<string name="commodity_dish_fast_input">Quick entry recommendation</string>
+	<string name="commodity_dish_fast_input_hint">（For general dishes only）</string>
+	<string name="commodity_dish_msg">Single dish, such as: potato silk, Kung Pao Chicken</string>
+	<string name="commodity_dish_photo_input">Photo entry</string>
+	<string name="commodity_dish_spec_count">Created：%1$d</string>
+	<string name="commodity_dish_spec_msg">There are many different specifications, such as: beef noodles (large, small)</string>
+	<string name="commodity_dish_spec_title">Specification dish</string>
+	<string name="commodity_dish_title">Common dish</string>
+	<string name="commodity_dish_voice_input">Voice entry</string>
+	<string name="commodity_dish_weight_msg">Price by weight, such as: chicken 176 yuan / kg</string>
+	<string name="commodity_dish_weight_title">Weight dish</string>
+	<string name="commodity_first_son_classify">Category</string>
+	<string name="commodity_hand_input">Manual input</string>
+	<string name="commodity_hint_below_12_words">Recommended no more than 12 words</string>
+	<string name="commodity_i_know">I Know</string>
+	<string name="commodity_if_company_desc">Use palm like the cloud - enter the company - Product Management - add products</string>
+	<string name="commodity_if_company_title">If the current store is under the unified management of the company, please go to the product management module of the company to create. The operation is as follows:</string>
+	<string name="commodity_if_shop_step1">Step 1 contact the head office administrator to open the creation authority for you \ NLog in the merchant background (select organization: company) - Product / store self built authorization - \ nauthorize store</string>
+	<string name="commodity_if_shop_step2">Step 2 get permission to create \ nrelog in to palm like cloud - enter the current store - Product Management - add product</string>
+	<string name="commodity_if_shop_title">If you want to create a product only belonging to the current store, please go to the product management module of the store to create it. The operation is as follows:</string>
+	<string name="commodity_limit_batch_add">Bulk price increase</string>
+	<string name="commodity_limit_batch_change">Wholesale price revision</string>
+	<string name="commodity_limit_batch_discount">Bulk discount</string>
+	<string name="commodity_limit_batch_reduce">Bulk reduction</string>
+	<string name="commodity_manage_discount">Allow discount</string>
+	<string name="commodity_manage_sale_unit">Sales unit</string>
+	<string name="commodity_manage_single_price">Selling unit price(%1$s)</string>
+	<string name="commodity_more_setting">More setting </string>
+	<string name="commodity_no_create_permission">No permission to create</string>
+	<string name="commodity_no_create_permission_ques">The current store cannot create a product. What should I do?</string>
+	<string name="commodity_one_jin_equals">1 catty =</string>
+	<string name="commodity_please_input">Please input</string>
+</resources>

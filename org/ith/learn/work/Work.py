@@ -38,8 +38,8 @@ def search_kce(search, compare_by='cn', dict_path='../../../../docs/dicts/2020_0
 
 
 def approximately_equal_to(s1, s2):
-    s1 = remove_punctuation(s1)
-    s2 = remove_punctuation(s2)
+    s1 = remove_punctuation(s1).replace(' ', '')
+    s2 = remove_punctuation(s2).replace(' ', '')
     return difflib.SequenceMatcher(lambda x: x in ':：！!?。', s1, s2).quick_ratio()
 
 
@@ -123,7 +123,7 @@ def main(argv=None):
 
 def just_sort(path_of_xml):
     kce_list = read_xml_as_kce_list(path_of_xml)
-    write_kce_to_path(kce_list,path_of_xml)
+    write_kce_to_path(kce_list, path_of_xml)
 
 
 def delete_res():
@@ -228,7 +228,7 @@ def translate():
     write_kce_to_path(not_find_list, './diff_not_find.xml')
 
 
-def gener_dict_by_excel(path_of_excel):
+def gener_dict_by_excel(path_of_excel, just_return=False):
     (cn_out_path, en_out_path) = excel_to_xml(path_of_excel)
     cn_list = read_xml_as_kce_list(cn_out_path)
     eng_list = read_xml_as_kce_list(en_out_path)
@@ -256,6 +256,9 @@ def gener_dict_by_excel(path_of_excel):
             eng.en = eng.cn
             eng.cn = key_cn_dict[eng.key]
             merge_list.append(eng)
+
+    if just_return:
+        return merge_list
 
     to_write_lines = to_dict_item(merge_list)
     now_date = time.strftime("%Y_%m_%d_%H_%M", time.localtime())

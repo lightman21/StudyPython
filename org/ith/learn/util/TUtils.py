@@ -170,8 +170,12 @@ def read_xml_as_kce_list(xml_path, lang='cn'):
     with open(xml_path, 'r') as file:
         all_str = file.read()
         fuzzy_matching = r'<string name="(\w*)">(.*)</string>'
+        # r = re.compile(matching, re.DOTALL)
+        # rets = r.findall(mock_all_xml)
+        r = re.compile(fuzzy_matching, re.DOTALL)
         list_kce = []
         rets = re.findall(fuzzy_matching, all_str)
+        # rets = r.findall(all_str)
         for ret in rets:
             if lang == 'cn':
                 kce = KCEBean(key=ret[0], cn=ret[1], en='')
@@ -226,4 +230,4 @@ def auto_escape(inputing):
 
 
 if __name__ == '__main__':
-    print(remove_punctuation('条形码只能包含英文字母、数字和一个“-”，长度5-20位，不能以“-”开头或结尾！'))
+    print(remove_punctuation('税  !@#$%^&*( 种:'.replace(' ', '')))

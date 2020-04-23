@@ -73,6 +73,7 @@ def extract_res():
 
 def main():
     lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
+    lib_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/.idea/libraries'
     count = 0
 
     for dir_path_name, dirs, files in os.walk(lib_path):
@@ -104,7 +105,7 @@ def extract_values(aar_name, aar_path):
                         value_paths = get_values_path(res_path)
                         for path in value_paths:
                             list_kce = read_xml_as_kce_list(path)
-                            out_path = './tmp/auto_extract/' + aar_name + '___' + path.split('/')[-1]
+                            out_path = './tmp/auto_extract_work/' + aar_name + '___' + path.split('/')[-1]
                             write_kce_to_path(list_kce, out_path)
 
 

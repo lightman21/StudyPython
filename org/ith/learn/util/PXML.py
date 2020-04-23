@@ -67,13 +67,15 @@ def parse_string_as_kce(path_of_string, kce_value='cn'):
     return list_kce
 
 
-def write_kce_to_path(list_of_kce, path, sort=True, key='cn'):
+def write_kce_to_path(list_of_kce, path, sort=False, key='cn'):
 
     print('write_kce_to_path: ', highlight(path, 1))
 
     for kce in list_of_kce:
         kce.cn = auto_escape(kce.cn)
         kce.en = auto_escape(kce.en)
+
+    list_of_kce = sorted(list_of_kce)
 
     impl = xml.dom.minidom.getDOMImplementation()
     dom = impl.createDocument(None, 'resources', None)

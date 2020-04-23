@@ -45,7 +45,7 @@ def xml_to_excel(path_of_cn, path_of_en, excel_path):
     write_to_excel(cn_list, excel_path)
 
 
-def excel_to_xml(path_of_excel, xml_path='../../../docs/'):
+def excel_to_xml(path_of_excel, xml_path='../../../docs/', should_write=False):
     """
     把excel的数据分成两个xml
     """
