@@ -11,6 +11,8 @@ from org.ith.learn.util.TUtils import open_excel_as_list, read_xml_as_kce_list, 
 import re
 import difflib
 
+from org.ith.learn.work.HardCode import hardcode_killer
+
 
 def search_kce(search, compare_by='cn', dict_path='../../../../docs/dicts/2020_04_20_kce_dict.xml',
                up_threshold=1.0,
@@ -114,21 +116,14 @@ def main(argv=None):
     if argv is None:
         argv = sys.argv
 
-    # delete_res()
-    # just_sort('/Users/toutouhiroshidaiou/tmp/dinner_default.xml')
-    # just_sort('/Users/toutouhiroshidaiou/tmp/dinner_en.xml')
-    # just_sort('/Users/toutouhiroshidaiou/tmp/dinner_zh.xml')
-    # just_sort('/Users/toutouhiroshidaiou/tmp/kreport_default.xml')
+    # clean_module('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/mobile-trade-server/')
 
-    ios_path = '/Users/toutouhiroshidaiou/keruyun/proj/ios_proj/OnMobile/OnMobile/Resource/en.lproj' \
-               '/OnMobileLocalizable.strings '
-    ios_kce = read_ios_as_kce_list(ios_path.strip())
+    module_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-commodity/'
+    module_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/KReport/'
+    hardcode_killer(module_path)
 
-    to_write_lines = to_dict_item(ios_kce)
-    now_date = time.strftime("%Y_%m_%d_%H_%M", time.localtime())
-    out_name = '../../../docs/{}_{}_kce_dict.xml'.format(now_date, '0424_ios')
-    with open(out_name, 'w') as out:
-        out.writelines(to_write_lines)
+    # just_sort('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-commodity/commodity/src/main/res/values/strings.xml')
+    # just_sort('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-commodity/commodity/src/main/res/values-en/strings.xml')
 
 
 def just_sort(path_of_xml):

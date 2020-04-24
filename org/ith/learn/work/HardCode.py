@@ -66,8 +66,7 @@ list_all_remote = []
 
 
 def main():
-    list_all_remote.extend(pull_remote_values())
-    hardcode_killer('/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-member-manage/')
+    pass
 
 
 def hardcode_killer(path_of_module):
@@ -236,15 +235,12 @@ def gener_key_by_hardcode(module_path, hardcode):
 
     mps = module_path.split('/')
     module_name = mps[len(mps) - 1].lower()
-    total_len = 10
     hardcode = extra_chinese(hardcode)
-    tmp = str(hardcode)
     md5_str = md5(hardcode + str(num))
     hardcode = str2pinyin(hardcode)
     hardcode = hardcode[:(len(hardcode))]
-    hlen = len(hardcode)
     # key = module_name + '_autogen_' + hardcode + '_' + md5_str[:total_len - hlen]
-    key = module_name + '_autogen_' + hardcode + "_" + md5_str[:5]
+    key = module_name + '_autogen_' + hardcode[:8] + "_" + md5_str[:5]
     return key
 
 
@@ -387,4 +383,5 @@ def extra_chinese(word):
 
 
 if __name__ == '__main__':
+    print(str2pinyin('定位超'))
     main()

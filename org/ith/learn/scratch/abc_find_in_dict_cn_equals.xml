@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="commodity_autogen_add_price">Markup</string>
+	<string name="commodity_autogen_beizhu">Note</string>
+	<string name="commodity_autogen_bubian">No change</string>
+	<string name="commodity_autogen_chakanyingyong_moban">View reference templates</string>
+	<string name="commodity_autogen_daleimingcheng">I category name</string>
+	<string name="commodity_autogen_dating">Lobby</string>
+	<string name="commodity_autogen_dianji_gaijia">Click price to modify</string>
+	<string name="commodity_autogen_fanbenbianhao">Template No.: %@ </string>
+	<string name="commodity_autogen_fenleiming">Category name</string>
+	<string name="commodity_autogen_fou">No</string>
+	<string name="commodity_autogen_gengming_or_sort">Rename or sort</string>
+	<string name="commodity_autogen_guigeming">Spec. name</string>
+	<string name="commodity_autogen_jiazaizhong">Loading...</string>
+	<string name="commodity_autogen_liru_jifenshu">For example: medium, medium well</string>
+	<string name="commodity_autogen_lirubuyaoconghua">Example: no scallion</string>
+	<string name="commodity_autogen_lirudafengxiaofeng">For example: large, small</string>
+	<string name="commodity_autogen_lirutianlajiang">For example: sweet and spicy sauce, salad dressing</string>
+	<string name="commodity_autogen_mei_fen">Servings</string>
+	<string name="commodity_autogen_meirishoumailiang">Daily sales volume</string>
+	<string name="commodity_autogen_mingcheng">Name</string>
+	<string name="commodity_autogen_peiliao">Ingredient</string>
+	<string name="commodity_autogen_peiliao_name">Ingredients\' name</string>
+	<string name="commodity_autogen_pinpaiweidu_no_modify">Attributes of goods under the brand can\'t be changed!</string>
+	<string name="commodity_autogen_qingshuru">Pls enter %@ </string>
+	<string name="commodity_autogen_qingxuanze">Pls choose %@ </string>
+	<string name="commodity_autogen_shangpin_danwei">Commodity unit</string>
+	<string name="commodity_autogen_shi">Yes</string>
+	<string name="commodity_autogen_shuru_dafen">Enter the Spec., for example: large</string>
+	<string name="commodity_autogen_shurufen_leimingcheng">Enter a category name</string>
+	<string name="commodity_autogen_shuruleibie_name">Enter classification name</string>
+	<string name="commodity_autogen_shuruzuofa">Input cooking method, for example: slightly spicy</string>
+	<string name="commodity_autogen_sub_price">Markdown</string>
+	<string name="commodity_autogen_tianjiafenzu">Add group</string>
+	<string name="commodity_autogen_tingyong_yingxiang">There is a template reference for this product.Disabling will affect the use of the template.</string>
+	<string name="commodity_autogen_woyaoxinzeng"> + I want to add</string>
+	<string name="commodity_autogen_zanwufenlei">No classification. Pls add</string>
+	<string name="commodity_autogen_zhidaole">Got it</string>
+	<string name="commodity_autogen_zuofafenlei">Category of cooking method</string>
+	<string name="commodity_autogen_zuofaming_name">Name of cooking method</string>
+	<string name="commodity_tax_batch_config_tax">Configure taxes in batches</string>
+	<string name="commodity_tax_config_tax">Configure taxes</string>
+	<string name="commodity_tax_format"> -¥%1$s</string>
+	<string name="commodity_tax_name">Tax type</string>
+	<string name="commodity_tax_operate_desc">Support multi-choice. When none is selected, tax type won\'t be configured.</string>
+</resources>

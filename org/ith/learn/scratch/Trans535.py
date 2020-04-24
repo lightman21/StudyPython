@@ -26,14 +26,19 @@ def string_similar(s1, s2):
 
 def main():
     dict_path = '../../../../docs/dicts/2020_04_22_kce_dict.xml'
-    dinner_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Dinner/dinnerui/src/main/res/values/strings.xml'
-    dinner_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/mobile-trade-server/develophelper/src/main/res/values/strings.xml'
+    sub_module_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Dinner/dinnerui/src/main/res/values/strings.xml'
+    sub_module_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/mobile-trade-server/develophelper/src/main/res/values/strings.xml'
+    sub_module_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/mobile-trade-server/TradeServer/src/main/res/values/strings.xml'
 
-    dinner_kce = read_xml_as_kce_list(dinner_path)
+    sub_module_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-commodity/commodity/src/main/res/values/strings.xml'
 
-    trans_dict = dict()
     out_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Dinner/dinnerui/src/main/res/values-en/strings.xml'
     out_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/mobile-trade-server/develophelper/src/main/res/values-en/strings.xml'
+    out_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/mobile-trade-server/TradeServer/src/main/res/values-en/strings.xml'
+    out_path = './commit.xml'
+
+    kce_of_submodule = read_xml_as_kce_list(sub_module_path)
+    trans_dict = dict()
 
     with open(dict_path, 'r') as rin:
         lines = rin.readlines()
@@ -44,24 +49,44 @@ def main():
             kce = KCEBean(key=rets[0], cn=rets[1], en=rets[2])
             trans_dict[kce.key.strip()] = kce
 
-    print('dinner size ', len(dinner_kce), ', dict size ', len(trans_dict))
+    print('sub module size ', len(kce_of_submodule), ', dict size ', len(trans_dict))
 
     finded = 0
     cannot = 0
     i18n_kce = []
+    not_find_kce = []
 
-    for dinner in dinner_kce:
-        if dinner.key in trans_dict.keys():
+    for kcebean in kce_of_submodule:
+        if kcebean.key in trans_dict.keys():
             finded += 1
-            dinner.cn = trans_dict[dinner.key].en
-            i18n_kce.append(dinner)
+            kcebean.cn = trans_dict[kcebean.key].en
+            i18n_kce.append(kcebean)
         else:
             cannot += 1
-            print('cant find ', dinner.hl())
+            not_find_kce.append(kcebean)
+            print('not find by key', kcebean.hl())
 
     print('cannot find ', cannot, ', finded ', finded)
 
     write_kce_to_path(i18n_kce, out_path)
+    write_kce_to_path(not_find_kce, './abc_not_find_kce.xml')
+
+    for k, v_kce in trans_dict.items():
+        for no_tr in not_find_kce:
+            tm_no = remove_punctuation(no_tr.cn).replace(' ', '').strip()
+            tm_kce = remove_punctuation(v_kce.cn).replace(' ', '').strip()
+            if tm_no == tm_kce:
+                cannot -= 1
+                no_tr.en = v_kce.en
+
+    print('find finally in cn ', cannot)
+
+    tmp = []
+    for no_tr in not_find_kce:
+        if len(no_tr.en) > 0:
+            tmp.append(no_tr)
+
+    write_kce_to_path(tmp, './abc_find_in_dict_cn_equals.xml', key='en')
 
 
 def ios_by_excel():
