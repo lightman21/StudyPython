@@ -784,7 +784,7 @@
 <kce key="checking_member_card_fail_and_retry" cn="未检测到会员卡，请重试" en="No membership card detected, \npls try again"/>
 <kce key="checkout                      " cn="结账" en="Checkout"/>
 <kce key="checkout_bill_print_number    " cn="结账单打印份数" en="Statement number of copies"/>
-<kce key="checkout_str                  " cn="结 账" en="Checkout"/>
+<kce key="checkout_str                  " cn="结 账" en="Pay"/>
 <kce key="chengzhongshangping           " cn="称重商品" en="Weighing goods"/>
 <kce key="chengzhongshangping_no        " cn="非称重商品" en="Non-weighing"/>
 <kce key="china_mobile                  " cn="中国移动" en="China Mobile"/>

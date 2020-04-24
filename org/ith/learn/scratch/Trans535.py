@@ -25,13 +25,41 @@ def string_similar(s1, s2):
 
 
 def main():
-    # path_new = '/Users/lightman_mac/Desktop/0418work/535_app-official-armeabi-v7a-envSingapore.apk'
-    # path_old = '/Users/lightman_mac/Desktop/0418work/534app-official-armeabi-v7a-envCiTest.apk'
-    # new_kce_list = get_apk_string_as_kce(path_new)
-    # old_kce_list = get_apk_string_as_kce(path_old)
-    gener_diff(new_path='/tmp/tanghao/535_app-official-armeabi-v7a-envSingapore/res/values/strings.xml',
-               old_path='/tmp/tanghao/534app-official-armeabi-v7a-envCiTest/res/values/strings.xml',
-               diff_path='/tmp/diff.xml')
+    dict_path = '../../../../docs/dicts/2020_04_22_kce_dict.xml'
+    dinner_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Dinner/dinnerui/src/main/res/values/strings.xml'
+
+    dinner_kce = read_xml_as_kce_list(dinner_path)
+
+    trans_dict = dict()
+    out_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Dinner/dinnerui/src/main/res/values-en/strings.xml'
+
+    with open(dict_path, 'r') as rin:
+        lines = rin.readlines()
+        pattern = r'<kce key="(.*)" cn="(.*)" en="(.*)"'
+        for line in lines:
+            rets = re.findall(pattern, line)
+            rets = rets[0]
+            kce = KCEBean(key=rets[0], cn=rets[1], en=rets[2])
+            trans_dict[kce.key.strip()] = kce
+
+    print('dinner size ', len(dinner_kce), ', dict size ', len(trans_dict))
+
+    finded = 0
+    cannot = 0
+    i18n_kce = []
+
+    for dinner in dinner_kce:
+        if dinner.key in trans_dict.keys():
+            finded += 1
+            dinner.cn = trans_dict[dinner.key].en
+            i18n_kce.append(dinner)
+        else:
+            cannot += 1
+            print('cant find ', dinner.hl())
+
+    print('cannot find ', cannot, ', finded ', finded)
+
+    write_kce_to_path(i18n_kce, out_path)
 
 
 def ios_by_excel():

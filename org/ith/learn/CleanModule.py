@@ -10,7 +10,7 @@ from org.ith.learn.util.Translator import to_simplized
 def clean_module(path_of_module):
     os.chdir(path_of_module)
 
-    check_branch()
+    # check_branch()
 
     main_res = 'res/values/strings.xml'
     list_of_values = list_res_values(path_of_module)
@@ -227,7 +227,8 @@ def modify_properties(m_path='/tmp/tmp/Dinner/', v_code=12345, v_name="1.23.45")
 
 
 def main():
-    clean_module('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-commodity/')
+    # clean_module('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-commodity/')
+    clean_module('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Dinner/')
 
 
 def old():

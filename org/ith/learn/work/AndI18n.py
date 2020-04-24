@@ -81,16 +81,29 @@ def demo():
 def just_test():
     # report_order_source_tips
     # kmember_tip_auto_pause
-    keys = ['kmember_tip_auto_pause']
-    master_kce = read_xml_as_kce_list('./rewrite_master.xml')
+    master_kce = read_xml_as_kce_list('./tester.xml')
     for kce in master_kce:
-        if kce.key in keys:
-            print(kce.hl())
-            kcn = str(kce.cn)
-            next_line_ascii = 10
-            for char in kcn:
-                if ord(char) == next_line_ascii:
-                    print('find ', char, ', index ', kcn.find(char), 'chr ', len(char))
+        print(kce.hl(), 'cn len ', len(kce.cn))
+        kce.cn = auto_transascii10(kce.cn)
+        print('after', kce.hl(), ', cn len ', len(kce.cn))
+
+
+def auto_transascii10(str_input):
+    """
+    把输入的软换行换成硬换行
+    \n        10        换行NL
+    \r        13        回车CR
+    """
+    ascii_indexes = []
+    next_line_ascii = 10
+    for index in range(len(str_input)):
+        if ord(str_input[index]) == next_line_ascii:
+            ascii_indexes.append(index)
+    blank = list(str_input)
+    for ch_index in ascii_indexes:
+        blank[ch_index] = r'\n'
+
+    return ''.join(blank)
 
 
 def main():
