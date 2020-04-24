@@ -25,18 +25,18 @@ def string_similar(s1, s2):
 
 
 def main():
-    dict_path = '../../../../docs/dicts/2020_04_22_kce_dict.xml'
+    dict_path = '../../../../docs/dicts/2020_04_24_22_09__auto__kce_dict.xml'
     sub_module_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Dinner/dinnerui/src/main/res/values/strings.xml'
     sub_module_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/mobile-trade-server/develophelper/src/main/res/values/strings.xml'
     sub_module_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/mobile-trade-server/TradeServer/src/main/res/values/strings.xml'
 
     sub_module_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-commodity/commodity/src/main/res/values/strings.xml'
+    sub_module_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/KReport/kreport//src/main/res/values/strings.xml'
 
     out_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Dinner/dinnerui/src/main/res/values-en/strings.xml'
     out_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/mobile-trade-server/develophelper/src/main/res/values-en/strings.xml'
     out_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/mobile-trade-server/TradeServer/src/main/res/values-en/strings.xml'
-    out_path = './commit.xml'
-
+    out_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/KReport/kreport/src/main/res/values-en/strings.xml'
     kce_of_submodule = read_xml_as_kce_list(sub_module_path)
     trans_dict = dict()
 
@@ -82,11 +82,15 @@ def main():
     print('find finally in cn ', cannot)
 
     tmp = []
+    final_not = []
     for no_tr in not_find_kce:
         if len(no_tr.en) > 0:
             tmp.append(no_tr)
+        else:
+            final_not.append(no_tr)
 
     write_kce_to_path(tmp, './abc_find_in_dict_cn_equals.xml', key='en')
+    write_kce_to_path(final_not, './abc_final_no_trans.xml')
 
 
 def ios_by_excel():

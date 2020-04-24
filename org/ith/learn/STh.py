@@ -1,10 +1,14 @@
 import time
 
 from org.ith.learn.util.PXML import write_kce_to_path
-from org.ith.learn.util.TUtils import KCEBean, highlight, is_contains_chinese, write_to_excel, read_xml_as_kce_list
+from org.ith.learn.util.TUtils import KCEBean, highlight, is_contains_chinese, write_to_excel, read_xml_as_kce_list, \
+    auto_escape
 import re
 # from bs4 import BeautifulSoup, CData
 import os
+
+from org.ith.learn.work.AndI18n import auto_transascii10
+from org.ith.learn.work.Work import to_dict_item
 
 list_of_android_path = "/Users/toutouhiroshidaiou/Desktop/keruyun/tmp/android.xlsx"
 list_of_ios_path = "/Users/toutouhiroshidaiou/Desktop/keruyun/tmp/ios.xlsx"
@@ -154,22 +158,27 @@ skip_keys = ['sun_str', 'product_desc_handset', 'product_desc_kiosk', 'product_d
 # amp;
 
 def main():
-    # diff()
-    # and_merge_en()
+    path_dict = '../../../docs/dicts/2020_04_22_kce_dict.xml'
+    merge_list = list()
+    with open(path_dict, 'r') as rin:
+        lines = rin.readlines()
+        pattern = r'<kce key="(.*)" cn="(.*)" en="(.*)"'
+        for line in lines:
+            rets = re.findall(pattern, line)
+            rets = rets[0]
+            kce = KCEBean(key=rets[0], cn=rets[1], en=rets[2])
+            kce.cn = auto_transascii10(kce.cn)
+            kce.cn = auto_escape(kce.cn)
+            kce.en = auto_escape(kce.en)
+            merge_list.append(kce)
 
-    xml_cn = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/app/src/main/res/values/strings.xml'
+    to_write_lines = to_dict_item(merge_list)
+    now_date = time.strftime("%Y_%m_%d_%H_%M", time.localtime())
+    out_name = '../../../docs/{}_{}_kce_dict.xml'.format(now_date, '_auto_')
+    with open(out_name, 'w') as out:
+        out.writelines(to_write_lines)
 
-    xml_en = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/app/src/main/res/values-en/strings.xml'
-
-    en_list = read_xml_as_kce_list(xml_en.strip(), lang='en')
-    default_cn_list = read_xml_as_kce_list(xml_cn.strip(), lang='cn')
-
-    for cn in default_cn_list:
-        for en in en_list:
-            if cn.key == en.key:
-                cn.en = en.en
-
-    write_to_excel(default_cn_list, '../../../docs/android_i18n_0407.xlsx')
+    pass
 
 
 def total_excel(xml_cn, xml_en, out_path='./out_excel.xlsx'):

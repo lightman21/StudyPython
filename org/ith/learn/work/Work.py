@@ -120,10 +120,14 @@ def main(argv=None):
 
     module_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-commodity/'
     module_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/KReport/'
-    hardcode_killer(module_path)
+    # module_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/KReport/'
+    # hardcode_killer(module_path)
 
     # just_sort('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-commodity/commodity/src/main/res/values/strings.xml')
     # just_sort('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-commodity/commodity/src/main/res/values-en/strings.xml')
+    just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/KReport/kreport/src/main/res/values-en/strings.xml')
+
+
 
 
 def just_sort(path_of_xml):

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="kreport_amount_in_shop2">店内总收款\n%2$s%1$s</string>
+	<string name="kreport_autogen_bi_548dd">0笔</string>
+	<string name="kreport_autogen_leijigukefenxi">累计顾客分析</string>
+	<string name="kreport_hint_exclude_static_code">*以下数据均不含静态码实收￥%1$s (%2$s笔)*</string>
+	<string name="kreport_hint_static_code_amount">不含静态码实收￥%1$s</string>
+	<string name="kreport_hint_static_code_items">不含静态码实收%1$s笔</string>
+	<string name="kreport_member_no_buy">会员储值意愿低，复购率低？ 试试易储值，全新营销方案，消费即储值，人人都是你的储值客户哦！限时优惠中</string>
+	<string name="kreport_member_no_day">您的易储值服务已过期，此时您的顾客将不可享受消费即储值的服务。现在续订还有优惠服务</string>
+	<string name="kreport_member_num_day">您的易储值服务即将于%s日后到期，服务过期后，您的顾客将不可享受消费即储值的服务。现在续订还有优惠服务，</string>
+	<string name="kreport_small_on_member">会员储值意愿低，复购率低？ 试试易储值，全新营销方案，消费即储值，人人都是你的储值客户哦！</string>
+	<string name="kreport_small_on_takeout">\"小ON有话说：外卖订单少？客单价低？维护成本太高？外卖万单训练营，期待您的加入！\"</string>
+	<string name="kreport_ymd2">yyyy-MM-dd HH:mm</string>
+	<string name="pos">pos</string>
+	<string name="pull_to_refresh_tap_label">Tap to refresh...</string>
+	<string name="report_account_receive">销账收款</string>
+	<string name="report_dr_receipt_statistic_surface">收款统计表</string>
+	<string name="report_order_source_tips">订单来源：通过来源统计的已完成订单 ( 含退货退款 )\n\n销售金额：通过订单来源统计的订单数量，计算完成的金额，如果订单操作退款，需要减去销售金额 ( 计算规则和销售概况一致 )</string>
+	<string name="report_people_tips">就餐人数：根据堂食、外卖计算的就餐人数，反结账订单只统计反结新单的就餐人数\n折前客单价：折前客单价=优惠前销售金额/就餐人数\n来客数：全部订单中的顾客数量总计（包括作废订单，包括外卖订单客户数）</string>
+	<string name="report_sale_order_count">订单笔数(总)</string>
+	<string name="report_static_code_detail_items">明细</string>
+	<string name="report_static_code_receipt_statistic">静态码收款统计表</string>
+	<string name="report_store_vip_account">挂账销账报表</string>
+</resources>
