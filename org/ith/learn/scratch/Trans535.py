@@ -27,11 +27,13 @@ def string_similar(s1, s2):
 def main():
     dict_path = '../../../../docs/dicts/2020_04_22_kce_dict.xml'
     dinner_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Dinner/dinnerui/src/main/res/values/strings.xml'
+    dinner_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/mobile-trade-server/develophelper/src/main/res/values/strings.xml'
 
     dinner_kce = read_xml_as_kce_list(dinner_path)
 
     trans_dict = dict()
     out_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Dinner/dinnerui/src/main/res/values-en/strings.xml'
+    out_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/mobile-trade-server/develophelper/src/main/res/values-en/strings.xml'
 
     with open(dict_path, 'r') as rin:
         lines = rin.readlines()

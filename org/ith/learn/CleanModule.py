@@ -3,7 +3,7 @@ import re
 
 from org.ith.learn.util.PXML import parse_string_as_kce, write_kce_to_path
 from org.ith.learn.util.TUtils import exec_cmd, is_contains_chinese, KCEBean, read_xml_as_kce_list, highlight, \
-    get_cur_branch
+    get_cur_branch, md5
 from org.ith.learn.util.Translator import to_simplized
 
 
@@ -228,7 +228,8 @@ def modify_properties(m_path='/tmp/tmp/Dinner/', v_code=12345, v_name="1.23.45")
 
 def main():
     # clean_module('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-commodity/')
-    clean_module('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Dinner/')
+    # clean_module('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Dinner/')
+    clean_module('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/mobile-trade-server/')
 
 
 def old():
@@ -325,7 +326,8 @@ def read_ios_as_kce_list(ios_path):
         list_kce = []
         rets = re.findall(ios_match, all_str)
         for t in rets:
-            h = KCEBean(key=t[0], cn=t[1], en='')
+            ss = 'key' + str(t[0])
+            h = KCEBean(key=md5(ss), cn=t[0], en=t[1])
             list_kce.append(h)
 
         return list_kce

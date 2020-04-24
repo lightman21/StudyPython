@@ -2,7 +2,7 @@ import os
 import sys
 import time
 
-from org.ith.learn.CleanModule import clean_module
+from org.ith.learn.CleanModule import clean_module, read_ios_as_kce_list
 from org.ith.learn.OhMyEXCEL import excel_to_xml, xml_to_excel
 from org.ith.learn.scratch.Trans535 import big_dict
 from org.ith.learn.util.PXML import write_kce_to_path
@@ -115,10 +115,20 @@ def main(argv=None):
         argv = sys.argv
 
     # delete_res()
-    just_sort('/Users/toutouhiroshidaiou/tmp/dinner_default.xml')
-    just_sort('/Users/toutouhiroshidaiou/tmp/dinner_en.xml')
-    just_sort('/Users/toutouhiroshidaiou/tmp/dinner_zh.xml')
-    just_sort('/Users/toutouhiroshidaiou/tmp/kreport_default.xml')
+    # just_sort('/Users/toutouhiroshidaiou/tmp/dinner_default.xml')
+    # just_sort('/Users/toutouhiroshidaiou/tmp/dinner_en.xml')
+    # just_sort('/Users/toutouhiroshidaiou/tmp/dinner_zh.xml')
+    # just_sort('/Users/toutouhiroshidaiou/tmp/kreport_default.xml')
+
+    ios_path = '/Users/toutouhiroshidaiou/keruyun/proj/ios_proj/OnMobile/OnMobile/Resource/en.lproj' \
+               '/OnMobileLocalizable.strings '
+    ios_kce = read_ios_as_kce_list(ios_path.strip())
+
+    to_write_lines = to_dict_item(ios_kce)
+    now_date = time.strftime("%Y_%m_%d_%H_%M", time.localtime())
+    out_name = '../../../docs/{}_{}_kce_dict.xml'.format(now_date, '0424_ios')
+    with open(out_name, 'w') as out:
+        out.writelines(to_write_lines)
 
 
 def just_sort(path_of_xml):
