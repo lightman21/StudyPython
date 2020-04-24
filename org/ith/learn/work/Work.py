@@ -125,9 +125,9 @@ def main(argv=None):
 
     # just_sort('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-commodity/commodity/src/main/res/values/strings.xml')
     # just_sort('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-commodity/commodity/src/main/res/values-en/strings.xml')
-    just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/KReport/kreport/src/main/res/values-en/strings.xml')
+    # just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/KReport/kreport/src/main/res/values-en/strings.xml')
 
-
+    gener_dict_by_excel('/Users/lightman_mac/Desktop/panshuangwei_kmember_not_i18n.xlsx')
 
 
 def just_sort(path_of_xml):

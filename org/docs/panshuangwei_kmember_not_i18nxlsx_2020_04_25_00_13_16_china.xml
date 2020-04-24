@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="key">中文</string>
+	<string name="kmember_autogen_500_value_upgrade">需要 500 成长值升值此等级</string>
+	<string name="kmember_autogen_anjine">按金额</string>
+	<string name="kmember_autogen_belong_chuzhifenzu">该会员所在的储值分组：</string>
+	<string name="kmember_autogen_bulu">补录</string>
+	<string name="kmember_autogen_chengzhangzhihuoqu">成长值获取：</string>
+	<string name="kmember_autogen_chuzhiguizeshengxiao">储值规则生效</string>
+	<string name="kmember_autogen_chuzhimanzeng">储值满赠</string>
+	<string name="kmember_autogen_chuzhiyue">储值余额</string>
+	<string name="kmember_autogen_chuzhiyue_error">储值余额有误？</string>
+	<string name="kmember_autogen_cur_yuer">当前储值余额：</string>
+	<string name="kmember_autogen_final_yuer">最终储值余额</string>
+	<string name="kmember_autogen_guizeweishezhi">...\n规则未设置</string>
+	<string name="kmember_autogen_houtai_setup">需前往商家后台设置</string>
+	<string name="kmember_autogen_how_setup">如何设置储值规则？</string>
+	<string name="kmember_autogen_huiyuan_status">会员状态：</string>
+	<string name="kmember_autogen_huiyuanjia">会员价：</string>
+	<string name="kmember_autogen_in_25_words">25个字以内，选填</string>
+	<string name="kmember_autogen_input_error">内容输入有误</string>
+	<string name="kmember_autogen_jifendixian">积分抵现：</string>
+	<string name="kmember_autogen_jifenhuoqu">积分获取：</string>
+	<string name="kmember_autogen_kouchu">扣除</string>
+	<string name="kmember_autogen_kouchuliyou">扣除理由</string>
+	<string name="kmember_autogen_leijichuzhi">累计储值</string>
+	<string name="kmember_autogen_liyoubitian">理由必填</string>
+	<string name="kmember_autogen_many_shuoming">②若您的公司下包含多家门店，并想分别设置各自的储值规则，建议添加多个分组；</string>
+	<string name="kmember_autogen_manyuankeyong_d09ff">满100元可用</string>
+	<string name="kmember_autogen_manzengguize">满赠规则</string>
+	<string name="kmember_autogen_mod_add_array">添加或修改规则</string>
+	<string name="kmember_autogen_one_store_one_array">①若只存在一家门店，建议添加一个分组；</string>
+	<string name="kmember_autogen_qidongzhong">启动中</string>
+	<string name="kmember_autogen_rule_desc">规则说明</string>
+	<string name="kmember_autogen_rule_detail_desc">③规则自定义。建议设置奖励，例如：储值达100元，赠送10元。支持添加多条规则，设置多个储值阶梯</string>
+	<string name="kmember_autogen_scan_payme">扫一扫向我付钱哦</string>
+	<string name="kmember_autogen_shengri">生日 -</string>
+	<string name="kmember_autogen_shezhiguize">设置规则</string>
+	<string name="kmember_autogen_shichujine">实储金额</string>
+	<string name="kmember_autogen_shiyongguize">使用规则</string>
+	<string name="kmember_autogen_tianjiafenzu">添加分组</string>
+	<string name="kmember_autogen_upgrade_right">升级成为会员，享受会员权益</string>
+	<string name="kmember_autogen_zengsong_desc">开启后设置对应的赠送金额，激励顾客储值，增加营收</string>
+</resources>

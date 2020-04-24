@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="key">英文</string>
+	<string name="kmember_autogen_500_value_upgrade">500 growth values needed to upgrade this level</string>
+	<string name="kmember_autogen_anjine">By amount</string>
+	<string name="kmember_autogen_belong_chuzhifenzu">The top-up group:</string>
+	<string name="kmember_autogen_bulu">Re-enter</string>
+	<string name="kmember_autogen_chengzhangzhihuoqu">Obtain growth value：</string>
+	<string name="kmember_autogen_chuzhiguizeshengxiao">Top-up rule comes into force</string>
+	<string name="kmember_autogen_chuzhimanzeng">Top-up and get benefits</string>
+	<string name="kmember_autogen_chuzhiyue">Top-up balance</string>
+	<string name="kmember_autogen_chuzhiyue_error">Wrong top-up balance? </string>
+	<string name="kmember_autogen_cur_yuer">Current top-up balance:</string>
+	<string name="kmember_autogen_final_yuer">Final top-up balance</string>
+	<string name="kmember_autogen_guizeweishezhi">...\n rule isn\'t set</string>
+	<string name="kmember_autogen_houtai_setup">Set up at merchant back office</string>
+	<string name="kmember_autogen_how_setup">How to set up topup rule?</string>
+	<string name="kmember_autogen_huiyuan_status">Member status:</string>
+	<string name="kmember_autogen_huiyuanjia">Member price:</string>
+	<string name="kmember_autogen_in_25_words">Within 25 words, optional</string>
+	<string name="kmember_autogen_input_error">Wrong content</string>
+	<string name="kmember_autogen_jifendixian">Points redeem cash:</string>
+	<string name="kmember_autogen_jifenhuoqu">Points acquired</string>
+	<string name="kmember_autogen_kouchu">Deduct</string>
+	<string name="kmember_autogen_kouchuliyou">Reason for deduction</string>
+	<string name="kmember_autogen_leijichuzhi">Cumulative topup</string>
+	<string name="kmember_autogen_liyoubitian">Required</string>
+	<string name="kmember_autogen_many_shuoming">If your company contains multiple stores and you want to set up separate stored value rules, pls add multiple groups;</string>
+	<string name="kmember_autogen_manyuankeyong_d09ff">Spend 100￥， available</string>
+	<string name="kmember_autogen_manzengguize">Buy-and-get rule</string>
+	<string name="kmember_autogen_mod_add_array">Add or change rules</string>
+	<string name="kmember_autogen_one_store_one_array">①if there is only one store, pls add a group</string>
+	<string name="kmember_autogen_qidongzhong">Starting</string>
+	<string name="kmember_autogen_rule_desc">Rule description</string>
+	<string name="kmember_autogen_rule_detail_desc">③Custom rule. It is recommended to set rewards, for example: store value up to 100 yuan, give 10 yuan as a gift. Support adding multiple rules and setting multiple  top-up levels.</string>
+	<string name="kmember_autogen_scan_payme">Scan to pay</string>
+	<string name="kmember_autogen_shengri">Birthdate -</string>
+	<string name="kmember_autogen_shezhiguize">Setup rule</string>
+	<string name="kmember_autogen_shichujine">Top-up amount</string>
+	<string name="kmember_autogen_shiyongguize">Rule of use</string>
+	<string name="kmember_autogen_tianjiafenzu">Add groups</string>
+	<string name="kmember_autogen_upgrade_right">Upgrade to member to enjoy member benefits</string>
+	<string name="kmember_autogen_zengsong_desc">After opening, set up the corresponding amount to offer to encourage customers to store value， finally increasing revenue</string>
+</resources>

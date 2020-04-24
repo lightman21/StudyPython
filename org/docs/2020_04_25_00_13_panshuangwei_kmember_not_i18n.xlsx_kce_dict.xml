@@ -1,0 +1,40 @@
+<kce key="kmember_autogen_500_value_upgrade" cn="需要 500 成长值升值此等级" en="500 growth values needed to upgrade this level"/>
+<kce key="kmember_autogen_anjine        " cn="按金额" en="By amount"/>
+<kce key="kmember_autogen_belong_chuzhifenzu" cn="该会员所在的储值分组：" en="The top-up group:"/>
+<kce key="kmember_autogen_bulu          " cn="补录" en="Re-enter"/>
+<kce key="kmember_autogen_chengzhangzhihuoqu" cn="成长值获取：" en="Obtain growth value："/>
+<kce key="kmember_autogen_chuzhiguizeshengxiao" cn="储值规则生效" en="Top-up rule comes into force"/>
+<kce key="kmember_autogen_chuzhimanzeng " cn="储值满赠" en="Top-up and get benefits"/>
+<kce key="kmember_autogen_chuzhiyue     " cn="储值余额" en="Top-up balance"/>
+<kce key="kmember_autogen_chuzhiyue_error" cn="储值余额有误？" en="Wrong top-up balance? "/>
+<kce key="kmember_autogen_cur_yuer      " cn="当前储值余额：" en="Current top-up balance:"/>
+<kce key="kmember_autogen_final_yuer    " cn="最终储值余额" en="Final top-up balance"/>
+<kce key="kmember_autogen_guizeweishezhi" cn="...\n规则未设置" en="...\n rule isn\'t set"/>
+<kce key="kmember_autogen_houtai_setup  " cn="需前往商家后台设置" en="Set up at merchant back office"/>
+<kce key="kmember_autogen_how_setup     " cn="如何设置储值规则？" en="How to set up topup rule?"/>
+<kce key="kmember_autogen_huiyuan_status" cn="会员状态：" en="Member status:"/>
+<kce key="kmember_autogen_huiyuanjia    " cn="会员价：" en="Member price:"/>
+<kce key="kmember_autogen_in_25_words   " cn="25个字以内，选填" en="Within 25 words, optional"/>
+<kce key="kmember_autogen_input_error   " cn="内容输入有误" en="Wrong content"/>
+<kce key="kmember_autogen_jifendixian   " cn="积分抵现：" en="Points redeem cash:"/>
+<kce key="kmember_autogen_jifenhuoqu    " cn="积分获取：" en="Points acquired"/>
+<kce key="kmember_autogen_kouchu        " cn="扣除" en="Deduct"/>
+<kce key="kmember_autogen_kouchuliyou   " cn="扣除理由" en="Reason for deduction"/>
+<kce key="kmember_autogen_leijichuzhi   " cn="累计储值" en="Cumulative topup"/>
+<kce key="kmember_autogen_liyoubitian   " cn="理由必填" en="Required"/>
+<kce key="kmember_autogen_many_shuoming " cn="②若您的公司下包含多家门店，并想分别设置各自的储值规则，建议添加多个分组；" en="If your company contains multiple stores and you want to set up separate stored value rules, pls add multiple groups;"/>
+<kce key="kmember_autogen_manyuankeyong_d09ff" cn="满100元可用" en="Spend 100￥， available"/>
+<kce key="kmember_autogen_manzengguize  " cn="满赠规则" en="Buy-and-get rule"/>
+<kce key="kmember_autogen_mod_add_array " cn="添加或修改规则" en="Add or change rules"/>
+<kce key="kmember_autogen_one_store_one_array" cn="①若只存在一家门店，建议添加一个分组；" en="①if there is only one store, pls add a group"/>
+<kce key="kmember_autogen_qidongzhong   " cn="启动中" en="Starting"/>
+<kce key="kmember_autogen_rule_desc     " cn="规则说明" en="Rule description"/>
+<kce key="kmember_autogen_rule_detail_desc" cn="③规则自定义。建议设置奖励，例如：储值达100元，赠送10元。支持添加多条规则，设置多个储值阶梯" en="③Custom rule. It is recommended to set rewards, for example: store value up to 100 yuan, give 10 yuan as a gift. Support adding multiple rules and setting multiple  top-up levels."/>
+<kce key="kmember_autogen_scan_payme    " cn="扫一扫向我付钱哦" en="Scan to pay"/>
+<kce key="kmember_autogen_shengri       " cn="生日 -" en="Birthdate -"/>
+<kce key="kmember_autogen_shezhiguize   " cn="设置规则" en="Setup rule"/>
+<kce key="kmember_autogen_shichujine    " cn="实储金额" en="Top-up amount"/>
+<kce key="kmember_autogen_shiyongguize  " cn="使用规则" en="Rule of use"/>
+<kce key="kmember_autogen_tianjiafenzu  " cn="添加分组" en="Add groups"/>
+<kce key="kmember_autogen_upgrade_right " cn="升级成为会员，享受会员权益" en="Upgrade to member to enjoy member benefits"/>
+<kce key="kmember_autogen_zengsong_desc " cn="开启后设置对应的赠送金额，激励顾客储值，增加营收" en="After opening, set up the corresponding amount to offer to encourage customers to store value， finally increasing revenue"/>
