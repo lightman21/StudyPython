@@ -151,10 +151,14 @@ def main(argv=None):
     # just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-member-manage/kmember/src/main/res/values/origin_strings.xml')
     # just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-member-manage/kmember/src/main/res/values-en/strings.xml')
     # just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-member-manage/kmember/src/main/res/values-en/origin_strings.xml')
-    inventory_origin = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-android-inventory-management/inventoryui/src/main/res/values-en/origin_strings.xml'
-    inventory_def = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-android-inventory-management/inventoryui/src/main/res/values-en/strings.xml'
-    just_sort(inventory_origin)
-    just_sort(inventory_def)
+    # inventory_origin = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-android-inventory-management/inventoryui/src/main/res/values-en/origin_strings.xml'
+    # inventory_def = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-android-inventory-management/inventoryui/src/main/res/values-en/strings.xml'
+    # just_sort(inventory_origin)
+    # just_sort(inventory_def)
+
+
+    just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-business-setting/businesssetting/src/main/res/values-en/strings.xml')
+    just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-business-setting/businesssetting/src/main/res/values/strings.xml')
 
     # zh_list = read_xml_as_kce_list(inventory_zh)
     # def_list = read_xml_as_kce_list(inventory_def)

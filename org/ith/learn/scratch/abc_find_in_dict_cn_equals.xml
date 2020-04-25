@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="inventory_purchase_apply_summary">Purchase application requisition</string>
-	<string name="search_menu_title">Search</string>
-	<string name="space">¥</string>
-	<string name="unit_convert_result">(%1$s%%) (%2$s)</string>
+	<string name="business_month"> Month </string>
+	<string name="business_time_period_setting">Time period setup</string>
+	<string name="business_unified_setup">Uniform setup</string>
+	<string name="business_week">Week</string>
+	<string name="businesssetting_autogen_choose_one_zhishao">Select at least one of them</string>
+	<string name="businesssetting_autogen_confirm">Confirm</string>
+	<string name="businesssetting_autogen_xuanzeshijianduan">Select time period</string>
+	<string name="businesssetting_autogen_zhi">to</string>
 </resources>
