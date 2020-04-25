@@ -66,6 +66,8 @@ list_all_remote = []
 
 
 def main():
+    module_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-android-inventory-management/'
+    hardcode_killer(module_path)
     pass
 
 

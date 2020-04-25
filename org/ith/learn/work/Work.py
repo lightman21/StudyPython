@@ -127,7 +127,46 @@ def main(argv=None):
     # just_sort('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-commodity/commodity/src/main/res/values-en/strings.xml')
     # just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/KReport/kreport/src/main/res/values-en/strings.xml')
 
-    gener_dict_by_excel('/Users/lightman_mac/Desktop/panshuangwei_kmember_not_i18n.xlsx')
+    # gener_dict_by_excel('/Users/lightman_mac/Desktop/panshuangwei_kmember_not_i18n.xlsx')
+    # just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-member-manage/kmember/src/main/res/values/strings.xml')
+    # just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/mobile-ui/mobileview/src/main/res/values/strings.xml')
+    # just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/mobile-ui/mobileview/src/main/res/values-en/strings.xml')
+    # just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/mobile-ui/mobileview/src/main/res/values-zh-rTW/strings.xml')
+
+    kreport = '/Users/lightman_mac/company/keruyun/proj_sourcecode/KReport/kreport/src/main/res/values/strings.xml'
+    kreport_en = '/Users/lightman_mac/company/keruyun/proj_sourcecode/KReport/kreport/src/main/res/values-en/strings.xml'
+
+    tradeserver = '/Users/lightman_mac/company/keruyun/proj_sourcecode/mobile-trade-server/TradeServer/src/main/res/values/strings.xml'
+    tradeserver_en = '/Users/lightman_mac/company/keruyun/proj_sourcecode/mobile-trade-server/TradeServer/src/main/res/values-en/strings.xml'
+
+    # just_sort(tradeserver)
+    # just_sort(kreport_en)
+
+    # just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/mobile-trade-server/TradeServer/src/main/res/values/origin_strings.xml')
+    # just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/mobile-trade-server/TradeServer/src/main/res/values/strings.xml')
+    # just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/mobile-trade-server/TradeServer/src/main/res/values-en/origin_strings.xml')
+    # just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/mobile-trade-server/TradeServer/src/main/res/values-en/strings.xml')
+
+    # just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-member-manage/kmember/src/main/res/values/strings.xml')
+    # just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-member-manage/kmember/src/main/res/values/origin_strings.xml')
+    # just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-member-manage/kmember/src/main/res/values-en/strings.xml')
+    # just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-member-manage/kmember/src/main/res/values-en/origin_strings.xml')
+    inventory_origin = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-android-inventory-management/inventoryui/src/main/res/values-en/origin_strings.xml'
+    inventory_def = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-android-inventory-management/inventoryui/src/main/res/values-en/strings.xml'
+    just_sort(inventory_origin)
+    just_sort(inventory_def)
+
+    # zh_list = read_xml_as_kce_list(inventory_zh)
+    # def_list = read_xml_as_kce_list(inventory_def)
+    # zh_keys = []
+    # for k in zh_list:
+    #     zh_keys.append(k.key)
+    # def_keys = []
+    # for k in def_list:
+    #     def_keys.append(k.key)
+    # for k in zh_keys:
+    #     if k not in def_keys:
+    #         print('kkkkkk', k)
 
 
 def just_sort(path_of_xml):

@@ -180,6 +180,9 @@ def main():
     # clean_module('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-commodity/')
     # clean_module('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Dinner/')
     # clean_module('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/mobile-trade-server/')
+    # clean_module('/Users/lightman_mac/company/keruyun/proj_sourcecode/mobile-ui/')
+    # clean_module('/Users/lightman_mac/company/keruyun/proj_sourcecode/mobile-trade-server/')
+    clean_module('/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-android-inventory-management/')
     pass
 
 

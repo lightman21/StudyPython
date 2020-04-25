@@ -32,11 +32,22 @@ def main():
 
     sub_module_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-commodity/commodity/src/main/res/values/strings.xml'
     sub_module_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/KReport/kreport//src/main/res/values/strings.xml'
+    sub_module_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-member-manage/kmember/src/main/res/values/strings.xml'
+    sub_module_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/mobile-ui/mobileview/src/main/res/values/strings.xml'
+
+    tradeserver = '/Users/lightman_mac/company/keruyun/proj_sourcecode/mobile-trade-server/TradeServer/src/main/res/values/strings.xml'
+    sub_module_path = tradeserver
+    inventory_def = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-android-inventory-management/inventoryui/src/main/res/values/strings.xml'
+    sub_module_path = inventory_def
 
     out_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Dinner/dinnerui/src/main/res/values-en/strings.xml'
     out_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/mobile-trade-server/develophelper/src/main/res/values-en/strings.xml'
     out_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/mobile-trade-server/TradeServer/src/main/res/values-en/strings.xml'
-    out_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/KReport/kreport/src/main/res/values-en/strings.xml'
+    out_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/mobile-ui/mobileview/src/main/res/values-en/strings.xml'
+    out_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/mobile-trade-server/TradeServer/src/main/res/values-en/strings.xml'
+
+    out_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-android-inventory-management/inventoryui/src/main/res/values-en/strings.xml'
+
     kce_of_submodule = read_xml_as_kce_list(sub_module_path)
     trans_dict = dict()
 

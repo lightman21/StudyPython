@@ -1,49 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="kreport_autogen_30_day">30 days</string>
-	<string name="kreport_autogen_beizhu">Note</string>
-	<string name="kreport_autogen_caozuoren">Operator:</string>
-	<string name="kreport_autogen_comfirm">Confirm</string>
-	<string name="kreport_autogen_dakuanjine">Payment amount </string>
-	<string name="kreport_autogen_dakuanriqi">Payment date</string>
-	<string name="kreport_autogen_dakuanzhuangtai">Payment status</string>
-	<string name="kreport_autogen_dangqianpaiming">Current ranking</string>
-	<string name="kreport_autogen_input_goods_name">Pls enter a product name</string>
-	<string name="kreport_autogen_input_storeno_storename_search">Pls enter the store No. / search by store name</string>
-	<string name="kreport_autogen_jiaoyidanhao">Transaction No.: </string>
-	<string name="kreport_autogen_jieshushijian">End time</string>
-	<string name="kreport_autogen_jinnianxiaoshouqushi">Sales trends this year</string>
-	<string name="kreport_autogen_kaishishijian">Start time</string>
-	<string name="kreport_autogen_more">More</string>
-	<string name="kreport_autogen_quanbu">All  </string>
-	<string name="kreport_autogen_qushenqing">Go to apply</string>
-	<string name="kreport_autogen_seven_day">7 days</string>
-	<string name="kreport_autogen_shijian">Time</string>
-	<string name="kreport_autogen_xiaoyouhuashuo">Little ON has something to say:</string>
-	<string name="kreport_autogen_xiaozhangshishou">Revenue from write-off:</string>
-	<string name="kreport_autogen_xiaozhangyouhui">Offer for write-off:</string>
-	<string name="kreport_autogen_xuanzemendian">Select stores</string>
-	<string name="kreport_autogen_zhankai">Unfold  </string>
-	<string name="kreport_autogen_zidingyi">Custom</string>
-	<string name="kreport_autogen_zongshoukuan">Total revenue</string>
-	<string name="kreport_third_pay_name_and_count">(%1$s%%) (%2$s)</string>
-	<string name="ren_ming_bi">¥</string>
-	<string name="report_autogen_pm_view_prop">Click to see the proportion</string>
-	<string name="report_bo_sale_total">Sales amount (total)</string>
-	<string name="report_business_tips">Pending amount.(revenue=sales revenue+pending amount)\n\nSell and return goods: sales means completed paid orders(including anti-settlement orders)；returns mean orders with full refund and partial refund（including returns note from anti-settlement</string>
-	<string name="report_card_pay">Include card fee</string>
-	<string name="report_member_data_overview">Member data overview</string>
-	<string name="report_pay_type_tips">Amount. If there is any refund, refund amount should be deducted.</string>
-	<string name="report_percent"> -¥%1$s</string>
-	<string name="report_rank_surface">Items\' sales table</string>
-	<string name="report_refund_num">Refund number:</string>
-	<string name="report_return_goods">Returns</string>
-	<string name="report_sale_account_tips">Sales amount=goods amount+price change</string>
-	<string name="report_sale_tips">No. of orders: count all completed orders including completed and paid, returned and paid, returned and refunded, paid and anti-settlement completed, pended orders.\n\nSales amount:calculate completed orders\' sales amount including payment without receipts, goods sales amount, surcharge, deposit, additional excise duty.</string>
-	<string name="report_sales">Sell goods</string>
-	<string name="report_stored_fee">Revenue from top-up and card fee</string>
-	<string name="report_stored_pay">Include top-up consumption</string>
-	<string name="report_table">table</string>
-	<string name="report_title_zqkdj">Per customer transaction before discount</string>
-	<string name="report_unpaid_orders">Unpaid orders</string>
+	<string name="inventory_purchase_apply_summary">Purchase application requisition</string>
+	<string name="search_menu_title">Search</string>
+	<string name="space">¥</string>
+	<string name="unit_convert_result">(%1$s%%) (%2$s)</string>
 </resources>

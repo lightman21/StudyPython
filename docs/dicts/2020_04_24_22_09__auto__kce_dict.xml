@@ -2067,7 +2067,7 @@
 <kce key="inventorty_report_menu_dish_status_selected" cn="物品状态筛选" en="Item status screening"/>
 <kce key="inventorty_report_menu_dish_tingyong" cn="已停用" en="Terminated"/>
 <kce key="inventorty_retry_recognition  " cn="重新识别" en="Re-identification"/>
-<kce key="inventorty_sales_return       " cn="退货" en="Returns"/>
+<kce key="inventorty_sales_return       " cn="退货" en="Sales returns"/>
 <kce key="inventory                     " cn="库存" en="Inventory MGT"/>
 <kce key="inventory_alipay              " cn="支付宝" en="Alipay"/>
 <kce key="inventory_all_amount          " cn="总价" en="Total amount:"/>
@@ -2193,7 +2193,7 @@
 <kce key="inventory_purchase_return_quantity" cn="采购退货数" en="No. of purchase and returns"/>
 <kce key="inventory_purchase_return_warehouse" cn="退货仓库" en="Warehouse of returns"/>
 <kce key="inventory_purchase_return_warehouse_hint" cn="选择仓库" en="Choose warehouse"/>
-<kce key="inventory_purchase_returns    " cn="采购退货" en="Returns"/>
+<kce key="inventory_purchase_returns    " cn="采购退货" en="Material returns"/>
 <kce key="inventory_purchase_returns_history" cn="采购退货历史" en="Purchase return record"/>
 <kce key="inventory_purchase_storage    " cn="采购入库" en="Into warehouse"/>
 <kce key="inventory_purchase_storage_callinto_warehouse" cn="入库仓库" en="Warehouse"/>
