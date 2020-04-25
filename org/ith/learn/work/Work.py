@@ -156,9 +156,8 @@ def main(argv=None):
     # just_sort(inventory_origin)
     # just_sort(inventory_def)
 
-
-    just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-business-setting/businesssetting/src/main/res/values-en/strings.xml')
-    just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-business-setting/businesssetting/src/main/res/values/strings.xml')
+    # just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-business-setting/businesssetting/src/main/res/values-en/strings.xml')
+    # just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-business-setting/businesssetting/src/main/res/values/strings.xml')
 
     # zh_list = read_xml_as_kce_list(inventory_zh)
     # def_list = read_xml_as_kce_list(inventory_def)
@@ -171,6 +170,64 @@ def main(argv=None):
     # for k in zh_keys:
     #     if k not in def_keys:
     #         print('kkkkkk', k)
+
+    # menu_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/src/main/res/values-en/strings_menu.xml'
+    # i18n_menu = '/Users/lightman_mac/Desktop/bk_i18n_res/534res/values-en/strings_menu.xml'
+    # menu_list = read_xml_as_kce_list(menu_path)
+    # i18n_list = read_xml_as_kce_list(i18n_menu)
+    # for menu in menu_list:
+    #     for i18 in i18n_list:
+    #         if menu.key == i18.key:
+    #             menu.cn = i18.cn
+    # write_kce_to_path(menu_list, menu_path)
+
+    # def_str_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/src/main/res/values/strings.xml'
+    # ch_str_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/src/main/res/values-zh/strings.xml'
+    # def_list = read_xml_as_kce_list(def_str_path)
+    # ch_list = read_xml_as_kce_list(ch_str_path)
+    # def_keys = []
+    # ch_keys = []
+    # all_keys = set()
+    # for def_kce in def_list:
+    #     def_keys.append(def_kce.key)
+    #     all_keys.add(def_kce.key)
+    #
+    # for def_kce in ch_list:
+    #     ch_keys.append(def_kce.key)
+    #     all_keys.add(def_kce.key)
+    # count = 0
+    # for ks in ch_list:
+    #     if ks.key not in def_keys:
+    #         count += 1
+    #         print(ks)
+    # print('def size ', len(def_list))
+    # print('ch_list size ', len(ch_list))
+    # print('key in ch not in def count ', count)
+    # print('all key size ', len(all_keys))
+
+    i18n_en_path = '/Users/lightman_mac/Desktop/bk_i18n_res/534res/values-en/strings.xml'
+    master_en_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/src/main/res/values-en' \
+                     '/strings.xml'
+
+    i18n_kce_list = read_xml_as_kce_list(i18n_en_path)
+    master_kce_list = read_xml_as_kce_list(master_en_path)
+
+    not_in_master = []
+
+    master_keys = set()
+    for m in master_kce_list:
+        master_keys.add(m.key)
+
+    count = 0
+    for i18 in i18n_kce_list:
+        if i18.key not in master_keys:
+            not_in_master.append(i18)
+            print('not in master from i18n ', i18.hl())
+
+    write_kce_to_path(not_in_master, './not_in_master.xml')
+
+    print('i18n size ', len(i18n_kce_list), ', master size ', len(master_kce_list), ', not in master from i18 ',
+          len(not_in_master))
 
 
 def just_sort(path_of_xml):
