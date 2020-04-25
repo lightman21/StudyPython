@@ -1,4 +1,5 @@
 import os
+import time
 
 from org.ith.learn.OhMyEXCEL import excel_to_xml, xml_to_excel
 from org.ith.learn.scratch.Trans535 import big_dict
@@ -85,9 +86,9 @@ def extract_res(path_of_search):
 
 def main():
     lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
-    # lib_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/.idea/libraries'
-    # extract_res(lib_path)
-    test()
+    lib_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/.idea/libraries'
+    lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
+    extract_res(lib_path)
 
 
 def test():
@@ -121,6 +122,9 @@ def extract_values(aar_name, aar_path):
     with open(aar_path, 'r') as rin:
         content = rin.read()
         rets = re.findall(pattern, content)
+
+        now_date = time.strftime("%Y_%m_%d", time.localtime())
+
         if rets is not None:
             for ret in rets:
                 if str(ret).endswith('res'):
@@ -130,7 +134,8 @@ def extract_values(aar_name, aar_path):
                         value_paths = get_values_path(res_path)
                         for path in value_paths:
                             list_kce = read_xml_as_kce_list(path)
-                            out_path = './tmp/auto_extract_work/' + aar_name + '___' + path.split('/')[-1]
+                            out_path = './tmp/auto_extract_work/' + now_date + os.sep + aar_name + '___' + \
+                                       path.split('/')[-1]
                             write_kce_to_path(list_kce, out_path)
 
 
