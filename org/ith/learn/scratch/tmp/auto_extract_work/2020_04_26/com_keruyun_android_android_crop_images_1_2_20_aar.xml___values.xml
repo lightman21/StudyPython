@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-	<string name="crop_images_done">DONE</string>
-	<string name="crop_images_pick_error">No image sources available</string>
-	<string name="crop_images_saving">Saving picture…</string>
-	<string name="crop_images_wait">Please wait…</string>
-	<string name="tv_crop_images_text_hint">Please touch the border line to select the crop area</string>
-</resources>

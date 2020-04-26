@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-	<string name="network_2g_3g_4g">正在使用手机流量上网</string>
-	<string name="network_disconnected">当前无网络连接</string>
-	<string name="network_wifi">正在使用wifi上网</string>
-</resources>

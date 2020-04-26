@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-	<string name="tv_dit_ib_done">收\n款</string>
-	<string name="tv_dit_ib_done_cashier">完成\n結算</string>
-	<string name="tv_dit_ib_done_clear">清空</string>
-	<string name="tv_dit_ib_done_number">確\n認</string>
-	<string name="tv_dit_ib_done_wipe_zero">抹\n零</string>
-</resources>
