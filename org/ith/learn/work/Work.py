@@ -205,29 +205,47 @@ def main(argv=None):
     # print('key in ch not in def count ', count)
     # print('all key size ', len(all_keys))
 
-    i18n_en_path = '/Users/lightman_mac/Desktop/bk_i18n_res/534res/values-en/strings.xml'
-    master_en_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/src/main/res/values-en' \
-                     '/strings.xml'
+    # i18n_en_path = '/Users/lightman_mac/Desktop/bk_i18n_res/534res/values-en/strings.xml'
+    # master_en_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/src/main/res/values-en' \
+    #                  '/strings.xml'
+    #
+    # i18n_kce_list = read_xml_as_kce_list(i18n_en_path)
+    # master_kce_list = read_xml_as_kce_list(master_en_path)
+    #
+    # not_in_master = []
+    #
+    # master_keys = set()
+    # for m in master_kce_list:
+    #     master_keys.add(m.key)
+    #
+    # count = 0
+    # for i18 in i18n_kce_list:
+    #     if i18.key not in master_keys:
+    #         not_in_master.append(i18)
+    #         print('not in master from i18n ', i18.hl())
+    #
+    # write_kce_to_path(not_in_master, './not_in_master.xml')
+    #
+    # print('i18n size ', len(i18n_kce_list), ', master size ', len(master_kce_list), ', not in master from i18 ',
+    #       len(not_in_master))
 
-    i18n_kce_list = read_xml_as_kce_list(i18n_en_path)
-    master_kce_list = read_xml_as_kce_list(master_en_path)
 
-    not_in_master = []
+    just_sort('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-member-manage/kmember/src/main/res/values/strings.xml')
+    just_sort('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-member-manage/kmember/src/main/res/values-en/strings.xml')
 
-    master_keys = set()
-    for m in master_kce_list:
-        master_keys.add(m.key)
-
-    count = 0
-    for i18 in i18n_kce_list:
-        if i18.key not in master_keys:
-            not_in_master.append(i18)
-            print('not in master from i18n ', i18.hl())
-
-    write_kce_to_path(not_in_master, './not_in_master.xml')
-
-    print('i18n size ', len(i18n_kce_list), ', master size ', len(master_kce_list), ', not in master from i18 ',
-          len(not_in_master))
+    # master = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-member-manage/kmember/src/main/res/values-en/strings.xml'
+    # origin = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-member-manage/kmember/src/main/res/values-en/origin_strings.xml'
+    # master_list = read_xml_as_kce_list(master)
+    # origin_list = read_xml_as_kce_list(origin)
+    # origin_keys = []
+    # for ori in origin_list:
+    #     origin_keys.append(ori.key)
+    # out = []
+    # for m in master_list:
+    #     if m.key not in origin_keys:
+    #         print(m)
+    #         out.append(m)
+    # write_kce_to_path(out,'./tmp.xml')
 
 
 def just_sort(path_of_xml):
