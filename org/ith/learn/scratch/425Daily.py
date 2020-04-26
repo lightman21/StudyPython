@@ -92,20 +92,23 @@ def remove_by_path(master_path, sub_module_path):
     master_pure = []
 
     remove_list = []
-
+    count = 0
     for module in module_list:
         for master in master_kce_list:
             if master.key == module.key:
                 # to be remove
                 remove_list.append(master)
+                if master.cn != module.cn:
+                    count += 1
 
     for master in master_kce_list:
         if master not in remove_list:
             master_pure.append(master)
 
-    print('before size ', len(master_kce_list), 'write in size ', len(master_pure))
+    print('before size ', len(master_kce_list), 'write in size ', len(master_pure), ',key equals but not cn ',
+          count)
 
-    write_kce_to_path(master_pure, master_path)
+    # write_kce_to_path(master_pure, master_path)
 
 
 def do_remove():
@@ -196,7 +199,7 @@ def merge_keys():
 def main():
     # do_remove()
     # merge_keys()
-    master_def = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/app/src/main/res/values/strings.xml'
+
     sub_module_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/ith/learn/scratch/tmp/auto_extract_work/2020_04_26/com_keruyun_kmobile_kmobile_business_setting_1_01_10_SNAPSHOT_aar.xml___values.xml'
     sub_module_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/ith/learn/scratch/tmp/auto_extract_work/2020_04_26/com_keruyun_kmobile_kmobile_commodity_1_12_20_SNAPSHOT_aar.xml___values.xml'
     sub_module_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/ith/learn/scratch/tmp/auto_extract_work/2020_04_26/com_keruyun_kmobile_kmobile_inventory_management_ui_1_3_00_SNAPSHOT_aar.xml___values.xml'
@@ -211,7 +214,9 @@ def main():
     sub_module_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/ith/learn/scratch/tmp/auto_extract_work/2020_04_26/com_keruyun_kmobile_kmobile_takeout_ui_1_1_60_SNAPSHOT_aar.xml___values.xml'
     sub_module_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/ith/learn/scratch/tmp/auto_extract_work/2020_04_26/com_keruyun_kmobile_kmobile_takeout_ui_1_1_60_SNAPSHOT_aar.xml___values-zh.xml'
 
-    sub_module_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/ith/learn/scratch/tmp/auto_extract_work/2020_04_26/com_keruyun_kmobile_kmobile_staff_1_0_50_SNAPSHOT_aar.xml___values-en.xml'
+    master_def = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/app/src/main/res/values/strings.xml'
+    master_def = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/app/src/main/res/values-en/strings.xml'
+    sub_module_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/ith/learn/scratch/tmp/auto_extract_work/2020_04_26/com_keruyun_osmobile_member_2_10_30_aar.xml___values-en.xml'
 
     remove_by_path(master_def, sub_module_path)
 
