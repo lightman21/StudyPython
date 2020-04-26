@@ -233,8 +233,8 @@ def main(argv=None):
     # just_sort('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-member-manage/kmember/src/main/res/values/strings.xml')
     # just_sort('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-member-manage/kmember/src/main/res/values-en/strings.xml')
 
-    just_sort('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Mobile-Member/member/src/main/res/values/strings.xml')
-    just_sort('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Mobile-Member/member/src/main/res/values-en/strings.xml')
+    # just_sort('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Mobile-Member/member/src/main/res/values/strings.xml')
+    # just_sort('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Mobile-Member/member/src/main/res/values-en/strings.xml')
 
 
     # master = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-member-manage/kmember/src/main/res/values-en/strings.xml'
@@ -250,6 +250,8 @@ def main(argv=None):
     #         print(m)
     #         out.append(m)
     # write_kce_to_path(out,'./tmp.xml')
+
+    just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/src/main/res/values/just_back_allstr_5_35_0.xml')
 
 
 def just_sort(path_of_xml):

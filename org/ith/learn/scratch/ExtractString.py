@@ -81,6 +81,7 @@ def should_handle(aar_name):
 
 
 def extract_res(path_of_search):
+    path_set = set()
     count = 0
     for dir_path_name, dirs, files in os.walk(path_of_search):
         for file in files:
@@ -89,45 +90,23 @@ def extract_res(path_of_search):
                 if file.__contains__('keruyun'):
                     aar_name = full_path.split('__')[1]
                     # if should_handle(aar_name):
-                    if count < 100:
+                    if count < 200:
                         extract_values(aar_name, full_path)
                         count += 1
+                        # path_set.add(full_path.split('___')[0])
+                        print('aar name ', aar_name)
+                        print('path_set ', full_path.split('___')[0])
 
-        print('total count ', count)
+        print('total count ', count, 'path set ', len(path_set))
 
 
 def main():
     lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
-    lib_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/.idea/libraries'
+    # lib_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/.idea/libraries'
     # lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
     extract_res(lib_path)
     # for k, v in need_auto_del.items():
     #     print(highlight(k), v)
-
-
-def test():
-    ss = """
-    	<string name="kmember_tip_auto_pause">需要暂停所有会员等级后,才可以进行编辑,
-    	是否暂停并编辑等级?</string>
-	<string name="kmember_tip_cancel">取消</string>
-	<string name="kmember_tip_confirm">确定</string>
-	    	<string name="kmember_tip_auto_pause">woshihexiaowe,才可以进行编辑,
-    	是否暂停并编辑等级?</string>
-    """
-
-    fuzzy_matching = r'<string name="(\w*)">(.*)</string>'
-    # r = re.compile(matching, re.DOTALL)
-    # rets = r.findall(mock_all_xml)
-    # r'/\*(.*?)\*/'
-    pattern = r'<string name="(\w*)">(.*)</string>'
-    pattern = r'<string name="(\w*)">(.*?)</string>'
-    # r = re.compile(pattern, re.DOTALL)
-    # rets = r.findall(ss)
-    rets = re.findall(pattern, ss, re.DOTALL)
-
-    print('len ', len(rets))
-    for ret in rets:
-        print(ret)
 
 
 def extract_values(aar_name, aar_path):
