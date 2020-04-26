@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="business_day">天</string>
+	<string name="staff_choose_auth">请选择权限</string>
 </resources>

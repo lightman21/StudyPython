@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="business_month"> Month </string>
-	<string name="business_time_period_setting">Time period setup</string>
-	<string name="business_unified_setup">Uniform setup</string>
-	<string name="business_week">Week</string>
-	<string name="businesssetting_autogen_choose_one_zhishao">Select at least one of them</string>
-	<string name="businesssetting_autogen_confirm">Confirm</string>
-	<string name="businesssetting_autogen_xuanzeshijianduan">Select time period</string>
-	<string name="businesssetting_autogen_zhi">to</string>
+	<string name="kry_staff_input_hint">Pls enter %@ </string>
+	<string name="staff_discount_permission">Offer permission</string>
+	<string name="staff_role">Staff role</string>
 </resources>

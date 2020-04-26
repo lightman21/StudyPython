@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="paycenter_paymode_alipay">支付宝</string>
+	<string name="paycenter_paymode_baidu">百度钱包</string>
+	<string name="paycenter_paymode_band">手环</string>
+	<string name="paycenter_paymode_bank">银行卡</string>
+	<string name="paycenter_paymode_bankflash">云闪付</string>
+	<string name="paycenter_paymode_cash">现金</string>
+	<string name="paycenter_paymode_cmb_one_card">招行一卡通</string>
+	<string name="paycenter_paymode_custom">自定义</string>
+	<string name="paycenter_paymode_icbc_e">E支付</string>
+	<string name="paycenter_paymode_jincheng">金诚APP</string>
+	<string name="paycenter_paymode_koubei">口碑</string>
+	<string name="paycenter_paymode_meituan">美团</string>
+	<string name="paycenter_paymode_nuomi">糯米</string>
+	<string name="paycenter_paymode_shanhui">闪惠</string>
+	<string name="paycenter_paymode_vip">会员储值</string>
+	<string name="paycenter_paymode_weixin">微信</string>
+</resources>

@@ -230,8 +230,12 @@ def main(argv=None):
     #       len(not_in_master))
 
 
-    just_sort('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-member-manage/kmember/src/main/res/values/strings.xml')
-    just_sort('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-member-manage/kmember/src/main/res/values-en/strings.xml')
+    # just_sort('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-member-manage/kmember/src/main/res/values/strings.xml')
+    # just_sort('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-member-manage/kmember/src/main/res/values-en/strings.xml')
+
+    just_sort('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Mobile-Member/member/src/main/res/values/strings.xml')
+    just_sort('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Mobile-Member/member/src/main/res/values-en/strings.xml')
+
 
     # master = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-member-manage/kmember/src/main/res/values-en/strings.xml'
     # origin = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-member-manage/kmember/src/main/res/values-en/origin_strings.xml'

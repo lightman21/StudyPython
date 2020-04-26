@@ -55,10 +55,20 @@ libs_need_care = [
     '外卖',
     'com.keruyun.kmobile.kmobile.takeout.ui',
     '',
-    '',
     '经营设置',
-    'com.keruyun.kmobile.kmobile.business.setting'
+    'com.keruyun.kmobile.kmobile.business.setting',
+    '',
+    '员工管理',
+    'com.keruyun.kmobile.kmobile.staff',
+    '',
+    '',
 ]
+
+need_auto_del = {
+    "员工管理": ['com.keruyun.kmobile.kmobile.staff'],
+    "经营设置": ['com.keruyun.kmobile.kmobile.business.setting'],
+    "正餐": ['com.keruyun.mobile.dinner', 'com.keruyun.mobile.klight'],
+}
 
 
 def should_handle(aar_name):
@@ -78,10 +88,10 @@ def extract_res(path_of_search):
             if full_path.endswith('aar.xml'):
                 if file.__contains__('keruyun'):
                     aar_name = full_path.split('__')[1]
-                    if should_handle(aar_name):
-                        if count < 100:
-                            extract_values(aar_name, full_path)
-                            count += 1
+                    # if should_handle(aar_name):
+                    if count < 100:
+                        extract_values(aar_name, full_path)
+                        count += 1
 
         print('total count ', count)
 
@@ -91,6 +101,8 @@ def main():
     lib_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/.idea/libraries'
     # lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
     extract_res(lib_path)
+    # for k, v in need_auto_del.items():
+    #     print(highlight(k), v)
 
 
 def test():

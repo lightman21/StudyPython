@@ -210,12 +210,10 @@ def main():
     sub_module_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/ith/learn/scratch/tmp/auto_extract_work/2020_04_26/com_keruyun_mobile_tradeui_library_1_11_40_SNAPSHOT_aar.xml___values.xml'
     sub_module_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/ith/learn/scratch/tmp/auto_extract_work/2020_04_26/com_keruyun_kmobile_kmobile_takeout_ui_1_1_60_SNAPSHOT_aar.xml___values.xml'
     sub_module_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/ith/learn/scratch/tmp/auto_extract_work/2020_04_26/com_keruyun_kmobile_kmobile_takeout_ui_1_1_60_SNAPSHOT_aar.xml___values-zh.xml'
-    # remove_by_path(master_def, sub_module_path)
 
-    # open_excel_as_list('/Users/toutouhiroshidaiou/Desktop/tweak_0426_tang.xlsx')
-    en_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/docs/tweak_0426_tangxlsx_2020_04_26_16_16_30_english.xml'
-    cn_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/docs/tweak_0426_tangxlsx_2020_04_26_16_16_30_china.xml'
-    gener_dict(en_path, cn_path)
+    sub_module_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/ith/learn/scratch/tmp/auto_extract_work/2020_04_26/com_keruyun_kmobile_kmobile_staff_1_0_50_SNAPSHOT_aar.xml___values-en.xml'
+
+    remove_by_path(master_def, sub_module_path)
 
 
 def gener_cn_en_dict(path_of_excel):

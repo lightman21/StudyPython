@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="business_day">天</string>
-	<string name="business_month">月</string>
-	<string name="business_time_period_setting">分时段设置</string>
-	<string name="business_unified_setup">统一设置</string>
-	<string name="business_week">周</string>
-	<string name="businesssetting_autogen_choose_one_zhishao">至少选择其中一项</string>
-	<string name="businesssetting_autogen_confirm">确认</string>
-	<string name="businesssetting_autogen_xuanzeshijianduan">选择时间段</string>
-	<string name="businesssetting_autogen_zhi">至</string>
+	<string name="kry_staff_input_hint">请输入</string>
+	<string name="staff_choose_auth">请选择权限</string>
+	<string name="staff_discount_permission">优惠权限</string>
+	<string name="staff_role">员工角色</string>
 </resources>

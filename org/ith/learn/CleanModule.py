@@ -183,7 +183,8 @@ def main():
     # clean_module('/Users/lightman_mac/company/keruyun/proj_sourcecode/mobile-ui/')
     # clean_module('/Users/lightman_mac/company/keruyun/proj_sourcecode/mobile-trade-server/')
     # clean_module('/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-android-inventory-management/')
-    clean_module('/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-business-setting/')
+    # clean_module('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-staff/')
+    clean_module('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Mobile-Member/')
     pass
 
 
