@@ -262,7 +262,6 @@ def auto_escape(inputing):
 
 
 def twrite_kce_to_path(list_of_kce, path, sort=False, key='cn'):
-
     print('write_kce_to_path: ', highlight(path, 1))
 
     for kce in list_of_kce:
@@ -318,7 +317,6 @@ def twrite_kce_to_path(list_of_kce, path, sort=False, key='cn'):
     except Exception as err:
         print("==================", path, err)
         raise
-
 
 
 if __name__ == '__main__':

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="utils_bai_du_zhi_da_hao">百度直达号</string>
+	<string name="utils_baiduditu">百度地图</string>
+	<string name="utils_baidunuomi">百度糯米</string>
+	<string name="utils_baiduwaimai">饿了么星选</string>
+	<string name="utils_before_yesterday">前天</string>
+	<string name="utils_china_mobile">中国移动</string>
+	<string name="utils_china_telecommunications">中国电信</string>
+	<string name="utils_china_unicom">中国联通</string>
+	<string name="utils_citest_env">CI测试</string>
+	<string name="utils_dazongdianping_order">大众点评</string>
+	<string name="utils_develop_env">开发</string>
+	<string name="utils_eleme_order">饿了么</string>
+	<string name="utils_erp_env">正式</string>
+	<string name="utils_fri_str">五</string>
+	<string name="utils_gld_env">灰度</string>
+	<string name="utils_hujiaozhongxin">呼叫中心</string>
+	<string name="utils_meituan_dazhong_order">美团/大众</string>
+	<string name="utils_meituan_order">美团</string>
+	<string name="utils_mon_str">一</string>
+	<string name="utils_money_str">¥%1$s</string>
+	<string name="utils_money_str_negative"> -¥%1$s</string>
+	<string name="utils_month">月</string>
+	<string name="utils_open_platform">开放平台</string>
+	<string name="utils_renmingbi">¥</string>
+	<string name="utils_sat_str">六</string>
+	<string name="utils_shanghuguanwang">商户官网</string>
+	<string name="utils_shanghushoiuyinzhongduan">商户收银终端</string>
+	<string name="utils_sun_str">日</string>
+	<string name="utils_test_env">测试</string>
+	<string name="utils_thu_str">四</string>
+	<string name="utils_today">今天</string>
+	<string name="utils_tomorrow">明天</string>
+	<string name="utils_tue_str">二</string>
+	<string name="utils_wechat_order">微信</string>
+	<string name="utils_wed_str">三</string>
+	<string name="utils_yesterday">昨天</string>
+	<string name="utils_zizhuzhongduan">自助终端</string>
+</resources>
