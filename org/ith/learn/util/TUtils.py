@@ -2,13 +2,16 @@ import hashlib
 import html
 import os
 import re
+import sys
 import time
+import xml
 
 import xlrd
 import xlwt
 
 from org.ith.learn.util.Colored import COLS
 import random
+
 
 
 class KCEBean:
@@ -52,7 +55,35 @@ class XmlStdin:
         return txt
 
 
+def do_search_dict(kce_list):
+    cn_en_dict = dict()
+    for kce in kce_list:
+        if cn_en_dict.get(kce.cn) is None:
+            cn_en_dict[kce.cn] = kce.en
+    count = 0
+    for kce in kce_list:
+        if len(kce.en) == 0 and len(kce.cn) != 0:
+            # 有中文没有英文  查一下表
+            in_dict = cn_en_dict.get(kce.cn)
+            if in_dict is not None and len(in_dict) > 0:
+                # 查表有值
+                kce.en = in_dict
+                print(highlight('do_search_dict ', 2), kce.hl())
+                count += 1
+
+    print(highlight('do search dict count '), count)
+
+    return kce_list
+
+
 def write_to_excel(to_write_list, path_of_excel):
+    # 处理一下 中英文的情况
+    dict_kce_list = do_search_dict(to_write_list)
+    now_date = time.strftime("%Y_%m_%d_%H_%M_%S", time.localtime())
+    out = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/docs/dicts/by_dict/' + now_date
+    twrite_kce_to_path(dict_kce_list, key='cn', path=out + '__china.xml')
+    twrite_kce_to_path(dict_kce_list, key='en', path=out + '__english.xml')
+
     """
     将list_of_kec 写到指定指定路径
     """
@@ -228,6 +259,66 @@ def auto_escape(inputing):
                 if not str_input.__contains__(escape[index]):
                     inputing = str_input.replace(origin[index], escape[index])
     return inputing
+
+
+def twrite_kce_to_path(list_of_kce, path, sort=False, key='cn'):
+
+    print('write_kce_to_path: ', highlight(path, 1))
+
+    for kce in list_of_kce:
+        kce.cn = auto_escape(kce.cn)
+        kce.en = auto_escape(kce.en)
+
+    list_of_kce = sorted(list_of_kce)
+
+    impl = xml.dom.minidom.getDOMImplementation()
+    dom = impl.createDocument(None, 'resources', None)
+    resources_root = dom.documentElement
+    try:
+        for kce in list_of_kce:
+            string_node = dom.createElement('string')
+            string_node.setAttribute("name", str(kce.key))
+            str_key_value = str(kce.cn)
+            if key != 'cn':
+                str_key_value = str(kce.en)
+            value = dom.createTextNode(str_key_value)
+            string_node.appendChild(value)
+            resources_root.appendChild(string_node)
+
+        txmlstdin = XmlStdin()
+        sys.stdin = txmlstdin
+        dom.writexml(sys.stdin, addindent='\t', newl='\n', encoding='utf-8')
+        transed_str = txmlstdin.toString()
+
+        if not os.path.exists(path):
+            if not os.path.exists(os.path.dirname(path)):
+                os.makedirs(os.path.dirname(path))
+
+        with open(path, 'w') as f:
+            f.write(transed_str)
+
+        if not sort:
+            return
+
+        lines = list()
+        with open(path, 'r') as f:
+            for line in f:
+                lines.append(line)
+        lines = sorted(lines)
+        last = lines[len(lines) - 2:]
+        lines.insert(0, last[0])
+        lines.insert(1, last[1])
+        lines = lines[:- 2]
+        outer = ''
+        for line in lines:
+            outer += line
+        with open(path, 'w') as f:
+            f.write(outer)
+
+    except Exception as err:
+        print("==================", path, err)
+        raise
+
 
 
 if __name__ == '__main__':

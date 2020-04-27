@@ -67,7 +67,7 @@ def parse_string_as_kce(path_of_string, kce_value='cn'):
     return list_kce
 
 
-def write_kce_to_path(list_of_kce, path, sort=True, key='cn'):
+def write_kce_to_path(list_of_kce, path, sort=False, key='cn'):
 
     print('write_kce_to_path: ', highlight(path, 1))
 

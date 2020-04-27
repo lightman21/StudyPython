@@ -224,17 +224,21 @@ def main():
     sub_module_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/ith/learn/scratch/tmp/auto_extract_work/2020_04_26/com_keruyun_kmobile_kmobile_takeout_ui_1_1_60_SNAPSHOT_aar.xml___values-zh.xml'
 
     master_def = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/app/src/main/res/values/strings.xml'
-    # master_def = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/app/src/main/res/values-en/strings.xml'
-    master_def = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/src/main/res/values/strings.xml'
+    master_def = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/app/src/main/res/values-en/strings.xml'
+    # master_def = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/src/main/res/values/strings.xml'
     sub_module_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/ith/learn/scratch/tmp/auto_extract_work/2020_04_26/com_keruyun_osmobile_member_2_10_30_aar.xml___values-en.xml'
 
     # remove_by_path(master_def, sub_module_path)
-    path_all = '/Users/lightman_mac/company/keruyun/oh_my_python/StudyPython/org/ith/learn/scratch/tmp/auto_extract_work/2020_04_26/'
-    for dir_path_name, dirs, files in os.walk(path_all):
-        for file in files:
-            full_path = dir_path_name + file
-            name = full_path.split('/')[-1]
-            remove_by_path(master_def, full_path)
+    # path_all = '/Users/lightman_mac/company/keruyun/oh_my_python/StudyPython/org/ith/learn/scratch/tmp/auto_extract_work/2020_04_26/'
+    # for dir_path_name, dirs, files in os.walk(path_all):
+    #     for file in files:
+    #         full_path = dir_path_name + file
+    #         name = full_path.split('/')[-1]
+    #         remove_by_path(master_def, full_path)
+
+
+    kces = read_xml_as_kce_list(master_def)
+    print('kces',kces)
 
 
 def gener_cn_en_dict(path_of_excel):
