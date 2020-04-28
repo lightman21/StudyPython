@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="common_ok">Determine</string>
+	<string name="double_date_divider">to</string>
+	<string name="end_time_earlier_than_start_time">The end time should not be greater than the start time!</string>
+	<string name="no_authority">No operation permission</string>
+</resources>

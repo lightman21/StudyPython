@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="str_groupcouopn_codecount_error_tip">The coupon code can only be 12 digits</string>
+	<string name="str_groupcoupon_add_couponcode">Continue to add another coupon to verify</string>
+	<string name="str_groupcoupon_add_couponcode2">Keep adding</string>
+	<string name="str_groupcoupon_add_success">Added successfully!</string>
+	<string name="str_groupcoupon_amount_tip">Coupon value ＞ payment amount</string>
+	<string name="str_groupcoupon_cancel">cancel</string>
+	<string name="str_groupcoupon_code">Coupon code：%1$s</string>
+	<string name="str_groupcoupon_code_error_tip">Bad code!</string>
+	<string name="str_groupcoupon_code_max_tip">Up to five coupons</string>
+	<string name="str_groupcoupon_confirm_and_pay">Confirm and pay</string>
+	<string name="str_groupcoupon_confirm_success">Successful inspection</string>
+	<string name="str_groupcoupon_confirm_verifycoupon">Confirm the inspection certificate</string>
+	<string name="str_groupcoupon_confirm_verifycoupon_and_pay">Confirm and pay</string>
+	<string name="str_groupcoupon_coupon_code">Coupon code:</string>
+	<string name="str_groupcoupon_coupon_empty">Please enter the coupon code</string>
+	<string name="str_groupcoupon_couponcode_null_tip">Please enter the coupon code</string>
+	<string name="str_groupcoupon_data_error">Abnormal data</string>
+	<string name="str_groupcoupon_date">Term of validity：%1$s</string>
+	<string name="str_groupcoupon_facevalue">face value：%1$s</string>
+	<string name="str_groupcoupon_input_coupon_code_tip">Please enter the coupon code</string>
+	<string name="str_groupcoupon_isnull_tip">Please choose the coupon you need to use</string>
+	<string name="str_groupcoupon_koubei">Koubei Coupon</string>
+	<string name="str_groupcoupon_koubei_input_coupon_code_tip">Input Koubei Coupon</string>
+	<string name="str_groupcoupon_maxcount_tip">The number of coupons used for group purchase can not be greater than</string>
+	<string name="str_groupcoupon_meituan_input_coupon_code_tip">Please enter the coupon code</string>
+	<string name="str_groupcoupon_mincount_tip">Minimal usage of Coupon is</string>
+	<string name="str_groupcoupon_money">Denomination：</string>
+	<string name="str_groupcoupon_not_exist_meituan_coupon">There is no corresponding beauty ticket</string>
+	<string name="str_groupcoupon_not_exist_nuomi_coupon">No corresponding vouchers</string>
+	<string name="str_groupcoupon_nuomi_input_coupon_code_tip">Please enter Nuomi coupon code</string>
+	<string name="str_groupcoupon_price">price：%1$s</string>
+	<string name="str_groupcoupon_quantity">Quantity</string>
+	<string name="str_groupcoupon_query">Inquire</string>
+	<string name="str_groupcoupon_same_coupon">Have entered the same coupon code</string>
+	<string name="str_groupcoupon_selectedall">select all</string>
+	<string name="str_groupcoupon_title">Group purchase certificate</string>
+	<string name="str_groupcoupon_title_koubei">Group purchase certificate</string>
+	<string name="str_groupcoupon_title_meituan">Group purchase certificate</string>
+	<string name="str_groupcoupon_title_nuomi">Group purchase certificate</string>
+	<string name="str_groupcoupon_uninclude_dishes">No dishes has been ordered can match this coupon</string>
+	<string name="str_groupcoupon_unuse">The coupon code cannot be used</string>
+</resources>
