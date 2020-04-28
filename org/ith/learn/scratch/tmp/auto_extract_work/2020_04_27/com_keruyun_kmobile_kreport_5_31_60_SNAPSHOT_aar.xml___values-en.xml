@@ -262,7 +262,7 @@
 	<string name="report_business_overview">Revenue statistics</string>
 	<string name="report_business_overview_report">Money collection statistics report</string>
 	<string name="report_business_shop">Store</string>
-	<string name="report_business_situation">____Business overview</string>
+	<string name="report_business_situation">Business overview</string>
 	<string name="report_business_source">Business source：</string>
 	<string name="report_business_tips">Pending amount.(revenue=sales revenue+pending amount)\n\nSell and return goods: sales means completed paid orders(including anti-settlement orders)；returns mean orders with full refund and partial refund（including returns note from anti-settlement</string>
 	<string name="report_business_total">Total</string>
@@ -312,7 +312,7 @@
 	<string name="report_date_range_tips">The difference between two periods can\'t be over 31 days</string>
 	<string name="report_day_receive_count">No. of the received today (orders)</string>
 	<string name="report_details">Details</string>
-	<string name="report_discount_amount_label">____Discount price</string>
+	<string name="report_discount_amount_label">Discount price</string>
 	<string name="report_discount_overview">Offer overview</string>
 	<string name="report_discount_tota">Total amount of Discount：</string>
 	<string name="report_discountedkdj">Average payment after discount</string>

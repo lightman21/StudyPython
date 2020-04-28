@@ -90,7 +90,7 @@ def extract_res(path_of_search):
                 if file.__contains__('keruyun'):
                     aar_name = full_path.split('__')[1]
                     # if should_handle(aar_name):
-                    if count < 200:
+                    if count < 500:
                         extract_values(aar_name, full_path)
                         count += 1
                         # path_set.add(full_path.split('___')[0])
@@ -101,12 +101,48 @@ def extract_res(path_of_search):
 
 
 def main():
+    """
+    遍历目录 生成kcew  全部写成一行 格式
+    <kce key="da7bf8ff5663ce74873b34b5425258cc" cn="正在导航" en="Navigating" where='com_keruyun_android_android_mobileui_2_8_60_SNAPSHOT_aar.xml___values.xml'/>
+    """
+    do_extract()
+
+def read_origin(path):
+    kce_list = read_xml_as_kce_list(path)
+
+def gener_kcew(aar_path, huanout_path):
+    # print(highlight('gener_kcew before size '), len(read_xml_as_kce_list(out_path)))
+
+    kce_list = read_xml_as_kce_list(aar_path)
+
+    if len(kce_list) == 0:
+        print('0 return---------------- ', highlight(aar_path))
+        return
+
+    str_lines = []
+    where = get_aar_simple(aar_path)
+    for kce in kce_list:
+        line = '<kce key="{}" cn="{}" en="{}" where="{}"/>'.format(kce.key, kce.cn, kce.en, where)
+        str_lines.append(line)
+        str_lines.append('\r\n')
+
+    with open(huanout_path, 'a+') as out:
+        print(highlight('gener_kcew', 2), ',size ', len(str_lines), highlight(',to path '), huanout_path)
+        out.writelines(str_lines)
+    pass
+
+
+def get_aar_simple(path_aar):
+    return path_aar.split('/')[-1]
+
+
+def do_extract():
     # lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
     # lib_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/.idea/libraries'
-    lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
+    # lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
+    lib_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/.idea/libraries'
+
     extract_res(lib_path)
-    # for k, v in need_auto_del.items():
-    #     print(highlight(k), v)
 
 
 def extract_values(aar_name, aar_path):
@@ -130,6 +166,8 @@ def extract_values(aar_name, aar_path):
                             out_path = './tmp/auto_extract_work/' + now_date + os.sep + aar_name + '___' + \
                                        path.split('/')[-1]
                             write_kce_to_path(list_kce, out_path)
+
+                            gener_kcew(aar_path=out_path, huanout_path='/tmp/tanghao/zhuijia.xml')
 
 
 def get_values_path(m_path):
