@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="common_data_ticket_agentdis">Agent discount</string>
+	<string name="common_data_ticket_autodis">auto discount</string>
+	<string name="common_data_ticket_banquet">Banquet</string>
+	<string name="common_data_ticket_commodity">Commodity marketing</string>
+	<string name="common_data_ticket_coupon">coupon</string>
+	<string name="common_data_ticket_extracharge">Extra charge</string>
+	<string name="common_data_ticket_free">free</string>
+	<string name="common_data_ticket_integar">Use Points to pay</string>
+	<string name="common_data_ticket_manualdis">Manual discount</string>
+	<string name="common_data_ticket_memberprice">VIP price</string>
+	<string name="common_data_ticket_merchantdis">Merchant discount</string>
+	<string name="common_data_ticket_minimum_consumption_surcharge">Minimum Consumption Surcharge</string>
+	<string name="common_data_ticket_platformdis">Platform discount</string>
+	<string name="common_data_ticket_rebate">Discount</string>
+	<string name="common_data_ticket_transportdis">Delivery discount</string>
+	<string name="common_data_ticket_vipdis">Regular client price</string>
+	<string name="common_data_ticket_weixincoupon">Wechat coupon</string>
+</resources>
