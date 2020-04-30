@@ -1,6 +1,6 @@
 from org.ith.learn.OhMyEXCEL import excel_to_xml
 from org.ith.learn.util.PXML import write_kce_to_path
-from org.ith.learn.util.TUtils import open_excel_as_list, read_xml_as_kce_list
+from org.ith.learn.util.TUtils import open_excel_as_list, read_xml_as_kce_list, is_contains_chinese
 
 """
 git archive i18n_5.34.10 --remote=ssh://git@gitlab.shishike.com:38401/c_iphone/OnMobile-Android.git app/src/main/res/values-en/strings.xml | tar -x
@@ -9,58 +9,74 @@ git archive i18n_5.34.10 --remote=ssh://git@gitlab.shishike.com:38401/c_iphone/O
 
 
 def main():
-    # path_of_xml = '/Users/toutouhiroshidaiou/Desktop/i18n/'
-    # ret = excel_to_xml('/Users/toutouhiroshidaiou/Desktop/i18n/413_i18n_android.xlsx', xml_path=path_of_xml)
-    # # cn_out_path, en_out_path
-    # en_path = ret[1]
-    # en_kce_list = read_xml_as_kce_list(en_path)
-    # for enk in en_kce_list:
-    #     enk.cn = auto_escape(enk.cn)
+    path_merge_def = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/build/intermediates/res/merged/official/envCiTest/values/values.xml'
+    path_merge_cn = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/build/intermediates/res/merged/official/envCiTest/values-zh/values-zh.xml'
+    out_cn = '/Users/lightman_mac/Desktop/tanghao/out_cn.xml'
+    out_def = '/Users/lightman_mac/Desktop/tanghao/out_def.xml'
+    out_merge = '/Users/lightman_mac/Desktop/tanghao/out_merge.xml'
+    out_english = '/Users/lightman_mac/Desktop/tanghao/out_english.xml'
+    def_list = read_xml_as_kce_list(path_merge_def)
+    cn_list = read_xml_as_kce_list(path_merge_cn)
+    # write_kce_to_path(def_list, out_def)
+    # write_kce_to_path(cn_list, out_cn)
 
-    remote_xml = '/tmp/remote.xml'
-    remote_list = read_xml_as_kce_list(remote_xml)
+    now_en = '/Users/lightman_mac/company/keruyun/proj_sourcecode/mobile-storage/translate/kmobile/english.xml'
 
-    new_xml = './shuangwei413.xml'
-    new_list = read_xml_as_kce_list(new_xml)
+    key_merge_list = set()
+    for kce in cn_list:
+        key_merge_list.add(kce.key)
 
-    print('remote size ', len(remote_list), ', new size ', len(new_list))
+    for kce in def_list:
+        key_merge_list.add(kce.key)
 
-    diff_list = []
+    print('total key size ', len(key_merge_list))
 
-    remote_keys = []
-    new_keys = []
+    for def_kce in def_list:
+        for zh in cn_list:
+            if def_kce.key == zh.key:
+                if is_contains_chinese(zh.cn) and not is_contains_chinese(def_kce.cn):
+                    def_kce.cn = zh.cn
 
-    for key in remote_list:
-        remote_keys.append(key.key)
+    # write_kce_to_path(def_list, out_merge)
+    # now_list = read_xml_as_kce_list(now_en)
+    # write_kce_to_path(now_list, out_english)
 
-    for key in new_list:
-        new_keys.append(key.key)
+    out_en_list = read_xml_as_kce_list(out_english)
+    def_path_list = read_xml_as_kce_list('/Users/lightman_mac/Desktop/tanghao/out_merge.xml')
 
-    # for new in new_list:
+    key_oe = set()
+    key_def = set()
+    for kce in def_path_list:
+        key_def.add(kce.key)
 
-    count = 0
-    diff_list = []
-    # 计算new 比remote多出来的
-    for new in new_list:
-        if new.key not in remote_keys:
-            diff_list.append(new)
-            print(new)
-            count += 1
+    for kce in out_en_list:
+        key_oe.add(kce.key)
 
-    write_kce_to_path(diff_list, 'tmp/diff_remote.xml')
+    not_i18n = list()
+    for kce in def_path_list:
+        if kce.key not in key_oe:
+            not_i18n.append(kce)
 
-    modify_list = []
+    write_kce_to_path(not_i18n, '/Users/lightman_mac/Desktop/tanghao/not_i18n.xml')
 
-    for kce in remote_list:
-        for new in new_list:
-            if kce.key == new.key:
-                if kce.cn != new.cn:
-                    print(kce.key, ', new.cn ' + new.cn + ', remote.cn ' + kce.cn)
-                    modify_list.append(new)
+    pass
 
-    write_kce_to_path(modify_list, 'tmp/modify_list.xml')
 
-    print('diff size ', count)
+def merge_kce_list(left_list, right_list):
+    cn_merge_list = list()
+
+    smaller = left_list
+    bigger = right_list
+    if len(left_list) > len(right_list):
+        smaller = right_list
+        bigger = left_list
+
+    key_small = set()
+    key_big = set()
+    for kce in smaller:
+        key_small.add(kce.key)
+    for kce in bigger:
+        key_big.add(kce.key)
 
 
 if __name__ == '__main__':

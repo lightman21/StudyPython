@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="common_ok">確 定</string>
+	<string name="double_date_divider">至</string>
+	<string name="end_time_earlier_than_start_time">結束時間不應大於開始時間！</string>
+	<string name="no_authority">無操作許可權</string>
+</resources>

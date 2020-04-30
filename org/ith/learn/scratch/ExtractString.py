@@ -107,8 +107,10 @@ def main():
     """
     do_extract()
 
+
 def read_origin(path):
     kce_list = read_xml_as_kce_list(path)
+
 
 def gener_kcew(aar_path, huanout_path):
     # print(highlight('gener_kcew before size '), len(read_xml_as_kce_list(out_path)))
@@ -139,9 +141,8 @@ def get_aar_simple(path_aar):
 def do_extract():
     # lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
     # lib_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/.idea/libraries'
-    # lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
-    lib_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/.idea/libraries'
-
+    lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
+    # lib_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/.idea/libraries'
     extract_res(lib_path)
 
 
@@ -167,7 +168,7 @@ def extract_values(aar_name, aar_path):
                                        path.split('/')[-1]
                             write_kce_to_path(list_kce, out_path)
 
-                            gener_kcew(aar_path=out_path, huanout_path='/tmp/tanghao/zhuijia.xml')
+                            # gener_kcew(aar_path=out_path, huanout_path='/tmp/tanghao/zhuijia.xml')
 
 
 def get_values_path(m_path):

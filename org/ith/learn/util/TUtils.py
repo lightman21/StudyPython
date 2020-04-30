@@ -12,6 +12,10 @@ import xlwt
 from org.ith.learn.util.Colored import COLS
 import random
 
+"""
+git archive i18n_5.34.10 --remote=ssh://git@gitlab.shishike.com:38401/c_iphone/OnMobile-Android.git app/src/main/res/values-en/strings.xml | tar -x
+
+"""
 
 
 class KCEBean:
