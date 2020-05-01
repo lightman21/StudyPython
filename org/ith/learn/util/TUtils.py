@@ -89,7 +89,7 @@ def write_to_excel(to_write_list, path_of_excel):
     twrite_kce_to_path(dict_kce_list, key='en', path=out + '__english.xml')
 
     """
-    将list_of_kec 写到指定指定路径
+    将list_of_kce 写到指定指定路径
     """
     workbook = xlwt.Workbook()
     worksheet = workbook.add_sheet('Android_i18n')
@@ -266,6 +266,7 @@ def auto_escape(inputing):
 
 
 def twrite_kce_to_path(list_of_kce, path, sort=False, key='cn'):
+
     print('write_kce_to_path: ', highlight(path, 1))
 
     for kce in list_of_kce:

@@ -29,22 +29,20 @@ def main():
     sub_module_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Dinner/dinnerui/src/main/res/values/strings.xml'
     sub_module_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/mobile-trade-server/develophelper/src/main/res/values/strings.xml'
     sub_module_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/mobile-trade-server/TradeServer/src/main/res/values/strings.xml'
-
     sub_module_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-commodity/commodity/src/main/res/values/strings.xml'
     sub_module_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/KReport/kreport//src/main/res/values/strings.xml'
     sub_module_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-member-manage/kmember/src/main/res/values/strings.xml'
     sub_module_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/mobile-ui/mobileview/src/main/res/values/strings.xml'
-
     tradeserver = '/Users/lightman_mac/company/keruyun/proj_sourcecode/mobile-trade-server/TradeServer/src/main/res/values/strings.xml'
     sub_module_path = tradeserver
     inventory_def = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-android-inventory-management/inventoryui/src/main/res/values/strings.xml'
     sub_module_path = inventory_def
-
     biz_setting = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-business-setting/businesssetting/src/main/res/values/strings.xml'
     sub_module_path = biz_setting
-
     staff = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-staff/staff/src/main/res/values/strings.xml'
     sub_module_path = staff
+    not_i18_path = '/Users/lightman_mac/Desktop/tanghao/not_i18n.xml'
+    sub_module_path = not_i18_path
 
     out_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Dinner/dinnerui/src/main/res/values-en/strings.xml'
     out_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/mobile-trade-server/develophelper/src/main/res/values-en/strings.xml'
@@ -56,6 +54,8 @@ def main():
     out_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-business-setting/businesssetting/src/main/res/values-en/strings.xml'
 
     out_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-staff/staff/src/main/res/values-en/strings.xml'
+
+    out_path = '/Users/lightman_mac/Desktop/tanghao/not_i18n_trans.xml'
 
     kce_of_submodule = read_xml_as_kce_list(sub_module_path)
     trans_dict = dict()
