@@ -13,7 +13,8 @@ import difflib
 
 
 def check_default_biggest():
-    path_of_search = '/tmp/auto_extract/'
+    path_of_search = '/Users/lightman_mac/company/keruyun/oh_my_python/StudyPython/org/ith/learn/scratch/tmp' \
+                     '/auto_extract_work/2020_05_01/'
     count = 0
     path_dict = dict()
     for dir_path_name, dirs, files in os.walk(path_of_search):
