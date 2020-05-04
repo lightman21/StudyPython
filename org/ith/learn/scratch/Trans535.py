@@ -89,7 +89,7 @@ def main():
     print('cannot find ', cannot, ', finded ', finded)
 
     write_kce_to_path(i18n_kce, out_path)
-    write_kce_to_path(not_find_kce, './abc_not_find_kce.xml')
+    write_kce_to_path(not_find_kce, 'tmp/old_files/abc_not_find_kce.xml')
 
     for k, v_kce in trans_dict.items():
         for no_tr in not_find_kce:
@@ -109,8 +109,8 @@ def main():
         else:
             final_not.append(no_tr)
 
-    write_kce_to_path(tmp, './abc_find_in_dict_cn_equals.xml', key='en')
-    write_kce_to_path(final_not, './abc_final_no_trans.xml')
+    write_kce_to_path(tmp, 'tmp/old_files/abc_find_in_dict_cn_equals.xml', key='en')
+    write_kce_to_path(final_not, 'tmp/old_files/abc_final_no_trans.xml')
 
 
 def ios_by_excel():
@@ -151,7 +151,7 @@ def i18n_trans():
 
     gener_diff(old_path=path_534, new_path=path_535)
     big_kce_list = big_dict()
-    diff_kce_list = read_xml_as_kce_list('tmp/diff_534_535.xml')
+    diff_kce_list = read_xml_as_kce_list('tmp/old_files/diff_534_535.xml')
     find_kce = []
     count = 0
     for diff in diff_kce_list:
@@ -187,14 +187,14 @@ def i18n_trans():
 
     print('big size ', len(big_kce_list), ',diff size ', len(diff_kce_list), ',find count ', count)
 
-    write_kce_to_path(find_kce, path='tmp/diff_534_535_find.xml', key='en')
+    write_kce_to_path(find_kce, path='tmp/old_files/diff_534_535_find.xml', key='en')
 
     find_kce.clear()
     for kce in diff_kce_list:
         if len(kce.en) < 1:
             find_kce.append(kce)
 
-    write_kce_to_path(find_kce, path='tmp/diff_534_535_not_find.xml', key='cn')
+    write_kce_to_path(find_kce, path='tmp/old_files/diff_534_535_not_find.xml', key='cn')
 
     print('约等于 ', len(yuedeng))
     for s in yuedeng:

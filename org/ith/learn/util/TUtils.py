@@ -1,3 +1,4 @@
+import collections
 import hashlib
 import html
 import os
@@ -223,6 +224,112 @@ def read_xml_as_kce_list(xml_path, lang='cn'):
         return list_kce
 
 
+def gener_dict_by_path(xml_path):
+    """
+    读取指定xml_path路径下的文件
+    生成一个dict
+    dict中key为string-array,value为各个item值的元组
+    """
+    DOMTree = xml.dom.minidom.parse(xml_path)
+    collection = DOMTree.documentElement
+    string_arrays = collection.getElementsByTagName("string-array")
+
+    value_tag_dict = dict()
+
+    for str_arr in string_arrays:
+        tag_name = str_arr.getAttribute('name')
+        items = str_arr.getElementsByTagName('item')
+        item_texts = list()
+        for item in items:
+            text = item.childNodes[0].data
+            item_texts.append(text)
+        value_tag_dict[tag_name] = tuple(item_texts)
+
+    return value_tag_dict
+
+
+def extract_string_array(xml_path, extract_path=''):
+    return generate_string_array_xml_doc(gener_dict_by_path(xml_path), out_path=extract_path)
+
+
+def generate_string_array_xml_doc(key_values_dict, out_path=''):
+    """
+    @param key_values_dict key为string-array的name,value为各个item的值的元组
+    @param out_path 生成的xml的路径
+
+    使用minidom生成XML
+    0.创建Element,createElement
+    1.添加子节点,appendChild
+    2.创建Text,createTextNode
+    3.创建属性,createAttribute
+    """
+    if len(key_values_dict) < 1:
+        return
+
+    print(highlight('key_values_dict len ', 3), len(key_values_dict))
+
+    xml_header = '<?xml version="1.0" encoding="utf-8"?>\n'
+
+    impl = xml.dom.minidom.getDOMImplementation()
+    dom = impl.createDocument(None, 'resources', None)
+    resources_root = dom.documentElement
+
+    # key 倒序
+    key_values_dict = collections.OrderedDict(sorted(key_values_dict.items(), reverse=True, key=lambda t: t[0]))
+
+    for key, values in key_values_dict.items():
+        title = dom.createElement("string-array")
+        title.setAttribute("name", key)
+        for text_value in values:
+            item = dom.createElement('item')
+            item.appendChild(dom.createTextNode(text_value))
+            title.appendChild(item)
+
+        resources_root.appendChild(title)
+
+    raw_string = resources_root.toprettyxml(indent="\t", newl='\n')
+
+    if len(out_path) < 1:
+        log_str = raw_string \
+            .replace('</string-array>', '</string-array>\n') \
+            .replace('<resources>', '') \
+            .replace('</resources>', '')
+        print(highlight(log_str, 4))
+        return log_str
+    else:
+        # 有输出路径
+        with open(out_path, 'w') as out:
+            out.write(raw_string)
+
+        with open(out_path, 'r') as rin:
+            lines = rin.readlines()
+            lines.insert(0, xml_header)
+            tweaked_lines = []
+            for line in lines:
+                line = line.replace('</string-array>', '</string-array>\n')
+                tweaked_lines.append(line)
+            with open(out_path, 'w') as rout:
+                rout.writelines(tweaked_lines)
+
+
+def auto_transascii10(str_input):
+    """
+    把输入的软换行换成硬换行
+    \n        10        换行NL
+    \r        13        回车CR
+    """
+    ascii_indexes = []
+    next_line_ascii = 10
+    for index in range(len(str_input)):
+        if ord(str_input[index]) == next_line_ascii:
+            ascii_indexes.append(index)
+    blank = list(str_input)
+    for ch_index in ascii_indexes:
+        blank[ch_index] = r'\n'
+
+    return ''.join(blank)
+
+
 def md5(str_data):
     return hashlib.md5(str_data.encode(encoding='UTF-8')).hexdigest()
 
@@ -266,7 +373,6 @@ def auto_escape(inputing):
 
 
 def twrite_kce_to_path(list_of_kce, path, sort=False, key='cn'):
-
     print('write_kce_to_path: ', highlight(path, 1))
 
     for kce in list_of_kce:
@@ -323,10 +429,6 @@ def twrite_kce_to_path(list_of_kce, path, sort=False, key='cn'):
         print("==================", path, err)
         raise
 
-
-def just_sort(path_of_xml):
-    kce_list = read_xml_as_kce_list(path_of_xml)
-    write_kce_to_path(kce_list, path_of_xml)
 
 if __name__ == '__main__':
     print(remove_punctuation('税  !@#$%^&*( 种:'.replace(' ', '')))

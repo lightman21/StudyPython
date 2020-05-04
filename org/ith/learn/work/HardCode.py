@@ -72,12 +72,14 @@ def main():
     module_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Mobile-Member/'
     module_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-commodity/'
     module_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-android-inventory-management/'
-    # hardcode_killer(module_path)
+    module_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-takeout-ui/'
+    hardcode_killer(module_path)
 
     pass
 
 
 def hardcode_killer(path_of_module):
+
     os.chdir(path_of_module)
 
     modules_path_list = get_module_path(path_of_module)
@@ -317,6 +319,7 @@ def get_module_path(path):
             with open(root_dir + os.sep + settings, 'r') as sg:
                 modules = sg.readlines()
                 for m in modules:
+                    m = m.strip()
                     if m.__contains__('include') and not m.__contains__('//'):
                         file = m.split(':')[1].split('\'')[0]
                         if not skip_dir.__contains__(file):

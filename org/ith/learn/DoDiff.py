@@ -40,7 +40,7 @@ def main():
         if new.key in key_diff:
             diff.append(new)
 
-    write_kce_to_path(diff, './key_th_diff.xml')
+    write_kce_to_path(diff, 'scratch/tmp/old_files/key_th_diff.xml')
 
 
 def shuangwei():

@@ -1,6 +1,6 @@
 def get_stroke(hanzi):
     """
-    输入汉字 输出笔画  如 唐 10 浩10
+    输入汉字 输出笔画  如  10 浩10
     如果返回 0,则也是在unicode中不存在kTotalStrokes字段
     """
     strokes = []

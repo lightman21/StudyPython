@@ -1,115 +1,201 @@
+import os
+
 from org.ith.learn.OhMyEXCEL import excel_to_xml, xml_to_excel
 from org.ith.learn.scratch.Trans535 import big_dict
 from org.ith.learn.util.PXML import write_kce_to_path
 from org.ith.learn.util.TUtils import open_excel_as_list, read_xml_as_kce_list, KCEBean, highlight, modify_time, md5, \
-    auto_escape, extra_chinese, remove_punctuation, is_contains_chinese, exec_cmd
+    auto_escape, extra_chinese, remove_punctuation, is_contains_chinese, exec_cmd, auto_transascii10
 import re
 import difflib
 
 from org.ith.learn.work.Work import gener_dict_by_excel
 
 """
-0. 生成大字典
-读取 潘霜微Excel /Users/toutouhiroshidaiou/Desktop/i18n/0421_i18n.xlsx
-
-                /Users/lightman_mac/Desktop/0418work/418_i18n.xlsx
-
-读取主工程最新大kce    
+怎么知道新增哪些key
+有一个基准 基准来源于apk包 生成中文的kce  从解压的apk中的values目录读取 values
+values-zh values-zh-rCN values-zh-rHK values-zh-rTW  values
 
 """
 
+dirs_need_care = [
+    'values',
+    'values-zh',
+    'values-zh-rCN',
+    'values-zh-rHK',
+    'values-zh-rTW',
+]
 
-def demo():
-    fanyi_excel = '/Users/toutouhiroshidaiou/Desktop/i18n/0421_i18n.xlsx'
-    fanyi_excel = '/Users/lightman_mac/Desktop/0418work/418_i18n.xlsx'
-    list_excel_kce = gener_dict_by_excel(fanyi_excel, just_return=True)
-    master_path = '/tmp/OnMobile-official-5.35.0-SNAPSHOT-armeabi-v7a-envGrd-2020-04-23-11-03-14/res/values/strings.xml'
-    master_path = '/tmp/tanghao/official-5.35.0-envGrd-2020-04-17-19-15-13/res/values/strings.xml'
-    ch_path = '/tmp/OnMobile-official-5.35.0-SNAPSHOT-armeabi-v7a-envGrd-2020-04-23-11-03-14/res/values-zh/strings.xml'
-    ch_path = '/tmp/tanghao/official-5.35.0-envGrd-2020-04-17-19-15-13/res/values-zh/strings.xml'
 
-    merge_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/app/build/intermediates/res/merged/appStore' \
-                 '/bugRelease/values/values.xml '
+def gener_all_cn_by_apk(apk_path):
+    # apk路径的上一级目录
+    print('apk_path ', apk_path)
+    apk_parent = os.path.dirname(apk_path)
+    apk_name = apk_path.split('/')[-1]
+    os.chdir(apk_parent)
+    command = 'apktool d ' + apk_path
+    exec_cmd(command)
+    res_path = apk_path.split('.')[0] + os.sep + 'res'
+    print(res_path)
+    care_path = list()
+    for dir_path_name, dirs, files in os.walk(res_path):
+        for name in dirs:
+            if name in dirs_need_care:
+                care_path.append(dir_path_name + os.sep + name + os.sep + 'strings.xml')
 
-    merge_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/build/intermediates/res' \
-                 '/merged/official/envCiTest/values/values.xml '
+    all_kce_list = list()
+    def_kce_list = list()
+    def_key_set = set()
+    zh_kce_list = list()
 
-    merge_list = read_xml_as_kce_list(merge_path)
+    for path in care_path:
 
-    master_list = read_xml_as_kce_list(master_path)
-    ch_list = read_xml_as_kce_list(ch_path)
+        kce_list = read_xml_as_kce_list(path)
+
+        if path.__contains__('values/strings.xml'):
+            def_kce_list = kce_list
+
+        if path.__contains__('values-zh/strings.xml'):
+            zh_kce_list = kce_list
+
+        for kce in kce_list:
+            all_kce_list.append(kce)
+
+            if kce_list == def_kce_list:
+                def_key_set.add(kce.key)
+
+        print(path, ', size ', len(kce_list), ',all kce ', len(all_kce_list))
+
+    diff_kce = set()
+    for item in all_kce_list:
+        if item.key not in def_key_set:
+            # 这个就是多出来的
+            diff_kce.add(item)
+
+    print('def key set ', len(def_key_set), ',diff size ', len(diff_kce))
+
+    for kce in diff_kce:
+        def_kce_list.append(kce)
+
+    not_cn_kce = list()
+    for kce in def_kce_list:
+        if not is_contains_chinese(kce.cn):
+            not_cn_kce.append(kce)
+
+    print(highlight('not_cn_kce size ', 2), len(not_cn_kce))
+
     count = 0
-    for master in master_list:
-        for ch in ch_list:
-            if master.key == ch.key:
-                if not is_contains_chinese(master.cn) and is_contains_chinese(ch.cn):
-                    count += 1
-                    master.cn = ch.cn
-    print('master size ', len(master_list), ', ch size ', len(ch_list), 'rewrite count ' + str(count), ', merge size ',
-          len(merge_list))
+    # 不是中文 那么去 zh里查
+    for zh_kce in zh_kce_list:
+        for kce in not_cn_kce:
+            if kce.key == zh_kce.key and is_contains_chinese(zh_kce.cn):
+                kce.cn = zh_kce.cn
+                count += 1
 
-    write_kce_to_path(master_list, './rewrite_master.xml', sort=False)
-    write_kce_to_path(merge_list, './rewrite_merge.xml')
+    print(highlight('not_cn_kce find in zh ', 3), count)
 
-    rmaster_list = read_xml_as_kce_list('./rewrite_master.xml')
-    write_kce_to_path(rmaster_list, './rewrite_sort_master.xml')
-
-    master_keys = []
-    for m in master_list:
-        master_keys.append(m.key)
-
-    for m in merge_list:
-        if m.key not in master_keys:
-            print('not in master key ', highlight(m.key, 3), ', value ', highlight(m.cn, 4))
-
+    # 如果还不行就到all里查
     count = 0
-    for fanyin in list_excel_kce:
-        for master in master_list:
-            if fanyin.key == master.key:
-                if fanyin.cn != master.cn:
+    for all_item in all_kce_list:
+        for kce in not_cn_kce:
+            if kce.key == all_item.key:
+                if not is_contains_chinese(kce.cn) and is_contains_chinese(all_item.cn):
+                    kce.cn = all_item.cn
                     count += 1
-                    print(highlight(master.key, 4), ', fanyi.cn ', fanyin.cn, '----> master.cn ',
-                          highlight('r' + master.cn, 3))
 
-    print('not match count ', str(count))
+    print(highlight('not_cn_kce find in all_kce_list ', 4), count)
 
-    # write_kce_to_path(master_list, './rewrite_master.xml')
+    for def_kce in def_kce_list:
+        for kce in not_cn_kce:
+            if kce.key == def_kce.key:
+                def_kce.cn = kce.cn
 
-    pass
+    out_path = apk_parent + os.sep + apk_name.replace('.', '_') + '_all_cn.xml'
+    write_kce_to_path(def_kce_list, path=out_path)
 
-
-def just_test():
-    # report_order_source_tips
-    # kmember_tip_auto_pause
-    master_kce = read_xml_as_kce_list('./tester.xml')
-    for kce in master_kce:
-        print(kce.hl(), 'cn len ', len(kce.cn))
-        kce.cn = auto_transascii10(kce.cn)
-        print('after', kce.hl(), ', cn len ', len(kce.cn))
-
-
-def auto_transascii10(str_input):
-    """
-    把输入的软换行换成硬换行
-    \n        10        换行NL
-    \r        13        回车CR
-    """
-    ascii_indexes = []
-    next_line_ascii = 10
-    for index in range(len(str_input)):
-        if ord(str_input[index]) == next_line_ascii:
-            ascii_indexes.append(index)
-    blank = list(str_input)
-    for ch_index in ascii_indexes:
-        blank[ch_index] = r'\n'
-
-    return ''.join(blank)
+    return out_path
 
 
 def main():
-    just_test()
-    # demo()
+    old_path = gener_all_cn_by_apk('/tmp/th/534.apk')
+    new_path = gener_all_cn_by_apk('/tmp/th/535base.apk')
+    # new_path = '/private/tmp/th/535base_apk_all_cn.xml'
+    # old_path = '/tmp/th/534_apk_all_cn.xml'
+    diff_xml(new_path_xml=new_path, old_path_xml=old_path)
     pass
+
+
+def diff_xml(new_path_xml, old_path_xml, out_path='/tmp/th/'):
+    """
+    @param new_path_xml 新的xml路径
+    @param old_path_xml 老的xml路径
+    @param out_path 输出diff文件路径
+    """
+    new_list = read_xml_as_kce_list(new_path_xml)
+    old_list = read_xml_as_kce_list(old_path_xml)
+
+    both_set = set(new_list).intersection(set(old_list))
+
+    new_diff = set(new_list) - both_set
+    old_diff = set(old_list) - both_set
+
+    key_new_diff = set()
+    key_old_diff = set()
+
+    for kce in new_diff:
+        key_new_diff.add(kce.key)
+
+    for kce in old_diff:
+        key_old_diff.add(kce.key)
+
+    # 新增的 在新的但是不在老的
+    kce_new_added = list()
+    str_new_added_line = list()
+
+    for knew in new_diff:
+        if knew.key not in key_old_diff:
+            kce_new_added.append(knew)
+            line = 'new added {} , {}\n'.format(knew.key, knew.cn)
+            str_new_added_line.append(line)
+            # print(line)
+
+    # 变动的 key都在 但是value不同
+    str_changed_line = list()
+    kce_changed_value = list()
+    for knew in new_diff:
+        for kold in old_diff:
+            if knew.key == kold.key:
+                if knew.cn != kold.cn:
+                    kce_changed_value.append(knew)
+                    line = 'change value {} from {} to {} \n'.format(knew.key, kold.cn, knew.cn)
+                    str_changed_line.append(line)
+                    # print(line)
+
+    for kold in old_diff:
+        if kold.key not in key_new_diff:
+            print(highlight('delete ', 3), kold.key, kold.cn)
+
+    print(highlight('new added count', 4), len(kce_new_added), highlight(',changed count ', 5), len(kce_changed_value))
+
+    tmp = list()
+    for new in new_diff:
+        tmp.append(new)
+
+    for old in old_diff:
+        tmp.append(old)
+
+    simple_new_name = new_path_xml.split('/')[-1].replace('.xml', '')
+    simple_old_name = old_path_xml.split('/')[-1].replace('.xml', '')
+    diff_out_name = out_path + simple_old_name + '_diff_' + simple_new_name + '.xml'
+    changed_out_name = out_path + simple_old_name + '_changed_' + simple_new_name + '.xml'
+    newadd_out_name = out_path + simple_old_name + '_newadd_' + simple_new_name + '.xml'
+
+    write_kce_to_path(tmp, diff_out_name)
+
+    with open(changed_out_name, 'w') as rout:
+        rout.writelines(str_changed_line)
+
+    with open(newadd_out_name, 'w') as rout:
+        rout.writelines(str_new_added_line)
 
 
 if __name__ == '__main__':

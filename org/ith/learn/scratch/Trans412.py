@@ -55,7 +55,7 @@ def main():
 
     write_kce_to_path(realy_not_trans, '/tmp/really_cn.xml')
     write_kce_to_path(realy_not_trans, '/tmp/really_en.xml', key='en')
-    xml_to_excel(path_of_cn='/tmp/really_cn.xml', path_of_en='/tmp/really_en.xml', excel_path='tmp/really.xlsx')
+    xml_to_excel(path_of_cn='/tmp/really_cn.xml', path_of_en='/tmp/really_en.xml', excel_path='tmp/old_files/really.xlsx')
 
     """
     b/businesssetting/src/main/res/layout/loading_empty.xml

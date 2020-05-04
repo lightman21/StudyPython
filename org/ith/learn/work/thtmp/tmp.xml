@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="kmember_member_disabled">The member has been disabled; cannot continue</string>
+	<string name="smallon_member_no_buy">会员实体卡制作成本高？会员积分兑换形式单一？试试客如云积分商城，全新营销方案，积分兑换权益丰富，会员卡数据实时记录，省钱更省心！限时优惠中</string>
+	<string name="smallon_member_no_day">您的积分商城服务已过期，此时您的会员将不可享受积分兑换权益的活动哦。现在续订还有优惠</string>
+	<string name="smallon_member_num_day">您的积分商城服务即将于%s日后到期，服务过期后，您的会员将不可享受积分兑换权益的活动哦。现在续订还有优惠</string>
+</resources>
