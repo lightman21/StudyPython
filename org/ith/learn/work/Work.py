@@ -7,11 +7,9 @@ from org.ith.learn.OhMyEXCEL import excel_to_xml, xml_to_excel
 from org.ith.learn.scratch.Trans535 import big_dict
 from org.ith.learn.util.PXML import write_kce_to_path
 from org.ith.learn.util.TUtils import open_excel_as_list, read_xml_as_kce_list, KCEBean, highlight, modify_time, md5, \
-    auto_escape, extra_chinese, remove_punctuation, is_contains_chinese, exec_cmd
+    auto_escape, extra_chinese, remove_punctuation, is_contains_chinese, exec_cmd, just_sort
 import re
 import difflib
-
-from org.ith.learn.work.HardCode import hardcode_killer
 
 
 def search_kce(search, compare_by='cn', dict_path='../../../../docs/dicts/2020_04_20_kce_dict.xml',
@@ -229,13 +227,11 @@ def main(argv=None):
     # print('i18n size ', len(i18n_kce_list), ', master size ', len(master_kce_list), ', not in master from i18 ',
     #       len(not_in_master))
 
-
     # just_sort('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-member-manage/kmember/src/main/res/values/strings.xml')
     # just_sort('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-member-manage/kmember/src/main/res/values-en/strings.xml')
 
     # just_sort('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Mobile-Member/member/src/main/res/values/strings.xml')
     # just_sort('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Mobile-Member/member/src/main/res/values-en/strings.xml')
-
 
     # master = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-member-manage/kmember/src/main/res/values-en/strings.xml'
     # origin = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-member-manage/kmember/src/main/res/values-en/origin_strings.xml'
@@ -251,12 +247,13 @@ def main(argv=None):
     #         out.append(m)
     # write_kce_to_path(out,'./tmp.xml')
 
-    just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/src/main/res/values/just_back_allstr_5_35_0.xml')
+    # just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/src/main/res/values/just_back_allstr_5_35_0.xml')
 
+    just_sort(
+        '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-android-inventory-management/inventoryui/src/main/res/values-ru/strings.xml')
+    just_sort(
+        '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-android-inventory-management/inventoryui/src/main/res/values/strings.xml')
 
-def just_sort(path_of_xml):
-    kce_list = read_xml_as_kce_list(path_of_xml)
-    write_kce_to_path(kce_list, path_of_xml)
 
 
 def delete_res():

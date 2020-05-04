@@ -70,7 +70,9 @@ def main():
     module_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-business-setting/'
     module_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-staff/'
     module_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Mobile-Member/'
-    hardcode_killer(module_path)
+    module_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-commodity/'
+    module_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-android-inventory-management/'
+    # hardcode_killer(module_path)
 
     pass
 

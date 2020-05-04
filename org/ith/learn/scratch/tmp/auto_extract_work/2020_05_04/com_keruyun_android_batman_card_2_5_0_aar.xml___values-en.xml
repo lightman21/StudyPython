@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="batmancard_apdu_psam_failed">APDU interaction with PSAM card failed</string>
+	<string name="batmancard_certified_failed">Authentication failed</string>
+	<string name="batmancard_decryp_card_apdu_failed">The decryption card number apdu interaction failed</string>
+	<string name="batmancard_decryp_failed">Failed to decrypt the card number</string>
+	<string name="batmancard_find_m1_failed">Failed to find M1 card</string>
+	<string name="batmancard_find_psam_failed">Failed to find the PSAM card</string>
+	<string name="batmancard_init_failed">initialization failed</string>
+	<string name="batmancard_readcard_failed">Card reading failed</string>
+</resources>

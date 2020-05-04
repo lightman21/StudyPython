@@ -9,7 +9,6 @@ from org.ith.learn.util.TUtils import open_excel_as_list, read_xml_as_kce_list, 
 import re
 import difflib
 
-from org.ith.learn.work.Work import just_sort
 
 tmp = libs_need_care = [
     '正餐',

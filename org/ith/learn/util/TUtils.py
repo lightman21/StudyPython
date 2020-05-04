@@ -324,5 +324,9 @@ def twrite_kce_to_path(list_of_kce, path, sort=False, key='cn'):
         raise
 
 
+def just_sort(path_of_xml):
+    kce_list = read_xml_as_kce_list(path_of_xml)
+    write_kce_to_path(kce_list, path_of_xml)
+
 if __name__ == '__main__':
     print(remove_punctuation('税  !@#$%^&*( 种:'.replace(' ', '')))

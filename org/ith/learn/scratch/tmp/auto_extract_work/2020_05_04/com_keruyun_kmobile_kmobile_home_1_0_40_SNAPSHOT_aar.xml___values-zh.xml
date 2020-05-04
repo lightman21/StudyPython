@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="home_invoice_resend">重新发送</string>
+	<string name="home_my_invoice_apply_delete">作废发票</string>
+	<string name="home_my_invoice_have_invoiced_quota_manual">线下已开票</string>
+	<string name="home_my_invoice_have_invoiced_quota_online">线上已开票</string>
+	<string name="home_my_invoice_have_invoicinga">开票中</string>
+</resources>

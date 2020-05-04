@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="cancel">取消</string>
+	<string name="confirm">确  定</string>
+	<string name="consume_terminal">消费端</string>
+	<string name="info_qr_action_bind_error">设备绑定失败</string>
+	<string name="info_qr_action_bind_need_keruyun_app">请使用客如云APP绑定</string>
+	<string name="info_qr_action_bind_need_redclode_app">请使用红云APP绑定</string>
+	<string name="network_data_err">服务器数据异常</string>
+	<string name="pay_good">好的</string>
+	<string name="pay_setting">请到后台配置相关支付方式</string>
+	<string name="pos_terminal">收银端</string>
+	<string name="qrcodebiz__k_qrscan_title">扫一扫</string>
+	<string name="qrcodebiz_app_qr_scan_get_cash_dialog_title">收款</string>
+	<string name="qrcodebiz_app_qrscan_getcash_dialog_input_hint">请输入收款金额</string>
+	<string name="qrcodebiz_assistant_no_permision">您没有权限使用此功能，请知悉</string>
+	<string name="qrcodebiz_commercial_type_choose_error">请选择绑定类型</string>
+	<string name="qrcodebiz_commercial_type_dish_city_hint">检测到商户为美食城业态\n您当前绑定的POS是：</string>
+	<string name="qrcodebiz_device_bind_success">继续绑定</string>
+	<string name="qrcodebiz_logout_error">退出失败</string>
+	<string name="qrcodebiz_scan_result">扫描结果</string>
+	<string name="qrcodebiz_sold_out_device_bind_success">设备绑定成功</string>
+	<string name="qrcodebiz_sold_out_trade_bind_success">配送订单绑定成功</string>
+</resources>
