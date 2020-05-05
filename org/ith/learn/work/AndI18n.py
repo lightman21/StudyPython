@@ -28,6 +28,7 @@ dirs_need_care = [
 
 def gener_all_cn_by_apk(apk_path):
     # apk路径的上一级目录
+    apk_path = apk_path.strip()
     print('apk_path ', apk_path)
     apk_parent = os.path.dirname(apk_path)
     apk_name = apk_path.split('/')[-1]
@@ -116,15 +117,19 @@ def gener_all_cn_by_apk(apk_path):
 
 
 def main():
-    old_path = gener_all_cn_by_apk('/tmp/th/534.apk')
-    new_path = gener_all_cn_by_apk('/tmp/th/535base.apk')
-    # new_path = '/private/tmp/th/535base_apk_all_cn.xml'
-    # old_path = '/tmp/th/534_apk_all_cn.xml'
-    diff_xml(new_path_xml=new_path, old_path_xml=old_path)
+    # old_path = gener_all_cn_by_apk('/private/tmp/envGrd/533app-official-armeabi-v7a-envGrd.apk')
+    # new_path = gener_all_cn_by_apk('/private/tmp/envGrd/535app-official-armeabi-v7a-envGrd.apk')
+    # diff_xml(new_path_xml=new_path, old_path_xml=old_path)
+
+    diff_xml(new_path_xml='/private/tmp/envGrd/535app-official-armeabi-v7a-envGrd_apk_all_cn.xml',
+             old_path_xml='/private/tmp/envGrd/533app-official-armeabi-v7a-envGrd_apk_all_cn.xml')
+
+    # print(to_pretty('award_for_recommendation', '推荐有奖'))
+
     pass
 
 
-def diff_xml(new_path_xml, old_path_xml, out_path='/tmp/th/'):
+def diff_xml(new_path_xml, old_path_xml, out_path='/tmp/diffapk/'):
     """
     @param new_path_xml 新的xml路径
     @param old_path_xml 老的xml路径
@@ -155,6 +160,7 @@ def diff_xml(new_path_xml, old_path_xml, out_path='/tmp/th/'):
         if knew.key not in key_old_diff:
             kce_new_added.append(knew)
             line = 'new added {} , {}\n'.format(knew.key, knew.cn)
+            line = to_pretty(knew.key, auto_transascii10(knew.cn)) + '\n'
             str_new_added_line.append(line)
             # print(line)
 
@@ -166,36 +172,63 @@ def diff_xml(new_path_xml, old_path_xml, out_path='/tmp/th/'):
             if knew.key == kold.key:
                 if knew.cn != kold.cn:
                     kce_changed_value.append(knew)
-                    line = 'change value {} from {} to {} \n'.format(knew.key, kold.cn, knew.cn)
+                    line = 'changed key:{:<30}, from: {:<10}to: {}\n'.format(knew.key, kold.cn, knew.cn)
                     str_changed_line.append(line)
                     # print(line)
 
+    delete_strs = list()
+
     for kold in old_diff:
         if kold.key not in key_new_diff:
-            print(highlight('delete ', 3), kold.key, kold.cn)
+            # line = 'delete key {} {}\n'.format(kold.key, kold.cn)
+            line = to_pretty(kold.key, kold.cn) + '\n'
+            print(highlight(line, 3))
+            delete_strs.append(line)
 
     print(highlight('new added count', 4), len(kce_new_added), highlight(',changed count ', 5), len(kce_changed_value))
 
+    desc = ''.format(len(delete_strs), len(kce_new_added), len(kce_changed_value))
+
     tmp = list()
     for new in new_diff:
+        new.cn = auto_transascii10(new.cn)
         tmp.append(new)
 
-    for old in old_diff:
-        tmp.append(old)
+    # for old in old_diff:
+    #     tmp.append(old)
 
     simple_new_name = new_path_xml.split('/')[-1].replace('.xml', '')
     simple_old_name = old_path_xml.split('/')[-1].replace('.xml', '')
-    diff_out_name = out_path + simple_old_name + '_diff_' + simple_new_name + '.xml'
-    changed_out_name = out_path + simple_old_name + '_changed_' + simple_new_name + '.xml'
-    newadd_out_name = out_path + simple_old_name + '_newadd_' + simple_new_name + '.xml'
+
+    diff_out_name = out_path + '_diff_' + simple_old_name + simple_new_name + '.xml'
 
     write_kce_to_path(tmp, diff_out_name)
 
-    with open(changed_out_name, 'w') as rout:
-        rout.writelines(str_changed_line)
+    out_del_change_add = '_delete_changed_newadd_' + simple_old_name + simple_new_name + '.xml'
 
-    with open(newadd_out_name, 'w') as rout:
-        rout.writelines(str_new_added_line)
+    out_lines = list()
+    out_lines.append('deleted:\n')
+    out_lines.extend(delete_strs)
+    out_lines.append('\n\nchanged:\n')
+    out_lines.extend(str_changed_line)
+    out_lines.append('\n\nnew added:\n')
+    out_lines.extend(str_new_added_line)
+
+    print('out_del_change_add', out_del_change_add)
+
+    with open(out_del_change_add, 'w') as rout:
+        rout.writelines(out_lines)
+
+    # with open(changed_out_name, 'w') as rout:
+    #     rout.writelines(str_changed_line)
+    # with open(newadd_out_name, 'w') as rout:
+    #     rout.writelines(str_new_added_line)
+
+
+def to_pretty(key, value):
+    #     <string name="main_policy">售后政策</string>
+    result = '\t<string name="{}">{}</string>'.format(key, value)
+    return result
 
 
 if __name__ == '__main__':

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="_uuid">00000</string>
+	<string name="account_pwd_input_limit">0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+	<string name="app_name">库存</string>
+	<string name="catalyst_copy_button">Copy</string>
+	<string name="catalyst_debugjs">Debug JS Remotely</string>
+	<string name="catalyst_debugjs_off">Stop Remote JS Debugging</string>
+	<string name="catalyst_dismiss_button">"Dismiss
+(ESC)"</string>
+	<string name="catalyst_element_inspector">Toggle Inspector</string>
+	<string name="catalyst_heap_capture">Capture Heap</string>
+	<string name="catalyst_hot_module_replacement">Enable Hot Reloading</string>
+	<string name="catalyst_hot_module_replacement_off">Disable Hot Reloading</string>
+	<string name="catalyst_jsload_error">Unable to download JS bundle. Did you forget to start the development server or connect your device?</string>
+	<string name="catalyst_live_reload">Enable Live Reload</string>
+	<string name="catalyst_live_reload_off">Disable Live Reload</string>
+	<string name="catalyst_loading_from_url">Loading from %1$s…</string>
+	<string name="catalyst_perf_monitor">Show Perf Monitor</string>
+	<string name="catalyst_perf_monitor_off">Hide Perf Monitor</string>
+	<string name="catalyst_poke_sampling_profiler">Start/Stop Sampling Profiler</string>
+	<string name="catalyst_reload_button">"Reload
+(R, R)"</string>
+	<string name="catalyst_reloadjs">Reload</string>
+	<string name="catalyst_remotedbg_error">Unable to connect with remote debugger</string>
+	<string name="catalyst_remotedbg_message">Connecting to remote debugger</string>
+	<string name="catalyst_report_button">Report</string>
+	<string name="catalyst_settings">Dev Settings</string>
+	<string name="catalyst_settings_title">Catalyst Dev Settings</string>
+	<string name="content_safe_view_web_title_back">safe_view_web_title_back</string>
+	<string name="content_safe_view_web_title_close">content_safe_view_web_title_close</string>
+	<string name="custompay_dinner_money_symbol">￥</string>
+	<string name="custompay_renmingbi">¥</string>
+	<string name="drsk_deliverer">配送员</string>
+	<string name="drsk_delivery_platform">配送方式</string>
+	<string name="drsk_delivery_platform_baidu">百度外卖</string>
+	<string name="drsk_delivery_platform_dada">达达配送</string>
+	<string name="drsk_delivery_platform_eleme">蜂鸟配送</string>
+	<string name="drsk_delivery_platform_meituan">美团配送</string>
+	<string name="drsk_delivery_platform_shunfeng">顺丰同城配送</string>
+	<string name="drsk_delivery_platform_store">商家自送</string>
+	<string name="drsk_receiver">收货人</string>
+	<string name="drsk_receiver_address">收货地址</string>
+	<string name="drsk_source_onmobile">ONMOBILE</string>
+	<string name="drsk_source_osmobile">OS Mobile</string>
+	<string name="faceDetected">Face Detected</string>
+	<string name="float_money_format">%2$s%1$.2f</string>
+	<string name="hello_world">Hello world!</string>
+	<string name="home_invoice_explain_content">"一、发票开具规则：
+1、订单在完成回款后，请自己申请开票，电子发票在24小时内自动开具并发送至预留邮箱；
+2、发票开具金额为您实际支付金额；
+3、发票如申请了线下开票，整笔订单只能线下开具发票；
+4、如查找不到发票，请联系与您对接的客户经理
+
+二、发票补开、换开规则：
+1、发票可在1年内补开、换开1次；
+2、如需换开申请作废重开"</string>
+	<string name="join_and_expand_url">http://wap.keruyun.com/dlwx/</string>
+	<string name="key_eye_close">liveness_blink_eye_close</string>
+	<string name="key_eye_open">liveness_blink_eye_open</string>
+	<string name="key_livenessHomePromptVerticalText">livenessHomePromptVerticalText</string>
+	<string name="key_meglive_eye_blink_m4a">liveness_blink</string>
+	<string name="key_meglive_mouth_open_m4a">liveness_mouth_open</string>
+	<string name="key_meglive_pitch_down_m4a">liveness_nod</string>
+	<string name="key_meglive_well_done_m4a">liveness_well_done</string>
+	<string name="key_meglive_yaw_m4a">liveness_shakehead</string>
+	<string name="key_mouth_close">liveness_mouth_close</string>
+	<string name="key_mouth_open">liveness_mouth_open</string>
+	<string name="key_nod_down">liveness_nod_down</string>
+	<string name="key_nod_up">liveness_nod_up</string>
+	<string name="key_shakehead_left">liveness_shakehead_left</string>
+	<string name="key_shakehead_right">liveness_shakehead_right</string>
+	<string name="klight_service_center_phone_no">400-8866-815</string>
+	<string name="kmobile_prefix">K-MOBILE-</string>
+	<string name="lefu_bank__qingfen_number_please">请输入清分行号</string>
+	<string name="loadinfo">Loading, please wait</string>
+	<string name="loyal">loyal</string>
+	<string name="on_os_version_suggest1">On Pos(v8.11.0+)+On Printer(v3.11.0+)</string>
+	<string name="online_service_url">http://webcall.keruyun.com:18008/WebCall5/jsps/keRuYun/index.jsp</string>
+	<string name="open_camera">open camera.</string>
+	<string name="open_camera_failed">open front camera failed.</string>
+	<string name="print_pay_source_cashier">Cashier</string>
+	<string name="print_pay_source_kiosk">kiosk</string>
+	<string name="print_pay_source_loyal">loyal</string>
+	<string name="print_pay_source_on_mobile">ON_MOBILE</string>
+	<string name="print_pay_source_portal">portal</string>
+	<string name="print_prefix">Print-</string>
+	<string name="product_desc_print"> </string>
+	<string name="product_name_handset">On OS MOBILE</string>
+	<string name="product_name_kds">KDS</string>
+	<string name="product_name_kiosk">On KIOSK</string>
+	<string name="product_name_kmobile">K-MOBILE</string>
+	<string name="product_name_pos">On POS</string>
+	<string name="product_name_print">Print</string>
+	<string name="provider_settings_message">Your GPS seems to be disabled, do you want to enable it?</string>
+	<string name="provider_settings_no">No</string>
+	<string name="provider_settings_yes">Yes</string>
+	<string name="search_menu_title">搜尋</string>
+	<string name="service_center_phone_no">400-8866-815</string>
+	<string name="status_bar_notification_info_overflow">999+</string>
+	<string name="table_dinner_data_login_error_msg">Data is abnormal. Please log in again before operating!</string>
+	<string name="table_just">Just</string>
+	<string name="table_n_days_ago">%1$d days ago</string>
+	<string name="table_n_hours_ago">%1$d hours ago</string>
+	<string name="title_activity_acept_order_voice">AceptOrderVoiceActivity</string>
+	<string name="title_activity_base">BaseActivity</string>
+	<string name="title_activity_dinner_introduction">DinnerIntroductionActivity</string>
+	<string name="title_activity_first_show">FirstShowActivity</string>
+	<string name="title_activity_sending_select">SendingSelectActivity</string>
+	<string name="title_activity_trade_statistic">TradeStatisticActivity</string>
+	<string name="title_activity_un_bind_order">UnBindOrderActivity</string>
+	<string name="title_activity_voice_edit">VoiceEditActivity</string>
+	<string name="title_activity_voice_setting">VoiceSettingActivity</string>
+	<string name="umeng_key">56397405e0f55aee890016fe</string>
+	<string name="utils_app_name">Utils</string>
+	<string name="version_number_format">V%1$d.%2$d.%3$d</string>
+	<string name="version_prefix">V</string>
+	<string name="xunfei_app_id">59812d8e</string>
+</resources>

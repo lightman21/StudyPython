@@ -1,0 +1,694 @@
+deleted:
+	<string name="dinner_consume_tax_inc">消费税(INC)</string>
+	<string name="kmobile_consume_tax_inc">消费税 (INC)</string>
+	<string name="report_order_quick_pay_statistic">无单收款统计</string>
+	<string name="award_for_recommendation">推荐有奖</string>
+	<string name="report_vip_account_info">%1$s (%2$s)</string>
+
+
+changed:
+changed key:input_empty_warning           , from: 请输入一个最小为 0.01 的值to: 请输入一个最小为 0 的值
+changed key:message                       , from: 消息        to: 消息中心
+changed key:delivery_apply_add_prompt     , from: 请先选择数据计算的维度!to: 请先选择日用量参考依据!
+changed key:synchronizing_data            , from: 正在同步数据... to: 正在同步数据…
+changed key:please_addstandard_text       , from: 请输入新增规格的名称to: 请输入规格名称！
+changed key:report_member_total_num_msg   , from: 会员总数(人)   to: 会员累计数(人)
+changed key:text_home_top_hint            , from: ——— 多端互联 智慧服务 ———to: 多端互联 智慧服务
+changed key:report_bo_sale_count          , from: 销售笔数      to: 订单笔数
+changed key:songcan_setting               , from: 配送设置      to: 送餐设置
+changed key:phone_order                   , from: 电话订单      to: 电话
+changed key:pro_klight_edit               , from: 商品编辑      to: 编辑商品
+changed key:klight_confirm                , from: 确定        to: 确认
+changed key:member_credit_loading         , from: 正在加载...   to: 正在加载…
+changed key:bar_total_money_advance_charge, from: 已结(不含预付)%1$sto: 已结（不含预付）%1$s
+changed key:dinner_format_taxrate         , from: (%1$s%%)  to: (%1$s%%)(%2$s)
+changed key:me_fuwu_houtairizhi           , from: 后台授权日志    to: 授权访问管理
+changed key:day                           , from: 日         to: 天
+changed key:account_bind_third_login_tip  , from: 绑定第三方账号登陆 to: 绑定第三方账号登录
+changed key:toast_ocr_dish_error_hint     , from: Identification errorto: 识别失败
+changed key:tradeui_format_taxrate        , from: (%1$s%%)  to: (%1$s%%)(%2$s)
+changed key:mobileui_pullable_refreshing  , from: 正在刷新...   to: 正在刷新…
+changed key:waitDistribution              , from: 待配送       to: 待取货
+changed key:loan_click                    , from: 点击        to: 点击查看详情
+changed key:system_error                  , from: system errorto: 系统错误
+changed key:member_credit_pay_progress_wait_continue_content, from: 正在努力进行收款...to: 正在努力进行收款…
+changed key:kmember_login_title           , from: 会员登录      to: 会员查询
+changed key:kry_dinner_verifing_open_table, from: 验证开台中...  to: 验证开台中…
+changed key:pro_manage_next               , from: 下一步       to: 下一步，添加商品
+changed key:kmember_pay_cashing           , from: 正在收款...   to: 正在收款…
+changed key:mobileui_loading              , from: 加载中...    to: 加载中…
+changed key:kmember_pay_dlg_get_payment   , from: 正在加载支付方式...to: 正在加载支付方式…
+changed key:kmember_store_value_groups_desc, from: 当前品牌下已存在以下分组。可进入分组内编辑规则，如需创建分组或修改其他设置项，请前往商家管理后台操作。to: 当前品牌下已存在以下分组。可进入分组内编辑规则，如需创建分组，可点击右下角创建。
+changed key:member_credit_synchronizing_data, from: 正在同步数据... to: 正在同步数据…
+changed key:loan_click_look_detail        , from: 点击查看详情 >> to: 点击查看详情 &amp;gt;&amp;gt;
+changed key:reprot_biz_member_income      , from: 储值收入      to: 储值收款
+changed key:dialog_orc_dish_pushing_last_count_format, from: 剩余        to: 剩余 <Data>&lt;font color=#47AA2A>&amp;#160;%1$s&lt;/font></Data>
+changed key:report_rank                   , from: 排行榜       to: 商品销售统计
+changed key:app_name                      , from: Trade     to: 库存
+changed key:finish_str                    , from: 完结        to: 完 结
+changed key:modify_commodity              , from: 商品编辑      to: 编辑商品
+changed key:kreport_member_num_day        , from: 您的易储值服务即将于%s日后到期，服务过期后，您的顾客将不可享受消费即储值的服务。现在续订还有优惠服务，to: 您的易储值服务即将于%s日后到期，服务过期后，您的顾客将不可享受消费即储值的服务。现在续订还有优惠服务
+changed key:copyright_hint_text           , from: 版权归客如云科技(成都)有限责任公司所有to: 版权归时时同云科技(成都)有限责任公司所有
+changed key:tv_ocr_dish_result_info_detail_format, from:  %1$s分类下已成功录入to:  %1$s分类下已成功录入<Data>&lt;font color=#47AA2A>&amp;#160;%2$s&lt;/font></Data> 个商品，错误 <Data>&lt;font color=#FE4310>&amp;#160;%3$s&lt;/font></Data> 个
+changed key:report_total_discount_amount  , from: 优惠总金额(元)  to: 优惠总额(¥)
+changed key:kmember_store_value_groups_empty, from: 设置储值规则，培养顾客使用充值消费的习惯，另外设置储值奖励，多充多送。激励消费，增加营收。to: 设置储值规则，培养顾客使用充值消费的习惯，激励消费增加营收。需将你的门店放入某一分组下，并对分组设置规则。
+changed key:account_protocol              , from: 我已阅读并同意<Data>&lt;a href=%1$s>《客如云用户授权协议》&lt;/a> &lt;a href=%2$s>《客如云用户服务协议》&lt;/a>及 &lt;a href=%3$s>《客如云用户隐私政策》&lt;/a></Data>to: 我已阅读并同意<Data>&lt;a href=%1$s>《客如云用户授权协议》&lt;/a>&lt;a href=%2$s>《客如云用户服务协议》&lt;/a>及&lt;a href=%3$s>《客如云隐私政策》&lt;/a></Data>
+changed key:back_to_first_page            , from: 返回首页      to: 继续点单
+changed key:report_total_fee_amount       , from: 交易总手续费(元)：to: 累计手续费(¥)：
+changed key:custom_role_prompt_info       , from: 该角色为自定义角色，对应权限请到商户后台查看to: 该角色为自定义角色，对应权限请到商户后台查看。
+changed key:batch_operation               , from: 批量操作      to: 操作
+changed key:inventory_input_custom_day    , from: 请输入自定义天数  to: 自定义
+changed key:member_credit_loading_2       , from: 加载中...    to: 加载中…
+changed key:loading_2                     , from: 加载中...    to: 加载中…
+changed key:recommend_hint                , from: 您可能想找...  to: 您可能想找…
+changed key:loan_scan_success             , from: 扫描成功：(%1$s)to: >扫描成功：(%1$s)
+changed key:report_bo_income_biz          , from: 营业收入(元)   to: 营业收入
+changed key:commodity_add_spec            , from: + 添加规格    to: + 新增规格
+changed key:keruyun                       , from: 客如云科技（成都）有限责任公司to: 时时同云科技（成都）有限责任公司
+changed key:shift_check_msg               , from: 交班自动清理    to: 交班自动清零
+changed key:klight_about_copyright_hint   , from: 版权归客如云科技(成都)有限责任公司所有to: 版权归时时同云科技(成都)有限责任公司所有
+changed key:report_dr_store_brief_report  , from: 门店关账简报    to: 关账单记录表
+changed key:account_verify_and_modify     , from: 请验证手机号并修改密码to: 请验证手机号并重置密码
+changed key:password_error                , from: 密码输入错误    to: 密码错误
+changed key:webview_default_title         , from: 跳转网页      to: Jumping
+changed key:report_total_transaction_amount, from: 交易总金额(元)： to: 累计交易总金额(¥)：
+changed key:mobileui_pullable_loading     , from: 正在加载...   to: 正在加载…
+changed key:report_business_situation     , from: 营业概况      to: 营业概览
+changed key:member_credit_pay_progress_wait, from: 收款中...    to: 收款中…
+changed key:edit_isexit_text              , from: 信息已编辑，是否离开？to: 修改的内容还没有保存！
+
+
+new added:
+	<string name="kemember_zengsong">赠送</string>
+	<string name="smart_business_basic_mobile_pay">移动收款开通</string>
+	<string name="businesssetting_min_value_can_set">最小值可设置为</string>
+	<string name="takeout_commodity_order">商品清单</string>
+	<string name="takeout_finish_delivery">确定该配送单已完成？</string>
+	<string name="smart_business_platform_title_info_dy">入驻开店，让生意抖起来</string>
+	<string name="home_invoice_resend">重新发送</string>
+	<string name="smart_business_platform_title_info_kb">一店多端，统一后台</string>
+	<string name="report_dr_receipt_statistic_surface">收款统计表</string>
+	<string name="businesssetting_autogen_quantian">全天</string>
+	<string name="businesssetting_time_slot">分时段</string>
+	<string name="kreport_autogen_wanfen">万份</string>
+	<string name="businesssetting_i_known">知道了</string>
+	<string name="kmember_autogen_anjiner">按金额</string>
+	<string name="businesssetting_autogen_added_bukexuan">"已被添加\n不可选"</string>
+	<string name="kreport_autogen_cl_tuikuan_shouxufei">退款手续费:</string>
+	<string name="kmember_kk_anbili">按比例</string>
+	<string name="kmember_kk_xian_chu_hou_zeng">先实储后赠送</string>
+	<string name="kreport_autogen_cl_xiaozhangjiner">销账金额:</string>
+	<string name="businesssetting_pls_select_the_carry_way">请选择进位的方式</string>
+	<string name="businesssetting_autogen_yidongmendian">移动门店</string>
+	<string name="kmember_support_mianmi_pay">支持免密支付,</string>
+	<string name="smart_shop_business_testing">门店经营检测</string>
+	<string name="kreport_autogen_member_points_cost">会员积分消耗</string>
+	<string name="commodity_autogen_guigeming">规格名称</string>
+	<string name="staff_autogen_tel">电话:</string>
+	<string name="commodity_autogen_lirutianlajiang">例如：甜辣酱、沙拉酱</string>
+	<string name="cashier_data_migrate_explain">数据迁移说明</string>
+	<string name="commodity_autogen_yixuanze_3jian">已选择3件商品</string>
+	<string name="report_unpaid_orders">未支付订单</string>
+	<string name="takeout_confirm_sent">确定送达</string>
+	<string name="report_sales">销货</string>
+	<string name="kry_staff_input_hint">请输入</string>
+	<string name="kreport_autogen_jinpai">金牌</string>
+	<string name="account_qrcode_login_big_screen">客如云数据大屏登录确认</string>
+	<string name="takeout_delivered">已送达</string>
+	<string name="report_pay_type_tips">支付方式统计：根据支付方式统计的收款金额，如果有退款，需要减去退款金额</string>
+	<string name="takeout_waiting_for_orders">待接单</string>
+	<string name="kmember_autogen_in_25_words">25个字以内，选填</string>
+	<string name="commodity_autogen_shurubiaoqian">输入标签</string>
+	<string name="takeout_source_type_nuomi">百度糯米</string>
+	<string name="kmember_autogen_mendianzongshu">门店总数：</string>
+	<string name="commodity_autogen_tingyong_yingxiang">该商品存在模板引用,停用将影响模板使用,停用该商品?</string>
+	<string name="smart_business_platform_title_kb">口碑开店</string>
+	<string name="smart_business_platform_title_kuaishou">快手开店</string>
+	<string name="log_apply_modules">申请访问功能：</string>
+	<string name="businesssetting_pls_re_select_combinations">请重新选择组合方式</string>
+	<string name="kreport_autogen_caozuolaiyuan">操作来源:</string>
+	<string name="kmember_rule_input_amount_chuzhi">请输入%1$s 储值金额</string>
+	<string name="businesssetting_queue_num_not_empty">队列代号不能为空</string>
+	<string name="smart_platform_drainage_title_info">多平台开店，吸引更多客流</string>
+	<string name="kmember_autogen_yuer_pay_desc">在客如云所有终端进行会员余额支付，均无须输入会员消费密码</string>
+	<string name="report_return_goods">退货</string>
+	<string name="kmember_rule_input_amount_zengsong">请输入%1$s 赠送金额</string>
+	<string name="inventoryui_autogen_mendian_name_id">门店名称/编号</string>
+	<string name="report_bo_sale_total">销售金额(总)</string>
+	<string name="kreport_autogen_beizhu">备注</string>
+	<string name="kmember_autogen_tianjiafenzu">添加分组</string>
+	<string name="leak_canary_toast_heap_dump">Dumping memory, app will freeze. Brrrr.</string>
+	<string name="kmember_density_pay">2.免密支付</string>
+	<string name="takeout_immediate_order_time">立即送达,已下单%s</string>
+	<string name="report_member_score">会员积分</string>
+	<string name="kmember_group_name">分组名称</string>
+	<string name="report_sale_order_count">订单笔数(总)</string>
+	<string name="leak_canary_display_activity_label">Leaks</string>
+	<string name="commodity_autogen_peiliao_name">配料名称</string>
+	<string name="commodity_autogen_anzhushuhua">按住 说话</string>
+	<string name="leak_canary_leak_excluded">[Excluded] %1$s leaked %2$s</string>
+	<string name="kmember_autogen_chuzhiyuer">储值余额</string>
+	<string name="report_yuan_ren">(%1$s/人)</string>
+	<string name="kmember_stored_seq">3.储值扣款顺序</string>
+	<string name="kmember_autogen_fenzumingcheng">分组名称：</string>
+	<string name="commodity_autogen_sub_price">减价</string>
+	<string name="kmember_autogen_update_sv_succ">会员储值更新成功</string>
+	<string name="kreport_autogen_anrixuanze">按日选择</string>
+	<string name="drsk_receiver_address">收货地址</string>
+	<string name="kemember_shichu">实储</string>
+	<string name="takeout_receive_partial_success">成功领取%1$d张订单，%2$d张订单领取失败</string>
+	<string name="kmember_no_data">暂无数据</string>
+	<string name="report_bo_income_biz_bo">营业收入(元)</string>
+	<string name="kmember_density_pay1">免密支付</string>
+	<string name="takeout_source_type_wechat">微信</string>
+	<string name="leak_canary_class_has_leaked">%1$s leaked %2$s</string>
+	<string name="cashier_static_code_report_position">如需查看静态码收款统计，请到【报表-静态码收款统计表】。 点击前往</string>
+	<string name="takeout_delivering_unpaid">送达并收款</string>
+	<string name="kmember_autogen_huiyuanzhuangtai">会员状态：</string>
+	<string name="staff_role_comment_cashier">拥有门店点单、退货、查看订单、收银权限。</string>
+	<string name="kmember_autogen_upgrade_vip_right">升级成为会员，享受会员权益</string>
+	<string name="leak_canary_permission_not_granted">Please grant external storage permission, otherwise memory leaks will not be detected.</string>
+	<string name="kmember_autogen_yingshoujiner">应收金额</string>
+	<string name="kmember_stored_value_setting">1.储值规则设置</string>
+	<string name="tradeui_anonymous_member">匿名会员</string>
+	<string name="kmember_autogen_bulu">补录</string>
+	<string name="smart_basic_efficiency_title">基础提效</string>
+	<string name="report_sale_tips">"订单笔数: 统计已完成的订单笔数之和，包括已完成已支付、已退货已支付、已退货已退款、已反结账已支付、已挂账\n\n 销售金额: 统计已完成订单对应的销售金额，销售金额包括无单收银、商品销售金额、附加费、收押金、附加消费税"</string>
+	<string name="takeout_delivery_work_on">上班签到</string>
+	<string name="businesssetting_autogen_pls_qingxuanze">请选择</string>
+	<string name="cashier_receipt_record">收款记录</string>
+	<string name="kmember_vip_level">会员等级(%1$s)</string>
+	<string name="report_bo_ov_count">笔数</string>
+	<string name="businesssetting_autogen_ah_no_data">咦…没有任何内容，先去逛逛别的吧</string>
+	<string name="tradeui_member">会员：</string>
+	<string name="kreport_hint_static_code_items">不含静态码实收%1$s笔</string>
+	<string name="account_ui_autogen_verify_phone">请验证手机号</string>
+	<string name="takeout_batch_receive">批量操作</string>
+	<string name="takeout_source_type_ele_star">饿了么星选</string>
+	<string name="report_stored_pay">含储值消费</string>
+	<string name="takeout_work_on_info">确认已经上班？签到后会收到外卖配送订单</string>
+	<string name="kreport_autogen_zongdanshu">总单数：</string>
+	<string name="inventoryui_autogen_queding">确定</string>
+	<string name="kmember_huiyuanjia_format">会员价:%1$S</string>
+	<string name="str_groupcoupon_facevalue">面值：%1$s</string>
+	<string name="account_ui_autogen_new_pass">新密码:</string>
+	<string name="kreport_autogen_yiguazhang">已挂账</string>
+	<string name="commodity_autogen_zuofafenlei">做法分类</string>
+	<string name="kmember_autogen_querenbulu">确认补录</string>
+	<string name="report_account_receive">销账收款</string>
+	<string name="kmember_autogen_bulushichujiner">补录实储金额</string>
+	<string name="takeout_navigation">导航地址</string>
+	<string name="staff_choose_auth">请选择权限</string>
+	<string name="kreport_autogen_anbishupaixu">按笔数排序</string>
+	<string name="leak_canary_notification_message">Click for more details</string>
+	<string name="kmember_vip_enabled">启用中</string>
+	<string name="takeout_invoice_rise">发票抬头</string>
+	<string name="smart_platform_drainage_title">平台引流</string>
+	<string name="cashier_old_receipt_record_report">原有【收款记录】中的报表，已包含在营业收入/收款统计等报表中，不再单独统计</string>
+	<string name="takeout_source_type_meituan">美团外卖</string>
+	<string name="kreport_autogen_anyuexuanze">按月选择</string>
+	<string name="commodity_autogen_gengming_or_sort">更名或排序</string>
+	<string name="takeout_invalid_title">已失效(%1$d)</string>
+	<string name="commodity_autogen_shuru_beizhu">输入备注</string>
+	<string name="kmember_autogen_xianjinzhifu">现金支付</string>
+	<string name="staff_confirm">确定</string>
+	<string name="cashier_start_pay">发起收款</string>
+	<string name="report_title_zqkdj">折前客单价</string>
+	<string name="businesssetting_autogen_join_order">加入订单</string>
+	<string name="cashier_old_receipt_record_position">原有【收款记录】将在后续版本加入订单中心，敬请期待。此前请到「商家后台-订单管理」查看</string>
+	<string name="kmember_no_scret_pay">免密支付开关开启时：</string>
+	<string name="kmember_fit_store">适用门店:</string>
+	<string name="report_autogen_pm_view_prop">点击查看占比</string>
+	<string name="takeout_navigating">导航中</string>
+	<string name="kreport_autogen_shouxufei">手续费</string>
+	<string name="businesssetting_autogen_reload">重新加载</string>
+	<string name="business_month">月</string>
+	<string name="kmember_autogen_one_shop_desc">①若只存在一家门店，建议添加一个分组；</string>
+	<string name="commodity_autogen_lirumoren_daxiao">例如：默认/大小</string>
+	<string name="takeout_source_type_didi">滴滴</string>
+	<string name="kmember_autogen_vip_in_group">该会员所在的储值分组：</string>
+	<string name="takeout_work_on_status_check">请先上班签到</string>
+	<string name="commodity_autogen_mei_fen">/份</string>
+	<string name="str_groupcoupon_confirm_and_pay">确认，立即核销</string>
+	<string name="kreport_autogen_xuanzemendian">选择门店</string>
+	<string name="kreport_autogen_zongtiaoshu">总条数</string>
+	<string name="kreport_autogen_view_more_store">查看更多门店>></string>
+	<string name="kreport_autogen_jieshushijian">结束时间:</string>
+	<string name="trade_order_pending">待处理</string>
+	<string name="businesssetting_select_table_not_empty">还未选择桌台</string>
+	<string name="kreport_amount_in_shop2">"店内总收款\n%2$s%1$s"</string>
+	<string name="kmember_autogen_how_to_store_value">如何设置储值规则？</string>
+	<string name="dinner_order_preview">订单预览</string>
+	<string name="kreport_srl_header_update">上次更新 M-d HH:mm</string>
+	<string name="inventory_purchase_apply_summary">采购申请单</string>
+	<string name="kmember_creat_group_continue_setup">继续设置储值规则</string>
+	<string name="report_card_pay">含卡费收款</string>
+	<string name="takeout_order_time_day">天</string>
+	<string name="kmember_autogen_manzengguize">满赠规则</string>
+	<string name="str_groupcoupon_title_meituan">美团验券</string>
+	<string name="takeout_call_customer">呼叫客户</string>
+	<string name="kmember_autogen_querenkouchu">确认扣除</string>
+	<string name="businesssetting_autogen_zhi">至</string>
+	<string name="smart_business_platform_title_info_elm">享亿级平台流量 开店接单</string>
+	<string name="kreport_autogen_yuanzhuo_zero">0元/桌</string>
+	<string name="kmember_autogen_add_or_modify_group">添加或修改规则</string>
+	<string name="kmember_autogen_tiao_item">条</string>
+	<string name="kmember_autogen_wu">无</string>
+	<string name="kreport_hint_static_code_amount">不含静态码实收￥%1$s</string>
+	<string name="kmember_autogen_tianjia">添加</string>
+	<string name="businesssetting_autogen_error">内部错误</string>
+	<string name="takeout_order_platform">下单平台</string>
+	<string name="app_setting_static_code_alert_for_disable">未开通静态码收款，请前往【移动支付-收款码管理】开通</string>
+	<string name="smart_business_basic_scan_info">顾客扫码点餐结账，节约人力</string>
+	<string name="kmember_autogen_final_chuzhi_yuer">最终储值余额</string>
+	<string name="kreport_bo_money_percent">金额占比</string>
+	<string name="kmember_xianer">限额</string>
+	<string name="str_groupcoupon_title_nuomi">糯米验券</string>
+	<string name="kmember_title_hint">提示</string>
+	<string name="dinner_multi_chupiaokou">出票口(可多选)</string>
+	<string name="commodity_autogen_dating">大厅</string>
+	<string name="leak_canary_no_leak_text">The GC was being lazy.</string>
+	<string name="drsk_delivery_platform_baidu">百度外卖</string>
+	<string name="kmember_autogen_kaiqi_add_yingshou">开启后设置对应的赠送金额，激励顾客储值，增加营收</string>
+	<string name="takeout_pick_up">已取货</string>
+	<string name="kmember_autogen_big_no_pass_warning">若订单金额大于限额，使用会员储值余额支付时，仍需输入会员消费密码（建议：由于免密支付具有一定风险，限额设置在200元以内较为安全）</string>
+	<string name="smart_goods_pricing_strategy">商品定价策略</string>
+	<string name="businesssetting_autogen_queding">确定</string>
+	<string name="kmember_autogen_guizeshuoming">规则说明</string>
+	<string name="leak_canary_storage_permission_activity_label">Storage permission</string>
+	<string name="takeout_tips_select_wait_distribution_order">请选择待配单</string>
+	<string name="takeout_order_time_minute">分钟</string>
+	<string name="kreport_autogen_shouqi">收起</string>
+	<string name="app_main_cloud_loan">云贷款</string>
+	<string name="staff_autogen_no_tel_permission">没有打电话权限</string>
+	<string name="leak_canary_analysis_failed">Leak analysis failed</string>
+	<string name="smart_details">详情</string>
+	<string name="smart_business_list_cx_info">同行畅销商品榜单，实时追击热门商品</string>
+	<string name="kmember_shuru_fanwei">请输入1～999999的正整数</string>
+	<string name="staff_role_comment_delivery_clerk">拥有接单和配送权限。</string>
+	<string name="str_groupcoupon_title_koubei">口碑验券</string>
+	<string name="kmember_autogen_kouchuzengsongjiner">扣除赠送金额</string>
+	<string name="kmember_close">关闭</string>
+	<string name="takeout_receive_failed">领取失败！</string>
+	<string name="kreport_autogen_xiaozhangshishou">销账实收:</string>
+	<string name="unknown_device">未知设备</string>
+	<string name="account_confirm_login_big_screen">确认登录数据大屏</string>
+	<string name="businesssetting_autogen_xuanzeshijianduan">选择时间段</string>
+	<string name="kmember_autogen_zengsongjiner">赠送金额</string>
+	<string name="takeout_source_type_open_platform">开放平台</string>
+	<string name="account_alter_password_failed">密码修改失败</string>
+	<string name="kmember_autogen_kouchuliyou">扣除理由</string>
+	<string name="account_alter_password_success">密码修改成功</string>
+	<string name="leak_canary_delete">Delete</string>
+	<string name="kreport_autogen_start_end_diff_limit">*结束时间和开始时间的相差不超过31天</string>
+	<string name="staff_role_comment_waiter">拥有门店点单、退货、查看订单权限。</string>
+	<string name="smart_business_platform_title_elm">饿了么开店</string>
+	<string name="takeout_paystatus_unpaid">货到付款</string>
+	<string name="businesssetting_autogen_choose_one_zhishao">至少选择其中一项</string>
+	<string name="commodity_autogen_mingcheng">名称</string>
+	<string name="kreport_autogen_xzssy">销账实收(元)</string>
+	<string name="takeout_finish_title">已完成(%1$d)</string>
+	<string name="app_setting_static_code_receipt_notification">静态码收款通知</string>
+	<string name="account_close">关闭</string>
+	<string name="home_my_invoice_have_invoiced_quota_manual">线下已开票</string>
+	<string name="commodity_autogen_shuru_dafen">输入规格，例如：大份</string>
+	<string name="kreport_autogen_cl_shoukuanbishu">收款笔数:</string>
+	<string name="commodity_autogen_fou">否</string>
+	<string name="kreport_autogen_tongpai">铜牌</string>
+	<string name="mobileview_autogen_nodata">咦...没有任何内容，先去逛逛别的吧</string>
+	<string name="businesssetting_beyond_max_chars">已超出最大输入字数</string>
+	<string name="kmember_autogen_buluqueren">补录确认</string>
+	<string name="kmember_autogen_chuzhiguizeshengxiao">储值规则生效</string>
+	<string name="businesssetting_save_fail">保存失败</string>
+	<string name="businesssetting_table_number_no_empty">桌数不能为空</string>
+	<string name="kmember_autogen_jifenhuoqu">积分获取：</string>
+	<string name="kmember_autogen_guizezidingyi_3">③规则自定义。建议设置奖励，例如：储值达100元，赠送10元。支持添加多条规则，设置多个储值阶梯</string>
+	<string name="drsk_delivery_platform_shunfeng">顺丰同城配送</string>
+	<string name="commodity_autogen_shuruleibie_name">输入类别名称</string>
+	<string name="businesssetting_autogen_join_zhekou">参与折扣</string>
+	<string name="commodity_autogen_fenleiming">分类名称</string>
+	<string name="kreport_autogen_dakuanriqi">打款日期</string>
+	<string name="commodity_price_enter_str">¥ 请输入</string>
+	<string name="report_bo_ov_amount">金额</string>
+	<string name="kreport_autogen_member_points_gain">会员积分获取</string>
+	<string name="commodity_autogen_beizhu">备注</string>
+	<string name="str_groupcoupon_date">有效期：%1$s</string>
+	<string name="account_ui_autogen_cur_store">当前门店名称</string>
+	<string name="commodity_autogen_chakanyingyong_moban">查看引用模板</string>
+	<string name="takeout_no_checked_hint">未有选中的选项</string>
+	<string name="report_order_source_tips">"订单来源：通过来源统计的已完成订单 ( 含退货退款 )\n\n销售金额：通过订单来源统计的订单数量，计算完成的金额，如果订单操作退款，需要减去销售金额 ( 计算规则和销售概况一致 )"</string>
+	<string name="kreport_autogen_comfirm">确认</string>
+	<string name="kreport_autogen_30_day">30天</string>
+	<string name="member_creat_group">创建储值分组</string>
+	<string name="kmember_no_choose_shop">没有可选择的门店</string>
+	<string name="kmember_jifen_dixian_format">积分抵现：%1$s积分=¥ %2$s</string>
+	<string name="takeout_delivery_invalid_order_no">订单编号：%1$s</string>
+	<string name="drsk_receiver">收货人</string>
+	<string name="drsk_deliverer">配送员</string>
+	<string name="kreport_autogen_kaishishijian">开始时间:</string>
+	<string name="kmember_autogen_chengzhangzhihuoqu">成长值获取：</string>
+	<string name="leak_canary_delete_all">Delete all</string>
+	<string name="account_reset_password">重置密码</string>
+	<string name="smart_view_check_format">主营业态：%1$s</string>
+	<string name="businesssetting_autogen_tianjiashiduan">添加时段</string>
+	<string name="app_setting_go_open">去开通</string>
+	<string name="commodity_autogen_pinpaiweidu_no_modify">品牌维度的属性不可修改！</string>
+	<string name="kmember_autogen_mendian">门店</string>
+	<string name="report_group_report">集团报表</string>
+	<string name="trade_order_sales_refunded">已退货</string>
+	<string name="takeout_wait_title">待取货(%1$d)</string>
+	<string name="kmember_member_disabled">该会员已被停用；不可继续操作</string>
+	<string name="kemember_origin_chuzhiyuer_format">(原储值余额: %1$s %2$s)</string>
+	<string name="kreport_autogen_qushenqing">去申请</string>
+	<string name="smart_go_check">去检测</string>
+	<string name="smart_business_platform_title_info_kuaishou">边直播边卖货,流量轻松变现</string>
+	<string name="takeout_delivery_work_off">下班签出</string>
+	<string name="kmember_kk_xian_zeng_hou_chu">先赠送后实储</string>
+	<string name="str_groupcoupon_price">售价：%1$s</string>
+	<string name="app_move_pay_disable">未开通移动支付</string>
+	<string name="kmember_koukuan_shunxu">扣款顺序:</string>
+	<string name="drsk_delivery_platform_dada">达达配送</string>
+	<string name="kreport_autogen_input_goods_name">请输入商品名称</string>
+	<string name="kmember_kk_mianmi_koukuan_bili">免密支付未开启;扣款顺序:按比例</string>
+	<string name="takeout_delivery_num">配送单号</string>
+	<string name="kmember_vip_disabled">停用中</string>
+	<string name="takeout_receive_success">领取成功！</string>
+	<string name="report_new_member">新增会员</string>
+	<string name="takeout_order_detail">订单信息</string>
+	<string name="kmember_jifen_gain_format">积分获取：¥ %1$s = %2$s 积分</string>
+	<string name="_uuid">00000</string>
+	<string name="staff_autogen_phone_empty">电话号码为空</string>
+	<string name="takeout_source_type_jd">京东</string>
+	<string name="kmember_autogen_bululiyou">补录理由</string>
+	<string name="commodity_tax_operate_desc">支持多选,全不选时表示不配置税种</string>
+	<string name="kmember_nousable_shop_note">当前品牌下的所有门店都存在于其他分组之中。您可以前往【我的】新增门店；或如需更换门店分组，请前往商家后台操作。</string>
+	<string name="businesssetting_autogen_qingshuru_pls">请输入</string>
+	<string name="kmember_autogen_buluzengsongjiner">补录赠送金额</string>
+	<string name="kmember_stored_3">先扣除赠送，后扣除实储</string>
+	<string name="smart_business_list_xp_info">同城新品销量榜单，推陈出新利器</string>
+	<string name="kmember_autogen_need_500_upgrade">需要 500 成长值升值此等级</string>
+	<string name="commodity_autogen_liru_jifenshu">例如：五分熟、七分熟</string>
+	<string name="leak_canary_no_leak_title">No leak found</string>
+	<string name="commodity_autogen_fanbenbianhao">范本编号：</string>
+	<string name="kreport_autogen_yinpai">银牌</string>
+	<string name="report_store_vip_account">挂账销账报表</string>
+	<string name="leak_canary_share_with">Share with…</string>
+	<string name="takeout_source_type_dianping">大众点评</string>
+	<string name="smart_view_check_last_point">上次得分：%1$s</string>
+	<string name="kmember_autogen_chuzhimanzeng">储值满赠</string>
+	<string name="kmember_autogen_input_error">内容输入有误</string>
+	<string name="commodity_autogen_zhidaole">知道了</string>
+	<string name="kreport_autogen_quanbu">全部</string>
+	<string name="takeout_tips_calculate_route_failure">路径规划失败，是否继续配送？</string>
+	<string name="businesssetting_no_net">当前无网络</string>
+	<string name="drsk_delivery_time_right_now">立即送达</string>
+	<string name="kreport_autogen_jiaoyidanhao">交易单号:</string>
+	<string name="takeout_tips_gps">请先开启GPS定位功能</string>
+	<string name="commonkmobile_choose_time_period">选择时间段</string>
+	<string name="kreport_autogen_zhankai">展开</string>
+	<string name="trade_order_sales_paying">支付中</string>
+	<string name="report_no_group_permission">当前账号没有集团报表权限</string>
+	<string name="kreport_autogen_stat_date">统计时间: %1$s 至 %2$s</string>
+	<string name="kmember_autogen_store_value_desc_2">②若您的公司下包含多家门店，并想分别设置各自的储值规则，建议添加多个分组；</string>
+	<string name="kmember_autogen_shichujiner">实储金额</string>
+	<string name="takeout_receive_shop">取货门店 %1$d/%2$d</string>
+	<string name="businesssetting_autogen_zidingyi">自定义</string>
+	<string name="member_groups_questions_add_info">一或多个门店分组</string>
+	<string name="takeout_receive_task">领取配送任务</string>
+	<string name="kreport_autogen_xzjey">销账金额(元)</string>
+	<string name="drsk_delivery_platform_eleme">蜂鸟配送</string>
+	<string name="kreport_autogen_zidingyi">自定义:</string>
+	<string name="kmember_autogen_huiyuanjia">会员价：</string>
+	<string name="smart_business_data_compass_info">全面解读经营数据，小ON助手提建议</string>
+	<string name="kmember_autogen_mendianliebiao">门店列表：</string>
+	<string name="takeout_pick_up_batch">已取货(%1$d)</string>
+	<string name="kmember_zuiduo_20_item">最多只能新增20条</string>
+	<string name="commodity_autogen_dianji_gaijia">点击价格可修改</string>
+	<string name="dinner_format_service">(%1$s%%)</string>
+	<string name="app_setting_open_failed">开启失败</string>
+	<string name="takeout_source_type_pos">商家收银终端</string>
+	<string name="kreport_autogen_mendianshaixuan">门店筛选</string>
+	<string name="commodity_autogen_qingshuru">¥ 请输入</string>
+	<string name="account_ui_autogen_verify_origin_phone">请验证原来的手机号</string>
+	<string name="kry_about_protocol"><Data>&lt;a href=%1$s>《客如云用户服务协议》&lt;/a>和 &lt;a href=%2$s>《客如云隐私政策》&lt;/a></Data></string>
+	<string name="trade_order_pending_new">新订单</string>
+	<string name="leak_canary_could_not_save_text">LeakCanary was unable to save the analysis result.</string>
+	<string name="drsk_delivery_platform_meituan">美团配送</string>
+	<string name="report_people_tips">"就餐人数：根据堂食、外卖计算的就餐人数，反结账订单只统计反结新单的就餐人数\n折前客单价：折前客单价=优惠前销售金额/就餐人数\n来客数：全部订单中的顾客数量总计（包括作废订单，包括外卖订单客户数）"</string>
+	<string name="kmember_choose_shop">选择门店</string>
+	<string name="kmember_autogen_guize">规则</string>
+	<string name="kmember_stored_msg">实储指顾客实际储值部分，赠送指商家赠送部分</string>
+	<string name="commodity_tax_config_tax">配置税种</string>
+	<string name="kreport_autogen_leijigukefenxi">累计顾客分析</string>
+	<string name="account_modify_client_pwd_success">本次修改的「客户端密码」用于登录掌上客如云、客如云收银机</string>
+	<string name="businesssetting_not_set_order_source">第%1$s行还未设置订单来源</string>
+	<string name="commodity_autogen_woyaoxinzeng">+我要新增</string>
+	<string name="kreport_autogen_shoukuan_shouxufei">收款手续费</string>
+	<string name="leak_canary_failure_report">"Please report this failure to http://github.com/square/leakcanary\n"</string>
+	<string name="kmember_autogen_shezhiguize">设置规则</string>
+	<string name="kmember_autogen_chujihuiyuan">初级会员</string>
+	<string name="report_member_num">会员数量</string>
+	<string name="takeout_total">总计</string>
+	<string name="kreport_autogen_dakuanzhuangtai">打款状态</string>
+	<string name="kreport_autogen_zanwurenxiaoshuju">暂无人效数据哦~</string>
+	<string name="kreport_autogen_shijian">时间</string>
+	<string name="report_increase_num">会员新增数量</string>
+	<string name="commodity_autogen_lirubuyaoconghua">例如：不要葱花</string>
+	<string name="leak_canary_share_leak">Share info</string>
+	<string name="commodity_autogen_zuofaming_name">做法名称</string>
+	<string name="kmember_save_failed">保存失败</string>
+	<string name="kreport_bo_sort_by_money">按金额排序</string>
+	<string name="smart_business_platform_title_dy">抖音开店</string>
+	<string name="kreport_autogen_dafudu">大幅度</string>
+	<string name="kmember_old_power_mes">不支持旧版储值设置，请联系运维人员升级</string>
+	<string name="log_apply_org">申访问机构：</string>
+	<string name="kreport_autogen_xiaozhangyouhui">销账优惠:</string>
+	<string name="kmember_autogen_kouchu">扣除</string>
+	<string name="trade_order_sales">销货单</string>
+	<string name="commodity_not_allow">不允许</string>
+	<string name="kreport_autogen_xiaoshoue">销售额</string>
+	<string name="mobileui_common_confirm">确定</string>
+	<string name="commodity_autogen_jiazaizhong">加载中</string>
+	<string name="kmember_autogen_shengri">生日 -</string>
+	<string name="kmember_autogen_chuzhijinerbulu">储值金额补录</string>
+	<string name="commodity_autogen_daleimingcheng">大类名称</string>
+	<string name="takeout_source_type_call_centert">呼叫中心</string>
+	<string name="businesssetting_autogen_anjiaojie">暗交接</string>
+	<string name="kreport_autogen_xiaoyouhuashuo">小ON有话说：</string>
+	<string name="kreport_autogen_xiaozhangliyou">销账理由:</string>
+	<string name="home_my_invoice_apply_delete">作废发票</string>
+	<string name="kmember_autogen_peizhixianer">2、配置限额</string>
+	<string name="report_creating">报表建设中...</string>
+	<string name="commodity_autogen_qingxuanze">请选择</string>
+	<string name="member_disabled_meber">该会员已被停用</string>
+	<string name="businesssetting_set_at_least_one_period">至少设置一个时段</string>
+	<string name="leak_canary_leak_list_title">Leaks in %s</string>
+	<string name="trade_order_sales_paid">已结账</string>
+	<string name="smart_business_platform_title_info_mt">百万商户开店入驻的共同选择</string>
+	<string name="takeout_order_time_hour">小时</string>
+	<string name="commodity_autogen_add_price">加价</string>
+	<string name="kmember_mianmi_close_warning">关闭免密支付后，会员进行储值消费时必须输入密码，是否确认？</string>
+	<string name="kmember_autogen_leijichuzhi">累计储值</string>
+	<string name="kreport_autogen_redu">热度 - %</string>
+	<string name="takeout_receive_detail">领取并继续扫描</string>
+	<string name="staff_confirm_to_call">确认拨打</string>
+	<string name="kreport_autogen_input_storeno_storename_search">请输入门店编号/门店名称搜索</string>
+	<string name="businesssetting_max_value_can_set">最大值可设置为</string>
+	<string name="takeout_invalid_order_title">已失效</string>
+	<string name="kmember_autogen_liyoubitian">理由必填</string>
+	<string name="kmember_autogen_kouchushichujiner">扣除实储金额</string>
+	<string name="kmember_need_growth_format">需要%1$s成长值升至此等级</string>
+	<string name="kreport_autogen_cl_tuikuanbishu">退款笔数:</string>
+	<string name="smart_business_consultant_title_info">多维分析 精准指引</string>
+	<string name="businesssetting_not_set_time">第%1$s行还未设置时间段</string>
+	<string name="account_ui_autogen_input_new_phone">请输入新的手机号</string>
+	<string name="commodity_autogen_shangpin_guanli">商品管理</string>
+	<string name="drsk_delivery_time">送达时间</string>
+	<string name="kmember_autogen_yuan">元</string>
+	<string name="report_store_list">门店列表</string>
+	<string name="app_push_tips_authorize">客如云工作人员%1$s在%2$s申请访问%3$s的商家后台及掌上客如云，时长%4$s小时，同意授权吗？&lt;br/>申请访问：%5$s</string>
+	<string name="app_setting_message_notification">消息通知</string>
+	<string name="commodity_autogen_shangpin_danwei">商品单位</string>
+	<string name="kreport_autogen_xzyhy">销账优惠(元)</string>
+	<string name="businesssetting_autogen_disanfang">第三方</string>
+	<string name="report_store_group">门店分组</string>
+	<string name="account_ui_autogen_type">类型</string>
+	<string name="takeout_work_off_info">确认下班？签出后会不再收到外卖配送订单</string>
+	<string name="staff_role_comment_inventory_administrator">拥有门店库存管理权限，可执行基础销存等。</string>
+	<string name="account_ui_autogen_input_pass">请输入密码</string>
+	<string name="commodity_autogen_shurudanwei">输入单位</string>
+	<string name="trade_order_sales_abandoned">已作废</string>
+	<string name="businesssetting_autogen_mingjiaojie">明交接</string>
+	<string name="kreport_autogen_huiyuanshuju">会员数据</string>
+	<string name="commodity_ck_type">做法分类</string>
+	<string name="home_my_invoice_have_invoiced_quota_online">线上已开票</string>
+	<string name="businesssetting_autogen_calc_way">计算方式</string>
+	<string name="kmember_edit_limit10">不超过10个字</string>
+	<string name="businesssetting_input_arrange">输入的范围为%1$s到99</string>
+	<string name="commodity_autogen_shuruzuofa">输入做法，例如：微辣</string>
+	<string name="kmobile_consume_mode_exc">EXC</string>
+	<string name="takeout_source_type_baidu_zhida">百度直达</string>
+	<string name="kmember_autogen_buxiane">不限额</string>
+	<string name="businesssetting_autogen_yudingbaoliu_time">预订保留时长</string>
+	<string name="business_unified_setup">统一设置</string>
+	<string name="kmember_autogen_xianer">限额</string>
+	<string name="kreport_autogen_bzbsb">挂账笔数(笔)</string>
+	<string name="takeout_delivery_finish">送达呼叫客户时间：%1$s</string>
+	<string name="takeout_delivery_success">配送成功！</string>
+	<string name="kreport_autogen_yuanren_zero">0元/人</string>
+	<string name="kreport_autogen_seven_day">7天</string>
+	<string name="staff_role">员工角色</string>
+	<string name="app_main_service_market">服务市场</string>
+	<string name="kreport_autogen_more">更多</string>
+	<string name="home_my_invoice_have_invoicinga">开票中</string>
+	<string name="kmember_add">添加</string>
+	<string name="leak_canary_delete_all_leaks_title">Are you sure you want to delete all leaks?</string>
+	<string name="kemember_yiguazhang_format">已挂账¥ %1$s</string>
+	<string name="commodity_allow">允许</string>
+	<string name="kmember_choose_shop_limit">仅可选择未分组的门店</string>
+	<string name="drsk_delivery_platform">配送方式</string>
+	<string name="kmember_autogen_shiyongguize">使用规则</string>
+	<string name="kreport_autogen_jiesuanjier">结算金额</string>
+	<string name="kreport_bo_bishu_percent">笔数占比</string>
+	<string name="staff_role_comment_shop_in_charge">拥有门店的所有权限，包含点单收银、查看数据报表、门店管理等。</string>
+	<string name="account_ui_autogen_confirm_pass">确认密码:</string>
+	<string name="commodity_autogen_lirudafengxiaofeng">例如：大份、小份</string>
+	<string name="kmember_autogen_anbili">按比例</string>
+	<string name="mobileview_autogen_reload">重新加载</string>
+	<string name="kmember_nousable_shop">不可创建分组</string>
+	<string name="kmember_autogen_jifendixian">积分抵现：</string>
+	<string name="businesssetting_autogen_confirm">确认</string>
+	<string name="report_refund_num">退款笔数</string>
+	<string name="inventoryui_autogen_yaohuoxiadan_tip">要货下单前，请仔细核对剩余库存并视情况扣减，以免造成不必要的库存损失。</string>
+	<string name="tradeui_member_disable">该会员已被停用</string>
+	<string name="kemember_left_format">剩余 %1$s</string>
+	<string name="commodity_autogen_shurufen_leimingcheng">输入分类名称</string>
+	<string name="report_member_data_overview">会员数据概览</string>
+	<string name="smart_business_platform_title_mt">美团开店</string>
+	<string name="kmember_pay_setting">1、配置不限额</string>
+	<string name="leak_canary_could_not_save_title">Could not save result.</string>
+	<string name="kmember_autogen_fenzuxiangqing">分组详情</string>
+	<string name="leak_canary_permission_notification_text">Click to enable storage permission for %s.</string>
+	<string name="kreport_hint_exclude_static_code">*以下数据均不含静态码实收￥%1$s (%2$s笔)*</string>
+	<string name="takeout_expected_service">期望送达</string>
+	<string name="takeout_receive_tasks">领取配送任务(%1$d)</string>
+	<string name="dinner_tax_mode_inc">INC</string>
+	<string name="business_week">周</string>
+	<string name="kmember_autogen_no_coupons">暂无可用优惠券</string>
+	<string name="report_sale_account_tips">销售金额=商品金额+做法变价</string>
+	<string name="businesssetting_autogen_jiaojiefangshi">交接方式</string>
+	<string name="commodity_autogen_taocanbihan">套餐必选</string>
+	<string name="businesssetting_keep_at_least_one">至少保留一条数据</string>
+	<string name="takeout_order_time">点单时间</string>
+	<string name="commodity_autogen_bubian">不变</string>
+	<string name="home_invoice_invalid_note">确定要作废吗</string>
+	<string name="report_business_overview_report">收款统计报表</string>
+	<string name="smart_business_list_zx_info">哪些商品不受市场追捧？来这里看看</string>
+	<string name="kmember_autogen_dangqianchuzhiyuer">当前储值余额：</string>
+	<string name="leak_canary_notification_channel">LeakCanary</string>
+	<string name="business_day">天</string>
+	<string name="leak_canary_permission_notification_title">Leak detected, need permission</string>
+	<string name="kmember_all_shops">全部门店(%1$s)</string>
+	<string name="commodity_autogen_meirishoumailiang">每日售卖量</string>
+	<string name="commodity_autogen_zanwufenlei">暂无分类，请您新增</string>
+	<string name="smart_business_basic_mobile_pay_info">顾客扫码付款，提升结账效率</string>
+	<string name="mobileview_autogen_store">门店</string>
+	<string name="kreport_autogen_changqi">长期</string>
+	<string name="businesssetting_reselect_time">与其他时间有交集请重新选择时间</string>
+	<string name="business_time_period_setting">分时段设置</string>
+	<string name="commodity_tax_format">%%%1$s</string>
+	<string name="app_setting_static_code_hint">开启后，将收到静态码收款的通知</string>
+	<string name="kreport_autogen_jinnianxiaoshouqushi">今年销售趋势</string>
+	<string name="kreport_autogen_wanyuan">万元</string>
+	<string name="takeout_delivering_title">配送中(%1$d)</string>
+	<string name="commodity_autogen_shuruleibie">输入类别</string>
+	<string name="kreport_bo_order_sorce">订单来源</string>
+	<string name="commodity_autogen_shi">是</string>
+	<string name="oc_source">来源:</string>
+	<string name="leak_canary_share_heap_dump">Share heap dump</string>
+	<string name="kreport_autogen_zongshoukuan">总收款</string>
+	<string name="smart_business_help_title_info">大数据分析经营状况，提供智能决策建议</string>
+	<string name="kreport_autogen_dangqianwancheng">当前完成 10%</string>
+	<string name="kmember_stored_1">按比例（同时扣除）</string>
+	<string name="businesssetting_autogen_dingdanlaiyuan">订单来源</string>
+	<string name="cashier_static_code_push_position">原有【推送收款消息】开关，已迁移至【首页-我的-设置】中。 点击前往</string>
+	<string name="kmember_need_growth_gain_format">成长值获取：¥ %1$s = %2$s 成长值</string>
+	<string name="kreport_autogen_caozuoren">操作人</string>
+	<string name="kmember_autogen_yingshou">应收</string>
+	<string name="kmember_autogen_chuzhiyuer_error">储值余额有误？</string>
+	<string name="takeout_order_num">订单编号</string>
+	<string name="businesssetting_max_people_num_not_empty">最大人数不能为空</string>
+	<string name="kmember_autogen_weishezhi">未设置</string>
+	<string name="report_static_code_receipt_statistic">静态码收款统计表</string>
+	<string name="inventoryui_autogen_mendian">门店</string>
+	<string name="businesssetting_hint">提示</string>
+	<string name="commodity_tax_batch_config_tax">批量配置税种</string>
+	<string name="kmobile_consume_mode_inc">INC</string>
+	<string name="kmember_individual">个</string>
+	<string name="kmember_bu_xianer">不限额</string>
+	<string name="businesssetting_goto_set">去设置</string>
+	<string name="report_stored_fee">储值与卡费收款</string>
+	<string name="account_ui_autogen_zilei">子类</string>
+	<string name="kreport_autogen_yingyeshuju">营业数据</string>
+	<string name="kmember_mianfei_weikaiqi">免密支付未开启,</string>
+	<string name="kmember_autogen_kouchuqueren">扣除确认</string>
+	<string name="smart_business_price_help_info">大数据智能计算同行定价策略</string>
+	<string name="staff_cancel">取消</string>
+	<string name="kreport_select_time_period">选择时间段</string>
+	<string name="businesssetting_queue_name_not_empty">队列名称不能为空</string>
+	<string name="kmember_autogen_chuzhijiner">储值金额</string>
+	<string name="commodity_autogen_tianjiafenzu">添加分组</string>
+	<string name="kmember_autogen_gengxinshijian">更新时间：</string>
+	<string name="drsk_delivery_time_except">%1$s送达</string>
+	<string name="report_business_tips">"营业收入：通过订单产生的销售收入，含挂账金额。( 营业收入=销售实收+挂账 )\n\n 销货与退货：销货指已完成已支付订单(含反结账原单)；退货指全部退和部分退订单(含反结账产生的退货单)"</string>
+	<string name="kmember_creat_group_info">添加分组说明</string>
+	<string name="kmember_store_value_empty_note">暂无储值分组，可点击右下角创建</string>
+	<string name="kreport_autogen_caozuoleixing">操作类型</string>
+	<string name="kreport_autogen_cl_shoukuan_shouxufei">收款手续费:</string>
+	<string name="account_modify_server_pwd_success">本次修改的「商家后台密码」用于登录客如云商家后台</string>
+	<string name="businesssetting_autogen_fit_table_area">适用桌台区域</string>
+	<string name="home_invoice_invalid_success">作废成功</string>
+	<string name="kreport_format_month_day">MM月dd日</string>
+	<string name="report_static_code_detail_items">明细</string>
+	<string name="report_yuan_table">(%1$s/桌)</string>
+	<string name="kreport_format_month_day_hour_min">MM月dd日 HH:mm</string>
+	<string name="staff_discount_permission">优惠权限</string>
+	<string name="smart_business_basic_scan">扫码点餐</string>
+	<string name="businesssetting_pls_input_valid_num">请输入有效数字</string>
+	<string name="trade_order_sales_unpaid">未结账</string>
+	<string name="smart_drainage_guide">引流提效指导</string>
+	<string name="takeout_source_type_baidu_map">百度地图</string>
+	<string name="commodity_autogen_peiliao">配料</string>
+	<string name="takeout_reserved_order_time">%s送达</string>
+	<string name="commodity_tax_name">税种:</string>
+	<string name="takeout_tips_navigation_not_arrived">还未到达目的地，是否确认送达？</string>
+	<string name="kreport_autogen_dangqianpaiming">当前排名</string>
+	<string name="take_out_all">全部</string>
+	<string name="account_ui_autogen_none">无</string>
+	<string name="report_rank_surface">商品销售统计表</string>
+	<string name="kreport_autogen_zero_yuan">+0元</string>
+	<string name="smart_brand_check_info">目前门店经营检测已开放，请前往门店</string>
+	<string name="smart_assistant_check_set_up">去设置</string>
+	<string name="inventoryui_autogen_kaishishijian">开始时间</string>
+	<string name="kmember_autogen_chuzhijinerkouchu">储值金额扣除</string>
+	<string name="commodity_autogen_lirutianladu">例如：辣度/甜度</string>
+	<string name="kmember_set_up">去设置</string>
+	<string name="commodity_autogen_qingshu_daily_shoumai">请输入每日售卖量</string>
+	<string name="drsk_delivery_platform_store">商家自送</string>
+	<string name="kreport_autogen_anzhouxuanze">按周选择</string>
+	<string name="smart_basic_efficiency_title_info">多解决方案，节约人力，提能增效</string>
+	<string name="kemember_include_free_format">(包含赠送金额：%1$s %2$s)</string>
+	<string name="dinner_tax_mode_exc">EXC</string>
+	<string name="kmember_autogen_guizeweishezhi">"…\n规则未设置"</string>
+	<string name="cashier_static_code_receipt">静态码收款</string>
+	<string name="takeout_scan">扫一扫</string>
+	<string name="kreport_autogen_dakuanjine">打款金额</string>
+	<string name="dinner_meber_disabled">该会员已被停用</string>
+	<string name="kmember_autogen_scan_me_money">扫一扫向我付钱哦</string>
+	<string name="home_my_invoice_preview_electronic_invoice_nor">电子普通发票</string>
+	<string name="kmember_stored_2">先扣除实储，后扣除赠送</string>
+	<string name="takeout_source_type_eleme">饿了么</string>
+	<string name="takeout_recover_navigate">继续导航</string>
+	<string name="report_table">(桌)</string>
+	<string name="kmember_autogen_qidongzhong">启动中</string>
+	<string name="leak_canary_excluded_row">[Excluded] %s</string>

@@ -3,7 +3,7 @@ import json
 import urllib.parse
 import chardet
 
-from org.ith.learn.util.TUtils import exec_cmd
+from org.ith.learn.util.TUtils import exec_cmd, auto_transascii10, read_xml_as_kce_list
 
 
 def str_of_simple():
@@ -107,7 +107,17 @@ def curl_trans(str_input):
 
 
 if __name__ == '__main__':
-    with open('/Users/lightman_mac/company/keruyun/oh_my_python/StudyPython/docs/pure/dinner_string.xml', 'r') as file:
-        trans = file.read()
-        trans = curl_trans(trans)
-        print(trans)
+    file_in = '/Users/lightman_mac/company/keruyun/oh_my_python/StudyPython/docs/pure/all_china_53510_apk_all_cn.xml'
+
+    kce_list = read_xml_as_kce_list(file_in)
+
+    with open(file_in, 'r') as rin:
+        lines = rin.readlines()
+        lines = lines[6220:6223]
+        origin = ''.join(lines)
+        print(origin)
+        th = lambda x: auto_transascii10(x), origin
+        print('lambda ',th[1])
+        print('lambda ',th)
+        transed = curl_trans(origin)
+        print(transed)

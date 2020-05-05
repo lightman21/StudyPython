@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--
+"送达时间：%1$s" = "Delivery time：%1$s";
+"立即送达" = "Deliver immediately";
+"储值金额" = "Stored value";
+"(包含赠送金额：%@%@）" = "(including the offered amount: %@ %@） ";
+"保存失败"="Save Error";
+"最多可配置20条规则"="Up to 20 rules can be configured";
+"结算银行清分行号" = "Settlement branch's account No.";
+"结算银行开户名称"="Settlement bank account name";
+"期望送达" = "Expect to derliver";
+"已失效" = "Invalidated";
+"已作废"="Abolished";
+"已结账"="Checked out";
+"支付中" = "In payment";
+"已退货"="Returned";
+"未结账"="Unpaid";
+"匿名顾客"="Anonymous customer";
+"共%@张"="Total %@ sheets";
+
+"来源:" = "Source :";
+
+
+
+
+-->
+<!--	IC卡只能挥卡或者插卡 -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- 位 -->
+	<string name="batmancard_ic_should_spend_insert">IC卡只能挥卡或者插卡</string>
+<!--	IC卡只能挥卡或者插卡 -->	<string name="batmancard_ic_should_spend_insert">IC card can only be waved or inserted</string>
+
+	<string name="business_position">位</string>
+
+
+
+
+<!-- 位 -->	<string name="business_position">Decimals</string>
+<!--	IC卡只能挥卡或者插卡 -->	<string name="batmancard_ic_should_spend_insert">IC card can only be waved or inserted</string>
+<!-- 送达时间 --><string name="drsk_delivery_time">Delivery time</string>
+<!-- %1$s送达 -->	<string name="drsk_delivery_time_except">%1$s Delivery</string>
+<!-- 立即送达 --><string name="drsk_delivery_time_right_now">Deliver immediately</string>
+<!-- 芯烨58mm -->	<string name="klight_bluetooth_device_xinhua">Xprinter 58mm</string>
+<!-- 请输入%1$s 储值金额 -->	<string name="kmember_rule_input_amount_chuzhi">Pls enter %1$s Stored value</string>
+<!-- 请输入%1$s 赠送金额 -->	<string name="kmember_rule_input_amount_zengsong">Pls enter %1$s offered amount</string>
+<!-- 保存失败 -->	<string name="kmember_save_failed">Save error</string>
+<!-- 提示 -->	<string name="kmember_title_hint">Tips</string>
+<!-- 最多只能新增20条 -->	<string name="kmember_zuiduo_20_item">Up to 20 items can be added</string>
+<!-- 结算银行清分行号 -->	<string name="lefu_bank__qingfen_number">Settlement branch's account No.</string>
+<!-- 结算银行开户名称 -->	<string name="lefu_bank_open_name">Settlement bank account name</string>
+<!-- 申请访问功能： -->	<string name="log_apply_modules">Apply for access function:</string>
+<!-- 申访问机构: -->	<string name="log_apply_org">Apply for access institutions:</string>
+<!-- 来源: -->	<string name="oc_source">Source:</string>
+<!-- 收款方式 -->	<string name="print_pay_mode">Payment method</string>
+<!-- 等待头部刷新完成… -->	<string name="srl_footer_refreshing">Wait for the head refresh to complete…</string>
+<!-- 释放进入二楼 -->	<string name="srl_header_secondary">Release to the second floor</string>
+<!-- 共<font size="24">%s</font>张 -->	<string name="str_groupcoupon_maxcount_local">Total <font size="24">%1$s</font> sheets</string>
+<!-- 系统错误 -->	<string name="system_error">System error</string>
+<!-- 期望送达 -->	<string name="takeout_expected_service">Expect to derliver</string>
+<!-- 已失效 -->	<string name="takeout_invalid_order_title">Invalidated</string>
+<!-- 新订单 -->	<string name="trade_order_pending_new">New orders</string>
+<!-- 已作废 -->	<string name="trade_order_sales_abandoned">Abolished</string>
+<!-- 已结账 -->	<string name="trade_order_sales_paid">Checked out</string>
+<!-- 支付中 -->	<string name="trade_order_sales_paying">In payment</string>
+<!-- 已退货 -->	<string name="trade_order_sales_refunded">Returned</string>
+<!-- 未结账 -->	<string name="trade_order_sales_unpaid">Unpaid</string>
+<!-- 匿名会员 -->	<string name="tradeui_anonymous_member">Anonymous member</string>
+
+
+
+	<string name="drsk_delivery_time">送达时间</string>
+<!-- 送达时间 --><string name="drsk_delivery_time">Delivery time</string>
+	<string name="drsk_delivery_time_except">%1$s送达</string>
+<!-- %1$s送达 -->	<string name="drsk_delivery_time_except">%1$s Delivery</string>
+	<string name="drsk_delivery_time_right_now">立即送达</string>
+<!-- 立即送达 --><string name="drsk_delivery_time_right_now">Deliver immediately</string>
+
+	<string name="klight_bluetooth_device_xinhua">芯烨58mm</string>
+<!-- 芯烨58mm -->	<string name="klight_bluetooth_device_xinhua">Xprinter 58mm</string>
+	<string name="kmember_rule_input_amount_chuzhi">请输入%1$s 储值金额</string>
+<!-- 请输入%1$s 储值金额 -->	<string name="kmember_rule_input_amount_chuzhi">Pls enter %1$s Stored value</string>
+	<string name="kmember_rule_input_amount_zengsong">请输入%1$s 赠送金额</string>
+<!-- 请输入%1$s 赠送金额 -->	<string name="kmember_rule_input_amount_zengsong">Pls enter %1$s offered amount</string>
+	<string name="kmember_save_failed">保存失败</string>
+<!-- 保存失败 -->	<string name="kmember_save_failed">Save error</string>
+	<string name="kmember_title_hint">提示</string>
+<!-- 提示 -->	<string name="kmember_title_hint">Tips</string>
+	<string name="kmember_zuiduo_20_item">最多只能新增20条</string>
+<!-- 最多只能新增20条 -->	<string name="kmember_zuiduo_20_item">Up to 20 items can be added</string>
+	<string name="lefu_bank__qingfen_number">结算银行清分行号</string>
+<!-- 结算银行清分行号 -->	<string name="lefu_bank__qingfen_number">Settlement branch's account No.</string>
+	<string name="lefu_bank__qingfen_number_please">请输入清分行号</string>
+<!-- 请输入清分行号 -->	<string name="lefu_bank__qingfen_number_please">Pls enter Settlement branch's account No.</string>
+	<string name="lefu_bank_open_name">结算银行开户名称</string>
+<!-- 结算银行开户名称 -->	<string name="lefu_bank_open_name">Settlement bank account name</string>
+	<string name="log_apply_modules">申请访问功能：</string>
+<!-- 申请访问功能： -->	<string name="log_apply_modules">Apply for access function:</string>
+	<string name="log_apply_org">申访问机构：</string>
+<!-- 申访问机构: -->	<string name="log_apply_org">Apply for access institutions:</string>
+	<string name="oc_source">来源:</string>
+<!-- 来源: -->	<string name="oc_source">Source:</string>
+	<string name="print_pay_mode">收款方式</string>
+<!-- 收款方式 -->	<string name="print_pay_mode">Payment method</string>
+	<string name="srl_footer_refreshing">等待头部刷新完成…</string>
+<!-- 等待头部刷新完成… -->	<string name="srl_footer_refreshing">Wait for the head refresh to complete…</string>
+	<string name="srl_header_secondary">释放进入二楼</string>
+<!-- 释放进入二楼 -->	<string name="srl_header_secondary">Release to the second floor</string>
+	<string name="str_groupcoupon_maxcount_local">共<font size="24">%s</font>张</string>
+<!-- 共<font size="24">%s</font>张 -->	<string name="str_groupcoupon_maxcount_local">Total <font size="24">%1$s</font> sheets</string>
+	<string name="system_error">系统错误</string>
+<!-- 系统错误 -->	<string name="system_error">System error</string>
+	<string name="takeout_expected_service">期望送达</string>
+<!-- 期望送达 -->	<string name="takeout_expected_service">Expect to derliver</string>
+	<string name="takeout_invalid_order_title">已失效</string>
+<!-- 已失效 -->	<string name="takeout_invalid_order_title">Invalidated</string>
+	<string name="trade_order_pending_new">新订单</string>
+<!-- 新订单 -->	<string name="trade_order_pending_new">New orders</string>
+	<string name="trade_order_sales_abandoned">已作废</string>
+<!-- 已作废 -->	<string name="trade_order_sales_abandoned">Abolished</string>
+	<string name="trade_order_sales_paid">已结账</string>
+<!-- 已结账 -->	<string name="trade_order_sales_paid">Checked out</string>
+	<string name="trade_order_sales_paying">支付中</string>
+<!-- 支付中 -->	<string name="trade_order_sales_paying">In payment</string>
+	<string name="trade_order_sales_refunded">已退货</string>
+<!-- 已退货 -->	<string name="trade_order_sales_refunded">Returned</string>
+	<string name="trade_order_sales_unpaid">未结账</string>
+<!-- 未结账 -->	<string name="trade_order_sales_unpaid">Unpaid</string>
+	<string name="tradeui_anonymous_member">匿名会员</string>
+<!-- 匿名会员 -->	<string name="tradeui_anonymous_member">Anonymous member</string>
+
+
+
+
+	<string name="drsk_deliverer">配送员</string>
+	<string name="drsk_delivery_platform">配送方式</string>
+	<string name="drsk_delivery_platform_baidu">百度外卖</string>
+	<string name="drsk_delivery_platform_dada">达达配送</string>
+	<string name="drsk_delivery_platform_eleme">蜂鸟配送</string>
+	<string name="drsk_delivery_platform_meituan">美团配送</string>
+	<string name="drsk_delivery_platform_shunfeng">顺丰同城配送</string>
+	<string name="drsk_delivery_platform_store">商家自送</string>
+<string name="drsk_receiver">收货人</string>
+	<string name="drsk_receiver_address">收货地址</string>
+	<string name="home_invoice_explain_content">"一、发票开具规则：
+1、订单在完成回款后，请自己申请开票，电子发票在24小时内自动开具并发送至预留邮箱；
+2、发票开具金额为您实际支付金额；
+3、发票如申请了线下开票，整笔订单只能线下开具发票；
+4、如查找不到发票，请联系与您对接的客户经理
+
+二、发票补开、换开规则：
+1、发票可在1年内补开、换开1次；
+2、如需换开申请作废重开"</string>
+
+</resources>
