@@ -1,9 +1,15 @@
+import math
+
+import numpy
 import requests
 import json
 import urllib.parse
 import chardet
 
-from org.ith.learn.util.TUtils import exec_cmd, auto_transascii10, read_xml_as_kce_list
+from org.ith.learn.util.TUtils import exec_cmd, auto_transascii10, read_xml_as_kce_list, chunks
+
+from org.ith.learn.util.PXML import write_kce_to_path
+from org.ith.learn.util.TUtils import open_excel_as_list, read_xml_as_kce_list, KCEBean, highlight, modify_time, md5
 
 
 def str_of_simple():
@@ -109,15 +115,16 @@ def curl_trans(str_input):
 if __name__ == '__main__':
     file_in = '/Users/lightman_mac/company/keruyun/oh_my_python/StudyPython/docs/pure/all_china_53510_apk_all_cn.xml'
 
-    kce_list = read_xml_as_kce_list(file_in)
-
     with open(file_in, 'r') as rin:
         lines = rin.readlines()
-        lines = lines[6220:6223]
-        origin = ''.join(lines)
-        print(origin)
-        th = lambda x: auto_transascii10(x), origin
-        print('lambda ',th[1])
-        print('lambda ',th)
-        transed = curl_trans(origin)
-        print(transed)
+        chunked_lines = chunks(lines, 10)
+        after_lines = list()
+        for i in range(len(chunked_lines)):
+            origin = ''.join(chunked_lines[i])
+            print(type(origin), origin)
+            transed = curl_trans(origin)
+            print(type(transed), transed)
+            after_lines.extend(transed)
+
+        with open('transed.xml', 'w') as rout:
+            rout.writelines(after_lines)

@@ -1,6 +1,7 @@
 import collections
 import hashlib
 import html
+import math
 import os
 import re
 import sys
@@ -334,6 +335,25 @@ def md5(str_data):
     return hashlib.md5(str_data.encode(encoding='UTF-8')).hexdigest()
 
 
+def file_md5(path_of_file):
+    md5_l = hashlib.md5()
+    with open(path_of_file, mode="rb") as f:
+        by = f.read()
+        md5_l.update(by)
+        ret = md5_l.hexdigest()
+        return ret
+
+
+# import hashlib
+#
+# md5_l = hashlib.md5()
+# with open("path", mode="rb") as f:
+#     by = f.read()
+#
+# md5_l.update(by)
+# ret = md5_l.hexdigest()
+# print(ret)
+
 def get_cur_branch():
     ret = exec_cmd("git branch | grep \\* | awk '{print$2}'")
     return ret.strip()
@@ -428,6 +448,12 @@ def twrite_kce_to_path(list_of_kce, path, sort=False, key='cn'):
     except Exception as err:
         print("==================", path, err)
         raise
+
+
+def chunks(arr, m):
+    # split the arr into N chunks
+    n = int(math.ceil(len(arr) / float(m)))
+    return [arr[i:i + n] for i in range(0, len(arr), n)]
 
 
 if __name__ == '__main__':

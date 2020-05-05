@@ -66,8 +66,9 @@ def deal_single(aar, values_list):
 
 
 def main():
-    check_default_biggest()
-
+    # check_default_biggest()
+    now_date = time.strftime("%Y_%m_%d_%H:00", time.localtime())
+    print(now_date)
 
 if __name__ == '__main__':
     main()

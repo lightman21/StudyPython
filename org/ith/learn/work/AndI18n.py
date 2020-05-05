@@ -117,14 +117,12 @@ def gener_all_cn_by_apk(apk_path):
 
 
 def main():
-    # old_path = gener_all_cn_by_apk('/private/tmp/envGrd/533app-official-armeabi-v7a-envGrd.apk')
-    # new_path = gener_all_cn_by_apk('/private/tmp/envGrd/535app-official-armeabi-v7a-envGrd.apk')
+    # old_path = gener_all_cn_by_apk('/private/tmp/th/5350.apk')
+    # new_path = gener_all_cn_by_apk('/private/tmp/th/53510.apk')
     # diff_xml(new_path_xml=new_path, old_path_xml=old_path)
 
-    diff_xml(new_path_xml='/private/tmp/envGrd/535app-official-armeabi-v7a-envGrd_apk_all_cn.xml',
-             old_path_xml='/private/tmp/envGrd/533app-official-armeabi-v7a-envGrd_apk_all_cn.xml')
-
-    # print(to_pretty('award_for_recommendation', '推荐有奖'))
+    diff_xml(new_path_xml='/private/tmp/th/53510_apk_all_cn.xml',
+             old_path_xml='/private/tmp/th/5350_apk_all_cn.xml')
 
     pass
 
@@ -158,6 +156,8 @@ def diff_xml(new_path_xml, old_path_xml, out_path='/tmp/diffapk/'):
 
     for knew in new_diff:
         if knew.key not in key_old_diff:
+            if str(knew.key).startswith('leak_canary_'):
+                continue
             kce_new_added.append(knew)
             line = 'new added {} , {}\n'.format(knew.key, knew.cn)
             line = to_pretty(knew.key, auto_transascii10(knew.cn)) + '\n'
@@ -172,7 +172,7 @@ def diff_xml(new_path_xml, old_path_xml, out_path='/tmp/diffapk/'):
             if knew.key == kold.key:
                 if knew.cn != kold.cn:
                     kce_changed_value.append(knew)
-                    line = 'changed key:{:<30}, from: {:<10}to: {}\n'.format(knew.key, kold.cn, knew.cn)
+                    line = 'changed key:{:<30}, from: {:<10}  to: {}\n'.format(knew.key, kold.cn, knew.cn)
                     str_changed_line.append(line)
                     # print(line)
 
@@ -192,7 +192,8 @@ def diff_xml(new_path_xml, old_path_xml, out_path='/tmp/diffapk/'):
     tmp = list()
     for new in new_diff:
         new.cn = auto_transascii10(new.cn)
-        tmp.append(new)
+        if not str(new.key).startswith('leak_canary_'):
+            tmp.append(new)
 
     # for old in old_diff:
     #     tmp.append(old)
@@ -204,7 +205,7 @@ def diff_xml(new_path_xml, old_path_xml, out_path='/tmp/diffapk/'):
 
     write_kce_to_path(tmp, diff_out_name)
 
-    out_del_change_add = '_delete_changed_newadd_' + simple_old_name + simple_new_name + '.xml'
+    out_del_change_add = out_path + '_delete_changed_newadd_' + simple_old_name + simple_new_name + '.xml'
 
     out_lines = list()
     out_lines.append('deleted:\n')
