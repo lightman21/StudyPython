@@ -5,10 +5,12 @@ from org.ith.learn.OhMyEXCEL import excel_to_xml, xml_to_excel
 from org.ith.learn.scratch.Trans535 import big_dict
 from org.ith.learn.util.PXML import write_kce_to_path
 from org.ith.learn.util.TUtils import open_excel_as_list, read_xml_as_kce_list, KCEBean, highlight, modify_time, md5, \
-    auto_escape, extra_chinese, remove_punctuation, is_contains_chinese, exec_cmd, extract_string_array
+    auto_escape, extra_chinese, remove_punctuation, is_contains_chinese, exec_cmd, extract_string_array, chunk_in_slice
 import re
 import difflib
 import os
+
+from org.ith.learn.work.IBaidu import get_all_pics, loop_pics
 
 """
 <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/tradeui-kmobile-1.11.30-SNAPSHOT.aar/6287918f966595e8c2b0fe549739a62e/res" />
@@ -99,25 +101,39 @@ def main():
     do_extract()
 
 
-def do_extract():
+def daily_work():
     lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
     # lib_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/.idea/libraries'
-
     now_date = time.strftime("%Y_%m_%d", time.localtime())
     out_dir = './tmp/auto_extract_work/' + now_date + os.sep
-
     aar_path_dict = gener_aar_path_dict(lib_path)
     for aar_name, aar_abs_path in aar_path_dict.items():
-        values_path_list = extract_values(aar_abs_path)
+        values_path_list = extract_values_or_res(aar_abs_path)
         for path in values_path_list:
             # 如 values-en.xml
             values_name = path.split('/')[-1]
             extract_string_array(path, extract_path=out_dir + '__string_array_' + str(aar_name) + '__' + values_name)
-
             list_kce = read_xml_as_kce_list(path)
             kce_out_path = out_dir + str(aar_name) + '___' + values_name
             write_kce_to_path(list_kce, kce_out_path)
-            # print("out_path ", kce_out_path)
+
+
+def do_extract():
+    lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
+    aar_path_dict = gener_aar_path_dict(lib_path)
+
+    for aar_name, aar_abs_path in aar_path_dict.items():
+        res_path = extract_values_or_res(aar_abs_path, just_res=True)
+        print(aar_name, ',,,', res_path)
+        all_pics = get_all_pics(res_path)
+        if len(all_pics) > 0:
+            # print(all_pics)
+            for pic in all_pics:
+                name = pic.split('/')[-1]
+                command = 'cp {} {}'.format(pic, '/tmp/wan/' + str(aar_name) + '___' + name)
+                print(command)
+                exec_cmd(command)
+            pass
 
 
 def gener_aar_path_dict(path_of_search):
@@ -144,8 +160,9 @@ def gener_aar_path_dict(path_of_search):
     return aar_path_dict
 
 
-def extract_values(aar_path):
+def extract_values_or_res(aar_path, just_res=False):
     """
+    :param just_res 是不是只需要res目录
     :param aar_path 输入的aar在本地的缓存地址
         如 /Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries/Gradle__com_keruyun_mobile_dinner_2_25_70_SNAPSHOT_aar.xml
     :return 返回一个dict key为aar_name,value为相应路径的values目录列表
@@ -162,15 +179,11 @@ def extract_values(aar_path):
                     spt = ret.split(r'$USER_HOME$')
                     if len(spt) > 1:
                         res_path = home_path + spt[1]
+                        if just_res:
+                            return res_path
+
                         value_paths = get_values_path(res_path)
                         return value_paths
-
-                        # for path in value_paths:
-                        #     list_kce = read_xml_as_kce_list(path)
-                        #     out_path = './tmp/auto_extract_work/' + now_date + os.sep + aar_name + '___' + \
-                        #                path.split('/')[-1]
-                        #     print("out_path ", out_path)
-                        # write_kce_to_path(list_kce, out_path)
 
 
 def get_values_path(m_path):

@@ -6,7 +6,7 @@ import json
 import urllib.parse
 import chardet
 
-from org.ith.learn.util.TUtils import exec_cmd, auto_transascii10, read_xml_as_kce_list, chunks
+from org.ith.learn.util.TUtils import exec_cmd, auto_transascii10, read_xml_as_kce_list, chunk_in_slice
 
 from org.ith.learn.util.PXML import write_kce_to_path
 from org.ith.learn.util.TUtils import open_excel_as_list, read_xml_as_kce_list, KCEBean, highlight, modify_time, md5
@@ -117,7 +117,7 @@ if __name__ == '__main__':
 
     with open(file_in, 'r') as rin:
         lines = rin.readlines()
-        chunked_lines = chunks(lines, 10)
+        chunked_lines = chunk_in_slice(lines, 10)
         after_lines = list()
         for i in range(len(chunked_lines)):
             origin = ''.join(chunked_lines[i])

@@ -450,10 +450,24 @@ def twrite_kce_to_path(list_of_kce, path, sort=False, key='cn'):
         raise
 
 
-def chunks(arr, m):
+def chunk_in_slice(arr, m):
     # split the arr into N chunks
     n = int(math.ceil(len(arr) / float(m)))
     return [arr[i:i + n] for i in range(0, len(arr), n)]
+
+
+
+def make_sure_file_exist(path_of_file):
+    if os.path.exists(path_of_file):
+        with open(path_of_file, mode='r', encoding='utf-8') as ff:
+            print('文件存在', path_of_file)
+    else:
+        dir_path = os.path.dirname(path_of_file)
+        if not os.path.exists(dir_path):
+            os.makedirs(dir_path)
+
+        with open(path_of_file, mode='w', encoding='utf-8') as rout:
+            print('文件不存在,创建', path_of_file)
 
 
 if __name__ == '__main__':

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="payboard_error_wipe_zero_tip1">抹零金額必須小余支付金額</string>
+	<string name="payboard_error_wipe_zero_tip2">自定義抹零金額必須大於零</string>
+	<string name="payboard_failure">獲取失敗</string>
+	<string name="payboard_group_buy">團購券</string>
+	<string name="payboard_non_paymode">未知的支付方式</string>
+	<string name="payboard_parameter_error">參數錯誤</string>
+	<string name="payboard_paymode">選擇支付方式</string>
+	<string name="payboard_please_pick_cash">選擇現金支付方式</string>
+	<string name="payboard_print_electronic_invoice">打印發票二維碼</string>
+	<string name="payboard_try_again">点击重試</string>
+	<string name="payboard_wait_pay_amount">待支付金額</string>
+	<string name="payboard_wipe_amount">抹零金額</string>
+	<string name="payboard_wipe_amount_after">抹零後</string>
+	<string name="payboard_wipe_amount_before">抹零前</string>
+	<string name="payboard_wipe_zero">抹零</string>
+	<string name="payboard_wipe_zero_custom_define">自定義</string>
+	<string name="payboard_wipe_zero_fen">抹分</string>
+	<string name="payboard_wipe_zero_jiao">抹角</string>
+	<string name="payboard_wipe_zero_yuan">抹元</string>
+	<string name="paycenter_board_receivable_amount_label">應收</string>
+	<string name="paycenter_include_FS">(含消費稅)</string>
+	<string name="paycenter_loading">加載中...</string>
+	<string name="paypayboard_center_install">点击安裝</string>
+</resources>

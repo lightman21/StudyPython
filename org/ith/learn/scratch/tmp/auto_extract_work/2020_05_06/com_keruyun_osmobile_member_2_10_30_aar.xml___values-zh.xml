@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="member_access_exception">访问异常</string>
+	<string name="member_apdu_psam_interactive_failed">APDU交互PSAM卡失败</string>
+	<string name="member_balance_insufficient">余额不足</string>
+	<string name="member_cardnum_isnull">卡号为空</string>
+	<string name="member_data_error">数据错误</string>
+	<string name="member_find_psam_failed">寻PSAM卡失败</string>
+	<string name="member_new_member_not_support">新增会员暂未开放</string>
+	<string name="member_nfc_error1_debug">0扇区数据不足8字节，请检查问题</string>
+	<string name="member_nfc_m1_error">寻M1卡失败</string>
+	<string name="member_notsupport_device_nfc">设备错误，不支持该设备读取卡号</string>
+	<string name="member_pay_vip_payfailed_tips">支付失败，是否继续尝试支付</string>
+	<string name="member_pay_vipdata_error">会员数据错误</string>
+	<string name="member_pay_vipremain_zero">会员余额传入小余等于0</string>
+	<string name="member_push_arrived">推送来了</string>
+	<string name="member_query_success">查询成功</string>
+	<string name="nfc_init_error">初始化错误</string>
+	<string name="phone_regex_hint">手机号码输入错误</string>
+</resources>
