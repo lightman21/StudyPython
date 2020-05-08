@@ -49,8 +49,8 @@ def diff():
 
 
 def main():
-    cn_path = './remove_cn.xml'
-    eng_path = './remove_eng.xml'
+    cn_path = 'tmp/remove_cn.xml'
+    eng_path = 'tmp/remove_eng.xml'
     cn_list = read_xml_as_kce_list(cn_path)
     # <!--	-->
     left = '<!--'
@@ -79,7 +79,7 @@ def main():
                     ss = '{} {} {} {}'.format(left, kce.cn.replace('--', '__'), right, line)
                     str_en_line.append(ss)
 
-        with open('comment_en.xml', 'w') as rout:
+        with open('tmp/comment_en.xml', 'w') as rout:
             rout.writelines(str_en_line)
     pass
 

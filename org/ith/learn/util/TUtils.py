@@ -348,16 +348,6 @@ def file_md5(path_of_file):
         return ret
 
 
-# import hashlib
-#
-# md5_l = hashlib.md5()
-# with open("path", mode="rb") as f:
-#     by = f.read()
-#
-# md5_l.update(by)
-# ret = md5_l.hexdigest()
-# print(ret)
-
 def get_cur_branch():
     ret = exec_cmd("git branch | grep \\* | awk '{print$2}'")
     return ret.strip()

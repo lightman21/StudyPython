@@ -9,7 +9,6 @@ from org.ith.learn.util.TUtils import open_excel_as_list, read_xml_as_kce_list, 
 import re
 import difflib
 
-
 tmp = libs_need_care = [
     '正餐',
     'com.keruyun.mobile.dinner',
@@ -61,28 +60,6 @@ tmp = libs_need_care = [
         out.writelines(to_write_lines)
 
 """
-
-
-def gener_dict(en_path, cn_path):
-    en_list = read_xml_as_kce_list(en_path)
-    ch_list = read_xml_as_kce_list(cn_path)
-
-    for cn in ch_list:
-        for en in en_list:
-            if cn.key == en.key:
-                cn.en = en.cn
-
-    now_date = time.strftime("%Y_%m_%d", time.localtime())
-    to_write_lines = []
-    for kce in ch_list:
-        if len(kce.key) > 0 and len(kce.cn) > 0 and len(kce.en) > 0:
-            v_cn = auto_escape(kce.cn)
-            v_en = auto_escape(kce.en)
-            line = '<kce key="{:<40}" cn="{}" en="{}"/>\n'.format(kce.key, v_cn, v_en)
-            to_write_lines.append(line)
-
-    with open('./{}___kce_dict.xml'.format(now_date), 'w') as out:
-        out.writelines(to_write_lines)
 
 
 def remove_by_path(master_path, sub_module_path):
@@ -235,9 +212,8 @@ def main():
     #         name = full_path.split('/')[-1]
     #         remove_by_path(master_def, full_path)
 
-
     kces = read_xml_as_kce_list(master_def)
-    print('kces',kces)
+    print('kces', kces)
 
 
 def gener_cn_en_dict(path_of_excel):

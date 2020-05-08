@@ -10,7 +10,7 @@ from lxml import etree
 import html
 from org.ith.learn.util.TUtils import KCEBean, XmlStdin, highlight, auto_escape
 
-path_of_android = "../../../../docs/merge/merge.xml"
+path_of_android = "../../../../docs/i18n/merge.xml"
 
 
 def main():

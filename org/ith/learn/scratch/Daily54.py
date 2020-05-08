@@ -8,7 +8,7 @@ from org.ith.learn.OhMyEXCEL import excel_to_xml, xml_to_excel
 from org.ith.learn.scratch.Trans535 import big_dict
 from org.ith.learn.util.PXML import write_kce_to_path
 from org.ith.learn.util.TUtils import open_excel_as_list, read_xml_as_kce_list, KCEBean, highlight, modify_time, md5, \
-    auto_escape, extra_chinese, remove_punctuation, is_contains_chinese, exec_cmd, XmlStdin
+    auto_escape, extra_chinese, remove_punctuation, is_contains_chinese, exec_cmd, XmlStdin, gener_dict_by_path
 import re
 import difflib
 from xml.dom.minidom import parse
@@ -54,7 +54,7 @@ def main():
 
     value_tag_dict = gener_dict_by_path(xml_path)
 
-    create_xml_doc(value_tag_dict, out_path='/Users/lightman_mac/Desktop/tanghao/values_cn_arr_sort.xml')
+    # create_xml_doc(value_tag_dict, out_path='/Users/lightman_mac/Desktop/tanghao/values_cn_arr_sort.xml')
 
     pass
 

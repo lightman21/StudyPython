@@ -1,4 +1,5 @@
 import os
+import time
 
 from org.ith.learn.OhMyEXCEL import excel_to_xml, xml_to_excel
 from org.ith.learn.scratch.Trans535 import big_dict
@@ -116,13 +117,26 @@ def gener_all_cn_by_apk(apk_path):
     return out_path
 
 
-def main():
-    old_path = gener_all_cn_by_apk('/private/tmp/thsmb/53510_old.apk')
-    new_path = gener_all_cn_by_apk('/private/tmp/thsmb/536_new.apk')
-    diff_xml(new_path_xml=new_path, old_path_xml=old_path)
+def pull_remote_dict():
+    start = time.time()
+    """
+    拉取远端最新的english.xml文件
+    """
+    command = """
+     git archive master --remote=ssh://git@gitlab.shishike.com:38401/OSMobile/mobile-storage.git translate/kmobile/english.xml | tar -x && cp translate/kmobile/english.xml {} && rm -rf translate
+     """.format(
+        '../../../../docs/i18n/')
+    exec_cmd(command.strip())
+    print('pull_remote_dict cost time ', (time.time() - start), 's')
+    return read_xml_as_kce_list('../../../../docs/i18n/english.xml')
 
-    # diff_xml(new_path_xml='/private/tmp/th/53510_apk_all_cn.xml',
-    #          old_path_xml='/private/tmp/th/5350_apk_all_cn.xml')
+
+def main():
+    # old_path = gener_all_cn_by_apk('/private/tmp/thsmb/53510_old.apk')
+    # new_path = gener_all_cn_by_apk('/private/tmp/thsmb/536_new.apk')
+    # diff_xml(new_path_xml=new_path, old_path_xml=old_path)
+
+    pull_remote_dict()
 
     pass
 

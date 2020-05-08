@@ -98,7 +98,7 @@ libs_need_skip = [
 
 
 def main():
-    do_extract()
+    daily_work()
 
 
 def daily_work():

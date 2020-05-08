@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="open_camera_fail">打開相機失敗，請檢查權限並重試</string>
+	<string name="qrcode_cancel">取消</string>
+	<string name="qrcode_setting">去設置</string>
+	<string name="scan_text">將條碼放入框內即可自動掃描</string>
+</resources>

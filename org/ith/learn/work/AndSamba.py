@@ -7,6 +7,11 @@ from smb.SMBConnection import SMBConnection
 
 from org.ith.learn.util.TUtils import human_time
 
+"""
+怎么获取前一天build的apk
+
+"""
+
 
 def main():
     host = "172.16.0.17"

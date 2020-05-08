@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+	<string name="drsk_deliverer">Delivery man</string>
+	<string name="drsk_delivery_platform">Delivery way</string>
+	<string name="drsk_delivery_platform_baidu">Baidu Waimai</string>
+	<string name="drsk_delivery_platform_dada">Dada distribution</string>
+	<string name="drsk_delivery_platform_eleme">Fengniaoeleme</string>
+	<string name="drsk_delivery_platform_meituan">Meituan delivery</string>
+	<string name="drsk_delivery_platform_shunfeng">SFs IntraCity Express Service</string>
+	<string name="drsk_delivery_platform_store">Deliver by the merchant</string>
+	<string name="drsk_receiver">Recipient</string>
+	<string name="drsk_receiver_address">Delivery address</string>
+
+
+
+	<kce key="1bce9542c2a37994aa0bbefc646c4194" cn="行业收费 06" en="Charges by industrial standard 06"/>
+
+
+
+
+
 	<string name="accept_and_printf">接受后将打印后厨单据，请确认</string>
 	<string name="accepted_str">接受</string>
 	<string name="accepty_dish">接单</string>

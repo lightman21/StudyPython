@@ -7,7 +7,7 @@ import re
 from filecmp import cmp
 
 from org.ith.learn.util.PXML import write_kce_to_path
-from org.ith.learn.util.TUtils import read_xml_as_kce_list
+from org.ith.learn.util.TUtils import read_xml_as_kce_list, is_contains_chinese
 from org.ith.learn.work.Work import just_sort
 
 
@@ -49,7 +49,7 @@ def pic_md5():
             rout.writelines(to_lines)
 
 
-def main():
+def day_work():
     inventory = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-android-inventory-management/inventoryui/src/main/res/values-ru/strings.xml'
 
     takeout = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-takeout-ui/takeoutui/src/main/res/values-zh/strings.xml'
@@ -72,7 +72,7 @@ def main():
 
     # just_sort(cashier)
 
-    total_all = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/mobile-storage/translate/kmobile/english.xml'
+    total_all = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/mobile-storage/translate/kmobile/i18n.xml'
     kce_sub_list = read_xml_as_kce_list(sub_path)
     total_list = read_xml_as_kce_list(total_all)
     total_keys = set()
@@ -90,7 +90,29 @@ def main():
 
     print('total sub ', len(kce_sub_list), ', not find ', len(no_i18n))
 
-    # write_kce_to_path(tmp, './path_of_xml_sub.xml')
+
+def main():
+    path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/build/intermediates/res/merged/official/envGrd/values/values.xml'
+    cn_kce = read_xml_as_kce_list(path)
+    en_list = read_xml_as_kce_list('../../../../docs/i18n/english.xml')
+
+    key_cn = set()
+    key_en = set()
+
+    for kce in cn_kce:
+        key_cn.add(kce.key)
+
+    for kce in en_list:
+        key_en.add(kce.key)
+
+    for kce in cn_kce:
+
+        if str(kce.key).startswith('key_liveness') or str(kce.key).startswith('leak_canary') or str(kce.key).startswith(
+                'title_activity_') or not is_contains_chinese(kce.cn):
+            continue
+
+        if kce.key not in key_en:
+            print(kce)
 
 
 if __name__ == '__main__':

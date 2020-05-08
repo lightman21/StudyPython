@@ -9,7 +9,7 @@ from lxml import etree
 from org.ith.learn.util.PXML import write_kce_to_path
 from org.ith.learn.util.TUtils import KCEBean
 
-# path_of_merge = '../../../docs/merge/merge_bk.xml'
+# path_of_merge = '../../../docs/i18n/merge_bk.xml'
 """
 /Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/app/build/intermediates/incremental/mergeOfficialEnvGrdResources/merged.dir
 """

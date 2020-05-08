@@ -75,11 +75,9 @@ def sw_rewrite():
 def main():
     # do_work()
     # sw_rewrite()
-
     cn_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/ith/learn/work/thtmp/merged_total.xml'
     en_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/ith/learn/work/thtmp/all_eng_.xml'
     xml_to_excel(cn_path, en_path, './all_excel.xlsx')
-
     pass
 
 

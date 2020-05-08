@@ -20,7 +20,7 @@ def main():
     # write_kce_to_path(def_list, out_def)
     # write_kce_to_path(cn_list, out_cn)
 
-    now_en = '/Users/lightman_mac/company/keruyun/proj_sourcecode/mobile-storage/translate/kmobile/english.xml'
+    now_en = '/Users/lightman_mac/company/keruyun/proj_sourcecode/mobile-storage/translate/kmobile/i18n.xml'
 
     key_merge_list = set()
     for kce in cn_list:
