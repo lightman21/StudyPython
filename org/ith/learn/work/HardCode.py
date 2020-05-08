@@ -73,6 +73,7 @@ def main():
     module_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-commodity/'
     module_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-android-inventory-management/'
     module_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-takeout-ui/'
+    module_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-table-manage/'
     hardcode_killer(module_path)
 
     pass

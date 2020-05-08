@@ -117,12 +117,12 @@ def gener_all_cn_by_apk(apk_path):
 
 
 def main():
-    # old_path = gener_all_cn_by_apk('/private/tmp/th/5350.apk')
-    # new_path = gener_all_cn_by_apk('/private/tmp/th/53510.apk')
-    # diff_xml(new_path_xml=new_path, old_path_xml=old_path)
+    old_path = gener_all_cn_by_apk('/private/tmp/thsmb/53510_old.apk')
+    new_path = gener_all_cn_by_apk('/private/tmp/thsmb/536_new.apk')
+    diff_xml(new_path_xml=new_path, old_path_xml=old_path)
 
-    diff_xml(new_path_xml='/private/tmp/th/53510_apk_all_cn.xml',
-             old_path_xml='/private/tmp/th/5350_apk_all_cn.xml')
+    # diff_xml(new_path_xml='/private/tmp/th/53510_apk_all_cn.xml',
+    #          old_path_xml='/private/tmp/th/5350_apk_all_cn.xml')
 
     pass
 

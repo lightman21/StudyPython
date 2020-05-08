@@ -194,6 +194,10 @@ def modify_time(path_file):
     return time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(os.stat(path_file).st_mtime))
 
 
+def human_time(time_stamp):
+    return time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time_stamp))
+
+
 def modify_timestamp(path_file):
     return os.stat(path_file).st_mtime
 
@@ -454,7 +458,6 @@ def chunk_in_slice(arr, m):
     # split the arr into N chunks
     n = int(math.ceil(len(arr) / float(m)))
     return [arr[i:i + n] for i in range(0, len(arr), n)]
-
 
 
 def make_sure_file_exist(path_of_file):

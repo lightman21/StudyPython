@@ -94,7 +94,6 @@ def do_work():
 
 
 def list_item(path_list):
-
     path_han = list()
 
     try:
@@ -138,6 +137,9 @@ def main():
     # dir_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/src/main/res/'
     dir_path = '/tmp/wan/'
     all_pics = get_all_pics(dir_path)
+    if len(all_pics) == 0:
+        return
+
     slices = chunk_in_slice(all_pics, 10)
     for item_list in slices:
         loop_pics(item_list)
