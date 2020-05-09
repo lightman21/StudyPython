@@ -16,7 +16,17 @@ from org.ith.learn.work.Work import gener_dict_by_excel
 有一个基准 基准来源于apk包 生成中文的kce  从解压的apk中的values目录读取 values
 values-zh values-zh-rCN values-zh-rHK values-zh-rTW  values
 
+
+
+
+
 """
+
+skip_key_prefix = [
+    'abc_',
+    'leak_canary_',
+    'leak_canary_',
+]
 
 dirs_need_care = [
     'values',
@@ -132,11 +142,14 @@ def pull_remote_dict():
 
 
 def main():
-    # old_path = gener_all_cn_by_apk('/private/tmp/thsmb/53510_old.apk')
-    # new_path = gener_all_cn_by_apk('/private/tmp/thsmb/536_new.apk')
+    # pull_remote_dict()
+    #
+    # old_path = gener_all_cn_by_apk(
+    #     '/private/tmp/arm_OnMobile-official-5.35.10-SNAPSHOT-armeabi-envGrd-2020-05-06-11-09-57.apk')
+    # new_path = gener_all_cn_by_apk('/private/tmp/newest.apk')
     # diff_xml(new_path_xml=new_path, old_path_xml=old_path)
-
-    pull_remote_dict()
+    # gener_all_cn_by_apk('/private/tmp/old.apk')
+    gener_all_cn_by_apk('/private/tmp/thOnMobile-official-5.36.0-SNAPSHOT-armeabi-v7a-envGrd-2020-05-09-08-42-21.apk')
 
     pass
 

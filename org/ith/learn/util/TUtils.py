@@ -368,6 +368,18 @@ def extra_chinese(word):
     return outer
 
 
+def sort_dict_as_list(in_dict, order_by='key'):
+    """
+    @param in_dict 传入的dict
+    @param order_by 按什么进行排序 key 或者非key即value
+    将传入的dict按key或者value进行排序
+    """
+    if order_by == 'key':
+        return sorted(in_dict.items(), key=lambda d: d[0], reverse=True)
+    else:
+        return sorted(in_dict.items(), key=lambda d: d[1], reverse=True)
+
+
 def auto_escape(inputing):
     """
     检查传入的字符串 是不是需要转义加\
@@ -444,10 +456,15 @@ def twrite_kce_to_path(list_of_kce, path, sort=False, key='cn'):
         raise
 
 
-def chunk_in_slice(arr, m):
+def chunk_in_slice(arr_or_list, pieces):
+    """
+    将输入的arr分成m份
+    @param arr_or_list 数组或者list
+    @param pieces 需要分成的份数 int值
+    """
     # split the arr into N chunks
-    n = int(math.ceil(len(arr) / float(m)))
-    return [arr[i:i + n] for i in range(0, len(arr), n)]
+    n = int(math.ceil(len(arr_or_list) / float(pieces)))
+    return [arr_or_list[i:i + n] for i in range(0, len(arr_or_list), n)]
 
 
 def make_sure_file_exist(path_of_file):

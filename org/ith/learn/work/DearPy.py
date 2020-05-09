@@ -8,6 +8,7 @@ from filecmp import cmp
 
 from org.ith.learn.util.PXML import write_kce_to_path
 from org.ith.learn.util.TUtils import read_xml_as_kce_list, is_contains_chinese
+from org.ith.learn.work.AndI18n import pull_remote_dict
 from org.ith.learn.work.Work import just_sort
 
 
@@ -51,24 +52,18 @@ def pic_md5():
 
 def day_work():
     inventory = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-android-inventory-management/inventoryui/src/main/res/values-ru/strings.xml'
-
     takeout = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-takeout-ui/takeoutui/src/main/res/values-zh/strings.xml'
     takeout_values = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-takeout-ui/takeoutui/src/main/res/values/strings.xml'
     total_all = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-android-inventory-management/test/src/main/res/values-en/strings.xml'
-
     smart_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-smart-management/smartmanage/src/main/res/values-en/strings.xml'
-
     table_manage = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-table-manage/tablemanage/src/main/res/values/strings.xml'
-
     kreport = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/KReport/kreport/src/main/res/values-en/origin_strings.xml'
-
     table_code = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Manager-Table-Code/tablecodelib/src/main/res/values-zh-rTW/strings.xml'
-
     cashier = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-cashier/cashier/src/main/res/values/strings.xml'
-
     order_center = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-order-center/trade/src/main/res/values/strings.xml'
+    merge = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/app/build/intermediates/res/merged/official/envCiTest/values/values.xml'
 
-    sub_path = order_center
+    sub_path = merge
 
     # just_sort(cashier)
 
@@ -92,7 +87,10 @@ def day_work():
 
 
 def main():
-    path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/build/intermediates/res/merged/official/envGrd/values/values.xml'
+
+    pull_remote_dict()
+
+    path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/app/build/intermediates/res/merged/official/envCiTest/values/values.xml'
     cn_kce = read_xml_as_kce_list(path)
     en_list = read_xml_as_kce_list('../../../../docs/i18n/english.xml')
 
@@ -107,12 +105,15 @@ def main():
 
     for kce in cn_kce:
 
-        if str(kce.key).startswith('key_liveness') or str(kce.key).startswith('leak_canary') or str(kce.key).startswith(
-                'title_activity_') or not is_contains_chinese(kce.cn):
+        if str(kce.key).startswith('key_liveness') or str(kce.key).startswith('leak_canary') \
+                or str(kce.key).startswith('title_activity_')\
+                or str(kce.key).startswith('abc_'):
             continue
 
+        #     <string name="main_policy">售后政策</string>
         if kce.key not in key_en:
-            print(kce)
+            out = '<string name="{}">{}</string>'.format(kce.key, kce.cn)
+            print(out)
 
 
 if __name__ == '__main__':

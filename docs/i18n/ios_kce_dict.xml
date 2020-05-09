@@ -1223,7 +1223,7 @@
 <kce key="1dfce357f94495737766c9551916762d" cn="移动收款对账概况" en="Reconciliation overview of mobile payment"/>
 <kce key="92ea019d0c1682f2268bd94a0aec383d" cn="移动支付认证" en="Mobile payment certification"/>
 <kce key="31927d2b45c98e9f2896ce1a9e63f733" cn="移动支付开通" en="Open mobile payment"/>
-<kce key="b416b57560d7e3e9232ecf196e6436eb" cn="移动支付" en="Mobile pay"/>
+<kce key="b416b57560d7e3e9232ecf196e6436eb" cn="移动支付" en="Mobile payment"/>
 <kce key="bbe8ba25c6baf567ae3b8851c0c8b882" cn="称重菜" en="Dishes need weighing"/>
 <kce key="d1b2ba30f92dd03cd5bf07d88be52ed5" cn="称重商品" en="Weighing goods"/>
 <kce key="f92ab147c0cb1dece52438451cefe2bb" cn="称重" en="Weighing"/>
@@ -3625,8 +3625,8 @@
 <kce key="a4fa0dab7705e3d14d26f792061e8e6b" cn="一体机打印机" en="Allinone printer"/>
 <kce key="7941da94db2a83c04d0d85ee45ecb1e3" cn="一" en="One"/>
 <kce key="048063823993120a413c64b3c4916208" cn="① 每天循环售卖每天都会在所选的时间段售卖设置的商品价格一直循环可停用n ② 今日售卖只对设置的今日有效时间过期后自动停用可再启用" en="① Sell every day recurrentlythe set product prices will be sold every day at the selected time period recurrently n ② Todays salesonly valid for the Today it will be automatically disabled after the time expires and can be enabled again"/>
-<kce key="f2f6671d9344b67b17dd8914c1a30811" cn="yyyy年MM月dd日" en="dd MM yyyy"/>
-<kce key="61e083243288711688af5cd152b69991" cn="yyyy年MM月" en="MM month yyyy year"/>
+<kce key="f2f6671d9344b67b17dd8914c1a30811" cn="yyyy年MM月dd日" en="yyyyMMdd"/>
+<kce key="61e083243288711688af5cd152b69991" cn="yyyy年MM月" en="yyyyMM"/>
 <kce key="44011cbb77eb32fa2a2d7c9ec4744d92" cn="unlined" en="Order"/>
 <kce key="5c9acadd7e411b56ff11ddb4eca35f18" cn="unconfirmedAmount" en="The total amount unreconciled"/>
 <kce key="5d327591dde58653b5ea32b630656b4b" cn="taxRate" en="Tax rate"/>
@@ -3660,6 +3660,7 @@
 <kce key="b66dc7ff691df10a03470dfa71397b5e" cn="lds后获取" en="Get after lds"/>
 <kce key="5d94e1e9a5bf8ed670c48722abc2fa4b" cn="functionList" en="Function list"/>
 <kce key="d4319fefc66c701f24c875afda6360d6" cn="fee" en="Total fees"/>
+<kce key="bf4f05ababed6ff333bc1154d9cbd9b5" cn="currency type" en="currency type"/>
 <kce key="84f7e40d5c5a225a3fbb1414ba2630f3" cn="baidumapmapdirectionorigin" en="s location  destination"/>
 <kce key="7d38a9eea41ef11e45f326b680ceca78" cn="ZeroPen" en="0 orders"/>
 <kce key="8cb90922694387f2d85e48e518f0a9b6" cn="YuanUnlined" en="Order"/>
@@ -4239,7 +4240,7 @@
 <kce key="bfe08895c34ba20cd606e516788ffc1c" cn="ModifyAmount" en="Modify amount"/>
 <kce key="7f090bbab1cc7f9c08bf4e54d932d3c0" cn="Modify" en="Modify"/>
 <kce key="8c0b62cac0c7578d94319392d15ca208" cn="MobilePrepaid" en="Mobile topup"/>
-<kce key="3cf018ae81722d5d407f1d6f9d1df101" cn="MobilePayment" en="Mobile pay"/>
+<kce key="3cf018ae81722d5d407f1d6f9d1df101" cn="MobilePayment" en="Mobile payment"/>
 <kce key="4c3880bb027f159e801041b1021e88e8" cn="Method" en="Cooking method"/>
 <kce key="07d886bf9d35346b809ba4ebd2a32e56" cn="MessageCenter" en="Sms Center"/>
 <kce key="4c2a8fe7eaf24721cc7a9f0175115bd4" cn="Message" en="News"/>
@@ -4265,7 +4266,7 @@
 <kce key="44bf55309306be123ffdcc503cf0b41c" cn="MainPos" en="Main cash register"/>
 <kce key="c27b1ad49931dbb943c9413b5c302967" cn="MainCustomer" en="Main customer"/>
 <kce key="d6ad1b011210ab01257eba6b50209047" cn="MadeDish" en="Readymade goods"/>
-<kce key="84390148423a290bed070b6c9eae2a19" cn="MM月dd日" en="MM month dd"/>
+<kce key="84390148423a290bed070b6c9eae2a19" cn="MM月dd日" en="MMdd"/>
 <kce key="aa745ef47441290155d860e0184ba77b" cn="Low60Char" en="Pls enter less than 30 characters"/>
 <kce key="6f5e05d45485eff5eef2c0d48a2be29f" cn="LossCustomer" en="Will lose customers"/>
 <kce key="14781ee5e859104d453ad3eb28b441e5" cn="Loss" en="Loss"/>

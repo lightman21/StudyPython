@@ -7755,6 +7755,17 @@
 	<string name="drsk_source_osmobile">OS Mobile</string>
 
 
+    <string name="drsk_deliverer">Delivery man</string>
+    <string name="drsk_delivery_platform">Delivery way</string>
+    <string name="drsk_delivery_platform_baidu">Baidu Waimai</string>
+    <string name="drsk_delivery_platform_dada">Dada distribution</string>
+    <string name="drsk_delivery_platform_eleme">Fengniaoeleme</string>
+    <string name="drsk_delivery_platform_meituan">Meituan delivery</string>
+    <string name="drsk_delivery_platform_shunfeng">SFs IntraCity Express Service</string>
+    <string name="drsk_delivery_platform_store">Deliver by the merchant</string>
+    <string name="drsk_receiver">Recipient</string>
+    <string name="drsk_receiver_address">Delivery address</string>
+
 
 
 </resources>
