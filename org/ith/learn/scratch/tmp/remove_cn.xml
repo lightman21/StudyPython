@@ -1,11 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="_uuid">00000</string>
+	<string name="abc_action_bar_home_description">瀏覽首頁</string>
+	<string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+	<string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+	<string name="abc_action_bar_up_description">向上瀏覽</string>
+	<string name="abc_action_menu_overflow_description">更多選項</string>
+	<string name="abc_action_mode_done">完成</string>
+	<string name="abc_activity_chooser_view_see_all">查看全部</string>
+	<string name="abc_activitychooserview_choose_application">選擇應用程式</string>
+	<string name="abc_capital_off">關閉</string>
+	<string name="abc_capital_on">開啟</string>
+	<string name="abc_font_family_body_1_material">sans-serif</string>
+	<string name="abc_font_family_body_2_material">sans-serif-medium</string>
+	<string name="abc_font_family_button_material">sans-serif-medium</string>
+	<string name="abc_font_family_caption_material">sans-serif</string>
+	<string name="abc_font_family_display_1_material">sans-serif</string>
+	<string name="abc_font_family_display_2_material">sans-serif</string>
+	<string name="abc_font_family_display_3_material">sans-serif</string>
+	<string name="abc_font_family_display_4_material">sans-serif-light</string>
+	<string name="abc_font_family_headline_material">sans-serif</string>
+	<string name="abc_font_family_menu_material">sans-serif</string>
+	<string name="abc_font_family_subhead_material">sans-serif</string>
+	<string name="abc_font_family_title_material">sans-serif-medium</string>
+	<string name="abc_search_hint">搜尋…</string>
+	<string name="abc_searchview_description_clear">清除查詢</string>
+	<string name="abc_searchview_description_query">搜尋查詢</string>
+	<string name="abc_searchview_description_search">搜尋</string>
+	<string name="abc_searchview_description_submit">提交查詢</string>
+	<string name="abc_searchview_description_voice">語音搜尋</string>
+	<string name="abc_shareactionprovider_share_with">選擇分享對象</string>
+	<string name="abc_shareactionprovider_share_with_application">與「%s」分享</string>
+	<string name="abc_toolbar_collapse_description">收合</string>
 	<string name="about_app_comment_hint">来个五星好评</string>
 	<string name="about_protocol"><Data>&lt;a href=%1$s>《客如云用户服务协议》&lt;/a>和 &lt;a href=%2$s>《客如云用户隐私政策》&lt;/a></Data></string>
 	<string name="about_text">关于</string>
-	<string name="aboutus">关于</string>
 	<string name="aboutUs">关于我们</string>
+	<string name="aboutus">关于</string>
 	<string name="aboutus_title">   关于</string>
 	<string name="accept_and_printf">接受后将打印后厨单据，请确认</string>
 	<string name="accept_dorder_reprint_str">补打消费清单</string>
@@ -96,7 +127,10 @@
 	<string name="account_mamager_no_supoort_modify_number">品牌/门店负责人,暂不支持修改手机号</string>
 	<string name="account_managent_mode_explain">连锁管理模式使用说明</string>
 	<string name="account_managent_mode_explain_company">公司集中管控：商品、移动收款账号、会员、报表等</string>
-	<string name="account_managent_mode_explain_company_content">"1.商品：公司统一创建，通过销售范本下放给各门店；\n2.移动收款：在默认情况下，各门店由公司统一收款，需要公司开通账号，门店也可以设置独立收款；\n3.会员：会员等级、储值规则等由公司统一创建，所有门店按此执行；\n4.报表：公司可看到所有门店的报表汇总。"</string>
+	<string name="account_managent_mode_explain_company_content">"1.商品：公司统一创建，通过销售范本下放给各门店；
+2.移动收款：在默认情况下，各门店由公司统一收款，需要公司开通账号，门店也可以设置独立收款；
+3.会员：会员等级、储值规则等由公司统一创建，所有门店按此执行；
+4.报表：公司可看到所有门店的报表汇总。"</string>
 	<string name="account_managent_mode_explain_content">公司、门店属于上下级的关系。在某一公司中，可能会存在门店A、门店B等。为了连锁模式中统一管理的需要，将功能进行了划分：</string>
 	<string name="account_managent_mode_explain_noshow">不再提示</string>
 	<string name="account_managent_mode_explain_shop">门店主要负责：点单收银、店内员工、会员、店内报表等</string>
@@ -224,7 +258,8 @@
 	<string name="account_username">用户名</string>
 	<string name="account_username_not_empty_prompt">用户名不能为空！</string>
 	<string name="account_valid_data">数据错误，调用失败</string>
-	<string name="account_valid_data_content">"1.请检查您的手机号是否输入正确；\n2.若手机号无误，请您登录后台重置密码。"</string>
+	<string name="account_valid_data_content">"1.请检查您的手机号是否输入正确；
+2.若手机号无误，请您登录后台重置密码。"</string>
 	<string name="account_validate_mobile_get_validate_code_first">请先获取验证码</string>
 	<string name="account_validate_mobile_title">修改手机号</string>
 	<string name="account_verify_and_modify">请验证手机号并重置密码</string>
@@ -431,7 +466,10 @@
 	<string name="assistant_tech_support">语音技术由科大讯飞提供</string>
 	<string name="assistant_tishi">提示</string>
 	<string name="assistant_title">智能小助手</string>
-	<string name="assistant_update_info">"1.新增了xxx功能\n2.新增了xxx功能\n3.优化了xxx模块\n4.解决了xxxbug"</string>
+	<string name="assistant_update_info">"1.新增了xxx功能
+2.新增了xxx功能
+3.优化了xxx模块
+4.解决了xxxbug"</string>
 	<string name="at_current_table">您已经在该桌台了，无需要转台！</string>
 	<string name="atleast_6_text">至少添加6个应用</string>
 	<string name="auth_brand_product_edit">品牌商品编辑</string>
@@ -513,7 +551,10 @@
 	<string name="bind_device_hint">绑定客如云硬件设备</string>
 	<string name="bind_pos_first">请先绑定POS设备</string>
 	<string name="bind_sucess_i_know">好的，重新登录</string>
-	<string name="bind_sucess_msg">"收银机主要用于点单收银、结账打印。\n手机APP：可以帮您管理门店基础信息，添加商品、桌台、收款账号、员工等，还可以随时随地查询数据报表，助力经营。\n\n有任何使用上的疑问，可以进入APP帮助中心查看操作指南。最后，祝您开业大吉！"</string>
+	<string name="bind_sucess_msg">"收银机主要用于点单收银、结账打印。
+手机APP：可以帮您管理门店基础信息，添加商品、桌台、收款账号、员工等，还可以随时随地查询数据报表，助力经营。
+
+有任何使用上的疑问，可以进入APP帮助中心查看操作指南。最后，祝您开业大吉！"</string>
 	<string name="bind_sucess_title">恭喜您，成功绑定收银机</string>
 	<string name="bind_sucess_title_relogin">请重新登录，以获取设备信息</string>
 	<string name="birthday_format">%1$d-%2$d-%3$d</string>
@@ -651,7 +692,8 @@
 	<string name="business_time_slot">时间段</string>
 	<string name="business_unified_setup">统一设置</string>
 	<string name="business_week">周</string>
-	<string name="businesssetting_autogen_added_bukexuan">"已被添加\n不可选"</string>
+	<string name="businesssetting_autogen_added_bukexuan">"已被添加
+不可选"</string>
 	<string name="businesssetting_autogen_ah_no_data">咦…没有任何内容，先去逛逛别的吧</string>
 	<string name="businesssetting_autogen_anjiaojie">暗交接</string>
 	<string name="businesssetting_autogen_calc_way">计算方式</string>
@@ -831,7 +873,8 @@
 	<string name="cashier_static_code_push_position">原有【推送收款消息】开关，已迁移至【首页-我的-设置】中。 点击前往</string>
 	<string name="cashier_static_code_receipt">静态码收款</string>
 	<string name="cashier_static_code_report_position">如需查看静态码收款统计，请到【报表-静态码收款统计表】。 点击前往</string>
-	<string name="cashier_static_qrcode_hint">"在应用中，手机端将收到语音播报\n在应用外，将采用系统推送"</string>
+	<string name="cashier_static_qrcode_hint">"在应用中，手机端将收到语音播报
+在应用外，将采用系统推送"</string>
 	<string name="cashier_static_qrcode_title">用户付款消息推送</string>
 	<string name="cashier_today_recive_money">今日总收款</string>
 	<string name="cashier_today_total_amout">今日收款总额</string>
@@ -839,7 +882,8 @@
 	<string name="catalyst_copy_button">Copy</string>
 	<string name="catalyst_debugjs">Debug JS Remotely</string>
 	<string name="catalyst_debugjs_off">Stop Remote JS Debugging</string>
-	<string name="catalyst_dismiss_button">"Dismiss\n(ESC)"</string>
+	<string name="catalyst_dismiss_button">"Dismiss
+(ESC)"</string>
 	<string name="catalyst_element_inspector">Toggle Inspector</string>
 	<string name="catalyst_heap_capture">Capture Heap</string>
 	<string name="catalyst_hot_module_replacement">Enable Hot Reloading</string>
@@ -851,7 +895,8 @@
 	<string name="catalyst_perf_monitor">Show Perf Monitor</string>
 	<string name="catalyst_perf_monitor_off">Hide Perf Monitor</string>
 	<string name="catalyst_poke_sampling_profiler">Start/Stop Sampling Profiler</string>
-	<string name="catalyst_reload_button">"Reload\n(R, R)"</string>
+	<string name="catalyst_reload_button">"Reload
+(R, R)"</string>
 	<string name="catalyst_reloadjs">Reload</string>
 	<string name="catalyst_remotedbg_error">Unable to connect with remote debugger</string>
 	<string name="catalyst_remotedbg_message">Connecting to remote debugger</string>
@@ -982,7 +1027,8 @@
 	<string name="commercial_simple_name_input">请输入商户简称</string>
 	<string name="commercial_status_invalid">您的服务已到期，请联系400-8866-815进行续约</string>
 	<string name="commercial_type_choose_error">请选择绑定类型</string>
-	<string name="commercial_type_dish_city_hint">"检测到商户为美食城业态\n您当前绑定的POS是："</string>
+	<string name="commercial_type_dish_city_hint">"检测到商户为美食城业态
+您当前绑定的POS是："</string>
 	<string name="commodity_add_limit_price_trade_hint">还无时段售卖商品，点击下面按钮添加</string>
 	<string name="commodity_add_picture">添加图片</string>
 	<string name="commodity_add_product">添加商品</string>
@@ -1090,10 +1136,15 @@
 	<string name="commodity_hint_below_12_words">建议不超过12个字</string>
 	<string name="commodity_i_know">我知道了</string>
 	<string name="commodity_if_company_desc">使用掌上客如云-进入公司-商品管理-添加商品</string>
-	<string name="commodity_if_company_title">"如果当前门店属于公司统一管理,请前往公司\n【商品管理】模块创建。操作如下:"</string>
-	<string name="commodity_if_shop_step1">"Step1 联系总部管理员给你开放创建权限\n登陆商家后台(选择机构:公司)-商品/门店自建授权-\n授权门店"</string>
-	<string name="commodity_if_shop_step2">"Step2 获取权限,前来创建\n重新登陆掌上客如云-进入当前门店-商品管理-添加商品"</string>
-	<string name="commodity_if_shop_title">"如果你想创建仅属于当前门店的商品,请前\n往门店【商品管理】模块创建。操作如下:"</string>
+	<string name="commodity_if_company_title">"如果当前门店属于公司统一管理,请前往公司
+【商品管理】模块创建。操作如下:"</string>
+	<string name="commodity_if_shop_step1">"Step1 联系总部管理员给你开放创建权限
+登陆商家后台(选择机构:公司)-商品/门店自建授权-
+授权门店"</string>
+	<string name="commodity_if_shop_step2">"Step2 获取权限,前来创建
+重新登陆掌上客如云-进入当前门店-商品管理-添加商品"</string>
+	<string name="commodity_if_shop_title">"如果你想创建仅属于当前门店的商品,请前
+往门店【商品管理】模块创建。操作如下:"</string>
 	<string name="commodity_limit_batch_add">批量加价</string>
 	<string name="commodity_limit_batch_change">批量改价</string>
 	<string name="commodity_limit_batch_discount">批量打折</string>
@@ -1233,10 +1284,12 @@
 	<string name="contact_method">联系方式 400-8866-815</string>
 	<string name="contact_read_error">通讯录读取错误</string>
 	<string name="content_img_ocr_dish_item_delete">content_img_ocr_dish_item_delete</string>
-	<string name="content_limit_time_price_waring_add">"您创建的时段商品还未保存，\n是否保存并返回"</string>
+	<string name="content_limit_time_price_waring_add">"您创建的时段商品还未保存，
+是否保存并返回"</string>
 	<string name="content_limit_time_price_waring_delete">是否删除当前限时商品?</string>
 	<string name="content_limit_time_price_waring_edit">是否放弃编辑?</string>
-	<string name="content_limit_time_price_waring_edit_btn_back">"您编辑的时段商品还未保存，\n是否保存并返回"</string>
+	<string name="content_limit_time_price_waring_edit_btn_back">"您编辑的时段商品还未保存，
+是否保存并返回"</string>
 	<string name="content_safe_view_web_title_back">safe_view_web_title_back</string>
 	<string name="content_safe_view_web_title_close">content_safe_view_web_title_close</string>
 	<string name="content_waring_delete">是否删除当前选项?</string>
@@ -2083,7 +2136,8 @@
 	<string name="guide_exit_dialog_confirm">确认退出</string>
 	<string name="guide_exit_dialog_content">确认已经完成开店通关？退出后将不再提示</string>
 	<string name="guide_start">开始通关</string>
-	<string name="hadNoData">"当前列表为空，\n请扫描条码进行配送"</string>
+	<string name="hadNoData">"当前列表为空，
+请扫描条码进行配送"</string>
 	<string name="hadNoOrder">当前还没有订单哦！</string>
 	<string name="has_no_auth">您的账号无权限</string>
 	<string name="has_noauth">没有权限访问</string>
@@ -2119,7 +2173,15 @@
 	<string name="home_invoice_deposit_bank">开户银行</string>
 	<string name="home_invoice_details">发票详情</string>
 	<string name="home_invoice_duty_paragraph">税号  </string>
-	<string name="home_invoice_explain_content">"一、发票开具规则：\n1、订单在完成回款后，请自己申请开票，电子发票在24小时内自动开具并发送至预留邮箱；\n2、发票开具金额为您实际支付金额；\n3、发票如申请了线下开票，整笔订单只能线下开具发票；\n4、如查找不到发票，请联系与您对接的客户经理\n\n二、发票补开、换开规则：\n1、发票可在1年内补开、换开1次；\n2、如需换开申请作废重开"</string>
+	<string name="home_invoice_explain_content">"一、发票开具规则：
+1、订单在完成回款后，请自己申请开票，电子发票在24小时内自动开具并发送至预留邮箱；
+2、发票开具金额为您实际支付金额；
+3、发票如申请了线下开票，整笔订单只能线下开具发票；
+4、如查找不到发票，请联系与您对接的客户经理
+
+二、发票补开、换开规则：
+1、发票可在1年内补开、换开1次；
+2、如需换开申请作废重开"</string>
 	<string name="home_invoice_explain_title">发票开具的规则？</string>
 	<string name="home_invoice_input_address">省市区及详细地址</string>
 	<string name="home_invoice_input_bank_account">填写账号</string>
@@ -2249,6 +2311,11 @@
 	<string name="id_card_photo_negative">身份证反面照片</string>
 	<string name="id_card_photo_positive">手持身份证正面照</string>
 	<string name="identityVerification">实名验证</string>
+	<string name="iflytek_error_init_first">语音合成失败,请先初始化</string>
+	<string name="iflytek_gener_error_with_code">语音合成失败,错误码: %1$d</string>
+	<string name="iflytek_init_error_with_code">初始化失败,错误码: %1$d</string>
+	<string name="iflytek_say_sth">请开始说话</string>
+	<string name="iflytek_tingxie_error_with_code">听写失败,错误码: %1$d</string>
 	<string name="illegal_user">非法用户</string>
 	<string name="image_process">正在处理图像，请稍后</string>
 	<string name="import_depot">入库仓库</string>
@@ -2394,7 +2461,8 @@
 	<string name="inventory_not_supplier_hint">以下识别结果点击每项均可修改</string>
 	<string name="inventory_ocr_not_recognition_supplier">没有识别到供应商，是否重新识别</string>
 	<string name="inventory_order_method">下单方式</string>
-	<string name="inventory_order_method_brand">"品牌代下单\n(统配)"</string>
+	<string name="inventory_order_method_brand">"品牌代下单
+(统配)"</string>
 	<string name="inventory_order_method_brand2">品牌代下单(统配)</string>
 	<string name="inventory_order_method_shop">门店下单</string>
 	<string name="inventory_order_type">下单方式</string>
@@ -2965,7 +3033,8 @@
 	<string name="kmember_autogen_gengxinshijian">更新时间：</string>
 	<string name="kmember_autogen_guize">规则</string>
 	<string name="kmember_autogen_guizeshuoming">规则说明</string>
-	<string name="kmember_autogen_guizeweishezhi">"…\n规则未设置"</string>
+	<string name="kmember_autogen_guizeweishezhi">"…
+规则未设置"</string>
 	<string name="kmember_autogen_guizezidingyi_3">③规则自定义。建议设置奖励，例如：储值达100元，赠送10元。支持添加多条规则，设置多个储值阶梯</string>
 	<string name="kmember_autogen_how_to_store_value">如何设置储值规则？</string>
 	<string name="kmember_autogen_huiyuanjia">会员价：</string>
@@ -3131,9 +3200,12 @@
 	<string name="kmember_kmember_integral_regular_clear_warning">注:积分清零后不可恢复,请谨慎操作</string>
 	<string name="kmember_koukuan_shunxu">扣款顺序:</string>
 	<string name="kmember_level_delete_warning">确定删除会员等级吗?</string>
-	<string name="kmember_level_desc_close">"系统将根据您设置的规则,自动升级会员等级.\n等级已停用,如需使用等级---请先启用等级."</string>
-	<string name="kmember_level_desc_empty">"通过会员等级制度吸引顾客消费,可根据您的需要创建\n一个或多个等级,系统将根据您设置的规则自动升级会员等级."</string>
-	<string name="kmember_level_desc_open">"系统将根据您设置的规则,自动升级会员等级.\n等级已启用,如需编辑等级---请先停用等级."</string>
+	<string name="kmember_level_desc_close">"系统将根据您设置的规则,自动升级会员等级.
+等级已停用,如需使用等级---请先启用等级."</string>
+	<string name="kmember_level_desc_empty">"通过会员等级制度吸引顾客消费,可根据您的需要创建
+一个或多个等级,系统将根据您设置的规则自动升级会员等级."</string>
+	<string name="kmember_level_desc_open">"系统将根据您设置的规则,自动升级会员等级.
+等级已启用,如需编辑等级---请先停用等级."</string>
 	<string name="kmember_level_disable">等级已停用</string>
 	<string name="kmember_level_enable">等级已启用</string>
 	<string name="kmember_level_exit_warning">确定退出编辑等级吗?</string>
@@ -3206,7 +3278,8 @@
 	<string name="kmember_select_salesman_title">选择销售员</string>
 	<string name="kmember_set_up">去设置</string>
 	<string name="kmember_shuru_fanwei">请输入1～999999的正整数</string>
-	<string name="kmember_store_value_empty_hint">"暂不可设置规则\n请先前往商家后台添加分组"</string>
+	<string name="kmember_store_value_empty_hint">"暂不可设置规则
+请先前往商家后台添加分组"</string>
 	<string name="kmember_store_value_empty_note">暂无储值分组，可点击右下角创建</string>
 	<string name="kmember_store_value_groups_desc">当前品牌下已存在以下分组。可进入分组内编辑规则，如需创建分组，可点击右下角创建。</string>
 	<string name="kmember_store_value_groups_empty">设置储值规则，培养顾客使用充值消费的习惯，激励消费增加营收。需将你的门店放入某一分组下，并对分组设置规则。</string>
@@ -3229,7 +3302,8 @@
 	<string name="kmember_support_mianmi_pay">支持免密支付,</string>
 	<string name="kmember_takeout_gain_integray">第三方外卖订单可获得积分</string>
 	<string name="kmember_text_memberlevl_close">没有设置会员等级</string>
-	<string name="kmember_tip_auto_pause">"需要暂停所有会员等级后,才可以进行编辑,\n是否暂停并编辑等级?"</string>
+	<string name="kmember_tip_auto_pause">"需要暂停所有会员等级后,才可以进行编辑,
+是否暂停并编辑等级?"</string>
 	<string name="kmember_tip_cancel">取消</string>
 	<string name="kmember_tip_confirm">确定</string>
 	<string name="kmember_tip_consume_integral">消费可获积分</string>
@@ -3243,7 +3317,8 @@
 	<string name="kmember_tip_empty">暂无会员等级,可点击右下角创建</string>
 	<string name="kmember_tip_gain_growth">获得成长值</string>
 	<string name="kmember_tip_great0">大于0的整数</string>
-	<string name="kmember_tip_growth_desc">"按照消费/储值金额获取,如每消费10元获得10成长值,\n消费不够10元时不累计"</string>
+	<string name="kmember_tip_growth_desc">"按照消费/储值金额获取,如每消费10元获得10成长值,
+消费不够10元时不累计"</string>
 	<string name="kmember_tip_growth_gain">成长值获取</string>
 	<string name="kmember_tip_growth_range">成长值范围%1$s~%2$s</string>
 	<string name="kmember_tip_how_many_integral">多少积分</string>
@@ -3320,10 +3395,13 @@
 	<string name="kordering_pay_fail_hint">订单已生成，退出后只能到POS订单中心付款，确认放弃付款？</string>
 	<string name="kreport_all_amout_hint">总收款(不含储值消费)</string>
 	<string name="kreport_amount_all">%2$s%1$s</string>
-	<string name="kreport_amount_in_shop">"店内收款\n%2$s%1$s"</string>
-	<string name="kreport_amount_in_shop2">"店内总收款\n%2$s%1$s"</string>
+	<string name="kreport_amount_in_shop">"店内收款
+%2$s%1$s"</string>
+	<string name="kreport_amount_in_shop2">"店内总收款
+%2$s%1$s"</string>
 	<string name="kreport_amount_in_shop_hint">店内收款%2$s%1$s</string>
-	<string name="kreport_amount_third_party">"第三方收款\n%2$s%1$s"</string>
+	<string name="kreport_amount_third_party">"第三方收款
+%2$s%1$s"</string>
 	<string name="kreport_autogen_30_day">30天</string>
 	<string name="kreport_autogen_anbishupaixu">按笔数排序</string>
 	<string name="kreport_autogen_anrixuanze">按日选择</string>
@@ -3430,7 +3508,8 @@
 	<string name="kreport_no_third_pay_data">暂无第三方收款数据</string>
 	<string name="kreport_payment_Amount">总收款%2$s%1$s</string>
 	<string name="kreport_payment_inShop">店内收款(不含储值消费)：%2$s%1$s</string>
-	<string name="kreport_payment_left_hint">"你好\n哈哈"</string>
+	<string name="kreport_payment_left_hint">"你好
+哈哈"</string>
 	<string name="kreport_payment_only_inshop">饼图仅包含店内收款部分，不包含第三方收款</string>
 	<string name="kreport_payment_third">第三方收款：%2$s%1$s</string>
 	<string name="kreport_paymentAmount">总实付</string>
@@ -3492,7 +3571,8 @@
 	<string name="leak_canary_delete_all_leaks_title">Are you sure you want to delete all leaks?</string>
 	<string name="leak_canary_display_activity_label">Leaks</string>
 	<string name="leak_canary_excluded_row">[Excluded] %s</string>
-	<string name="leak_canary_failure_report">"Please report this failure to http://github.com/square/leakcanary\n"</string>
+	<string name="leak_canary_failure_report">"Please report this failure to http://github.com/square/leakcanary
+"</string>
 	<string name="leak_canary_leak_excluded">[Excluded] %1$s leaked %2$s</string>
 	<string name="leak_canary_leak_list_title">Leaks in %s</string>
 	<string name="leak_canary_no_leak_text">The GC was being lazy.</string>
@@ -3690,7 +3770,8 @@
 	<string name="main_face_rec">人脸验证</string>
 	<string name="main_face_register">人脸注册</string>
 	<string name="main_info_commit">信息提交</string>
-	<string name="main_input_camera">"输入证件号,\n开始拍照～"</string>
+	<string name="main_input_camera">"输入证件号,
+开始拍照～"</string>
 	<string name="main_input_number">请输入您的证件号</string>
 	<string name="main_item_appointment">叫号</string>
 	<string name="main_manage">门店</string>
@@ -3939,7 +4020,8 @@
 	<string name="member_prepaid_order_amount">应付</string>
 	<string name="member_price">会员价</string>
 	<string name="member_push_arrived">推送来了</string>
-	<string name="member_qr_hint">"请顾客出示会员码\n并将会员码放入扫描框内"</string>
+	<string name="member_qr_hint">"请顾客出示会员码
+并将会员码放入扫描框内"</string>
 	<string name="member_qr_login">扫码登录</string>
 	<string name="member_query_success">查询成功</string>
 	<string name="member_real_card_abolish_status">已废除</string>
@@ -4089,8 +4171,10 @@
 	<string name="mobileui_thursday">星期四</string>
 	<string name="mobileui_to">至</string>
 	<string name="mobileui_tuesday">星期二</string>
-	<string name="mobileui_two_tabbar_left_hint">"你好\n哈哈"</string>
-	<string name="mobileui_two_tabbar_right_hint">"你好\n哈哈"</string>
+	<string name="mobileui_two_tabbar_left_hint">"你好
+哈哈"</string>
+	<string name="mobileui_two_tabbar_right_hint">"你好
+哈哈"</string>
 	<string name="mobileui_wednesday">星期三</string>
 	<string name="mobileui_week">周</string>
 	<string name="mobileui_xlistview_footer_hint_normal">查看更多</string>
@@ -4455,7 +4539,8 @@
 	<string name="order_snack">快速点单</string>
 	<string name="order_source">订单来源</string>
 	<string name="order_status">订单状态</string>
-	<string name="order_status_error_please_call_service">"订单状态错误!\n请联系客服处理"</string>
+	<string name="order_status_error_please_call_service">"订单状态错误!
+请联系客服处理"</string>
 	<string name="order_str">单</string>
 	<string name="order_success2">下单成功</string>
 	<string name="order_time">下单时间</string>
@@ -4643,7 +4728,7 @@
 	<string name="phone_length_hint">请输入手机号码！</string>
 	<string name="phone_not_null">电话号码为空</string>
 	<string name="phone_num">手机号码</string>
-	<string name="phone_order">电话</string>
+	<string name="phone_order">电话订单</string>
 	<string name="phone_redirect">转</string>
 	<string name="phone_regex_hint">手机号码输入错误</string>
 	<string name="phone_scan_code_hint">请将手机对准二维码</string>
@@ -5341,7 +5426,8 @@
 	<string name="qrcodebiz_app_qrscan_getcash_dialog_input_hint">请输入收款金额</string>
 	<string name="qrcodebiz_assistant_no_permision">您没有权限使用此功能，请知悉</string>
 	<string name="qrcodebiz_commercial_type_choose_error">请选择绑定类型</string>
-	<string name="qrcodebiz_commercial_type_dish_city_hint">"检测到商户为美食城业态\n您当前绑定的POS是："</string>
+	<string name="qrcodebiz_commercial_type_dish_city_hint">"检测到商户为美食城业态
+您当前绑定的POS是："</string>
 	<string name="qrcodebiz_device_bind_success">继续绑定</string>
 	<string name="qrcodebiz_logout_error">退出失败</string>
 	<string name="qrcodebiz_scan_result">扫描结果</string>
@@ -5545,6 +5631,7 @@
 	<string name="report">报表</string>
 	<string name="report_0_single">0单</string>
 	<string name="report_account_receive">销账收款</string>
+	<string name="report_advance_payment">预付金</string>
 	<string name="report_all_money">收款总额</string>
 	<string name="report_amount">营业额(元)</string>
 	<string name="report_amount_collected">收款金额：</string>
@@ -5601,7 +5688,9 @@
 	<string name="report_business_shop">门店</string>
 	<string name="report_business_situation">营业概览</string>
 	<string name="report_business_source">业务来源：</string>
-	<string name="report_business_tips">"营业收入：通过订单产生的销售收入，含挂账金额。( 营业收入=销售实收+挂账 )\n\n 销货与退货：销货指已完成已支付订单(含反结账原单)；退货指全部退和部分退订单(含反结账产生的退货单)"</string>
+	<string name="report_business_tips">"营业收入：通过订单产生的销售收入，含挂账金额。( 营业收入=销售实收+挂账 )
+
+ 销货与退货：销货指已完成已支付订单(含反结账原单)；退货指全部退和部分退订单(含反结账产生的退货单)"</string>
 	<string name="report_business_total">共计</string>
 	<string name="report_businesss">营业日报</string>
 	<string name="report_calcute_total">结算总金额</string>
@@ -5611,6 +5700,7 @@
 	<string name="report_capture_result_no_permission">无权限</string>
 	<string name="report_capture_result_no_permission_brand">门店下无法访问</string>
 	<string name="report_capture_result_no_permission_store">品牌下无法访问</string>
+	<string name="report_card_income">次卡收入</string>
 	<string name="report_card_pay">含卡费收款</string>
 	<string name="report_choose_end_time">请选择结束时间</string>
 	<string name="report_choose_start_time">请选择开始时间</string>
@@ -5745,7 +5835,9 @@
 	<string name="report_order_number">订单编号：</string>
 	<string name="report_order_report">订单报表</string>
 	<string name="report_order_source_percent">订单来源占比</string>
-	<string name="report_order_source_tips">"订单来源：通过来源统计的已完成订单 ( 含退货退款 )\n\n销售金额：通过订单来源统计的订单数量，计算完成的金额，如果订单操作退款，需要减去销售金额 ( 计算规则和销售概况一致 )"</string>
+	<string name="report_order_source_tips">"订单来源：通过来源统计的已完成订单 ( 含退货退款 )
+
+销售金额：通过订单来源统计的订单数量，计算完成的金额，如果订单操作退款，需要减去销售金额 ( 计算规则和销售概况一致 )"</string>
 	<string name="report_order_source_total_amount">订单总金额(元)</string>
 	<string name="report_order_time">下单时间：</string>
 	<string name="report_org_half_year_brief">近半年收款概况</string>
@@ -5769,7 +5861,9 @@
 	<string name="report_paymode_cash">现金</string>
 	<string name="report_paymode_weixin">微信</string>
 	<string name="report_people">(人)</string>
-	<string name="report_people_tips">"就餐人数：根据堂食、外卖计算的就餐人数，反结账订单只统计反结新单的就餐人数\n折前客单价：折前客单价=优惠前销售金额/就餐人数\n来客数：全部订单中的顾客数量总计（包括作废订单，包括外卖订单客户数）"</string>
+	<string name="report_people_tips">"就餐人数：根据堂食、外卖计算的就餐人数，反结账订单只统计反结新单的就餐人数
+折前客单价：折前客单价=优惠前销售金额/就餐人数
+来客数：全部订单中的顾客数量总计（包括作废订单，包括外卖订单客户数）"</string>
 	<string name="report_percent">%1$s%%</string>
 	<string name="report_performance_attain_pre">达成%1$s%%</string>
 	<string name="report_performance_avg_pre">平均%1$s%%</string>
@@ -5869,7 +5963,9 @@
 	<string name="report_sale_rank">商品今日销量TOP10</string>
 	<string name="report_sale_rank_msg">详见商品销售报表</string>
 	<string name="report_sale_sum_info">商品销售概况</string>
-	<string name="report_sale_tips">"订单笔数: 统计已完成的订单笔数之和，包括已完成已支付、已退货已支付、已退货已退款、已反结账已支付、已挂账\n\n 销售金额: 统计已完成订单对应的销售金额，销售金额包括无单收银、商品销售金额、附加费、收押金、附加消费税"</string>
+	<string name="report_sale_tips">"订单笔数: 统计已完成的订单笔数之和，包括已完成已支付、已退货已支付、已退货已退款、已反结账已支付、已挂账
+
+ 销售金额: 统计已完成订单对应的销售金额，销售金额包括无单收银、商品销售金额、附加费、收押金、附加消费税"</string>
 	<string name="report_sale_total_count">销量总量：</string>
 	<string name="report_sale_total_money">销售总额：</string>
 	<string name="report_sale_total_money_unit">销售金额(元)</string>
@@ -6161,7 +6257,10 @@
 	<string name="self_icbc_rate_info">费率信息</string>
 	<string name="self_icbc_scan">扫一扫</string>
 	<string name="self_icbc_shop_name">商户全称</string>
-	<string name="self_icbc_unbind_hint_str">"1.关注公众号\"智慧通金融服务平台\"\n2.在菜单中选择\"商户管理-商户签约\"完成注册\n3.注册审核成功，可查看工行支付二维码\n4.在该页面，点击\"扫描绑定\"扫描工行二维码"</string>
+	<string name="self_icbc_unbind_hint_str">"1.关注公众号\"智慧通金融服务平台\"
+2.在菜单中选择\"商户管理-商户签约\"完成注册
+3.注册审核成功，可查看工行支付二维码
+4.在该页面，点击\"扫描绑定\"扫描工行二维码"</string>
 	<string name="self_icbc_unbind_str">商户暂未绑定工行支付参数</string>
 	<string name="self_icbc_weixin">微信</string>
 	<string name="self_icbc_yunsanfu">云闪付</string>
@@ -6486,6 +6585,16 @@
 	<string name="smart_wait_check">等待检测</string>
 	<string name="smart_xiao_on_msg">小ON有话说：成本的控制是商家的第一要务，使用客如云供应链服务，预计降低您23.5%以上的成本。 客如云供应链服务，专注降低经营成本。</string>
 	<string name="smart_zixun">客如云供应链服务，专注降低经营成本 免费咨询</string>
+	<string name="smartmanage_autogen_bendianjia">本店价格</string>
+	<string name="smartmanage_autogen_cancel">取消</string>
+	<string name="smartmanage_autogen_cur_score">本次得分</string>
+	<string name="smartmanage_autogen_detecting">检测中…</string>
+	<string name="smartmanage_autogen_jianyidingjia_qujian">建议定价区间</string>
+	<string name="smartmanage_autogen_load_failed">糟糕,加载失败</string>
+	<string name="smartmanage_autogen_re_check">重新检测</string>
+	<string name="smartmanage_autogen_re_load">重新加载</string>
+	<string name="smartmanage_autogen_score">分</string>
+	<string name="smartmanage_autogen_shangquajia">商圈同行均价</string>
 	<string name="sms_alert">发送排队短信提醒</string>
 	<string name="sms_alert_msg">开启后，可以自动向顾客发送短信，告知排队进程</string>
 	<string name="snack">快餐</string>
@@ -6604,6 +6713,7 @@
 	<string name="str_groupcoupon_koubei_input_coupon_code_tip">请输入口碑券码</string>
 	<string name="str_groupcoupon_maxcount">共</string>
 	<string name="str_groupcoupon_maxcount_local">共<font size="24">%s</font>张</string>
+	<string name="str_groupcoupon_maxcount_local">共<font size="24">%s</font>張</string>
 	<string name="str_groupcoupon_maxcount_tip">使用团购券的张数不能大于</string>
 	<string name="str_groupcoupon_meituan_input_coupon_code_tip">请输入美团券码</string>
 	<string name="str_groupcoupon_mincount_tip">使用团购券的张数不能小于</string>
@@ -6685,9 +6795,11 @@
 	<string name="table_code_finish">完成</string>
 	<string name="table_code_first_step">第1步：建议前往移动支付模块，添加移动收款账号——打通线上(微信、支付宝)收款方式</string>
 	<string name="table_code_fourth_step">第4步：绑定桌贴码，完成</string>
-	<string name="table_code_guide_subtitle_1">"保存桌台二维码，自行打印 \nor 官方桌台码寄送"</string>
+	<string name="table_code_guide_subtitle_1">"保存桌台二维码，自行打印
+or 官方桌台码寄送"</string>
 	<string name="table_code_guide_subtitle_2">减免人工，顾客手机自助点餐</string>
-	<string name="table_code_guide_subtitle_3">"微信、支付宝聚合支付，线上线下支付\n全满足"</string>
+	<string name="table_code_guide_subtitle_3">"微信、支付宝聚合支付，线上线下支付
+全满足"</string>
 	<string name="table_code_guide_title_1">便捷配置桌台码</string>
 	<string name="table_code_guide_title_2">自助点餐结账</string>
 	<string name="table_code_guide_title_3">多种收款方式</string>
@@ -6789,8 +6901,8 @@
 	<string name="table_message">消息</string>
 	<string name="table_minutes_seconds_format">mm分ss秒</string>
 	<string name="table_mobile_store">移动门店设置</string>
-	<string name="table_n_days_ago">%1$d days ago</string>
-	<string name="table_n_hours_ago">%1$d hours ago</string>
+	<string name="table_n_days_ago">%1$d 天以前</string>
+	<string name="table_n_hours_ago">%1$d 小时以前</string>
 	<string name="table_name">桌台名称</string>
 	<string name="table_name_caption">桌台名称：</string>
 	<string name="table_name_text">桌台名称</string>
@@ -6839,10 +6951,13 @@
 	<string name="table_text_yiyouhint_def">已有%1$s</string>
 	<string name="table_warehouse_out_delete_confirm_delete">确认删除</string>
 	<string name="table_warehouse_out_delete_confirm_sort">确认排序</string>
+	<string name="tablemanage_autogen_long_press_sort">长按桌台可拖动排序~</string>
+	<string name="tablemanage_autogen_zanwufenlei_add">暂无分类，请您新增</string>
 	<string name="take_dish_time">取餐时间</string>
 	<string name="take_out_all">全部</string>
 	<string name="take_out_connect">外卖对接</string>
-	<string name="take_out_guide_subtitle_1">"饿了么、滴滴外卖、美团外卖等\n主流平台自助绑定"</string>
+	<string name="take_out_guide_subtitle_1">"饿了么、滴滴外卖、美团外卖等
+主流平台自助绑定"</string>
 	<string name="take_out_guide_subtitle_2">外卖自动接单，拒绝漏单、省时高效</string>
 	<string name="take_out_guide_subtitle_3">减免人工，自动打印、传达后厨</string>
 	<string name="take_out_guide_title_1">打通多平台</string>
@@ -6903,6 +7018,7 @@
 	<string name="takeout_meituan_delivery">美团配送</string>
 	<string name="takeout_meituan_desc">请在收银主页上使用[美团外卖商家版]</string>
 	<string name="takeout_meituan_order">美团外卖</string>
+	<string name="takeout_nav_distance">距离:</string>
 	<string name="takeout_navigating">导航中</string>
 	<string name="takeout_navigation">导航地址</string>
 	<string name="takeout_network_notavail">当前网络不可用</string>
@@ -6948,6 +7064,7 @@
 	<string name="takeout_pos_blue_accept_hint">注：开启自动接收绑定的外卖平台订单，关闭则不自动接收，需手动在收银机上接单</string>
 	<string name="takeout_quantity_total">外卖总量：</string>
 	<string name="takeout_real_stock_hint">退回库存</string>
+	<string name="takeout_receive_arrived">收款并送达</string>
 	<string name="takeout_receive_detail">领取并继续扫描</string>
 	<string name="takeout_receive_failed">领取失败！</string>
 	<string name="takeout_receive_partial_success">成功领取%1$d张订单，%2$d张订单领取失败</string>
@@ -7130,7 +7247,8 @@
 	<string name="text_input_hint_def">输入新增%1$s名称</string>
 	<string name="text_isee">我知道了</string>
 	<string name="text_isstandard_dish">是否规格菜品</string>
-	<string name="text_kcproduct_price_tips">"负库存物品\n待重新入库后会展示真实价格"</string>
+	<string name="text_kcproduct_price_tips">"负库存物品
+待重新入库后会展示真实价格"</string>
 	<string name="text_kmobile_yxsz">营销设置</string>
 	<string name="text_long_press_continue_entering">长按继续录入</string>
 	<string name="text_long_press_input">长按录入</string>
@@ -7303,7 +7421,8 @@
 	<string name="toast_error_can_not_get_sub_classification_type_in_default_classification">分类模板错误，不能获取默认模板下的中类</string>
 	<string name="toast_error_ocr_scan_new_dish_with_zero">新识别到 0 条菜品，请检查图片</string>
 	<string name="toast_fast_request">请稍后重试!</string>
-	<string name="toast_limit_time_select_help">"①每天循环售卖——每天都会在所选的时间段售卖设置的商品价格，一直循环，可停用；\n②今日售卖——只对设置的「今日」有效，时间过期后自动停用，可再启用"</string>
+	<string name="toast_limit_time_select_help">"①每天循环售卖——每天都会在所选的时间段售卖设置的商品价格，一直循环，可停用；
+②今日售卖——只对设置的「今日」有效，时间过期后自动停用，可再启用"</string>
 	<string name="toast_msg_logout_failure">登出失败请重试</string>
 	<string name="toast_not_find_any_words_in_image">未在图片中找到文字</string>
 	<string name="toast_ocr_dish_break">识别中断</string>
@@ -7345,7 +7464,9 @@
 	<string name="trade_method">  做法：</string>
 	<string name="trade_no_label">交易号</string>
 	<string name="trade_order_pending">待处理</string>
+	<string name="trade_order_pending_cancel_request">取消请求</string>
 	<string name="trade_order_pending_new">新订单</string>
+	<string name="trade_order_pending_rejected_or_canceled">已拒绝/取消</string>
 	<string name="trade_order_sales">销货单</string>
 	<string name="trade_order_sales_abandoned">已作废</string>
 	<string name="trade_order_sales_paid">已结账</string>
@@ -7477,11 +7598,15 @@
 	<string name="tuicai_time">退菜时间</string>
 	<string name="tv__mobile_payment_entrance_welcome">欢迎您。</string>
 	<string name="tv_crop_images_text_hint">请触摸边框线条选择裁剪区域</string>
-	<string name="tv_dit_ib_done">"收\n款"</string>
-	<string name="tv_dit_ib_done_cashier">"完成\n结算"</string>
+	<string name="tv_dit_ib_done">"收
+款"</string>
+	<string name="tv_dit_ib_done_cashier">"完成
+结算"</string>
 	<string name="tv_dit_ib_done_clear">清空</string>
-	<string name="tv_dit_ib_done_number">"确\n认"</string>
-	<string name="tv_dit_ib_done_wipe_zero">"抹\n零"</string>
+	<string name="tv_dit_ib_done_number">"确
+认"</string>
+	<string name="tv_dit_ib_done_wipe_zero">"抹
+零"</string>
 	<string name="tv_goods_total_count_hint">物品总计：</string>
 	<string name="tv_info_ocr_dish_contain_guide_first">可识别商品名称、价格、单位等基本信息 为了识别准确，请保证图片清晰</string>
 	<string name="tv_info_ocr_dish_contain_guide_second">拍摄后请对照片进行裁切，并保证商品 属于同一个分类下</string>
@@ -7632,7 +7757,8 @@
 	<string name="version_prefix">V</string>
 	<string name="version_update_go">立即升级</string>
 	<string name="version_update_hint">的用户正在使用最新版本</string>
-	<string name="version_update_prompt_notice">"建议在WiFi环境下升级\n点击按钮可能会退出APP进行升级"</string>
+	<string name="version_update_prompt_notice">"建议在WiFi环境下升级
+点击按钮可能会退出APP进行升级"</string>
 	<string name="versionId">实铭通v0.20beta(build 02.12.015)</string>
 	<string name="versionInfo">版本信息</string>
 	<string name="vip_serve_text">会员服务</string>
@@ -7772,7 +7898,8 @@
 	<string name="yuan">元</string>
 	<string name="yuding_phone">订餐电话：</string>
 	<string name="yuzhi_shangping">预制商品</string>
-	<string name="zanzhu">"合作机构：天堂基金 基金代码000198 \n资金安全由金汤保险承担，极速全额赔付"</string>
+	<string name="zanzhu">"合作机构：天堂基金 基金代码000198
+资金安全由金汤保险承担，极速全额赔付"</string>
 	<string name="zfb">支付宝</string>
 	<string name="zfb_cash">支付宝收款</string>
 	<string name="zhang">张</string>

@@ -9,7 +9,7 @@ from org.ith.learn.util.TUtils import open_excel_as_list, read_xml_as_kce_list, 
 import re
 import difflib
 
-from org.ith.learn.work.Work import gener_dict_by_excel
+from org.ith.learn.work.Work import gener_dict_by_excel, just_sort
 
 """
 怎么知道新增哪些key
@@ -25,10 +25,11 @@ values-zh values-zh-rCN values-zh-rHK values-zh-rTW  values
 skip_key_prefix = [
     'abc_',
     'leak_canary_',
-    'leak_canary_',
+    'title_activity',
+    'key_liveness_',
 ]
 
-dirs_need_care = [
+china_dirs_need_care = [
     'values',
     'values-zh',
     'values-zh-rCN',
@@ -36,8 +37,11 @@ dirs_need_care = [
     'values-zh-rTW',
 ]
 
+local_base_dir = '../../../../docs/i18n/'
+
 
 def gener_all_cn_by_apk(apk_path):
+    start = time.time()
     # apk路径的上一级目录
     apk_path = apk_path.strip()
     print('apk_path ', apk_path)
@@ -46,12 +50,12 @@ def gener_all_cn_by_apk(apk_path):
     os.chdir(apk_parent)
     command = 'apktool d ' + apk_path
     exec_cmd(command)
-    res_path = apk_path.split('.')[0] + os.sep + 'res'
+    res_path = apk_path.split('.apk')[0] + os.sep + 'res'
     print(res_path)
     care_path = list()
     for dir_path_name, dirs, files in os.walk(res_path):
         for name in dirs:
-            if name in dirs_need_care:
+            if name in china_dirs_need_care:
                 care_path.append(dir_path_name + os.sep + name + os.sep + 'strings.xml')
 
     all_kce_list = list()
@@ -124,6 +128,8 @@ def gener_all_cn_by_apk(apk_path):
     out_path = apk_parent + os.sep + apk_name.replace('.', '_') + '_all_cn.xml'
     write_kce_to_path(def_kce_list, path=out_path)
 
+    end = time.time() - start
+    print(highlight(', gener_all_cn_by_apk cost ', 2), end, ' s')
     return out_path
 
 
@@ -134,11 +140,10 @@ def pull_remote_dict():
     """
     command = """
      git archive master --remote=ssh://git@gitlab.shishike.com:38401/OSMobile/mobile-storage.git translate/kmobile/english.xml | tar -x && cp translate/kmobile/english.xml {} && rm -rf translate
-     """.format(
-        '../../../../docs/i18n/')
+     """.format(local_base_dir)
     exec_cmd(command.strip())
     print('pull_remote_dict cost time ', (time.time() - start), 's')
-    return read_xml_as_kce_list('../../../../docs/i18n/english.xml')
+    return read_xml_as_kce_list(local_base_dir + 'english.xml')
 
 
 def main():
@@ -149,7 +154,102 @@ def main():
     # new_path = gener_all_cn_by_apk('/private/tmp/newest.apk')
     # diff_xml(new_path_xml=new_path, old_path_xml=old_path)
     # gener_all_cn_by_apk('/private/tmp/old.apk')
-    gener_all_cn_by_apk('/private/tmp/thOnMobile-official-5.36.0-SNAPSHOT-armeabi-v7a-envGrd-2020-05-09-08-42-21.apk')
+    # gener_all_cn_by_apk('/private/tmp/thOnMobile-official-5.36.0-SNAPSHOT-armeabi-v7a-envGrd-2020-05-09-08-42-21.apk')
+
+    # just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/mobile-storage/translate/kmobile/english.xml')
+
+    check_apk_kce(
+        '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/build/outputs/apk/official/envGrd'
+        '/app-official-armeabi-v7a-envGrd.apk')
+    pass
+
+
+def gener_all_english(path_of_apk):
+    apk_path = path_of_apk.strip()
+    print('apk_path english ', apk_path)
+    apk_parent = os.path.dirname(apk_path)
+    apk_name = apk_path.split('/')[-1]
+    os.chdir(apk_parent)
+    command = 'apktool d ' + apk_path
+    exec_cmd(command)
+    res_path = apk_path.split('.apk')[0] + os.sep + 'res/'
+    en_flag = 'values-en'
+    for dir_path_name, dirs, files in os.walk(res_path):
+        if dir_path_name.endswith(en_flag):
+            return dir_path_name + os.sep + 'strings.xml'
+    pass
+
+
+def check_apk_kce(path_of_apk):
+    """
+    @param 传入的apk路径
+    反编译指定的apk并生成中文英文两个文件
+    然后比较相同key有占位符的地方 是不是都一致 防止 手抖导致奔溃
+    """
+    cn_kce_path = gener_all_cn_by_apk(path_of_apk)
+    english_path = gener_all_english(path_of_apk)
+
+    dict_cn = dict()
+    for kce in read_xml_as_kce_list(cn_kce_path):
+        dict_cn[kce.key] = kce.cn
+    dict_english = dict()
+    for kce in read_xml_as_kce_list(english_path):
+        dict_english[kce.key] = kce.cn
+
+    cn_keys = dict_cn.keys()
+    eng_keys = dict_english.keys()
+
+    # setA & setB = set交集
+    both_keys = cn_keys & eng_keys
+
+    print('dict_cn size ', len(dict_cn), ',dict_english size ', len(dict_english), ',cn keys ', len(cn_keys),
+          ',english keys ', len(eng_keys), ' both keys ', len(both_keys))
+
+    cn_pop = list()
+
+    tmp_dict = dict(dict_cn)
+    for k, v in tmp_dict.items():
+        if k not in both_keys:
+            dict_cn.pop(k)
+            cn_pop.append(KCEBean(key=k, cn=v, en=''))
+
+    en_pop = list()
+
+    tmp_dict = dict(dict_english)
+    for k, v in tmp_dict.items():
+        if k not in both_keys:
+            dict_english.pop(k)
+            en_pop.append(KCEBean(key=k, cn=v, en=''))
+
+    check = '%'
+    count = 0
+    for key in both_keys:
+        cn_v = str(dict_cn[key])
+        en_v = str(dict_english[key])
+        if cn_v.__contains__(check) and en_v.__contains__(check):
+            # print(key, dict_cn[key])
+            if cn_v.count(check) != en_v.count(check):
+                print('===========================', highlight(key, 2), cn_v, highlight(en_v, 3))
+            count += 1
+
+        if cn_v.count('$') != en_v.count('$'):
+            print('$$$$$$$', highlight(key, 4), cn_v, highlight(en_v, 5))
+
+    print('both contains % ', count)
+
+    tmp = set()
+    for t in cn_pop:
+        is_start_with = False
+        for pre in skip_key_prefix:
+            if str(t.key).startswith(pre):
+                is_start_with = True
+                break
+        if not is_start_with:
+            tmp.add(t)
+            print('pre for loop ', t)
+
+    write_kce_to_path(list(tmp), './cn_pop.xml')
+    write_kce_to_path(en_pop, './english_pop.xml')
 
     pass
 
@@ -251,6 +351,45 @@ def diff_xml(new_path_xml, old_path_xml, out_path='/tmp/diffapk/'):
     #     rout.writelines(str_changed_line)
     # with open(newadd_out_name, 'w') as rout:
     #     rout.writelines(str_new_added_line)
+
+
+def gener_commented_english(cn_path, eng_path, out_path='tmp/comment_en.xml'):
+    """
+    根据传入的全中文全英文 生成带注释的英文xml
+    如 <!--    关于 --> 	<string name="aboutus_title">about</string>
+    """
+    cn_list = read_xml_as_kce_list(cn_path)
+    left = '<!--'
+    right = '-->'
+    str_en_line = list()
+    with open(eng_path, 'r') as rin:
+        lines = rin.readlines()
+        count = 0
+        for line in lines:
+            if count < 30000:
+                match = r'<string name="(\w*)">(.*)</string>'
+                rets = re.findall(match, line, re.DOTALL)
+                if len(rets) > 0:
+                    rets = rets[0]
+                    key = rets[0]
+                    value = rets[1]
+                    count += 1
+                    kce = find_kce_by_key(key, cn_list)
+                    if kce is None:
+                        print('shit kce none key is ', key)
+                        continue
+                    ss = '{} {} {} {}'.format(left, kce.cn.replace('--', '__'), right, line)
+                    str_en_line.append(ss)
+
+        with open(out_path, 'w') as rout:
+            rout.writelines(str_en_line)
+    pass
+
+
+def find_kce_by_key(key, kce_list):
+    for kce in kce_list:
+        if kce.key == key:
+            return kce
 
 
 def to_pretty(key, value):

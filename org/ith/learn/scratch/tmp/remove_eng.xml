@@ -94,7 +94,10 @@
 	<string name="account_mamager_no_supoort_modify_number">"Brand/store owner temporarily doesn\'t support modification of mobile phone number"</string>
 	<string name="account_managent_mode_explain">Instructions of chain management model</string>
 	<string name="account_managent_mode_explain_company">Centralized management and control: goods, mobile account to collect money, member, statement, ect.</string>
-	<string name="account_managent_mode_explain_company_content">"1.Goods: The company add items that are sent to each store through the sales template;\n        2. Mobile collection: By default, payment in each store is collected by the company and the company needs to open an account. The store can also set up separate money collection;\n        3. Member: Member level, top-up rules, etc. are created by the company. All stores execute these setups accordingly;\n        4. Report: The company can see reports of all stores."</string>
+	<string name="account_managent_mode_explain_company_content">"1.Goods: The company add items that are sent to each store through the sales template;
+        2. Mobile collection: By default, payment in each store is collected by the company and the company needs to open an account. The store can also set up separate money collection;
+        3. Member: Member level, top-up rules, etc. are created by the company. All stores execute these setups accordingly;
+        4. Report: The company can see reports of all stores."</string>
 	<string name="account_managent_mode_explain_content">Companies and stores belong to the leader-member relation.In a company, there may be stores A, B, etc.For the needs of unified management in the chain mode, the functions are divided into:</string>
 	<string name="account_managent_mode_explain_noshow">No more tips</string>
 	<string name="account_managent_mode_explain_shop">The store is mainly responsible for ordering, money collection, in-store staff, member, in-store report, etc.</string>
@@ -221,7 +224,8 @@
 	<string name="account_username">"Users\' name"</string>
 	<string name="account_username_not_empty_prompt">Username can not be empty!</string>
 	<string name="account_valid_data">Data error</string>
-	<string name="account_valid_data_content">"1. Pls check if your mobile phone number is entered correctly;\n        2. If the mobile phone number is correct pls log in to the background to reset the password."</string>
+	<string name="account_valid_data_content">"1. Pls check if your mobile phone number is entered correctly;
+        2. If the mobile phone number is correct pls log in to the background to reset the password."</string>
 	<string name="account_validate_mobile_get_validate_code_first">Pls get the verification code first</string>
 	<string name="account_validate_mobile_title">Modify phone No.</string>
 	<string name="account_verify_and_modify">Pls verify phone No. and change password</string>
@@ -314,7 +318,7 @@
 	<string name="app_item_quick_guide_info_business_setting_no">Set up printing,money collection, payment method, business hours, etc.</string>
 	<string name="app_item_quick_guide_info_business_setting_yes">Set. Can continue to improve</string>
 	<string name="app_item_quick_guide_info_complete">Complete opening.</string>
-	<string name="app_item_quick_guide_info_goods_no">No goods. Please add</string>
+	<string name="app_item_quick_guide_info_goods_no">No goods. Pls add</string>
 	<string name="app_item_quick_guide_info_goods_yes">Done. You can continue operate products</string>
 	<string name="app_item_quick_guide_info_group_buying_no">Pay for group-purchase. Quick verification of coupon is supported for checkout</string>
 	<string name="app_item_quick_guide_info_membership_level_no">Member price, attract customers</string>
@@ -411,7 +415,8 @@
 	<string name="assistant_tech_support">Voice technology provided by iFlytek</string>
 	<string name="assistant_tishi">Tips</string>
 	<string name="assistant_title">Smart assistant</string>
-	<string name="assistant_update_info">"newly add xxx function\n        2.newly add xxx functionn3.optimized xxx modulen4.fixed xxx bug"</string>
+	<string name="assistant_update_info">"newly add xxx function
+        2.newly add xxx functionn3.optimized xxx modulen4.fixed xxx bug"</string>
 	<string name="at_current_table">The same table!</string>
 	<string name="atleast_6_text">Add at least 6 apps</string>
 	<string name="auth_brand_product_edit">Brand product editor</string>
@@ -474,7 +479,6 @@
 	<string name="batmancard_device_not_match">The device is unmatchable</string>
 	<string name="batmancard_find_m1_failed">Failed to find M1 card</string>
 	<string name="batmancard_find_psam_failed">Failed to find the PSAM card</string>
-	<string name="batmancard_ic_should_spend_insert">IC card can only be waved or inserted</string>
 	<string name="batmancard_init_failed">initialization failed</string>
 	<string name="batmancard_is_running">Operating</string>
 	<string name="batmancard_readcard_failed">Card reading failed</string>
@@ -489,7 +493,10 @@
 	<string name="bind_device_hint">"Bind Keruyun\'s hardware devices"</string>
 	<string name="bind_pos_first">Pls bind the POS device first.</string>
 	<string name="bind_sucess_i_know">OK. Log in again</string>
-	<string name="bind_sucess_msg">"The pos is mainly used for order cashier and checkout printing.\n        Mobile APP: You can help you manage the basic information of the store, add goods, tables, collection accounts, employees, etc. You can also query data reports anytime and anywhere to help operate.\n\n        If you have any questions about the use, you can go to the APP Help Center to view the operation guide. Finally, I wish you all the best!"</string>
+	<string name="bind_sucess_msg">"The pos is mainly used for order cashier and checkout printing.
+        Mobile APP: You can help you manage the basic information of the store, add goods, tables, collection accounts, employees, etc. You can also query data reports anytime and anywhere to help operate.
+
+        If you have any questions about the use, you can go to the APP Help Center to view the operation guide. Finally, I wish you all the best!"</string>
 	<string name="bind_sucess_title">Congratulations. Bind the cash register success</string>
 	<string name="bind_sucess_title_relogin">Pls log in again for device info</string>
 	<string name="birthday_format">%1$d-%2$d-%3$d</string>
@@ -595,7 +602,6 @@
 	<string name="business_order_limit">Acceptance ceiling  </string>
 	<string name="business_people">Pax</string>
 	<string name="business_please_enter">Pls enter</string>
-	<string name="business_position">Decimals</string>
 	<string name="business_queue_code">Queue code:</string>
 	<string name="business_queue_description">Queue description:</string>
 	<string name="business_queue_details">queue details</string>
@@ -617,7 +623,8 @@
 	<string name="business_time_slot">Time period</string>
 	<string name="business_unified_setup">Uniform setup</string>
 	<string name="business_week">Week</string>
-	<string name="businesssetting_autogen_added_bukexuan">"Added\n        unselectable"</string>
+	<string name="businesssetting_autogen_added_bukexuan">"Added
+        unselectable"</string>
 	<string name="businesssetting_autogen_ah_no_data">No content.</string>
 	<string name="businesssetting_autogen_anjiaojie">w/o amount</string>
 	<string name="businesssetting_autogen_calc_way">Calculation way</string>
@@ -642,29 +649,6 @@
 	<string name="businesssetting_autogen_yudingbaoliu_time">Retention time of reservation</string>
 	<string name="businesssetting_autogen_zhi">To</string>
 	<string name="businesssetting_autogen_zidingyi">Custom</string>
-	<string name="businesssetting_beyond_max_chars">has been exceeded maximum words</string>
-	<string name="businesssetting_goto_set">To set</string>
-	<string name="businesssetting_hint">Tips</string>
-	<string name="businesssetting_i_known">Got it</string>
-	<string name="businesssetting_input_arrange">Input range is %1$s to 99</string>
-	<string name="businesssetting_keep_at_least_one">Select at least one</string>
-	<string name="businesssetting_max_people_num_not_empty">Maximum number can\'t be empty</string>
-	<string name="businesssetting_max_value_can_set">Maximum can set to</string>
-	<string name="businesssetting_min_value_can_set">Minimum can set to</string>
-	<string name="businesssetting_no_net">Network anomaly</string>
-	<string name="businesssetting_not_set_order_source">%1$s is not set order source</string>
-	<string name="businesssetting_not_set_time">%1$s is not set time period</string>
-	<string name="businesssetting_pls_input_valid_num">Pls enter invalid digit</string>
-	<string name="businesssetting_pls_re_select_combinations">Pls select combination mode</string>
-	<string name="businesssetting_pls_select_the_carry_way">Pls select carry mode</string>
-	<string name="businesssetting_queue_name_not_empty">Queue name can\'t be empty</string>
-	<string name="businesssetting_queue_num_not_empty">Queue code can\'t be empty</string>
-	<string name="businesssetting_reselect_time">Conflict with other times,Pls Reselect time</string>
-	<string name="businesssetting_save_fail">Save Error</string>
-	<string name="businesssetting_select_table_not_empty">No table selected</string>
-	<string name="businesssetting_set_at_least_one_period">Set at least one time period</string>
-	<string name="businesssetting_table_number_no_empty">Table number can\'t be empty</string>
-	<string name="businesssetting_time_slot">Time period</string>
 	<string name="buy_money">Price</string>
 	<string name="buy_phone">Buy a mobile phone</string>
 	<string name="buy_time">Purchase time</string>
@@ -788,7 +772,8 @@
 	<string name="cashier_static_code_push_position">The original switch of 【post money collectiom message】has been transferred to 【homepage-mine-setup】.Click to start. </string>
 	<string name="cashier_static_code_receipt">Receive payment through static code</string>
 	<string name="cashier_static_code_report_position">Pls view statistics of receipt through static code at 【report-statistics table of receipt through static code】</string>
-	<string name="cashier_static_qrcode_hint">"In application, mobile phone will receive voice broadcasting\n        outside application, system will post messages."</string>
+	<string name="cashier_static_qrcode_hint">"In application, mobile phone will receive voice broadcasting
+        outside application, system will post messages."</string>
 	<string name="cashier_static_qrcode_title">Post payment message to users</string>
 	<string name="cashier_today_recive_money">Total revenue of today</string>
 	<string name="cashier_today_total_amout">Money collection total today</string>
@@ -818,7 +803,8 @@
 	<string name="checked_2">Paid</string>
 	<string name="checkFinishOrder">Are you sure the order is complete?</string>
 	<string name="checking">Detecting...</string>
-	<string name="checking_member_card_fail_and_retry">"No membership card detected,\n        pls try again"</string>
+	<string name="checking_member_card_fail_and_retry">"No membership card detected,
+        pls try again"</string>
 	<string name="checkOut">are you sure to log out ?</string>
 	<string name="checkout">Checkout</string>
 	<string name="checkout_bill_print_number">Statement number of copies</string>
@@ -902,7 +888,8 @@
 	<string name="commercial_simple_name_input">"Pls enter merchant\'s short name"</string>
 	<string name="commercial_status_invalid">Your service has expiredpls contact 400-8866-815 for renewal</string>
 	<string name="commercial_type_choose_error">Pls select the binding type</string>
-	<string name="commercial_type_dish_city_hint">"Detecting the merchant as a food city format\n        your current binding POS is:"</string>
+	<string name="commercial_type_dish_city_hint">"Detecting the merchant as a food city format
+        your current binding POS is:"</string>
 	<string name="commodity_add_limit_price_trade_hint">There is no time period to sell products. Click the button below to add</string>
 	<string name="commodity_add_picture">Add pictures</string>
 	<string name="commodity_add_product">Add items</string>
@@ -915,7 +902,6 @@
 	<string name="commodity_add_text_type_son2">+ new sub-class</string>
 	<string name="commodity_add_text_unit">+ new unit</string>
 	<string name="commodity_add_zuofa">+ New practices</string>
-	<string name="commodity_allow">Allow</string>
 	<string name="commodity_autogen_add_price">Markup</string>
 	<string name="commodity_autogen_anzhushuhua">Press long to talk</string>
 	<string name="commodity_autogen_beizhu">Note</string>
@@ -967,17 +953,16 @@
 	<string name="commodity_autogen_zuofafenlei">Category of cooking method</string>
 	<string name="commodity_autogen_zuofaming_name">Name of cooking method</string>
 	<string name="commodity_batch_change_price">Change price in bulk</string>
-	<string name="commodity_batch_input_add">Please enter a markup</string>
-	<string name="commodity_batch_input_change">Please enter a flat price</string>
-	<string name="commodity_batch_input_discount">Please enter a discount, for example 20% off if you enter 8</string>
-	<string name="commodity_batch_input_reduce">Please enter a discount</string>
+	<string name="commodity_batch_input_add">Pls enter a markup</string>
+	<string name="commodity_batch_input_change">Pls enter a flat price</string>
+	<string name="commodity_batch_input_discount">Pls enter a discount, for example 20% off if you enter 8</string>
+	<string name="commodity_batch_input_reduce">Pls enter a discount</string>
 	<string name="commodity_bt_dish_add">+ add sub-dishes</string>
 	<string name="commodity_can_not_create">"Can\'t create product?"</string>
 	<string name="commodity_change_price">Change price</string>
 	<string name="commodity_check_hinttext_dialog">Dishes will be created under brand and authorized to the store. Whether to continue?</string>
 	<string name="commodity_check_hinttext_error_dialog">Only can create dishes under brand. Your account has no permissions</string>
 	<string name="commodity_check_no_cash_point_to_set">If the ticket gate is not detected pls go to the POS setting otherwise the ticket will not be issued.</string>
-	<string name="commodity_ck_type">Category of cooking method</string>
 	<string name="commodity_code_scan">Barcode scanning</string>
 	<string name="commodity_commit_create_spec">Spec.</string>
 	<string name="commodity_commit_create_spec_hint">+ Create specifications</string>
@@ -1018,7 +1003,7 @@
 	<string name="commodity_limit_batch_change">Change price in bulk</string>
 	<string name="commodity_limit_batch_discount">Batch discount</string>
 	<string name="commodity_limit_batch_reduce">Mark down in bulk</string>
-	<string name="commodity_look_more_trade">View all <Data><![CDATA[<font color="#2593F9">%1$d</font>]]></Data> Items</string>
+    <string name="commodity_look_more_trade">View all <Data><![CDATA[<font color="#2593F9">%1$d</font>]]></Data> Items</string>
 	<string name="commodity_manage_discount">Allow discount</string>
 	<string name="commodity_manage_sale_unit">Sales unit</string>
 	<string name="commodity_manage_single_price">Selling unit price(%1$s)</string>
@@ -1028,12 +1013,10 @@
 	<string name="commodity_no_create_permission_ques">The current store cannot create a product. What should I do?</string>
 	<string name="commodity_no_spec">No specification for now. Pls create first</string>
 	<string name="commodity_no_type">No classification for now. Pls create first</string>
-	<string name="commodity_not_allow">Not allowed</string>
 	<string name="commodity_one_jin_equals">1 catty =</string>
 	<string name="commodity_operation">Operation</string>
 	<string name="commodity_please_input">Pls enter</string>
 	<string name="commodity_please_input_price">Pls enter price</string>
-	<string name="commodity_price_enter_str">¥ Pls enter</string>
 	<string name="commodity_price_str">Price</string>
 	<string name="commodity_product_choose_prompt">Choose dishes</string>
 	<string name="commodity_product_data_load_fail">The food data part failed to load exit reload</string>
@@ -1065,8 +1048,8 @@
 	<string name="commodity_successful_recording">Recorded successfully!</string>
 	<string name="commodity_tax_batch_config_tax">Configure taxes in batches</string>
 	<string name="commodity_tax_config_tax">Configure taxes</string>
-	<string name="commodity_tax_format">%%%1$s</string>
-	<string name="commodity_tax_name">Tax type</string>
+    <string name="commodity_tax_format">%%%1$s</string>
+    <string name="commodity_tax_name">Tax type:</string>
 	<string name="commodity_tax_operate_desc">"Support multi-choice. When none is selected, tax type won\'t be configured."</string>
 	<string name="commodity_text_isstandard_dish">Dishes with specifications?</string>
 	<string name="commodity_text_label">Label</string>
@@ -1080,7 +1063,7 @@
 	<string name="commodity_text_voice_hint">Pls say \"Dish name + price\"</string>
 	<string name="commodity_text_zuofa">Cooking method</string>
 	<string name="commodity_ticket_join_dish_text">Outlet-correlated dishes</string>
-	<string name="commodity_title_orc_dish_management_now_format">Identify for you <Data><![CDATA[<font color="#2593F9">&#160;%1$s</font>]]></Data> Dishes,Click on each item to edit it</string>
+    <string name="commodity_title_orc_dish_management_now_format">Identify for you <Data><![CDATA[<font color="#2593F9">&#160;%1$s</font>]]></Data> Dishes,Click on each item to edit it</string>
 	<string name="commodity_toast_error_ocr_scan_new_dish_with_zero">Newly recognized 0 dishes pls check the picture</string>
 	<string name="commodity_toast_ocr_dish_management_must_has_one_dish">Pls confirm that there is a dish</string>
 	<string name="commodity_toast_ocr_dish_management_must_has_one_effective">Must have a valid dish</string>
@@ -1091,9 +1074,7 @@
 	<string name="common_clean">Clear</string>
 	<string name="common_continue">Continue</string>
 	<string name="common_data_ticket_minimum_consumption_surcharge">Minimum Consumption Surcharge</string>
-	<string name="common_ok">Confirm</string>
 	<string name="common_temp_card">Anonymous card</string>
-	<string name="commonkmobile_choose_time_period">Select time period</string>
 	<string name="company">Corporate</string>
 	<string name="company_certification_photo_upload">"Upload corporate\'s qualification pictures(optional)"</string>
 	<string name="company_certification_photo_upload_must">"Upload corporate\'s qualification pictures(required)"</string>
@@ -1129,10 +1110,12 @@
 	<string name="contact_method">Contact 400-8866-815</string>
 	<string name="contact_read_error">Address book read error</string>
 	<string name="content_img_ocr_dish_item_delete">content_img_ocr_dish_item_delete</string>
-	<string name="content_limit_time_price_waring_add">"The time period item you created has not been saved yet\n        whether to save and return"</string>
+	<string name="content_limit_time_price_waring_add">"The time period item you created has not been saved yet
+        whether to save and return"</string>
 	<string name="content_limit_time_price_waring_delete">Do you want to delete the current limited time item?</string>
 	<string name="content_limit_time_price_waring_edit">Do you want to give up editing?</string>
-	<string name="content_limit_time_price_waring_edit_btn_back">"The time period item you edited has not been saved yet\n        whether to save and return"</string>
+	<string name="content_limit_time_price_waring_edit_btn_back">"The time period item you edited has not been saved yet
+        whether to save and return"</string>
 	<string name="content_waring_delete">Whether to delete current option</string>
 	<string name="continue_checkout">Continue to checkout</string>
 	<string name="copyright_hint_text">Copyright belongs to Shishitongyun Technology (Chengdu) Co. Ltd.</string>
@@ -1289,7 +1272,7 @@
 	<string name="device_offline">Offline</string>
 	<string name="device_online">Online</string>
 	<string name="dialog_fast_request">Executing… pls try again later</string>
-	<string name="dialog_orc_dish_pushing_last_count_format">Remaining <Data><![CDATA[<font color="#47AA2A">&#160;%1$s</font>]]></Data></string>
+    <string name="dialog_orc_dish_pushing_last_count_format">Remaining <Data><![CDATA[<font color="#47AA2A">&#160;%1$s</font>]]></Data></string>
 	<string name="diancaizuiduo999">Dishes can only be added up to 999 copies</string>
 	<string name="diandan_setting">Order setup</string>
 	<string name="dianping">Public Review Dinner</string>
@@ -1621,7 +1604,6 @@
 	<string name="doing">Processing image, pls wait</string>
 	<string name="doman_configure_pay_address">Pls configure the payment address in the background!</string>
 	<string name="donot_auth">Temporarily unavailable</string>
-	<string name="double_date_divider">to</string>
 	<string name="download_err">Download error pls check the network connection and try again</string>
 	<string name="download_error">download failed</string>
 	<string name="download_update_progress">Update progress: %1$s</string>
@@ -1639,9 +1621,6 @@
 	<string name="drsk_consumerlook_bill_makeup">Client receipt-reprint</string>
 	<string name="drsk_consuption_bill">Consumption list</string>
 	<string name="drsk_continue_clear_account">continue clearing</string>
-	<string name="drsk_delivery_time">Delivery time</string>
-	<string name="drsk_delivery_time_except">%1$s Delivery</string>
-	<string name="drsk_delivery_time_right_now">Deliver immediately</string>
 	<string name="drsk_discount_string">%1$s fold</string>
 	<string name="drsk_error_data">data error</string>
 	<string name="drsk_exemptamount">Give up changes:</string>
@@ -1765,7 +1744,6 @@
 	<string name="empty_select_role_text">Pls select a role</string>
 	<string name="empty_table_count">No table</string>
 	<string name="end_date">End date</string>
-	<string name="end_time_earlier_than_start_time">The end time should not be greater than the start time!</string>
 	<string name="erase_fen">wipe cents</string>
 	<string name="erase_jiao">Wiping</string>
 	<string name="erase_self_define">Custom</string>
@@ -1839,7 +1817,7 @@
 	<string name="follow_have_have_new_receive_money">Pls pay attention: there are new collections.</string>
 	<string name="follow_have_new_call_service">Pls pay attention: there is a new call service.</string>
 	<string name="format_date1">MM \'month\' dd \'day\' HH: m</string>
-	<string name="format_limit_time_price_total">Total <Data><![CDATA[<font color="#2593F9">%1$d</font>]]></Data> items，go to choose &gt;</string>
+    <string name="format_limit_time_price_total">Total <Data><![CDATA[<font color="#2593F9">%1$d</font>]]></Data> items，go to choose &gt;</string>
 	<string name="format_rb_limit_time_price_time_now_day">Sale today /%1$d month%2$d day</string>
 	<string name="formate_date2">MM \'month\' dd</string>
 	<string name="free_no_bigger_than_pay">The discount amount cannot be greater than or equal to the order amount. Pls re-enter</string>
@@ -1895,7 +1873,8 @@
 	<string name="guide_exit_dialog_confirm">Confirm exit</string>
 	<string name="guide_exit_dialog_content">Confirm that the store has been cleared? Will not prompt after exiting</string>
 	<string name="guide_start">Start pass</string>
-	<string name="hadNoData">"The current list is empty,\n        Pls scan the barcode for delivery"</string>
+	<string name="hadNoData">"The current list is empty,
+        Pls scan the barcode for delivery"</string>
 	<string name="hadNoOrder">There are currently no orders!</string>
 	<string name="has_no_auth">"Your account doesn\'t have permission"</string>
 	<string name="has_noauth">No permission to access</string>
@@ -2196,7 +2175,6 @@
 	<string name="klight_bluetooth_device_hot_desc">Thermal bill mobile phone Bluetooth printer</string>
 	<string name="klight_bluetooth_device_jiabo">Jiabo 58mm</string>
 	<string name="klight_bluetooth_device_usb_desc">USB Bluetooth printer</string>
-	<string name="klight_bluetooth_device_xinhua">Xprinter 58mm</string>
 	<string name="klight_bluetooth_print_device_title1">OnPOS guest like cloud</string>
 	<string name="klight_bluetooth_print_device_title2">Micro thermal bill clothing Bluetooth printer</string>
 	<string name="klight_bluetooth_print_device_title_hint">Bluetooth can be printed</string>
@@ -2563,7 +2541,6 @@
 	<string name="kmember_autogen_yuer_pay_desc">For member balance payment at all terminals of K-mobile, there is no need to enter member consumption password</string>
 	<string name="kmember_autogen_zengsongjiner">Offered amount</string>
 	<string name="kmember_birthday">Birthdate</string>
-	<string name="kmember_bu_xianer">No limit</string>
 	<string name="kmember_cancel">Cancel</string>
 	<string name="kmember_charge">Top-up</string>
 	<string name="kmember_charge_adpt_custom_amount">Custom amount</string>
@@ -2578,7 +2555,7 @@
 	<string name="kmember_charge_select_salesman">Select salesman</string>
 	<string name="kmember_charge_success">Top up success</string>
 	<string name="kmember_charge_title">Top-up</string>
-	<string name="kmember_choose_cleartype">Please choose clear rule</string>
+	<string name="kmember_choose_cleartype">Pls choose clear rule</string>
 	<string name="kmember_choose_shop">Select store</string>
 	<string name="kmember_choose_shop_limit">Can only select ungrouped stores</string>
 	<string name="kmember_chuzhi">"Search by group\'s name"</string>
@@ -2632,14 +2609,12 @@
 	<string name="kmember_empty_memberlevl_tips">Pls go to marketing settings to open the membership level</string>
 	<string name="kmember_exit">Exit directly</string>
 	<string name="kmember_female">F</string>
-	<string name="kmember_fit_store">Applicable stores:</string>
 	<string name="kmember_frag_barcode_notice">PlS scan by WeChat</string>
 	<string name="kmember_gender">Gender</string>
 	<string name="kmember_group_name">Group name</string>
 	<string name="kmember_growth_desc">Need %1$s growth value to appreciate this level</string>
 	<string name="kmember_growth_gain">Gain growth value: ¥%1$s=%2$s growth value</string>
 	<string name="kmember_growup_way">How to obtain growth value (multiple choices)</string>
-	<string name="kmember_huiyuanjia_format">Member price:%1$s</string>
 	<string name="kmember_individual">Pcs</string>
 	<string name="kmember_info_customer_is_member">Members</string>
 	<string name="kmember_info_customer_not_member">Non-members</string>
@@ -2670,14 +2645,7 @@
 	<string name="kmember_interal_entry_title">Points re-entered(points)</string>
 	<string name="kmember_interal_input_hint">Enter credit</string>
 	<string name="kmember_interal_input_reson_hint">Enter the reason</string>
-	<string name="kmember_jifen_dixian_format">Points redeem cash:%1$s points=¥ %2$s</string>
-	<string name="kmember_jifen_gain_format">Points obtained: ¥%1$s=%2$s points</string>
-	<string name="kmember_kk_anbili">In proportion</string>
-	<string name="kmember_kk_mianmi_koukuan_bili">Password-free payment isn\'t opened;Charge order:In proportion</string>
-	<string name="kmember_kk_xian_chu_hou_zeng">Top up first, then get benefits</string>
-	<string name="kmember_kk_xian_zeng_hou_chu">Get benefits first and then top up</string>
 	<string name="kmember_kmember_integral_regular_clear_warning">Note: points can\'t be recovered after clearing.</string>
-	<string name="kmember_koukuan_shunxu">Charge order:</string>
 	<string name="kmember_level_delete_warning">Are you sure to delete the membership level?</string>
 	<string name="kmember_level_desc_close">The system will automatically upgrade the membership level according to the rules you set. \n The level has been disabled. To use the level, pls enable the level first</string>
 	<string name="kmember_level_desc_empty">Through the membership level system to attract customers consumption, you can create one or more levels according to your needs. The system will automatically upgrade the membership level according to the rules you set.</string>
@@ -2692,20 +2660,16 @@
 	<string name="kmember_login_title">Member login</string>
 	<string name="kmember_male">M</string>
 	<string name="kmember_member_disabled">The member has been disabled; cannot continue</string>
-	<string name="kmember_member_empty">No membership rights are set in the current store. Please go to company member settings to operate if necessary</string>
+	<string name="kmember_member_empty">No membership rights are set in the current store. Pls go to company member settings to operate if necessary</string>
 	<string name="kmember_member_info_anonymous_user">Anonymous User</string>
 	<string name="kmember_member_level">Membership interests</string>
-	<string name="kmember_member_message">Please go to company member settings to manage member level or stored value rules</string>
+	<string name="kmember_member_message">Pls go to company member settings to manage member level or stored value rules</string>
 	<string name="kmember_member_modify_success">Modification success</string>
 	<string name="kmember_member_price">Member price:%1$s</string>
-	<string name="kmember_mianfei_weikaiqi">Password-free payment isn\'t opened,</string>
-	<string name="kmember_mianmi_close_warning">After turning off password-free payment, members must enter password for top-up consumption. Continue?</string>
 	<string name="kmember_mobile">Phone No.</string>
 	<string name="kmember_modify_vip_level">Modify level</string>
 	<string name="kmember_name">Name</string>
 	<string name="kmember_nationTelCode">+%1$s</string>
-	<string name="kmember_need_growth_format">Need %1$s growth value to upgrade this level</string>
-	<string name="kmember_need_growth_gain_format">Gain growth value: ¥%1$s=%2$s growth value</string>
 	<string name="kmember_no_authority">no auth to operate</string>
 	<string name="kmember_no_choose_shop">No stores can be selected</string>
 	<string name="kmember_no_data">Temporary no data</string>
@@ -2714,7 +2678,7 @@
 	<string name="kmember_no_scret_pay">When the secret free payment switch is on:：</string>
 	<string name="kmember_not_close">Not close</string>
 	<string name="kmember_nousable_shop">Groups can\'t be created</string>
-	<string name="kmember_nousable_shop_note">All stores under the current brand exist in other groups. You can go to [My] to add new stores; or if you need to change the store\'s group, please go to the merchant\'s background to operate.</string>
+	<string name="kmember_nousable_shop_note">All stores under the current brand exist in other groups. You can go to [My] to add new stores; or if you need to change the store\'s group, pls go to the merchant\'s background to operate.</string>
 	<string name="kmember_ok">Save and exit</string>
 	<string name="kmember_old_power_mes">Don\'t support old-version top-up setup. Pls contact operation personnel to upgrade </string>
 	<string name="kmember_params_error">Abnormal parameter</string>
@@ -2742,19 +2706,16 @@
 	<string name="kmember_reset_member_pwd_hint">"After the password is reset the system will send a new password to the customer\'s mobile phone number to confirm the reset?"</string>
 	<string name="kmember_rule_growup">Rule Growup</string>
 	<string name="kmember_rule_growup_desc">Growth value is one of the measurement methods of membership level and the level will go up automatically after reaching the threshold</string>
-	<string name="kmember_rule_input_amount_chuzhi">Pls enter %1$s Stored value</string>
-	<string name="kmember_rule_input_amount_zengsong">Pls enter %1$s offered amount</string>
 	<string name="kmember_rule_integral">Rule Integral</string>
 	<string name="kmember_rule_integral_desc">Points are obtained and offset in proportion</string>
 	<string name="kmember_rule_level">Rule Level</string>
 	<string name="kmember_rule_memberlevel">Member Level</string>
 	<string name="kmember_rule_storevalue">Rule StoreValue</string>
 	<string name="kmember_save">Save</string>
-	<string name="kmember_save_failed">Save error</string>
 	<string name="kmember_select_salesman_title">Choose salesperson</string>
 	<string name="kmember_set_up">Set</string>
-	<string name="kmember_shuru_fanwei">Pls enter Integer between 1～999999</string>
-	<string name="kmember_store_value_empty_hint">"Don\'t allow setting up rules\n        Pls add group at merchant\'s back office"</string>
+	<string name="kmember_store_value_empty_hint">"Don\'t allow setting up rules
+        Pls add group at merchant\'s back office"</string>
 	<string name="kmember_store_value_empty_note">No top-up groups. You can click bottom-right corner to create</string>
 	<string name="kmember_store_value_groups_desc">There are following groups under current brand. You can edit rules in the group. If you need to create groups or change other settings, pls operate at merchant back office. </string>
 	<string name="kmember_store_value_groups_empty">"Set up top-up rules and cultivate customers\' top-up consumption habit. Moreover, set up top-up stimulus. Top up more , get more. To encourage spending and increase revenue."</string>
@@ -2774,7 +2735,6 @@
 	<string name="kmember_str_disable">Disable</string>
 	<string name="kmember_str_enable">Enable</string>
 	<string name="kmember_str_vip">     VIP %1$s </string>
-	<string name="kmember_support_mianmi_pay">Support password-free payment,</string>
 	<string name="kmember_takeout_gain_integray">Third party take out orders earn points</string>
 	<string name="kmember_text_memberlevl_close">No membership level is set</string>
 	<string name="kmember_tip_auto_pause">You need to suspend all member levels before you can edit them. Do you want to suspend and edit the levels?</string>
@@ -2795,13 +2755,13 @@
 	<string name="kmember_tip_growth_gain">Gain of growth value</string>
 	<string name="kmember_tip_growth_range">growth range %1$s~%2$s</string>
 	<string name="kmember_tip_how_many_integral">Points can redeem</string>
-	<string name="kmember_tip_input">Please input</string>
+	<string name="kmember_tip_input">Pls input</string>
 	<string name="kmember_tip_integral_gain">Get integral</string>
 	<string name="kmember_tip_integral_per">Upper limit of points (per transaction)</string>
 	<string name="kmember_tip_less99">Less than 99999999</string>
 	<string name="kmember_tip_level_info">Level information</string>
 	<string name="kmember_tip_level_name">Level name</string>
-	<string name="kmember_tip_name_invalid">Please input 1~10 Chinese alphanumeric characters</string>
+	<string name="kmember_tip_name_invalid">Pls input 1~10 Chinese alphanumeric characters</string>
 	<string name="kmember_tip_no">No</string>
 	<string name="kmember_tip_per_consume">Spend (¥)</string>
 	<string name="kmember_tip_save">Save</string>
@@ -2809,7 +2769,6 @@
 	<string name="kmember_tip_sv_gain_integral">Get points through top-up consumption </string>
 	<string name="kmember_tip_threshold">Threshold of growth value</string>
 	<string name="kmember_tip_yes">Yes</string>
-	<string name="kmember_title_hint">Tips</string>
 	<string name="kmember_unit_discount">off</string>
 	<string name="kmember_unit_fen">minute</string>
 	<string name="kmember_upgrade_do_confirm">Confirm upgrade</string>
@@ -2820,8 +2779,6 @@
 	<string name="kmember_way_after_storevalue">Top-up</string>
 	<string name="kmember_way_nomal">General consumption</string>
 	<string name="kmember_way_storevalue_consumption">Top-up consumption</string>
-	<string name="kmember_xianer">limit</string>
-	<string name="kmember_zuiduo_20_item">Up to 20 items can be added</string>
 	<string name="kmemeber_rule_setting">Rule Setting</string>
 	<string name="kmemeber_vip_manage">Vip Manager</string>
 	<string name="kmemeber_vip_manage_desc">Let customers become loyal members of the store, not just passers-by</string>
@@ -2867,8 +2824,10 @@
 	<string name="kordering_pay_fail_hint">The order has been generated. After quit, you can only pay at the POS order center. Give up the payment?</string>
 	<string name="kreport_all_amout_hint">Total revenue(excluding top-up spending amount）</string>
 	<string name="kreport_amount_all">%2$s%1$s</string>
-	<string name="kreport_amount_in_shop">"In-store revenue\n        %2$s%1$s"</string>
-	<string name="kreport_amount_in_shop2">"In-store total revenue\n        %2$s%1$s"</string>
+	<string name="kreport_amount_in_shop">"In-store revenue
+        %2$s%1$s"</string>
+	<string name="kreport_amount_in_shop2">"In-store total revenue
+        %2$s%1$s"</string>
 	<string name="kreport_amount_in_shop_hint">In-store revenue%2$s%1$s</string>
 	<string name="kreport_amount_third_party">Collect money from 3rd-party\n%2$s%1$s</string>
 	<string name="kreport_autogen_30_day">30 days</string>
@@ -2877,16 +2836,10 @@
 	<string name="kreport_autogen_anyuexuanze">By month</string>
 	<string name="kreport_autogen_anzhouxuanze">By week</string>
 	<string name="kreport_autogen_beizhu">Note</string>
-	<string name="kreport_autogen_bzbsb">No. of pending orders (orders)</string>
 	<string name="kreport_autogen_caozuolaiyuan">Operation source</string>
 	<string name="kreport_autogen_caozuoleixing">Operation type</string>
 	<string name="kreport_autogen_caozuoren">Operator:</string>
 	<string name="kreport_autogen_changqi">Long-term</string>
-	<string name="kreport_autogen_cl_shoukuan_shouxufei">Handling fee of money collection:</string>
-	<string name="kreport_autogen_cl_shoukuanbishu">Amount received:</string>
-	<string name="kreport_autogen_cl_tuikuan_shouxufei">Handling fee of refund:</string>
-	<string name="kreport_autogen_cl_tuikuanbishu">Refund number:</string>
-	<string name="kreport_autogen_cl_xiaozhangjiner">Charge-offs amount:</string>
 	<string name="kreport_autogen_comfirm">Confirm</string>
 	<string name="kreport_autogen_dafudu">in a large scale</string>
 	<string name="kreport_autogen_dakuanjine">Payment amount</string>
@@ -2894,18 +2847,14 @@
 	<string name="kreport_autogen_dakuanzhuangtai">Payment status</string>
 	<string name="kreport_autogen_dangqianpaiming">Current ranking</string>
 	<string name="kreport_autogen_dangqianwancheng">10% completed</string>
-	<string name="kreport_autogen_huiyuanshuju">Member data</string>
 	<string name="kreport_autogen_input_goods_name">Pls enter a product name</string>
 	<string name="kreport_autogen_input_storeno_storename_search">Pls enter the store No. / search by store name</string>
 	<string name="kreport_autogen_jiaoyidanhao">Transaction No.:</string>
 	<string name="kreport_autogen_jieshushijian">End time</string>
-	<string name="kreport_autogen_jiesuanjier">Checkout amount</string>
 	<string name="kreport_autogen_jinnianxiaoshouqushi">Sales trends this year</string>
 	<string name="kreport_autogen_jinpai">Gold medal</string>
 	<string name="kreport_autogen_kaishishijian">Start time</string>
 	<string name="kreport_autogen_leijigukefenxi">Analysis of cumulative customers </string>
-	<string name="kreport_autogen_member_points_cost">Points consumed by members</string>
-	<string name="kreport_autogen_member_points_gain">Points accumulated by members</string>
 	<string name="kreport_autogen_mendianshaixuan">Sort stores</string>
 	<string name="kreport_autogen_more">More</string>
 	<string name="kreport_autogen_quanbu">All</string>
@@ -2913,9 +2862,6 @@
 	<string name="kreport_autogen_redu">Popularity-%</string>
 	<string name="kreport_autogen_seven_day">7 days</string>
 	<string name="kreport_autogen_shijian">Time</string>
-	<string name="kreport_autogen_shoukuan_shouxufei">Handling fee of money collection</string>
-	<string name="kreport_autogen_shouqi">Put away</string>
-	<string name="kreport_autogen_shouxufei">Fee</string>
 	<string name="kreport_autogen_start_end_diff_limit">"*the difference between ending time and starting time can\'t be over 31 days"</string>
 	<string name="kreport_autogen_stat_date">Statistics time: %1$s to %2$s</string>
 	<string name="kreport_autogen_tongpai">Bronze medal</string>
@@ -2928,11 +2874,7 @@
 	<string name="kreport_autogen_xiaozhangshishou">Revenue from write-off:</string>
 	<string name="kreport_autogen_xiaozhangyouhui">Offer for write-off:</string>
 	<string name="kreport_autogen_xuanzemendian">Select stores</string>
-	<string name="kreport_autogen_xzjey">Amount of charge-offs (yuan)</string>
-	<string name="kreport_autogen_xzssy">Write-off received(yuan)</string>
-	<string name="kreport_autogen_xzyhy">Charge-offs offer(yuan)</string>
 	<string name="kreport_autogen_yiguazhang">Pended</string>
-	<string name="kreport_autogen_yingyeshuju">Business data</string>
 	<string name="kreport_autogen_yinpai">Silver medal</string>
 	<string name="kreport_autogen_yuanren_zero">0￥/PAX</string>
 	<string name="kreport_autogen_yuanzhuo_zero">0￥/table</string>
@@ -2942,7 +2884,6 @@
 	<string name="kreport_autogen_zidingyi">Custom</string>
 	<string name="kreport_autogen_zongdanshu">Total No. of orders</string>
 	<string name="kreport_autogen_zongshoukuan">Total revenue</string>
-	<string name="kreport_autogen_zongtiaoshu">Total items</string>
 	<string name="kreport_bo_bishu_percent">Pct. of orders</string>
 	<string name="kreport_bo_money_percent">Pct. of amounts</string>
 	<string name="kreport_bo_order_sorce">Order source</string>
@@ -2961,8 +2902,6 @@
 	<string name="kreport_coustom_payment">Actual payment by customer</string>
 	<string name="kreport_coustom_receive">Expected actual money collection</string>
 	<string name="kreport_day">Day </string>
-	<string name="kreport_format_month_day">MM-dd</string>
-	<string name="kreport_format_month_day_hour_min">MM-dd HH:mm</string>
 	<string name="kreport_hint_exclude_static_code">"*the following data don\'t contain payment through static code￥%1$s (%2$s Orders)*"</string>
 	<string name="kreport_hint_static_code_amount">Exclude payment through static code￥%1$s</string>
 	<string name="kreport_hint_static_code_items">Exclude payment through static code %1$s Orders</string>
@@ -2977,23 +2916,22 @@
 	<string name="kreport_no_third_pay_data">No data of money collection from 3rd party for now</string>
 	<string name="kreport_payment_Amount">Total receipt %2$s%1$s</string>
 	<string name="kreport_payment_inShop">In-store revenue (excluding top-up consumption): %2$s%1$s</string>
-	<string name="kreport_payment_left_hint">"Hello\n        haha"</string>
+	<string name="kreport_payment_left_hint">"Hello
+        haha"</string>
 	<string name="kreport_payment_only_inshop">The pie chart only contains the in-store collections and does not include third-party collections.</string>
 	<string name="kreport_payment_third">Collect money from 3rd-party: %2$s%1$s</string>
 	<string name="kreport_paymentAmount">Total paid amount</string>
 	<string name="kreport_receiveAmount">Total acceptance (expected)</string>
-	<string name="kreport_select_time_period">Select time period</string>
 	<string name="kreport_small_on_member">Members have low willingness to store value?  Worried about low repurchase rate? Try Yi top-up, a new marketing plan. Get top-up after your consumption. Everyone will be your stored value customer!</string>
 	<string name="kreport_small_on_takeout">\"小ON有话说：外卖订单少？客单价低？维护成本太高？外卖万单训练营，期待您的加入！\"</string>
 	<string name="kreport_small_on_takeout_jump">join right away></string>
 	<string name="kreport_small_on_takeout_open">How to create popularity of take-out stores and how to increase sales volume through activities?</string>
 	<string name="kreport_small_on_takeout_open_jump">Buy now</string>
-	<string name="kreport_srl_header_update">\'Last update\' M-d HH:mm</string>
 	<string name="kreport_summary_today_count">Orders</string>
-	<string name="kreport_summary_today_income">"Today\'s revenue"</string>
+	<string name="kreport_summary_today_income">Today\'s revenue</string>
 	<string name="kreport_third_pay_hint">Collect money from 3rd-party  </string>
-	<string name="kreport_third_pay_name_and_count">(%1$s%%) (%2$s)</string>
-	<string name="kreport_today_order_count">Total new orders today</string>
+    <string name="kreport_third_pay_name_and_count">%1$s(%2$s)</string>
+    <string name="kreport_today_order_count">Total new orders today</string>
 	<string name="kreport_today_order_count2">New orders today (order)</string>
 	<string name="kreport_today_service_customer_count">Total customers today</string>
 	<string name="kreport_today_service_customer_count2">"Today\'s reception:"</string>
@@ -3052,8 +2990,6 @@
 	<string name="lefu_balance_account_name">Account name</string>
 	<string name="lefu_balance_account_type">Settlement account type</string>
 	<string name="lefu_balance_info_write">Fill in settlement information</string>
-	<string name="lefu_bank__qingfen_number">Settlement branch\'s account No.</string>
-	<string name="lefu_bank__qingfen_number_please">Pls enter Settlement branch\'s account No.</string>
 	<string name="lefu_bank_account">"Settlement bank\'s account ID"</string>
 	<string name="lefu_bank_account_please">Pls enter bank account</string>
 	<string name="lefu_bank_account_type">"Settlement bank\'s account type"</string>
@@ -3065,7 +3001,6 @@
 	<string name="lefu_bank_name_please">Pls enter bank name</string>
 	<string name="lefu_bank_number">"Settlement bank\'s CNAPS code"</string>
 	<string name="lefu_bank_number_please">Pls enter CNAPS code</string>
-	<string name="lefu_bank_open_name">Settlement bank account name</string>
 	<string name="lefu_bank_open_name_please">Pls enter account name</string>
 	<string name="lefu_bank_search_title">Search branch</string>
 	<string name="lefu_base_info_fill">Fill in basic information</string>
@@ -3169,8 +3104,6 @@
 	<string name="loan_scan_success">Scan successfully: (%1$s)</string>
 	<string name="loc_organization_text">Organization</string>
 	<string name="local_print">Local print</string>
-	<string name="log_apply_modules">Apply for access function:</string>
-	<string name="log_apply_org">Apply for access institutions:</string>
 	<string name="log_apply_person">Applicant:</string>
 	<string name="log_apply_time">Application time:</string>
 	<string name="log_apply_time_period">Application period:</string>
@@ -3290,7 +3223,7 @@
 	<string name="member_credit_casher_customer_paycode">Pay by scanning code</string>
 	<string name="member_credit_casher_paycode">Payment code</string>
 	<string name="member_credit_charge_off_amount">Write-off amount %1$s</string>
-	<string name="member_credit_comment_hint">Please input comment of credit</string>
+	<string name="member_credit_comment_hint">Pls input comment of credit</string>
 	<string name="member_credit_common_cancel">Cancel</string>
 	<string name="member_credit_common_ok">Confirm</string>
 	<string name="member_credit_comsume_vip_bill">"Members\' write-off bill of pended orders"</string>
@@ -3368,7 +3301,7 @@
 	<string name="member_credit_order_reason">Operation reasons：</string>
 	<string name="member_credit_order_shengyu_guazhang_edu">Remaining amount for pending orders</string>
 	<string name="member_credit_order_shezhi_guazhang_edu">Set up pending orders amount</string>
-	<string name="member_credit_order_show_empty_list">No historical record for now. Please change time and retry</string>
+	<string name="member_credit_order_show_empty_list">No historical record for now. Pls change time and retry</string>
 	<string name="member_credit_order_show_retry">Fail to load. Click me to retry</string>
 	<string name="member_credit_order_show_time">Date:</string>
 	<string name="member_credit_order_source">Operation sources:</string>
@@ -3588,8 +3521,10 @@
 	<string name="mobileui_thursday">Thu.</string>
 	<string name="mobileui_to">to</string>
 	<string name="mobileui_tuesday">Tue.</string>
-	<string name="mobileui_two_tabbar_left_hint">"Hello\n        haha"</string>
-	<string name="mobileui_two_tabbar_right_hint">"Hello\n        haha"</string>
+	<string name="mobileui_two_tabbar_left_hint">"Hello
+        haha"</string>
+	<string name="mobileui_two_tabbar_right_hint">"Hello
+        haha"</string>
 	<string name="mobileui_wednesday">Wed.</string>
 	<string name="mobileui_week">Week </string>
 	<string name="mobileui_year">-Year </string>
@@ -3739,7 +3674,6 @@
 	<string name="next_step">Next step</string>
 	<string name="nfc_error1_release">Card reading error</string>
 	<string name="nfc_init_error">Initialization error</string>
-	<string name="no_authority">No auth to operate</string>
 	<string name="no_available_discount_dish">No dishes can be discounted.</string>
 	<string name="no_avaliable_ticket">No coupon available</string>
 	<string name="no_band_table">Unbound table</string>
@@ -3802,7 +3736,6 @@
 	<string name="nuomi">Nuomi</string>
 	<string name="nuomi2">Nuomi</string>
 	<string name="nuomi_diancai">Nuomi ordering</string>
-	<string name="oc_source">Source:</string>
 	<string name="occupied_tables">Uncleared table</string>
 	<string name="offline_count">Total %1$d</string>
 	<string name="offline_device">Offline device</string>
@@ -4348,7 +4281,6 @@
 	<string name="print_original_no">Original order No.</string>
 	<string name="print_other_account">Other income</string>
 	<string name="print_page_number_include_colon">Page number:</string>
-	<string name="print_pay_mode">Payment method</string>
 	<string name="print_pay_mode_name">Payment method(order)</string>
 	<string name="print_pay_mode_num">Collection method(Number)</string>
 	<string name="print_pay_source_backstage">Loyal Backstage</string>
@@ -4638,8 +4570,8 @@
 	<string name="pro_unedite">(Unchangeable)</string>
 	<string name="product_choose_prompt">Choose dishes</string>
 	<string name="product_data_load_fail">The food data part failed to load exit reload</string>
-	<string name="product_desc_add_num">Addition setup</string>
-	<string name="product_desc_can_he_shu">No. of lunch boxes</string>
+	<string name="product_desc_add_num">Addition setup:</string>
+	<string name="product_desc_can_he_shu">No.of lunch boxes:</string>
 	<string name="product_desc_first_name">Capital:</string>
 	<string name="product_desc_handset">On OS MOBILE is a lightweight, compact, highly hardware-integrated device that integrates payment methods such as bank cards, WeChat, Alipay, ApplePay, and VIP cards and integrates printing hardware and 4G modules to solve business freely without space limit. With in-depth amp; business functions, it fully covers the business environment of the amp; industry by providing dinner ordering, fast collection of fast food, aggregating orders from three major takeaway platforms, and verifying group-purchase coupons from Meituan and Baidu Nuomi</string>
 	<string name="product_desc_kc_type">Inventory type</string>
@@ -4649,26 +4581,26 @@
 	<string name="product_desc_number">Barcode:</string>
 	<string name="product_desc_number_klight">Barcode:</string>
 	<string name="product_desc_pos">On POS is a smart hardware and software integrated POS system that opens up queue reserve, customer management, supply chain management, etc..Easily handling orders from all major 3rd-party platforms and is deeply adapted to Chinese food, fast food, drinks, hot pot, group meals, buffet and other formats.</string>
-	<string name="product_desc_qi_mai_shu">Min. Qty  to sell</string>
+	<string name="product_desc_qi_mai_shu">Min.Qty to sell:</string>
 	<string name="product_desc_ren_shu">Suitable number:</string>
 	<string name="product_desc_sale_num">Set up sales volume</string>
 	<string name="product_desc_sale_num_batch">Change volume</string>
-	<string name="product_desc_sale_type">Sales type</string>
-	<string name="product_desc_shou_dong_zhekou">Manual discount</string>
+	<string name="product_desc_sale_type">Sales type:</string>
+	<string name="product_desc_shou_dong_zhekou">Manual discount:</string>
 	<string name="product_desc_ticket_point_set">Set up receipt outlet</string>
 	<string name="product_desc_ticket_point_set_batch">Change outlet</string>
 	<string name="product_desc_title">Product line introduction</string>
-	<string name="product_desc_unit">Sales unit</string>
+	<string name="product_desc_unit">Sales unit:</string>
 	<string name="product_dish_ticket_point_set">Pls select the receipt outlet (multiple choices)</string>
 	<string name="product_guige_defaut">No</string>
-	<string name="product_guige_type">Spec. category</string>
+	<string name="product_guige_type">Spec. category:</string>
 	<string name="product_input_sale_num">Pls enter sales volume</string>
 	<string name="product_property_search_hint">Pls enter name to search</string>
 	<string name="product_search_hint">Pls enter the product name / number / capital</string>
-	<string name="product_small_type">Category</string>
+	<string name="product_small_type">Category:</string>
 	<string name="product_template_on_shop">Unauthorized store</string>
 	<string name="product_text_sale_num">Sales volume</string>
-	<string name="product_tig_type">1st class</string>
+	<string name="product_tig_type">I category:</string>
 	<string name="property_who_created">%1$s created attributes</string>
 	<string name="psd_no_less_than_6">Pls enter the full password</string>
 	<string name="pufa">Shanghai Pudong Development Bank</string>
@@ -4708,7 +4640,8 @@
 	<string name="qrcodebiz_app_qrscan_getcash_dialog_input_hint">Enter payment amount</string>
 	<string name="qrcodebiz_assistant_no_permision">"You don\'t have permission to use this function."</string>
 	<string name="qrcodebiz_commercial_type_choose_error">Pls select the binding type</string>
-	<string name="qrcodebiz_commercial_type_dish_city_hint">"Detecting the merchant as a food city format\n        your current binding POS is:"</string>
+	<string name="qrcodebiz_commercial_type_dish_city_hint">"Detecting the merchant as a food city format
+        your current binding POS is:"</string>
 	<string name="qrcodebiz_device_bind_success">Continue binding</string>
 	<string name="qrcodebiz_logout_error">Exit failed</string>
 	<string name="qrcodebiz_scan_result">Scan results</string>
@@ -4921,15 +4854,17 @@
 	<string name="report_bo_table_overview">Table overview</string>
 	<string name="report_business_day">Business day: </string>
 	<string name="report_business_day_tips">*all of them are business hours</string>
-	<string name="report_business_down_num">%1$s%2$s%3$d</string>
-	<string name="report_business_down_percent">"%1$s%2$s%3$d stores\' revenue of today falls over %4$s compared to yesterday. Pls pay attention."</string>
+	<string name="report_business_down_num">%1$s%2$s%3$d stores\' revenue of today falls over %4$s compared to yesterday. Pls pay attention.</string>
+	<string name="report_business_down_percent">%1$s%2$s%3$d stores\' revenue of today falls over %4$s compared to yesterday. Pls pay attention.</string>
 	<string name="report_business_empty">You have not authorized any stores, so the business data cannot be displayed. Pls contact the administrator to authorize the stores for you, thank you!</string>
 	<string name="report_business_overview">Revenue statistics</string>
 	<string name="report_business_overview_report">Money collection statistics report</string>
 	<string name="report_business_shop">Store</string>
 	<string name="report_business_situation">Overview</string>
 	<string name="report_business_source">Business source：</string>
-	<string name="report_business_tips">"Pending amount.(revenue=sales revenue+pending amount)\n\n        Sell and return goods: sales means completed paid orders(including anti-settlement orders)；returns mean orders with full refund and partial refund（including returns note from anti-settlement"</string>
+	<string name="report_business_tips">"Pending amount.(revenue=sales revenue+pending amount)
+
+        Sell and return goods: sales means completed paid orders(including anti-settlement orders)；returns mean orders with full refund and partial refund（including returns note from anti-settlement"</string>
 	<string name="report_business_total">Total</string>
 	<string name="report_businesss">Business daily report</string>
 	<string name="report_calcute_total">Total checkout amount</string>
@@ -5022,8 +4957,8 @@
 	<string name="report_invalid_product">Invalid goods</string>
 	<string name="report_jcrs">No. of diners</string>
 	<string name="report_lengthofmeals">Average meal time</string>
-	<string name="report_line_chart_click_hint">Click the node to find more</string>
-	<string name="report_lkrs">No. of customers</string>
+    <string name="report_line_chart_click_hint">Click the node to find more</string>
+    <string name="report_lkrs">No. of customers</string>
 	<string name="report_loss_customer">Will lose customers</string>
 	<string name="report_main_customer">Main customer</string>
 	<string name="report_management_report">Operating statement</string>
@@ -5071,7 +5006,9 @@
 	<string name="report_order_number">Order number：</string>
 	<string name="report_order_report">Order report</string>
 	<string name="report_order_source_percent">Source ratio of orders</string>
-	<string name="report_order_source_tips">"Order source: collect completed orders according to order sources(including returns and refund)\n\n        Sales amount: count order Qty by order sources and amount. If there is any refund, sales amount should be deducted(calculation rule should be consistent with sales overview)"</string>
+	<string name="report_order_source_tips">"Order source: collect completed orders according to order sources(including returns and refund)
+
+        Sales amount: count order Qty by order sources and amount. If there is any refund, sales amount should be deducted(calculation rule should be consistent with sales overview)"</string>
 	<string name="report_order_source_total_amount">Total order amount (yuan)</string>
 	<string name="report_order_time">Order time:</string>
 	<string name="report_org_half_year_brief">Overview of the received in the past six months</string>
@@ -5095,7 +5032,11 @@
 	<string name="report_paymode_cash">Cash</string>
 	<string name="report_paymode_weixin">WeChat</string>
 	<string name="report_people">(person)</string>
-	<string name="report_people_tips">"Dinner PAX: count No. of diners according to dine-in, take-out. Only new anti-settlement orders\' PAX will be counted in anti-settlement orders.\n\n        Average payment before discount: Average payment before discount=sales amount before discount/PAX\n\n        Customer number: total customers in all orders(including void order, take-out order)"</string>
+	<string name="report_people_tips">"Dinner PAX: count No. of diners according to dine-in, take-out. Only new anti-settlement orders\' PAX will be counted in anti-settlement orders.
+
+        Average payment before discount: Average payment before discount=sales amount before discount/PAX
+
+        Customer number: total customers in all orders(including void order, take-out order)"</string>
 	<string name="report_percent">%1$s%%</string>
 	<string name="report_performance_attain_pre">Reached "%1$s"%%</string>
 	<string name="report_performance_avg_pre">Average %1$s%%</string>
@@ -5135,16 +5076,16 @@
 	<string name="report_refund_amount">Refund amount:</string>
 	<string name="report_refund_amount_label">Refund amount</string>
 	<string name="report_refund_analysis">Analysis of abnormal goods</string>
-	<string name="report_refund_cancel_amount">Cancel amount</string>
-	<string name="report_refund_cancel_count">Qty of invalidation</string>
+	<string name="report_refund_cancel_amount">Amount</string>
+	<string name="report_refund_cancel_count">Qty</string>
 	<string name="report_refund_cancel_total_count">Total Qty of invalidation</string>
 	<string name="report_refund_canel_total_amount">Total amount of invalidation</string>
 	<string name="report_refund_num">Refund number:</string>
 	<string name="report_refund_product">Returned goods</string>
 	<string name="report_refund_product_name">Goods name</string>
 	<string name="report_refund_product_name_colon">Goods name:</string>
-	<string name="report_refund_refund_amount">Sales return amount</string>
-	<string name="report_refund_refund_count">Qty of returns</string>
+	<string name="report_refund_refund_amount">Amount</string>
+	<string name="report_refund_refund_count">Qty</string>
 	<string name="report_refund_refunt_total_amount">Total amount of returns</string>
 	<string name="report_refund_refunt_total_count">Total Qty of returns</string>
 	<string name="report_refund_switch_shop">Switch stores</string>
@@ -5195,12 +5136,14 @@
 	<string name="report_sale_rank">"Today\'s TOP10 items of sales volume"</string>
 	<string name="report_sale_rank_msg">"View item\'s sales report"</string>
 	<string name="report_sale_sum_info">Product sales overview</string>
-	<string name="report_sale_tips">"No. of orders: count all completed orders including completed and paid, returned and paid, returned and refunded, paid and anti-settlement completed, pended orders.\n\n        Sales amount:calculate completed orders\' sales amount including payment without receipts, goods sales amount, surcharge, deposit, additional excise duty."</string>
+	<string name="report_sale_tips">"No. of orders: count all completed orders including completed and paid, returned and paid, returned and refunded, paid and anti-settlement completed, pended orders.
+
+        Sales amount:calculate completed orders\' sales amount including payment without receipts, goods sales amount, surcharge, deposit, additional excise duty."</string>
 	<string name="report_sale_total_count">Total sales volume：</string>
 	<string name="report_sale_total_money">Total sales amount：</string>
 	<string name="report_sale_total_money_unit">Sales amount</string>
 	<string name="report_sale_trade">Sales trend</string>
-	<string name="report_sale_up">"Today\'s sales volume of %1$s%2$s%3$d dishes rise by %4$s compared to yesterday\'s. Please pay attention."</string>
+	<string name="report_sale_up">"Today\'s sales volume of %1$s%2$s%3$d dishes rise by %4$s compared to yesterday\'s. Pls pay attention."</string>
 	<string name="report_sales">Sell goods</string>
 	<string name="report_screen">Filter</string>
 	<string name="report_screen_msg">Only support viewing sales ranking or returned goods ranking. If you want to know revenue ranking, Pls go to back office.</string>
@@ -5452,7 +5395,10 @@
 	<string name="self_icbc_rate_info">Rate information</string>
 	<string name="self_icbc_scan">Scan</string>
 	<string name="self_icbc_shop_name">"Merchant\'s full name"</string>
-	<string name="self_icbc_unbind_hint_str">"1. Follow public account\"Smart financial service platform\"\n        2.Choose \"merchant management-merchant signing\" in the menu to complete registration\n        3.After registration and review is done，you can check ICBC payment QR code\n        4.On this page，click\"scan to bind\"to scan ICBC QR code"</string>
+	<string name="self_icbc_unbind_hint_str">"1. Follow public account\"Smart financial service platform\"
+        2.Choose \"merchant management-merchant signing\" in the menu to complete registration
+        3.After registration and review is done，you can check ICBC payment QR code
+        4.On this page，click\"scan to bind\"to scan ICBC QR code"</string>
 	<string name="self_icbc_unbind_str">"Merchant doesn\'t bind ICBC\'s payment parameter"</string>
 	<string name="self_icbc_weixin">WeChat</string>
 	<string name="self_icbc_yunsanfu">Unionpay</string>
@@ -5506,7 +5452,7 @@
 	<string name="set_face">Xiaoshi Technology Live Verification</string>
 	<string name="set_facepass">pls set face password</string>
 	<string name="set_meal">Combo</string>
-	<string name="set_meal_child_dish_add_price">Increase price (%1$s)</string>
+    <string name="set_meal_child_dish_add_price">Increase price (%1$s)</string>
 	<string name="set_meal_default_group">Default group</string>
 	<string name="set_meal_detail">Set meal details:</string>
 	<string name="set_meal_detail_title">Set meal details</string>
@@ -5801,7 +5747,6 @@
 	<string name="srl_footer_loading">Loading...</string>
 	<string name="srl_footer_nothing">No more data</string>
 	<string name="srl_footer_pulling">Pull up to load more</string>
-	<string name="srl_footer_refreshing">Wait for the head refresh to complete…</string>
 	<string name="srl_footer_release">Loose to load immediately</string>
 	<string name="srl_header_failed">Fail to refresh</string>
 	<string name="srl_header_finish">Complete refresh</string>
@@ -5809,16 +5754,12 @@
 	<string name="srl_header_pulling">Pull down to refresh</string>
 	<string name="srl_header_refreshing">Refreshing…</string>
 	<string name="srl_header_release">Loose to refresh immediately</string>
-	<string name="srl_header_secondary">Release to the second floor</string>
 	<string name="srl_header_update">\'Update\' M-d HH:mm \'last time\'</string>
 	<string name="staff_autogen_no_tel_permission">No permission of calling</string>
 	<string name="staff_autogen_phone_empty">Phone number is empty</string>
 	<string name="staff_autogen_tel">Tel:</string>
 	<string name="staff_bind_role_fail">Employee added successfully but the binding role failed</string>
-	<string name="staff_cancel">Cancel</string>
 	<string name="staff_choose_auth">Pls choose permission</string>
-	<string name="staff_confirm">Confirm</string>
-	<string name="staff_confirm_to_call">Call:</string>
 	<string name="staff_created_hint">New employees need to log in on  mobile phone for activation</string>
 	<string name="staff_created_prompt">Congratulation, added complete</string>
 	<string name="staff_curshop_text">Store</string>
@@ -5831,11 +5772,6 @@
 	<string name="staff_password_hint_2">The employee phone number you added</string>
 	<string name="staff_phone_text">Phone No. </string>
 	<string name="staff_role">Staff role</string>
-	<string name="staff_role_comment_cashier">Own permissions of ordering, return, viewing orders, cashiering</string>
-	<string name="staff_role_comment_delivery_clerk">Own permissions of ordering and delivery</string>
-	<string name="staff_role_comment_inventory_administrator">Own permissions of inventory management, operations of the basic sales and storage, etc.</string>
-	<string name="staff_role_comment_shop_in_charge">Own all permissions of the store, including ordering, cashiering, viewing data report, store management, etc</string>
-	<string name="staff_role_comment_waiter">Own permissions of ordering, return, viewing orders</string>
 	<string name="start_date">Start date</string>
 	<string name="start_sync">Start sync</string>
 	<string name="status">Status</string>
@@ -5875,7 +5811,6 @@
 	<string name="str_groupcoupon_koubei">Group purchase certificate</string>
 	<string name="str_groupcoupon_koubei_input_coupon_code_tip">Input Koubei Coupon</string>
 	<string name="str_groupcoupon_maxcount">Total</string>
-	<string name="str_groupcoupon_maxcount_local">Total <font size="24">%1$s</font> sheets</string>
 	<string name="str_groupcoupon_maxcount_tip">The number of coupons used for group purchase can not be greater than</string>
 	<string name="str_groupcoupon_meituan_input_coupon_code_tip">Pls enter the Meituan coupon code</string>
 	<string name="str_groupcoupon_mincount_tip">Minimal usage of Coupon is</string>
@@ -5925,7 +5860,6 @@
 	<string name="sure_revoke_invoice">Determine the void invoice?</string>
 	<string name="sync_completed">Synchronization is complete!</string>
 	<string name="system">System</string>
-	<string name="system_error">System error</string>
 	<string name="table_add_qy_text">Region</string>
 	<string name="table_area_caption">Table area:</string>
 	<string name="table_area_select_text">Area selection</string>
@@ -5951,9 +5885,11 @@
 	<string name="table_code_finish">Done</string>
 	<string name="table_code_first_step">1st step: go to mobile payment module to add mobile account to collect money——connect to online payment(WeChat, Alipay)</string>
 	<string name="table_code_fourth_step">Fourth step: bind table code. Done</string>
-	<string name="table_code_guide_subtitle_1">"Save table\'s QR code to print by oneself\n        or send official table code"</string>
+	<string name="table_code_guide_subtitle_1">"Save table\'s QR code to print by oneself
+        or send official table code"</string>
 	<string name="table_code_guide_subtitle_2">Reduce workload. Customers order food on mobile phone.</string>
-	<string name="table_code_guide_subtitle_3">"Aggregated payment of WeChat and Alipay. Pay online and offline\n        "</string>
+	<string name="table_code_guide_subtitle_3">"Aggregated payment of WeChat and Alipay. Pay online and offline
+        "</string>
 	<string name="table_code_guide_title_1">Easy to configure table sticker</string>
 	<string name="table_code_guide_title_2">Pay for buffet</string>
 	<string name="table_code_guide_title_3">Multi-payment method</string>
@@ -6116,7 +6052,7 @@
 	<string name="takeout_batch_receive">Operate in batches</string>
 	<string name="takeout_batch_title">Batch</string>
 	<string name="takeout_bind">Unbind</string>
-	<string name="takeout_bind_hint">Takeout bid of $1 299 free for a limited time</string>
+	<string name="takeout_bind_hint">Takeout bid of 1299 free for a limited time</string>
 	<string name="takeout_bind_platform">Binding takeaway platform</string>
 	<string name="takeout_bind_pos">Bind my cash register immediately ></string>
 	<string name="takeout_bind_self">Takeaway self-help binding</string>
@@ -6137,7 +6073,6 @@
 	<string name="takeout_detail">delivery details</string>
 	<string name="takeout_didi_order">Drip takeaway</string>
 	<string name="takeout_download_finished">Download completed pls click to confirm the installation</string>
-	<string name="takeout_expected_service">Expect to deliver</string>
 	<string name="takeout_finish_delivery">Are you sure the delivery has been done?</string>
 	<string name="takeout_finish_title">Done(%1$d)</string>
 	<string name="takeout_go_to_see">To view</string>
@@ -6152,7 +6087,6 @@
 	<string name="takeout_input_helper_info_next">Next step</string>
 	<string name="takeout_input_helper_info_toast">Pls complete 2 items or clear them</string>
 	<string name="takeout_input_order_edittext_hint">Pls enter the number below the QR code</string>
-	<string name="takeout_invalid_order_title">Invalidated</string>
 	<string name="takeout_invalid_title">Invalidated(%1$d)</string>
 	<string name="takeout_invalidorder_title">Invalid order</string>
 	<string name="takeout_invoice_rise">Invoice title</string>
@@ -6410,10 +6344,10 @@
 	<string name="text_registershop_hint">Thank you for using the Hongyun Cashier System. Your registration information is as follows:</string>
 	<string name="text_select_dish">Pls select goods</string>
 	<string name="text_select_dish_spec">Pls select a Spec.</string>
-	<string name="text_select_spec">%1$s specifications have been generated &gt;</string>
+    <string name="text_select_spec">%1$s specifications have been generated &gt;</string>
 	<string name="text_selected_tablearea">Select table area</string>
 	<string name="text_selfpay">Activate mobile payment</string>
-	<string name="text_selfpay_errormsg">Because the merchant\'s current money collection type is brand collection,  gathering and submission of member information isn\'t allowed. If you want to perform above operations in the store, please contact Keruyun to switch the brand collection to store collection</string>
+	<string name="text_selfpay_errormsg">Because the merchant\'s current money collection type is brand collection,  gathering and submission of member information isn\'t allowed. If you want to perform above operations in the store, pls contact Keruyun to switch the brand collection to store collection</string>
 	<string name="text_selfpay_wangs">Mybank</string>
 	<string name="text_selfpay_zlrz">Collect information</string>
 	<string name="text_seting_standard">Setting specifications</string>
@@ -6455,7 +6389,8 @@
 	<string name="third_pay_paymode_zfb">Alipay</string>
 	<string name="third_pay_please_input_password">\"Pls prompt the user to enter the payment password\"</string>
 	<string name="third_pay_qr_code_hint">Ask the customer to scan the payment code and pay me</string>
-	<string name="third_pay_qr_hint">"Ask the customer to show the payment code\n        Place the customer\'s payment code in the scan box"</string>
+	<string name="third_pay_qr_hint">"Ask the customer to show the payment code
+        Place the customer\'s payment code in the scan box"</string>
 	<string name="third_pay_qr_pic_pay">Payment code payment</string>
 	<string name="third_pay_qr_scan_error_retry">Payment is abnormal, pls re-scan QR code</string>
 	<string name="third_pay_recharge_failed_tips">The payment was successful, failed to update the amount of recharge!</string>
@@ -6537,7 +6472,8 @@
 	<string name="toast_error_can_not_get_sub_classification_type_in_default_classification">The classification template is incorrect and you cannot get the middle class under the default template.</string>
 	<string name="toast_error_ocr_scan_new_dish_with_zero">Newly recognized 0 dishes pls check the picture</string>
 	<string name="toast_fast_request">Pls try again later!</string>
-	<string name="toast_limit_time_select_help">"1 Recycling every day - every day the price of the set item will be sold at the selected time period and it will be cycled and can be deactivated;\n        2 Today\'s sale - only valid for the set Today automatically deactivated after the time expires Re-enable"</string>
+	<string name="toast_limit_time_select_help">"1 Recycling every day - every day the price of the set item will be sold at the selected time period and it will be cycled and can be deactivated;
+        2 Today\'s sale - only valid for the set Today automatically deactivated after the time expires Re-enable"</string>
 	<string name="toast_msg_logout_failure">Failed to log out, pls try again</string>
 	<string name="toast_ocr_dish_break">Identification interruption</string>
 	<string name="toast_ocr_dish_error_hint">Identification error</string>
@@ -6571,13 +6507,7 @@
 	<string name="trade_method">Practice:</string>
 	<string name="trade_no_label">Transaction number</string>
 	<string name="trade_order_pending">Wait for handling</string>
-	<string name="trade_order_pending_new">New orders</string>
 	<string name="trade_order_sales">Sales receipt</string>
-	<string name="trade_order_sales_abandoned">Abolished</string>
-	<string name="trade_order_sales_paid">Checked out</string>
-	<string name="trade_order_sales_paying">In payment</string>
-	<string name="trade_order_sales_refunded">Returned</string>
-	<string name="trade_order_sales_unpaid">Unpaid</string>
 	<string name="trade_server_integral">Points offset cash</string>
 	<string name="trade_server_match_device">Match for you</string>
 	<string name="trade_server_snack_take_food">The way to pick up meal</string>
@@ -6599,7 +6529,6 @@
 	<string name="tradeui_add_dish">Add items quickly</string>
 	<string name="tradeui_add_dish_prompt">"You haven\'t added any products. Products can\'t be ordered."</string>
 	<string name="tradeui_after_discount_amount">Total amount payable after the offer%2$s%1$s</string>
-	<string name="tradeui_anonymous_member">Anonymous member</string>
 	<string name="tradeui_append">Add more</string>
 	<string name="tradeui_beyond_max_count">Has exceeded the maximum number of options</string>
 	<string name="tradeui_choose_privilege">Select offers</string>
@@ -6635,9 +6564,10 @@
 	<string name="tradeui_item_label_has_standard">Multiple spec.</string>
 	<string name="tradeui_item_label_weight">Weighing</string>
 	<string name="tradeui_item_search">Pls enter a product name</string>
-	<string name="tradeui_member">Member</string>
 	<string name="tradeui_member_disable">This member has been disabled</string>
 	<string name="tradeui_member_price">VIP price</string>
+	<string name="tradeui_member">Member</string>
+
 	<string name="tradeui_memo_too_long">the memo length should less than 100</string>
 	<string name="tradeui_minus_string">Decrease %1$s</string>
 	<string name="tradeui_must_sale_out">The required food packages has been estimated, it needs to be back on the shelves to choose</string>
@@ -6699,11 +6629,14 @@
 	<string name="tue_str">Tue.</string>
 	<string name="tuicai_time">Return time</string>
 	<string name="tv__mobile_payment_entrance_welcome">Welcome.</string>
-	<string name="tv_dit_ib_done">"Received\n        "</string>
-	<string name="tv_dit_ib_done_cashier">"Complete\n        checkout"</string>
+	<string name="tv_dit_ib_done">"Received
+        "</string>
+	<string name="tv_dit_ib_done_cashier">"Complete
+        checkout"</string>
 	<string name="tv_dit_ib_done_clear">Clear</string>
 	<string name="tv_dit_ib_done_number">Confirm</string>
-	<string name="tv_dit_ib_done_wipe_zero">"Wipe\n        "</string>
+	<string name="tv_dit_ib_done_wipe_zero">"Wipe
+        "</string>
 	<string name="tv_info_ocr_purchase_contain_guide_first">The product name, Spec, unit price, Qty can be identified. Consumption tax has been set and its conversion is automatic.</string>
 	<string name="tv_info_ocr_purchase_contain_guide_second">Pls cut photos after shooting and ensure that the products belong to the same category</string>
 	<string name="tv_item_ocr_dish_amount_zero">0</string>
@@ -6720,7 +6653,7 @@
 	<string name="tv_mobile_payment_entrance_tips_pay_way_title">Open after card binding</string>
 	<string name="tv_mobile_payment_entrance_tips_review_error">Fail to pass review. Pls modify</string>
 	<string name="tv_mobile_payment_entrance_tips_under_review">"Info has been submitted. It\'s under review now ..."</string>
-	<string name="tv_ocr_dish_result_info_detail_format">&#160;Successfully entered under %1$s category<Data><![CDATA[<font color="#47AA2A">&#160;%2$s</font>]]></Data> items，error <Data><![CDATA[<font color="#FE4310">&#160;%3$s</font>]]></Data> items</string>
+    <string name="tv_ocr_dish_result_info_detail_format">&#160;Successfully entered under %1$s category<Data><![CDATA[<font color="#47AA2A">&#160;%2$s</font>]]></Data> items，error <Data><![CDATA[<font color="#FE4310">&#160;%3$s</font>]]></Data> items</string>
 	<string name="tv_ocr_dish_result_info_hint">Entry result</string>
 	<string name="tv_rl_ocr_dish_input_view_hint">Take photoes</string>
 	<string name="tv_title_limit_time_price_add">Add new time-limited price adjustment products</string>
@@ -6794,13 +6727,6 @@
 	<string name="userinfo_error">incorrect user name or password</string>
 	<string name="username_login">Username/password login</string>
 	<string name="username_shouldnot_be_null">user name cannot be empty</string>
-	<string name="utils_fri_str">Fri.</string>
-	<string name="utils_mon_str">Mon.</string>
-	<string name="utils_sat_str">Sat.</string>
-	<string name="utils_sun_str">Sun.</string>
-	<string name="utils_thu_str">Thu.</string>
-	<string name="utils_tue_str">Tue.</string>
-	<string name="utils_wed_str">Wed.</string>
 	<string name="vacancy_tables">Idle table</string>
 	<string name="valid_time">%1$s hours</string>
 	<string name="validate">Done</string>
@@ -6808,7 +6734,8 @@
 	<string name="version_number">Version No.</string>
 	<string name="version_update_go">Upgrade immediately</string>
 	<string name="version_update_hint">Users are using the latest version</string>
-	<string name="version_update_prompt_notice">"Pls upgrade with WiFi\n        Click the button may exit APP upgrade"</string>
+	<string name="version_update_prompt_notice">"Pls upgrade with WiFi
+        Click the button may exit APP upgrade"</string>
 	<string name="versionId">Shi Ming Tong v0.20beta(build 02.12.015)</string>
 	<string name="versionInfo">patch detail</string>
 	<string name="vip_serve_text">Member services</string>
@@ -6830,7 +6757,6 @@
 	<string name="waiting_refund">Wait for refund</string>
 	<string name="warehouse_out_delete_confirm_sort">Confirm sort</string>
 	<string name="warning">caveat</string>
-	<string name="webview_default_title">Jumping</string>
 	<string name="wechat">WeChat</string>
 	<string name="wechat_add_dish">Add</string>
 	<string name="wechat_order">WeChat</string>
@@ -6926,7 +6852,8 @@
 	<string name="yuan">Yuan</string>
 	<string name="yuding_phone">Reservations. Pls call:</string>
 	<string name="yuzhi_shangping">Prefabricated goods</string>
-	<string name="zanzhu">"Cooperative organization: Heaven Fund Fund code 000098\n        Capital security is borne by Jin Tang Insurance, full speed payment"</string>
+	<string name="zanzhu">"Cooperative organization: Heaven Fund Fund code 000098
+        Capital security is borne by Jin Tang Insurance, full speed payment"</string>
 	<string name="zfb">Alipay</string>
 	<string name="zfb_cash">Alipay collection</string>
 	<string name="zhang">tables</string>
@@ -6956,4 +6883,975 @@
 	<string name="zuofa">Cooking method</string>
 	<string name="zuofa_str">Cooking method</string>
 	<string name="zuofei_success">Void success! Pls check void receipts at cash register</string>
+	<string name="kreport_srl_header_update">\'Last update\' M-d HH:mm</string>
+
+	<string name="kmember_need_growth_format">Need %1$s growth value to upgrade this level</string>
+	<string name="kmember_need_growth_gain_format">Gain growth value: ¥%1$s=%2$s growth value</string>
+	<string name="kmember_jifen_gain_format">Points obtained: ¥%1$s=%2$s points</string>
+	<string name="kmember_jifen_dixian_format">Points redeem cash:%1$s points=¥ %2$s</string>
+	<string name="kmember_huiyuanjia_format">Member price:%1$s</string>
+	<string name="kmember_shuru_fanwei">Pls enter Integer between 1～999999</string>
+
+	<string name="kmember_fit_store">Applicable stores:</string>
+	<string name="kmember_mianmi_close_warning">After turning off password-free payment, members must enter password for top-up consumption. Continue?</string>
+
+	<string name="staff_cancel">Cancel</string>
+	<string name="staff_confirm">Confirm</string>
+	<string name="staff_confirm_to_call">Call:</string>
+	<string name="staff_role_comment_shop_in_charge">Own all permissions of the store, including ordering, cashiering, viewing data report, store management, etc</string>
+	<string name="staff_role_comment_waiter">Own permissions of ordering, return, viewing orders</string>
+	<string name="staff_role_comment_cashier">Own permissions of ordering, return, viewing orders, cashiering</string>
+	<string name="staff_role_comment_delivery_clerk">Own permissions of ordering and delivery</string>
+	<string name="staff_role_comment_inventory_administrator">Own permissions of inventory management, operations of the basic sales and storage, etc.</string>
+
+
+
+	<string name="kmember_support_mianmi_pay">Support password-free payment,</string>
+	<string name="kmember_bu_xianer">No limit</string>
+	<string name="kmember_xianer">limit</string>
+	<string name="kmember_mianfei_weikaiqi">Password-free payment isn\'t opened,</string>
+	<string name="kmember_koukuan_shunxu">Charge order:</string>
+	<string name="kmember_kk_anbili">In proportion</string>
+	<string name="kmember_kk_xian_chu_hou_zeng">Top up first, then get benefits</string>
+	<string name="kmember_kk_xian_zeng_hou_chu">Get benefits first and then top up</string>
+	<string name="kmember_kk_mianmi_koukuan_bili">Password-free payment isn\'t opened;Charge order:In proportion</string>
+
+
+    <string name="utils_sun_str">Sun.</string>
+    <string name="utils_mon_str">Mon.</string>
+    <string name="utils_tue_str">Tue.</string>
+    <string name="utils_wed_str">Wed.</string>
+    <string name="utils_thu_str">Thu.</string>
+    <string name="utils_fri_str">Fri.</string>
+    <string name="utils_sat_str">Sat.</string>
+
+
+    <string name="double_date_divider">to</string>
+    <string name="commonkmobile_choose_time_period">Select time period</string>
+    <string name="no_authority">No auth to operate</string>
+    <string name="common_ok">Confirm</string>
+    <string name="end_time_earlier_than_start_time">The end time should not be greater than the start time!</string>
+
+
+
+    <string name="webview_default_title">Jumping</string>
+    <string name="kreport_format_month_day_hour_min">MM-dd HH:mm</string>
+    <string name="kreport_format_month_day">MM-dd</string>
+    <string name="kreport_select_time_period">Select time period</string>
+    <string name="kreport_autogen_shoukuan_shouxufei">Handling fee of money collection</string>
+    <string name="kreport_autogen_jiesuanjier">Checkout amount</string>
+    <string name="kreport_autogen_cl_shoukuanbishu">Amount received:</string>
+    <string name="kreport_autogen_cl_tuikuanbishu">Refund number:</string>
+    <string name="kreport_autogen_cl_shoukuan_shouxufei">Handling fee of money collection:</string>
+    <string name="kreport_autogen_cl_tuikuan_shouxufei">Handling fee of refund:</string>
+    <string name="kreport_autogen_shouqi">Put away</string>
+    <string name="kreport_autogen_zongtiaoshu">Total items</string>
+    <string name="kreport_autogen_shouxufei">Fee</string>
+
+
+
+    <string name="kreport_autogen_cl_xiaozhangjiner">Charge-offs amount:</string>
+    <string name="kreport_autogen_bzbsb">No. of pending orders (orders)</string>
+    <string name="kreport_autogen_xzjey">Amount of charge-offs (yuan)</string>
+    <string name="kreport_autogen_xzyhy">Charge-offs offer(yuan)</string>
+    <string name="kreport_autogen_xzssy">Write-off received(yuan)</string>
+
+    <string name="kreport_autogen_yingyeshuju">Business data</string>
+    <string name="kreport_autogen_huiyuanshuju">Member data</string>
+
+    <string name="kreport_autogen_member_points_gain">Points accumulated by members</string>
+    <string name="kreport_autogen_member_points_cost">Points consumed by members</string>
+
+
+    <string name="commodity_allow">Allow</string>
+    <string name="commodity_not_allow">Not allowed</string>
+    <string name="commodity_ck_type">Category of cooking method</string>
+    <string name="commodity_price_enter_str">¥ Pls enter</string>
+
+
+
+    <string name="businesssetting_pls_select_the_carry_way">Pls select carry mode</string>
+    <string name="businesssetting_pls_re_select_combinations">Pls select combination mode</string>
+    <string name="businesssetting_time_slot">Time period</string>
+    <string name="businesssetting_set_at_least_one_period">Set at least one time period</string>
+    <string name="businesssetting_reselect_time">Conflict with other times,Pls Reselect time</string>
+    <string name="businesssetting_max_value_can_set">Maximum can set to</string>
+    <string name="businesssetting_min_value_can_set">Minimum can set to</string>
+    <string name="businesssetting_keep_at_least_one">Select at least one</string>
+    <string name="businesssetting_pls_input_valid_num">Pls enter invalid digit</string>
+    <string name="businesssetting_table_number_no_empty">Table number can\'t be empty</string>
+    <string name="businesssetting_save_fail">Save Error</string>
+    <string name="businesssetting_hint">Tips</string>
+    <string name="businesssetting_i_known">Got it</string>
+    <string name="businesssetting_goto_set">To set</string>
+    <string name="businesssetting_no_net">Network anomaly</string>
+    <string name="businesssetting_queue_num_not_empty">Queue code can\'t be empty</string>
+    <string name="businesssetting_queue_name_not_empty">Queue name can\'t be empty</string>
+    <string name="businesssetting_max_people_num_not_empty">Maximum number can\'t be empty</string>
+    <string name="businesssetting_select_table_not_empty">No table selected</string>
+    <string name="businesssetting_beyond_max_chars">has been exceeded maximum words</string>
+    <string name="businesssetting_input_arrange">Input range is %1$s to 99</string>
+    <string name="businesssetting_not_set_time">%1$s is not set time period</string>
+    <string name="businesssetting_not_set_order_source">%1$s is not set order source</string>
+
+
+
+
+
+
+
+	<string name="aboutUs">About us</string>
+	<string name="add">Add</string>
+	<string name="add_fail">add failed</string>
+	<string name="add_label">Add</string>
+	<string name="allocation_num_no_o">The No. of transfers can\'t be 0</string>
+	<string name="allocation_out_warehouse2">Bring up the warehouse</string>
+	<string name="allocation_receipt">Requisition</string>
+	<string name="allocationed">Transferred</string>
+	<string name="amount_delivery">Delivery</string>
+	<string name="amount_receive">Receive goods</string>
+	<string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+	<string name="appled">Applied</string>
+	<string name="apply_date">Application date</string>
+	<string name="apply_num">No. of apply</string>
+	<string name="apply_quantity">No. of apply</string>
+	<string name="applyed">Applied</string>
+	<string name="arrive_date">Arrival date</string>
+	<string name="baifenhao">%</string>
+	<string name="bei50">50 cups</string>
+	<string name="bill_date">Date of the form</string>
+	<string name="bill_number2">No.</string>
+	<string name="bottom_sheet_behavior">android.support.design.widget.BottomSheetBehavior</string>
+	<string name="branch_created">Brand delivery</string>
+	<string name="brand_product_manage">Brand goods MGT</string>
+	<string name="brand_text">Brand</string>
+	<string name="bt_orc_dish_scan_with_album">Album</string>
+	<string name="bt_orc_dish_scan_with_camera">Take a picture</string>
+	<string name="btn_crop_image_cancel_scan">Cancel</string>
+	<string name="btn_crop_image_go_to_scan">To identify</string>
+	<string name="btn_fgt_ocr_dish_contain_guide_finish">Start</string>
+	<string name="btn_ocr_see_guide">View tutorial</string>
+	<string name="caigou_danhao">Purchase Order No.</string>
+	<string name="caigou_method">Way to purchase</string>
+	<string name="caigouchuku_num">The number of purchases and outbounds cannot be 0.</string>
+	<string name="caigouruku_num_no">The number of purchases in the warehouse cannot be 0.</string>
+	<string name="caigoushengqingshu">The number of application can\'t be 0</string>
+	<string name="caigoushu22">No. of  items to purchase</string>
+	<string name="cancel">Cancel</string>
+	<string name="cancel_order">Cancel order</string>
+	<string name="cancel_success">Cancel success </string>
+	<string name="cc_task">Make an inventory</string>
+	<string name="change_note">Modify note:</string>
+	<string name="change_super_change_product">Switch the supplier will empty or replace the original items confirm the implementation?</string>
+	<string name="character_counter_pattern">%1$d / %2$d</string>
+	<string name="check_deficit">Loss</string>
+	<string name="check_gain">Profit</string>
+	<string name="checkSubmit">Submit</string>
+	<string name="choose_distribution_template">Pls select a delivery template</string>
+	<string name="choose_quote_bill_no_again">Switch suppliers pls re-select the reference documents</string>
+	<string name="choose_receipt_date">Pls select date of the form</string>
+	<string name="choose_templates">Select template (optional)</string>
+	<string name="choose_ware_house">Choose warehouse</string>
+	<string name="chuku_warehouse">Ex-warehouse</string>
+	<string name="class_name">Class name</string>
+	<string name="command_preview">Preview</string>
+	<string name="common_cancel">Cancel</string>
+	<string name="common_data_ticket_agentdis">Agent discount</string>
+	<string name="common_data_ticket_autodis">Automatic discount</string>
+	<string name="common_data_ticket_banquet">Banquet</string>
+	<string name="common_data_ticket_batch_free">Give away in bulk</string>
+	<string name="common_data_ticket_commodity">Products marketing</string>
+	<string name="common_data_ticket_coupon">Coupon</string>
+	<string name="common_data_ticket_extracharge">Surcharge</string>
+	<string name="common_data_ticket_free">FOC</string>
+	<string name="common_data_ticket_integar">Points offset cash</string>
+	<string name="common_data_ticket_manualdis">Imput discount</string>
+	<string name="common_data_ticket_memberprice">Member special price</string>
+	<string name="common_data_ticket_merchantdis">Merchant discount</string>
+	<string name="common_data_ticket_platformdis">Platform discount</string>
+	<string name="common_data_ticket_rebate">Discount</string>
+	<string name="common_data_ticket_server_charge">Service charge</string>
+	<string name="common_data_ticket_transportdis">Logistics discount</string>
+	<string name="common_data_ticket_vipdis">Regular customer discount</string>
+	<string name="common_data_ticket_weixincoupon">WeChat card coupon</string>
+	<string name="confirm">Confirm</string>
+	<string name="confirm1">Confirm</string>
+	<string name="confirm_command">Confirm</string>
+	<string name="confirm_successful">Confirm success</string>
+	<string name="connect_network_error">Failed to connect to the network, pls check</string>
+	<string name="crop_images_cancel">Cancel</string>
+	<string name="crop_images_done">Complete</string>
+	<string name="crop_images_pick_error">Invalid pictures</string>
+	<string name="crop_images_saving">Saving pictures</string>
+	<string name="crop_images_wait">Pls wait…</string>
+	<string name="current_inventory">Total Qty</string>
+	<string name="dangqiankucun">Total Qty</string>
+	<string name="data_error">Data anomaly</string>
+	<string name="date_label">Date</string>
+	<string name="delete">Delete</string>
+	<string name="delete_allocation_receipt">Are you sure to delete this order?</string>
+	<string name="delete_fail">failed to delete:</string>
+	<string name="delete_purchase_apply_info">Are you sure to delete this application?</string>
+	<string name="delete_success">successfully deleted!</string>
+	<string name="deliveried">Delivered</string>
+	<string name="delivery22">Delivery</string>
+	<string name="delivery_apply">Application</string>
+	<string name="delivery_apply_add_prompt">Pls select the dimension of data calculation first!</string>
+	<string name="delivery_apply_add_prompt_invalid">Daily dosage reference should not exceed 30 days</string>
+	<string name="delivery_apply_date">Delivery application date</string>
+	<string name="delivery_apply_history">Delivery application record</string>
+	<string name="delivery_apply_n_day">Nearly %1$d of the day\'s outbound storage</string>
+	<string name="delivery_apply_num">No. of apply</string>
+	<string name="delivery_apply_num_error">The Qty isn\'t in the range. Pls change.</string>
+	<string name="delivery_apply_quantity_empty">Demand and usage can not be empty!</string>
+	<string name="delivery_cancel_order">Whether to cancel order?</string>
+	<string name="delivery_center">delivery center</string>
+	<string name="delivery_edit_apply">Modify delivery request</string>
+	<string name="delivery_new_apply">Add a new delivery application</string>
+	<string name="delivery_ok_info">After confirmation, the receipt can\'t be edited. Continue?</string>
+	<string name="delivery_product_name_title">Item (%1$d)</string>
+	<string name="delivery_product_recommend_none">Sorry! There are no items to recommend!</string>
+	<string name="delivery_quantity">No. of deliveries</string>
+	<string name="delivery_summary_amount">Amount</string>
+	<string name="delivery_summary_arrive_date">Expected arrival date</string>
+	<string name="delivery_summary_code">Delivery No.</string>
+	<string name="delivery_summary_quantity">Qty</string>
+	<string name="delivery_summary_status_apply">Applied</string>
+	<string name="delivery_summary_status_arrive">Received</string>
+	<string name="delivery_summary_status_delivery">Delivered</string>
+	<string name="delivery_summary_status_picking">Picked</string>
+	<string name="delivery_summary_status_refuse">Rejected</string>
+	<string name="delivery_summary_status_stockup">Stocked</string>
+	<string name="delivery_summary_template">Delivery template</string>
+	<string name="delivery_template">Delivery template</string>
+	<string name="diaoboshu">No. of transfers</string>
+	<string name="diff_between_receive_and_delivery">Distribution difference (receiving - matching)</string>
+	<string name="dingdanjinge">Order amount</string>
+	<string name="dinner_dish_catogory_name">Class name</string>
+	<string name="direct_exit">Exit directly</string>
+	<string name="dish_name">Dish</string>
+	<string name="distribution">Application</string>
+	<string name="distribution_input_again">Pls re-enter</string>
+	<string name="distribution_limit_quantity">The limit of %1$s is %2$s.</string>
+	<string name="distribution_minimun_quantity">The minimum order Qty is %1$s is %2$s.</string>
+	<string name="edit">Edit</string>
+	<string name="edit_receipt">Edit the goods receipt</string>
+	<string name="edit_scrap">Modify cancellation</string>
+	<string name="edit_scrap_return">Modified return</string>
+	<string name="exit">Exit</string>
+	<string name="exit_direct">Exit directly</string>
+	<string name="exit_save">Save and exit</string>
+	<string name="frendly_info_title">Tips</string>
+	<string name="friendly_info_detail">The number of applications is all 0. After quit,  this receipt won\'t be saved.</string>
+	<string name="go_apply">Go to apply</string>
+	<string name="goods_number">/ %1$d item</string>
+	<string name="hate_exit">Exit</string>
+	<string name="hint_estimate_coefficient">Pls enter in the range of%1$.2f-%2$.2f</string>
+	<string name="hint_estimate_turnover">Pls enter</string>
+	<string name="import_depot">Warehouse</string>
+	<string name="input_band_pay_cancel">Cancel</string>
+	<string name="input_band_pay_password">Pls enter the password</string>
+	<string name="inventorty_amount_format">%2$s %1$s</string>
+	<string name="inventorty_order_goods">Order</string>
+	<string name="inventorty_price_per_format">%3$s %1$s/%2$s</string>
+	<string name="inventorty_report_menu_dish_delete">Deleted</string>
+	<string name="inventorty_report_menu_dish_qiyong">Enabled</string>
+	<string name="inventorty_report_menu_dish_status_selected">Item status screening</string>
+	<string name="inventorty_report_menu_dish_tingyong">Terminated</string>
+	<string name="inventorty_retry_recognition">Re-identification</string>
+	<string name="inventorty_sales_return">Sales returns</string>
+	<string name="inventory">Inventory MGT</string>
+	<string name="inventory_alipay">Alipay</string>
+	<string name="inventory_all_amount">Total amount:</string>
+	<string name="inventory_allocation">Transfer</string>
+	<string name="inventory_allocation_billno">Transfer order No.</string>
+	<string name="inventory_allocation_callinto_merchant">Merchant</string>
+	<string name="inventory_allocation_callinto_merchant_hint">Pls select a merchant</string>
+	<string name="inventory_allocation_callout_datetime">Date</string>
+	<string name="inventory_allocation_callout_warehouse">Warehouse</string>
+	<string name="inventory_allocation_history">Transfer record</string>
+	<string name="inventory_allocation_ontime_inventory_label">Real-time inventory</string>
+	<string name="inventory_allocation_quantity_lable">No. of transfers</string>
+	<string name="inventory_alread_cancel">Cancelled</string>
+	<string name="inventory_alread_pay">Already paid</string>
+	<string name="inventory_apply">Apply</string>
+	<string name="inventory_apply_count">No. of apply</string>
+	<string name="inventory_apply_time_range">Time range of application form</string>
+	<string name="inventory_arrive_date">Expected arrival date</string>
+	<string name="inventory_auto_add">Add</string>
+	<string name="inventory_back_purchase_home">Back to purchase and warehouse home</string>
+	<string name="inventory_calu_used_daily_diy_chosen">Selected</string>
+	<string name="inventory_choice_1">1 day</string>
+	<string name="inventory_choice_30">30 days</string>
+	<string name="inventory_choice_7">7 days</string>
+	<string name="inventory_choice_calu_weidu_hint">Pls select a data calculation dimension</string>
+	<string name="inventory_choice_nearly_1_day">In 1 day</string>
+	<string name="inventory_choice_nearly_30_days">Nearly 30 days</string>
+	<string name="inventory_choice_nearly_7_days">Nearly 7 days</string>
+	<string name="inventory_common_look_history">View record</string>
+	<string name="inventory_common_look_image">View pictures</string>
+	<string name="inventory_common_not_add_product">No items added</string>
+	<string name="inventory_confirm_count">Confirmation (%1$d)</string>
+	<string name="inventory_cost_grant_white">Whether it is used for commodity costing</string>
+	<string name="inventory_cost_hint">If used for accounting the amount of consumption of the items in the document is proportionally distributed to the cost of the food. For example if 10 pounds of pork is scrapped then the cost of 10 pounds of pork will be distributed to the dishes such as pork and green pepper.</string>
+	<string name="inventory_current">Total Qty</string>
+	<string name="inventory_data_calu_method">Calculation way</string>
+	<string name="inventory_data_calu_used_daily">Daily consumption estimation</string>
+	<string name="inventory_data_calu_used_daily_tips">(Estimate daily consumption over historical periods)</string>
+	<string name="inventory_data_calu_weidu">Data calculation dimension</string>
+	<string name="inventory_delivery">Delivery MGT</string>
+	<string name="inventory_delivery_amount">Delivery fees</string>
+	<string name="inventory_delivery_apply_summary">Summary of delivery request form</string>
+	<string name="inventory_delivery_not_find_prom">No corresponding item found!</string>
+	<string name="inventory_delivery_summary_detail">Receipt details</string>
+	<string name="inventory_delivery_template">Delivery template</string>
+	<string name="inventory_deliverytype_many">Multi-level distribution</string>
+	<string name="inventory_dh_no_day">Your order-version service has been expired. You\'ll get benefits if you renew your subscription now.</string>
+	<string name="inventory_dh_no_day_jump">I want to renew subscription</string>
+	<string name="inventory_dh_num_day">Your order-version service will expire after %s days. You\'ll get benefits if you renew your subscription now.</string>
+	<string name="inventory_dh_num_day_jump"><![CDATA[I want to renew subscription>>]]></string>
+	<string name="inventory_discard">Scrap</string>
+	<string name="inventory_discard_return">Sales return form</string>
+	<string name="inventory_draft">Draft </string>
+	<string name="inventory_fast_find">Quick search</string>
+	<string name="inventory_filter">Filter</string>
+	<string name="inventory_financial">Financial MGT</string>
+	<string name="inventory_generate_bill_fail">Failed to generate document number</string>
+	<string name="inventory_go_scan">Continue scanning</string>
+	<string name="inventory_goods">Item</string>
+	<string name="inventory_goto_purchase">Continue to input</string>
+	<string name="inventory_import">Into warehouse</string>
+	<string name="inventory_input_custom_day">custom days</string>
+	<string name="inventory_input_valid_amount">Pls enter the correct amount</string>
+	<string name="inventory_input_valid_estimate_coefficient">Pls enter the correct estimated demand factor.</string>
+	<string name="inventory_manage">Inventory MGT</string>
+	<string name="inventory_mode_qiyong">Enabled</string>
+	<string name="inventory_mode_shanchu">Deleted</string>
+	<string name="inventory_mode_tingyong">Terminated</string>
+	<string name="inventory_money">Amount</string>
+	<string name="inventory_no_cost">Not used for commodity\'s cost calculation</string>
+	<string name="inventory_no_history">Ah wood has history! !</string>
+	<string name="inventory_not_contain_tax_money">Tax-free amount: %2$s%1$s</string>
+	<string name="inventory_not_find_supplier">No supplier found for scanning pls try again</string>
+	<string name="inventory_not_get_sku">No corresponding product found</string>
+	<string name="inventory_not_get_suply">Did not get the supplier!</string>
+	<string name="inventory_not_saved_goods">Unstocked items (%1$d)</string>
+	<string name="inventory_not_supplier_hint">The following recognition results can be modified by clicking each item</string>
+	<string name="inventory_ocr_not_recognition_supplier">Did not identify the supplier whether to re-identify</string>
+	<string name="inventory_order_method">Way to order</string>
+	<string name="inventory_order_method_brand">Brand order\n (combined)</string>
+	<string name="inventory_order_method_brand2">Brand order (match)</string>
+	<string name="inventory_order_method_shop">Order by store</string>
+	<string name="inventory_order_type">Way to order</string>
+	<string name="inventory_other">Other MGT</string>
+	<string name="inventory_outbound_quantity">By Qty of ex-warehouse</string>
+	<string name="inventory_pay">Pay</string>
+	<string name="inventory_pay_look_voucher">View transaction voucher</string>
+	<string name="inventory_pay_time">Payment time:</string>
+	<string name="inventory_pay_way">Payment method:</string>
+	<string name="inventory_pay_way_offline">Offiline payment</string>
+	<string name="inventory_pay_way_online">Online payment</string>
+	<string name="inventory_pending_payment">Wait for payment</string>
+	<string name="inventory_please_add_inventory">Pls add warehouse first</string>
+	<string name="inventory_pre_deposit">Reserve</string>
+	<string name="inventory_pre_deposit_amount_collected">Amount received</string>
+	<string name="inventory_pre_deposit_amount_deducted">amount</string>
+	<string name="inventory_pre_deposit_available_amount">Available Amount (￥)</string>
+	<string name="inventory_pre_deposit_balance">Account balance (￥)</string>
+	<string name="inventory_pre_deposit_collect_payment">+ receivables</string>
+	<string name="inventory_pre_deposit_deducted_payment">- deduction</string>
+	<string name="inventory_pre_deposit_freezing_amount">Frozen amount (￥)</string>
+	<string name="inventory_pre_deposit_list_empty">There is no shop at the moment~</string>
+	<string name="inventory_pre_deposit_opreation_collect_payment">Revenue</string>
+	<string name="inventory_pre_deposit_opreation_deducted_payment">Deduction</string>
+	<string name="inventory_pre_deposit_remarks">Notes (optional)</string>
+	<string name="inventory_pre_deposit_shop_name">Merchant name</string>
+	<string name="inventory_pre_deposit_shop_search">Search for store</string>
+	<string name="inventory_preview">Preview (%1$d)</string>
+	<string name="inventory_price">Unit price (%1$s)</string>
+	<string name="inventory_product_amount">Item amount</string>
+	<string name="inventory_product_count">%1$d item</string>
+	<string name="inventory_product_detail">Item details</string>
+	<string name="inventory_product_info">Item info</string>
+	<string name="inventory_product_list">Item list</string>
+	<string name="inventory_product_total_amount">Total amount of items</string>
+	<string name="inventory_production">Produce</string>
+	<string name="inventory_ps_no_day">Your delivery-version service has been expired. You\'ll get benefits if you renew your subscription now.</string>
+	<string name="inventory_ps_no_day_jump">I want to renew subscription</string>
+	<string name="inventory_ps_num_day">Your delivery-version service will expire after %s days. You\'ll get benefits if you renew your subscription now.</string>
+	<string name="inventory_ps_num_day_jump"><![CDATA[I want to renew subscription>>]]></string>
+	<string name="inventory_purchase">Purchase MGT</string>
+	<string name="inventory_purchase_apply_summary">Purchase application requisition</string>
+	<string name="inventory_purchase_quantity">No. of items into warehouse</string>
+	<string name="inventory_purchase_return_quantity">No. of purchase and returns</string>
+	<string name="inventory_purchase_return_warehouse">Warehouse of returns</string>
+	<string name="inventory_purchase_return_warehouse_hint">Choose warehouse</string>
+	<string name="inventory_purchase_returns">Material returns</string>
+	<string name="inventory_purchase_returns_history">Purchase return record</string>
+	<string name="inventory_purchase_storage">Into warehouse</string>
+	<string name="inventory_purchase_storage_callinto_warehouse">Warehouse</string>
+	<string name="inventory_purchase_storage_history">Into-warehouse record</string>
+	<string name="inventory_query">Search</string>
+	<string name="inventory_query_delivery_summary_detail">Failed to check the delivery request details</string>
+	<string name="inventory_query_delivery_summary_template_error">Failed to query the delivery request template</string>
+	<string name="inventory_query_product_list">View item list</string>
+	<string name="inventory_query_result">Search result</string>
+	<string name="inventory_quotes_order_create">Quote receipt</string>
+	<string name="inventory_quotes_order_create_can_not_add_dish">Quotation Creation Can\'t Add New Food</string>
+	<string name="inventory_rate_amount">Taxes:</string>
+	<string name="inventory_receipt_date">Date of the form</string>
+	<string name="inventory_recognition_detail">Inbound items (%1$d)</string>
+	<string name="inventory_recognition_goods_hint">Partial identification successful storage <Data><![CDATA[<myFont size=128px>%1$d</myFont>]]></Data>piece</string>
+	<string name="inventory_recognition_goods_hint_all">All identified successfully warehousing <Data><![CDATA[<myFont size=128px >%1$d</myFont>]]></Data>piece</string>
+	<string name="inventory_remark2">Notes:</string>
+	<string name="inventory_report">Inventory report</string>
+	<string name="inventory_report_duanque">Shortage</string>
+	<string name="inventory_report_filter">Filter and view</string>
+	<string name="inventory_report_mode_cancle">Cancel</string>
+	<string name="inventory_report_mode_confirm">Confirm</string>
+	<string name="inventory_report_no_data">There is no data under this category!</string>
+	<string name="inventory_report_query">Inventory check</string>
+	<string name="inventory_report_search_unit_name"> Items</string>
+	<string name="inventory_report_yujing">Alert</string>
+	<string name="inventory_require_quantity">Demand usage (calculated by day)</string>
+	<string name="inventory_return">Material returns</string>
+	<string name="inventory_save">Save</string>
+	<string name="inventory_scrap">Scrap MGT</string>
+	<string name="inventory_scrap_callout_warehouse">Ex-warehouse</string>
+	<string name="inventory_scrap_callout_warehouse_hint">warehouse name</string>
+	<string name="inventory_scrap_quantity">No. of scrap</string>
+	<string name="inventory_scrap_reason">Reason for scrap</string>
+	<string name="inventory_scrap_return_quantity">No. of returns</string>
+	<string name="inventory_scrap_return_reason">Reason for return</string>
+	<string name="inventory_self_produced_godown_entry">Self-produced warehouse entry</string>
+	<string name="inventory_shaomao_title">Scan code to input items</string>
+	<string name="inventory_shop_status_hint">Item status (multiple selection)</string>
+	<string name="inventory_show_cost">For commodity\'s cost calculation</string>
+	<string name="inventory_start_time">Start time</string>
+	<string name="inventory_stop_time">End time</string>
+	<string name="inventory_storage_status_hint">Inventory status (multiple choices)</string>
+	<string name="inventory_submission">Submit</string>
+	<string name="inventory_supplier">Supplier</string>
+	<string name="inventory_supplier_hint">Pls select a supplier</string>
+	<string name="inventory_switch_supplier">Do you want to switch suppliers?</string>
+	<string name="inventory_switch_unit">Change unit</string>
+	<string name="inventory_takestock_newadd_hint">* It is recommended to make an inventory after closing the account so as to update the data in time.</string>
+	<string name="inventory_thousand">Thousand yuan</string>
+	<string name="inventory_thousand_used">Use 1000Yuan\'s worth of material</string>
+	<string name="inventory_thousand_used_deduct_inventory">Predicted results deduct current inventory</string>
+	<string name="inventory_total_amount">Total amount (%1$s)</string>
+	<string name="inventory_total_amount_no_rate">Total (excluding tax):</string>
+	<string name="inventory_trade_amount">Receipt amount</string>
+	<string name="inventory_trade_query">Receipt search</string>
+	<string name="inventory_trade_status">Receipt status</string>
+	<string name="inventory_unedited">Un_edit</string>
+	<string name="inventory_unit">Unit</string>
+	<string name="inventory_upload_credentials">Upload vouchers</string>
+	<string name="inventory_upload_credentials_waring_info">Pls upload payment voucher and make sure the picture is clear. 6 pictures at most.</string>
+	<string name="inventory_upload_image">Upload image</string>
+	<string name="inventoryui_autogen_kaishishijian">Start time</string>
+	<string name="inventoryui_autogen_mendian">Store</string>
+	<string name="inventoryui_autogen_mendian_name_id">Store name / No.</string>
+	<string name="inventoryui_autogen_queding">Confirm</string>
+	<string name="inventoryui_autogen_yaohuoxiadan_tip">Before ordering, Pls carefully check the remaining inventory and perform deduction as necessary to avoid unnecessary inventory loss.</string>
+	<string name="item">Item</string>
+	<string name="item89">89 items</string>
+	<string name="keybord_ok">Confirm</string>
+	<string name="load_fail">Fail to load</string>
+	<string name="loading_2">Loading…</string>
+	<string name="look_history">View record</string>
+	<string name="max_number_of_applications">Number of application</string>
+	<string name="memo_str">Notes:</string>
+	<string name="mlog_no_upload_log">No log needs to be uploaded</string>
+	<string name="mobileui_app_name">mobileview</string>
+	<string name="mobileui_common_cancel">Cancel</string>
+	<string name="mobileui_common_ok">Confirm</string>
+	<string name="mobileui_custom_prompt">Tips</string>
+	<string name="mobileui_exit">Exit</string>
+	<string name="mobileui_loading">Loading…</string>
+	<string name="mobileui_pullable_load_fail">Fail to load</string>
+	<string name="mobileui_pullable_load_succeed">Load success</string>
+	<string name="mobileui_pullable_loading">Loading…</string>
+	<string name="mobileui_pullable_pull_to_refresh">Pull down to refresh</string>
+	<string name="mobileui_pullable_pullup_to_load">Pull up to load more</string>
+	<string name="mobileui_pullable_refresh_fail">Fail to refresh</string>
+	<string name="mobileui_pullable_refresh_succeed">Refresh success</string>
+	<string name="mobileui_pullable_refreshing">Refreshing…</string>
+	<string name="mobileui_pullable_release_to_load">Loose to load immediately</string>
+	<string name="mobileui_pullable_release_to_refresh">Loose to refresh immediately</string>
+	<string name="mobileui_xlistview_footer_hint_normal">Find more</string>
+	<string name="mobileui_xlistview_footer_hint_ready">Release to load more</string>
+	<string name="mobileui_xlistview_header_hint_loading">Refreshing</string>
+	<string name="mobileui_xlistview_header_hint_normal">Pull down to refresh</string>
+	<string name="mobileui_xlistview_header_hint_ready">Loose to refresh data</string>
+	<string name="mobileui_xlistview_header_last_time">The last refresh:</string>
+	<string name="modefy_purchase_apply">Modify purchase requisition</string>
+	<string name="modify_inventory_allocation">Modify the transfer note</string>
+	<string name="modify_receipt">Modify receipt of delivery receiving</string>
+	<string name="n_items">%1$d item</string>
+	<string name="network_data_err">Server data is abnormal</string>
+	<string name="network_err_data_save_local">The network is abnormal and the data is saved locally!</string>
+	<string name="network_error">Network have problems, pls reconnect and try again!</string>
+	<string name="new_delivery_apply">Add a new delivery application</string>
+	<string name="new_inventory_allocation">Add transfer requisition</string>
+	<string name="new_inventory_purchase_returns">Add purchase return</string>
+	<string name="new_inventory_purchase_storage">Add purchase warehousing</string>
+	<string name="new_purchase_apply">Add purchase requisition</string>
+	<string name="new_quote_receipt">Quote receipt</string>
+	<string name="new_quote_receipt_recongnition">Purchase order identification</string>
+	<string name="new_receipt">New</string>
+	<string name="new_scrap">New scrap</string>
+	<string name="new_scrap_return">Add new sales return receipt</string>
+	<string name="new_take_stock_order">New inventory list</string>
+	<string name="no_add_shop">No items added!</string>
+	<string name="no_barcode">Barcode does not exist</string>
+	<string name="no_choose_no_save">No items selected</string>
+	<string name="no_data">No data for now</string>
+	<string name="no_data_warehouse1">Nothing.  Pls view history or create application~</string>
+	<string name="no_data_warehouse2">No history yet~</string>
+	<string name="no_find_match_shops">No corresponding item found</string>
+	<string name="no_modification">Don\'t allow change</string>
+	<string name="no_more_than_48_chars">Can\'t exceed 48 characters</string>
+	<string name="no_OpenSCM">Unopened supply chain function</string>
+	<string name="no_scrap_reason">There are no reasons for scrapping items</string>
+	<string name="no_scrap_return_reason">There are no reasons for returning items</string>
+	<string name="no_shops">There is no warning item the current operation will not empty the purchase car!</string>
+	<string name="no_the_product">No such item</string>
+	<string name="not_search_need_dish">Sorry, there is no dishes your search for</string>
+	<string name="nventory_estimate_coefficient">Estimated demand coefficient</string>
+	<string name="nventory_estimate_turnover">Estimated daily turnover (not filled in)</string>
+	<string name="ocr_dish_wait_hint">Pls use the button below to select a menu to identify</string>
+	<string name="oh_no_purchase_receipt">Ah there is a purchase order! !</string>
+	<string name="oh_no_return_receipt">Ah wood has a return order! !</string>
+	<string name="one_unit_shop">Items</string>
+	<string name="open_camera_fail">Failed to open camera. Pls check permission and try again</string>
+	<string name="operation_failed">Operation fail</string>
+	<string name="operator">Operator</string>
+	<string name="operator_name2">Captain America</string>
+	<string name="order_number_title">Order No.: %1$s</string>
+	<string name="order_preview_action_success">Operate success</string>
+	<string name="order_without_dish_warning">You have not chosen any dishes</string>
+	<string name="orderremark_et_hint">Pls enter your notes</string>
+	<string name="orderremark_title">Fill in the note</string>
+	<string name="os_mobile_dialog_cancel">Cancel</string>
+	<string name="os_mobile_dialog_confirm">Confirm</string>
+	<string name="os_mobile_dialog_loading">loading…</string>
+	<string name="pandianjine">Counting amount:</string>
+	<string name="pandianzonge_xml">Inventory total:</string>
+	<string name="pandianzongejinge">Inventory total:</string>
+	<string name="pandianzongge_xml2">Inventory total:</string>
+	<string name="pankui_xml">Loss</string>
+	<string name="pankuijine">Loss</string>
+	<string name="pankuijinge_yuan">Disk loss amount</string>
+	<string name="panying_xml">Profit</string>
+	<string name="panyingjinge_yuan">Overage amount</string>
+	<string name="panyinjinge2">Profit</string>
+	<string name="peisong">Delivery</string>
+	<string name="per_price">Unit price</string>
+	<string name="picked">Picked</string>
+	<string name="piesong_center">delivery center</string>
+	<string name="ping_unit">Bottle</string>
+	<string name="pingpaitongcai">Centralized purchase under 1 brand</string>
+	<string name="planed">Planned</string>
+	<string name="please_choose_allocation_in_shop">Pls the merchant</string>
+	<string name="please_choose_allocation_out_warehouse">Pls choose ex-warehouse</string>
+	<string name="please_choose_arrive_date">Pls select the arrival date</string>
+	<string name="please_choose_price_unit">Pls select the unit price</string>
+	<string name="please_choose_quote_receipt">Pls select a reference order</string>
+	<string name="please_choose_receipt">Pls select an order</string>
+	<string name="please_choose_receive_warehouse">Pls select the warehouse</string>
+	<string name="please_choose_return_warehouse">Pls select a return warehouse</string>
+	<string name="please_choose_right_date">Pls select a correct date</string>
+	<string name="please_choose_scrap_reason">Pls select a reason for scrap</string>
+	<string name="please_choose_scrap_return_reason">Pls select a reason for return</string>
+	<string name="please_choose_storage_warehouse">Pls select the warehouse</string>
+	<string name="please_choose_supplier">Pls select a supplier</string>
+	<string name="please_choose_template">Pls select a template</string>
+	<string name="please_choose_unit2">Pls select a unit</string>
+	<string name="please_input_shopname_or_tradeno">Enter merchant name / receipt No.</string>
+	<string name="price_and_unit">Unit price: %3$s %1$s Unit: %2$s</string>
+	<string name="print_quantity">Qty</string>
+	<string name="pro_manage_camera">Take a picture</string>
+	<string name="pro_manage_pic_chose">Select an image from an album</string>
+	<string name="pro_num">Item</string>
+	<string name="product_count_input_hint">pls enter the quantity amount</string>
+	<string name="puck_up">Put away</string>
+	<string name="purcahse_this_contract_cannot_new_product">Can\'t add items!</string>
+	<string name="purchase_allot_storage">No. of transfers</string>
+	<string name="purchase_apply">Apply</string>
+	<string name="purchase_apply_history">Purchase application history</string>
+	<string name="purchase_apply_success_info">! The application form has been successfully sent to the brand. Pls contact the brand purchasing staff to deal with it in time.</string>
+	<string name="purchase_in_storage">No. of items into warehouse</string>
+	<string name="purchase_in_storage_buynum">No. of  items to store</string>
+	<string name="purchase_in_storage_hadnum">Warehousing</string>
+	<string name="purchase_out_storage">No. of purchase and returns</string>
+	<string name="purchase_out_storage_num">Returned</string>
+	<string name="purchase_over_return_num">Has exceeded the number of returns</string>
+	<string name="purchase_save_sucess">Save success</string>
+	<string name="qingxuanzhechukuchangku">Pls select the warehouse</string>
+	<string name="qrcode_cancel">Cancel</string>
+	<string name="qrcode_setting">Set</string>
+	<string name="query_delivery_summary_error">Failed to check the delivery request form</string>
+	<string name="quot_return_order">Order return order</string>
+	<string name="quot_storage_order">Order purchase order</string>
+	<string name="quote_inventory_purchase_returns">Return by quoting receipt</string>
+	<string name="quote_inventory_purchase_storage">Store by purchase order</string>
+	<string name="real_delete_confirm">Confirm deletion pls confirm</string>
+	<string name="real_delete_current_receipt">Delete the current receipt?</string>
+	<string name="real_delete_edit">Whether to delete changes</string>
+	<string name="real_delete_receipt">Do you want to delete the document?</string>
+	<string name="real_exit_edit">Are you sure to quit edit?</string>
+	<string name="real_save_edit">Do you want to save your changes?</string>
+	<string name="real_time_inventory">Real-time inventory</string>
+	<string name="receipt_date">Receipt date</string>
+	<string name="receipt_date_hint">Pls select date of the form</string>
+	<string name="receipt_date_mark1">Note: 1. last 90 days ≤ selectable date ≤ intraday</string>
+	<string name="receipt_date_mark2">2. Confirmation date of purchase order ≤ selectable date ≤ day</string>
+	<string name="receipt_quote">Quote receipt</string>
+	<string name="receipt_source_department">Department</string>
+	<string name="receipt_source_type">Type</string>
+	<string name="receive">Receive goods</string>
+	<string name="receive_allocation">Transfer</string>
+	<string name="receive_amount">Actual amount after delivery received</string>
+	<string name="receive_back_warning">Do you want to save your changes?</string>
+	<string name="receive_delivery">Delivery</string>
+	<string name="receive_history">Receiving record</string>
+	<string name="receive_no_data">Ah wood has a receipt! !</string>
+	<string name="receive_number">No.%1$s</string>
+	<string name="receive_quantity">No. of receiving receipts</string>
+	<string name="receive_search_no_data">No corresponding item found</string>
+	<string name="received">Received</string>
+	<string name="received2">Received</string>
+	<string name="recommend_hint">You may want</string>
+	<string name="refuse_reason3">Reason for refusal</string>
+	<string name="refused">Rejected</string>
+	<string name="remark">Note</string>
+	<string name="remark2">Note</string>
+	<string name="remark222">Notes:</string>
+	<string name="remarked">Been remarked</string>
+	<string name="report">Report</string>
+	<string name="report_choose_end_time">Pls select end time</string>
+	<string name="report_choose_start_time">Pls select a start time</string>
+	<string name="request_fail">Fail to request</string>
+	<string name="reset">Reset</string>
+	<string name="return_cant_zero">The number of returns can\'t be all 0</string>
+	<string name="return_cant_zero_draft">The number of returns is all 0 and can\'t be saved as a draft</string>
+	<string name="return_data_null">Returned data is null</string>
+	<string name="return_num_no_0">No. of returns can\'t be all 0</string>
+	<string name="return_sku_name_not_empty">Pls fill in the name</string>
+	<string name="rukushu">Number of warehousing entry</string>
+	<string name="save_exit">Save and exit</string>
+	<string name="save_ok">Save success!</string>
+	<string name="save_successful">Save success!</string>
+	<string name="saved">Saved</string>
+	<string name="scan_text">Pls put barcode in the box</string>
+	<string name="scrap">Scrap</string>
+	<string name="scrap_history">Scrap record</string>
+	<string name="scrap_num_no_0">Scrap No. can\'t be 0</string>
+	<string name="scrap_reason">Reason for scrap</string>
+	<string name="scrap_return_cant_zero">Returned books cannot be all 0</string>
+	<string name="scrap_return_history">Return history</string>
+	<string name="scrap_return_num">No. of items returned into warehouse</string>
+	<string name="scrap_return_num_no_0">Returns No.can\'t be 0</string>
+	<string name="scrap_return_warehousename">Ex-warehouse</string>
+	<string name="scrap_turn_reson">Reason for return</string>
+	<string name="search">Enter capital / Chinese character / code</string>
+	<string name="search_history_title">Hot search dishes</string>
+	<string name="search_menu_title">Search</string>
+	<string name="search_result_count">%1$d items</string>
+	<string name="select_duration_lastest_one_month">Last month</string>
+	<string name="select_duration_lastest_six_month">Last six months</string>
+	<string name="select_duration_lastest_three_month">Last three months</string>
+	<string name="select_duration_one_month">Within one month</string>
+	<string name="select_duration_one_week">Nearly a week</string>
+	<string name="select_duration_three_month">Within three months</string>
+	<string name="select_duration_title">Select time period</string>
+	<string name="select_duration_two_weeks">Nearly two weeks</string>
+	<string name="select_import_depot">Pls select the warehouse</string>
+	<string name="shangjiachuanjian2">Create by merchant </string>
+	<string name="shaomao_luru_wancheng">Complete entry</string>
+	<string name="shengqingshu">No. of apply</string>
+	<string name="shop_created">Create by merchant </string>
+	<string name="shop_name22">Item name</string>
+	<string name="shop_poshun">Damaged item</string>
+	<string name="sku_search_hint">Pls enter the item name / No.</string>
+	<string name="smart_add">Add</string>
+	<string name="smart_add_content">Add items smartly based on the inventory alert * the edited content will be emptied after confirmation</string>
+	<string name="source_bill_number">Original receipt No.</string>
+	<string name="source_bill_number2">Original receipt No.</string>
+	<string name="space"> </string>
+	<string name="starttime_greatertan_endtime">The start date cannot be greater than the end date!</string>
+	<string name="status_bar_notification_info_overflow">999+</string>
+	<string name="stock_up">Stocked</string>
+	<string name="storage_cant_zero">The number of warehousing cannot be all 0</string>
+	<string name="storage_cant_zero_draft">The No. of  items into warehouse is all 0 and can\'t be saved as a draft.</string>
+	<string name="storege_num_no_0">The No. of items to store can\'t be all 0</string>
+	<string name="str_ocr_dish_contain_cancel_image">Cancel image recognition</string>
+	<string name="str_orc_scaning_use_back_button_cancel">In recognition, press the back button to cancel</string>
+	<string name="suilv">Tax rate 8%</string>
+	<string name="sync_data_finished">Data synchronization complete!</string>
+	<string name="sync_data_progress">Synchronous data</string>
+	<string name="synchronizing_data">Synchronizing data…</string>
+	<string name="table_code_save_fail">Save fail</string>
+	<string name="take_stock_history">Inventory record</string>
+	<string name="take_stock_template">Inventory template</string>
+	<string name="take_stock_template_choose_hint">Pls select the inventory template</string>
+	<string name="take_stock_warehouse">Check inventory </string>
+	<string name="take_stock_warehouse_choose_hint">Pls select the warehouse</string>
+	<string name="tax_rate">Tax rate</string>
+	<string name="template_name2">Template name</string>
+	<string name="template_no_date_info">Cannot enter delivery details no items in the template</string>
+	<string name="text_kcproduct_price_tips">Negative stock items\n will show the real price after re-stocking</string>
+	<string name="text_mobileui_keybord_ok">Confirm</string>
+	<string name="title_content">Title</string>
+	<string name="title_crop_img_please_cut_same_classification">"Pls take the same category of dishes "</string>
+	<string name="title_crop_img_please_inventory">Pls capture the same warehouse entry</string>
+	<string name="title_ocr_dish_guide_activity">Photo to Dish tutorial</string>
+	<string name="title_ocr_dish_wait_activity">Smart Dish</string>
+	<string name="title_ocr_dish_wait_just_scan_ing">Scaning</string>
+	<string name="title_ocr_inventory_wait_activity">Scan code to be registered into the warehouse</string>
+	<string name="title_right_tv_content">XXXXX</string>
+	<string name="toast_not_find_any_words_in_image">No text found in image</string>
+	<string name="toast_ocr_error_image_error">Image gets wrong</string>
+	<string name="toast_ocr_server_not_has_response">Identify server request errors</string>
+	<string name="total">Total</string>
+	<string name="total2">Total</string>
+	<string name="trade_amount">Amount</string>
+	<string name="trade_date">Transaction date:</string>
+	<string name="trade_end_time">End date</string>
+	<string name="trade_start_time">Start date</string>
+	<string name="trade_voucher">Transaction voucher</string>
+	<string name="trade_voucher_num">Transaction voucher: %1$s sheets</string>
+	<string name="tv_crop_images_text_hint">Pls touch box\'s lines to decide clipping region </string>
+	<string name="tv_goods_total_count_hint">Total items:</string>
+	<string name="tv_info_ocr_dish_contain_guide_first">Basic info such as product name, price, unit, etc. can be identified. In order to identify them accurately, pls ensure that the picture is clear</string>
+	<string name="tv_info_ocr_dish_contain_guide_second">Pls cut photos after shooting and ensure that the products belong to the same category</string>
+	<string name="tv_info_ocr_dish_contain_guide_third">After automatic recognition, select the category first! !! If you notice that the product name, price is incorrect, Pls change it by a click</string>
+	<string name="tv_next_page">Next</string>
+	<string name="tv_ocr_edit_goods_total_count">Total %1$d items quantity %2$d</string>
+	<string name="tv_ocr_purchase_confirm_storage">Confirm storage</string>
+	<string name="tv_title_ocr_dish_contain_guide_first">Shooting. My paper menu</string>
+	<string name="tv_title_ocr_dish_contain_guide_second">Cut products of the same category</string>
+	<string name="tv_title_ocr_dish_contain_guide_third">Select product category</string>
+	<string name="unit_convert_result"> = %1$s %2$s </string>
+	<string name="upload_credentials">Upload voucher</string>
+	<string name="utils_bai_du_zhi_da_hao">Baidu Zhida</string>
+	<string name="utils_baiduditu">Baidu map</string>
+	<string name="utils_baidunuomi">Baidu Nuomi</string>
+	<string name="utils_baiduwaimai">Star Ele.me</string>
+	<string name="utils_before_yesterday">The day before yesterday</string>
+	<string name="utils_china_mobile">China Mobile</string>
+	<string name="utils_china_telecommunications">CDMD</string>
+	<string name="utils_china_unicom">China Unicom</string>
+	<string name="utils_citest_env">ci test</string>
+	<string name="utils_dazongdianping_order">Dianping</string>
+	<string name="utils_develop_env">Develop</string>
+	<string name="utils_eleme_order">Ele.me</string>
+	<string name="utils_erp_env">Formal</string>
+	<string name="utils_gld_env">Grayscale</string>
+	<string name="utils_hujiaozhongxin">Call Center</string>
+	<string name="utils_meituan_dazhong_order">US Mission/Volkswagen</string>
+	<string name="utils_meituan_order">Meituan</string>
+	<string name="utils_money_str">¥%1$s</string>
+	<string name="utils_money_str_negative"> -¥%1$s</string>
+	<string name="utils_month">Month </string>
+	<string name="utils_open_platform">Open platform</string>
+	<string name="utils_renmingbi">¥</string>
+	<string name="utils_shanghuguanwang">Merchant\'s website</string>
+	<string name="utils_shanghushoiuyinzhongduan">Merchant cashier terminal</string>
+	<string name="utils_test_env">Test</string>
+	<string name="utils_today">Today</string>
+	<string name="utils_tomorrow">tomorrow</string>
+	<string name="utils_wechat_order">WeChat</string>
+	<string name="utils_yesterday">Yesterday</string>
+	<string name="utils_zizhuzhongduan">Self-service terminals</string>
+	<string name="ware_house_22">warehouse</string>
+	<string name="warehouse22">warehouse</string>
+	<string name="warehouse_name_xml">warehouse name</string>
+	<string name="warehouse_out_amount">Total amount (%1$s)</string>
+	<string name="warehouse_out_cant_zero_draft">The number of outbound files is all 0 and cannot be saved as a draft.</string>
+	<string name="warehouse_out_confirm">Confirm</string>
+	<string name="warehouse_out_confirm_tip">After confirmation</string>
+	<string name="warehouse_out_delete_confirm">Delete the current receipt?</string>
+	<string name="warehouse_out_delete_confirm_delete">Delete</string>
+	<string name="warehouse_out_history">Ex-warehouse record</string>
+	<string name="warehouse_out_inventory_quantity">Total Qty</string>
+	<string name="warehouse_out_new">New outbound order</string>
+	<string name="warehouse_out_order">Outbound delivery order</string>
+	<string name="warehouse_out_quantity">Ex-warehouse Qty</string>
+	<string name="warehouse_out_quantity_invalid">Ex-warehouse Qty can\'t be 0</string>
+	<string name="warehouse_out_reason">Ex-warehouse reason</string>
+	<string name="warehouse_out_reason_choose">Pls select the reason</string>
+	<string name="warehouse_out_warehouse">Ex-warehouse</string>
+	<string name="warehouse_out_warehouse_choose">Pls select the warehouse</string>
+	<string name="xuanzheriqicuowu">Select date wrong</string>
+	<string name="yiruku22">Warehousing</string>
+
+
+
+
+
+
+
+	<!-- 位 -->	<string name="business_position">Decimals</string>
+    <!--	IC卡只能挥卡或者插卡 -->	<string name="batmancard_ic_should_spend_insert">IC card can only be waved or inserted</string>
+    <!-- 送达时间 --><string name="drsk_delivery_time">Delivery time</string>
+    <!-- %1$s送达 -->	<string name="drsk_delivery_time_except">%1$s Delivery</string>
+    <!-- 立即送达 --><string name="drsk_delivery_time_right_now">Deliver immediately</string>
+    <!-- 芯烨58mm -->	<string name="klight_bluetooth_device_xinhua">Xprinter 58mm</string>
+    <!-- 请输入%1$s 储值金额 -->	<string name="kmember_rule_input_amount_chuzhi">Pls enter %1$s Stored value</string>
+    <!-- 请输入%1$s 赠送金额 -->	<string name="kmember_rule_input_amount_zengsong">Pls enter %1$s offered amount</string>
+    <!-- 保存失败 -->	<string name="kmember_save_failed">Save error</string>
+    <!-- 提示 -->	<string name="kmember_title_hint">Tips</string>
+    <!-- 最多只能新增20条 -->	<string name="kmember_zuiduo_20_item">Up to 20 items can be added</string>
+    <!-- 结算银行清分行号 -->	<string name="lefu_bank__qingfen_number">Settlement branch\'s account No.</string>
+    <!-- 结算银行开户名称 -->	<string name="lefu_bank_open_name">Settlement bank account name</string>
+    <!-- 申请访问功能： -->	<string name="log_apply_modules">Apply for access function:</string>
+    <!-- 申访问机构: -->	<string name="log_apply_org">Apply for access institutions:</string>
+    <!-- 来源: -->	<string name="oc_source">Source:</string>
+    <!-- 收款方式 -->	<string name="print_pay_mode">Payment method</string>
+    <!-- 等待头部刷新完成… -->	<string name="srl_footer_refreshing">Wait for the head refresh to complete…</string>
+    <!-- 释放进入二楼 -->	<string name="srl_header_secondary">Release to the second floor</string>
+    <!-- 共<font size="24">%s</font>张 -->	<string name="str_groupcoupon_maxcount_local">Total <font size="24">%1$s</font> sheets</string>
+    <!-- 系统错误 -->	<string name="system_error">System error</string>
+    <!-- 期望送达 -->	<string name="takeout_expected_service">Expect to deliver</string>
+    <!-- 已失效 -->	<string name="takeout_invalid_order_title">Invalidated</string>
+    <!-- 新订单 -->	<string name="trade_order_pending_new">New orders</string>
+    <!-- 已作废 -->	<string name="trade_order_sales_abandoned">Abolished</string>
+    <!-- 已结账 -->	<string name="trade_order_sales_paid">Checked out</string>
+    <!-- 支付中 -->	<string name="trade_order_sales_paying">In payment</string>
+    <!-- 已退货 -->	<string name="trade_order_sales_refunded">Returned</string>
+    <!-- 未结账 -->	<string name="trade_order_sales_unpaid">Unpaid</string>
+    <!-- 匿名会员 -->	<string name="tradeui_anonymous_member">Anonymous member</string>
+    <!-- 请输入清分行号 -->	<string name="lefu_bank__qingfen_number_please">Pls enter Settlement branch\'s account No.</string>
+
+
+
+	<string name="takeout_receive_arrived">Paid &amp;delivered</string>
+	<string name="takeout_nav_distance">Distance: </string>
+
+
+    <string name="smartmanage_autogen_bendianjia">Our price in stores</string>
+    <string name="smartmanage_autogen_re_load">Re-load</string>
+    <string name="smartmanage_autogen_re_check">Re-detect</string>
+    <string name="smartmanage_autogen_jianyidingjia_qujian">Suggested pricing range</string>
+    <string name="smartmanage_autogen_cancel">Cancel</string>
+    <string name="smartmanage_autogen_shangquajia">Average price of peers in business circle</string>
+    <string name="smartmanage_autogen_load_failed">Oops,Failed to load</string>
+    <string name="smartmanage_autogen_detecting">Checking…</string>
+    <string name="smartmanage_autogen_cur_score">Score this time</string>
+    <string name="smartmanage_autogen_score">score</string>
+
+
+	<string name="tablemanage_autogen_zanwufenlei_add">No classification. Pls add</string>
+	<string name="tablemanage_autogen_long_press_sort">Press table long and drag to sort~</string>
+	<string name="table_n_days_ago">%1$d days ago</string>
+	<string name="table_n_hours_ago">%1$d hours ago</string>
+
+
+	<string name="float_money_format">%2$s%1$.2f</string>
+	<string name="loyal">loyal</string>
+	<string name="drsk_source_onmobile">ONMOBILE</string>
+	<string name="drsk_source_osmobile">OS Mobile</string>
+
+
+    <string name="drsk_deliverer">Delivery man</string>
+    <string name="drsk_delivery_platform">Delivery way</string>
+    <string name="drsk_delivery_platform_baidu">Baidu Waimai</string>
+    <string name="drsk_delivery_platform_dada">Dada distribution</string>
+    <string name="drsk_delivery_platform_eleme">Fengniaoeleme</string>
+    <string name="drsk_delivery_platform_meituan">Meituan delivery</string>
+    <string name="drsk_delivery_platform_shunfeng">SFs IntraCity Express Service</string>
+    <string name="drsk_delivery_platform_store">Deliver by the merchant</string>
+    <string name="drsk_receiver">Recipient</string>
+    <string name="drsk_receiver_address">Delivery address</string>
+
+
+
+	<string name="_uuid">00000</string>
+	<string name="account_pwd_input_limit">0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+	<string name="cashier_empty"> </string>
+	<string name="catalyst_copy_button">Copy</string>
+	<string name="catalyst_debugjs">Debug JS Remotely</string>
+	<string name="catalyst_debugjs_off">Stop Remote JS Debugging</string>
+	<string name="catalyst_dismiss_button">Dismiss\n(ESC)</string>
+	<string name="catalyst_element_inspector">Toggle Inspector</string>
+	<string name="catalyst_heap_capture">Capture Heap</string>
+	<string name="catalyst_hot_module_replacement">Enable Hot Reloading</string>
+	<string name="catalyst_hot_module_replacement_off">Disable Hot Reloading</string>
+	<string name="catalyst_jsload_error">Unable to download JS bundle. Did you forget to start the development server or connect your device?</string>
+	<string name="catalyst_live_reload">Enable Live Reload</string>
+	<string name="catalyst_live_reload_off">Disable Live Reload</string>
+	<string name="catalyst_loading_from_url">Loading from %1$s…</string>
+	<string name="catalyst_perf_monitor">Show Perf Monitor</string>
+	<string name="catalyst_perf_monitor_off">Hide Perf Monitor</string>
+	<string name="catalyst_poke_sampling_profiler">Start/Stop Sampling Profiler</string>
+	<string name="catalyst_reload_button">Reload\n(R,\u00A0R)</string>
+	<string name="catalyst_reloadjs">Reload</string>
+	<string name="catalyst_remotedbg_error">Unable to connect with remote debugger</string>
+	<string name="catalyst_remotedbg_message">Connecting to remote debugger</string>
+	<string name="catalyst_report_button">Report</string>
+	<string name="catalyst_settings">Dev Settings</string>
+	<string name="catalyst_settings_title">Catalyst Dev Settings</string>
+	<string name="content_safe_view_web_title_back">safe_view_web_title_back</string>
+	<string name="content_safe_view_web_title_close">content_safe_view_web_title_close</string>
+	<string name="custompay_dinner_money_symbol">￥</string>
+	<string name="custompay_renmingbi">¥</string>
+	<string name="faceDetected">Face Detected</string>
+	<string name="home_invoice_explain_content">I、invoice rules：\n1、After payment is done，pls apply for invoice by yourself. The e-invoice will be issued and sent to  your reserved mail address within 24 hours；\n2、The amount on the invoice is the amount you paid；\n3、If you apply for invoice offline，invoice of the whole order can only be issued offline；\n4、if you can\'t find invoice， pls contact your account manager\n\nII、Rules of re-issuing and changing invoice ：\n1、Invoice can only be re-issued or changed once in a year；\n2、If you want to change the invoice， pls apply for invalidating and re-issuing invoice</string>
+	<string name="join_and_expand_url">http://wap.keruyun.com/dlwx/</string>
+	<string name="key_eye_close">liveness_blink_eye_close</string>
+	<string name="key_eye_open">liveness_blink_eye_open</string>
+	<string name="key_meglive_eye_blink_m4a">liveness_blink</string>
+	<string name="key_meglive_mouth_open_m4a">liveness_mouth_open</string>
+	<string name="key_meglive_pitch_down_m4a">liveness_nod</string>
+	<string name="key_meglive_well_done_m4a">liveness_well_done</string>
+	<string name="key_meglive_yaw_m4a">liveness_shakehead</string>
+	<string name="key_mouth_close">liveness_mouth_close</string>
+	<string name="key_mouth_open">liveness_mouth_open</string>
+	<string name="key_nod_down">liveness_nod_down</string>
+	<string name="key_nod_up">liveness_nod_up</string>
+	<string name="key_shakehead_left">liveness_shakehead_left</string>
+	<string name="key_shakehead_right">liveness_shakehead_right</string>
+	<string name="klight_service_center_phone_no">400-8866-815</string>
+	<string name="kmobile_prefix">K-MOBILE-</string>
+	<string name="kry_transactionfees">Charges by keruyun 0.38%,charges by industrial standard 0.6%</string>
+	<string name="loadinfo">Loading, pls wait</string>
+	<string name="on_os_version_suggest1">On Pos(v8.11.0+)+On Printer(v3.11.0+)</string>
+	<string name="online_service_url">http://webcall.keruyun.com:18008/WebCall5/jsps/keRuYun/index.jsp</string>
+	<string name="open_camera">open camera.</string>
+	<string name="open_camera_failed">open front camera failed.</string>
+	<string name="print_pay_source_cashier">Cashier</string>
+	<string name="print_pay_source_kiosk">kiosk</string>
+	<string name="print_pay_source_loyal">loyal</string>
+	<string name="print_pay_source_on_mobile">ON_MOBILE</string>
+	<string name="print_pay_source_portal">portal</string>
+	<string name="print_prefix">Print-</string>
+	<string name="product_desc_print"> </string>
+	<string name="product_name_handset">On OS MOBILE</string>
+	<string name="product_name_kds">KDS</string>
+	<string name="product_name_kiosk">On KIOSK</string>
+	<string name="product_name_kmobile">K-MOBILE</string>
+	<string name="product_name_pos">On POS</string>
+	<string name="product_name_print">Print</string>
+	<string name="provider_settings_message">Your GPS seems to be disabled, do you want to enable it?</string>
+	<string name="provider_settings_no">No</string>
+	<string name="provider_settings_yes">Yes</string>
+	<string name="service_center_phone_no">400-8866-815</string>
+	<string name="table_dinner_data_login_error_msg">Data is abnormal.Pls log in again before operating!</string>
+	<string name="table_just">Just</string>
+	<string name="umeng_key">56397405e0f55aee890016fe</string>
+	<string name="version_number_format">V%1$d.%2$d.%3$d</string>
+	<string name="version_prefix">V</string>
+	<string name="xunfei_app_id">59812d8e</string>
+
+	<string name="iflytek_error_init_first">Speech synthesis failure, pls initiate first</string>
+	<string name="iflytek_gener_error_with_code">Speech synthesis failure,error code: %1$d</string>
+	<string name="iflytek_init_error_with_code">Initiation failure,error code: %1$d</string>
+	<string name="iflytek_tingxie_error_with_code">Dictation failure,error code: %1$d</string>
+    <string name="iflytek_say_sth">Pls start talking</string>
+
+
+    <string name="report_advance_payment">Advance payment</string>
+
 </resources>

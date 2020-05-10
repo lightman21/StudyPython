@@ -189,7 +189,8 @@ def main():
     # clean_module('/Users/lightman_mac/company/keruyun/proj_sourcecode/utils/')
     # clean_module('/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-takeout-ui/')
     # clean_module('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/Manager-Table-Code/')
-    clean_module('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-cashier/')
+    # clean_module('/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-cashier/')
+    clean_module('/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-coupon/')
     pass
 
 
