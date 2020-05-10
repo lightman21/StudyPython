@@ -4,7 +4,8 @@ import time
 
 from org.ith.learn.util.PXML import write_kce_to_path
 from org.ith.learn.util.TUtils import open_excel_as_list, KCEBean, exec_cmd, highlight, read_xml_as_kce_list, \
-    write_to_excel, is_contains_chinese, md5
+    write_to_excel, is_contains_chinese, md5, skip_key_prefix
+from org.ith.learn.work.AndI18n import gener_excel_by_apk
 
 """git archive --remote=ssh://git@gitlab.shishike.com:38401/c_iphone/OnMobile-Android.git 
 HEAD:app/src/main/res/values-en/ strings.xml | tar -x && cp strings.xml ~/th_strings.xml && rm strings.xml 
@@ -16,9 +17,8 @@ def main(argv=None):
     if argv is None:
         argv = sys.argv
 
-    # cn_en_tuple = excel_to_xml('/Users/lightman_mac/Desktop/0411work/panshuangwei_0410_origin.xlsx', '/tmp/i18n/')
-    ce_dict = gener_cn_en_dict('/Users/lightman_mac/Desktop/0411work/panshuangwei_0410_origin.xlsx')
-    print(len(ce_dict))
+    # gener_excel_by_apk(
+    #     '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/build/outputs/apk/official/envGrd/app-official-armeabi-v7a-envGrd.apk')
 
 
 def xml_to_excel(path_of_cn, path_of_en, excel_path):
@@ -26,6 +26,20 @@ def xml_to_excel(path_of_cn, path_of_en, excel_path):
     """
     cn_list = read_xml_as_kce_list(path_of_cn, 'cn')
     en_list = read_xml_as_kce_list(path_of_en, 'en')
+
+    tmp = list(cn_list)
+    for kce in tmp:
+        for skip in skip_key_prefix:
+            if str(kce.key).startswith(skip):
+                if cn_list.__contains__(kce):
+                    cn_list.remove(kce)
+
+    tmp = list(en_list)
+    for kce in tmp:
+        for skip in skip_key_prefix:
+            if str(kce.key).startswith(skip):
+                if en_list.__contains__(kce):
+                    en_list.remove(kce)
 
     for item in cn_list:
         for en_item in en_list:

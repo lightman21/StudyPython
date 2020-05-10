@@ -1,33 +1,16 @@
 import os
 import time
 
-from org.ith.learn.OhMyEXCEL import excel_to_xml, xml_to_excel
-from org.ith.learn.scratch.Trans535 import big_dict
 from org.ith.learn.util.PXML import write_kce_to_path
-from org.ith.learn.util.TUtils import open_excel_as_list, read_xml_as_kce_list, KCEBean, highlight, modify_time, md5, \
-    auto_escape, extra_chinese, remove_punctuation, is_contains_chinese, exec_cmd, auto_transascii10
+from org.ith.learn.util.TUtils import read_xml_as_kce_list, KCEBean, highlight, \
+    is_contains_chinese, exec_cmd, auto_transascii10, skip_key_prefix, write_to_excel
 import re
-import difflib
-
-from org.ith.learn.work.Work import gener_dict_by_excel, just_sort
 
 """
 怎么知道新增哪些key
 有一个基准 基准来源于apk包 生成中文的kce  从解压的apk中的values目录读取 values
 values-zh values-zh-rCN values-zh-rHK values-zh-rTW  values
-
-
-
-
-
 """
-
-skip_key_prefix = [
-    'abc_',
-    'leak_canary_',
-    'title_activity',
-    'key_liveness_',
-]
 
 china_dirs_need_care = [
     'values',
@@ -41,6 +24,9 @@ local_base_dir = '../../../../docs/i18n/'
 
 
 def gener_all_cn_by_apk(apk_path):
+    """
+    返回生成的中文kce的路径
+    """
     start = time.time()
     # apk路径的上一级目录
     apk_path = apk_path.strip()
@@ -147,7 +133,7 @@ def pull_remote_dict():
 
 
 def main():
-    # pull_remote_dict()
+    pull_remote_dict()
     #
     # old_path = gener_all_cn_by_apk(
     #     '/private/tmp/arm_OnMobile-official-5.35.10-SNAPSHOT-armeabi-envGrd-2020-05-06-11-09-57.apk')
@@ -156,19 +142,20 @@ def main():
     # gener_all_cn_by_apk('/private/tmp/old.apk')
     # gener_all_cn_by_apk('/private/tmp/thOnMobile-official-5.36.0-SNAPSHOT-armeabi-v7a-envGrd-2020-05-09-08-42-21.apk')
 
-    # just_sort('/Users/lightman_mac/company/keruyun/proj_sourcecode/mobile-storage/translate/kmobile/english.xml')
+    # check_apk_kce(
+    #     '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/build/outputs/apk/official/envGrd'
+    #     '/app-official-armeabi-v7a-envGrd.apk')
 
-    check_apk_kce(
+    gener_excel_by_apk(
         '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/build/outputs/apk/official/envGrd'
         '/app-official-armeabi-v7a-envGrd.apk')
     pass
 
 
-def gener_all_english(path_of_apk):
+def get_all_english_path_by_apk(path_of_apk):
     apk_path = path_of_apk.strip()
     print('apk_path english ', apk_path)
     apk_parent = os.path.dirname(apk_path)
-    apk_name = apk_path.split('/')[-1]
     os.chdir(apk_parent)
     command = 'apktool d ' + apk_path
     exec_cmd(command)
@@ -180,6 +167,15 @@ def gener_all_english(path_of_apk):
     pass
 
 
+def gener_excel_by_apk(path_of_apk):
+    start = time.time()
+    path_of_china = gener_all_cn_by_apk(path_of_apk)
+    path_of_english = get_all_english_path_by_apk(path_of_apk)
+    tmpxml_to_excel(path_of_cn=path_of_china, path_of_en=path_of_english, excel_path='./Andi18n_5_36_0.xlsx')
+    print('total cost ', (time.time() - start), ' s')
+    pass
+
+
 def check_apk_kce(path_of_apk):
     """
     @param 传入的apk路径
@@ -187,7 +183,7 @@ def check_apk_kce(path_of_apk):
     然后比较相同key有占位符的地方 是不是都一致 防止 手抖导致奔溃
     """
     cn_kce_path = gener_all_cn_by_apk(path_of_apk)
-    english_path = gener_all_english(path_of_apk)
+    english_path = get_all_english_path_by_apk(path_of_apk)
 
     dict_cn = dict()
     for kce in read_xml_as_kce_list(cn_kce_path):
@@ -247,10 +243,8 @@ def check_apk_kce(path_of_apk):
         if not is_start_with:
             tmp.add(t)
             print('pre for loop ', t)
-
-    write_kce_to_path(list(tmp), './cn_pop.xml')
-    write_kce_to_path(en_pop, './english_pop.xml')
-
+    # write_kce_to_path(list(tmp), './cn_pop.xml')
+    # write_kce_to_path(en_pop, './english_pop.xml')
     pass
 
 
@@ -396,6 +390,44 @@ def to_pretty(key, value):
     #     <string name="main_policy">售后政策</string>
     result = '\t<string name="{}">{}</string>'.format(key, value)
     return result
+
+
+def tmpxml_to_excel(path_of_cn, path_of_en, excel_path):
+    """
+    """
+    cn_list = read_xml_as_kce_list(path_of_cn, 'cn')
+    en_list = read_xml_as_kce_list(path_of_en, 'en')
+
+    tmp = list(cn_list)
+    for kce in tmp:
+        for skip in skip_key_prefix:
+            if str(kce.key).startswith(skip):
+                if cn_list.__contains__(kce):
+                    cn_list.remove(kce)
+
+    tmp = list(en_list)
+    for kce in tmp:
+        for skip in skip_key_prefix:
+            if str(kce.key).startswith(skip):
+                if en_list.__contains__(kce):
+                    en_list.remove(kce)
+
+    for item in cn_list:
+        for en_item in en_list:
+            if item.key == en_item.key:
+                item.en = en_item.en
+    list_dup = []
+    dict_cd = dict()
+    count = 0
+    for cn in cn_list:
+        if dict_cd.__contains__(cn.cn):
+            list_dup.append(cn)
+            count += 1
+        else:
+            dict_cd[cn.cn] = cn.key
+
+    print(highlight('duplicate count '), count, 'total size ', len(cn_list))
+    write_to_excel(cn_list, excel_path)
 
 
 if __name__ == '__main__':

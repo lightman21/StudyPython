@@ -11,14 +11,20 @@ import xml
 import xlrd
 import xlwt
 
+from org.ith.learn.scratch.PackageNameMapper import gener_name_where
 from org.ith.learn.util.Colored import COLS
 import random
 
+skip_key_prefix = [
+    'abc_',
+    'leak_canary_',
+    'title_activity',
+    'key_liveness_',
+]
+
 """
 git archive i18n_5.34.10 --remote=ssh://git@gitlab.shishike.com:38401/c_iphone/OnMobile-Android.git app/src/main/res/values-en/strings.xml | tar -x
-
 """
-
 
 class KCEBean:
     def __init__(self, key, cn, en):
@@ -86,7 +92,7 @@ def write_to_excel(to_write_list, path_of_excel):
     # 处理一下 中英文的情况
     dict_kce_list = do_search_dict(to_write_list)
     now_date = time.strftime("%Y_%m_%d_%H_%M_%S", time.localtime())
-    out = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/docs/dicts/by_dict/' + now_date
+    out = '../../../../../../docs/dicts/by_dict/' + now_date
     twrite_kce_to_path(dict_kce_list, key='cn', path=out + '__china.xml')
     twrite_kce_to_path(dict_kce_list, key='en', path=out + '__english.xml')
 
@@ -98,12 +104,17 @@ def write_to_excel(to_write_list, path_of_excel):
     worksheet.write(0, 0, "key")
     worksheet.write(0, 1, "中文")
     worksheet.write(0, 2, "英文")
+    worksheet.write(0, 3, "模块")
+
+    # name_where_dict[kce.key] = human_name
+    name_w_dict = gener_name_where()
+    print(highlight('=======================', 3), name_w_dict)
 
     for row, item in enumerate(to_write_list):
 
         row += 1
 
-        for column in range(3):
+        for column in range(4):
             key = item.key
             cn = item.cn
             en = item.en
@@ -112,8 +123,14 @@ def write_to_excel(to_write_list, path_of_excel):
                 worksheet.write(row, column, key)
             elif column == 1:
                 worksheet.write(row, column, cn)
-            else:
+            elif column == 2:
                 worksheet.write(row, column, en)
+            else:
+                where = name_w_dict.get(key)
+                if where is None:
+                    where = '其他'
+                print('other ', row, column, where)
+                worksheet.write(row, column, where)
 
             # row += 1
 
@@ -212,9 +229,6 @@ def read_xml_as_kce_list(xml_path, lang='cn'):
         all_str = file.read()
         fuzzy_matching = r'<string name="(\w*)">(.*)</string>'
         fuzzy_matching = r'<string name="(\w*)">(.*?)</string>'
-        # r = re.compile(matching, re.DOTALL)
-        # rets = r.findall(mock_all_xml)
-        # r = re.compile(fuzzy_matching, re.DOTALL)
         list_kce = []
         rets = re.findall(fuzzy_matching, all_str, re.DOTALL)
         # rets = r.findall(all_str)
@@ -481,4 +495,5 @@ def make_sure_file_exist(path_of_file):
 
 
 if __name__ == '__main__':
-    print(remove_punctuation('税  !@#$%^&*( 种:'.replace(' ', '')))
+    nw_dict = gener_name_where()
+    print(nw_dict)
