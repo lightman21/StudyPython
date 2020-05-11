@@ -146,9 +146,8 @@ def main():
     #     '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/build/outputs/apk/official/envGrd'
     #     '/app-official-armeabi-v7a-envGrd.apk')
 
-    gener_excel_by_apk(
-        '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/build/outputs/apk/official/envGrd'
-        '/app-official-armeabi-v7a-envGrd.apk')
+    apk_path = '/tmp/OnMobile-official-5.36.0-SNAPSHOT-armeabi-v7a-envSingapore-2020-05-11-10-04-19.apk'
+    gener_excel_by_apk(apk_path)
     pass
 
 
@@ -171,6 +170,7 @@ def gener_excel_by_apk(path_of_apk):
     start = time.time()
     path_of_china = gener_all_cn_by_apk(path_of_apk)
     path_of_english = get_all_english_path_by_apk(path_of_apk)
+    print('in gener_excel_by_apk ', 'pwd ', os.curdir)
     tmpxml_to_excel(path_of_cn=path_of_china, path_of_en=path_of_english, excel_path='./Andi18n_5_36_0.xlsx')
     print('total cost ', (time.time() - start), ' s')
     pass
