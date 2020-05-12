@@ -5,7 +5,7 @@
 
 4.观察最新文件内容  总结出需要忽略的kce规律
 
-skip_key_list = []
+_de_skip_key_list = []
 
 在主工程merge大kce列表的时候  考虑需要忽略的东西
 
@@ -82,7 +82,7 @@ def diff():
 
 
 # 跳过key名开头的 跳过
-skip_key_list = ['leak_canary_', 'key_liveness_', 'title_activity_']
+_de_skip_key_list = ['leak_canary_', 'key_liveness_', 'title_activity_']
 
 
 def main():

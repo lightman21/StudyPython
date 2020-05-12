@@ -33,10 +33,11 @@ def gener_all_cn_by_apk(apk_path):
     print('apk_path ', apk_path)
     apk_parent = os.path.dirname(apk_path)
     apk_name = apk_path.split('/')[-1]
-    os.chdir(apk_parent)
-    command = 'apktool d ' + apk_path
+    out_path = '/tmp/' + apk_name.replace('.', '_')
+    # os.chdir(apk_parent)
+    command = 'apktool d ' + apk_path + ' -o ' + out_path
     exec_cmd(command)
-    res_path = apk_path.split('.apk')[0] + os.sep + 'res'
+    res_path = out_path + os.sep + 'res'
     print(res_path)
     care_path = list()
     for dir_path_name, dirs, files in os.walk(res_path):
@@ -119,7 +120,7 @@ def gener_all_cn_by_apk(apk_path):
     return out_path
 
 
-def pull_remote_dict():
+def pull_remote_dict_as_kce_list():
     start = time.time()
     """
     拉取远端最新的english.xml文件
@@ -133,32 +134,27 @@ def pull_remote_dict():
 
 
 def main():
-    pull_remote_dict()
+    all_eng_transed = pull_remote_dict_as_kce_list()
     #
-    # old_path = gener_all_cn_by_apk(
-    #     '/private/tmp/arm_OnMobile-official-5.35.10-SNAPSHOT-armeabi-envGrd-2020-05-06-11-09-57.apk')
-    # new_path = gener_all_cn_by_apk('/private/tmp/newest.apk')
-    # diff_xml(new_path_xml=new_path, old_path_xml=old_path)
-    # gener_all_cn_by_apk('/private/tmp/old.apk')
-    # gener_all_cn_by_apk('/private/tmp/thOnMobile-official-5.36.0-SNAPSHOT-armeabi-v7a-envGrd-2020-05-09-08-42-21.apk')
+    old_path = gener_all_cn_by_apk('/private/tmp/535.apk')
+    new_path = gener_all_cn_by_apk('/private/tmp/536.apk')
+    diff_xml(new_path_xml=new_path, old_path_xml=old_path, all_english_kce=all_eng_transed)
 
-    # check_apk_kce(
-    #     '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/build/outputs/apk/official/envGrd'
-    #     '/app-official-armeabi-v7a-envGrd.apk')
-
-    apk_path = '/tmp/OnMobile-official-5.36.0-SNAPSHOT-armeabi-v7a-envSingapore-2020-05-11-10-04-19.apk'
-    gener_excel_by_apk(apk_path)
+    # check_apk_kce(/private/tmp/536.apk)
+    # apk_path = '/tmp/535.apk'
+    # gener_excel_by_apk(apk_path)
     pass
 
 
 def get_all_english_path_by_apk(path_of_apk):
     apk_path = path_of_apk.strip()
     print('apk_path english ', apk_path)
-    apk_parent = os.path.dirname(apk_path)
-    os.chdir(apk_parent)
-    command = 'apktool d ' + apk_path
+    apk_name = apk_path.split('/')[-1]
+    out_path = '/tmp/' + apk_name.replace('.', '_')
+    command = 'apktool d ' + apk_path + ' -o ' + '/tmp/' + apk_name.replace('.', '_')
     exec_cmd(command)
     res_path = apk_path.split('.apk')[0] + os.sep + 'res/'
+    res_path = out_path + os.sep + 'res/'
     en_flag = 'values-en'
     for dir_path_name, dirs, files in os.walk(res_path):
         if dir_path_name.endswith(en_flag):
@@ -171,7 +167,7 @@ def gener_excel_by_apk(path_of_apk):
     path_of_china = gener_all_cn_by_apk(path_of_apk)
     path_of_english = get_all_english_path_by_apk(path_of_apk)
     print('in gener_excel_by_apk ', 'pwd ', os.curdir)
-    tmpxml_to_excel(path_of_cn=path_of_china, path_of_en=path_of_english, excel_path='./Andi18n_5_36_0.xlsx')
+    tmpxml_to_excel(path_of_cn=path_of_china, path_of_en=path_of_english, excel_path='./Andi18n_535_0.xlsx')
     print('total cost ', (time.time() - start), ' s')
     pass
 
@@ -248,16 +244,27 @@ def check_apk_kce(path_of_apk):
     pass
 
 
-def diff_xml(new_path_xml, old_path_xml, out_path='/tmp/diffapk/'):
+def diff_xml(new_path_xml, old_path_xml, out_path='/tmp/diffapk/', all_english_kce=list()):
     """
     @param new_path_xml 新的xml路径
     @param old_path_xml 老的xml路径
     @param out_path 输出diff文件路径
+    @param all_english_kce 已经翻译的英文
     """
     new_list = read_xml_as_kce_list(new_path_xml)
     old_list = read_xml_as_kce_list(old_path_xml)
 
     both_set = set(new_list).intersection(set(old_list))
+
+    dict_of_cn_en = dict()
+
+    if len(all_english_kce) > 0:
+        for eng in all_english_kce:
+            for kce in new_list:
+                if eng.key == kce.key:
+                    eng.en = eng.cn
+                    eng.cn = kce.cn
+                    dict_of_cn_en[eng.cn] = eng.en
 
     new_diff = set(new_list) - both_set
     old_diff = set(old_list) - both_set
@@ -275,15 +282,22 @@ def diff_xml(new_path_xml, old_path_xml, out_path='/tmp/diffapk/'):
     kce_new_added = list()
     str_new_added_line = list()
 
+    new_added_find_trans = list()
+
     for knew in new_diff:
         if knew.key not in key_old_diff:
-            if str(knew.key).startswith('leak_canary_'):
-                continue
+            for skip in skip_key_prefix:
+                if str(knew.key).startswith(skip):
+                    continue
+
             kce_new_added.append(knew)
-            line = 'new added {} , {}\n'.format(knew.key, knew.cn)
             line = to_pretty(knew.key, auto_transascii10(knew.cn)) + '\n'
             str_new_added_line.append(line)
-            # print(line)
+
+            if dict_of_cn_en.get(knew.cn) is not None:
+                # 找到翻译了
+                knew.en = dict_of_cn_en.get(knew.cn)
+                new_added_find_trans.append(knew)
 
     # 变动的 key都在 但是value不同
     str_changed_line = list()
@@ -295,20 +309,16 @@ def diff_xml(new_path_xml, old_path_xml, out_path='/tmp/diffapk/'):
                     kce_changed_value.append(knew)
                     line = 'changed key:{:<30}, from: {:<10}  to: {}\n'.format(knew.key, kold.cn, knew.cn)
                     str_changed_line.append(line)
-                    # print(line)
 
     delete_strs = list()
 
     for kold in old_diff:
         if kold.key not in key_new_diff:
-            # line = 'delete key {} {}\n'.format(kold.key, kold.cn)
             line = to_pretty(kold.key, kold.cn) + '\n'
             print(highlight(line, 3))
             delete_strs.append(line)
 
     print(highlight('new added count', 4), len(kce_new_added), highlight(',changed count ', 5), len(kce_changed_value))
-
-    desc = ''.format(len(delete_strs), len(kce_new_added), len(kce_changed_value))
 
     tmp = list()
     for new in new_diff:
@@ -328,6 +338,13 @@ def diff_xml(new_path_xml, old_path_xml, out_path='/tmp/diffapk/'):
 
     out_del_change_add = out_path + '_delete_changed_newadd_' + simple_old_name + simple_new_name + '.xml'
 
+    # 查一下新增的有没有翻译了
+    out_find_trans = list()
+    if len(new_added_find_trans) > 0:
+        for new_kce in new_added_find_trans:
+            str_out = '<string name="{}">{}</string>\n'.format(new_kce.key, new_kce.en)
+            out_find_trans.append(str_out)
+
     out_lines = list()
     out_lines.append('deleted:\n')
     out_lines.extend(delete_strs)
@@ -335,16 +352,13 @@ def diff_xml(new_path_xml, old_path_xml, out_path='/tmp/diffapk/'):
     out_lines.extend(str_changed_line)
     out_lines.append('\n\nnew added:\n')
     out_lines.extend(str_new_added_line)
+    out_lines.append('\n\nfind trans in remote dict \n')
+    out_lines.extend(out_find_trans)
 
     print('out_del_change_add', out_del_change_add)
 
     with open(out_del_change_add, 'w') as rout:
         rout.writelines(out_lines)
-
-    # with open(changed_out_name, 'w') as rout:
-    #     rout.writelines(str_changed_line)
-    # with open(newadd_out_name, 'w') as rout:
-    #     rout.writelines(str_new_added_line)
 
 
 def gener_commented_english(cn_path, eng_path, out_path='tmp/comment_en.xml'):

@@ -4,12 +4,7 @@ MD5 (com_keruyun_android_android_crop_images_1_2_20_aar.xml___crop_images_divide
 
 """
 import re
-from filecmp import cmp
-
-from org.ith.learn.util.PXML import write_kce_to_path
-from org.ith.learn.util.TUtils import read_xml_as_kce_list, is_contains_chinese
-from org.ith.learn.work.AndI18n import pull_remote_dict
-from org.ith.learn.work.Work import just_sort
+from org.ith.learn.util.TUtils import read_xml_as_kce_list
 
 
 def sort_by_value(d):
@@ -87,9 +82,6 @@ def day_work():
 
 
 def main():
-
-    pull_remote_dict()
-
     path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/app/build/intermediates/res/merged/official/envCiTest/values/values.xml'
     cn_kce = read_xml_as_kce_list(path)
     en_list = read_xml_as_kce_list('../../../../docs/i18n/english.xml')
@@ -106,7 +98,7 @@ def main():
     for kce in cn_kce:
 
         if str(kce.key).startswith('key_liveness') or str(kce.key).startswith('leak_canary') \
-                or str(kce.key).startswith('title_activity_')\
+                or str(kce.key).startswith('title_activity_') \
                 or str(kce.key).startswith('abc_'):
             continue
 

@@ -20,11 +20,14 @@ skip_key_prefix = [
     'leak_canary_',
     'title_activity',
     'key_liveness_',
+    '_uuid',
+    'hello_world'
 ]
 
 """
 git archive i18n_5.34.10 --remote=ssh://git@gitlab.shishike.com:38401/c_iphone/OnMobile-Android.git app/src/main/res/values-en/strings.xml | tar -x
 """
+
 
 class KCEBean:
     def __init__(self, key, cn, en):
@@ -92,7 +95,8 @@ def write_to_excel(to_write_list, path_of_excel):
     # 处理一下 中英文的情况
     dict_kce_list = do_search_dict(to_write_list)
     now_date = time.strftime("%Y_%m_%d_%H_%M_%S", time.localtime())
-    out = '../../../../../../docs/dicts/by_dict/' + now_date
+    # out = '../../../../../../docs/dicts/by_dict/' + now_date
+    out = './docs/dicts/by_dict/' + now_date
     twrite_kce_to_path(dict_kce_list, key='cn', path=out + '__china.xml')
     twrite_kce_to_path(dict_kce_list, key='en', path=out + '__english.xml')
 
