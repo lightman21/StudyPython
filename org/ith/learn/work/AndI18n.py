@@ -135,9 +135,10 @@ def pull_remote_dict_as_kce_list():
 
 def main():
     all_eng_transed = pull_remote_dict_as_kce_list()
-    #
-    old_path = gener_all_cn_by_apk('/private/tmp/535.apk')
-    new_path = gener_all_cn_by_apk('/private/tmp/536.apk')
+    old_path = gener_all_cn_by_apk('/private/tmp/5.35.10.apk')
+    new_path = gener_all_cn_by_apk(
+        # '/private/tmp/OnMobile-official-5.36.0-SNAPSHOT-armeabi-v7a-envCiTest-2020-05-13-08-05-22.apk')
+        '/private/tmp/5.36.0-SNAPSHOT-envGrd-2020-05-13-12-53-42.apk')
     diff_xml(new_path_xml=new_path, old_path_xml=old_path, all_english_kce=all_eng_transed)
 
     # check_apk_kce(/private/tmp/536.apk)
@@ -283,6 +284,7 @@ def diff_xml(new_path_xml, old_path_xml, out_path='/tmp/diffapk/', all_english_k
     str_new_added_line = list()
 
     new_added_find_trans = list()
+    new_added_not_find_trans = list()
 
     for knew in new_diff:
         if knew.key not in key_old_diff:
@@ -298,6 +300,8 @@ def diff_xml(new_path_xml, old_path_xml, out_path='/tmp/diffapk/', all_english_k
                 # 找到翻译了
                 knew.en = dict_of_cn_en.get(knew.cn)
                 new_added_find_trans.append(knew)
+            else:
+                new_added_not_find_trans.append(knew)
 
     # 变动的 key都在 但是value不同
     str_changed_line = list()
@@ -307,7 +311,7 @@ def diff_xml(new_path_xml, old_path_xml, out_path='/tmp/diffapk/', all_english_k
             if knew.key == kold.key:
                 if knew.cn != kold.cn:
                     kce_changed_value.append(knew)
-                    line = 'changed key:{:<30}, from: {:<10}  to: {}\n'.format(knew.key, kold.cn, knew.cn)
+                    line = 'changed key:{:<40}, from: {:<30}  to: {:<15}\n'.format(knew.key, kold.cn, knew.cn)
                     str_changed_line.append(line)
 
     delete_strs = list()
@@ -345,6 +349,12 @@ def diff_xml(new_path_xml, old_path_xml, out_path='/tmp/diffapk/', all_english_k
             str_out = '<string name="{}">{}</string>\n'.format(new_kce.key, new_kce.en)
             out_find_trans.append(str_out)
 
+    out_newadded_not_trans = list()
+    if len(new_added_not_find_trans) > 0:
+        for kce in new_added_not_find_trans:
+            str_out = '<string name="{}">{}</string>\n'.format(kce.key, kce.cn)
+            out_newadded_not_trans.append(str_out)
+
     out_lines = list()
     out_lines.append('deleted:\n')
     out_lines.extend(delete_strs)
@@ -354,6 +364,8 @@ def diff_xml(new_path_xml, old_path_xml, out_path='/tmp/diffapk/', all_english_k
     out_lines.extend(str_new_added_line)
     out_lines.append('\n\nfind trans in remote dict \n')
     out_lines.extend(out_find_trans)
+    out_lines.append('\n\nnot not find trans in remote dict \n')
+    out_lines.extend(out_newadded_not_trans)
 
     print('out_del_change_add', out_del_change_add)
 

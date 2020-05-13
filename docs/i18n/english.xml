@@ -3496,7 +3496,7 @@
 	<string name="mobileui_custom">Custom</string>
 	<string name="mobileui_date_choose_dialog_title">Select time</string>
 	<string name="mobileui_date_choose_week">%1$02d week</string>
-	<string name="mobileui_date_range_tips">"The gap between two periods can\'t be over 31 days"</string>
+	<string name="mobileui_date_range_tips">"Date range should not exceed 31 days"</string>
 	<string name="mobileui_date_tab_sdf_month">yyyy-MM</string>
 	<string name="mobileui_date_tab_sdf_week">%1$dyear%2$02dweek</string>
 	<string name="mobileui_day">Day </string>

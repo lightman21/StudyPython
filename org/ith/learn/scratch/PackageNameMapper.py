@@ -37,6 +37,7 @@ class NameWhereBean:
         'com.keruyun.android.android.mobilecommondata': 'mobilecommondata',
         'com.keruyun.kmobile.kmobile.table.manage': '桌台管理',
         'com.keruyun.kmobile.kmobile.smart.management': '经营顾问',
+        'com.keruyun.kmobile.iot': 'iot物联网',
     }
 
 
@@ -55,7 +56,7 @@ def gener_name_where():
     """
     # total_dir = '../../../../org/ith/learn/scratch/tmp/auto_extract_work/2020_05_10/'
     total_dir = '/Users/lightman_mac/company/keruyun/oh_my_python/StudyPython/org/ith/learn/scratch/tmp' \
-                '/auto_extract_work/2020_05_10/'
+                '/auto_extract_work/2020_05_13/'
     name_where_dict = dict()
     for dir_path_name, dirs, files in os.walk(total_dir):
         for file in files:

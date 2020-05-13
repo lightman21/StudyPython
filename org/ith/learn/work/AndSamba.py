@@ -34,7 +34,7 @@ def pull_apk(smb_conn, remote_path):
     print('start pull apk ', highlight(remote_path, 3))
     file_path = remote_path.split('/')[-1]
     localFile = open('/tmp/' + file_path, "wb")
-    localFile = open('/tmp/536newest.apk', "wb")
+    localFile = open('/tmp/xiu.apk', "wb")
     # conn.retrieveFile("client-apk", "keruyun-mobile/android/kmobile-android/envGrd/5.36.0/20200508/OnMobile-official-5.36.0-SNAPSHOT-armeabi-v7a-envGrd-2020-05-08-16-49-02.apk", localFile)
     smb_conn.retrieveFile("client-apk", remote_path, localFile)
     print('done that pull apk ', highlight(remote_path, 2), 'cost ', (time.time() - start), ' s')
