@@ -1,0 +1,109 @@
+loan-ocr-live-body             pa.png                                   c46218c4d2eea6b871727bbfbe404c7d
+
+loan-ocr-live-body             img_tips.png                             c8e54586ff4cbd770c73ed5158b11f1e
+loan-ocr-live-body             bg.png                                   93dce72bdb52d133d51bfd1c60a152c4
+loan-ocr-live-body             img_tips.png                             e479ff42254c592ae9011a13429ed99c
+loan-ocr-live-body             bg.png                                   fa796c91ee43ec1db1e5a9af622616f2
+loan-ocr-live-body             img_tips.png                             5adb52e5bb79bf35b52ca5fb558b3411
+loan-ocr-live-body             bg.png                                   b30c0d1d486898cb81b3b8a3d98af123
+loan-ocr-live-body             img_tips.png                             a9ecfae95b255d77fff9e154da1f14a2
+loan-ocr-live-body             bg.png                                   4654db5acb0bf978268e447d4d0983cc
+kmobile-assistant-ui           assistant_msg_close.png                  43fda3af470b3c5932f5df6fcf344ccc
+
+kmobile-assistant-ui           assistant_mobile_ordering_switch_off.png 17cacd6a48e0fab25f8cd9304b96411b
+kmobile-inventory-management-ui ic_expand_less_blue_24dp.png             0ddcf422162d08b3149f392bba08c418
+
+kmobile-android-ocr-dish-contain ic_camera_alt_write_24dp.png             0896ab5c59886e4e6c663acc1165eefc
+
+android-crop-images            crop_images_tile.png                     f4568239fed3f1245027f5fbc1aa8ea9
+
+cashpay                        cash_ic_unchecked.png                    3237d1564eb0228ed779a79ce1699665
+
+kmobile-skin-support-appcompat skin_btn_check_box.png                   fa6e3ff632faf6e40649314cb8dee226
+
+widget-digitinputview          icon_keyboard_back_m.png                 b914c51ff605f71469f9ce2e88e3a9a1
+
+thirdpay                       casher_barcode_generating.png            0d1ff5566b57d88264ebf2f7774f7ec7
+
+custompay                      img_unchecked.png                        7ec596ad8fa14162d464624929ad5fe8
+
+member                         casher_barcode_generating.png            0d1ff5566b57d88264ebf2f7774f7ec7
+
+osmobile-dialog                osmobilelib_dialog_tip.png               50df9ad54c373b7d0a43aac54d487a9d
+
+osmobile-title-manager         back_nomal.png                           c75beb9e4616f5bf9c71f0ffe116594b
+
+klight                         klight_ic_arrow_left.png                 34bc499a5c83d0c23d9c3594a9f3e860
+
+kmobile-adt                    icon_banner_default.png                  d086175e17d600602e0d2efd0c04aa87
+
+kmobile-takeout-ui             app_launcher.png                         23582d9312a8ba1bda9b935fdcda358a
+
+kmobile-business-setting       bluecloud_loading_16.png                 09511f1ee95826fd3e4cb70441eb9a14
+
+kmobile-order-center           date_bottom_line_bg.9.png                47d74ffeacf66fe2c70f0161a53b81cb
+
+android-safe-webview           ic_keyboard_arrow_left_half_write_38dp.png 878e557e05ef126bd145acd93b39f299
+
+tradebusiness                  ic_choose_unchecked.png                  6dbb79d7a2a833ecb829acfe34c4f077
+
+kmobile-accountsystem-ui       account_managent_mode_explain_check_yes.png bbd4d82332ca07a667e281087d03c4d1
+
+kmobile-member-manage          member_credit_ic_man.png                 24a7c4f1f2395aea3a94e4791a214b4f
+
+android-country-selector       ic_member_checked.png                    68fac05d10c27ce02f8ddd0dcd79bd2f
+
+tradeui-kmobile                kmobile_saleout_dish_normal.png          43df97385c67aa29d8724289bbd43512
+
+kmobile-table-manage           table_manage_dining.9.png                407332922f79fd1f4ea9717d508a76e0
+
+kmobile-cashier                icon_calendar_black.png                  0d79d5bf076d0194e152bde301b639fd
+
+kmobile-staff                  staff_call_phone.png                     47acc5e1115db3ed5575778a8a906be6
+
+loan-ocr-face-verif            icon_back_normal.png                     fd7d31b3c3d11987457243bfd7af2130
+
+kmobile-third-loan-exocr       drcard.png                               0409ac98d5d34ea28aa6ae8065855e2d
+
+qrcode                         qrcode_flashlight_on.png                 e8e0b45a3a28cc9ff72888f12011f8af
+
+kmobile-coupon                 coupon_phone_check_press.png             d021754083e93054ec793849edbb36d5
+
+dinner                         dinner_people_icon.png                   a4457cf899aa7ad5eeb3d40d577f112b
+
+kmobile-loan-ui                icon_more.png                            1eaeaf2a49c32009daad94824d06e45a
+
+kmobile-qrcode-biz             ic_check_simple_checked.png              6404ad9248cd74b18caa39d059fefe8d
+
+groupcoupon                    icon_groupcoupon_delete3.png             e74879b20b4beb86a9ebe599844e8991
+
+android-mobileui               mobileui_path_key_delete.png             447847b93b686f9564b9c0073a739456
+
+kmobile-message                icon_msg_close.png                       3a385dec2872d0e3481a2338df3f895f
+
+tradeui-library                tradeui_popup_setting.png                03e821cce8e8700216e697bf66d6cf29
+
+manage-table-code              table_code_icon_send.png                 0b1d991e182c672d5fabfe91d097dfac
+
+commonkmobile                  phone_areacode_red.png                   74ce452f5ca56c4987261e9012822ed1
+
+kmobile-share                  kshare_ic_share_copy.png                 d9340d9852bc902f4eb6e3a52e64df3d
+
+kmobile-third-facesdk          liveness_blink_eye_open.png              d711c02a9baf0b853e90360a38bd0b35
+
+paycenter                      paycenter_ic_paymode_customize.png       0c4d386548080571c6e360fa72e9f7e7
+
+kreport                        ic_kreport_shadow_bg.9.png               7bffe6dfcd45f11b0c0c5e7bb07799b2
+
+tradeui-klight                 klight_print_connecting.png              6597c457f6714316ea99c789024b17b7
+
+kmobile-commodity              ic_arrow_down_black_24dp.png             456279f17744ac1e96309fdc7ce434dc
+
+paycenter-board                pluginpay_ic_checked.png                 74b60d3c2242835c91169cda80574818
+
+tradeui-klightlib              klightlib_ic_modify.png                  bb230b6ec096948f0a82eb637d35974c
+
+kmobile-home                   bg_my_invoice_entrance_history.9.png     d55845db920b7c06254a08e492bad204
+
+kmobile-smart-management       smart_icon_platform_kb.png               cd8f4be3044c68876ac72b0f9eb3a5cd
+

@@ -5,7 +5,8 @@ from org.ith.learn.OhMyEXCEL import excel_to_xml, xml_to_excel
 from org.ith.learn.scratch.Trans535 import big_dict
 from org.ith.learn.util.PXML import write_kce_to_path
 from org.ith.learn.util.TUtils import open_excel_as_list, read_xml_as_kce_list, KCEBean, highlight, modify_time, md5, \
-    auto_escape, extra_chinese, remove_punctuation, is_contains_chinese, exec_cmd, extract_string_array, chunk_in_slice
+    auto_escape, extra_chinese, remove_punctuation, is_contains_chinese, exec_cmd, extract_string_array, chunk_in_slice, \
+    make_sure_file_exist, file_md5
 import re
 import difflib
 import os
@@ -98,12 +99,13 @@ libs_need_skip = [
 
 
 def main():
-    daily_work()
+    # daily_work()
+    do_extract()
 
 
 def daily_work():
-    # lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
-    lib_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/.idea/libraries'
+    lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
+    # lib_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/.idea/libraries'
     now_date = time.strftime("%Y_%m_%d", time.localtime())
     out_dir = './tmp/auto_extract_work/' + now_date + os.sep
     aar_path_dict = gener_aar_path_dict(lib_path)
@@ -121,19 +123,53 @@ def daily_work():
 def do_extract():
     lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
     aar_path_dict = gener_aar_path_dict(lib_path)
+    # dest_root = '/tmp/kmobile/'
+    dest_root = '../../../../docs/km_pics/kmobile/'
+
+    pic_desc_list = list()
+    last_simple_aar_name = ''
+    start = time.time()
 
     for aar_name, aar_abs_path in aar_path_dict.items():
         res_path = extract_values_or_res(aar_abs_path, just_res=True)
-        print(aar_name, ',,,', res_path)
         all_pics = get_all_pics(res_path)
         if len(all_pics) > 0:
-            # print(all_pics)
-            for pic in all_pics:
-                name = pic.split('/')[-1]
-                command = 'cp {} {}'.format(pic, '/tmp/wan/' + str(aar_name) + '___' + name)
+            for full_path_of_pic in all_pics:
+                pic_name = full_path_of_pic.split('/')[-1]
+                print('full name ', full_path_of_pic, ',\t' + pic_name)
+                # /Users/lightman_mac/.gradle/caches/transforms-1/files-1.1/custompay-2.4.4.aar/b75dde205be3047ee7f621d8e8d1af6a/res/drawable-xhdpi-v4/img_unchecked.png
+                res_arr = full_path_of_pic.split('files-1.1/')[1].split('/res')
+                # /drawable-xhdpi-v4/img_unchecked.png
+                dest_pic_name = res_arr[1]
+                # 第一个数字的索引 -1 是因为还多了一个下划线
+                index = [x.isdigit() for x in aar_name].index(True) - 1
+                # com_keruyun_mobile_custompay
+                pkg_name = aar_name[:index]
+
+                index = [x.isdigit() for x in res_arr[0]].index(True) - 1
+                # custompay
+                simple_aar_name = res_arr[0][:index]
+
+                print(highlight(res_arr, 3), ',pkg_name ', pkg_name, ',simple_aar_name ', simple_aar_name)
+
+                to_dest = dest_root + simple_aar_name + os.sep + pkg_name + dest_pic_name
+                make_sure_file_exist(to_dest, just_dir=True)
+                command = 'cp {} {}'.format(full_path_of_pic, to_dest)
                 print(command)
                 exec_cmd(command)
-            pass
+
+                pic_md5 = file_md5(full_path_of_pic)
+                # simple_aar_name  pkg_name pic_name  md5:xxx
+
+                new_line = '\n' if last_simple_aar_name == simple_aar_name else '\n' * 2
+                pid_desc = '{:<30} {:<40} {}{}'.format(simple_aar_name, pic_name, pic_md5, new_line)
+                pic_desc_list.append(pid_desc)
+                last_simple_aar_name = simple_aar_name
+
+    with open('../../../../docs/km_pics/pic_desc.txt', 'w') as rout:
+        rout.writelines(pic_desc_list)
+
+    exec_cmd('git add . && git commit -m "extract pics" && git push origin i18n  ')
 
 
 def gener_aar_path_dict(path_of_search):

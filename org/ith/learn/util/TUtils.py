@@ -485,17 +485,22 @@ def chunk_in_slice(arr_or_list, pieces):
     return [arr_or_list[i:i + n] for i in range(0, len(arr_or_list), n)]
 
 
-def make_sure_file_exist(path_of_file):
-    if os.path.exists(path_of_file):
-        with open(path_of_file, mode='r', encoding='utf-8') as ff:
-            print('文件存在', path_of_file)
-    else:
+def make_sure_file_exist(path_of_file, just_dir=False):
+    if just_dir:
         dir_path = os.path.dirname(path_of_file)
         if not os.path.exists(dir_path):
             os.makedirs(dir_path)
+    else:
+        if os.path.exists(path_of_file):
+            with open(path_of_file, mode='r', encoding='utf-8') as ff:
+                print('文件存在', path_of_file)
+        else:
+            dir_path = os.path.dirname(path_of_file)
+            if not os.path.exists(dir_path):
+                os.makedirs(dir_path)
 
-        with open(path_of_file, mode='w', encoding='utf-8') as rout:
-            print('文件不存在,创建', path_of_file)
+            with open(path_of_file, mode='w', encoding='utf-8') as rout:
+                print('文件不存在,创建', path_of_file)
 
 
 if __name__ == '__main__':
