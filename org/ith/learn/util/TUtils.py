@@ -21,7 +21,8 @@ skip_key_prefix = [
     'title_activity',
     'key_liveness_',
     '_uuid',
-    'hello_world'
+    'hello_world',
+    'path_password_'
 ]
 
 """

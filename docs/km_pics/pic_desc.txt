@@ -1,5 +1,4 @@
 loan-ocr-live-body             pa.png                                   c46218c4d2eea6b871727bbfbe404c7d
-
 loan-ocr-live-body             img_tips.png                             c8e54586ff4cbd770c73ed5158b11f1e
 loan-ocr-live-body             bg.png                                   93dce72bdb52d133d51bfd1c60a152c4
 loan-ocr-live-body             img_tips.png                             e479ff42254c592ae9011a13429ed99c
@@ -8,8 +7,201 @@ loan-ocr-live-body             img_tips.png                             5adb52e5
 loan-ocr-live-body             bg.png                                   b30c0d1d486898cb81b3b8a3d98af123
 loan-ocr-live-body             img_tips.png                             a9ecfae95b255d77fff9e154da1f14a2
 loan-ocr-live-body             bg.png                                   4654db5acb0bf978268e447d4d0983cc
+member                         casher_barcode_generating.png            0d1ff5566b57d88264ebf2f7774f7ec7
+member                         card_login_gray.png                      f6318eb2951e0fc5fefeba6b5ca83f41
+member                         qr_barcode_line.png                      cbec9277a895b93d26c7a7863fe0f86a
+member                         bg_pay_method.png                        3f33351242d29cc1b7a3a1dec7897e72
+member                         casher_paycode_normal.png                cd2f9a4b76174cd8c1faba0ef9bc49d0
+member                         ic_right_details.png                     ae41db291003e84c6865ecdcfb2963bc
+member                         casher_rpaycode_pressed.png              b6cfeafa0d40750a5e14cc11ad703ad3
+member                         icon_login_type_bg.png                   8f0321b45bcf721eb1ef42786fa0a985
+member                         ic_member.png                            1687940b0882ebfd73c500011e493474
+member                         icon_card_login.png                      e9890065823e18e4e8f598444ddf7cb2
+member                         casher_customerpaycode_normal.png        47729ee6f8b1306ebe1b2a4ad6a19a2b
+member                         icon_close_dialog.png                    7f6f1aab28104e585a6e6a2cb67fa45b
+member                         icon_scan_login.png                      86d74bcba9e465682d024cfb9f0e67ae
+member                         true_card_search.png                     e404353b3a2b17779654f8ec5ee20192
+member                         icon_blue_add.png                        a8e74184a474cd01889616076d5e732e
+member                         no_available_coupon.png                  0767d6dc34dfd003d2c5f2221a842852
+member                         icon_member_qs.png                       8771fb025b864ff84413d38622ba9a40
+member                         scan_search.png                          3756d16998dd55489241dfc83976b078
+member                         member_head.png                          4ae75f1476c0e532c594e22668da584d
+member                         icon_phone.png                           39194038e9759bce1b7b9fc02f694ca6
+member                         scan_search_highlight.png                ad96b403ed3234049a3df5ee591e9c6d
+member                         icon_ser.png                             0d0d5990bdd8c32ac9a02f6c6e4d7a98
+member                         input_default.png                        de273ca01ded0a46ad92df05ae12d6a7
+member                         member_add.png                           4256188eef3c47692a02e08c76d06cd4
+member                         pluginpay_bg_pay_gray.png                0df72d2e00e9ae56fc20493d2122d673
+member                         member_error_icon.png                    bd204a0fc95ac951822038ab464605b0
+member                         input_selected.png                       6dbdcc94bffded22eadb7b4ab6d52438
+member                         icon_close_dialog.png                    7f6f1aab28104e585a6e6a2cb67fa45b
+member                         icon_blue_user.png                       3846ef3d3cf250497f92fa9398c7ba6e
+member                         icon_blue_phone.png                      5648249d2022eb63ab84b211b8e1054a
+member                         no_real_card.png                         04e98f10198b2453c9ea19112330c6a9
+member                         casher_customerpaycode.png               f58e583ddce04bb23d391a412b9a143c
+member                         necessary_star.png                       1c8b10afd616effd740de29d99ed746d
+member                         member_head_new.png                      b8de4b1a651b77eda10be8e7b36d8ffb
+kmobile-member-manage          member_credit_ic_man.png                 24a7c4f1f2395aea3a94e4791a214b4f
+kmobile-member-manage          kmember_ic_date.png                      cf07265e311bb7e412afad19d979f0c9
+kmobile-member-manage          member_credit_ic_record.png              c962de0bbf413e7af2a0e69ee0c404e4
+kmobile-member-manage          member_credit_ic_level.png               1c68815f36010ecf402625cd1984dd2b
+kmobile-member-manage          member_credit_ic_phone.png               119bb4f9cf382dd6c2e0832813fcf838
+kmobile-member-manage          ic_launcher.png                          93fd2eadf162fd41695cab262540184f
+kmobile-member-manage          kmember_ic_back.png                      0135efd43dc25f27e721703a4f446901
+kmobile-member-manage          member_credit_loading_6.png              6c90807f5f005f7e407b3a2280657385
+kmobile-member-manage          member_credit_alipay_pay.png             92420a3483c9c772aea1580be287c4bd
+kmobile-member-manage          ic_rules_empty.png                       b669aa4225d179a722a5f4f65fe278fd
+kmobile-member-manage          kry_vip_ic_score.png                     99254537bb505d858cfeabddcc86787a
+kmobile-member-manage          member_credit_icon_nuomi_pay_method.png  8b58d2f541db772b91cadf686afeb362
+kmobile-member-manage          member_credit_loading_7.png              0a3b0bd0d29fc64ab30229e97e4bae88
+kmobile-member-manage          kmember_ic_rules_setting_finish.png      7f61d1fdfbdff168f2b6e5027f9a2fa7
+kmobile-member-manage          member_credit_takeout_setting_nextpage.png a4b3e9ed29d4aaf43f4f79bb6cc7a662
+kmobile-member-manage          member_credit_casher_customerpaycode.png b37d60477bb904c841c571db9ef460ca
+kmobile-member-manage          member_credit_icon_koubei_pay_method.png c689d88c3a76521c8218a167641a1616
+kmobile-member-manage          member_credit_ic_vip.png                 c23501453a3348c773d1d3081d929499
+kmobile-member-manage          kmember_ic_barcode_selected.png          e252e5001db26de50b9137f1c0841192
+kmobile-member-manage          kmember_pay_qr_loading.png               13dae3bc37b7b91f7f2c7068c8c41fc9
+kmobile-member-manage          member_credit_loading_5.png              1e22bff870ef3f4c43ea09b0094b249e
+kmobile-member-manage          kry_vip_ic_minus.png                     15b65b895919c6dfe5c5c07f4f47b271
+kmobile-member-manage          ic_groups_question_mask.png              8fcc85efa56626ec6be02c4076d79913
+kmobile-member-manage          shadow.9.png                             97a4d9ad98a100d69bc216be478ee19e
+kmobile-member-manage          no_available_coupon.png                  0767d6dc34dfd003d2c5f2221a842852
+kmobile-member-manage          member_credit_wechat_pay.png             4239dc0697b36fdfa31d4e81b10cdf08
+kmobile-member-manage          member_credit_casher_paycode_normal.png  ae99850d494ca820e8a78957b1ec768c
+kmobile-member-manage          member_credit_icon_custom_pay_method.png d2f9682bb0aeb40cbe925d1e1b871e97
+kmobile-member-manage          member_credit_loading_4.png              ebabd7fdf2b8124c06324ca85270c847
+kmobile-member-manage          member_credit_member_ship_credit_header_line.9.png f25d5e24468d476aaef8e17a03afb4d5
+kmobile-member-manage          member_credit_nodata.png                 de9c3e9277f7f7f00e9b8a8e05eea376
+kmobile-member-manage          include_common_iv_back.png               72f8a2c553c025603b545eb0be452044
+kmobile-member-manage          member_credit_search_input_bg.9.png      95e5960f251d89f75dd43b58d8c1d9b3
+kmobile-member-manage          kry_vip_ic_add_small.png                 42ffea26c29e2013e3850810f69e0bbb
+kmobile-member-manage          kmember_pay_ic_paymode_weixin.png        abce075f20709e68ef14d85933448b27
+kmobile-member-manage          kmember_member_switch_on.png             b123109f4ffd2d318c0880101ca7a281
+kmobile-member-manage          member_credit_level_senior.png           9d5ff86169b4df2755d2fd3b15ad95d7
+kmobile-member-manage          kmember_ic_next.png                      0c06244b32e9d9fc9401686d8c403602
+kmobile-member-manage          kmember_pay_ic_paymode_cash.png          3d987502c435202e209fca68990f4151
+kmobile-member-manage          kmberber_bg_homepage_title.png           bc19cc7208d0edb52a5772028cc11a47
+kmobile-member-manage          kmember_img_generate_barcode_failed.png  96875c860d7f30e98177b3a2f7584910
+kmobile-member-manage          member_credit_member_ship_credit_record.png eee4d7d76bb160bdaa39b87553b438c8
+kmobile-member-manage          member_credit_loading_1.png              d325ffdb2285103c746e5bc9a97a9baf
+kmobile-member-manage          member_credit_single_dish_detail_close.png 2dba97a747f6985ddf8bbe3a270321b0
+kmobile-member-manage          member_credit_cash_pay.png               c6ef332ec859cd57e0493dca14e28c5f
+kmobile-member-manage          kmember_ic_level.png                     7f4705d607e17b636fd95fcc1752d246
+kmobile-member-manage          member_credit_loading_3.png              ffcad99269b974981cbc942737beb20b
+kmobile-member-manage          km_ic_tip_triangle.png                   8158957899565c0eb3157568c38da7dc
+kmobile-member-manage          member_credit_search_clear.png           13a179a44f96cea597ff4ee7058d8cc6
+kmobile-member-manage          member_credit_membercred_selected.png    9f774cb1533d52fb7a233de5eb2239aa
+kmobile-member-manage          member_credit_loading_2.png              8b38835c8bc93cd11d404d351b890d3b
+kmobile-member-manage          kmember_ic_vip_edit.png                  aaf2dd1aedc14868d7019cbba8850690
+kmobile-member-manage          kmember_ic_entry.png                     2f1a3b1698f21a2ef48a9c1dbf41b673
+kmobile-member-manage          member_credit_icon_baiduqianbao_main_icon.png 8e09e65dd08c61af7d7726bec2d6b288
+kmobile-member-manage          kry_vip_bg_card_gray.png                 870826c110812354ff6a6fa31a0ae004
+kmobile-member-manage          member_tips.png                          e2ebd4776295b1d1a209a0b568e06720
+kmobile-member-manage          loading_1.png                            d325ffdb2285103c746e5bc9a97a9baf
+kmobile-member-manage          kmember_ic_invalid.png                   bd204a0fc95ac951822038ab464605b0
+kmobile-member-manage          kmember_ic_close.png                     94b0fe30c966eeab511c8bfc3111fd9c
+kmobile-member-manage          kmember_ic_scan_normal.png               cfab8cd18ec8d689b7857389ec2e5f82
+kmobile-member-manage          kmember_ic_growup.png                    ce9377508729d4760c446dac00435255
+kmobile-member-manage          member_credit_icon_meituan_pay_method.png 61fdc2f6b3b9cee78a3852d79cb74903
+kmobile-member-manage          loading_2.png                            8b38835c8bc93cd11d404d351b890d3b
+kmobile-member-manage          kry_vip_ic_coupon.png                    e4f72ab1159f52328691dc4a0245c024
+kmobile-member-manage          kmember_stored_title.png                 e667e2bcee0a98814bce63a0e3d08401
+kmobile-member-manage          ic_member_add.png                        43ff2ce7613a5de695c3b0ab251e7d8b
+kmobile-member-manage          kmember_ic_tip_triangle.png              3c12e322872df541bad1740ad7e25e04
+kmobile-member-manage          member_credit_ic_man.png                 b532044d7da97d0e88266fb5a21d300b
+kmobile-member-manage          loading_3.png                            ffcad99269b974981cbc942737beb20b
+kmobile-member-manage          member_credit_icon_baidu_pay_method.png  0771c1762d44873112909eb3a405ec81
+kmobile-member-manage          member_credit_get_bq_fail.png            529c02a13ac27dfd1951d71d5f220304
+kmobile-member-manage          loading_7.png                            0a3b0bd0d29fc64ab30229e97e4bae88
+kmobile-member-manage          kmember_bg_tip.png                       b0b31f808b56efb445c7963bd466e2de
+kmobile-member-manage          kmember_ic_add.png                       575335cfa7ad361b9bfba08660cc541d
+kmobile-member-manage          loading_6.png                            6c90807f5f005f7e407b3a2280657385
+kmobile-member-manage          kmember_ic_groups_next_step.png          190ebe0acb0effcc5fd4f9110c24484b
+kmobile-member-manage          loading_4.png                            ebabd7fdf2b8124c06324ca85270c847
+kmobile-member-manage          kmember_member_redcloud_switch_on.png    f7245e0800c51abdb8e3652ca837d120
+kmobile-member-manage          kmember_ic_date.png                      2c399c709eef59a17a9aafbb64ad9261
+kmobile-member-manage          member_credit_level_super.png            0c498c943d9a3be4a56fe05b5a72555c
+kmobile-member-manage          ic_kmember_add.png                       43ff2ce7613a5de695c3b0ab251e7d8b
+kmobile-member-manage          member_credit_inventory_operator.png     4137bfd23c795fbdab09c7e17e019720
+kmobile-member-manage          kmember_ic_header_male.png               ed3627c1aa08a5918c789cb9012a7b61
+kmobile-member-manage          loading_5.png                            1e22bff870ef3f4c43ea09b0094b249e
+kmobile-member-manage          kry_vip_bg_trapezoid_normal.png          f3d7d85fc0b1779927b750f044ad8511
+kmobile-member-manage          kry_vip_ic_account.png                   c1ec86695724f91b585198cfe38a5052
+kmobile-member-manage          member_credit_icon_vip_pay_method.png    39c29652d12a36ac5e17274541e178a5
+kmobile-member-manage          kry_vip_ic_add.png                       2433c7d5cb46e2711ae2b2ba7177229f
+kmobile-member-manage          member_credit_level_junior.png           45cb92bdd279eb495d0170e457913768
+kmobile-member-manage          kmember_check_on.png                     b0556b41d565d6201312fedec4ed705f
+kmobile-member-manage          kmember_ic_input_clear.png               82c65f6d319c8fee74c88aa1960bf892
+kmobile-member-manage          member_credit_dish_search.png            e4177ace3c77e512f78103c9ca8c3799
+kmobile-member-manage          kmember_ic_scan_selected.png             3450d86758058f8de09cab46f99bb3d4
+kmobile-member-manage          member_credit_casher_barcode_generated_failed.png 33ebbbe34415ff1bebe60ac29fa758a6
+kmobile-member-manage          member_credit_icon_shanhui_pay_method.png 6c65afe0e4628947603e4a3178d10396
+kmobile-member-manage          kmember_big_item_bg.9.png                6a3414987bd48e605595fd30c210668e
+kmobile-member-manage          kry_vip_ic_stored.png                    4aa010c01ced160349931108194df285
+kmobile-member-manage          member_credit_member_ship_credit_vip.png 49b51a46c9550b9f920406f17616a0c6
+kmobile-member-manage          kry_vip_ic_edit.png                      427c63ea44279613fba66c3905a0b0d3
+kmobile-member-manage          kmember_ic_barcode_normal.png            bad9666e103383901259b2521af2951a
+kmobile-member-manage          kmember_gender_normal.png                856b23be059f34410e29a063ce99db4f
+kmobile-member-manage          kmember_check_off.png                    40e8d97367b7326df51618a713126a33
+kmobile-member-manage          member_credit_icon_aipay_pay_method.png  79879e9d834231438690440328e37ae9
+kmobile-member-manage          kmember_ic_integral.png                  cd17006939b113d42c836d43ad8087f9
+kmobile-member-manage          member_credit_casher_rpaycode_pressed.png b6cfeafa0d40750a5e14cc11ad703ad3
+kmobile-member-manage          member_credit_icon_band_pay_method.png   f9925b8f06a19391464e598f8cad8f75
+kmobile-member-manage          member_credit_casher_customerpaycode_normal.png 679c6ac7c9cb40419d01eb4505167f3a
+kmobile-member-manage          kmember_ic_checked.png                   31d1f7d864c49cc792282c69bbe929e6
+kmobile-member-manage          member_credit_member_ship_credit_left_half_circle.png 2f288feced2e41b4ab120639df40dca8
+kmobile-member-manage          kmember_ic_vip.png                       0f573be10a4380334dd2c1dd6f071bee
+kmobile-member-manage          kry_vip_bg_trapezoid_highlight.png       7dbeba827a0b5fb8b3be9655aac42c30
+kmobile-member-manage          hy_ic_add.png                            e94b46f2e675bff1907a1b42d351054c
+kmobile-member-manage          kmember_ic_deduction.png                 cd0bcb9e79ef5935e40ee69ebc1114d0
+kmobile-member-manage          member_credit_member_ship_credit_header.png 7c6e8ac550bbb56cf6baaea46119c63f
+kmobile-member-manage          kry_vip_ic_minus_small.png               b6da2d0b01cd0968407cc9c56ecc3502
+kmobile-member-manage          kmember_ic_header_female.png             218da7eced6eefdbfc0798fe6431c23d
+kmobile-member-manage          member_credit_ic_record.png              564aa2233f216b4691e5c2083d5c5df6
+kmobile-member-manage          kry_vip_bg_card.png                      7091e569f569200cb7570f265d5f69c8
+kmobile-member-manage          kmember_ic_explain.png                   457a30335ea0386195c33ba0b85e3878
+kmobile-member-manage          kmember_user_red_bg.png                  c5f75a69e16c91d1230530a891dd9991
+kmobile-member-manage          kmember_ic_un_checked.png                e4306c218e56b1452a15b0c694614a7d
+kmobile-member-manage          member_credit_level_diamond.png          67be0a770287664f51d5afeb957143c5
+kmobile-member-manage          kmember_pay_qr_fail.png                  68ca42be756ea25e11125dd625fd6642
+kmobile-member-manage          kmember_user_bg.png                      845a3c90b3da00bc7be4696c5132f8cf
+kmobile-member-manage          member_credit_ic_level.png               d5a5a123b558cec75c4c55e915b07440
+kmobile-member-manage          kmember_img_generating_barcode.png       4f26d13b8eaf914919f7c71f889bc058
+kmobile-member-manage          kmember_ic_info_header_default.png       b269ba5c412926cd500672328b369484
+kmobile-member-manage          kmember_pay_ic_paymode_alipay.png        6670ad54eb077174af525a07a36a0da8
+kmobile-member-manage          member_credit_member_store_pay.png       742591a859eac1beeea1893bf4dccb4b
+kmobile-member-manage          member_credit_level_intermediate.png     ef910c1d6a6c4ccbbd9cd0e3d09fbdce
+kmobile-member-manage          member_credit_home_more.png              9f1307baaadce6951abf9a2f3b50fd09
+kmobile-member-manage          kmember_gender_click.png                 14b1f37d5865d6302a05781d377259d2
+kmobile-member-manage          member_credit_casher_barcode_generating.png 3ec98cc269772da08763d86cdb6ddc4d
+kmobile-member-manage          kmember_ic_vip_un_checked.png            d46308d1176797d1916aa88a2515b91e
+kmobile-member-manage          member_credit_ic_phone.png               a713044ee56c1accdbc4bcd8bc864578
+kmobile-member-manage          member_credit_icon_cash_pay_method.png   abd39f1d1741e1d97d1ff8163fff36b1
+kmobile-member-manage          kmember_member_switch_off.png            ea8cabbef86a1c798cdb6ce243b976b1
+kmobile-member-manage          kmember_ic_vip_checked.png               6ae7daf48ca8e91f6811084475c751fa
+kmobile-member-manage          kmember_ic_storevalue.png                89944dd8dc11ac63296333be70855b06
+kmobile-member-manage          member_credit_icon_bank_card_pay_method.png 6dfc90add0caca6b114bf2c3e90f3de0
+kmobile-member-manage          member_credit_ic_man.png                 2458a02f9e23300c8df8219ea70da81c
+kmobile-member-manage          kmember_ic_date.png                      84dc45d0454d6496e5966accc33a292a
+kmobile-member-manage          member_credit_ic_record.png              e8c1efbd1076ec795141195518a216c6
+kmobile-member-manage          member_credit_ic_level.png               87cbc1606c4b9dc150b7c7434a853c27
+kmobile-member-manage          member_credit_ic_phone.png               e45c67c299ca086ef17d2c7a44001082
+kmobile-member-manage          member_credit_ic_man.png                 fbd0ed33dffe54578ff64e845bb14c07
+kmobile-member-manage          kmember_ic_date.png                      1b9b44c3677b8a4b3241046a381df923
+kmobile-member-manage          member_credit_ic_record.png              d8f4c1a790aac95e0392c7a6c7393cf4
+kmobile-member-manage          member_credit_ic_level.png               473820d69611094e540de979ddcdedfb
+kmobile-member-manage          member_credit_ic_phone.png               ab5b7d402b029d09a8d4f1b1fc6f1c70
+kmobile-member-manage          member_credit_ic_man.png                 2212e8a72dad999b42d7db36f0c1b9e8
+kmobile-member-manage          kmember_ic_date.png                      50286afe70e9e5406befcd244a0f5517
+kmobile-member-manage          member_credit_ic_record.png              8bf2d77303e65cda75401dfdca716049
+kmobile-member-manage          member_credit_ic_level.png               7a9723f18431854967ad2cd28b0bb414
+kmobile-member-manage          member_credit_ic_phone.png               c1595b9245c4011962131380265108dd
+kmobile-member-manage          member_credit_ic_man.png                 91e0b3c747a26e2555b1ce59b2414dca
+kmobile-member-manage          kmember_ic_date.png                      93d9ffa6bc92dc60e219b02321d4e5b3
+kmobile-member-manage          member_credit_ic_record.png              85c2fee23d3b7694e9bc00d567ad48bc
+kmobile-member-manage          member_credit_ic_level.png               4f91dc1d17ced375551554e17badb6b3
+kmobile-member-manage          member_credit_ic_phone.png               cda3196b04d9abfae26045aaf75af0b9
 kmobile-assistant-ui           assistant_msg_close.png                  43fda3af470b3c5932f5df6fcf344ccc
-
 kmobile-assistant-ui           assistant_mobile_ordering_switch_off.png 17cacd6a48e0fab25f8cd9304b96411b
 kmobile-assistant-ui           assistant_ic_clear.png                   851fa8c2c2b7d927fcf4c3b56bc5ceb4
 kmobile-assistant-ui           assistant_top_xiaoon.png                 b7858e48b865b50f3f85860d18a20522
@@ -54,7 +246,6 @@ kmobile-assistant-ui           assistant_home_more.png                  9f1307ba
 kmobile-assistant-ui           assistant_voice_off_ic.png               9d6e2a682a1596679bba760131d10ab3
 kmobile-assistant-ui           assistant_search_clear.png               13a179a44f96cea597ff4ee7058d8cc6
 kmobile-inventory-management-ui ic_expand_less_blue_24dp.png             0ddcf422162d08b3149f392bba08c418
-
 kmobile-inventory-management-ui ic_ocr_date_label.png                    5161a296d3ce9ac0b950d795d49f3ef6
 kmobile-inventory-management-ui ic_close_black_24dp.png                  e5a6c80ec045c5f7ebe7cd30dafd7012
 kmobile-inventory-management-ui ic_menu_select_ordinary.png              edcb6cb867af16ce17462ec6f0974307
@@ -257,7 +448,6 @@ kmobile-inventory-management-ui ic_ocr_item_error_waring.png             ce18836
 kmobile-inventory-management-ui ic_expand_more_blue_24dp.png             8e7860e309eb4097a8a708f3934caa2e
 kmobile-inventory-management-ui ic_close_orc_hint_waring_24dp.png        2078a8fa4a860dfb67136b840d6ede63
 kmobile-android-ocr-dish-contain ic_camera_alt_write_24dp.png             0896ab5c59886e4e6c663acc1165eefc
-
 kmobile-android-ocr-dish-contain ic_close_gray_24dp.png                   5fba550459c52f7a6d8f38cf6dbb5065
 kmobile-android-ocr-dish-contain bg_tile.png                              f4568239fed3f1245027f5fbc1aa8ea9
 kmobile-android-ocr-dish-contain img_ocr_dish_guide_thrid.png             4d42617585a7331c72f5b80c7f681a34
@@ -278,12 +468,10 @@ kmobile-android-ocr-dish-contain ic_close_gray_24dp.png                   0ac805
 kmobile-android-ocr-dish-contain ic_camera_alt_write_24dp.png             74685906035c3d079ea94a0588f30a16
 kmobile-android-ocr-dish-contain ic_close_gray_24dp.png                   6175f2aa33590b7b1448d1f9d88adbef
 android-crop-images            crop_images_tile.png                     f4568239fed3f1245027f5fbc1aa8ea9
-
 android-crop-images            crop_images_divider.9.png                da6dc75bc681619817592f996bb51eea
 android-crop-images            crop_images_divider.9.png                ff3cfec21b2bc6f195bf90ea72a54cb8
 android-crop-images            crop_images_divider.9.png                ff3cfec21b2bc6f195bf90ea72a54cb8
 cashpay                        cash_ic_unchecked.png                    3237d1564eb0228ed779a79ce1699665
-
 cashpay                        kmobile_radio_checked.png                6ae7daf48ca8e91f6811084475c751fa
 cashpay                        ic_cash_customizepay_selected.png        67cf628a5703852f2244f6ffcd8e75fa
 cashpay                        ic_cash_customizepay_custom_bg.png       a2be013d5e9bfa51c5585776be83e5c1
@@ -293,7 +481,6 @@ cashpay                        ic_cash_customizepay_sub.png             bea41914
 cashpay                        cash_ic_checked.png                      74b60d3c2242835c91169cda80574818
 cashpay                        ic_cash_customizepay_noncustom_bg.png    e26c1ff8b9664ae33ec388d20c205a57
 kmobile-skin-support-appcompat skin_btn_check_box.png                   fa6e3ff632faf6e40649314cb8dee226
-
 kmobile-skin-support-appcompat skin_btn_radio_checked.png               0e33a232686be6798865b1a5608e0593
 kmobile-skin-support-appcompat skin_btn_radio_unchecked.png             3df7a7c7f50ad65d2764a4bb6aad3737
 kmobile-skin-support-appcompat skin_btn_check_box_outline_blank.png     ae41bd21cab466ce27c48cf5450ee9a7
@@ -318,10 +505,8 @@ kmobile-skin-support-appcompat skin_btn_radio_checked.png               d4c4991a
 kmobile-skin-support-appcompat skin_btn_radio_unchecked.png             98cc1066775dc98a9e981df9dca02b15
 kmobile-skin-support-appcompat skin_btn_check_box_outline_blank.png     4567680931bb1e7131bb874dc106a815
 widget-digitinputview          icon_keyboard_back_m.png                 b914c51ff605f71469f9ce2e88e3a9a1
-
 widget-digitinputview          ic_keyboard_delete.png                   c397a41bc4aa1d2a94cd8a4b8c4984a5
 thirdpay                       casher_barcode_generating.png            0d1ff5566b57d88264ebf2f7774f7ec7
-
 thirdpay                       casher_paycode_normal.png                cd2f9a4b76174cd8c1faba0ef9bc49d0
 thirdpay                       third_pay_bg_pay_gray.png                cd83c7a77830134d2b1733a07d5ebe20
 thirdpay                       casher_rpaycode_pressed.png              b6cfeafa0d40750a5e14cc11ad703ad3
@@ -330,55 +515,16 @@ thirdpay                       casher_customerpaycode_normal.png        47729ee6
 thirdpay                       third_pay_get_qrpic_fail.png             d964727f0e18e1463766a2676c48415e
 thirdpay                       casher_customerpaycode.png               f58e583ddce04bb23d391a412b9a143c
 custompay                      img_unchecked.png                        7ec596ad8fa14162d464624929ad5fe8
-
 custompay                      back_nomal.png                           c75beb9e4616f5bf9c71f0ffe116594b
 custompay                      img_checked.png                          903badec870ab8f91ab848bcbe079624
 custompay                      custom_mobile_sub.png                    d24d584236686a76cae30d7288a28fed
 custompay                      custom_mobile_add.png                    2657599af7c64ff722ca23e328a68bfb
 custompay                      img_custom_pay_choice.png                a9f3223da4d334801e7092510bb04e4d
 custompay                      back_press.png                           f6b04e516aaca1ab0095969f3b46f03e
-member                         casher_barcode_generating.png            0d1ff5566b57d88264ebf2f7774f7ec7
-
-member                         card_login_gray.png                      f6318eb2951e0fc5fefeba6b5ca83f41
-member                         qr_barcode_line.png                      cbec9277a895b93d26c7a7863fe0f86a
-member                         bg_pay_method.png                        3f33351242d29cc1b7a3a1dec7897e72
-member                         casher_paycode_normal.png                cd2f9a4b76174cd8c1faba0ef9bc49d0
-member                         ic_right_details.png                     ae41db291003e84c6865ecdcfb2963bc
-member                         casher_rpaycode_pressed.png              b6cfeafa0d40750a5e14cc11ad703ad3
-member                         icon_login_type_bg.png                   8f0321b45bcf721eb1ef42786fa0a985
-member                         ic_member.png                            1687940b0882ebfd73c500011e493474
-member                         icon_card_login.png                      e9890065823e18e4e8f598444ddf7cb2
-member                         casher_customerpaycode_normal.png        47729ee6f8b1306ebe1b2a4ad6a19a2b
-member                         icon_close_dialog.png                    7f6f1aab28104e585a6e6a2cb67fa45b
-member                         icon_scan_login.png                      86d74bcba9e465682d024cfb9f0e67ae
-member                         true_card_search.png                     e404353b3a2b17779654f8ec5ee20192
-member                         icon_blue_add.png                        a8e74184a474cd01889616076d5e732e
-member                         no_available_coupon.png                  0767d6dc34dfd003d2c5f2221a842852
-member                         icon_member_qs.png                       8771fb025b864ff84413d38622ba9a40
-member                         scan_search.png                          3756d16998dd55489241dfc83976b078
-member                         member_head.png                          4ae75f1476c0e532c594e22668da584d
-member                         icon_phone.png                           39194038e9759bce1b7b9fc02f694ca6
-member                         scan_search_highlight.png                ad96b403ed3234049a3df5ee591e9c6d
-member                         icon_ser.png                             0d0d5990bdd8c32ac9a02f6c6e4d7a98
-member                         input_default.png                        de273ca01ded0a46ad92df05ae12d6a7
-member                         member_add.png                           4256188eef3c47692a02e08c76d06cd4
-member                         pluginpay_bg_pay_gray.png                0df72d2e00e9ae56fc20493d2122d673
-member                         member_error_icon.png                    bd204a0fc95ac951822038ab464605b0
-member                         input_selected.png                       6dbdcc94bffded22eadb7b4ab6d52438
-member                         icon_close_dialog.png                    7f6f1aab28104e585a6e6a2cb67fa45b
-member                         icon_blue_user.png                       3846ef3d3cf250497f92fa9398c7ba6e
-member                         icon_blue_phone.png                      5648249d2022eb63ab84b211b8e1054a
-member                         no_real_card.png                         04e98f10198b2453c9ea19112330c6a9
-member                         casher_customerpaycode.png               f58e583ddce04bb23d391a412b9a143c
-member                         necessary_star.png                       1c8b10afd616effd740de29d99ed746d
-member                         member_head_new.png                      b8de4b1a651b77eda10be8e7b36d8ffb
 osmobile-dialog                osmobilelib_dialog_tip.png               50df9ad54c373b7d0a43aac54d487a9d
-
 osmobile-title-manager         back_nomal.png                           c75beb9e4616f5bf9c71f0ffe116594b
-
 osmobile-title-manager         back_press.png                           f6b04e516aaca1ab0095969f3b46f03e
 klight                         klight_ic_arrow_left.png                 34bc499a5c83d0c23d9c3594a9f3e860
-
 klight                         me_item_collect.png                      415c2c960c83a78c81995a06b3fe25b5
 klight                         klight_ic_trade_record.png               8db080d480d725d8ff8f11c87e160fed
 klight                         icon_calendar_black.png                  0d79d5bf076d0194e152bde301b639fd
@@ -468,10 +614,8 @@ klight                         klight_ic_main_mine_normal.png           b4a4d83e
 klight                         ic_me_top_bg.png                         48176c98f1270da961195f2ed235076e
 klight                         round_rect_bg_with_shadow.9.png          4fc1e69ce59c695151ef15e032a03adc
 kmobile-adt                    icon_banner_default.png                  d086175e17d600602e0d2efd0c04aa87
-
 kmobile-adt                    icon_splash_default.png                  f3ffc3cffa6946beb159c0cefa2b8491
 kmobile-takeout-ui             app_launcher.png                         23582d9312a8ba1bda9b935fdcda358a
-
 kmobile-takeout-ui             bg_take_out_item.9.png                   b85759eee0202f12523aca580b7dd9fe
 kmobile-takeout-ui             bg_takeout_item.9.png                    d87622d1a769d42f2273e9330fc0a729
 kmobile-takeout-ui             takeout_menu_popupwindow.9.png           d4ae5b96a39b7c7506a1a208ffcc4efd
@@ -655,7 +799,6 @@ kmobile-takeout-ui             takeout_source_baiduluomi_invalid.png    74e2f488
 kmobile-takeout-ui             casher_barcode_generated_failed.png      33ebbbe34415ff1bebe60ac29fa758a6
 kmobile-takeout-ui             ic_takeout_adt_emergency.png             cd30295ce2c7a649668dd386f360ea9d
 kmobile-business-setting       bluecloud_loading_16.png                 09511f1ee95826fd3e4cb70441eb9a14
-
 kmobile-business-setting       bluecloud_loading_2.png                  80f120d5ca04681b2fa1bb91739f4dd4
 kmobile-business-setting       bluecloud_loading_3.png                  37b12ba58a4a5c2fb2f25f0dc23beb32
 kmobile-business-setting       bluecloud_loading_17.png                 4cf1f081248e21b28b017cd710580f1a
@@ -788,7 +931,6 @@ kmobile-business-setting       img_charge_empty.png                     6c1f6a4c
 kmobile-business-setting       ic_table_area_check.png                  268e836996df0511aacb1b683f2742e5
 kmobile-business-setting       ic_table_area_checked.png                3276b418f6d2ea82fbd2e0bdede27be8
 kmobile-order-center           date_bottom_line_bg.9.png                47d74ffeacf66fe2c70f0161a53b81cb
-
 kmobile-order-center           rb_bg.png                                c611484965344912e7297f60d0fec1df
 kmobile-order-center           ic_product_template_dish_checked.png     03616fb8505d25bf2bb06c1895dc9b4e
 kmobile-order-center           ic_product_template_dish_unchecked.png   4d44415e57942de2aac95e0065ef3f57
@@ -864,7 +1006,6 @@ kmobile-order-center           delete_press.png                         05b1504b
 kmobile-order-center           trade_home_ic_filter.png                 ef484c4e68b68fb5b56858e2e4d3e787
 kmobile-order-center           back_press.png                           f6b04e516aaca1ab0095969f3b46f03e
 android-safe-webview           ic_keyboard_arrow_left_half_write_38dp.png 878e557e05ef126bd145acd93b39f299
-
 android-safe-webview           ic_close_half_write_38dp.png             ea7d4cf53b73303f8cc29611d615f940
 android-safe-webview           ic_keyboard_arrow_left_half_write_38dp.png 7f6cf232c3999ccb9cbdef9a0542ba77
 android-safe-webview           ic_close_half_write_38dp.png             cd7ec696d947697f5fcffafb9f38c2bb
@@ -877,13 +1018,11 @@ android-safe-webview           ic_close_half_write_38dp.png             617f924c
 android-safe-webview           ic_keyboard_arrow_left_half_write_38dp.png 5fadc35950b497c89bf2547538e44008
 android-safe-webview           ic_close_half_write_38dp.png             33673a093450c7113e7477788778197b
 tradebusiness                  ic_choose_unchecked.png                  6dbb79d7a2a833ecb829acfe34c4f077
-
 tradebusiness                  ic_choose_checked.png                    7c404a5ad108d7348aea3c4c36a18be4
 tradebusiness                  left_arrow.png                           ccd8a0c108232e74b3677d9a18a72005
 tradebusiness                  tradebusiness_dialog_tip.png             50df9ad54c373b7d0a43aac54d487a9d
 tradebusiness                  icon_close_dialog.png                    7f6f1aab28104e585a6e6a2cb67fa45b
 kmobile-accountsystem-ui       account_managent_mode_explain_check_yes.png bbd4d82332ca07a667e281087d03c4d1
-
 kmobile-accountsystem-ui       account_managent_mode_explain_check_no.png 717cff550cb9560b33676e8cec8b6405
 kmobile-accountsystem-ui       account_cb_blue_uncheck.png              cc3104a0fa92f2cc51490364fd071d03
 kmobile-accountsystem-ui       account_login_pass_highlight.png         e7e3a028933e236ff8ce9d1d02afd9d1
@@ -937,172 +1076,9 @@ kmobile-accountsystem-ui       account_login_shop.png                   9e86ec4d
 kmobile-accountsystem-ui       account_phone_number_verify_ok.png       9565609447075b35c032c69c5ebcfe95
 kmobile-accountsystem-ui       account_ic_main_mine_avatar.png          ab05cab84bdb6cd67283619b5b2d83b1
 kmobile-accountsystem-ui       account_login_user.png                   ab93c756f9321302c6c3031490c00387
-kmobile-member-manage          member_credit_ic_man.png                 24a7c4f1f2395aea3a94e4791a214b4f
-
-kmobile-member-manage          kmember_ic_date.png                      cf07265e311bb7e412afad19d979f0c9
-kmobile-member-manage          member_credit_ic_record.png              c962de0bbf413e7af2a0e69ee0c404e4
-kmobile-member-manage          member_credit_ic_level.png               1c68815f36010ecf402625cd1984dd2b
-kmobile-member-manage          member_credit_ic_phone.png               119bb4f9cf382dd6c2e0832813fcf838
-kmobile-member-manage          ic_launcher.png                          93fd2eadf162fd41695cab262540184f
-kmobile-member-manage          kmember_ic_back.png                      0135efd43dc25f27e721703a4f446901
-kmobile-member-manage          member_credit_loading_6.png              6c90807f5f005f7e407b3a2280657385
-kmobile-member-manage          member_credit_alipay_pay.png             92420a3483c9c772aea1580be287c4bd
-kmobile-member-manage          ic_rules_empty.png                       b669aa4225d179a722a5f4f65fe278fd
-kmobile-member-manage          kry_vip_ic_score.png                     99254537bb505d858cfeabddcc86787a
-kmobile-member-manage          member_credit_icon_nuomi_pay_method.png  8b58d2f541db772b91cadf686afeb362
-kmobile-member-manage          member_credit_loading_7.png              0a3b0bd0d29fc64ab30229e97e4bae88
-kmobile-member-manage          kmember_ic_rules_setting_finish.png      7f61d1fdfbdff168f2b6e5027f9a2fa7
-kmobile-member-manage          member_credit_takeout_setting_nextpage.png a4b3e9ed29d4aaf43f4f79bb6cc7a662
-kmobile-member-manage          member_credit_casher_customerpaycode.png b37d60477bb904c841c571db9ef460ca
-kmobile-member-manage          member_credit_icon_koubei_pay_method.png c689d88c3a76521c8218a167641a1616
-kmobile-member-manage          member_credit_ic_vip.png                 c23501453a3348c773d1d3081d929499
-kmobile-member-manage          kmember_ic_barcode_selected.png          e252e5001db26de50b9137f1c0841192
-kmobile-member-manage          kmember_pay_qr_loading.png               13dae3bc37b7b91f7f2c7068c8c41fc9
-kmobile-member-manage          member_credit_loading_5.png              1e22bff870ef3f4c43ea09b0094b249e
-kmobile-member-manage          kry_vip_ic_minus.png                     15b65b895919c6dfe5c5c07f4f47b271
-kmobile-member-manage          ic_groups_question_mask.png              8fcc85efa56626ec6be02c4076d79913
-kmobile-member-manage          shadow.9.png                             97a4d9ad98a100d69bc216be478ee19e
-kmobile-member-manage          no_available_coupon.png                  0767d6dc34dfd003d2c5f2221a842852
-kmobile-member-manage          member_credit_wechat_pay.png             4239dc0697b36fdfa31d4e81b10cdf08
-kmobile-member-manage          member_credit_casher_paycode_normal.png  ae99850d494ca820e8a78957b1ec768c
-kmobile-member-manage          member_credit_icon_custom_pay_method.png d2f9682bb0aeb40cbe925d1e1b871e97
-kmobile-member-manage          member_credit_loading_4.png              ebabd7fdf2b8124c06324ca85270c847
-kmobile-member-manage          member_credit_member_ship_credit_header_line.9.png f25d5e24468d476aaef8e17a03afb4d5
-kmobile-member-manage          member_credit_nodata.png                 de9c3e9277f7f7f00e9b8a8e05eea376
-kmobile-member-manage          include_common_iv_back.png               72f8a2c553c025603b545eb0be452044
-kmobile-member-manage          member_credit_search_input_bg.9.png      95e5960f251d89f75dd43b58d8c1d9b3
-kmobile-member-manage          kry_vip_ic_add_small.png                 42ffea26c29e2013e3850810f69e0bbb
-kmobile-member-manage          kmember_pay_ic_paymode_weixin.png        abce075f20709e68ef14d85933448b27
-kmobile-member-manage          kmember_member_switch_on.png             b123109f4ffd2d318c0880101ca7a281
-kmobile-member-manage          member_credit_level_senior.png           9d5ff86169b4df2755d2fd3b15ad95d7
-kmobile-member-manage          kmember_ic_next.png                      0c06244b32e9d9fc9401686d8c403602
-kmobile-member-manage          kmember_pay_ic_paymode_cash.png          3d987502c435202e209fca68990f4151
-kmobile-member-manage          kmberber_bg_homepage_title.png           bc19cc7208d0edb52a5772028cc11a47
-kmobile-member-manage          kmember_img_generate_barcode_failed.png  96875c860d7f30e98177b3a2f7584910
-kmobile-member-manage          member_credit_member_ship_credit_record.png eee4d7d76bb160bdaa39b87553b438c8
-kmobile-member-manage          member_credit_loading_1.png              d325ffdb2285103c746e5bc9a97a9baf
-kmobile-member-manage          member_credit_single_dish_detail_close.png 2dba97a747f6985ddf8bbe3a270321b0
-kmobile-member-manage          member_credit_cash_pay.png               c6ef332ec859cd57e0493dca14e28c5f
-kmobile-member-manage          kmember_ic_level.png                     7f4705d607e17b636fd95fcc1752d246
-kmobile-member-manage          member_credit_loading_3.png              ffcad99269b974981cbc942737beb20b
-kmobile-member-manage          km_ic_tip_triangle.png                   8158957899565c0eb3157568c38da7dc
-kmobile-member-manage          member_credit_search_clear.png           13a179a44f96cea597ff4ee7058d8cc6
-kmobile-member-manage          member_credit_membercred_selected.png    9f774cb1533d52fb7a233de5eb2239aa
-kmobile-member-manage          member_credit_loading_2.png              8b38835c8bc93cd11d404d351b890d3b
-kmobile-member-manage          kmember_ic_vip_edit.png                  aaf2dd1aedc14868d7019cbba8850690
-kmobile-member-manage          kmember_ic_entry.png                     2f1a3b1698f21a2ef48a9c1dbf41b673
-kmobile-member-manage          member_credit_icon_baiduqianbao_main_icon.png 8e09e65dd08c61af7d7726bec2d6b288
-kmobile-member-manage          kry_vip_bg_card_gray.png                 870826c110812354ff6a6fa31a0ae004
-kmobile-member-manage          member_tips.png                          e2ebd4776295b1d1a209a0b568e06720
-kmobile-member-manage          loading_1.png                            d325ffdb2285103c746e5bc9a97a9baf
-kmobile-member-manage          kmember_ic_invalid.png                   bd204a0fc95ac951822038ab464605b0
-kmobile-member-manage          kmember_ic_close.png                     94b0fe30c966eeab511c8bfc3111fd9c
-kmobile-member-manage          kmember_ic_scan_normal.png               cfab8cd18ec8d689b7857389ec2e5f82
-kmobile-member-manage          kmember_ic_growup.png                    ce9377508729d4760c446dac00435255
-kmobile-member-manage          member_credit_icon_meituan_pay_method.png 61fdc2f6b3b9cee78a3852d79cb74903
-kmobile-member-manage          loading_2.png                            8b38835c8bc93cd11d404d351b890d3b
-kmobile-member-manage          kry_vip_ic_coupon.png                    e4f72ab1159f52328691dc4a0245c024
-kmobile-member-manage          kmember_stored_title.png                 e667e2bcee0a98814bce63a0e3d08401
-kmobile-member-manage          ic_member_add.png                        43ff2ce7613a5de695c3b0ab251e7d8b
-kmobile-member-manage          kmember_ic_tip_triangle.png              3c12e322872df541bad1740ad7e25e04
-kmobile-member-manage          member_credit_ic_man.png                 b532044d7da97d0e88266fb5a21d300b
-kmobile-member-manage          loading_3.png                            ffcad99269b974981cbc942737beb20b
-kmobile-member-manage          member_credit_icon_baidu_pay_method.png  0771c1762d44873112909eb3a405ec81
-kmobile-member-manage          member_credit_get_bq_fail.png            529c02a13ac27dfd1951d71d5f220304
-kmobile-member-manage          loading_7.png                            0a3b0bd0d29fc64ab30229e97e4bae88
-kmobile-member-manage          kmember_bg_tip.png                       b0b31f808b56efb445c7963bd466e2de
-kmobile-member-manage          kmember_ic_add.png                       575335cfa7ad361b9bfba08660cc541d
-kmobile-member-manage          loading_6.png                            6c90807f5f005f7e407b3a2280657385
-kmobile-member-manage          kmember_ic_groups_next_step.png          190ebe0acb0effcc5fd4f9110c24484b
-kmobile-member-manage          loading_4.png                            ebabd7fdf2b8124c06324ca85270c847
-kmobile-member-manage          kmember_member_redcloud_switch_on.png    f7245e0800c51abdb8e3652ca837d120
-kmobile-member-manage          kmember_ic_date.png                      2c399c709eef59a17a9aafbb64ad9261
-kmobile-member-manage          member_credit_level_super.png            0c498c943d9a3be4a56fe05b5a72555c
-kmobile-member-manage          ic_kmember_add.png                       43ff2ce7613a5de695c3b0ab251e7d8b
-kmobile-member-manage          member_credit_inventory_operator.png     4137bfd23c795fbdab09c7e17e019720
-kmobile-member-manage          kmember_ic_header_male.png               ed3627c1aa08a5918c789cb9012a7b61
-kmobile-member-manage          loading_5.png                            1e22bff870ef3f4c43ea09b0094b249e
-kmobile-member-manage          kry_vip_bg_trapezoid_normal.png          f3d7d85fc0b1779927b750f044ad8511
-kmobile-member-manage          kry_vip_ic_account.png                   c1ec86695724f91b585198cfe38a5052
-kmobile-member-manage          member_credit_icon_vip_pay_method.png    39c29652d12a36ac5e17274541e178a5
-kmobile-member-manage          kry_vip_ic_add.png                       2433c7d5cb46e2711ae2b2ba7177229f
-kmobile-member-manage          member_credit_level_junior.png           45cb92bdd279eb495d0170e457913768
-kmobile-member-manage          kmember_check_on.png                     b0556b41d565d6201312fedec4ed705f
-kmobile-member-manage          kmember_ic_input_clear.png               82c65f6d319c8fee74c88aa1960bf892
-kmobile-member-manage          member_credit_dish_search.png            e4177ace3c77e512f78103c9ca8c3799
-kmobile-member-manage          kmember_ic_scan_selected.png             3450d86758058f8de09cab46f99bb3d4
-kmobile-member-manage          member_credit_casher_barcode_generated_failed.png 33ebbbe34415ff1bebe60ac29fa758a6
-kmobile-member-manage          member_credit_icon_shanhui_pay_method.png 6c65afe0e4628947603e4a3178d10396
-kmobile-member-manage          kmember_big_item_bg.9.png                6a3414987bd48e605595fd30c210668e
-kmobile-member-manage          kry_vip_ic_stored.png                    4aa010c01ced160349931108194df285
-kmobile-member-manage          member_credit_member_ship_credit_vip.png 49b51a46c9550b9f920406f17616a0c6
-kmobile-member-manage          kry_vip_ic_edit.png                      427c63ea44279613fba66c3905a0b0d3
-kmobile-member-manage          kmember_ic_barcode_normal.png            bad9666e103383901259b2521af2951a
-kmobile-member-manage          kmember_gender_normal.png                856b23be059f34410e29a063ce99db4f
-kmobile-member-manage          kmember_check_off.png                    40e8d97367b7326df51618a713126a33
-kmobile-member-manage          member_credit_icon_aipay_pay_method.png  79879e9d834231438690440328e37ae9
-kmobile-member-manage          kmember_ic_integral.png                  cd17006939b113d42c836d43ad8087f9
-kmobile-member-manage          member_credit_casher_rpaycode_pressed.png b6cfeafa0d40750a5e14cc11ad703ad3
-kmobile-member-manage          member_credit_icon_band_pay_method.png   f9925b8f06a19391464e598f8cad8f75
-kmobile-member-manage          member_credit_casher_customerpaycode_normal.png 679c6ac7c9cb40419d01eb4505167f3a
-kmobile-member-manage          kmember_ic_checked.png                   31d1f7d864c49cc792282c69bbe929e6
-kmobile-member-manage          member_credit_member_ship_credit_left_half_circle.png 2f288feced2e41b4ab120639df40dca8
-kmobile-member-manage          kmember_ic_vip.png                       0f573be10a4380334dd2c1dd6f071bee
-kmobile-member-manage          kry_vip_bg_trapezoid_highlight.png       7dbeba827a0b5fb8b3be9655aac42c30
-kmobile-member-manage          hy_ic_add.png                            e94b46f2e675bff1907a1b42d351054c
-kmobile-member-manage          kmember_ic_deduction.png                 cd0bcb9e79ef5935e40ee69ebc1114d0
-kmobile-member-manage          member_credit_member_ship_credit_header.png 7c6e8ac550bbb56cf6baaea46119c63f
-kmobile-member-manage          kry_vip_ic_minus_small.png               b6da2d0b01cd0968407cc9c56ecc3502
-kmobile-member-manage          kmember_ic_header_female.png             218da7eced6eefdbfc0798fe6431c23d
-kmobile-member-manage          member_credit_ic_record.png              564aa2233f216b4691e5c2083d5c5df6
-kmobile-member-manage          kry_vip_bg_card.png                      7091e569f569200cb7570f265d5f69c8
-kmobile-member-manage          kmember_ic_explain.png                   457a30335ea0386195c33ba0b85e3878
-kmobile-member-manage          kmember_user_red_bg.png                  c5f75a69e16c91d1230530a891dd9991
-kmobile-member-manage          kmember_ic_un_checked.png                e4306c218e56b1452a15b0c694614a7d
-kmobile-member-manage          member_credit_level_diamond.png          67be0a770287664f51d5afeb957143c5
-kmobile-member-manage          kmember_pay_qr_fail.png                  68ca42be756ea25e11125dd625fd6642
-kmobile-member-manage          kmember_user_bg.png                      845a3c90b3da00bc7be4696c5132f8cf
-kmobile-member-manage          member_credit_ic_level.png               d5a5a123b558cec75c4c55e915b07440
-kmobile-member-manage          kmember_img_generating_barcode.png       4f26d13b8eaf914919f7c71f889bc058
-kmobile-member-manage          kmember_ic_info_header_default.png       b269ba5c412926cd500672328b369484
-kmobile-member-manage          kmember_pay_ic_paymode_alipay.png        6670ad54eb077174af525a07a36a0da8
-kmobile-member-manage          member_credit_member_store_pay.png       742591a859eac1beeea1893bf4dccb4b
-kmobile-member-manage          member_credit_level_intermediate.png     ef910c1d6a6c4ccbbd9cd0e3d09fbdce
-kmobile-member-manage          member_credit_home_more.png              9f1307baaadce6951abf9a2f3b50fd09
-kmobile-member-manage          kmember_gender_click.png                 14b1f37d5865d6302a05781d377259d2
-kmobile-member-manage          member_credit_casher_barcode_generating.png 3ec98cc269772da08763d86cdb6ddc4d
-kmobile-member-manage          kmember_ic_vip_un_checked.png            d46308d1176797d1916aa88a2515b91e
-kmobile-member-manage          member_credit_ic_phone.png               a713044ee56c1accdbc4bcd8bc864578
-kmobile-member-manage          member_credit_icon_cash_pay_method.png   abd39f1d1741e1d97d1ff8163fff36b1
-kmobile-member-manage          kmember_member_switch_off.png            ea8cabbef86a1c798cdb6ce243b976b1
-kmobile-member-manage          kmember_ic_vip_checked.png               6ae7daf48ca8e91f6811084475c751fa
-kmobile-member-manage          kmember_ic_storevalue.png                89944dd8dc11ac63296333be70855b06
-kmobile-member-manage          member_credit_icon_bank_card_pay_method.png 6dfc90add0caca6b114bf2c3e90f3de0
-kmobile-member-manage          member_credit_ic_man.png                 2458a02f9e23300c8df8219ea70da81c
-kmobile-member-manage          kmember_ic_date.png                      84dc45d0454d6496e5966accc33a292a
-kmobile-member-manage          member_credit_ic_record.png              e8c1efbd1076ec795141195518a216c6
-kmobile-member-manage          member_credit_ic_level.png               87cbc1606c4b9dc150b7c7434a853c27
-kmobile-member-manage          member_credit_ic_phone.png               e45c67c299ca086ef17d2c7a44001082
-kmobile-member-manage          member_credit_ic_man.png                 fbd0ed33dffe54578ff64e845bb14c07
-kmobile-member-manage          kmember_ic_date.png                      1b9b44c3677b8a4b3241046a381df923
-kmobile-member-manage          member_credit_ic_record.png              d8f4c1a790aac95e0392c7a6c7393cf4
-kmobile-member-manage          member_credit_ic_level.png               473820d69611094e540de979ddcdedfb
-kmobile-member-manage          member_credit_ic_phone.png               ab5b7d402b029d09a8d4f1b1fc6f1c70
-kmobile-member-manage          member_credit_ic_man.png                 2212e8a72dad999b42d7db36f0c1b9e8
-kmobile-member-manage          kmember_ic_date.png                      50286afe70e9e5406befcd244a0f5517
-kmobile-member-manage          member_credit_ic_record.png              8bf2d77303e65cda75401dfdca716049
-kmobile-member-manage          member_credit_ic_level.png               7a9723f18431854967ad2cd28b0bb414
-kmobile-member-manage          member_credit_ic_phone.png               c1595b9245c4011962131380265108dd
-kmobile-member-manage          member_credit_ic_man.png                 91e0b3c747a26e2555b1ce59b2414dca
-kmobile-member-manage          kmember_ic_date.png                      93d9ffa6bc92dc60e219b02321d4e5b3
-kmobile-member-manage          member_credit_ic_record.png              85c2fee23d3b7694e9bc00d567ad48bc
-kmobile-member-manage          member_credit_ic_level.png               4f91dc1d17ced375551554e17badb6b3
-kmobile-member-manage          member_credit_ic_phone.png               cda3196b04d9abfae26045aaf75af0b9
 android-country-selector       ic_member_checked.png                    68fac05d10c27ce02f8ddd0dcd79bd2f
-
 android-country-selector       ic_not_checked.png                       8b5bad352d6d98445d67444b9addf160
 tradeui-kmobile                kmobile_saleout_dish_normal.png          43df97385c67aa29d8724289bbd43512
-
 tradeui-kmobile                kmobile_order_group_collapse.png         8fc8f1f563c8b848c892acd327ffacfb
 tradeui-kmobile                kmobile_saleout_spinner.png              123027acd2d83a97a03d25b8e8b920eb
 tradeui-kmobile                kmobile_icon_dish_coupon.png             91a65e75dfe86febdc5195fbc53940fa
@@ -1277,7 +1253,6 @@ tradeui-kmobile                kmobile_already_pause_print.png          8f218fec
 tradeui-kmobile                kmobile_menu_service_bell.png            8183e25238797d2c4c12b3f54fcd601e
 tradeui-kmobile                kmobile_back_nomal.png                   c75beb9e4616f5bf9c71f0ffe116594b
 kmobile-table-manage           table_manage_dining.9.png                407332922f79fd1f4ea9717d508a76e0
-
 kmobile-table-manage           table_manage_batch_blue.png              378b78dc03a790d5737a433fa30a1822
 kmobile-table-manage           table_ic_new_table_rectangle.png         afe77e99071f02cb383115f3a419325a
 kmobile-table-manage           table_manage_dirty.9.png                 2abae96ec4d8653f2198a7fdee40155c
@@ -1306,7 +1281,6 @@ kmobile-table-manage           table_qrcode_fail.png                    c0cbd9d2
 kmobile-table-manage           table_manage_check.png                   9cb5894edf64c2d8d545f649d729a767
 kmobile-table-manage           table_qrcode_success.png                 6e6e829a5fa4c5fc3f04a812372b60b3
 kmobile-cashier                icon_calendar_black.png                  0d79d5bf076d0194e152bde301b639fd
-
 kmobile-cashier                payment_detail_bg_upper.9.png            074571882ee739d8549235c50c6e63b3
 kmobile-cashier                icon_cashier_alipay_invalid.png          4efba16779458780ede3d190547138fa
 kmobile-cashier                cashier_switch_on.png                    1997b4e6358b76effe73e0f57d4ff23b
@@ -1344,7 +1318,6 @@ kmobile-cashier                ic_back_white.png                        7d44b273
 kmobile-cashier                payment_detail_bg_lower.9.png            223d8971ee04afb4276eb0c08d0b6d00
 kmobile-cashier                cashier_paymethod_bg.9.png               6a3414987bd48e605595fd30c210668e
 kmobile-staff                  staff_call_phone.png                     47acc5e1115db3ed5575778a8a906be6
-
 kmobile-staff                  back_nomal.png                           c75beb9e4616f5bf9c71f0ffe116594b
 kmobile-staff                  kry_staff_checked.png                    031feec8a0768d0bc7db224a87e33058
 kmobile-staff                  staff_delete.png                         d3738e202a9980629520bdea78933c56
@@ -1367,7 +1340,6 @@ kmobile-staff                  staff_add.png                            e94b46f2
 kmobile-staff                  staff_search.png                         d8cd12692e0c46a8841a4dcbafc59a6b
 kmobile-staff                  back_press.png                           474dad1121c0961fe4e25397195aeba5
 loan-ocr-face-verif            icon_back_normal.png                     fd7d31b3c3d11987457243bfd7af2130
-
 loan-ocr-face-verif            icon_back_pressed.png                    c036dbc18fc3f0fb7b7979b7718eb856
 loan-ocr-face-verif            btn_blue.png                             0a353c3125d553383c0c2cf4f31e7055
 loan-ocr-face-verif            text_failed_head_shake.png               ed683d55de9324fa82673c4449f999db
@@ -1490,7 +1462,6 @@ loan-ocr-face-verif            icon_back_normal.png                     f75ff250
 loan-ocr-face-verif            ic_launcher.png                          40d69d20dd057b4a331d03f2f3f2667e
 loan-ocr-face-verif            icon_back_pressed.png                    3d848bc78fa1625b6d8ffac1e59c1e13
 kmobile-third-loan-exocr       drcard.png                               0409ac98d5d34ea28aa6ae8065855e2d
-
 kmobile-third-loan-exocr       photo_import.png                         f3c890fb61948d4f0321c3c301c0831d
 kmobile-third-loan-exocr       flash.png                                f2bd3f83100c82643fa39220db92eab4
 kmobile-third-loan-exocr       vincode.png                              1f67b06f9cf31065df5b9d8e6dac671e
@@ -1515,11 +1486,9 @@ kmobile-third-loan-exocr       icon.png                                 50922fe9
 kmobile-third-loan-exocr       yidaoboshi96.png                         9ad1de374842da70dcd4e2abc0740877
 kmobile-third-loan-exocr       yidaoboshi.png                           b4da10effeb57f78b224ff820acd5716
 qrcode                         qrcode_flashlight_on.png                 e8e0b45a3a28cc9ff72888f12011f8af
-
 qrcode                         qrcode_flashlight_off.png                1d9b354c3afb8d7b083af2ffa7fbee6f
 qrcode                         qrcode_barcode_line.png                  cbec9277a895b93d26c7a7863fe0f86a
 kmobile-coupon                 coupon_phone_check_press.png             d021754083e93054ec793849edbb36d5
-
 kmobile-coupon                 coupon_scan_code_normal.png              e9fc5344143ce1453ba42cfdf28321a7
 kmobile-coupon                 coupon_scan_me_press.png                 85acbad39a852024f0d3a0b309053c9c
 kmobile-coupon                 coupon_casher_barcode_generated_failed.png 33ebbbe34415ff1bebe60ac29fa758a6
@@ -1533,7 +1502,6 @@ kmobile-coupon                 coupon_mobile_ordering_switch_on.png     1997b4e6
 kmobile-coupon                 coupon_mobile_ordering_switch_off.png    17cacd6a48e0fab25f8cd9304b96411b
 kmobile-coupon                 coupon_ticket_member_head.png            d147003c87b89dbaac85900f7364fa76
 dinner                         dinner_people_icon.png                   a4457cf899aa7ad5eeb3d40d577f112b
-
 dinner                         shopping_cart.png                        6ed06da96a66d1ab3eacf30835826ba3
 dinner                         icon_edit.png                            a68a0fd0c4de08255c2596479fe0e268
 dinner                         item_popup_bg.9.png                      c2af9b76588c763d7a45659895467887
@@ -1768,7 +1736,6 @@ dinner                         order_preview_header_action_free.png     35d0d486
 dinner                         serving_dish.png                         49ffe3390f05649e17081b1d66626265
 dinner                         has_groupon.png                          1b2c015a3ac80842dc2db084983ba22c
 kmobile-loan-ui                icon_more.png                            1eaeaf2a49c32009daad94824d06e45a
-
 kmobile-loan-ui                back_nomal.png                           c75beb9e4616f5bf9c71f0ffe116594b
 kmobile-loan-ui                accredit_icon.png                        c4b5cdfc6e9aca3f42794b5bd36fecd6
 kmobile-loan-ui                loan_info.png                            e6ff5ce6ca2fcfff868adcbb9aae1cde
@@ -1778,12 +1745,10 @@ kmobile-loan-ui                ic_member.png                            e96486ff
 kmobile-loan-ui                dinner_spinner.png                       c4bebe217ec4237a382e725d09ea78eb
 kmobile-loan-ui                back_press.png                           474dad1121c0961fe4e25397195aeba5
 kmobile-qrcode-biz             ic_check_simple_checked.png              6404ad9248cd74b18caa39d059fefe8d
-
 kmobile-qrcode-biz             ic_check_simple_normal.png               294bbae1be692141016076de1f9a2c08
 kmobile-qrcode-biz             takeout_flashlight_off.png               1d9b354c3afb8d7b083af2ffa7fbee6f
 kmobile-qrcode-biz             takeout_flashlight_on.png                e8e0b45a3a28cc9ff72888f12011f8af
 groupcoupon                    icon_groupcoupon_delete3.png             e74879b20b4beb86a9ebe599844e8991
-
 groupcoupon                    icon_groupcoupon_add3.png                0cf87ae16ac16e4f5bc5a045b9647275
 groupcoupon                    icon_groupcoupon_scan.png                75df4f0cfa0b30fb59a76049625f2706
 groupcoupon                    icon_groupcoupon_choose_checked.png      da48bec2b21d58850cf06afdd123b7bf
@@ -1807,7 +1772,6 @@ groupcoupon                    icon_groupcoupon_desc.png                266ab5f4
 groupcoupon                    icon_groupcoupon_choose_checked3.png     680518d06bee25006aca042df4712d45
 groupcoupon                    icon_groupcoupon_choose_checked2.png     7447ceb33c9c148259b97944c7877dfd
 android-mobileui               mobileui_path_key_delete.png             447847b93b686f9564b9c0073a739456
-
 android-mobileui               mobileui_path_key_down.png               b1007a85581f9a2153335defd597723b
 android-mobileui               mobileui_common_spinner_down.png         c5080e795ab9444863f033c956e24057
 android-mobileui               mobileui_icon_cannot_selected.png        e481edfea17b8fb7e3de6137e9e0c610
@@ -1976,7 +1940,6 @@ android-mobileui               mobileui_path_key_down.png               60baf594
 android-mobileui               mobileui_path_key_delete.png             02b336791c0920e173227ae186aae9ea
 android-mobileui               mobileui_path_key_down.png               ab77fad2f022e6d2d8ada3118d46b21f
 kmobile-message                icon_msg_close.png                       3a385dec2872d0e3481a2338df3f895f
-
 kmobile-message                icon_msg_warm.png                        6574a228667445aed4e45060d49027c9
 kmobile-message                heart_border.png                         6f372e8252a5e6488529cef2e349b235
 kmobile-message                msg_ic_pro_default_image.png             1defc932535c57ee42ee23d18dd9df42
@@ -2026,7 +1989,6 @@ kmobile-message                message_ic_back.png                      e0e504ea
 kmobile-message                ic_article_ckbg.png                      18c843853491d660b6b02a70ac3ef3fd
 kmobile-message                ic_shopregister.png                      0e7de82e189cbb801c0744bf58b60249
 tradeui-library                tradeui_popup_setting.png                03e821cce8e8700216e697bf66d6cf29
-
 tradeui-library                tradeui_combo_childimg.png               119a0852a9c2995ac2d61de9145a5562
 tradeui-library                dinner_black_spinner.png                 123027acd2d83a97a03d25b8e8b920eb
 tradeui-library                tradeui_ic_vip_price.png                 7fa8d0d12460e65a8b9eb94af6f24126
@@ -2103,7 +2065,6 @@ tradeui-library                tradeui_xlistview_arrow.png              9f4a22c0
 tradeui-library                tradeui_ic_sold_out.png                  31f8209132b1ca75397891a9724f1adb
 tradeui-library                tradeui_icon_dish_free.png               1aa59ad6f67a25dba5ad4a8ef4759f25
 manage-table-code              table_code_icon_send.png                 0b1d991e182c672d5fabfe91d097dfac
-
 manage-table-code              hy_table_code_bind_scan.png              81aecfda6f4cdb56cc5bb7930bfa209e
 manage-table-code              table_code_bind_card.png                 89f41fcf5e53f0198d7118303cd0b605
 manage-table-code              table_code_style_logo_bg.png             bbc7c0fae1466ec5d3baac24cddfa8dd
@@ -2133,7 +2094,6 @@ manage-table-code              table_code_bg.png                        f0d4e382
 manage-table-code              hy_table_code_icon_send.png              c81d8016ae67b17b8009f00948d50c7d
 manage-table-code              table_code_bind_scan.png                 c2e08013f9e0328bce4473b3343eeb1a
 commonkmobile                  phone_areacode_red.png                   74ce452f5ca56c4987261e9012822ed1
-
 commonkmobile                  icon_more.png                            1eaeaf2a49c32009daad94824d06e45a
 commonkmobile                  common_spinner.png                       c5080e795ab9444863f033c956e24057
 commonkmobile                  ic_browser_close.png                     fa72b9674b325ccc0354387fd168ec2d
@@ -2145,15 +2105,74 @@ commonkmobile                  phone_areacode_blue.png                  d79f5ac9
 commonkmobile                  ic_common_title_back.png                 e0e504eaa1d2ff45be7c0a9bbad9937e
 commonkmobile                  orderdish_setmeal_cancel_normal.png      d7172fed6c4380cc0afa520e4f7f973c
 commonkmobile                  phone_areacode_boult.png                 affb5901c9e78043e6a42e3683248133
+iot                            iot_item_ic_shop.png                     ce2e5777f77e169856f2f9a18e4dfe14
+iot                            iot_video_full_screen.png                2f107a4276f53015c51d74371d5da681
+iot                            iot_flashlight_off.png                   1d9b354c3afb8d7b083af2ffa7fbee6f
+iot                            iot_camera_online.png                    6f4387e4080b438ef29ba9bbfd160bea
+iot                            iot_head_shop_bg.png                     265917e2ba9233d8a66a0596fd5a8260
+iot                            iot_shop_empty.png                       67a49dcaeff4f723a3b4e84dbe79cb17
+iot                            iot_hint_pop_child_up.png                4435ed6e827455624c6849375a21a731
+iot                            iot_image_loading.png                    54e74a866e0ce3294f275df7042db350
+iot                            iot_scan_success.png                     23f45d567969ecd99635ff29f9eec68c
+iot                            iot_regular_empty.png                    fe2fc474e3f6f824c63b63170922fd60
+iot                            iot_expand_down.png                      3422701184ab741927532f888374ac9d
+iot                            iot_ai.png                               974676d672ff9fa2247952d045c6ada8
+iot                            iot_previous_page.png                    24f9e10ce2361c738ed0c4fb939ba35d
+iot                            iot_config_add.png                       78f5760d58ea6dee7b7182313aa921b4
+iot                            iot_hint_pop_bg_device.png               e7faa65d9f2e9026a7ee78be723db5de
+iot                            iot_next_page.png                        b1cdabbd2cbaa133f7cf7e19bc0d3673
+iot                            iot_device_empty_nvr.png                 1c2e2b4fac1387eb85241f22c3cf722b
+iot                            iot_nvr_unkown.png                       9187cf75dcd3e4e8c0ed26b3b66e3081
+iot                            iot_video_pause.png                      004fcf13727734bd65fb9fcfe1b4ea2c
+iot                            iot_arrow_down.png                       72bd9db2baad68ecc9d2116aefaf0a13
+iot                            iot_pos_online.png                       dfd6e9fd215083f36919eae94465f2de
+iot                            iot_scan.png                             38e4e074bc32d55c5acaae83a2d6ce2f
+iot                            iot_ic_date.png                          3a84127343a811ae6e10bc925fd9275a
+iot                            iot_kds_online.png                       b03d7f58fd8c8ff547ff32d60733d044
+iot                            iot_camera_empty.png                     e49b6d86d1a4bd0ff7df37aef4fadbfe
+iot                            iot_device_add.png                       690076bf5a80381e530dad5d654339b1
+iot                            iot_camera_offline.png                   f2130df87bb7723d664d3866eb48cf5e
+iot                            iot_devices_head_bg.png                  a62e297fd4845786d8ab3cda76fbf55d
+iot                            iot_image_load_fail.png                  ff6d870ad16ebb7e79f817a257b101fe
+iot                            iot_video_offline.png                    0693d8f1add9c8b39793090ac7e3e037
+iot                            iot_device_empty.png                     aa897db9a6e1e092d48c294c6e752a0f
+iot                            iot_config_bg.png                        7e0577172edb77cf8eae02d909359805
+iot                            iot_question.png                         a118bc8d4c45394a45cf632caab25a55
+iot                            iot_nvr_online.png                       5b67e22a44faf56722fc799b815b650a
+iot                            iot_kds_unkown.png                       cf09d9afbddf930f99b3e40d88e8b197
+iot                            iot_arrow_left.png                       71109d142c43c58cc447cddb7badb18e
+iot                            iot_explain.png                          7fada863cb90e3e8d2369738262d8881
+iot                            iot_pos_unkown.png                       5008bfbb8eea57ca26d1935f5ad178ef
+iot                            iot_nvr.png                              e845416ad05e3bb146919f7b61b4eb9e
+iot                            iot_kds.png                              e17975375340eee470ec585323804a44
+iot                            iot_fullscreen_enter.png                 8e1c1ca68bdc710e397edec8419fee34
+iot                            iot_hint_pop_child.png                   7484cc714f80a61146d4622c62828297
+iot                            iot_hint_pop_bg.png                      8200b63378bc272045ec33a5b56fff28
+iot                            iot_config_set.png                       ea6d8b09b24f089f1028574cfa6da6ba
+iot                            iot_check_config_bg.png                  3de2ed69d91022f8883de3576f7e09ed
+iot                            iot_scan_fail.png                        1f06301a9c206b317f354e33ae57d31b
+iot                            iot_select.png                           f8b9d785fdae1586d5d019f5d5369f5a
+iot                            iot_kds_offline.png                      6beb3ccf41c32bae0384358bbdacce96
+iot                            iot_selected.png                         ece488dbdfffbc9e28718f4a6b752e48
+iot                            iot_edt_group_bg.png                     caf99ae1afd45cc0a6c7ad72371840b0
+iot                            iot_video_select.png                     c49f985ccd42372a277cd5ca4707dbe2
+iot                            iot_camera_unkown.png                    5a049d9ab9d22865f33656043d51457a
+iot                            iot_expand_up.png                        b2c5a9dcf7ec9d536b7979a74ed5fb25
+iot                            iot_pos.png                              690f43e2e51e3a8bdd1d3bb4e8126987
+iot                            iot_item_shop_bg.png                     35b880b1ba1248db420327516f112697
+iot                            iot_flashlight_on.png                    e8e0b45a3a28cc9ff72888f12011f8af
+iot                            iot_nvr_offline.png                      2a3ab70f4ecd034b2d18ee4956087944
+iot                            iot_fullscreen_exit.png                  73ecde83904c64eff1a1518c9ee49f78
+iot                            iot_photo.png                            4e76247c65f7f3d149c413ddd372d02b
+iot                            iot_video_play.png                       b7aa75c02aea01845566457b5437fbbc
+iot                            iot_pos_offline.png                      51702e44bf886fbbd0138ca47b25442b
 kmobile-share                  kshare_ic_share_copy.png                 d9340d9852bc902f4eb6e3a52e64df3d
-
 kmobile-share                  kshare_ic_qrscan.png                     b8fce5d0655e01fdfbd9e59b61ec5cf4
 kmobile-share                  kshare_ic_share_wechat_timeline.png      9f4ff7f9ed33a94c2d2626495efd0a64
 kmobile-share                  kshare_ic_share_wechat.png               43171dfede7f93143879607cf12dec32
 kmobile-share                  kshare_ic_share_qq.png                   1b3756f39ddceaf9e54036bb45410db4
 kmobile-share                  kshare_ic_close.png                      94b0fe30c966eeab511c8bfc3111fd9c
 kmobile-third-facesdk          liveness_blink_eye_open.png              d711c02a9baf0b853e90360a38bd0b35
-
 kmobile-third-facesdk          liveness_mouth_close.png                 4b87175b5be40c9e82be6759545a52af
 kmobile-third-facesdk          liveness_shakehead_right.png             fde9f72e49bb0087278ae8263257bc50
 kmobile-third-facesdk          liveness_home_closeicon.png              b6eed3d1a78b7a0c35791eaa455d802c
@@ -2166,7 +2185,6 @@ kmobile-third-facesdk          liveness_nod_down.png                    2a33c13c
 kmobile-third-facesdk          iv_megvii_logo.png                       9094d623af3ea1758f463834947c3c3f
 kmobile-third-facesdk          ic_return.png                            f30d9735cbe6d3de94092e74f1c59fe7
 paycenter                      paycenter_ic_paymode_customize.png       0c4d386548080571c6e360fa72e9f7e7
-
 paycenter                      paycenter_ic_paymethod_meituan.png       61fdc2f6b3b9cee78a3852d79cb74903
 paycenter                      paycenter_ic_paymode_bank.png            7f003f87fb72079f7bcfd7743f4923c5
 paycenter                      paycenter_ic_paymode_cash.png            9cfbf88465f8915f018c15990b9f8f04
@@ -2183,7 +2201,6 @@ paycenter                      paycenter_ic_paymode_cmb_one_card.png    7fb060bf
 paycenter                      paycenter_ic_paymode_vip.png             1687940b0882ebfd73c500011e493474
 paycenter                      paycenter_ic_paymode_zfb.png             ba9bc3096f57215cde999a4fa1f215fa
 kreport                        ic_kreport_shadow_bg.9.png               7bffe6dfcd45f11b0c0c5e7bb07799b2
-
 kreport                        takeout_source_pos_terminal_invalid.png  60eb8c150e4de634fa27604f0e88afe1
 kreport                        reports_ic_sale_print.png                c80ca9c876faca9b451941c1c0296e84
 kreport                        takeout_source_phone_invalid.png         995b9755429455b932c649c601e57b3b
@@ -2425,7 +2442,6 @@ kreport                        takeout_source_baiduluomi_invalid.png    74e2f488
 kreport                        close_account_refund_amount_img.png      5aa4a7b74f10c27216de41490595832d
 kreport                        close_account_total_amount_img.png       29d4b17704a54b664848f6f691d1f100
 tradeui-klight                 klight_print_connecting.png              6597c457f6714316ea99c789024b17b7
-
 tradeui-klight                 klight_network_err_prompt.png            bfde43be88a053aefe5e2612d2d139f8
 tradeui-klight                 klight_ic_order_preview_more.png         68c2961d621bf8cd9ed0d6527a8a2def
 tradeui-klight                 klight_table_dining_indicator.png        74dc27854cab42aaab7f04720d8212c7
@@ -2474,7 +2490,6 @@ tradeui-klight                 klight_popup_help.png                    41f5f419
 tradeui-klight                 klight_back_press.png                    f6b04e516aaca1ab0095969f3b46f03e
 tradeui-klight                 mobile_ordering_switch_on.png            1997b4e6358b76effe73e0f57d4ff23b
 kmobile-commodity              ic_arrow_down_black_24dp.png             456279f17744ac1e96309fdc7ce434dc
-
 kmobile-commodity              commodity_path_arrow_up.png              4fd5a87681d4c67f80a824013277b50d
 kmobile-commodity              commodity_path_arrow_down.png            bbb925c97a1a0f5729380c73e96be1f0
 kmobile-commodity              ic_border_add_inner_gray_24dp.png        731b78db4a1e1e9102d0174dfb64fd66
@@ -2694,7 +2709,6 @@ kmobile-commodity              ic_select_radio_button_on_24dp.png       e1f855d6
 kmobile-commodity              commodity_path_lower_right_icon_add.png  34ffd54ff21bd5d0584e2f31590859a6
 kmobile-commodity              ic_select_radio_button_off_24dp.png      3d3a05b5337856148545b838c944ade0
 paycenter-board                pluginpay_ic_checked.png                 74b60d3c2242835c91169cda80574818
-
 paycenter-board                ic_pluginpay_cb_on.png                   9bcb74ad1958eadbbae6daeb6abfb1a0
 paycenter-board                pluginpay_ic_close.png                   1744fabc9f9cc00798d53ef90bb218e0
 paycenter-board                pluginpay_ic_print.png                   1252596fa917f4b61585227e6eac8a85
@@ -2702,7 +2716,6 @@ paycenter-board                pluginpay_ic_unchecked.png               3237d156
 paycenter-board                paycenter_ic_paymode_vip.png             1687940b0882ebfd73c500011e493474
 paycenter-board                ic_pluginpay_cb_off.png                  f70f5d51e0ae8c096aa5c62f7fc2755e
 tradeui-klightlib              klightlib_ic_modify.png                  bb230b6ec096948f0a82eb637d35974c
-
 tradeui-klightlib              klightlib_ic_subtract.png                b4c718d19bf7aa0407c425d88208f83c
 tradeui-klightlib              klightlib_ic_sawtooth.png                718dfdf9fbef2123a560fc0d44620772
 tradeui-klightlib              klightlib_ic_add.png                     5b3599417e0e9fb7efa3f3f4c3bb131c
@@ -2716,7 +2729,6 @@ tradeui-klightlib              klightlib_spinner_selected.png           910b9d1d
 tradeui-klightlib              klightlib_ic_back.png                    5dcd4835b63a7e056599f97e10c0525c
 tradeui-klightlib              klightlib_reason_check_checked.png       7447ceb33c9c148259b97944c7877dfd
 kmobile-home                   bg_my_invoice_entrance_history.9.png     d55845db920b7c06254a08e492bad204
-
 kmobile-home                   bp_popup_tips.9.png                      d2a747971ef7f670f1bb29096e84daac
 kmobile-home                   bg_my_invoice_quota.9.png                5e5c942058cbd4788727c3a349993077
 kmobile-home                   bg_my_invoice_entrance_invoice.9.png     f289a96ad255e96352b40864c5898c83
@@ -2733,7 +2745,6 @@ kmobile-home                   user_operate_log_check_true.png          ed14ac8e
 kmobile-home                   user_operate_log_check_false.png         e89234d826486da6a899a945080cdffa
 kmobile-home                   icon_my_invoice_function.png             af2f263eb72f8207fc89e35ba81dd71c
 kmobile-smart-management       smart_icon_platform_kb.png               cd8f4be3044c68876ac72b0f9eb3a5cd
-
 kmobile-smart-management       smart_icon_platform_dy.png               c1ac8718a49e9a9f861b7c106497fd55
 kmobile-smart-management       smart_icon_shop_business_check.png       245b80321ecb76f6dbb439d78aae6fc4
 kmobile-smart-management       smart_icon_basic_mobile_pay.png          78ddf15c86577c4f25470ae8b09e9eac
