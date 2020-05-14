@@ -109,13 +109,63 @@ def write_pics_desc(to_write_list):
     workbook.save('path_of_excel.xlsx')
 
 
+"""
+重复出现的图片下沉mobileui
+哪个模块 哪个图片需要被下沉
+
+图片出现在各个子模块中 大于1次 即需要被下沉的
+
+按频率统计
+duplicated  2 times, count 160
+duplicated  3 times, count 88
+duplicated  4 times, count 41
+duplicated  5 times, count 31
+duplicated  6 times, count 18
+duplicated  7 times, count 12
+duplicated  8 times, count 9
+duplicated  9 times, count 7
+duplicated 10 times, count 6
+duplicated 11 times, count 3
+duplicated 12 times, count 2
+duplicated 13 times, count 2
+duplicated 14 times, count 2
+duplicated 15 times, count 1
+
+
+Process finished with exit code 0
+
+
+"""
+
+
 def main():
-    file_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/docs/km_pics/pic_desc.txt'
-    to_list = list()
+    file_path = '/Users/lightman_mac/company/keruyun/oh_my_python/StudyPython/docs/km_pics/pic_desc.txt'
     with open(file_path, 'r') as rin:
+        pic_md5_dict = dict()
+        from collections import Counter
+        list_of_md5 = list()
         lines = rin.readlines()
         for line in lines:
-            print(line.split('\t'))
+            sp = line.split(' ')
+            items = list()
+            for s in sp:
+                if len(s) > 0:
+                    items.append(s.strip())
+            list_of_md5.append(items[2])
+
+        print(len(list_of_md5))
+        result = Counter(list_of_md5)
+
+        for i in range(2, 14, 1):
+            c = 1
+            pics = list()
+            for k, v in result.items():
+                if v >= i:
+                    # print(k, v)
+                    c += 1
+                    pics.append(k)
+            # print('dup ', i, ', count ', c)
+            print('duplicated {:>2} times, count {:>4} {}'.format(i, len(pics), 'pics'))
 
 
 if __name__ == '__main__':
