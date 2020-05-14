@@ -169,7 +169,7 @@ def do_extract():
     with open('../../../../docs/km_pics/pic_desc.txt', 'w') as rout:
         rout.writelines(pic_desc_list)
 
-    exec_cmd('git add . && git commit -m "extract pics" && git push origin i18n  ')
+    # exec_cmd('git add . && git commit -m "extract pics" && git push origin i18n  ')
 
 
 def gener_aar_path_dict(path_of_search):

@@ -81,31 +81,41 @@ def day_work():
     print('total sub ', len(kce_sub_list), ', not find ', len(no_i18n))
 
 
+def write_pics_desc(to_write_list):
+    """
+       将list_of_kce 写到指定指定路径
+       """
+    import xlwt
+    workbook = xlwt.Workbook()
+    worksheet = workbook.add_sheet('Android_i18n')
+    worksheet.write(0, 0, "模块名")
+    worksheet.write(0, 1, "图片名")
+    worksheet.write(0, 2, "MD5")
+
+    for row, item in enumerate(to_write_list):
+        row += 1
+        for column in range(3):
+            key = item.key
+            cn = item.cn
+            en = item.en
+
+            if column == 0:
+                worksheet.write(row, column, key)
+            elif column == 1:
+                worksheet.write(row, column, cn)
+            elif column == 2:
+                worksheet.write(row, column, en)
+
+    workbook.save('path_of_excel.xlsx')
+
+
 def main():
-    path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/app/build/intermediates/res/merged/official/envCiTest/values/values.xml'
-    cn_kce = read_xml_as_kce_list(path)
-    en_list = read_xml_as_kce_list('../../../../docs/i18n/english.xml')
-
-    key_cn = set()
-    key_en = set()
-
-    for kce in cn_kce:
-        key_cn.add(kce.key)
-
-    for kce in en_list:
-        key_en.add(kce.key)
-
-    for kce in cn_kce:
-
-        if str(kce.key).startswith('key_liveness') or str(kce.key).startswith('leak_canary') \
-                or str(kce.key).startswith('title_activity_') \
-                or str(kce.key).startswith('abc_'):
-            continue
-
-        #     <string name="main_policy">售后政策</string>
-        if kce.key not in key_en:
-            out = '<string name="{}">{}</string>'.format(kce.key, kce.cn)
-            print(out)
+    file_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/docs/km_pics/pic_desc.txt'
+    to_list = list()
+    with open(file_path, 'r') as rin:
+        lines = rin.readlines()
+        for line in lines:
+            print(line.split('\t'))
 
 
 if __name__ == '__main__':

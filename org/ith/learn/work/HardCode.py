@@ -74,13 +74,13 @@ def main():
     module_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-android-inventory-management/'
     module_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/kmobile-takeout-ui/'
     module_path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/kmobile-table-manage/'
-    hardcode_killer(module_path)
+    # hardcode_killer(module_path)
+
 
     pass
 
 
 def hardcode_killer(path_of_module):
-
     os.chdir(path_of_module)
 
     modules_path_list = get_module_path(path_of_module)
