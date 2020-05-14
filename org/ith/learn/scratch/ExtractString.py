@@ -122,13 +122,13 @@ def daily_work():
 
 def do_extract():
     lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
+    lib_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/.idea/libraries'
     aar_path_dict = gener_aar_path_dict(lib_path)
     # dest_root = '/tmp/kmobile/'
     dest_root = '../../../../docs/km_pics/kmobile/'
 
     pic_desc_list = list()
     last_simple_aar_name = ''
-    start = time.time()
 
     for aar_name, aar_abs_path in aar_path_dict.items():
         res_path = extract_values_or_res(aar_abs_path, just_res=True)
@@ -161,7 +161,7 @@ def do_extract():
                 pic_md5 = file_md5(full_path_of_pic)
                 # simple_aar_name  pkg_name pic_name  md5:xxx
 
-                new_line = '\n' if last_simple_aar_name == simple_aar_name else '\n' * 2
+                new_line = '\n' if last_simple_aar_name == simple_aar_name else '\n' * 1
                 pid_desc = '{:<30} {:<40} {}{}'.format(simple_aar_name, pic_name, pic_md5, new_line)
                 pic_desc_list.append(pid_desc)
                 last_simple_aar_name = simple_aar_name

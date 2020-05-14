@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-	<string name="batmancard_data_error">数据错误</string>
-	<string name="batmancard_device_not_match">设备没有适配</string>
-	<string name="batmancard_is_running">正在运行</string>
-	<string name="unknown_cardtype">未知的卡种</string>
-</resources>
