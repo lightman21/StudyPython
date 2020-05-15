@@ -7854,4 +7854,60 @@
 
     <string name="report_advance_payment">Advance payment</string>
 
+	<string name="iot_no_permission">No permission</string>
+	<string name="iot_do_device_bind">Unbind</string>
+	<string name="fgh_text_loading_failed">Fail to refresh</string>
+	<string name="drsk_refuse_order">Refuse</string>
+	<string name="iot_commit_success">Submit success</string>
+	<string name="iot_save_success">Save success</string>
+	<string name="iot_save">Save</string>
+	<string name="iot_confirm">Confirm</string>
+	<string name="iot_commit">Submit</string>
+	<string name="iot_device_manager">Device MGT</string>
+	<string name="iot_offline_statue">Offline</string>
+	<string name="load_end">No more data</string>
+	<string name="iot_type_str_kds">KDS</string>
+	<string name="kreport_autogen_no_choosed_item">No items selected</string>
+	<string name="iot_do_enable">Enable</string>
+	<string name="iot_et_digits">0123456789abcdefghijklmnopqrstuvwxyz_ABCDEFGHIJKLMNOPQRSTUVWXYZ-</string>
+	<string name="kmember_no_name">anonymous</string>
+	<string name="drsk_accept_order">Accept</string>
+	<string name="iot_device_comment">Note</string>
+	<string name="iot_device_version">Version No.</string>
+	<string name="iot_other">Other</string>
+	<string name="iot_reset">Reset</string>
+	<string name="iot_commit_fail">Fail to submit</string>
+	<string name="iot_add_continue">Keep adding</string>
+	<string name="iot_my_device">My device</string>
+	<string name="iot_i_know">Got it</string>
+	<string name="kmember_commit_succ">Submit success</string>
+	<string name="iot_all">All</string>
+	<string name="iot_next_page">More</string>
+	<string name="fgh_text_loading_finish">Complete refresh</string>
+	<string name="iot_unkown_statue">Inactivated</string>
+	<string name="iot_enabled">Enabled</string>
+	<string name="iot_do_disabled">Terminated</string>
+	<string name="iot_do_scan_fail">Scan code failed</string>
+	<string name="iot_online">Online</string>
+
+
+	<string name="report_num_10k">10k</string>
+	<string name="report_num_100m">100m</string>
+
+
+
+
+	<string name="smartmanage_autogen_cur_shop_name">Current store: %1$s</string>
+	<string name="smartmanage_autogen_suozaishangquan">Location of business district: %1$s %2$s</string>
+	<string name="smartmanage_autogen_no_more_data">No more data</string>
+	<string name="smartmanage_autogen_contidion_empty">Search condition is empty</string>
+	<string name="smartmanage_autogen_no_shop_info">No store infos</string>
+	<string name="smartmanage_autogen_no_shangquan_info">No business district data yet</string>
+	<string name="smartmanage_autogen_no_shangquan_switch_shop">No business district data yet,pls switch other store</string>
+	<string name="smartmanage_autogen_no_search_switch_keyword">No result Pls search again after changing search condition</string>
+
+
+
+
+
 </resources>

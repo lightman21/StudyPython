@@ -134,16 +134,10 @@ def pull_remote_dict_as_kce_list():
 
 
 def main():
-    all_eng_transed = pull_remote_dict_as_kce_list()
-    old_path = gener_all_cn_by_apk('/private/tmp/5.35.10.apk')
-    new_path = gener_all_cn_by_apk(
-        # '/private/tmp/OnMobile-official-5.36.0-SNAPSHOT-armeabi-v7a-envCiTest-2020-05-13-08-05-22.apk')
-        '/private/tmp/5.36.0-SNAPSHOT-envGrd-2020-05-13-12-53-42.apk')
-    diff_xml(new_path_xml=new_path, old_path_xml=old_path, all_english_kce=all_eng_transed)
+    ch_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/docs/0514_swxlsx_2020_05_14_16_40_48_china.xml'
+    eng_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/ith/learn/work/new_total_eng.xml'
+    check_apk_kce(cn_path=ch_path, en_path=eng_path)
 
-    # check_apk_kce(/private/tmp/536.apk)
-    # apk_path = '/tmp/535.apk'
-    # gener_excel_by_apk(apk_path)
     pass
 
 
@@ -173,14 +167,19 @@ def gener_excel_by_apk(path_of_apk):
     pass
 
 
-def check_apk_kce(path_of_apk):
+def check_apk_kce(path_of_apk='', cn_path='', en_path=''):
     """
     @param 传入的apk路径
     反编译指定的apk并生成中文英文两个文件
     然后比较相同key有占位符的地方 是不是都一致 防止 手抖导致奔溃
     """
-    cn_kce_path = gener_all_cn_by_apk(path_of_apk)
-    english_path = get_all_english_path_by_apk(path_of_apk)
+
+    if len(path_of_apk) > 0:
+        cn_kce_path = gener_all_cn_by_apk(path_of_apk)
+        english_path = get_all_english_path_by_apk(path_of_apk)
+    else:
+        cn_kce_path = cn_path
+        english_path = en_path
 
     dict_cn = dict()
     for kce in read_xml_as_kce_list(cn_kce_path):

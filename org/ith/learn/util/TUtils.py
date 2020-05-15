@@ -48,7 +48,8 @@ class KCEBean:
         return 'key:{}___cn:{}___en:{}'.format(str(self.key), str(self.cn), str(self.en))
 
     def __lt__(self, other):
-        return self.key.lower() < other.key.lower()
+        # return self.key.lower() < other.key.lower()
+        return self.en.lower() < other.en.lower()
 
     def __eq__(self, other):
         if isinstance(other, self.__class__):

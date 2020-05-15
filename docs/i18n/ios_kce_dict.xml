@@ -35,7 +35,7 @@
 <kce key="228a7eb0f37fbf2397bd51e57eb4a4a6" cn="领取并继续扫描" en="Receive and continue to scan"/>
 <kce key="979f0bb8886e6143efc77ed84d478f32" cn="领取失败" en="Fail to receive"/>
 <kce key="e71acca21041e8b6f9308ef623bed194" cn="预订设置" en="Reserve setup"/>
-<kce key="9de027f89ca9c86906d969b1feec5763" cn="预订功能常用于门店收银机中本设置可制定预订的使用规则此设置将对收银机和移动门店中的预订功能生效" en="The reservation function is often used in stores cash registers You can create usage rules for reservations in this setup which applys to both cash registers and mobile stores"/>
+<kce key="9de027f89ca9c86906d969b1feec5763" cn="预订功能常用于门店收银机中本设置可制定预订的使用规则此设置将对收银机和移动门店中的预订功能生效" en="The reservation function is often used in stores cash registers You can create usage rules for reservations in this setup which applys to both cash registers and Online Store"/>
 <kce key="32df6f5b3a1411ec9493e91436818312" cn="预订保留时长" en="Retention time"/>
 <kce key="a690f6197bb12cd1c6837efa350e114e" cn="预计总收款不含储值消费" en="Estimated total revenue excluding stored value consumption"/>
 <kce key="a02bdf8cc570ff3e4bb93133a267fd36" cn="预计实收" en="Expected actual money collection"/>
@@ -143,7 +143,8 @@
 <kce key="72533fe6ba91a7c309822b35e5b23540" cn="销货笔退款笔" en="completed ordersrefund  orders"/>
 <kce key="da9a8a164bfaa75092eedbfaa091667d" cn="销货单" en="Sales order"/>
 <kce key="0909447795248f293c8a27c70e6ca4b4" cn="销货" en="Sell goods"/>
-<kce key="7bb9dac95a9f73bbd316b559ad407d73" cn="销账金额元" en="Amount of chargeoffs yuan"/>
+<kce key="f019792373fbb04a1a9e876bcce5b5fa" cn="销账金额大于已挂帐金额" en="Chargeoffs amount is larger than amount of pended orders"/>
+<kce key="b33c7a402b01e28651ebf7367bca7a41" cn="销账金额为0" en="Amount of chargeoffs is 0"/>
 <kce key="99afb9723b1ccf4035bfd5f5043df361" cn="销账金额" en="Chargeoffs amount"/>
 <kce key="3721c59a9441652140dbb29988c9dcd9" cn="销账记录" en="Chargeoffs record"/>
 <kce key="2590f34d67c568d676edd5bc2af13e89" cn="销账明细" en="Chargeoffs details"/>
@@ -154,9 +155,6 @@
 <kce key="e0122707573cacdac87446d55ffd3123" cn="销账备注" en="Chargeoffs notes"/>
 <kce key="0b64365174fb67aa6ef23485ccecf968" cn="销账反结账" en="Antisettlement of chargeoffs"/>
 <kce key="e2c6236d7f1b4417fbeda2ca34c28de0" cn="销户" en="Close the account"/>
-<kce key="a7d5f41b5e9d916c57dc27804764b3c6" cn="销帐金额大于已挂帐金额" en="Chargeoffs amount is larger than amount of pended orders"/>
-<kce key="ae57dce9f60ed98e5bc7721d6f8a9f4a" cn="销帐金额为0" en="Amount of chargeoffs is 0"/>
-<kce key="62efd7ef1219c68f613514cd34011a65" cn="销帐金额" en="Amount of chargeoffs"/>
 <kce key="8d93bafc3db024156527683d129e00f9" cn="销帐理由" en="Reasons for chargeoff"/>
 <kce key="ffde7713767430903fad10ad553a6059" cn="销帐实收金额" en="Payment of chargeoffs"/>
 <kce key="74e5d5efed8a10a1d892b03c6cd86827" cn="销帐实收" en="Revenue from chargeoff"/>
@@ -336,6 +334,7 @@
 <kce key="9627644f81821301b16c8a7fcea0e78a" cn="退货" en="Returns"/>
 <kce key="6eb2419cb0374b1c0b7af30e6b6b15bd" cn="退菜数量" en="No of returned dishes"/>
 <kce key="2517b4908f89631be408e1f3b58717e4" cn="退菜并且退回库存" en="Return food into inventory"/>
+<kce key="5c4ef3cfa6018d061fa0add10d49e178" cn="退菜" en="Return"/>
 <kce key="a0cd4c0e00db4e542981c75f78504d22" cn="退款金额" en="Refund amount"/>
 <kce key="a40ca4508acbe9c7c831884e73d3662f" cn="退款笔数" en="Refund number"/>
 <kce key="1e23550d025f6e3f1fac29466d5b9992" cn="退款理由" en="Refund reason"/>
@@ -612,6 +611,7 @@
 <kce key="91c372b382c82061060c58a8c6fd9eb9" cn="请输入规格商品价格" en="Please enter price of dishes with specifications"/>
 <kce key="1b54dd9a799365f0cdb5312407e34985" cn="请输入规格名称" en="Pls enter the Spec name"/>
 <kce key="ac9f3d3db1104f6fdbc5eb3c8f6a4ff7" cn="请输入营业执照号" en="Pls enter your business license No"/>
+<kce key="93366eb23e2f2235997bc8bcfae358a8" cn="请输入菜品名称" en="Pls enter the name of the dish"/>
 <kce key="c6d73f8e828e516f279509a1e57e12d1" cn="请输入范本编号" en="Pls enter a template No"/>
 <kce key="d95aed7ead35da5bf2e1cb7aabfcf854" cn="请输入范本名称范本编号" en="Pls enter a template name  template No"/>
 <kce key="1dd4b14902212f45e60582f63f6496a5" cn="请输入范本名称" en="Pls enter a template name"/>
@@ -688,6 +688,7 @@
 <kce key="68b18a0b62347605c2ccf052a686b0dd" cn="请输入商品的数量" en="Pls enter the No of products"/>
 <kce key="cc1dfe0ebccb85a1dacd6c73f600eb2a" cn="请输入商品名称首字母" en="Pls enter the product name  capital"/>
 <kce key="61156617507003ba06d99bfc3891d613" cn="请输入商品名称查询" en="Pls enter the product name to search"/>
+<kce key="c6e10b2befc6310967f8f2da26f5bb20" cn="请输入售卖量" en="Pls enter sales volume"/>
 <kce key="74af9487897ecf2e3409df67962c661e" cn="请输入员工名称" en="Pls enter employee name"/>
 <kce key="608c817655f334c86769c3e0025450b9" cn="请输入后台密码" en="Pls enter back offices password"/>
 <kce key="e2c11f74d1bad0a89d57a3fcb8500ceb" cn="请输入名字" en="Pls enter a name"/>
@@ -988,6 +989,7 @@
 <kce key="b986932846f347d29ddff1c8c491a500" cn="若用于商品成本核算则将单据中物品的消耗数量按照比例分摊到商品成本上比如报废10斤猪肉那么就会把10斤猪肉的费用分摊到菜品上比如回锅肉青椒肉丝" en="If its used for commodity cost calculation material cost in the recept will be included in goods cost in proportion  For example the cost of 10 kg of pork will be included into the dishes  such as hot pot meat green pepper shredded pork"/>
 <kce key="11daddcca6515d0aec26503d34d626da" cn="若您购买了旗舰版高级版等可通过激活码在此处升级激活码请向工作人员索取" en="If you have purchased the flagship edition advanced edition etc you can upgrade here through the activation code Pls ask the staff for the activation code"/>
 <kce key="572a71066cea10ea24cece7894f5dc9e" cn="若您后续买了收银机或营销供应链等高级功能可以到我的商户版本升级中升级" en="If you subsequently purchase advanced functions such as cash register marketing or supply chain you can upgrade onMyMerchant Version Upgrade"/>
+<kce key="05b3a30e6d9cc5090905d16a1456908a" cn="若已连接客如云CDS排号叫号系统设备此订单将通过CDS发出叫号指令未连接则通过收银机发出叫号指令" en="If KRYs CDS has been connected this orders instruction of calling No will be sent by CDSIf CDS isnt connected the instruction will be sent by cash register"/>
 <kce key="3bc19d547ac533bf206740c6451a6125" cn="苏州银行" en="Suzhou Bank"/>
 <kce key="5edec1db02307fe18dce3870b42e373c" cn="芯烨58mmn热敏票据手机蓝牙打印机" en="Xprinter 58mm n thermal receipt mobile phone Bluetooth printer"/>
 <kce key="da28620222c54b1d08e29f34fb4e6ed9" cn="航旅" en="Airtra"/>
@@ -1004,6 +1006,7 @@
 <kce key="98b1449846d44815e6236638dcda43c7" cn="自然日" en="Natural Day"/>
 <kce key="4c8ae117d6ae1d85aedc8859d1e210ed" cn="自然人" en="Natural person"/>
 <kce key="4a4eed341f06475b1fe4fd0065dc0ff9" cn="自检体检" en="Selfexamination  Medical examination"/>
+<kce key="b30d277c6373cb1d1204d58014801120" cn="自提" en="takeaway"/>
 <kce key="3205ceabaeddf86cd3bbb676abce32d4" cn="自定义金额" en="Custom amount"/>
 <kce key="351ffb928d38de3e4f84d3c02c31703b" cn="自定义支付" en="Custom payment"/>
 <kce key="f1d4ff50f3828f9b73412e7d94e6dd6e" cn="自定义" en="Custom"/>
@@ -1159,7 +1162,6 @@
 <kce key="062e8bf1942ce9450d902cc7d15b0489" cn="组织机构代码证有效期" en="Validity period of organization code certificate"/>
 <kce key="0b57cac2bd60d82d7e814144dd7bee30" cn="组合支付" en="Combined payment"/>
 <kce key="1822051b0f6c45c4e14890c8a7ba22b0" cn="纸张大小" en="Paper size"/>
-<kce key="b99031bf15ed392d3989996ea8179f83" cn="级联沽清" en="Combo"/>
 <kce key="d71955e65f60853935a6da492674be55" cn="红云公告" en="Hongyun announcement"/>
 <kce key="1d6f54baad3a2a86f3acb9a2a03cd05f" cn="累计积分分" en="Accumulated points points"/>
 <kce key="08c877a1a39f5e89959c51a5256a3fc0" cn="累计手续费" en="Cumulative service fee"/>
@@ -1237,11 +1239,11 @@
 <kce key="98a33d32b5998ecd3be5b0493bdb41b4" cn="税号" en="Tax ID"/>
 <kce key="ac2bd8b7aa7a3607bb9c428bcd049605" cn="税务登记有效期" en="Validity period of tax registration"/>
 <kce key="bc94f83cfde809a4891fb2178ac82489" cn="税      种" en="Tax type"/>
-<kce key="5d20d77a040d5a0d147eed6a89565600" cn="移动门店设置" en="On Portal setup"/>
-<kce key="6ca10c1358f0b11105957a29abef1079" cn="移动门店自动接单" en="On Portal autoaccept"/>
-<kce key="b02d99f48eed61c9d23b5f3d796812e4" cn="移动门店管理" en="On Portal MGT"/>
-<kce key="565d4907c9c0ab0e2b75c6575961b1ee" cn="移动门店第三方" en="On Portal 3rd parties"/>
-<kce key="eb07bb4f9c0994bcba767b0a488932f0" cn="移动门店" en="On Portal"/>
+<kce key="5d20d77a040d5a0d147eed6a89565600" cn="移动门店设置" en="Online Store setup"/>
+<kce key="6ca10c1358f0b11105957a29abef1079" cn="移动门店自动接单" en="Online Store autoaccept"/>
+<kce key="b02d99f48eed61c9d23b5f3d796812e4" cn="移动门店管理" en="Online Store MGT"/>
+<kce key="565d4907c9c0ab0e2b75c6575961b1ee" cn="移动门店第三方" en="Online Store 3rd parties"/>
+<kce key="eb07bb4f9c0994bcba767b0a488932f0" cn="移动门店" en="Online Store"/>
 <kce key="7f44c00707bc0e6e5ec234412958d631" cn="移动至" en="Move to"/>
 <kce key="2a9c9998ede97046b968a74a4e2b6fe4" cn="移动收款开通" en="Open mobile money collection"/>
 <kce key="1dfce357f94495737766c9551916762d" cn="移动收款对账概况" en="Reconciliation overview of mobile payment"/>
@@ -1264,7 +1266,7 @@
 <kce key="72e2998c65d6a5ef7e7d419d25264001" cn="积分可抵现" en="Ponints can redeem"/>
 <kce key="fd5f1489a2f65995bb5867a2460ee4d1" cn="积分上限值 单次消费" en="Upperlimit of points one cunsumption"/>
 <kce key="9f68a8079815033b88fcc6601abd6642" cn="积分" en="Points"/>
-<kce key="8b6d9cc8733c3084437bf3557b3f22cc" cn="秒_CN" en="Second"/>
+<kce key="8b6d9cc8733c3084437bf3557b3f22cc" cn="秒_CN" en=""/>
 <kce key="35a5d44446cee5e8a31002f537b2cd62" cn="离线设备" en="Offline device"/>
 <kce key="50d4a8502e0ba5411582c33e29354096" cn="离线" en="Offline"/>
 <kce key="f9d1b28186fe2fecdff1d64a56d5a0bd" cn="票据类型" en="Receipt type"/>
@@ -1363,6 +1365,7 @@
 <kce key="81ec89a2a8c427885150b044cf3b7c71" cn="百" en="Hundred"/>
 <kce key="71fa3bd0e5368dfd7865a5f1c67f4f91" cn="登录成功" en="Log in success"/>
 <kce key="402d19e50fff44c827a4f3b608bd5812" cn="登录" en="Log in"/>
+<kce key="cd6d41f80f22fb77404b94132e2e2c45" cn="畅销指数" en="Bestseller index"/>
 <kce key="dbc85714a6234444a6ba6d793e3a94fd" cn="畅销商品榜" en="Bestseller list"/>
 <kce key="36a4908a557796858a347c063a73ce60" cn="男" en="M"/>
 <kce key="fa668a72b1ae10cd9ecab3162702ccf7" cn="电话客服" en="Hotline"/>
@@ -1415,7 +1418,6 @@
 <kce key="e7c0908c7bcffc853312bc0651ca3950" cn="现金" en="Cash"/>
 <kce key="234ee68d92ec11a7fc00928cb2f66c0b" cn="现有桌台数ld桌" en="No of existing ld tables"/>
 <kce key="95d8b660f85b7e112b29acf8e53469df" cn="现有桌台数0桌" en="No of tables available is 0"/>
-<kce key="1b2a5a146c693df183ac7275ffdd0df6" cn="独立沽清" en="Single"/>
 <kce key="3fea7ca76cdece641436d7ab0d02ab1b" cn="状态" en="Status"/>
 <kce key="ccbb7801eeb1f61b0d4e9282f2c5e645" cn="物流" en="Logistics"/>
 <kce key="41146a88dea8d25be60e377a04976d92" cn="物品金额合计" en="Total amount of items"/>
@@ -1529,7 +1531,6 @@
 <kce key="3a66a3a9844925218d83f9531afdbd9e" cn="法人代表信息" en="Legal representatives info"/>
 <kce key="f5b8c44f66bf2065c15f7472a311c8a9" cn="法人代表人姓名" en="Legal representatives name"/>
 <kce key="e1a437025c22aef16867441f99e52627" cn="法人" en="Legal representatives"/>
-<kce key="eaa0fbbdf3fc1a6dccbfe29c20264936" cn="沽清方式" en="Clear Way"/>
 <kce key="c66d84198303fa9959a8681d5b0fb20e" cn="没有预警商品当前操作不会清空采购车" en="Without warning items the current operation wont empty the shopping cart"/>
 <kce key="04028c492dfbe33ade8cefcf71478382" cn="没有识别到任何菜品请重试" en="No dishes are identified Pls try again"/>
 <kce key="938cf30c8ec60ff468fc91e996a3fc0a" cn="没有识别到任何商品请重试" en="No products are identified Pls try again"/>
@@ -1551,6 +1552,7 @@
 <kce key="df0e2c21bd7ddd4a2c8fa71fd9ecac6d" cn="民办非企业组织" en="Private nonorganization"/>
 <kce key="e69f71bd8974e8ce2724f9102224be2d" cn="每消费" en="Spend"/>
 <kce key="597b9731bde7cbbca9d39dd5a4dba818" cn="每日售卖量" en="Daily sales volume"/>
+<kce key="8efb29ba6805395775bd3344036fd15c" cn="每日售卖" en="Daily sales volume"/>
 <kce key="9e2f894b8db36591e7995f46836b5cec" cn="每天循环售卖" en="Sell daily"/>
 <kce key="bffc296684dcadf0a41508465666e670" cn="每天丨" en="Every day 丨"/>
 <kce key="c785e84a6229c55a1022e5574f7a0bb3" cn="每人收取费用" en="Charge per person"/>
@@ -1738,7 +1740,7 @@
 <kce key="57bf031c52c5329cbc664458990f114f" cn="月总消费" en="Total monthly consumption"/>
 <kce key="805775a782d1b6f7892157684db4162a" cn="月保底目标元" en="Target at the end of the month yuan"/>
 <kce key="9d5a3e4eb293bbe7a61112471f603219" cn="月保底目标" en="Monthly Min target"/>
-<kce key="095544a3ba2e7d84c155ffe6280eae88" cn="月_CN" en="Month"/>
+<kce key="095544a3ba2e7d84c155ffe6280eae88" cn="月_CN" en=""/>
 <kce key="e42b99d59954ce6437e66f416850425a" cn="月" en="Month"/>
 <kce key="bd826ad8a63f5b008cabb5ab26b0c0fb" cn="最终储值余额" en="Final topup balance"/>
 <kce key="6f77d8854f37c18c90e366f8351c197b" cn="最小可设置为1" en="Min No is 1"/>
@@ -1789,6 +1791,7 @@
 <kce key="358c375e29ee56062d12347c7b88e81e" cn="暂无店内收款数据" en="Currently no receivables data"/>
 <kce key="08a3ad884e9265b547b2b97d68c55b75" cn="暂无大类" en="No I category"/>
 <kce key="2a450fc5688966fbdfabf87aef45955e" cn="暂无备注" en="No notes"/>
+<kce key="492b2822382648365d5df37933523aeb" cn="暂无商品数据请切换其他城市查看" en="No product data pls switch to another city to view"/>
 <kce key="e8c3278fbdc5f855e53f5fe02ea3db64" cn="暂无商品排行数据n建议前往商品管理模块创建商品" en="No product ranking data for now nIt is recommended to create products on the Product Management module"/>
 <kce key="9cf5f0383f1b919deaf4271d611fa4b2" cn="暂无商品信息" en="No product info"/>
 <kce key="482c43d7cbb7102e1daeb69af7efe8a6" cn="暂无员工数据哦" en="No employee data"/>
@@ -1840,24 +1843,25 @@
 <kce key="f82e511ce6bdd31025bb4f9f8b5cb43a" cn="明细" en="Details"/>
 <kce key="bc42b4b3f4628e1d62fbe9b1500ac22f" cn="明交接" en="w amount"/>
 <kce key="ffa91be1fb06d95a1cfc3d3d34bf77fc" cn="时间段设置" en="Time period setup"/>
+<kce key="3ff3c762778ac4bda262baf976acac2f" cn="时间段相差不可超过31天" en="The interval cant exceed 31 days"/>
 <kce key="e915ac4b16455471c19bbd0e1c93e6c4" cn="时间段无效请修改" en="Time period is invalid Pls modify"/>
 <kce key="ff6969557d1c0f51ecfad67893fdcd69" cn="时间段00000000代表全天接单时间最多可设置5个时间段接单范围为15000单" en="The time period 00 0000 00 represents the whole day and 5 time periods at most can be set for the time of accepting orders The No of orders can be accepted is 15000"/>
 <kce key="ae20c0110bcd50db01104ab65f58ad4f" cn="时间段" en="Time period"/>
 <kce key="19fcb9eb2594059036dfede5f4ec53e8" cn="时间" en="Time"/>
-<kce key="7834951e3cf644d4dd896821886590e4" cn="时段选择" en="Time period selection"/>
+<kce key="7834951e3cf644d4dd896821886590e4" cn="时段选择" en="Period"/>
 <kce key="4beb58224fbd9f3855283f80a17e378f" cn="时段设置" en="Time period setup"/>
 <kce key="6de97eb2e0a456aaaa960aaf48f1b4f5" cn="时段" en="Period of time"/>
 <kce key="7664327be029166fdfa05a16dc6b617a" cn="时时同云隐私政策" en="Shishitongyun Privacy Policy"/>
 <kce key="a8a84193da99d02affa458faf47ba12b" cn="时时同云科技 成都 有限责任公司" en="Shishi Tongyun Technology Chengdu CoLtd"/>
 <kce key="c20464fe5c6485fc8199e0c41f015180" cn="时时同云用户服务协议" en="Shishitongyun User Service Agreement"/>
 <kce key="1ea50354385971128e9198af0dbd50e4" cn="时时同云用户授权协议" en="Shishitongyun User Authorization Agreement"/>
-<kce key="0880d9b77db98d28ce802434f3252070" cn="时_CN" en="Hour"/>
+<kce key="0880d9b77db98d28ce802434f3252070" cn="时_CN" en=""/>
 <kce key="609b5f0a08dae0e0a7266acbdc2cf8be" cn="时" en="Hour"/>
 <kce key="c6afa558c1c50e6462caa24b6e97bda2" cn="日营业额元" en="Daily turnover"/>
 <kce key="d518775597e32b110f9cf51aeb7f1a4b" cn="日用量参考依据以历史时间段估算单日用量" en="Daily usage reference estimated daily usage based on historical time period"/>
 <kce key="7cc336c684c23165a42f833843fa7978" cn="日期不能大于今天" en="Date cant be later than today"/>
 <kce key="4ff1e74e43a3586339251494117185ad" cn="日期" en="Date"/>
-<kce key="a72033b5c66f2c1fcf6ec82d17121662" cn="日_CN" en="Day"/>
+<kce key="a72033b5c66f2c1fcf6ec82d17121662" cn="日_CN" en=""/>
 <kce key="3edddd85ac2c5e612fb71dbb89e7d1c5" cn="日" en="Day"/>
 <kce key="edeb23016763ea02d473d84b17c3fc7f" cn="无退款" en="No refund"/>
 <kce key="360c83e702dd8ca3683bd8b50d38458c" cn="无识别结果" en="No recognition results"/>
@@ -1887,6 +1891,7 @@
 <kce key="d81bb206a889656035b929cd8bb1ef10" cn="无" en="No"/>
 <kce key="ce3d5f558fe3d2535535f06956833c37" cn="旗舰版" en="Flagship edition"/>
 <kce key="b9598372e9396492fa823d359fe8efd8" cn="新输入确认密码" en="New password entered to confirm"/>
+<kce key="ea105393fbabe3dcdee712d33da64ef9" cn="新订单" en="New orders"/>
 <kce key="2370433c0f12dbc1cd5f49e23947565d" cn="新用户注册" en="New user registration"/>
 <kce key="4f75dc48201bd5ada37206c3b5a26114" cn="新桌台点单" en="Order of new table"/>
 <kce key="31afdcb493aaddce2d8bd5e5dfb70be0" cn="新手机号与原手机号不能相同" en="New phone No cant be the same as previous phone No"/>
@@ -1946,6 +1951,7 @@
 <kce key="40ffdf8f2c1c0eb32bb7945b56ccc931" cn="敏感操作报表" en="Sensitive operation report"/>
 <kce key="bde6f14916e98d2651d312830736cde5" cn="敏感操作" en="Sensitive operation"/>
 <kce key="fdfbc6895127a108fc51127746734f87" cn="放弃等待" en="Cancel waiting"/>
+<kce key="185d5dd1ac4d3fb355f3d30cc35e9d8d" cn="放弃新增" en="Abandon new"/>
 <kce key="5ac2011aeb75fda311b7c73dcf2f78d4" cn="放弃" en="Give up"/>
 <kce key="ed1350b10858b27f1f91706a4ff455e8" cn="改销售信息" en="Change sales info"/>
 <kce key="a643b381cf72702e5eb1685408eec4c7" cn="改属性" en="Change attributes"/>
@@ -2048,7 +2054,7 @@
 <kce key="2f27863e8013382cc2530c21d82a24b1" cn="操作内容" en="Operation contents"/>
 <kce key="f9ac4b2aa6b51d9578551cd06316d81a" cn="操作人" en="Operator"/>
 <kce key="2b6bc0f293f5ca01b006206c2535ccbc" cn="操作" en="Operation"/>
-<kce key="90e95be0edb7276ff220b06b406d5ec5" cn="搭建属于自己的在线移动门店顾客可以在手机微信支付宝app上扫码点餐解决线下点餐排队难题通过社交化传播为您全方位引流顾客" en="Create your own online On Portal Customers can scan code to order on WeChat and Alipay app to solve the problem of offline queuing and attract customers from all directions through social communication"/>
+<kce key="90e95be0edb7276ff220b06b406d5ec5" cn="搭建属于自己的在线移动门店顾客可以在手机微信支付宝app上扫码点餐解决线下点餐排队难题通过社交化传播为您全方位引流顾客" en="Create your own online Online Store Customers can scan code to order on WeChat and Alipay app to solve the problem of offline queuing and attract customers from all directions through social communication"/>
 <kce key="dcfc7b6a845170d3ec313eeed4e3ab3f" cn="搜索支行" en="Search bank branch"/>
 <kce key="b1e81e1dd290d7432ae723aebe068a4f" cn="搜分类" en="Search category"/>
 <kce key="70ea2eec8e2d21b1a29d75ed50b34943" cn="提醒顾客排队时长" en="Remind customer of queue time"/>
@@ -2325,6 +2331,7 @@
 <kce key="628d18d4f9758635eb10e307932dab3a" cn="总营业收入笔" en="Total operating revenues"/>
 <kce key="aed2903c85a0432f25d48c89163d11f6" cn="总营业收入元" en="Total operating income"/>
 <kce key="0d969be94d4b6e3f93aabb1e67d1da6f" cn="总笔数" en="Total orders"/>
+<kce key="9ed7d3adc032f6b78808e7f3786ec9cc" cn="总数" en="Total"/>
 <kce key="b3b2ee514a6442958a302b49774557d9" cn="总收款不含储值消费" en="Total revenue excluding stored value consumption"/>
 <kce key="d97f0de8351634ea427254444a4a1f7c" cn="总收款" en="Total revenue"/>
 <kce key="faea4812be3aa26419fbd3e94ffdae31" cn="总差额" en="Total difference"/>
@@ -2501,7 +2508,7 @@
 <kce key="25f37156d82387ce51fb2322f2773f5c" cn="库存报表" en="Inventory report"/>
 <kce key="0eac8802de53ab10322cd38a72439ee6" cn="库存" en="Inventory MGT"/>
 <kce key="fdb9bbb35e050eeb006ff1be71ac418b" cn="广发银行" en="Guangfa Bank"/>
-<kce key="fe9950b7718269fd6461e907d757efe6" cn="年_CN" en="Year"/>
+<kce key="fe9950b7718269fd6461e907d757efe6" cn="年_CN" en=""/>
 <kce key="465260fe80b0c3338d06194bb7a94446" cn="年" en="Year"/>
 <kce key="fc07df758b14df0dbe15fcbce8864931" cn="平板点餐产品线On Kiosk是一款针对中高端餐厅的前厅点餐场景的点单系统包含开台点餐下单结账自定义设置等业务场景打造完美体验帮助品牌宣传降低经营成本是核心价值主张" en="Product line of ordering through pad  On Kiosk is an ordering system for lobby ordering  in midtohighend restaurants It includes opening tables ordering food placing an order settlement and userdefined settings to create a perfect experience Helping brand promotion and reducing operating costs are the core value"/>
 <kce key="5b036395cd18d2923b4478e223c24eaa" cn="平安银行" en="Ping An Bank"/>
@@ -2722,6 +2729,7 @@
 <kce key="0ca8ab467af598b0fa97af4e935eba10" cn="如暂无设备可" en="If no equipment is available you can"/>
 <kce key="e033bf99093776e0a31c4a25b155188d" cn="如何绑定" en="How to bind"/>
 <kce key="679be62f72dc56495e0967564d20411d" cn="如何提升" en="How to improve"/>
+<kce key="7b6850815dd93a123ec45e6c4012353c" cn="如何叫号" en="How to call number"/>
 <kce key="974b23f3907a3de5eead8b4a5355eb7e" cn="好的需要加菜的时候可以直接对小On说哦祝您就餐愉快" en="OK when you need to add food you can directly tell little On Have a nice meal"/>
 <kce key="33687ed8bbc6a2a820d9faacaead11d5" cn="好的重新登录" en="OK Log in again"/>
 <kce key="04b5d3642fbb6c2f335f922f02b7b519" cn="好的请说出您想添加的菜品" en="Ok Pls say what you want to add"/>
@@ -2759,6 +2767,7 @@
 <kce key="1ca64e51fd3ddabb0ff955399296f1ea" cn="多少积分" en="How many points"/>
 <kce key="41d8590d5db5b3ac36a60f4aed3051fb" cn="多外卖平台对接收银机自动接单" en="Multitakeaway platform connection Accepting orders through cash register automatically"/>
 <kce key="a358cbd3debf25c5c4b66205244b3aaa" cn="多个菜品组合如汉堡可乐薯条" en="A combination of dishes such as burger  cola  fries"/>
+<kce key="7e1d3c250efde919849e67488afd44cb" cn="外带" en="Takeout"/>
 <kce key="cd59e07949c7bbf245b98b037fd8058d" cn="外卖订单统计" en="Takeaway order statistics"/>
 <kce key="537efc66d0b15ec59576c5cbab115e2b" cn="外卖订单" en="Takeaway order"/>
 <kce key="9bda251a5545dc76d7aefee2b643f785" cn="外卖管理" en="Takeaway MGT"/>
@@ -2790,7 +2799,7 @@
 <kce key="9e5ffa068ed435ced73dc9bf5dd8e09c" cn="基本信息" en="Basic Info"/>
 <kce key="ecac77a617835e41f75602ee92029e45" cn="坪效" en="Average sales per unit area"/>
 <kce key="7084eb1b158c90d066fd8d4ddd4cb2a9" cn="块" en="Piece"/>
-<kce key="e2a9c08046f5caabbf1df43a7ff77ec6" cn="均为营业日时间" en="All of them are opening hours"/>
+<kce key="e2a9c08046f5caabbf1df43a7ff77ec6" cn="均为营业日时间" en="By business hours"/>
 <kce key="491955d83952385adf08b63411464e1f" cn="在线设备 ld  ld" en="Online devices ld  ld"/>
 <kce key="c5e0704e0c5070fc3d5c217d8bc8e575" cn="在线设备 128" en="Online equipment 128"/>
 <kce key="92e94aedf5c9ea860e405d0059f0c0a8" cn="在线客服售后服务" en="Online customer service Aftersales service"/>
@@ -2885,6 +2894,7 @@
 <kce key="d9a9d887df8e7d6b416231972533abd4" cn="售后服务" en="Aftersales service"/>
 <kce key="e363e8e98a1e17a3a73d5bac906e0ca0" cn="售后政策" en="Aftersales policy"/>
 <kce key="0820d78f385cc0ce88fd949bae2cf092" cn="售后历史" en="Aftersales history"/>
+<kce key="2ed0ade94a311f0626994cbb2e58a045" cn="售卖量" en="Sales volume"/>
 <kce key="199a168c17bc77a46972854b98b4b121" cn="售卖单位" en="Sales unit"/>
 <kce key="20b1f9a55a10884926791632ab7a47c2" cn="售卖单价" en="Unit price"/>
 <kce key="b793d3f0f32b6961a0736b07d89cf3b6" cn="售卖中" en="On sale"/>
@@ -2905,7 +2915,7 @@
 <kce key="a74ccc6e406daec4575d2a855e2b72f9" cn="咨询" en="Consult"/>
 <kce key="12cb29c1b94ae4d2eb21fbcb359475c1" cn="呼叫客户" en="Call customer"/>
 <kce key="77f5631af26f40180fd12c24f2efff93" cn="呼叫" en="Call"/>
-<kce key="8264dcdf46f68dd08e8a21c9c3e4f09a" cn="周_CN" en="Week"/>
+<kce key="8264dcdf46f68dd08e8a21c9c3e4f09a" cn="周_CN" en=""/>
 <kce key="a657f46f5bb00961adfae80d12e41b3d" cn="周" en="Week"/>
 <kce key="a64a69665bb261d9c280f49836d9c244" cn="员工账号" en="Employee account"/>
 <kce key="b47af7eb74494859271896ae40aaf015" cn="员工详情" en="Employee details"/>
@@ -2943,7 +2953,7 @@
 <kce key="c20cba8992159eaa14a7ce42e77f5e00" cn="可选" en="Optional"/>
 <kce key="b0e4285c6dff81ce61daa1cc2dc5fafa" cn="可连接" en="Able to connect"/>
 <kce key="4ca35672e8fe902b30f9a546c0ada48e" cn="可识别商品名称价格单位等基本信息 为了识别准确请保证图片清晰" en="Basic info such as product name price unit etc can be identified In order to identify them accurately pls ensure that the picture is clear"/>
-<kce key="d10e4b01ebb325a5cc866284c007cea5" cn="可设置门店排队取号规则设置成功后将在门店收银机和移动门店的排队功能中生效" en="Able to set up the rule of queue and No taking The setup will be applied to the queue function of cash register and On Portal"/>
+<kce key="d10e4b01ebb325a5cc866284c007cea5" cn="可设置门店排队取号规则设置成功后将在门店收银机和移动门店的排队功能中生效" en="Able to set up the rule of queue and No taking The setup will be applied to the queue function of cash register and Online Store"/>
 <kce key="55247ede4307953f99ca26aed80ef644" cn="可设置常用的整单备注点餐操作时可直接点选无需手动输入" en="You can set up common notes for the whole order You can directly click when ordering without manual input"/>
 <kce key="6a430716b9d3a3f8ecc7a690d30b4cd4" cn="可设置小桌大桌等队列确认人数范围再选可容纳顾客的桌台" en="Able to set up queue for small table and large table Pls confirm No of Pax before selecting a table"/>
 <kce key="2fc778ea98be39c4e485090051d139f3" cn="可申请数" en="No of application"/>
@@ -3156,7 +3166,7 @@
 <kce key="1c398ce19e1215f22f050e5cdedcf0c6" cn="分时段" en="Time period"/>
 <kce key="2dfa4dd10ae63dbaeb7f790046757939" cn="分数落后于同行快来赶上吧" en="Your score lags behind competitors Hurry up to catch up"/>
 <kce key="398570128ea0c5c2640f0de3df38d293" cn="分值ld" en="Score ld"/>
-<kce key="856408f824bdc54af4ae1d51b6104a23" cn="分_CN" en="Minute"/>
+<kce key="856408f824bdc54af4ae1d51b6104a23" cn="分_CN" en=""/>
 <kce key="0773f76e0d8c3380b5b0f8013f464e9b" cn="分 n每个积分抵现元" en="points nRedeem  per  points"/>
 <kce key="1df5ba4e666d4dd9acd912514742faed" cn="分 n不能使用积分抵现" en="points nCant use points to redeem cash"/>
 <kce key="daf783c8cdf97643b4d2b4ec6e5b8f21" cn="分" en="Minute"/>
@@ -3191,7 +3201,6 @@
 <kce key="afc2241a05f6c03747f06640b0206eb9" cn="其他银行" en="Other banks"/>
 <kce key="7bc50fb4c9e45942f8cf7ba100933ecd" cn="其他管理" en="Other MGT"/>
 <kce key="ed48fe3b35c9536096856cc81fa59ab9" cn="其他收支" en="Other revenues and budgets"/>
-<kce key="b059f94af8c65a5847be578b6079ec95" cn="其他优惠元" en="Other offers yuan"/>
 <kce key="407da1aca78e4c2f246f0f2e46c9ab0b" cn="其他 2f" en="Other  2f"/>
 <kce key="0d98c74797e49d00bcc4c17c9d557a2b" cn="其他" en="Other"/>
 <kce key="deea1124b840309beeea7f3daaa07654" cn="兴业银行" en="Industrial Bank"/>
@@ -3395,6 +3404,8 @@
 <kce key="03a76a3c42d9933371a801b75e389db9" cn="会员等级d" en="Member level d"/>
 <kce key="6c158301c7bdc9338d1125b7a731c46d" cn="会员等级" en="Member level"/>
 <kce key="672acdd28dddb082bd964c53fd7d21a3" cn="会员积分获取与抵现按照比例进行" en="Member points shall be obtained and redeemed in proportion"/>
+<kce key="e4aba631f4058a155acb3d0d649c3026" cn="会员积分获取" en="Points accumulated by members"/>
+<kce key="d50e854469649499aab1073ebe9262c7" cn="会员积分消耗" en="Points consumed by members"/>
 <kce key="b6531c01f6a919842fc6992ed22fae43" cn="会员积分定期清零" en="Regular clearing of member points"/>
 <kce key="f75eb88290264cb06b2f04118f29f0c9" cn="会员积分" en="Members points"/>
 <kce key="83e581235b3ecb549c135738f73a177f" cn="会员登录" en="Member login"/>
@@ -3409,6 +3420,7 @@
 <kce key="de47534d5ad1b0e827f9f8e36bfaa0c9" cn="会员权益" en="Membership privilege"/>
 <kce key="fd72a4aab094fad64f8a3ae573a87f32" cn="会员服务" en="Member services"/>
 <kce key="70bdfea301a22fc404398d178d564fd4" cn="会员日" en="Member day"/>
+<kce key="b05f28ad341d8356d760b3f9fa0031c8" cn="会员新增数量" en="No of new members"/>
 <kce key="a640eb0005fe4ea7a913722873dbbe61" cn="会员数量" en="Number of members"/>
 <kce key="23d9b17d9cfdb2dff19b825c4ccc4bd9" cn="会员数据概览" en="Member data overview"/>
 <kce key="44b827df2047f87c74d02bdb8171d601" cn="会员数据" en="Member data"/>
@@ -3440,10 +3452,10 @@
 <kce key="2cdc4cc1c2e07ec1123398a04605bdb5" cn="会员 000" en="Member  000"/>
 <kce key="8eb055a5374ab109c8f6e13af262d086" cn="会员 0" en="Member 0"/>
 <kce key="4d9dd5e4987503f3e84976a233398d5a" cn="会员" en="Members"/>
-<kce key="616388c89202b6deb6eefff6c24cb672" cn="优惠金额必须小于销帐金额" en="Preferential amount must be less than amount of chargeoffs"/>
+<kce key="a9753a49c2be3c86c4a9e669426fe067" cn="优惠金额必须小于销账金额" en="Preferential amount must be less than amount of chargeoffs"/>
 <kce key="405aad6c2a47d520ec6b4272e3d9516a" cn="优惠金额必须小于订单金额" en="Discount amount must be less than amount of order"/>
 <kce key="3f6302431287b577a72ffd1d0e216de0" cn="优惠金额必须大于0" en="Discount amount must be greater than 0"/>
-<kce key="685cb82496ca57bf4ba55293ff8b370e" cn="优惠金额大于销帐金额" en="Discount amount is greater than chargeoffs amount"/>
+<kce key="9db59cec0e6d4fb1d4f42c1367c85515" cn="优惠金额大于销账金额" en="Discount amount is greater than chargeoffs amount"/>
 <kce key="1632fa19d4dd5c3821621dc3c14bf79f" cn="优惠金额不能大于订单金额" en="Discount amount cant exceed order amount"/>
 <kce key="5b921aecfcb790c6f9aeffc96ab3731b" cn="优惠金额" en="Preferential amount"/>
 <kce key="a6641bb0b5979205749801f4f1e1a936" cn="优惠概况" en="Offer overview"/>
@@ -3647,6 +3659,7 @@
 <kce key="7c1fc6aed9a72278a0215dc465f8d71e" cn="不允许给自己转账" en="Not allowed to transfer money to yourself"/>
 <kce key="de3afe8ef1b27bd80a1a60ba0f4ee719" cn="不允许提现" en="No withdrawals allowed"/>
 <kce key="e06828f4ffc650470f7de7ec28e080c3" cn="不允许" en="Not allowed"/>
+<kce key="44b0a938f7110bd625cd5a1340957b2d" cn="不保存" en="do not save"/>
 <kce key="693f076bf6da494ec77e1ca37a7a4574" cn="下降指数" en="Decline index"/>
 <kce key="4b7e871ffefdc0e837515875ed14c062" cn="下载时间和桌台个数有关请耐心等候" en="Download time is related to the No of tables Pls be patient"/>
 <kce key="b505f0c980408137d9a49cf50f7e5037" cn="下载兼容版本" en="Download compatible version"/>

@@ -4,7 +4,9 @@ MD5 (com_keruyun_android_android_crop_images_1_2_20_aar.xml___crop_images_divide
 
 """
 import re
-from org.ith.learn.util.TUtils import read_xml_as_kce_list
+
+from org.ith.learn.OhMyEXCEL import excel_to_xml
+from org.ith.learn.util.TUtils import read_xml_as_kce_list, highlight, auto_escape, auto_transascii10, KCEBean
 
 
 def sort_by_value(d):
@@ -109,63 +111,86 @@ def write_pics_desc(to_write_list):
     workbook.save('path_of_excel.xlsx')
 
 
+def gener_tweak():
+    new_en = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/docs/0514_swxlsx_2020_05_14_16_40_48_english.xml'
+    old_en = '/Users/toutouhiroshidaiou/Downloads/google/2020_05_10_21_54_18__english.xml'
+
+    new_kce_list = read_xml_as_kce_list(new_en)
+    old_kce_list = read_xml_as_kce_list(old_en)
+
+    count = 0
+
+    to_write_list = list()
+
+    for kce_new in new_kce_list:
+        for old in old_kce_list:
+            if kce_new.key == old.key:
+                kce_new.cn = auto_escape(kce_new.cn)
+                kce_new.cn = auto_transascii10(kce_new.cn)
+                old.cn = auto_escape(old.cn)
+                old.cn = auto_transascii10(old.cn)
+                if kce_new.cn != old.cn:
+                    print(kce_new.key, highlight(kce_new.cn, 2), old.cn)
+                    count += 1
+                    to_write_list.append(kce_new)
+
+    print('old_en ', len(old_kce_list), ', new en ', len(new_kce_list), ',count = ', count)
+
+    from org.ith.learn.util.PXML import write_kce_to_path
+    write_kce_to_path(to_write_list, './new_tweaked_again.xml')
+
+
 """
-重复出现的图片下沉mobileui
-哪个模块 哪个图片需要被下沉
-
-图片出现在各个子模块中 大于1次 即需要被下沉的
-
-按频率统计
-duplicated  2 times, count 160
-duplicated  3 times, count 88
-duplicated  4 times, count 41
-duplicated  5 times, count 31
-duplicated  6 times, count 18
-duplicated  7 times, count 12
-duplicated  8 times, count 9
-duplicated  9 times, count 7
-duplicated 10 times, count 6
-duplicated 11 times, count 3
-duplicated 12 times, count 2
-duplicated 13 times, count 2
-duplicated 14 times, count 2
-duplicated 15 times, count 1
-
-
-Process finished with exit code 0
-
+ total_eng_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/docs/i18n/english.xml'
+    tweak_path = 'new_tweaked_again.xml'
+    kce_en_list = read_xml_as_kce_list(tweak_path)
+    total_list = read_xml_as_kce_list(total_eng_path)
+    for total in total_list:
+        for kce in kce_en_list:
+            if total.key == kce.key:
+                total.cn = kce.cn
+    from org.ith.learn.util.PXML import write_kce_to_path
+    write_kce_to_path(total_list, './new_total_eng.xml')
 
 """
+
+
+def replaceAll(str_input, to_replace, replace_with):
+    while str_input.find(to_replace) > -1:
+        str_input = str_input.replace(to_replace, replace_with)
+
+    return str_input
 
 
 def main():
-    file_path = '/Users/lightman_mac/company/keruyun/oh_my_python/StudyPython/docs/km_pics/pic_desc.txt'
-    with open(file_path, 'r') as rin:
-        pic_md5_dict = dict()
-        from collections import Counter
-        list_of_md5 = list()
-        lines = rin.readlines()
-        for line in lines:
-            sp = line.split(' ')
-            items = list()
-            for s in sp:
-                if len(s) > 0:
-                    items.append(s.strip())
-            list_of_md5.append(items[2])
+    pic_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/docs/km_pics/pic_desc.txt'
+    list_of_kce = list()
+    with open(pic_path, 'r') as rin:
+        all_lines = rin.readlines()
+        for line in all_lines:
+            spt = line.split(' ')
+            its = list()
+            for s in spt:
+                if len(s.strip()) > 0:
+                    its.append(s)
+            list_of_kce.append(KCEBean(key=its[0], cn=its[1], en=its[2]))
 
-        print(len(list_of_md5))
-        result = Counter(list_of_md5)
+    list_of_kce = sorted(list_of_kce)
 
-        for i in range(2, 14, 1):
-            c = 1
-            pics = list()
-            for k, v in result.items():
-                if v >= i:
-                    # print(k, v)
-                    c += 1
-                    pics.append(k)
-            # print('dup ', i, ', count ', c)
-            print('duplicated {:>2} times, count {:>4} {}'.format(i, len(pics), 'pics'))
+    out_line = list()
+    keys = set()
+
+    for kce in list_of_kce:
+        line = '{:<40} {:<50} {}'.format(kce.key, kce.cn, kce.en)
+        out_line.append(line)
+        keys.add(kce.en)
+
+    with open('./here.txt', 'w')as rout:
+        rout.writelines(out_line)
+
+    print('total pic ', len(out_line), ',and unique ', len(keys))
+
+    pass
 
 
 if __name__ == '__main__':
