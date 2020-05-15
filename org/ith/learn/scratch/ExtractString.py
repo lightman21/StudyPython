@@ -99,13 +99,13 @@ libs_need_skip = [
 
 
 def main():
-    # daily_work()
-    do_extract()
+    daily_work()
+    # do_extract()
 
 
 def daily_work():
-    lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
-    # lib_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/.idea/libraries'
+    # lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
+    lib_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/.idea/libraries'
     now_date = time.strftime("%Y_%m_%d", time.localtime())
     out_dir = './tmp/auto_extract_work/' + now_date + os.sep
     aar_path_dict = gener_aar_path_dict(lib_path)
@@ -121,8 +121,8 @@ def daily_work():
 
 
 def do_extract():
-    lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
-    # lib_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/.idea/libraries'
+    # lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
+    lib_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/.idea/libraries'
     aar_path_dict = gener_aar_path_dict(lib_path)
     # dest_root = '/tmp/kmobile/'
     dest_root = '../../../../docs/km_pics/kmobile/'
@@ -162,8 +162,9 @@ def do_extract():
                 # simple_aar_name  pkg_name pic_name  md5:xxx
 
                 new_line = '\n' if last_simple_aar_name == simple_aar_name else '\n' * 1
-                pid_desc = '{:<30} {:<40} {}  {:<50}{}'.format(simple_aar_name, pic_name, pic_md5, full_path_of_pic,
-                                                               new_line)
+                # pid_desc = '{:<30} {:<40} {}  {:<50}{}'.format(simple_aar_name, pic_name, pic_md5, full_path_of_pic,new_line)
+                pid_desc = '{:<30} {:<40} {}{}'.format(simple_aar_name, pic_name, pic_md5, new_line)
+
                 pic_desc_list.append(pid_desc)
                 last_simple_aar_name = simple_aar_name
 

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="oc_serial_number">流水号-</string>
+	<string name="report_amount_received_format">实收金额(%1$s)</string>
+	<string name="report_discrepant_rounding_format">四舍五入(%1$s)</string>
+	<string name="report_earn_more_than_planned_format">溢收(%1$s)</string>
+	<string name="report_not_count_the_small_change_format">抹零(%1$s)</string>
+	<string name="report_order_source_total_amount_format">订单总金额(%1$s)</string>
+	<string name="report_return_dish_format">退菜(%1$s)</string>
+	<string name="report_return_order_format">退货(%1$s)</string>
+	<string name="report_third_amount_received_abbreviation_format">实收(%1$s)</string>
+	<string name="report_third_order_total_amount_abbreviation_format">总额(%1$s)</string>
+	<string name="report_total_amount_format">小计(%1$s)</string>
+	<string name="report_total_discount_amount_formated">优惠总额(%1$s)</string>
+	<string name="report_total_discrepant_amount_format">总差额(%1$s)</string>
+	<string name="report_total_fee_amount_format">累计手续费(%1$s)：</string>
+	<string name="report_total_transaction_amount_format">累计交易总金额(%1$s)：</string>
+</resources>

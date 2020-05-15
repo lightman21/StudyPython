@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="amount_not_greater_order">開票金額不能大於訂單金額</string>
+	<string name="back_data_error">返回數據錯誤</string>
+	<string name="cache_data_invaild">緩存數據無效</string>
+	<string name="connect_network_error">網絡連接失敗，請檢查</string>
+	<string name="edit">編輯</string>
+	<string name="input_correct_amount">請輸入正確的開票金額</string>
+	<string name="invoice">電子發票</string>
+	<string name="invoice_amount">開票金額：</string>
+	<string name="invoice_code">編碼</string>
+	<string name="invoice_project">開票項目</string>
+	<string name="invoice_tax_rate">稅率</string>
+	<string name="loading_config">加載中...</string>
+	<string name="network_error">網絡出現問題，請重新連接後再嘗試!</string>
+	<string name="not_function">未開通該功能</string>
+	<string name="order_amount">訂單金額：%1$s%2$.2f</string>
+	<string name="params_exception">參數異常，請重試</string>
+	<string name="peiliao">配料:</string>
+	<string name="revoke_fail">作廢失敗</string>
+	<string name="save">保存</string>
+	<string name="tb_jialiao_str">加料</string>
+	<string name="tb_memo_str">備註</string>
+	<string name="tb_peiliao">配料</string>
+	<string name="tb_zuofa_str">做法</string>
+	<string name="tradebusiness_cancel">取消</string>
+	<string name="tradebusiness_confirm">確定</string>
+	<string name="tradebusiness_loading">正在加載...</string>
+</resources>

@@ -113,7 +113,8 @@ def curl_trans(str_input):
 
 
 if __name__ == '__main__':
-    file_in = '/Users/lightman_mac/company/keruyun/oh_my_python/StudyPython/docs/pure/all_china_53510_apk_all_cn.xml'
+
+    file_in = '/tmp/th_strings.xml'
 
     with open(file_in, 'r') as rin:
         lines = rin.readlines()
@@ -126,5 +127,5 @@ if __name__ == '__main__':
             print(type(transed), transed)
             after_lines.extend(transed)
 
-        with open('transed.xml', 'w') as rout:
+        with open('here_transed.xml', 'w') as rout:
             rout.writelines(after_lines)

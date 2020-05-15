@@ -136,7 +136,16 @@ def pull_remote_dict_as_kce_list():
 def main():
     ch_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/docs/0514_swxlsx_2020_05_14_16_40_48_china.xml'
     eng_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/ith/learn/work/new_total_eng.xml'
-    check_apk_kce(cn_path=ch_path, en_path=eng_path)
+    # check_apk_kce(cn_path=ch_path, en_path=eng_path)
+
+    # gener_excel_by_apk(
+    #     '/Users/toutouhiroshidaiou/Downloads/google/OnMobile-official-5.36.0-SNAPSHOT-armeabi-v7a-envCiTest-2020-05-15-08-06-54.apk')
+
+    # pull_remote_dict_as_kce_list()
+
+    # gener_excel_by_apk(
+    #     '/Users/toutouhiroshidaiou/Downloads/google/5_25_5.36.0-SNAPSHOT-armeabi-v7a-envGrd-2020-05-25-10-39-54.apk')
+
 
     pass
 
@@ -162,7 +171,8 @@ def gener_excel_by_apk(path_of_apk):
     path_of_china = gener_all_cn_by_apk(path_of_apk)
     path_of_english = get_all_english_path_by_apk(path_of_apk)
     print('in gener_excel_by_apk ', 'pwd ', os.curdir)
-    tmpxml_to_excel(path_of_cn=path_of_china, path_of_en=path_of_english, excel_path='./Andi18n_535_0.xlsx')
+    out_path = path_of_apk.split('/')[-1].replace('-', '_') + '.xlsx'
+    tmpxml_to_excel(path_of_cn=path_of_china, path_of_en=path_of_english, excel_path=out_path)
     print('total cost ', (time.time() - start), ' s')
     pass
 

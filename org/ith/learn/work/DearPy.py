@@ -6,7 +6,8 @@ MD5 (com_keruyun_android_android_crop_images_1_2_20_aar.xml___crop_images_divide
 import re
 
 from org.ith.learn.OhMyEXCEL import excel_to_xml
-from org.ith.learn.util.TUtils import read_xml_as_kce_list, highlight, auto_escape, auto_transascii10, KCEBean
+from org.ith.learn.util.TUtils import read_xml_as_kce_list, highlight, auto_escape, auto_transascii10, KCEBean, \
+    open_excel_as_list, to_android_string
 
 
 def sort_by_value(d):
@@ -155,14 +156,7 @@ def gener_tweak():
 """
 
 
-def replaceAll(str_input, to_replace, replace_with):
-    while str_input.find(to_replace) > -1:
-        str_input = str_input.replace(to_replace, replace_with)
-
-    return str_input
-
-
-def main():
+def deal_pics():
     pic_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/docs/km_pics/pic_desc.txt'
     list_of_kce = list()
     with open(pic_path, 'r') as rin:
@@ -187,8 +181,21 @@ def main():
 
     with open('./here.txt', 'w')as rout:
         rout.writelines(out_line)
-
     print('total pic ', len(out_line), ',and unique ', len(keys))
+
+
+def main():
+    path = '/Users/toutouhiroshidaiou/Desktop/already.xlsx'
+    kce_list = open_excel_as_list(path)
+    for kce in kce_list:
+        kce.en = auto_escape(kce.en)
+        kce.en = auto_transascii10(kce.en)
+        ss = to_android_string(kce, env='cn')
+        print(ss)
+
+    from org.ith.learn.util.PXML import write_kce_to_path
+    write_kce_to_path(kce_list, './cn_of_yong.xml')
+    write_kce_to_path(kce_list, './en_of_yong.xml', key='en')
 
     pass
 

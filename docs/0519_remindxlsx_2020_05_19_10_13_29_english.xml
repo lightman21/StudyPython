@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="report_amount_received_format">Actual receipt(%1$s)</string>
+	<string name="report_third_amount_received_abbreviation_format">Actual receipt(%1$s)</string>
+	<string name="report_total_fee_amount_format">Cumulative service fee(%1$s)：</string>
+	<string name="report_total_transaction_amount_format">Cumulative transaction amount(%1$s)：</string>
+	<string name="report_not_count_the_small_change_format">Not count small changes(%1$s)</string>
+	<string name="report_order_source_total_amount_format">Order totals(%1$s)</string>
+	<string name="report_earn_more_than_planned_format">Overpaid amount(%1$s)</string>
+	<string name="report_return_dish_format">Return dishes(%1$s)</string>
+	<string name="report_return_order_format">Return goods%1$s)</string>
+	<string name="report_discrepant_rounding_format">Rounding(%1$s)</string>
+	<string name="oc_serial_number">S/N-</string>
+	<string name="report_total_amount_format">Sub-total(%1$s)</string>
+	<string name="report_third_order_total_amount_abbreviation_format">Total amount(%1$s)</string>
+	<string name="report_total_discrepant_amount_format">Total difference(%1$s)</string>
+	<string name="report_total_discount_amount_formated">Total discount amount(%1$s)</string>
+</resources>

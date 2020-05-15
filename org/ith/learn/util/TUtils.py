@@ -22,7 +22,8 @@ skip_key_prefix = [
     'key_liveness_',
     '_uuid',
     'hello_world',
-    'path_password_'
+    'path_password_',
+    'fgh_'
 ]
 
 """
@@ -114,6 +115,12 @@ def write_to_excel(to_write_list, path_of_excel):
 
     # name_where_dict[kce.key] = human_name
     name_w_dict = gener_name_where()
+
+    print('>>>>>> ', os.path.abspath(__file__), '>>>>>>', __file__)
+
+    if len(name_w_dict) == 0:
+        raise Exception("dict empty")
+
     print(highlight('=======================', 3), name_w_dict)
 
     for row, item in enumerate(to_write_list):
@@ -503,6 +510,12 @@ def make_sure_file_exist(path_of_file, just_dir=False):
 
             with open(path_of_file, mode='w', encoding='utf-8') as rout:
                 print('文件不存在,创建', path_of_file)
+
+
+def to_android_string(kce, env='cn'):
+    value = kce.cn if env == 'cn' else kce.en
+    result = '\t<string name="{}">{}</string>'.format(kce.key, value)
+    return result
 
 
 if __name__ == '__main__':
