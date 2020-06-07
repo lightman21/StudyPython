@@ -58,7 +58,7 @@ def gener_name_where():
     total_dir = '/Users/lightman_mac/company/keruyun/oh_my_python/StudyPython/org/ith/learn/scratch/tmp' \
                 '/auto_extract_work/2020_05_13/'
 
-    re_total_dir = '../scratch/tmp/auto_extract_work/2020_05_19/'
+    re_total_dir = '../scratch/tmp/auto_extract_work/2020_06_07/'
     total_dir = re_total_dir
 
     # /Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/ith/learn/tmp/auto_extract_work/2020_05_15
