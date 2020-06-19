@@ -134,16 +134,11 @@ def pull_remote_dict_as_kce_list():
 
 
 def main():
-    ch_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/docs/0514_swxlsx_2020_05_14_16_40_48_china.xml'
-    eng_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/ith/learn/work/new_total_eng.xml'
-    # check_apk_kce(cn_path=ch_path, en_path=eng_path)
-    # new_xml = '/Users/lightman_mac/bk_apk_envGrd/6.0/tht/6_0/res/values/strings.xml'
-    # old_xml = '/Users/lightman_mac/bk_apk_envGrd/6.0/tht/536/res/values/strings.xml'
-    # diff_xml(new_path_xml=new_xml, old_path_xml=old_xml)
+    from org.ith.learn.scratch.ExtractString import daily_work
+    daily_work()
+    gener_excel_by_apk('/Users/toutouhiroshidaiou/Downloads/google/OnMobile-official-6.2.10.apk')
 
-    path = '/private/tmp/diffapk/_diff_stringsstrings.xml'
-    excel_path = "./6_0_diff.xlsx"
-    write_to_excel(read_xml_as_kce_list(path), excel_path)
+
 
     pass
 

@@ -17,7 +17,8 @@ def main(argv=None):
     if argv is None:
         argv = sys.argv
 
-    excel_to_xml('/Users/toutouhiroshidaiou/Downloads/0519_remind.xlsx')
+    # gener_excel_by_apk('/Users/toutouhiroshidaiou/Downloads/google/OnMobile-official-6.2.10-SNAPSHOT-armeabi-v7a-envGrd-2020-07-22-09-30-20.apk')
+    gener_excel_by_apk('/Users/toutouhiroshidaiou/Downloads/google/OnMobile-official-6.2.10.apk')
 
     # gener_excel_by_apk(
     #     '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/build/outputs/apk/official/envGrd/app-official-armeabi-v7a-envGrd.apk')

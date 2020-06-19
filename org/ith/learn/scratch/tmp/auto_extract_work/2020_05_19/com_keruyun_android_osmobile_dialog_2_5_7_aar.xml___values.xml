@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-	<string name="os_mobile_dialog_cancel">取消</string>
-	<string name="os_mobile_dialog_confirm">确定</string>
-	<string name="os_mobile_dialog_loading">正在加载…</string>
-</resources>

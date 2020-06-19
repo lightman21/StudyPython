@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-	<string name="api_flavor_os_ci_test">CI测试</string>
-	<string name="api_flavor_os_dev">开发</string>
-	<string name="api_flavor_os_gld">灰度</string>
-	<string name="api_flavor_os_productive">正式</string>
-	<string name="api_flavor_os_productive_launcher">正式L</string>
-	<string name="api_flavor_os_test">测试</string>
-</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="qr_pic_flash_off">关闭闪光灯</string>
+	<string name="qr_pic_flash_on">打开闪光灯</string>
+	<string name="third_pay_abort_confirm">确认放弃此次结账?</string>
+	<string name="third_pay_continue_wait">继续等待</string>
+	<string name="third_pay_data_error">数据错误</string>
+	<string name="third_pay_generate_paycode_pic_fail">生成二维码失败</string>
+	<string name="third_pay_generate_sign_failed">生成签名失败!</string>
+	<string name="third_pay_not_valid_pay_code">不是有效付款码</string>
+	<string name="third_pay_ordering_repeat_hint">该笔订单已在订单中心生成，无法重复提交，请在桌面POS的订单中心进行查看与操作</string>
+	<string name="third_pay_out_page">离开本页</string>
+	<string name="third_pay_pay">支付</string>
+	<string name="third_pay_pay_code">付款码</string>
+	<string name="third_pay_pay_setting_tips">请到后台配置相关支付方式</string>
+	<string name="third_pay_paymode_weixin">微信</string>
+	<string name="third_pay_paymode_zfb">支付宝</string>
+	<string name="third_pay_please_input_password">\"请提示用户输入支付密码\"</string>
+	<string name="third_pay_qr_code_hint">请顾客扫一扫收款码，向我付款</string>
+	<string name="third_pay_qr_hint">请顾客出示收款码\\n将顾客的付款码放入扫描框内</string>
+	<string name="third_pay_qr_pic_pay">收款码付款</string>
+	<string name="third_pay_qr_scan_error_retry">支付异常，请重新扫描二维码</string>
+	<string name="third_pay_recharge_failed_tips">支付成功，充值金额写入失败!</string>
+	<string name="third_pay_recharge_zero_tip">充值金额必须大于0元.</string>
+	<string name="third_pay_scan_pay">扫码付</string>
+	<string name="third_pay_scan_qr_code_failed">扫描二维码失败</string>
+	<string name="third_pay_scan_scan">扫一扫</string>
+	<string name="third_pay_should_getamount">应收金额</string>
+	<string name="thirdpay_receive_payment_fail">收款失败</string>
+</resources>

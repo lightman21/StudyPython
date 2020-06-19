@@ -100,12 +100,11 @@ libs_need_skip = [
 
 def main():
     daily_work()
-    # do_extract()
 
 
 def daily_work():
-    lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
-    # lib_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/.idea/libraries'
+    # lib_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/.idea/libraries'
+    lib_path = '/Users/toutouhiroshidaiou/keruyun/proj/OnMobile-Android/.idea/libraries'
     now_date = time.strftime("%Y_%m_%d", time.localtime())
     out_dir = './tmp/auto_extract_work/' + now_date + os.sep
     aar_path_dict = gener_aar_path_dict(lib_path)

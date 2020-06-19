@@ -86,7 +86,12 @@ _de_skip_key_list = ['leak_canary_', 'key_liveness_', 'title_activity_']
 
 
 def main():
-    diff()
+    # path = '/Users/toutouhiroshidaiou/Downloads/trans_Kmobile_Android_6_0.xlsx'
+    # excel_to_xml(path, './Trans6_0.xml')
+    all_en = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/mobile-storage/translate/kmobile/english.xml'
+    kce_all = read_xml_as_kce_list(all_en)
+    write_kce_to_path(kce_all,all_en)
+
 
 
 def write_to_kce(list_of_kce, path_of_dest):

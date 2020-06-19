@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-	<string name="app_name">qrCode</string>
-	<string name="open_camera_fail">打开相机失败，请检查权限并重试</string>
-	<string name="qrcode_cancel">取消</string>
-	<string name="qrcode_setting">去设置</string>
-	<string name="scan_text">将条码放入框内即可自动扫描</string>
-</resources>

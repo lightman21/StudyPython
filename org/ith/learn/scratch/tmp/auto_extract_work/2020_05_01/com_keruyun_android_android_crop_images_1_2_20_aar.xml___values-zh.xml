@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-	<string name="crop_images_done">完成</string>
-	<string name="crop_images_pick_error">无效的图片</string>
-	<string name="crop_images_saving">正在保存照片…</string>
-	<string name="crop_images_wait">请等待…</string>
-	<string name="tv_crop_images_text_hint">请触摸边框线条选择裁剪区域</string>
-</resources>

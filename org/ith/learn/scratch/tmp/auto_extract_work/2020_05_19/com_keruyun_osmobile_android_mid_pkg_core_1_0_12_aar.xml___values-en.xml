@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-	<string name="api_flavor_os_ci_test">CI test</string>
-	<string name="api_flavor_os_dev">Development</string>
-	<string name="api_flavor_os_gld">Grayzone</string>
-	<string name="api_flavor_os_productive">formal</string>
-	<string name="api_flavor_os_productive_launcher">Official L</string>
-	<string name="api_flavor_os_test">test</string>
-</resources>

@@ -54,14 +54,7 @@ def gener_name_where():
     """
     希望在这里生成kcew
     """
-    # total_dir = '../../../../org/ith/learn/scratch/tmp/auto_extract_work/2020_05_10/'
-    total_dir = '/Users/lightman_mac/company/keruyun/oh_my_python/StudyPython/org/ith/learn/scratch/tmp' \
-                '/auto_extract_work/2020_05_13/'
-
-    re_total_dir = '../scratch/tmp/auto_extract_work/2020_06_07/'
-    total_dir = re_total_dir
-
-    # /Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/ith/learn/tmp/auto_extract_work/2020_05_15
+    total_dir = get_newest_path()
 
     name_where_dict = dict()
     for dir_path_name, dirs, files in os.walk(total_dir):
@@ -80,6 +73,27 @@ def gener_name_where():
     return name_where_dict
 
 
+def get_newest_path():
+    total_dir = '../scratch/tmp/auto_extract_work/'
+    for dir_path_name, dirs, files in os.walk(total_dir):
+        if len(dirs) > 0:
+            from org.ith.learn.util.TUtils import modify_timestamp
+            max_time = 0
+            time_path = dict()
+            for pdir in dirs:
+                pstr = dir_path_name + pdir
+                mtt = modify_timestamp(pstr)
+                if mtt > max_time:
+                    max_time = mtt
+                    time_path.clear()
+                    time_path[max_time] = pstr
+
+            new_path = time_path.popitem()[1]
+            print("the newest path is ", new_path)
+            return new_path + os.sep
+
+
 if __name__ == '__main__':
-    gener_name_where()
+    # main()
+    # gener_name_where()
     pass
