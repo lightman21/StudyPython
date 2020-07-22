@@ -1,17 +1,11 @@
 import os
+import re
 import time
 
-from org.ith.learn.OhMyEXCEL import excel_to_xml, xml_to_excel
-from org.ith.learn.scratch.Trans535 import big_dict
 from org.ith.learn.util.PXML import write_kce_to_path
-from org.ith.learn.util.TUtils import open_excel_as_list, read_xml_as_kce_list, KCEBean, highlight, modify_time, md5, \
-    auto_escape, extra_chinese, remove_punctuation, is_contains_chinese, exec_cmd, extract_string_array, chunk_in_slice, \
+from org.ith.learn.util.TUtils import read_xml_as_kce_list, highlight, modify_time, exec_cmd, extract_string_array, \
     make_sure_file_exist, file_md5
-import re
-import difflib
-import os
-
-from org.ith.learn.work.IBaidu import get_all_pics, loop_pics
+from org.ith.learn.work.IBaidu import get_all_pics
 
 """
 <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/tradeui-kmobile-1.11.30-SNAPSHOT.aar/6287918f966595e8c2b0fe549739a62e/res" />

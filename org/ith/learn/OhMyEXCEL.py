@@ -1,9 +1,8 @@
-import os
 import sys
 import time
 
 from org.ith.learn.util.PXML import write_kce_to_path
-from org.ith.learn.util.TUtils import open_excel_as_list, KCEBean, exec_cmd, highlight, read_xml_as_kce_list, \
+from org.ith.learn.util.TUtils import open_excel_as_list, KCEBean, highlight, read_xml_as_kce_list, \
     write_to_excel, is_contains_chinese, md5, skip_key_prefix
 from org.ith.learn.work.AndI18n import gener_excel_by_apk
 

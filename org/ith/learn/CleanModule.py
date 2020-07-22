@@ -1,7 +1,7 @@
 import os
 import re
 
-from org.ith.learn.util.PXML import parse_string_as_kce, write_kce_to_path
+from org.ith.learn.util.PXML import write_kce_to_path
 from org.ith.learn.util.TUtils import exec_cmd, is_contains_chinese, KCEBean, read_xml_as_kce_list, highlight, \
     get_cur_branch, md5
 from org.ith.learn.util.Translator import to_simplized

@@ -1,10 +1,8 @@
 import os
 
-from org.ith.learn.OhMyEXCEL import excel_to_xml
 from org.ith.learn.util.PXML import write_kce_to_path, parse_string_as_kce
 from org.ith.learn.util.TUtils import read_xml_as_kce_list, highlight, is_contains_chinese, exec_cmd, get_cur_branch
 from org.ith.learn.util.Translator import to_simplized
-from org.ith.learn.work.HardCode import hardcode_killer
 
 """
 根据传入的module路径 merge一个包含所有中文英文繁体的key的xml 写入默认xml

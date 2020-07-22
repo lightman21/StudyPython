@@ -134,7 +134,7 @@ def pull_remote_dict_as_kce_list():
 
 
 def main():
-    from org.ith.learn.scratch.ExtractString import daily_work
+    from org.ith.learn.work.ExtractString import daily_work
     daily_work()
     gener_excel_by_apk('/Users/toutouhiroshidaiou/Downloads/google/OnMobile-official-6.2.10.apk')
 

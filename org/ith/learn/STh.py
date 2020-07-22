@@ -1,12 +1,11 @@
+# from bs4 import BeautifulSoup, CData
+import os
+import re
 import time
 
 from org.ith.learn.util.PXML import write_kce_to_path
-from org.ith.learn.util.TUtils import KCEBean, highlight, is_contains_chinese, write_to_excel, read_xml_as_kce_list, \
+from org.ith.learn.util.TUtils import KCEBean, highlight, is_contains_chinese, read_xml_as_kce_list, \
     auto_escape
-import re
-# from bs4 import BeautifulSoup, CData
-import os
-
 from org.ith.learn.work.AndI18n import auto_transascii10
 from org.ith.learn.work.Work import to_dict_item
 

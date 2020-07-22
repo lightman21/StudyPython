@@ -1,15 +1,10 @@
-import math
-
-import numpy
-import requests
 import json
 import urllib.parse
+
 import chardet
+import requests
 
-from org.ith.learn.util.TUtils import exec_cmd, auto_transascii10, read_xml_as_kce_list, chunk_in_slice
-
-from org.ith.learn.util.PXML import write_kce_to_path
-from org.ith.learn.util.TUtils import open_excel_as_list, read_xml_as_kce_list, KCEBean, highlight, modify_time, md5
+from org.ith.learn.util.TUtils import exec_cmd, chunk_in_slice
 
 
 def str_of_simple():
