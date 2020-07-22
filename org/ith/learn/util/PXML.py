@@ -5,11 +5,9 @@ from xml.dom.minidom import parse
 import xml.dom.minidom
 
 import sys
-
 from lxml import etree
 import html
 from org.ith.learn.util.TUtils import KCEBean, XmlStdin, highlight, auto_escape
-
 path_of_android = "../../../../docs/i18n/merge.xml"
 
 

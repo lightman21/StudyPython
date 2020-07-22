@@ -240,7 +240,6 @@ def read_xml_as_kce_list(xml_path, lang='cn'):
     xml_path = xml_path.strip()
     with open(xml_path, 'r') as file:
         all_str = file.read()
-        fuzzy_matching = r'<string name="(\w*)">(.*)</string>'
         fuzzy_matching = r'<string name="(\w*)">(.*?)</string>'
         list_kce = []
         rets = re.findall(fuzzy_matching, all_str, re.DOTALL)
