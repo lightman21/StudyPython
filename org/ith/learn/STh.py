@@ -157,25 +157,75 @@ skip_keys = ['sun_str', 'product_desc_handset', 'product_desc_kiosk', 'product_d
 # amp;
 
 def main():
-    path_dict = '../../../docs/dicts/2020_04_22_kce_dict.xml'
-    merge_list = list()
-    with open(path_dict, 'r') as rin:
-        lines = rin.readlines()
-        pattern = r'<kce key="(.*)" cn="(.*)" en="(.*)"'
-        for line in lines:
-            rets = re.findall(pattern, line)
-            rets = rets[0]
-            kce = KCEBean(key=rets[0], cn=rets[1], en=rets[2])
-            kce.cn = auto_transascii10(kce.cn)
-            kce.cn = auto_escape(kce.cn)
-            kce.en = auto_escape(kce.en)
-            merge_list.append(kce)
+    path = '/Users/toutouhiroshidaiou/keruyun/proj/sub_modules/mobile-storage/translate/kmobile/english.xml'
+    # now_kce = read_xml_as_kce_list(path)
+    #
+    # old_path = "/Users/toutouhiroshidaiou/Desktop/desttop_work2015/trans/old_strings.xml"
+    # new_path = "/Users/toutouhiroshidaiou/Desktop/desttop_work2015/trans/new_strings.xml"
 
-    to_write_lines = to_dict_item(merge_list)
-    now_date = time.strftime("%Y_%m_%d_%H_%M", time.localtime())
-    out_name = '../../../docs/{}_{}_kce_dict.xml'.format(now_date, '_auto_')
-    with open(out_name, 'w') as out:
-        out.writelines(to_write_lines)
+    # old_kce = read_xml_as_kce_list(old_path)
+    # new_kce = read_xml_as_kce_list(new_path)
+    #
+    # # write_kce_to_path(old_kce,old_path)
+    # # write_kce_to_path(new_kce,new_path)
+    #
+    # now_keys = set()
+    # for kce in now_kce:
+    #     now_keys.add(kce.key)
+    #
+    # to_trans = list()
+    #
+    # for kce in new_kce:
+    #     if kce.key not in now_keys:
+    #         # print(kce)
+    #         to_trans.append(kce)
+    #
+    # write_kce_to_path(to_trans, "./new_to_trans.xml")
+    #
+    # list_ios_kce = list()
+    # with open('/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/docs/i18n/ios_kce_dict.xml', 'r') as rin:
+    #     lines = rin.readlines()
+    #     # <kce key="6a20f211052529d23f572624eeea1790" cn="果断删除" en="Decisively delete"/>
+    #     pattern = r'<kce key="(.*)" cn="(.*)" en="(.*)"'
+    #     for line in lines:
+    #         rets = re.findall(pattern, line)
+    #         rets = rets[0]
+    #         kce = KCEBean(key=rets[0], cn=rets[1], en=rets[2])
+    #         list_ios_kce.append(kce)
+    #
+    # find_keys = set()
+    #
+    # find_kce = list()
+    # for kce in list_ios_kce:
+    #     for my in to_trans:
+    #         if str(my.cn) == str(kce.cn):
+    #             print("find ", my)
+    #             my.en = kce.en
+    #
+    #             find_keys.add(my.key)
+    #
+    #             if my not in find_kce:
+    #                 find_kce.append(my)
+    #
+    # write_kce_to_path(find_kce, "./en_finded.xml", key='en')
+    #
+    # list_not = list()
+    #
+    # for kce in to_trans:
+    #     if kce.key not in find_keys:
+    #         list_not.append(kce)
+    # write_kce_to_path(list_not, "./not_trans.xml")
+
+
+    now_path = '/Users/toutouhiroshidaiou/keruyun/INTELLIJ_IDEA/PycharmProjects/org/ith/learn/en_finded.xml'
+    now_kce = read_xml_as_kce_list(now_path)
+    kce_set = set()
+
+    for kce in now_kce:
+        kce_set.add(kce.key)
+
+
+    print("now kce ", len(now_kce),',and set ',len(kce_set))
 
     pass
 

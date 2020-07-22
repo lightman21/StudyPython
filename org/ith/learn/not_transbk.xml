@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="biz_setting_batch_control_current_biz">Current settings：%1s</string>
+    <string name="biz_setting_batch_control_shop">Stores control</string>
+    <string name="biz_setting_batch_control_style_1_hint">Store setting under company unable to change</string>
+    <string name="biz_setting_batch_set_hint">Stores settings have been saved may apply to other stores upon
+        completion
+    </string>
+    <string name="biz_setting_batch_set_style">Pls set application mode</string>
+    <string name="biz_setting_batch_set_style_2_hint">When setting stores exist it does not overwrite the original
+        settings
+    </string>
+    <string name="biz_setting_order_comment_empty_hint_1">No notes info</string>
+    <string name="biz_setting_order_comment_empty_hint_2">You can set up common notes for the whole order You can
+        directly click when ordering without manual input
+    </string>
+    <string name="biz_setting_select_shop_ifno">%1s items selected</string>
+    <string name="business_autogen_no_choosed_item">Select at least one of them</string>
+    <string name="business_choose_discount_type_noreplace_info">Replace with the discount in store not affected by
+        company
+    </string>
+    <string name="business_choose_discount_type_replace_info">Replacement with companys discount ID and details</string>
+    <string name="business_choose_publish_type_noreplace_info">Keep payment method Companys setttings no change</string>
+    <string name="business_choose_publish_type_replace_info">Replace using Companys payment method and ID</string>
+    <string name="business_choose_shop_num">%1$s items selected</string>
+    <string name="business_discount_content_percent">%1$s OFF</string>
+    <string name="business_discount_content_percent_cn">%1$s折</string>
+    <string name="business_discount_management_setting">Discount Management setting</string>
+    <string name="business_discount_store">Store discounts</string>
+    <string name="business_discount_tips">Discounts is in use in store disabling it will have an effect make sure to
+        disable?
+    </string>
+    <string name="business_edit_template_shop_note_mes">Stores under managemen %1$s</string>
+    <string name="business_part_source">Part source</string>
+    <string name="business_part_state">Part state</string>
+    <string name="business_part_type">Part type</string>
+    <string name="business_pay_mode_batch_control_hint">Payment defaults strong management control can only operate in
+        the company After setting the weak control store create and store corresponding to disable payment
+    </string>
+    <string name="business_pay_mode_tips">Payment methods currently exist referenced store after the closure will affect
+        the use make sure to disable?
+    </string>
+    <string name="business_pay_set">Payment setting</string>
+    <string name="business_pay_template_delete_mes">The current template is referenced %1$s stores the stores will be
+        deleted after use is no longer supported confirm the deletion
+    </string>
+    <string name="business_pay_template_select_mode">Select payment method（%1$s/%2$s）</string>
+    <string name="business_related_payment_method_num">%1$s items selected</string>
+    <string name="business_search_group">Search by groups name</string>
+    <string name="business_search_pay_mode_name">Search by payment name</string>
+    <string name="business_select_group_toast">No options selected</string>
+    <string name="business_zggl_mode_batch_control_hint">The default is strong discount management control it can only
+        operate in the company After setting the weak control store create and store corresponding discount disabled.
+    </string>
+    <string name="bzst_checked_items">%1$d items selected</string>
+    <string name="bzst_choose_template_format">Select Template (%1$d/%2$d)</string>
+    <string name="bzst_choose_use_way">Choose use</string>
+    <string name="bzst_confirm_delete_discount">OK to delete discount?</string>
+    <string name="bzst_confirm_delete_pay_mode">OK to delete payment method?</string>
+    <string name="bzst_default_template">Defaut template</string>
+    <string name="bzst_input_discount_unit">Pls enter the chargeback unit</string>
+    <string name="bzst_input_discount_value">Pls enter the chargeback amount</string>
+    <string name="bzst_keep_same_discount_hint">Replace with the discount in store not affected by company</string>
+    <string name="bzst_keep_same_pay_method_hint">Keep payment method Companys setttings no change</string>
+    <string name="bzst_order_discount_percent">Discount of the whole order</string>
+    <string name="bzst_please_choose_type">Pls choose type</string>
+    <string name="bzst_replace_same_discount_hint">Replacement with companys discount ID and details</string>
+    <string name="bzst_replace_same_pay_method_hint">Replace using Companys payment method and ID</string>
+    <string name="bzst_star">*</string>
+</resources>

@@ -36,23 +36,23 @@ def excel_to_xml(path_of_excel, xml_path='./'):
     err_count = 0
     for holder in cn_hold_list:
         if en_hold_dict.keys().__contains__(holder.key):
-            # print('hold.cn ', holder.cn, highlight(', and en_hold ', 4), en_hold_dict[holder.key])
             cn_ret = re.findall(pattern, holder.cn)
             en_ret = re.findall(pattern, en_hold_dict[holder.key])
             cn_ret = sorted(cn_ret)
             en_ret = sorted(en_ret)
             if cn_ret != en_ret:
-                print(highlight('cn is ', 2), holder.cn, highlight('but en is', 4), en_hold_dict[holder.key])
+                print(highlight('cn is ', 2), holder.cn, highlight('but en is', 4), en_hold_dict[holder.key],
+                      ",the key is ", highlight(holder.key))
                 err_count += 1
     if err_count > 0:
         print("total cn count", highlight(len(cn_list), 3), ',the error en count ', highlight(err_count, 2))
     else:
-        write_kce_to_path(en_list, xml_path + excel_name)
+        write_kce_to_path(en_list, xml_path + excel_name + ".xml", key='en')
 
 
 def main(argv=None):
     print("the argv is ", argv)
-    exel_path = '/Users/toutouhiroshidaiou/Desktop/KMobile_Android_07_22.xlsx'
+    exel_path = '/Users/toutouhiroshidaiou/Desktop/chaoxiu_an_trans_Android_i18n.xlsx'
     out_path = '/Users/toutouhiroshidaiou/Desktop/'
     excel_to_xml(exel_path, out_path)
     pass

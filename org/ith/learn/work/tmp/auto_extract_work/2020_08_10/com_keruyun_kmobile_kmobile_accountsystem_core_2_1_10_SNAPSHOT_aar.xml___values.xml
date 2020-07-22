@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="account_data_err">服务器数据异常</string>
+	<string name="account_get_detail_error">获取资料失败</string>
+	<string name="account_jingrong_dianrong">点融</string>
+	<string name="account_jingrong_koudai">口袋</string>
+	<string name="account_loading">加载中...</string>
+	<string name="account_login_data_untransfer"> 检测到您未进行数据迁移，暂时无法使用新版本，详情可联系400-8866-815进行咨询。</string>
+	<string name="account_login_fail">登录失败</string>
+	<string name="account_login_status_valid">登录状态非法</string>
+	<string name="account_main_item_appointment">叫号</string>
+	<string name="account_please_user_kry">抱歉，请使用「掌上客如云」登录</string>
+	<string name="account_please_user_read">抱歉，请使用「掌上红云」登录</string>
+	<string name="account_self_pay_auth">自助认证</string>
+	<string name="account_third_app">我的服务</string>
+</resources>
