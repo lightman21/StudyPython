@@ -6,7 +6,7 @@ import time
 from org.ith.learn.util.PXML import write_kce_to_path
 from org.ith.learn.util.TUtils import KCEBean, highlight, is_contains_chinese, read_xml_as_kce_list, \
     auto_escape
-from org.ith.learn.work.AndI18n import auto_transascii10
+from org.ith.learn.util.AndI18n import auto_transascii10
 from org.ith.learn.work.Work import to_dict_item
 
 list_of_android_path = "/Users/toutouhiroshidaiou/Desktop/keruyun/tmp/android.xlsx"

@@ -11,7 +11,7 @@ import xml
 import xlrd
 import xlwt
 
-from org.ith.learn.work.PackageNameMapper import gener_name_where
+from org.ith.learn.util.PackageNameMapper import gener_name_where
 from org.ith.learn.util.Colored import COLS
 import random
 
