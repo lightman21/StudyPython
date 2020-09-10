@@ -19,7 +19,7 @@ def excel_to_xml(path_of_excel, xml_path='./'):
     pattern = r'\%[\d]\$[sd]'
 
     for kce in list_kce:
-        if len(kce.cn) > 0:
+        if len(str(kce.cn)) > 0:
             bean = KCEBean(key=kce.key, cn=kce.cn, en=kce.en)
             bean.en = ''
             cn_list.append(bean)
@@ -27,7 +27,7 @@ def excel_to_xml(path_of_excel, xml_path='./'):
             if len(ret) > 0:
                 cn_hold_list.append(bean)
 
-        if len(kce.en) > 0:
+        if len(str(kce.en)) > 0:
             bean = KCEBean(key=kce.key, cn=kce.cn, en=kce.en)
             bean.cn = ''
             en_list.append(bean)
@@ -42,17 +42,18 @@ def excel_to_xml(path_of_excel, xml_path='./'):
             cn_ret = sorted(cn_ret)
             en_ret = sorted(en_ret)
             if cn_ret != en_ret:
-                print(highlight('cn is ', 2), holder.cn, highlight('but en is', 4), en_hold_dict[holder.key])
+                print(highlight('cn is ', 2), holder.cn, highlight('but en is', 4), en_hold_dict[holder.key],
+                      'and key is ', holder.key)
                 err_count += 1
     if err_count > 0:
         print("total cn count", highlight(len(cn_list), 3), ',the error en count ', highlight(err_count, 2))
     else:
-        write_kce_to_path(en_list, xml_path + excel_name)
+        write_kce_to_path(en_list, xml_path + excel_name + ".xml",key='en')
 
 
 def main(argv=None):
     print("the argv is ", argv)
-    exel_path = '/Users/toutouhiroshidaiou/Desktop/KMobile_Android_07_22.xlsx'
+    exel_path = '/Users/toutouhiroshidaiou/Desktop/2018Android_i18n (1).xlsx'
     out_path = '/Users/toutouhiroshidaiou/Desktop/'
     excel_to_xml(exel_path, out_path)
     pass

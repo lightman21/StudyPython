@@ -414,7 +414,7 @@ def auto_escape(inputing):
     """
     origin = ['\'', ]
     escape = ['\\\'', ]
-
+    inputing = str(inputing)
     if len(inputing) > 0:
         for index in range(len(escape)):
             str_input = str(inputing)

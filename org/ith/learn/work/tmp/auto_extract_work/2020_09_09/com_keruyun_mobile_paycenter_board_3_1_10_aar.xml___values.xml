@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">paycenterentrance</string>
+	<string name="payboard_error_wipe_zero_tip1">抹零金额必须小余支付金额</string>
+	<string name="payboard_error_wipe_zero_tip2">自定义抹零金额必须大于零</string>
+	<string name="payboard_failure">获取失败</string>
+	<string name="payboard_group_buy">团购券</string>
+	<string name="payboard_non_paymode">未知的支付方式</string>
+	<string name="payboard_parameter_error">参数错误</string>
+	<string name="payboard_paymode">选择支付方式</string>
+	<string name="payboard_please_pick_cash">选择现金支付方式</string>
+	<string name="payboard_print_electronic_invoice">打印发票二维码</string>
+	<string name="payboard_try_again">点击重试</string>
+	<string name="payboard_wait_pay_amount">待支付金额</string>
+	<string name="payboard_wipe_amount">抹零金额</string>
+	<string name="payboard_wipe_amount_after">抹零后</string>
+	<string name="payboard_wipe_amount_before">抹零前</string>
+	<string name="payboard_wipe_zero">抹零</string>
+	<string name="payboard_wipe_zero_custom_define">自定义</string>
+	<string name="payboard_wipe_zero_fen">抹分</string>
+	<string name="payboard_wipe_zero_jiao">抹角</string>
+	<string name="payboard_wipe_zero_yuan">抹元</string>
+	<string name="paycenter_board_receivable_amount_label">应收</string>
+	<string name="paycenter_has_noauth">没有权限操作</string>
+	<string name="paycenter_include_FS">(含消费税)</string>
+	<string name="paycenter_loading">加载中...</string>
+	<string name="paycenter_paymode_vip">会员储值</string>
+	<string name="paypayboard_center_install">点击安装</string>
+</resources>

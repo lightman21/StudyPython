@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="error_bluetooth_not_supported">该设备不支持蓝牙功能</string>
+</resources>

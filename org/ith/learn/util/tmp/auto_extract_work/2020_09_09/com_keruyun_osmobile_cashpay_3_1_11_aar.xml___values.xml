@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="cash_abort_confirm">确认放弃此次结账?</string>
+	<string name="cash_actual_amount">actual amount</string>
+	<string name="cash_actural_amount_less">The actual collection amount shall not be less than the amount receivable</string>
+	<string name="cash_cash_amnount">现金金额</string>
+	<string name="cash_cash_change">找零</string>
+	<string name="cash_cash_input_info">请输入现金金额</string>
+	<string name="cash_cash_receipt">cash receipt</string>
+	<string name="cash_cashpay">结账</string>
+	<string name="cash_cashpay_confirm">确定收到现金并结账?</string>
+	<string name="cash_click_input_amount">click and input amount</string>
+	<string name="cash_customize">customize</string>
+	<string name="cash_customize_pay">customize pay</string>
+	<string name="cash_customize_pay_beyondtips">has beyond receivable amount</string>
+	<string name="cash_customize_pay_ifoverflow_tips">has overflowed, please confirm if or not pay</string>
+	<string name="cash_data_error">数据错误</string>
+	<string name="cash_input_actural_amount">please enter the actual amount</string>
+	<string name="cash_modify_currency">修改币种</string>
+	<string name="cash_ordering_repeat_hint">该笔订单已在订单中心生成，无法重复提交，请在桌面POS的订单中心进行查看与操作</string>
+	<string name="cash_overflow_amount">overflow amount</string>
+	<string name="cash_pay">支付</string>
+	<string name="cash_pay_mark">注：收到现金后请及时到POS清账并入钱箱，谢谢！</string>
+	<string name="cash_payment_amount">%1$s%2$s</string>
+	<string name="cash_payment_amount_hint">receivable amount</string>
+	<string name="cash_payment_amount_left">return amount</string>
+	<string name="cash_payment_amount_real">actual amount</string>
+	<string name="cash_please_pick_customize_paymode">please choose customize paymode</string>
+	<string name="cash_print_checkout">打印结账单</string>
+	<string name="cash_recharge_cash_confirmed">确认已收到现金并充值?</string>
+	<string name="cash_recharge_failed">充值失败</string>
+	<string name="cash_recharge_success">recharge success</string>
+	<string name="cash_recharge_zero_tip">充值金额必须大于0元.</string>
+	<string name="cash_select_currency">请选择币种</string>
+	<string name="cash_should_get">本次应收</string>
+	<string name="cash_unpaid_amount">unpaid amount</string>
+	<string name="cash_wait_pay_amount">待支付金额</string>
+	<string name="cash_weishou">未收</string>
+</resources>

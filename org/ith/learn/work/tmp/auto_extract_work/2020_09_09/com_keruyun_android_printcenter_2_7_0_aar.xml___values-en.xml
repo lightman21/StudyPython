@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="printcenter_waiter">Waiter</string>
+	<string name="printer_dinner_common_unit_and_per">/ copies</string>
+	<string name="printer_drsk_checkout_bill">Checkout slip</string>
+	<string name="printer_drsk_consumerlook_bill">Clinet invoice</string>
+	<string name="printer_drsk_consuption_bill">Consumption list</string>
+	<string name="printer_drsk_kichen_bill">After dinner</string>
+	<string name="printer_drsk_prepayment_bill">Pre-order</string>
+	<string name="printer_drsk_refund_bill">return form</string>
+	<string name="printer_drsk_tag_bill">label</string>
+	<string name="printer_drsk_tangkou_bill">Hall order</string>
+	<string name="printer_drsk_voidorder_bill">Invalid list</string>
+	<string name="printer_drsk_window_bill">Hall order</string>
+	<string name="printer_feng_zong">serve，total</string>
+	<string name="printer_now_print_tips">%1$d is printing, %2$d total</string>
+	<string name="printer_one_complete_tips">%1$d has done，%2$d total</string>
+	<string name="printer_one_error_tips">Copy %1$d failed，%2$d total</string>
+	<string name="printer_outer_paper">Out of paper</string>
+	<string name="printer_print_reprint">- Supplement</string>
+	<string name="printer_printing_di">Printing number</string>
+	<string name="printer_printnext">Will print the next copy</string>
+	<string name="printer_welcome_next_guangling">Welcome to visit next time</string>
+</resources>

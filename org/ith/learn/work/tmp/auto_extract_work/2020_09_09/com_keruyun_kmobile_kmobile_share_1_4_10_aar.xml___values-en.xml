@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="kshare_channel_qq">QQ friends</string>
+	<string name="kshare_channel_wechat">WeChat friends</string>
+	<string name="kshare_channel_wechat_timeline">Circle of friends</string>
+	<string name="kshare_copy_link">Copy link</string>
+	<string name="kshare_copy_success">Operation success</string>
+	<string name="kshare_main_notice_share">Share your friends in the following way</string>
+	<string name="kshare_main_recommend_to_friend">Recommend to a friend</string>
+	<string name="kshare_qr_app_name">K-mobile APP</string>
+</resources>

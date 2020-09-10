@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="cspay_custom_pay">自定义支付</string>
+	<string name="custompay_amount_is_enough">金额已足够</string>
+	<string name="custompay_amount_more_than_should_pay">金额超过应付金额</string>
+	<string name="custompay_custom_pay_print_pre_bill">打印结账单</string>
+	<string name="custompay_dinner_money_symbol">￥</string>
+	<string name="custompay_has_been_up_limit">已达到最大数量</string>
+	<string name="custompay_input_price_str">请输入金额</string>
+	<string name="custompay_network_error">网络请求失败,请稍后再试!</string>
+	<string name="custompay_pay_rest_payment_text">还差</string>
+	<string name="custompay_pay_settle_accounts">结账</string>
+	<string name="custompay_renmingbi">¥</string>
+	<string name="custompay_shi_shou_pay_amount">实收金额</string>
+	<string name="custompay_should_pay_amount">应付金额</string>
+	<string name="custompay_user_define">自定义</string>
+	<string name="custompay_wipe_zero_custom_define">自定义</string>
+	<string name="custompay_wipe_zero_fen">抹分</string>
+	<string name="custompay_wipe_zero_jiao">抹角</string>
+	<string name="custompay_wipe_zero_title">抹零</string>
+	<string name="custompay_wipe_zero_yuan">抹元</string>
+	<string name="custompay_yi_not_pay_amount">未收金额</string>
+	<string name="custompay_yi_shou_pay_amount">溢收金额</string>
+</resources>

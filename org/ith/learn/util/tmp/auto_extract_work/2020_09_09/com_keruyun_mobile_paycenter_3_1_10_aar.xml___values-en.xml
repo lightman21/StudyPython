@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="paycenter_paymode_alipay">Alipay</string>
+	<string name="paycenter_paymode_baidu">Baidu Wallet</string>
+	<string name="paycenter_paymode_band">Band</string>
+	<string name="paycenter_paymode_bank">Bank card</string>
+	<string name="paycenter_paymode_cash">cash</string>
+	<string name="paycenter_paymode_cmb_one_card">CMB card pay</string>
+	<string name="paycenter_paymode_custom">customize</string>
+	<string name="paycenter_paymode_jincheng">Jincheng APP</string>
+	<string name="paycenter_paymode_koubei">Koubei</string>
+	<string name="paycenter_paymode_meituan">Meituan</string>
+	<string name="paycenter_paymode_nuomi">Glutinous rice</string>
+	<string name="paycenter_paymode_shanhui">Shanhui</string>
+	<string name="paycenter_paymode_vip">VIP recharge</string>
+	<string name="paycenter_paymode_weixin">Wechat</string>
+</resources>
