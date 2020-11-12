@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="input_band_pay_cancel">cancel</string>
+	<string name="input_band_pay_password">Please enter your password</string>
+	<string name="tv_dit_ib_done">Received\n</string>
+	<string name="tv_dit_ib_done_cashier">Complete\ncheckout</string>
+	<string name="tv_dit_ib_done_clear">Empty</string>
+	<string name="tv_dit_ib_done_number">True \n</string>
+	<string name="tv_dit_ib_done_wipe_zero">Wipe\n</string>
+</resources>

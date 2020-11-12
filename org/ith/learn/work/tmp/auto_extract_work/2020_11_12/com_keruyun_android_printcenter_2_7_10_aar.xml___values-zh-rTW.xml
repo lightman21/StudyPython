@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="printcenter_waiter">服務員</string>
+	<string name="printer_dinner_common_unit_and_per">/份</string>
+	<string name="printer_drsk_checkout_bill">結賬單</string>
+	<string name="printer_drsk_consumerlook_bill">客看單</string>
+	<string name="printer_drsk_consuption_bill">消費清單</string>
+	<string name="printer_drsk_kichen_bill">後廚單</string>
+	<string name="printer_drsk_prepayment_bill">預結單</string>
+	<string name="printer_drsk_refund_bill">退貨單</string>
+	<string name="printer_drsk_tag_bill">標籤</string>
+	<string name="printer_drsk_tangkou_bill">堂口單</string>
+	<string name="printer_drsk_voidorder_bill">作廢單</string>
+	<string name="printer_drsk_window_bill">堂口單</string>
+	<string name="printer_feng_zong">份，總</string>
+	<string name="printer_outer_paper">打印機缺紙</string>
+	<string name="printer_print_reprint">--補</string>
+	<string name="printer_printing_di">正在打印第</string>
+	<string name="printer_printnext">即將打印下一份</string>
+	<string name="printer_welcome_next_guangling">歡迎下次光臨</string>
+</resources>

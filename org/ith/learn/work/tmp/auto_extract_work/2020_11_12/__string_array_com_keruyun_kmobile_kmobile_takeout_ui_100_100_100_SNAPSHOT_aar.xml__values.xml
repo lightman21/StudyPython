@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="takeout_privileges">
+		<item>1|手动折扣</item>
+		<item>2|折让</item>
+		<item>3|免单</item>
+		<item>4|优惠活动或者优惠券</item>
+		<item>5|积分抵现</item>
+		<item>6|自动折扣</item>
+		<item>7|平台优惠</item>
+		<item>8|商户优惠</item>
+		<item>9|物流优惠</item>
+		<item>10|代理商优惠</item>
+		<item>11|会员特价</item>
+		<item>12|附加费</item>
+	</string-array>
+
+	<string-array name="takeout_paymethod_array">
+		<item>支付宝</item>
+		<item>微信</item>
+		<item>自定义</item>
+	</string-array>
+
+	<string-array name="takeout_more_content_list_array">
+		<item>失效订单</item>
+		<item>设置</item>
+	</string-array>
+
+	<string-array name="tableBar">
+		<item>待配送</item>
+		<item>待送达</item>
+		<item>已完成</item>
+		<item>已失效</item>
+	</string-array>
+
+	<string-array name="choose_map">
+		<item>使用高德地图导航</item>
+		<item>使用百度地图导航</item>
+	</string-array>
+
+	<string-array name="bindSenderFailurestatus">
+		<item>不是外送订单</item>
+		<item>已被别人绑定</item>
+		<item>正在配送</item>
+		<item>已完成送餐</item>
+		<item>已退货</item>
+		<item>已作废</item>
+		<item>已拒绝</item>
+		<item>已过期</item>
+		<item>已经被其他客户端更新</item>
+		<item>绑定失败</item>
+	</string-array>
+
+	<string-array name="acceptordertableBar">
+		<item>待处理</item>
+		<item>已接受</item>
+	</string-array>
+
+</resources>

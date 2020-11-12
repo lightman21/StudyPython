@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="input_band_pay_cancel">cancel</string>
+	<string name="input_band_pay_password">Please enter your password</string>
+	<string name="open_camera_fail">Failed to active camera,please check and try again</string>
+	<string name="qrcode_cancel">cancel</string>
+	<string name="qrcode_setting">Go to set</string>
+	<string name="scan_text">Please put barcode with in scan area</string>
+</resources>

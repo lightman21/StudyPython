@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="cancel">取消</string>
+	<string name="confirm">确  定</string>
+	<string name="consume_terminal">消费端</string>
+	<string name="info_qr_action_bind_error">设备绑定失败</string>
+	<string name="info_qr_action_bind_need_keruyun_app">请使用客如云APP绑定</string>
+	<string name="info_qr_action_bind_need_redclode_app">请使用红云APP绑定</string>
+	<string name="network_data_err">服务器数据异常</string>
+	<string name="pay_good">好的</string>
+	<string name="pay_setting">请到后台配置相关支付方式</string>
+	<string name="pos_terminal">收银端</string>
+	<string name="qrcodebiz__k_qrscan_title">扫一扫</string>
+	<string name="qrcodebiz_app_qr_scan_get_cash_dialog_title">收款</string>
+	<string name="qrcodebiz_app_qrscan_getcash_dialog_input_hint">请输入收款金额</string>
+	<string name="qrcodebiz_assistant_no_permision">您没有权限使用此功能，请知悉</string>
+	<string name="qrcodebiz_call_custom">客服热线 400-8866-815</string>
+	<string name="qrcodebiz_commercial_type_choose_error">请选择绑定类型</string>
+	<string name="qrcodebiz_commercial_type_dish_city_hint">检测到商户为美食城业态\n您当前绑定的POS是：</string>
+	<string name="qrcodebiz_device_bind_success">继续绑定</string>
+	<string name="qrcodebiz_device_binded">该设备已被绑定</string>
+	<string name="qrcodebiz_device_no_exist">该设备不存在</string>
+	<string name="qrcodebiz_jihuo_hint1">您还可以开通移动支付，获得客如云体系中的增值服务：</string>
+	<string name="qrcodebiz_jihuo_hint2">· 账目清晰，数据永久留存；\n· 官方渠道支付更安全、稳定；\n· 帮助曝光外卖、口碑门店，带来更多订单；\n· 开通便捷，审核门槛低;\n· 扫码点餐、小程序等业务一键支持;</string>
+	<string name="qrcodebiz_jihuo_success">恭喜，激活成功</string>
+	<string name="qrcodebiz_logout_error">退出失败</string>
+	<string name="qrcodebiz_open">开通移动支付</string>
+	<string name="qrcodebiz_open_mobile_pay">移动支付开通</string>
+	<string name="qrcodebiz_phone_not_null">电话号码为空</string>
+	<string name="qrcodebiz_scan_result">扫描结果</string>
+	<string name="qrcodebiz_scan_shop_only">只能在门店使用此扫码业务</string>
+	<string name="qrcodebiz_sold_out_device_bind_success">设备绑定成功</string>
+	<string name="qrcodebiz_sold_out_trade_bind_success">配送订单绑定成功</string>
+	<string name="qrcodebiz_unkown_device">未识别到设备</string>
+</resources>

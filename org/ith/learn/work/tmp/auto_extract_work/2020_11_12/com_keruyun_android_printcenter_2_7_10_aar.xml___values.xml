@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="printcenter_waiter">服务员</string>
+	<string name="printer_device_busy">打印机忙</string>
+	<string name="printer_device_error">打印机错误</string>
+	<string name="printer_dinner_common_unit_and_per">/份</string>
+	<string name="printer_drsk_checkout_bill">结账单</string>
+	<string name="printer_drsk_consumerlook_bill">客看单</string>
+	<string name="printer_drsk_consuption_bill">消费清单</string>
+	<string name="printer_drsk_kichen_bill">后厨单</string>
+	<string name="printer_drsk_prepayment_bill">预结单</string>
+	<string name="printer_drsk_refund_bill">退货单</string>
+	<string name="printer_drsk_tag_bill">标签</string>
+	<string name="printer_drsk_tangkou_bill">堂口单</string>
+	<string name="printer_drsk_voidorder_bill">作废单</string>
+	<string name="printer_drsk_window_bill">堂口单</string>
+	<string name="printer_feng_zong">份，总</string>
+	<string name="printer_missing">打印机缺失</string>
+	<string name="printer_now_print_tips">正在打印第%1$d份, 共%2$d份</string>
+	<string name="printer_number_lessthan_zero">打印份数小于0</string>
+	<string name="printer_one_complete_tips">已打印完第%1$d份，共%2$d份</string>
+	<string name="printer_one_error_tips">第%1$d份打印错误，共%2$d份</string>
+	<string name="printer_outer_paper">打印机缺纸</string>
+	<string name="printer_print_reprint">--补</string>
+	<string name="printer_printing_di">正在打印第</string>
+	<string name="printer_printnext">即将打印下一份</string>
+	<string name="printer_welcome_next_guangling">欢迎下次光临</string>
+</resources>

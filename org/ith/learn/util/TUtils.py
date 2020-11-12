@@ -23,7 +23,9 @@ skip_key_prefix = [
     '_uuid',
     'hello_world',
     'path_password_',
-    'fgh_'
+    'fgh_',
+    'iconfont_',
+
 ]
 
 """
