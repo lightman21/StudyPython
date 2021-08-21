@@ -17,10 +17,10 @@ def main(argv=None):
         argv = sys.argv
 
     # gener_excel_by_apk('/Users/toutouhiroshidaiou/Downloads/google/OnMobile-official-6.2.10-SNAPSHOT-armeabi-v7a-envGrd-2020-07-22-09-30-20.apk')
-    gener_excel_by_apk('/Users/toutouhiroshidaiou/Downloads/google/OnMobile-official-6.2.10.apk')
+    # //gener_excel_by_apk('/Users/toutouhiroshidaiou/Downloads/google/OnMobile-official-6.2.10.apk')
 
-    # gener_excel_by_apk(
-    #     '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/build/outputs/apk/official/envGrd/app-official-armeabi-v7a-envGrd.apk')
+    exc_path = '/Users/lightman_mac/Desktop/exc_Android_i18n.xlsx'
+    excel_to_xml(path_of_excel=exc_path, xml_path='/Users/lightman_mac/Desktop/and_.xml')
 
 
 def xml_to_excel(path_of_cn, path_of_en, excel_path):
