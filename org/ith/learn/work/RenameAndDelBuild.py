@@ -4,7 +4,8 @@ import shutil
 
 def main():
     # dir_path = '/Users/lightman_mac/company/keruyun/proj_sourcecode/OnMobile-Android/app/src/main/res/'
-    dir_path = '/Users/lightman_mac/company/keruyun/'
+    dir_path = '/Users/lightman_mac/.gradle'
+    # dir_path = '/Users/lightman_mac/thtmp/anr/try_gradle'
     cout = 1
     for dir_path_name, dirs, files in os.walk(dir_path):
         if len(files) > 0:
@@ -13,7 +14,7 @@ def main():
                 real_size = os.path.getsize(real_path) / 1024 / 1024
                 # out = '/tmp/th/del/' + 'big/' + real_path
                 # dst = shutil.move(dir_path_name, out)
-                if real_size > 40:
+                if real_size > 20:
                     print('-------->',real_path,real_size,"M")
 
         # print(dir_path_name,"dirs -> ",dirs,", files -> ",files,len(files))
